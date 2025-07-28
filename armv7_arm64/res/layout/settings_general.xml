@@ -51,8 +51,6 @@
             <View style="@style/drastic_seperator" />
             <TextView android:id="@id/set_select_sysdir" android:text="@string/str_set_sysdir" style="@style/drastic_option_item_choicehdr_text" />
             <TextView android:id="@id/set_selection_sysdir" style="@style/drastic_option_item_selection_text" />
-            <View style="@style/drastic_seperator" />
-            <Button android:id="@id/btn_wifi" android:text="@string/str_set_wifi" style="@style/drastic_set_button" />
         </TableLayout>
     </ScrollView>
     <View android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />

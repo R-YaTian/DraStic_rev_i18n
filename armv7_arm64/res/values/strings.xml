@@ -421,6 +421,7 @@ If you experience any rendering glitches, please disable this option."</string>
     <string name="str_set_volume_value">Volume</string>
     <string name="str_set_wifi">Multiplayer/WiFi</string>
     <string name="str_set_wifi_msg">Sorry but the emulator does not support multiplayer/WiFi</string>
+    <string name="str_set_sel_sysdir">Select New System Directory</string>
     <string name="str_sm_back">"Return
 to Game"</string>
     <string name="str_sm_bioserror">"This Save is incompatible. Different BIOS files where used than what you're using now."</string>
