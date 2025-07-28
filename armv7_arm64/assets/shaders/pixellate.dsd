@@ -1,0 +1,66 @@
+<options>
+filter=nearest
+</options>
+
+<vertex>
+attribute vec2 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+
+varying vec2 v_texture_coordinate;
+void main() {
+  gl_Position = vec4(a_vertex_coordinate.xy, 0.0, 1.0);
+  v_texture_coordinate = a_texture_coordinate;
+}
+</vertex>
+
+<fragment>
+varying vec2 v_texture_coordinate;
+
+uniform sampler2D u_texture;
+uniform vec4 u_texture_size;
+
+uniform vec2 u_target_size;
+
+#ifdef GL_OES_standard_derivatives
+#extension GL_OES_standard_derivatives : enable
+#else
+#define GL_OES_standard_derivatives 0
+#endif
+
+#define round(x) floor( (x) + 0.5 )
+
+void main() {
+  vec2 range;
+  if(GL_OES_standard_derivatives == 1) 
+range = vec2(abs(dFdx(v_texture_coordinate.x)), abs(dFdy(v_texture_coordinate.y)));
+  else range = vec2(abs(1.0 / u_target_size.x), abs(1.0 / u_target_size.y));
+  
+  range = range / 2.0 * 0.999;
+  
+  float left   = v_texture_coordinate.x - range.x;
+  float top    = v_texture_coordinate.y + range.y;
+  float right  = v_texture_coordinate.x + range.x;
+  float bottom = v_texture_coordinate.y - range.y;
+  
+  vec4 topLeftColor     = texture2D(u_texture, vec2(left, top));
+  vec4 bottomRightColor = texture2D(u_texture, vec2(right, bottom));
+  vec4 bottomLeftColor  = texture2D(u_texture, vec2(left, bottom));
+  vec4 topRightColor    = texture2D(u_texture, vec2(right, top));
+  
+  vec2 border = clamp(
+      round(v_texture_coordinate / vec2(u_texture_size.xy)) * vec2(u_texture_size.xy),
+      vec2(left, bottom),
+      vec2(right, top)
+    );
+  
+  float totalArea = 4.0 * range.x * range.y;
+  
+  vec4 averageColor;
+  averageColor  = ((border.x - left)  * (top - border.y)    / totalArea) * topLeftColor;
+  averageColor += ((right - border.x) * (border.y - bottom) / totalArea) * bottomRightColor;
+  averageColor += ((border.x - left)  * (border.y - bottom) / totalArea) * bottomLeftColor;
+  averageColor += ((right - border.x) * (top - border.y)    / totalArea) * topRightColor;
+  
+  gl_FragColor = vec4(averageColor.rgb, 1.0);
+}
+</fragment>

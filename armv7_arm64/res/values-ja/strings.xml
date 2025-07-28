@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">ホームに戻る</string>
+    <string name="abc_action_bar_up_description">前に戻る</string>
+    <string name="abc_action_menu_overflow_description">その他のオプション</string>
+    <string name="abc_action_mode_done">完了</string>
+    <string name="abc_activity_chooser_view_see_all">すべて表示</string>
+    <string name="abc_activitychooserview_choose_application">アプリの選択</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">Delete</string>
+    <string name="abc_menu_enter_shortcut_label">Enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">Space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">検索…</string>
+    <string name="abc_searchview_description_clear">検索キーワードを削除</string>
+    <string name="abc_searchview_description_query">検索キーワード</string>
+    <string name="abc_searchview_description_search">検索</string>
+    <string name="abc_searchview_description_submit">検索キーワードを送信</string>
+    <string name="abc_searchview_description_voice">音声検索</string>
+    <string name="abc_shareactionprovider_share_with">共有</string>
+    <string name="abc_shareactionprovider_share_with_application">%sと共有</string>
+    <string name="abc_toolbar_collapse_description">折りたたむ</string>
+    <string name="app_notification_text">Nintendo DS エミュレータ</string>
+    <string name="btn_rom_all">全てのゲーム</string>
+    <string name="btn_rom_recent">最近プレイしたゲーム</string>
+    <string name="empty" />
+    <string name="menu_settings">設定</string>
+    <string name="search_menu_title">検索</string>
+    <string name="set_moga_showmapping">MOGAボタンマッピングを表示</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="str_add_user">新規ユーザーを追加</string>
+    <string name="str_add_user_button">追加</string>
+    <string name="str_add_user_custom_dir">カスタムユーザーデータディレクトリを使用しますか？</string>
+    <string name="str_add_user_dir_error">ユーザーディレクトリを作成できませんでした。</string>
+    <string name="str_add_user_dir_exists">このユーザーディレクトリはすでに存在しています。</string>
+    <string name="str_add_user_exists">このユーザーはすでに存在しています。</string>
+    <string name="str_add_user_select_dir">OK</string>
+    <string name="str_bios_error">"自動的にBIOSファイルをインストールできませんでした。 手動に「/sdcard/Android/data/com.dsemu.drastic/files/system」ヘBIOSファイルをコピーしてください。
+ ファイルの名前とサイズが下記通りであるよう確認してください：
+ - nds_bios_arm7.bin （16384 バイト）
+ - nds_bios_arm9.bin （4096 バイト）
+ - nds_firmware.bin （262144 バイト）
+"</string>
+    <string name="str_bios_installed">BIOSを正常にインストールしました。あなたがデバイスヘコピーしたファイルを削除しました。</string>
+    <string name="str_bios_nodst">"BIOSのインストールディレクトリにアクセスできませんでした。
+ 手動に「/sdcard/Android/data/com.dsemu.drastic/files/system」BIOSファイルをコピーしてください。
+ ファイルの名前とサイズが下記通りであるよう確認してください：
+ - nds_bios_arm7.bin （16384 バイト）
+ - nds_bios_arm9.bin （4096 バイト）
+ - nds_firmware.bin （262144 バイト）
+"</string>
+    <string name="str_bios_nosrc">"「Download」ディレクトリにアクセスできませんでした。
+ 「Download」ディレクトリはPCにマウントされていないよう、確認してください。"</string>
+    <string name="str_bios_notfound">"BIOSファイルは「Download」フォルダにはありません。
+ 「Download」には正しいファイルがあることを確認し、DraSticを再起動してもう一度インストールしてください。"</string>
+    <string name="str_cm_abxy_A">A</string>
+    <string name="str_cm_abxy_B">B</string>
+    <string name="str_cm_abxy_X">X</string>
+    <string name="str_cm_abxy_Y">Y</string>
+    <string name="str_cm_button_enabled">有効</string>
+    <string name="str_cm_ctrlcancel">キャンセル</string>
+    <string name="str_cm_ctrldefault">既定</string>
+    <string name="str_cm_ctrlheader">コントローラーレイアウト</string>
+    <string name="str_cm_ctrlhide">隠す</string>
+    <string name="str_cm_ctrlok">適用</string>
+    <string name="str_cm_ctrlresize">リサイズ</string>
+    <string name="str_cm_ctrlshow">表示</string>
+    <string name="str_cm_defaultheader">グローバルレイアウト</string>
+    <string name="str_cm_deleteforgame">特定ゲーム用レイアウトを削除</string>
+    <string name="str_cm_editctrl">ｺﾝﾄﾛｰﾗｰﾚｲｱｳﾄを編集</string>
+    <string name="str_cm_editdefault">ｸﾞﾛｰﾊﾞﾙﾚｲｱｳﾄを編集</string>
+    <string name="str_cm_editforgame">ｹﾞｰﾑﾚｲｱｳﾄを編集</string>
+    <string name="str_cm_forgameheader">特定ゲーム用レイアウト</string>
+    <string name="str_cm_layoutmenu">メニュー</string>
+    <string name="str_cm_resetdefault">既定に戻す</string>
+    <string name="str_cm_resizeok">戻る</string>
+    <string name="str_cm_resizescreen">ｽｸﾘｰﾝをﾘｻｲｽﾞ</string>
+    <string name="str_cm_savedefault">グローバルレイアウトとして保存</string>
+    <string name="str_cm_saveforgame">現在のゲームのために保存</string>
+    <string name="str_cm_selectctrltoast">エレメントを選んでください</string>
+    <string name="str_cm_selecttoast">スクリーンを選んでください</string>
+    <string name="str_cm_tool_close">ツールメニューを閉じる</string>
+    <string name="str_cm_tool_open">ツールメニューを開く</string>
+    <string name="str_cpy_fail">データを移動できませんでした。</string>
+    <string name="str_cpy_success">データを正常に移動しました。</string>
+    <string name="str_default_user">既定</string>
+    <string name="str_dev_htcone">"設定でHTC Gesturesを無効にすることで、タッチプレスの登録をアプリに許可してください。
+このデバイスではサウンドレイテンシを「一般」と「低い」に設定しないことをおすすめします。"</string>
+    <string name="str_editor_tv_end_msg">変更を保存しますか？</string>
+    <string name="str_editor_tv_start_msg">保存したレイアウトを発見しました</string>
+    <string name="str_err_badrom">このファイルは有効なROMではありません。</string>
+    <string name="str_err_encrom">"このバージョンのROMは暗号化されています。 暗号化したROMはお使いのNintendo DSからダンプしたNintendo ARM7 BIOSでしかプレイできません。
+弊社のdrastic-ds.comにあるよくある質問をご覧になり、Nintendo ARM7 BIOSについての情報を得たり、自分で暗号化を解除する方法を手に入れたりできます。"</string>
+    <string name="str_err_install">"DraSticは次のフォルダへ書き込めませんでした。 
+$path$.
+内部ストレージの空き領域と書き込み権限を確認してください。
+デバイスも再起動してみてください。"</string>
+    <string name="str_err_jniload">DraSticは初期化できません。もう一度アプリをダウンロードしてみてください。</string>
+    <string name="str_err_lowmem">このデバイスのメモリが不足しているため、DraSticは不意に終了されることがあります。</string>
+    <string name="str_err_lowmem_zip">"このデバイスが不足しているため、DraSticは不意に終了されることがあります。
+.zipファイルでプレイすればもっとメモリを消費するので、ファイルを解凍してからプレイしてください。"</string>
+    <string name="str_err_nomount">DraSticはセーブデータのフォルダを作成できません。デバイスはUSB経由でPCに接続している場合、接続を切断してＤｒａＳｔｉｃを再起動してください。</string>
+    <string name="str_err_nospace">ゲームをロードできませんでした。内部ストレージの空き領域を増やしてください。</string>
+    <string name="str_err_reload">"DraSticは一時停止したとき終了され、再起動する必要があります。
+「続きから」を押すとゲームを再開できます。"</string>
+    <string name="str_err_reload_auto">"DraSticは一時停止したとき終了され、再起動する必要があります。
+今後こういう場合も進行状況をセーブできるよう、一時停止時自動セーブをオンにしてください。
+今すぐオンにしますか？"</string>
+    <string name="str_err_romgeneral">ゲームをロードしたときエラーが発生しました。</string>
+    <string name="str_err_rootpath">DraSticはデータディレクトリにアクセスできませんでした。アプリを再起動してください。</string>
+    <string name="str_gm_changegame">ゲームを切り替える</string>
+    <string name="str_gm_cheats">チートデータベース</string>
+    <string name="str_gm_cheats_add">チートを追加</string>
+    <string name="str_gm_cheats_assorted">分類別</string>
+    <string name="str_gm_cheats_code">コード</string>
+    <string name="str_gm_cheats_custom">カスタムチート</string>
+    <string name="str_gm_cheats_custom_enable">チートを有効化</string>
+    <string name="str_gm_cheats_custom_note">ここでカスタムチートを追加できます。</string>
+    <string name="str_gm_cheats_delete">削除</string>
+    <string name="str_gm_cheats_delete_confirm">チートを削除しますか？</string>
+    <string name="str_gm_cheats_desc">記述</string>
+    <string name="str_gm_cheats_disable_all">全て無効化</string>
+    <string name="str_gm_cheats_edit">チートを編集</string>
+    <string name="str_gm_cheats_menu">メニュー</string>
+    <string name="str_gm_cheats_menu_header">カスタムチートメニュー</string>
+    <string name="str_gm_cheats_name">名前</string>
+    <string name="str_gm_cheats_ondisabled">このフォルダでは一回ひとつのチートしかを追加できませんので、その他のチートは無効になります。</string>
+    <string name="str_gm_cheats_save">セーブ</string>
+    <string name="str_gm_cheats_single">ひとつのみ選択可能</string>
+    <string name="str_gm_cheats_warning">ご注意：チート、もしくは複数のチートを有効にすると、ゲームが破損することを含むゲーム中に予期しない問題が発生することがあります。チートを有効にする後、無効にしても、通常、効果が消えません。完璧に効果を消すには、ゲームをリセットし、ゲーム内のセーブデータをロードしなければなりません。チートを使用するとき、巻き戻すためのゲーム内セーブデータがあることを確保してください！</string>
+    <string name="str_gm_custom_error_add">エラー：チートを追加できませんでした。</string>
+    <string name="str_gm_custom_error_load">エラー：チートデータベースをロードできません。</string>
+    <string name="str_gm_custom_error_save">エラー：カスタムチートをセーブできませんでした。</string>
+    <string name="str_gm_custom_invalid">チートのフォーマットは無効です。</string>
+    <string name="str_gm_custom_warning">追加しようとしていたチートはすでに存在しています。</string>
+    <string name="str_gm_exit">終了</string>
+    <string name="str_gm_hdr_game">ゲーム</string>
+    <string name="str_gm_hdr_misc">その他</string>
+    <string name="str_gm_hdr_settings">設定</string>
+    <string name="str_gm_help">ヘルプ</string>
+    <string name="str_gm_layout">画面とバーチャルパッドを編集</string>
+    <string name="str_gm_layout_hdr">編集用レイアウトを選択</string>
+    <string name="str_gm_layout_tv">画面レイアウトを編集</string>
+    <string name="str_gm_load">クイックロード</string>
+    <string name="str_gm_loadstate">状態データをロード</string>
+    <string name="str_gm_mainmenu">メインメニュー</string>
+    <string name="str_gm_managestate">状態データを管理</string>
+    <string name="str_gm_newgame">ニューゲーム</string>
+    <string name="str_gm_reset">ゲームをリセット</string>
+    <string name="str_gm_save">クイックセーブ</string>
+    <string name="str_gm_savestate">状態データをセーブ</string>
+    <string name="str_gm_savestate_warning">状態セーブデータに頼り過ぎないことを強くおすすめします。ときどきゲーム内でセーブデータも作成してください。状態データが破損される場合、または悪いタイミングで作成されてしまう場合は、ゲーム進行状況は失われます。</string>
+    <string name="str_gm_settings">オプション</string>
+    <string name="str_gm_shader_error" formatted="false">フィルタ%FILTER%をロードできませんでした。前回のフィルタに切り替えます。</string>
+    <string name="str_gm_statemenu">ロード/セーブ</string>
+    <string name="str_hm_about">アプリ情報</string>
+    <string name="str_hm_changelog">変更履歴</string>
+    <string name="str_hm_faq">FAQ</string>
+    <string name="str_hm_instructions">設定のヘルプ</string>
+    <string name="str_lic_error">"ライセンスの認証に失敗しました。
+利用可能なインターネット接続とお使いのデバイスの日付と時刻が正しいことを確認してからもう一度お試しください。
+また購入していない場合は、「購入」ボタンをクリックしてDraSticを購入できます。"</string>
+    <string name="str_lic_error_inernal">"ライセンスの認証に失敗しました。
+ラッキーパッチャーがインストールされている場合は、Googleライセンス認証エミュレーションを無効にしてください。"</string>
+    <string name="str_lic_error_licensed">"ライセンスの認証に失敗しました。
+お使いのデバイスの日付と時刻を確認してください。
+"</string>
+    <string name="str_lic_error_not_licensed">"ライセンスの認証に失敗しました。
+購入が成功したことを確認してからもう一度お試しください。"</string>
+    <string name="str_lic_error_online">"ライセンスの認証に失敗しました。
+インターネットへの接続を確認してからもう一度お試しください。
+ライセンス認証が成功する後、インターネット接続なしでもプレイいただけます。"</string>
+    <string name="str_lic_error_retry">"ライセンスの認証に失敗しました。
+利用可能なインターネット接続とお使いのデバイスの日付と時刻が正しいことを確認してからもう一度お試しください。"</string>
+    <string name="str_menu_biosdialog">"DraSticには次のBIOSファイルが必要です：
+ - nds_bios_arm7.bin （16384 バイト）
+ - nds_bios_arm9.bin （4096 バイト）
+ - nds_firmware.bin （262144 バイト）
+ 
+ これらのファイルはまだインストールされていません。ファイルをあなたの「Download」フォルダあるいはSDカードのルートディレクトリヘコピーし、「インストール」を押してください。
+ 「キャンセル」を押すとDraSticを終了します。"</string>
+    <string name="str_menu_close">終了</string>
+    <string name="str_menu_cpufail">"お使いのデバイスのCPUはサポートされていません。
+DraSticを実行するにはARMv7 CPU with Neon supportが必要です。"</string>
+    <string name="str_menu_del_confirm">セーブデータを削除しますか？</string>
+    <string name="str_menu_delete">削除</string>
+    <string name="str_menu_delsysfolder">コピーが完了する後、ソースデータを削除しますか？</string>
+    <string name="str_menu_game">アイコンをタップして画面レイアウトを変更</string>
+    <string name="str_menu_game_h2">アイコンを長押しで画面/コントローラーレイアウトを変更</string>
+    <string name="str_menu_help">ヘルプ</string>
+    <string name="str_menu_home">メインメニュー</string>
+    <string name="str_menu_iconcache">アイコンキャッシュを更新中</string>
+    <string name="str_menu_load">ロード</string>
+    <string name="str_menu_loadorresume">"前回のセーブデータをロードしますか？
+「いいえ」を押すと新規ゲームを開始します。"</string>
+    <string name="str_menu_main_confirm">このゲームを終了しますか？</string>
+    <string name="str_menu_movesysfolder">データを/sdcard/DraSticヘコピーしますか？今後、アプリをインストールか再インストールしてもデータを保存できます。</string>
+    <string name="str_menu_no">いいえ</string>
+    <string name="str_menu_overwrite">セーブ</string>
+    <string name="str_menu_pause">ゲームメニュー</string>
+    <string name="str_menu_quit">DraSticを終了</string>
+    <string name="str_menu_quit_confirm">アプリを終了しますか？</string>
+    <string name="str_menu_reset">リセット</string>
+    <string name="str_menu_reset_confirm">"ゲームをリセットしますか？
+現在の進行状況は失われます。"</string>
+    <string name="str_menu_romscan">ゲームをスキャン中</string>
+    <string name="str_menu_rootmoved">DraSticのデータディレクトリは次にセットしました：</string>
+    <string name="str_menu_save">セーブ</string>
+    <string name="str_menu_saving_busy">今はセーブ中です</string>
+    <string name="str_menu_settings">設定</string>
+    <string name="str_menu_shortcut">デスクトップにショートカットをインストールしますか？</string>
+    <string name="str_menu_stateheader">スロットを選択してロードかセーブを選択し、ロードかセーブできます。</string>
+    <string name="str_menu_states">ロード/セーブ</string>
+    <string name="str_menu_wo_confirm">セーブデータを上書きしますか？</string>
+    <string name="str_menu_yes">はい</string>
+    <string name="str_rom_continue">前回のセーブデータで続きから</string>
+    <string name="str_rom_delete">ゲームを永遠に消しますか？</string>
+    <string name="str_rom_loadstate">その他のセーブデータからコンティニュー</string>
+    <string name="str_rom_newgame">ゲームをスタート</string>
+    <string name="str_rom_shortcut">ショートカットを作成</string>
+    <string name="str_set_analogtouch">スティックを右にする</string>
+    <string name="str_set_analogtouch_title">右スティックモード</string>
+    <string name="str_set_analogtriggers">模擬トリガーを有効化</string>
+    <string name="str_set_autofirespeed">自動ファイア速度</string>
+    <string name="str_set_autoload">自動ロード</string>
+    <string name="str_set_autoload_hint">クイック選択ウィンドウからゲームをスタートするとき、自動的に前回のセーブデータをロードします。</string>
+    <string name="str_set_autoresume">ショートカットから入る時前回のセーブデータを回復</string>
+    <string name="str_set_autorotate">横長レイアウトに回転</string>
+    <string name="str_set_autosave">自動セーブ</string>
+    <string name="str_set_autosave_hint">アプリを一時停止するまたはゲームを離れる場合</string>
+    <string name="str_set_autotrim">自動的にROMをトリミング</string>
+    <string name="str_set_backupinsave">状態セーブデータにゲーム内セーブデータを保存</string>
+    <string name="str_set_backupinsave_warn">"警告：このオプションを無効にすると、状態データとゲーム内セーブデータとのシンクロを切断し、セーブデータを壊す可能性があります。
+設定を反映するにはDraSticを再起動してください。"</string>
+    <string name="str_set_bday">誕生日</string>
+    <string name="str_set_bday_hint">月/日</string>
+    <string name="str_set_bday_ok">設定</string>
+    <string name="str_set_btn_advanced">その他</string>
+    <string name="str_set_btn_audio">オーディオ</string>
+    <string name="str_set_btn_controller">外部コントローラー</string>
+    <string name="str_set_btn_general">一般</string>
+    <string name="str_set_btn_input">バーチャルゲームパッド</string>
+    <string name="str_set_btn_system">システム</string>
+    <string name="str_set_btn_video">ビデオ</string>
+    <string name="str_set_btnmod">アクションボタンタッチエリアを編集</string>
+    <string name="str_set_caching">ファイルを解凍</string>
+    <string name="str_set_cheats">チートを有効化</string>
+    <string name="str_set_color">好きなカラー</string>
+    <string name="str_set_confirm">終了/リセット確認を表示</string>
+    <string name="str_set_confirm_hint">誤操作によるデータの失いを避けるため、ゲームを終了またはリセットするとき確認を表示します。</string>
+    <string name="str_set_ctrlalpha">コントローラー不透過度</string>
+    <string name="str_set_ctrlskin">テーマ</string>
+    <string name="str_set_ctrlskin_default">既定</string>
+    <string name="str_set_custom_clock">システム時計をカスタマイズ</string>
+    <string name="str_set_custom_clock_enable">カスタム時計を有効化</string>
+    <string name="str_set_custom_clock_msg">"ご注意：
+カスタム時刻を設定すると、状態データとともに使えば問題が発生することがあります。
+設定を反映するにはゲームを再起動してください。"</string>
+    <string name="str_set_deadzone">右スティックデッドゾーン（タッチ操作無効エリア）</string>
+    <string name="str_set_debuginfo">デバッグ情報：</string>
+    <string name="str_set_defaultlayout">既定レイアウト</string>
+    <string name="str_set_devicebtn">戻るキーを無効化</string>
+    <string name="str_set_devicebtn_hint">"ゲームをプレイ中に誤って触ることを避けてください。
+有効にしてもメニューではボタンが利用可能です。"</string>
+    <string name="str_set_disablemapped">画面上のマッピングされたボタンを無効化</string>
+    <string name="str_set_disablemapped_hint">マッピングされたボタンはコントローラーオーバーレイでは利用不可になります。</string>
+    <string name="str_set_display_border">表示ボーダー</string>
+    <string name="str_set_dpadmod">Dパッドタッチエリアを編集</string>
+    <string name="str_set_edge_marking">辺縁マーキングを無効化</string>
+    <string name="str_set_extdisplay">外部表示モード</string>
+    <string name="str_set_extdisplay_border">外部表示ボーダー</string>
+    <string name="str_set_extdisplay_na">サポートされません。Android 4.2.2以降は必要です。</string>
+    <string name="str_set_extdisplay_screen">外部表示スクリーン</string>
+    <string name="str_set_extrafunc_1">特殊ボタンI</string>
+    <string name="str_set_extrafunc_2">特殊ボタンII</string>
+    <string name="str_set_extrafunc_3">特殊ボタンIII</string>
+    <string name="str_set_ffwd">早送り</string>
+    <string name="str_set_ffwd_150">150%</string>
+    <string name="str_set_ffwd_200">200%</string>
+    <string name="str_set_ffwd_300">300%</string>
+    <string name="str_set_ffwd_400">400%</string>
+    <string name="str_set_ffwd_50">50%</string>
+    <string name="str_set_ffwd_indicator">早送りインジケーターを表示</string>
+    <string name="str_set_ffwd_speed">早送り最大スピード</string>
+    <string name="str_set_ffwd_unlimited">無制限</string>
+    <string name="str_set_ffwdtoggle">早送りスイッチモード</string>
+    <string name="str_set_fh2x">HQ2X</string>
+    <string name="str_set_filter">フィルタ</string>
+    <string name="str_set_fixmainscreen">メインスクリーンをトップに維持</string>
+    <string name="str_set_flinear">Linear</string>
+    <string name="str_set_fnone">なし</string>
+    <string name="str_set_fpstransparent">透明FPS表示</string>
+    <string name="str_set_fquilez">Quilez</string>
+    <string name="str_set_fs">フレームのスキップ</string>
+    <string name="str_set_fs2x">Scale2X</string>
+    <string name="str_set_fs_auto">自動</string>
+    <string name="str_set_fs_manual">カスタム</string>
+    <string name="str_set_fs_none">なし</string>
+    <string name="str_set_fs_value">フレームのスキップ量</string>
+    <string name="str_set_gl16bit">16ビットレンダリング</string>
+    <string name="str_set_gl_sleep">レンダリングスレッドでスリープ</string>
+    <string name="str_set_haptic">バイブフィードバック</string>
+    <string name="str_set_hdr_advanced">その他の設定</string>
+    <string name="str_set_hdr_audio">オーディオ設定</string>
+    <string name="str_set_hdr_controller">外部コントローラー設定</string>
+    <string name="str_set_hdr_general">一般設定</string>
+    <string name="str_set_hdr_input">バーチャルゲームパッド設定</string>
+    <string name="str_set_hdr_system">システム設定</string>
+    <string name="str_set_hdr_video">ビデオ設定</string>
+    <string name="str_set_hires">高解像度3Dレンダリング</string>
+    <string name="str_set_ignorecardlimit">ゲームカード制限を無視</string>
+    <string name="str_set_key_cancel">キャンセル</string>
+    <string name="str_set_key_skip">スキップ</string>
+    <string name="str_set_keyconfig">キーマッピングを設定</string>
+    <string name="str_set_keycustom">画面中のコントローラーをカスタマイズ</string>
+    <string name="str_set_keyinput">キーを押す：</string>
+    <string name="str_set_keymap">コントロールをマッピング</string>
+    <string name="str_set_keymap_extra">特殊マッピング</string>
+    <string name="str_set_keymap_show">マッピング表示</string>
+    <string name="str_set_keymapid">マッピングセットを選択</string>
+    <string name="str_set_keymapname">名前を変更</string>
+    <string name="str_set_keymapnull">マッピングなし</string>
+    <string name="str_set_keyname">デバイス名を設定</string>
+    <string name="str_set_keyname_ok">OK</string>
+    <string name="str_set_language">マルチ言語ゲームの言語</string>
+    <string name="str_set_language_title">システム言語</string>
+    <string name="str_set_layout">レイアウトを選択</string>
+    <string name="str_set_loadconfirm">状態データロード確認を表示</string>
+    <string name="str_set_lowrestextures">低解像度UIテクスチャを使用</string>
+    <string name="str_set_mapping_device">ボタン</string>
+    <string name="str_set_mapping_function">機能</string>
+    <string name="str_set_mapping_info">既定マッピング：</string>
+    <string name="str_set_menubtn">メニューキーを無効化</string>
+    <string name="str_set_menubtn_pos">メニューボタン位置</string>
+    <string name="str_set_menubtn_warn">メニューを開くためのボタンが割り当てられている場合だけはメニューボタンを隠します。</string>
+    <string name="str_set_message">メッセージ</string>
+    <string name="str_set_micenabled">デバイスマイクを有効化</string>
+    <string name="str_set_miclevel">マイクレベル</string>
+    <string name="str_set_nick">ニックネーム</string>
+    <string name="str_set_nodiagonals">画面Dパッドの斜め入力を無効化</string>
+    <string name="str_set_none">なし</string>
+    <string name="str_set_overwrite">状態データ上書き確認を表示</string>
+    <string name="str_set_restart_req">変更を反映するにはDraSticを再起動してください</string>
+    <string name="str_set_rtc_system_time">常にシステム時刻をRTCとして使用</string>
+    <string name="str_set_scaling">Scaling Mode</string>
+    <string name="str_set_settings">設定を変更</string>
+    <string name="str_set_showfps">FPS表示</string>
+    <string name="str_set_showmore">スタートとセレクトボタンを常に表示</string>
+    <string name="str_set_sl_hi">高い</string>
+    <string name="str_set_sl_low">低い</string>
+    <string name="str_set_sl_med">一般</string>
+    <string name="str_set_sl_vhi">とても高い</string>
+    <string name="str_set_smartedit">レイアウトエディタで自動的にスナップまたはリサイズ</string>
+    <string name="str_set_soundenabled">サウンドを有効化</string>
+    <string name="str_set_soundlatency">サウンドレイテンシ</string>
+    <string name="str_set_soundvolume">音量</string>
+    <string name="str_set_threaded">マルチスレッド3Dレンダリング</string>
+    <string name="str_set_threaded_hint">"3D効果の多くのゲームのパーフォーマンスを向上させます。しかし、かえってあるゲームでは画面の故障を起こすことがあります（画面のスワップなど）。
+レンダリング故障が発生する場合、このオプションをオフにしてください。
+変更を反映するにはDraSticを再起動してください。"</string>
+    <string name="str_set_threaded_no">この設定はシングルコアCPUデバイスに利用不可です。</string>
+    <string name="str_set_threaded_warn">設定を反映するにはDraSticを再起動してください。これは実験的な機能であり、問題を発生させる、またはアプリをクラッシュさせることがあります。問題を避けるには、オフにしてください。</string>
+    <string name="str_set_touchthrough">コントローラーの押しをDSタッチスクリーンにも送る</string>
+    <string name="str_set_volume_value">音量</string>
+    <string name="str_set_wifi">マルチプレイヤー/WiFi</string>
+    <string name="str_set_wifi_msg">申し訳ございませんが、エミュレータはマルチプレイヤー/WiFiをサポートしておりません。</string>
+    <string name="str_sm_back">"ゲームへ
+戻る"</string>
+    <string name="str_sm_bioserror">違うBIOSファイルで作成されているため、このセーブデータをサポートしません。</string>
+    <string name="str_sm_copy">コピー</string>
+    <string name="str_sm_copyok">状態データのコピーを作成しました。</string>
+    <string name="str_sm_delete">削除</string>
+    <string name="str_sm_deleteok">セーブデータを削除しました</string>
+    <string name="str_sm_empty">空きリスト</string>
+    <string name="str_sm_load">状態データをロード</string>
+    <string name="str_sm_manage">状態データを管理</string>
+    <string name="str_sm_newsave">新規状態データ</string>
+    <string name="str_sm_play">プレイ</string>
+    <string name="str_sm_save">状態データをセーブ</string>
+    <string name="str_sm_saveok">ゲームはセーブしました</string>
+    <string name="str_sm_sloterror">空きスロットなし</string>
+    <string name="str_sm_state_corrupted">状態データは破損しています！</string>
+    <string name="str_sm_state_played">プレイ時間</string>
+    <string name="str_sm_state_size">サイズ</string>
+    <string name="str_sm_state_version">作成日時</string>
+    <string name="str_sys_copyerror">外部ストレージにアクセスできません。</string>
+    <string name="str_sys_copyingsysfolder">データを移動しています</string>
+    <string name="str_sys_deletesysfolder">データを削除しています</string>
+    <string name="str_ui_gamedetail">ゲームをスタート</string>
+    <string name="str_ui_gameselect">ゲームを選択</string>
+    <string name="str_ui_help_firstgame">"ゲーム中は、「メニュー」キーを押すと、画面レイアウト、設定を変更したりセーブまたはロードしたりできます。
+
+スタイラスペンだけが必要なゲームをプレイするとき、スタイラスアイコンを押してコントローラーオーバーレイを隠せます。
+
+なお、「オプション」メニューではコントローラーとタッチスクリーンの振る舞いの変更などのいろいろな設定があります。
+さらには、Bluetoothで外部コントローラーをお使いのデバイスヘ接続し、「オプション」メニューでコントローラーのボタンをマップすることもできます。"</string>
+    <string name="str_ui_help_firstsinglescreen">シングルスクリーンモードでプレイする場合は、重要な情報、メニューなどを見落とすことがありますので、ご注意ください。</string>
+    <string name="str_ui_help_licerror">"確かにDraSticを購入したが、ライセンスエラーがまた発生する場合、これらのステップをお試しください：
+
+ 1. お使いのデバイスの日付と時刻が正しくセットされており、利用可能なインターネット接続があることを確定する
+ 2. 「設定->アプリ->全て」でGoogle Playアプリとサービスのキャッシュとデータを削除する
+
+ ライセンスエラーがそれでも発生する場合は、次のステップもお試しください：
+
+ 3. DraSticをアンインストールする
+ 4. お使いのデバイスを再起動する
+ 5. もう一度Google PlayからDraSticをダウンロードしてインストールする"</string>
+    <string name="str_ui_helptouch">画面をタッチすると続行</string>
+    <string name="str_ui_loadconfirm">セーブデータをロードしますか？</string>
+    <string name="str_ui_nofiles">利用可能なゲームなし</string>
+    <string name="str_ui_numsaves">セーブデータ</string>
+    <string name="str_ui_overwrite">セーブデータを上書きしますか？</string>
+    <string name="str_ui_quickselect">ゲームクイック選択</string>
+    <string name="str_ui_setcheats">チート</string>
+    <string name="str_ui_setcheatscustom">カスタムチート</string>
+    <string name="str_user_info">ユーザー：</string>
+    <string name="str_user_title">現在のユーザー：</string>
+</resources>

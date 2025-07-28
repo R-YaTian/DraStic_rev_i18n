@@ -1,0 +1,186 @@
+
+<vertex>
+attribute vec2 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+
+varying vec2 v_pos;
+
+void main() {
+  gl_Position = vec4(a_vertex_coordinate.xy, 0.0, 1.0);
+  v_pos.xy = a_texture_coordinate.xy;
+}
+</vertex>
+
+<fragment>
+
+#define FXAA_QUALITY_SUBPIX_TRIM (1.0/4.0)
+#define FXAA_QUALITY_SUBPIX_TRIM_SCALE  (1.0/(1.0 - FXAA_QUALITY_SUBPIX_TRIM))
+#define FXAA_SEARCH_STEPS     6
+#define FXAA_SEARCH_THRESHOLD (1.0/4.0)
+#define FXAA_QUALITY_SUBPIX_CAP (3.0/4.0)
+#define FXAA_QUALITY_EDGE_THRESHOLD (1.0/6.0)
+#define FXAA_QUALITY_EDGE_THRESHOLD_MIN (1.0/12.0)
+
+#define float2 vec2
+#define float3 vec3
+#define float4 vec4
+#define FxaaInt2 vec2
+#define FxaaFloat2 vec2
+#define FxaaFloat3 vec3
+#define FxaaFloat4 vec4
+#define FxaaDiscard discard
+#define FxaaDot3(a, b) dot(a, b)
+#define FxaaSat(x) clamp(x, 0.0, 1.0)
+#define FxaaLerp(x,y,s) mix(x,y,s)
+#define FxaaTex sampler2D
+#define FxaaTexTop(t, p) texture2D(t, p)
+#define FxaaTexOff(t, p, o, r) texture2D(t, p + (o * r))
+
+
+uniform sampler2D u_texture;
+
+varying vec2 v_pos;
+
+float4 FxaaPixelShader(
+    // {xy} = center of pixel
+    float2 pos,
+    // {xyzw} = not used on FXAA3 Quality
+    float4 posPos,       
+    // {rgb_} = color in linear or perceptual color space
+    // {___a} = luma in perceptual color space (not linear) 
+    FxaaTex tex,
+    // This must be from a constant/uniform.
+    // {x_} = 1.0/screenWidthInPixels
+    // {_y} = 1.0/screenHeightInPixels
+    float2 rcpFrame,
+    // {xyzw} = not used on FXAA3 Quality
+    float4 rcpFrameOpt 
+) {   
+
+    float lumaN = FxaaTexOff(tex, pos.xy, FxaaInt2(0, -1), rcpFrame.xy).w;
+    float lumaW = FxaaTexOff(tex, pos.xy, FxaaInt2(-1, 0), rcpFrame.xy).w;
+    float4 rgbyM = FxaaTexTop(tex, pos.xy);
+    float lumaE = FxaaTexOff(tex, pos.xy, FxaaInt2( 1, 0), rcpFrame.xy).w;
+    float lumaS = FxaaTexOff(tex, pos.xy, FxaaInt2( 0, 1), rcpFrame.xy).w;
+    float lumaM = rgbyM.w;
+
+    float rangeMin = min(lumaM, min(min(lumaN, lumaW), min(lumaS, lumaE)));
+    float rangeMax = max(lumaM, max(max(lumaN, lumaW), max(lumaS, lumaE)));
+    float range = rangeMax - rangeMin;
+
+    if(range < max(FXAA_QUALITY_EDGE_THRESHOLD_MIN, rangeMax * FXAA_QUALITY_EDGE_THRESHOLD))
+    {
+      return rgbyM;
+    }
+
+    float lumaNW = FxaaTexOff(tex, pos.xy, FxaaInt2(-1,-1), rcpFrame.xy).w;
+    float lumaNE = FxaaTexOff(tex, pos.xy, FxaaInt2( 1,-1), rcpFrame.xy).w;
+    float lumaSW = FxaaTexOff(tex, pos.xy, FxaaInt2(-1, 1), rcpFrame.xy).w;
+    float lumaSE = FxaaTexOff(tex, pos.xy, FxaaInt2( 1, 1), rcpFrame.xy).w;
+
+    float lumaL = (lumaN + lumaW + lumaE + lumaS) * 0.25;
+    float rangeL = abs(lumaL - lumaM);
+    float blendL = FxaaSat((rangeL / range) - FXAA_QUALITY_SUBPIX_TRIM) * FXAA_QUALITY_SUBPIX_TRIM_SCALE; 
+    blendL = min(FXAA_QUALITY_SUBPIX_CAP, blendL);
+
+    float edgeVert = 
+              abs(lumaNW + (-2.0 * lumaN) + lumaNE) +
+        2.0 * abs(lumaW  + (-2.0 * lumaM) + lumaE ) +
+              abs(lumaSW + (-2.0 * lumaS) + lumaSE);
+    float edgeHorz = 
+              abs(lumaNW + (-2.0 * lumaW) + lumaSW) +
+        2.0 * abs(lumaN  + (-2.0 * lumaM) + lumaS ) +
+              abs(lumaNE + (-2.0 * lumaE) + lumaSE);
+    bool horzSpan = edgeHorz >= edgeVert;
+
+    float lengthSign = horzSpan ? -rcpFrame.y : -rcpFrame.x;
+    if(!horzSpan) lumaN = lumaW;
+    if(!horzSpan) lumaS = lumaE;
+    float gradientN = abs(lumaN - lumaM);
+    float gradientS = abs(lumaS - lumaM);
+    lumaN = (lumaN + lumaM) * 0.5;
+    lumaS = (lumaS + lumaM) * 0.5;
+
+    bool pairN = gradientN >= gradientS;
+    if(!pairN) lumaN = lumaS;
+    if(!pairN) gradientN = gradientS;
+    if(!pairN) lengthSign *= -1.0;
+    float2 posN;
+    posN.x = pos.x + (horzSpan ? 0.0 : lengthSign * 0.5);
+    posN.y = pos.y + (horzSpan ? lengthSign * 0.5 : 0.0);
+
+    gradientN *= FXAA_SEARCH_THRESHOLD;
+
+    float2 posP = posN;
+    float2 offNP = horzSpan ? 
+        FxaaFloat2(rcpFrame.x, 0.0) :
+        FxaaFloat2(0.0, rcpFrame.y); 
+    float lumaEndN;
+    float lumaEndP;
+    bool doneN = false;
+    bool doneP = false;
+    posN += offNP * (-1.5);
+    posP += offNP * ( 1.5);
+    for(int i = 0; i < FXAA_SEARCH_STEPS; i++) {
+        lumaEndN = FxaaTexTop(tex, posN.xy).w;
+        lumaEndP = FxaaTexTop(tex, posP.xy).w;
+        bool doneN2 = abs(lumaEndN - lumaN) >= gradientN;
+        bool doneP2 = abs(lumaEndP - lumaN) >= gradientN;
+        if(doneN2 && !doneN) posN += offNP;
+        if(doneP2 && !doneP) posP -= offNP;
+        if(doneN2 && doneP2) break;
+        doneN = doneN2;
+        doneP = doneP2;
+        if(!doneN) posN -= offNP * 2.0;
+        if(!doneP) posP += offNP * 2.0; 
+    }
+
+    float dstN = horzSpan ? pos.x - posN.x : pos.y - posN.y;
+    float dstP = horzSpan ? posP.x - pos.x : posP.y - pos.y;
+
+    bool directionN = dstN < dstP;
+    lumaEndN = directionN ? lumaEndN : lumaEndP;
+
+    if(((lumaM - lumaN) < 0.0) == ((lumaEndN - lumaN) < 0.0)) 
+        lengthSign = 0.0;
+
+    float spanLength = (dstP + dstN);
+    dstN = directionN ? dstN : dstP;
+    float subPixelOffset = 0.5 + (dstN * (-1.0/spanLength));
+    subPixelOffset += blendL * (1.0/8.0);
+    subPixelOffset *= lengthSign;
+    float3 rgbF = texture2D(tex, vec2(
+        pos.x + (horzSpan ? 0.0 : subPixelOffset),
+        pos.y + (horzSpan ? subPixelOffset : 0.0))).xyz;
+
+
+    float lumaF = dot(rgbF, float3(0.299, 0.587, 0.114)) + (1.0/(65536.0*256.0));
+    float lumaB = FxaaLerp(lumaF, lumaL, blendL);
+    float scale = min(4.0, lumaB/lumaF);
+    rgbF *= scale;
+    return float4(rgbF, lumaM); 
+}
+
+void main()
+{
+  vec4 c = vec4(0.0);
+  vec2 rcpFrame = u_texture_size.xy;
+  
+  gl_FragColor = FxaaPixelShader(
+    // {xy} = center of pixel
+    v_pos,
+    // {xyzw} = not used on FXAA3 Quality
+    c,
+    // {rgb_} = color in linear or perceptual color space
+    // {___a} = luma in perceptual color space (not linear) 
+    u_texture,
+    // This must be from a constant/uniform.
+    // {x_} = 1.0/screenWidthInPixels
+    // {_y} = 1.0/screenHeightInPixels
+    rcpFrame,
+    // {xyzw} = not used on FXAA3 Quality
+    c
+  );
+}
+
+</fragment>

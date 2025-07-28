@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/state_list_bg_tv" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0sp">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tw_cheatfolder" android:paddingLeft="30.0sp" android:paddingTop="2.0sp" android:paddingRight="6.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0sp" android:layout_marginTop="3.0sp" android:layout_marginRight="3.0sp" android:text="@string/empty" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffffe0" android:id="@id/tw_cheatfoldernote" android:paddingLeft="30.0sp" android:paddingRight="6.0sp" android:paddingBottom="2.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0sp" android:layout_marginRight="3.0sp" android:layout_marginBottom="3.0sp" android:text="@string/empty" android:layout_below="@id/tw_cheatfolder" />
+        <ImageView android:id="@id/iv_expandicon" android:background="@drawable/ic_expand_less_white_18dp" android:layout_width="18.0sp" android:layout_height="18.0sp" android:layout_marginLeft="6.0sp" android:layout_marginTop="6.0sp" android:contentDescription="@string/empty" />
+    </RelativeLayout>
+    <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#dd222222" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="40.0sp" android:max="100" android:indeterminate="false" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:progressBarStyleHorizontal" />
+    <TextView android:textSize="14.0sp" android:textColor="#fffffffe" android:id="@id/tw_migratemsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:text="@string/empty" android:layout_alignBottom="@id/progressBar" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#fffffffe" android:id="@id/tw_migratestatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/empty" android:layout_alignTop="@id/progressBar" android:layout_centerHorizontal="true" />
+</RelativeLayout>

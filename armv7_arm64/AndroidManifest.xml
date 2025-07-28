@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" android:persistent="false" package="com.dsemu.drastic" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:maxSdkVersion="26" android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.audio.low_latency" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.gamepad" android:required="true"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@drawable/banner_icon" android:hasFragileUserData="true" android:icon="@drawable/ic_launcher" android:isGame="true" android:label="@string/app_name" android:largeHeap="true" android:logo="@drawable/banner_icon" android:name="com.dsemu.drastic.DraSticApplication" android:persistent="false" android:theme="@style/AppBaseTheme">
+        <meta-data android:name="xperiaplayoptimized_content" android:resource="@drawable/ic_launcher"/>
+        <meta-data android:name="android.max_aspect" android:value="9.0"/>
+        <profileable android:shell="true"/>
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.dsemu.drastic.DraSticActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.nds"/>
+                <data android:pathPattern=".*\\..*\\.nds"/>
+                <data android:pathPattern=".*\\..*\\..*\\.nds"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.nds"/>
+                <data android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dsemu.drastic.ui.RomSelector"/>
+        <activity android:name="com.dsemu.drastic.ui.Settings"/>
+        <activity android:name="com.dsemu.drastic.ui.KeyMapper"/>
+        <activity android:name="com.dsemu.drastic.ui.KeyMapperTV"/>
+        <activity android:name="com.dsemu.drastic.ui.KeyNamer"/>
+        <activity android:name="com.dsemu.drastic.ui.AddUser"/>
+        <activity android:name="com.dsemu.drastic.ui.Customizer" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.dsemu.drastic.ui.CustomizerTV" android:theme="@style/AppTvBaseTheme"/>
+        <activity android:name="com.dsemu.drastic.ui.Cheats"/>
+        <activity android:name="com.dsemu.drastic.ui.CheatsCustom"/>
+        <activity android:name="com.dsemu.drastic.ui.CheatEditor"/>
+        <activity android:name="com.dsemu.drastic.ui.Help"/>
+        <activity android:name="com.dsemu.drastic.ui.ContextHelp"/>
+        <activity android:name="com.dsemu.drastic.ui.RomScanActivity" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:name="com.dsemu.drastic.ui.IconCacheActivity" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:name="com.dsemu.drastic.ui.SystemMigrationActivity" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:name="com.dsemu.drastic.ui.SaveActivity" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:name="com.dsemu.drastic.ui.StateMenu"/>
+        <activity android:name="com.dsemu.drastic.ui.GameMenu"/>
+        <activity android:name="com.dsemu.drastic.ui.MappingInfo"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.dsemu.drastic.DraSticEmuActivity"/>
+        <activity android:name="com.dsemu.drastic.ui.FilePicker" android:windowSoftInputMode="stateHidden"/>
+        <provider android:authorities="com.dsemu.drastic.provider" android:enabled="@bool/isAtLeastQ" android:exported="true" android:grantUriPermissions="true" android:name="com.dsemu.drastic.DraSticDataProvider" android:permission="android.permission.MANAGE_DOCUMENTS">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER"/>
+            </intent-filter>
+        </provider>
+        <provider android:authorities="com.dsemu.drastic.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="11"/>
+    </application>
+</manifest>

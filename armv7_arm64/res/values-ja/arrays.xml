@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="set_analogstick_items">
+        <item>無効</item>
+        <item>FPSモード</item>
+        <item>スティックモード</item>
+        <item>ポインタモード</item>
+    </string-array>
+    <string-array name="set_audio_latency_items">
+        <item>低い</item>
+        <item>一般</item>
+        <item>高い</item>
+        <item>とても高い</item>
+    </string-array>
+    <string-array name="set_autofire_frequency">
+        <item>スピード 1（最速）</item>
+        <item>スピード 2</item>
+        <item>スピード 3</item>
+        <item>スピード 4</item>
+        <item>スピード 5（最遅）</item>
+    </string-array>
+    <string-array name="set_autosave_type">
+        <item>無効</item>
+        <item>一時停止時</item>
+        <item>5分毎</item>
+        <item>15分毎</item>
+        <item>30分毎</item>
+    </string-array>
+    <string-array name="set_cheat_menu_tv">
+        <item>新規チートを追加</item>
+        <item>チートを全て無効化</item>
+        <item>選択したチートを編集</item>
+    </string-array>
+    <string-array name="set_editor_endmenu_tv">
+        <item>グローバルレイアウトとして保存</item>
+        <item>ゲームレイアウトとして保存</item>
+        <item>編集に戻る</item>
+        <item>破棄して終了</item>
+    </string-array>
+    <string-array name="set_editor_startmenu_tv">
+        <item>既定レイアウトを使用</item>
+        <item>グローバルレイアウトを使用</item>
+        <item>特定ゲーム用レイアウトをロード</item>
+    </string-array>
+    <string-array name="set_extdisplay_screen">
+        <item>トップ画面</item>
+        <item>ボトム画面</item>
+    </string-array>
+    <string-array name="set_extdisplay_type">
+        <item>デバイスの設定に従う</item>
+        <item>アスペクト比を修正</item>
+        <item>フルスクリーン</item>
+    </string-array>
+    <string-array name="set_extra_funcs">
+        <item>無効</item>
+        <item>早送り</item>
+        <item>クイックセーブ</item>
+        <item>クイックロード</item>
+        <item>トップ/ボトム画面を交換</item>
+        <item>一と二の画面レイアウトを交換</item>
+        <item>バーチャルボタンを表示/隠す</item>
+        <item>マイクノイズを模擬</item>
+        <item>横長レイアウトに回転</item>
+        <item>自動ファイアをオン/オフ</item>
+    </string-array>
+    <string-array name="set_ffwd_speed_items">
+        <item>50%</item>
+        <item>150%</item>
+        <item>200%</item>
+        <item>300%</item>
+        <item>400%</item>
+        <item>無制限</item>
+    </string-array>
+    <string-array name="set_filer_items">
+        <item>なし</item>
+        <item>Linear</item>
+        <item>Scale2X</item>
+        <item>HQ2X</item>
+        <item>Quilez</item>
+    </string-array>
+    <string-array name="set_filer_items_1cpu">
+        <item>なし</item>
+        <item>Linear</item>
+        <item>Quilez</item>
+    </string-array>
+    <string-array name="set_fs_items">
+        <item>無効</item>
+        <item>カスタム</item>
+        <item>自動</item>
+    </string-array>
+    <string-array name="set_fw_colors">
+        <item>Light Slate Gray</item>
+        <item>Redwood</item>
+        <item>Deep Chestnut</item>
+        <item>Medium Lavender Magenta</item>
+        <item>Persian Orange</item>
+        <item>Burlywood</item>
+        <item>Dark Khaki</item>
+        <item>Mantis</item>
+        <item>Viridian</item>
+        <item>Dark Sea Green</item>
+        <item>Moonstone blue</item>
+        <item>Tufts Blue</item>
+        <item>Dark Cerulean</item>
+        <item>Toolbox</item>
+        <item>Rich Lavender</item>
+        <item>Mulberry</item>
+    </string-array>
+    <string-array name="set_fw_languages">
+        <item>日本語</item>
+        <item>English</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Italiano</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="set_gm_layouts">
+        <item>横長 1:1</item>
+        <item>横長 x:1</item>
+        <item>縦長 1:1</item>
+        <item>横長アスペクト</item>
+        <item>横長フルスクリーン</item>
+    </string-array>
+    <string-array name="set_gm_layouts_tv">
+        <item>横長 1:1</item>
+        <item>横長 x:1</item>
+        <item>縦長 1:1</item>
+        <item>横長アスペクト</item>
+        <item>横長フルスクリーン</item>
+        <item>縦長左回転</item>
+        <item>縦長右回転</item>
+    </string-array>
+    <string-array name="set_mapping_default">
+        <item>D-Pad;D-Pad, メニューでナビ</item>
+        <item>左ｽﾃｨｯｸ;D-Pad, メニューでナビ</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, ﾒﾆｭｰでｷｬﾝｾﾙ</item>
+        <item>A;B, ﾒﾆｭｰで確認</item>
+        <item>Play;スタート</item>
+        <item>Back;ﾒﾆｭｰを開く</item>
+        <item>L1;Lﾄﾘｶﾞｰ</item>
+        <item>R1;Rﾄﾘｶﾞｰ</item>
+        <item>L3;スクリーンを交換</item>
+        <item>R3;一と二の画面レイアウトを交換</item>
+    </string-array>
+    <string-array name="set_mapping_moga_pocket">
+        <item>左ｽﾃｨｯｸ;D-Pad, メニューでナビ</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, ﾒﾆｭｰでｷｬﾝｾﾙ</item>
+        <item>A;B, ﾒﾆｭｰで確認</item>
+        <item>L;L</item>
+        <item>R;R</item>
+        <item>Start;スタート</item>
+        <item>Select;ﾒﾆｭｰを開く</item>
+        <item>Select+L;クイックロード</item>
+        <item>Select+R;クイックセーブ</item>
+        <item>Select+X;早送り</item>
+        <item>Select+Y;スクリーンを交換</item>
+    </string-array>
+    <string-array name="set_mapping_moga_pro">
+        <item>D-Pad;D-Pad, メニューでナビ</item>
+        <item>左ｽﾃｨｯｸ;D-Pad, メニューでナビ</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, ﾒﾆｭｰでｷｬﾝｾﾙ</item>
+        <item>A;B, ﾒﾆｭｰで確認</item>
+        <item>L2;L</item>
+        <item>R2;R</item>
+        <item>Start;スタート</item>
+        <item>Select;セレクト</item>
+        <item>L3;ﾒﾆｭｰを開く</item>
+        <item>R3+L1;クイックロード</item>
+        <item>R3+R1;クイックセーブ</item>
+        <item>L1;スクリーンを交換</item>
+        <item>R1;早送り</item>
+    </string-array>
+    <string-array name="set_mapping_shield">
+        <item>D-Pad;D-Pad, メニューでナビ</item>
+        <item>左ｽﾃｨｯｸ;D-Pad, メニューでナビ</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, ﾒﾆｭｰでｷｬﾝｾﾙ</item>
+        <item>A;B, ﾒﾆｭｰで確認</item>
+        <item>Play;スタート</item>
+        <item>Back;ﾒﾆｭｰを開く</item>
+        <item>L1;ﾀｯﾁｽｸﾘｰﾝﾎﾟｲﾝﾀ押し</item>
+        <item>R1;早送り</item>
+        <item>L2;L</item>
+        <item>R2;R</item>
+        <item>L3;スクリーンを交換</item>
+        <item>R3;一と二の画面レイアウトを交換</item>
+    </string-array>
+    <string-array name="set_mapping_xperiaplay">
+        <item>D-Pad;D-Pad, メニューでナビ</item>
+        <item>Select;セレクト</item>
+        <item>Start;スタート</item>
+        <item>Triangle;X</item>
+        <item>Square;Y</item>
+        <item>Circle;A、ﾒﾆｭｰでｷｬﾝｾﾙ</item>
+        <item>X;B, ﾒﾆｭｰで確認</item>
+        <item>L;L</item>
+        <item>R;R</item>
+        <item>Menu;ﾒﾆｭｰを開く</item>
+    </string-array>
+    <string-array name="set_menu_button_position">
+        <item>ボトム</item>
+        <item>トップ</item>
+        <item>左</item>
+        <item>右</item>
+        <item>非表示</item>
+    </string-array>
+    <string-array name="set_mic_level_items">
+        <item>低い</item>
+        <item>一般</item>
+        <item>高い</item>
+        <item>とても高い</item>
+    </string-array>
+    <string-array name="set_rotation_type">
+        <item>自動</item>
+        <item>横長</item>
+        <item>反転した横長</item>
+    </string-array>
+</resources>

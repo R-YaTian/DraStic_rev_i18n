@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:background="@color/menu_bg_header">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_settings_back_video_game" android:background="@drawable/btn_back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />
+                <ImageView android:src="@drawable/con_ds" android:contentDescription="@null" style="@style/drastic_option_hdr_image" />
+            </LinearLayout>
+            <TextView android:text="@string/str_set_hdr_video_game" style="@style/drastic_option_hdr_text" />
+        </TableRow>
+        <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+    </TableLayout>
+    <ScrollView android:id="@id/set_content" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/set_select_fs_game" android:tag="per_game" android:text="@string/str_set_fs" style="@style/drastic_option_item_choicehdr_text" />
+            <TextView android:id="@id/set_selection_fs_game" android:tag="per_game" style="@style/drastic_option_item_selection_text" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:text="@string/str_set_fs_value" style="@style/drastic_option_item_subhdr_text" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/item_selection" android:layout_gravity="left" android:id="@id/set_fs_value_game" android:tag="per_game" android:layout_width="48.0sp" android:layout_height="wrap_content" android:layout_marginLeft="32.0sp" android:layout_marginTop="14.0sp" android:layout_marginRight="10.0sp" />
+                <SeekBar android:layout_gravity="left" android:id="@id/sb_fs_value_game" android:tag="per_game" android:paddingTop="12.0dip" android:paddingBottom="18.0dip" android:layout_width="180.0sp" android:layout_height="wrap_content" android:max="9" android:progress="0" android:layout_toRightOf="@id/set_fs_value_game" android:layout_centerInParent="false" android:layout_centerHorizontal="false" />
+            </RelativeLayout>
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_fs_safe_game" android:text="@string/str_set_fs_safe" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_filter_game" android:tag="per_game" android:text="@string/str_set_filter" style="@style/drastic_option_item_choicehdr_text" />
+            <TextView android:id="@id/set_selection_filter_game" android:tag="per_game" style="@style/drastic_option_item_selection_text" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_hires_game" android:tag="per_game" android:text="@string/str_set_hires" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_gl16bit_game" android:tag="per_game" android:text="@string/str_set_gl16bit" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_edge_marking_game" android:tag="per_game" android:text="@string/str_set_edge_marking" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_fixmainscreen_game" android:tag="per_game" android:text="@string/str_set_fixmainscreen" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/btn_set_ext_threaded_game" android:tag="per_game" android:weightSum="1.0" style="@style/drastic_option_item">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:text="@string/str_set_threaded" style="@style/drastic_option_item_ext_text" />
+                    <TextView android:text="@string/str_set_threaded_hint" style="@style/drastic_option_item_hint" />
+                </LinearLayout>
+                <CheckBox android:gravity="right" android:id="@id/cb_threaded_game" android:tag="per_game" style="@style/drastic_checkbox_empty" />
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+    <View android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+</LinearLayout>

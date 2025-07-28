@@ -1,0 +1,115 @@
+// zfast_lcd+natural_vision - A very simple LCD shader meant to be used at 1080p
+// 
+// - Original 'zfast_lcd' code copyright (C) 2017 Greg Hogan (SoltanGris42)
+// 
+// - Original 'natural_vision' code written by ShadX, modified by
+//   Hyllian and Sp00kyFox, released into the public domain
+// 
+// 'Ported' (i.e. copy/paste) to DraStic format by jdgleaver
+// 
+// This program is free software; you can redistribute it and/or modify it
+// under the terms of the GNU General Public License as published by the Free
+// Software Foundation; either version 2 of the License, or (at your option)
+// any later version.
+// 
+// Notes: This shader applies 'Natural Vision' colour enhancement, then applies
+//        a simple grid effect, darkening the borders of 'virtual' pixels at
+//        the native NDS resolution to imitate an LCD screen.
+//        You can change the darkness/thickness of the borders.
+//        The shader is compatible with both 'native' and 'high resolution' 3D
+//        rendering modes.
+// 
+// *** Integer screen scaling is recommended for best results
+=============================================
+
+<vertex>
+
+attribute vec2 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+uniform vec4 u_texture_size;
+
+varying vec2 v_texture_coordinate;
+
+void main()
+{
+	v_texture_coordinate = a_texture_coordinate;
+	gl_Position = vec4(a_vertex_coordinate.xy, 0.0, 1.0);
+}
+
+</vertex>
+
+<fragment>
+
+#ifndef BORDERMULT
+#define BORDERMULT 14.0
+#endif
+#ifndef NATVIS_GIN
+#define NATVIS_GIN 1.91
+#endif
+#ifndef NATVIS_GOUT
+#define NATVIS_GOUT 1.91
+#endif
+#ifndef NATVIS_Y
+#define NATVIS_Y 1.1
+#endif
+#ifndef NATVIS_I
+#define NATVIS_I 1.1
+#endif
+#ifndef NATVIS_Q
+#define NATVIS_Q 1.1
+#endif
+
+uniform sampler2D u_texture;
+uniform vec4 u_texture_size;
+
+varying vec2 v_texture_coordinate;
+
+const float NDS_SCREEN_HEIGHT = 192.0;
+
+// Natural Vision helpers
+const mat3 RGBtoYIQ = mat3(0.299,  0.595716,  0.211456, 
+									0.587, -0.274453, -0.522591, 
+									0.114, -0.321263,  0.311135);
+
+const mat3 YIQtoRGB = mat3(1.0, 1.0, 1.0,
+									0.95629572,-0.27212210,-1.10698902,
+									0.62102442,-0.64738060, 1.70461500);
+
+const vec3 YIQ_lo = vec3(0.0, -0.595716, -0.522591);
+const vec3 YIQ_hi = vec3(1.0,  0.595716,  0.522591);
+
+void main()
+{
+	// Generate grid pattern (in native NDS coordinate space)
+	// - Have to divide by the current scale factor...
+	//   There can only be two values here:
+	//   > 'High-Resolution 3D Rendering' OFF - scale factor == 1
+	//   > 'High-Resolution 3D Rendering' ON  - scale factor == 2
+	//   But it's easiest to assume the general case...
+	//    scale_factor == texture_height / NDS_SCREEN_HEIGHT
+	vec2 texcoordInPixels = v_texture_coordinate.xy * u_texture_size.zw * (NDS_SCREEN_HEIGHT * u_texture_size.y);
+	vec2 centerCoord = floor(texcoordInPixels.xy) + vec2(0.5, 0.5);
+	vec2 distFromCenter = abs(centerCoord - texcoordInPixels);
+	
+	float Y = max(distFromCenter.x, distFromCenter.y);
+	
+	Y = Y * Y;
+	float YY = Y * Y;
+	float YYY = YY * Y;
+	
+	float LineWeight = YY - 2.7 * YYY;
+	LineWeight = 1.0 - BORDERMULT * LineWeight;
+	
+	// Get colour sample and apply colour enhancement
+	vec3 screen = pow(texture2D(u_texture, v_texture_coordinate.xy).rgb, vec3(NATVIS_GIN));
+	screen = RGBtoYIQ * screen;
+	screen = vec3(pow(screen.x, NATVIS_Y), screen.y * NATVIS_I, screen.z * NATVIS_Q);
+	screen = clamp(screen, YIQ_lo, YIQ_hi);
+	screen = YIQtoRGB * screen;
+	screen = pow(screen, vec3(1.0 / NATVIS_GOUT));
+	
+	// Add grid lines
+	gl_FragColor = vec4(screen * LineWeight, 1.0);
+}
+
+</fragment>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/customizer_main_view" android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/custom_title_holder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/custom_title" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/empty" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/custom_bottom_bar" android:background="#cc303030" android:padding="4.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_alignParentBottom="true">
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_layoutmenu" android:background="#ff333333" android:padding="4.0sp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0sp" android:layout_marginRight="4.0sp" android:text="@string/str_cm_layoutmenu" android:layout_weight="0.2" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_resetdefault" android:background="#ff333333" android:padding="4.0sp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="8.0sp" android:layout_marginRight="4.0sp" android:text="@string/str_cm_resetdefault" android:layout_weight="0.2" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_swaplayout" android:background="#ff333333" android:padding="4.0sp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0sp" android:layout_marginRight="4.0sp" android:text="@string/str_cm_editdefault" android:layout_weight="0.2" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_custextra" android:background="#ff333333" android:padding="4.0sp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0sp" android:layout_marginRight="4.0sp" android:text="@string/str_cm_tool_open" android:layout_weight="0.2" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_resizescreen" android:background="#ff333333" android:padding="4.0sp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0sp" android:layout_marginRight="8.0sp" android:text="@string/str_cm_resizescreen" android:layout_weight="0.2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/custom_aspect" android:background="#00000000" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <CheckBox android:id="@id/editor_scale_aspect" android:text="@string/str_cm_scale_aspect" style="@style/drastic_checkbox_editor" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/custom_zoombar" android:background="#00000000" android:padding="4.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_alignParentBottom="true">
+        <View android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="0.8" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/btn_resizeok" android:background="#ff333333" android:padding="4.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0sp" android:layout_marginRight="8.0sp" android:text="@string/str_cm_resizeok" android:layout_weight="0.2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/custom_zoombar_ctrl" android:background="#cc303030" android:padding="4.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_alignParentBottom="true">
+        <SeekBar android:id="@id/sb_screensize" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="1000" android:progress="0" android:layout_weight="0.75" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/btn_resizeok_ctrl" android:background="#ff333333" android:padding="4.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0sp" android:layout_marginRight="8.0sp" android:text="@string/str_cm_resizeok" android:layout_weight="0.25" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/custom_tools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/btn_tool_50h" android:background="@drawable/btn_cust_50h" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="1.0sp" />
+                <Button android:id="@id/btn_tool_top" android:background="@drawable/btn_cust_top" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="1.0sp" />
+                <Button android:id="@id/btn_tool_50w" android:background="@drawable/btn_cust_50w" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="1.0sp" />
+                <Button android:id="@id/btn_tool_v100" android:background="@drawable/btn_cust_v100" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="1.0sp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/btn_tool_left" android:background="@drawable/btn_cust_left" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="1.0sp" />
+                <Button android:id="@id/btn_tool_center" android:background="@drawable/btn_cust_center" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="1.0sp" />
+                <Button android:id="@id/btn_tool_right" android:background="@drawable/btn_cust_right" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="1.0sp" />
+                <Button android:id="@id/btn_tool_h100" android:background="@drawable/btn_cust_h100" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="1.0sp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/btn_tool_original" android:background="@drawable/btn_cust_original" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="1.0sp" />
+                <Button android:id="@id/btn_tool_bottom" android:background="@drawable/btn_cust_bottom" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="1.0sp" />
+                <Button android:id="@id/btn_tool_gap" android:background="@drawable/btn_cust_gap" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="1.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/custom_intscale" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/btn_tool_1x" android:background="@drawable/btn_cust_1x" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="2.0sp" />
+                <Button android:id="@id/btn_tool_5x" android:background="@drawable/btn_cust_5x" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="2.0sp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/btn_tool_2x" android:background="@drawable/btn_cust_2x" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="2.0sp" />
+                <Button android:id="@id/btn_tool_6x" android:background="@drawable/btn_cust_6x" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="2.0sp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/btn_tool_3x" android:background="@drawable/btn_cust_3x" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="2.0sp" />
+                <Button android:id="@id/btn_tool_7x" android:background="@drawable/btn_cust_7x" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="2.0sp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/btn_tool_4x" android:background="@drawable/btn_cust_4x" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="2.0sp" />
+                <Button android:id="@id/btn_tool_8x" android:background="@drawable/btn_cust_8x" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="2.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/custom_bottom_bar_border" android:background="#ff888888" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/custom_bottom_bar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/custom_save_menu" android:background="#cc303030" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_above="@id/custom_bottom_bar_border">
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_savedefault" android:background="#ff333333" android:padding="4.0sp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="8.0sp" android:text="@string/str_cm_savedefault" android:layout_weight="0.2" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_saveforgame" android:background="#ff333333" android:padding="4.0sp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="8.0sp" android:text="@string/str_cm_saveforgame" android:layout_weight="0.2" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_deleteforgame" android:background="#ff333333" android:padding="4.0sp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="8.0sp" android:text="@string/str_cm_deleteforgame" android:layout_weight="0.2" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_editbg" android:background="#ff333333" android:padding="4.0sp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="8.0sp" android:text="@string/str_cm_editbg" android:layout_weight="0.2" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_editctrl" android:background="#ff333333" android:padding="4.0sp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="8.0sp" android:text="@string/str_cm_editctrl" android:layout_weight="0.2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/custom_ctrl_menu" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_ctrlok" android:background="#ff333333" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0sp" android:layout_marginRight="4.0sp" android:text="@string/str_cm_ctrlok" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_ctrldefault" android:background="#ff333333" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0sp" android:layout_marginRight="4.0sp" android:text="@string/str_cm_ctrldefault" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/custom_ctrl_menu_r" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_ctrlresize" android:background="#ff333333" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0sp" android:layout_marginRight="4.0sp" android:text="@string/str_cm_ctrlresize" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_ctrlcancel" android:background="#ff333333" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0sp" android:layout_marginRight="8.0sp" android:text="@string/str_cm_ctrlcancel" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/custom_abxy_panel" android:background="#88333333" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <CheckBox android:id="@id/editor_abxy_a" android:text="@string/str_cm_abxy_A" style="@style/drastic_checkbox_editor" />
+        <CheckBox android:id="@id/editor_abxy_b" android:text="@string/str_cm_abxy_B" style="@style/drastic_checkbox_editor" />
+        <CheckBox android:id="@id/editor_abxy_x" android:text="@string/str_cm_abxy_X" style="@style/drastic_checkbox_editor" />
+        <CheckBox android:id="@id/editor_abxy_y" android:text="@string/str_cm_abxy_Y" style="@style/drastic_checkbox_editor" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/custom_enable_panel" android:background="#88333333" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <CheckBox android:id="@id/editor_button_enabled" android:text="@string/str_cm_button_enabled" style="@style/drastic_checkbox_editor" />
+    </LinearLayout>
+</RelativeLayout>

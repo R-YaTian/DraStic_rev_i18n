@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#88111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff0099cc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="96.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="96.0dip" android:layout_marginBottom="48.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/cheat_edit_root" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip">
+            <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_cheat_edit_back" android:background="@drawable/btn_back_bg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />
+                        <ImageView android:src="@drawable/tv_back" android:contentDescription="@null" style="@style/drastic_option_hdr_image" />
+                    </LinearLayout>
+                    <TextView android:id="@id/cheat_edit_title" android:text="@string/str_gm_cheats_add" style="@style/drastic_option_hdr_text" />
+                </TableRow>
+            </TableLayout>
+            <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="12.0dip" />
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/item_big_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/str_gm_cheats_name" />
+                    <EditText android:textStyle="bold" android:textColor="#ffffffee" android:id="@id/cheat_name" android:background="#ff555555" android:padding="8.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:ems="10" android:inputType="text" />
+                    <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="12.0dip" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/item_big_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/str_gm_cheats_code" />
+                    <EditText android:textStyle="bold" android:textColor="#ffffffee" android:id="@id/cheat_code" android:background="#ff555555" android:padding="8.0sp" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:maxLines="256" android:minLines="1" android:ems="10" android:singleLine="false" android:inputType="textMultiLine" />
+                    <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="12.0dip" />
+                    <CheckBox android:id="@id/cb_custom_cheat_enable" android:text="@string/str_gm_cheats_custom_enable" style="@style/drastic_checkbox_tv" />
+                    <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="12.0dip" />
+                    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="right" android:id="@id/btn_cheat_delete" android:background="@drawable/btn_bg_tv" android:padding="8.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/str_gm_cheats_delete" />
+                        <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="right" android:id="@id/btn_cheat_save" android:background="@drawable/btn_bg_tv" android:padding="8.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/str_gm_cheats_save" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

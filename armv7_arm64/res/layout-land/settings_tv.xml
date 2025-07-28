@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#88111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff0099cc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="96.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="96.0dip" android:layout_marginBottom="48.0dip">
+        <ViewAnimator android:id="@id/set_animator" android:background="@color/menu_bg_center_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="vertical" android:background="@color/menu_bg_center_tv" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TableRow android:background="@color/menu_bg_header_tv">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_settings_back" android:background="@drawable/btn_back_bg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />
+                            <ImageView android:src="@drawable/tv_back" android:contentDescription="@null" style="@style/drastic_option_hdr_image" />
+                        </LinearLayout>
+                        <TextView android:id="@id/hdr_settings" android:text="@string/str_set_settings" style="@style/drastic_option_hdr_text" />
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_settings_more" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <View android:layout_gravity="center_vertical" android:background="#ff666666" android:layout_width="1.0dip" android:layout_height="24.0dip" />
+                            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/btn_back_bg_tv" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/tv_special_action" android:contentDescription="@null" />
+                            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_more_vert_white_24dp" android:padding="2.0dip" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="8.0dip" android:contentDescription="@null" />
+                        </LinearLayout>
+                    </TableRow>
+                    <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+                </TableLayout>
+                <ScrollView android:id="@id/set_content" android:background="@color/menu_bg_center_tv" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/btn_set_video" android:text="@string/str_set_btn_video" style="@style/drastic_option_item_tv" />
+                        <View style="@style/drastic_thin_seperator" />
+                        <TextView android:id="@id/btn_set_audio" android:text="@string/str_set_btn_audio" style="@style/drastic_option_item_tv" />
+                        <View style="@style/drastic_thin_seperator" />
+                        <TextView android:id="@id/btn_set_controller" android:text="@string/str_set_btn_controller" style="@style/drastic_option_item_tv" />
+                        <View style="@style/drastic_thin_seperator" />
+                        <TextView android:id="@id/btn_set_general" android:text="@string/str_set_btn_general" style="@style/drastic_option_item_tv" />
+                        <View style="@style/drastic_thin_seperator" />
+                        <TextView android:id="@id/btn_set_system" android:text="@string/str_set_btn_system" style="@style/drastic_option_item_tv" />
+                        <View style="@style/drastic_thin_seperator" />
+                        <TextView android:id="@id/btn_set_advanced" android:text="@string/str_set_btn_advanced" style="@style/drastic_option_item_tv" />
+                        <View style="@style/drastic_thin_seperator" />
+                    </TableLayout>
+                </ScrollView>
+                <View android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+            </LinearLayout>
+            <include android:id="@id/set_va_video" layout="@layout/settings_tv_video" />
+            <include android:id="@id/set_va_audio" layout="@layout/settings_tv_audio" />
+            <include android:id="@id/set_va_controller" layout="@layout/settings_tv_controller" />
+            <include android:id="@id/set_va_general" layout="@layout/settings_tv_general" />
+            <include android:id="@id/set_va_system" layout="@layout/settings_tv_system" />
+            <include android:id="@id/set_va_advanced" layout="@layout/settings_tv_advanced" />
+            <include android:id="@id/set_va_game" layout="@layout/settings_tv_game" />
+            <include android:id="@id/set_va_video_game" layout="@layout/settings_tv_video_game" />
+            <include android:id="@id/set_va_audio_game" layout="@layout/settings_tv_audio_game" />
+            <include android:id="@id/set_va_system_game" layout="@layout/settings_tv_system_game" />
+            <include android:id="@id/set_va_advanced_game" layout="@layout/settings_tv_advanced_game" />
+        </ViewAnimator>
+    </RelativeLayout>
+</RelativeLayout>

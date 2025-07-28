@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff0099cc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="96.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="96.0dip" android:layout_marginBottom="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TableRow android:background="@color/menu_bg_header_tv">
+                <LinearLayout android:orientation="horizontal" android:id="@id/btn_help_back" android:background="@drawable/btn_back_bg_tv" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />
+                    <ImageView android:src="@drawable/tv_back" android:contentDescription="@string/empty" style="@style/drastic_option_hdr_image" />
+                </LinearLayout>
+                <TextView android:text="@string/str_menu_help" style="@style/drastic_option_hdr_text" />
+            </TableRow>
+            <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+        </TableLayout>
+        <ScrollView android:id="@id/set_content" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewAnimator android:id="@id/help_animator" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/btn_help_instructions" android:focusable="false" android:text="@string/str_hm_instructions" style="@style/drastic_option_item_tv" />
+                    <View style="@style/drastic_thin_seperator" />
+                    <TextView android:id="@id/btn_help_faq" android:focusable="false" android:text="@string/str_hm_faq" style="@style/drastic_option_item_tv" />
+                    <View style="@style/drastic_thin_seperator" />
+                    <TextView android:id="@id/btn_help_changelog" android:focusable="false" android:text="@string/str_hm_changelog" style="@style/drastic_option_item_tv" />
+                    <View style="@style/drastic_thin_seperator" />
+                    <TextView android:id="@id/btn_help_about" android:focusable="false" android:text="@string/str_hm_about" style="@style/drastic_option_item_tv" />
+                    <View style="@style/drastic_thin_seperator" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffe0e0e0" android:gravity="right" android:id="@id/help_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" />
+                </TableLayout>
+                <TextView android:textColor="@color/item_big_tv" android:id="@id/tw_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" />
+            </ViewAnimator>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

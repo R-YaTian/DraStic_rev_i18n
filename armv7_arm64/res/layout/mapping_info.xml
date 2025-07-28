@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@id/mapping_info_root" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@color/menu_bg_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_back_mapping_info" android:background="@drawable/btn_back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />
+            <ImageView android:src="@drawable/con_ds" android:contentDescription="@null" style="@style/drastic_option_hdr_image" />
+        </LinearLayout>
+        <TextView android:id="@id/title_mapping_info" android:layout_width="wrap_content" android:layout_toRightOf="@id/btn_back_mapping_info" android:layout_centerVertical="true" style="@style/drastic_option_hdr_text" />
+    </RelativeLayout>
+    <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff111111" android:layout_gravity="center_vertical" android:id="@id/text_device" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/str_set_mapping_device" android:layout_weight="0.3" />
+        <View android:background="#ff666666" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff111111" android:layout_gravity="center_vertical" android:id="@id/text_mapping" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/str_set_mapping_function" android:layout_weight="0.7" />
+    </LinearLayout>
+    <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ListView android:id="@id/mapping_info_list" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="#00000000" android:layout_width="fill_parent" android:layout_height="32.0dip" />
+</TableLayout>

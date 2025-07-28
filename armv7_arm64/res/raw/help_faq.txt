@@ -1,0 +1,65 @@
+
+<b>Q: Why do cheats still happen after I've disabled them? Is this a bug?
+A: Cheats work by modifying the game as it's running. If you a disable a cheat it'll stop being executed, but for many cheats whatever it did to modify the game will already be in effect. It's impossible for the emulator to reverse this, such a thing goes against the basics of how the cheats work (note that the cheats come from Action Replay codes, not something we invented). The best thing to do is to make a save in-game and reset with the cheats disabled, that should remove the cheat so long as it didn't affect something that's part of a save. Doing this with a savestate won't work, it has to be an in-game save.
+
+<b>Q: Why are my savestates or in-game saves deleted all the time?
+A: It shouldn't really be possible, that DraStic does this. In all cases that we've seen so far, some other app that is installed caused this. So make sure, if you have a memory cleaner or anti-virus app installed, that you configure it to not delete files from the 'DraStic' folder.
+
+<b>Q: Why is the touchscreen on the wrong screen, or graphics are flickering?
+A: Disable 'Multi-threaded 3D' and 'Keep main screen on top screen' in the video settings, they can cause such problems in some games.
+
+<b>Q: Hey! Game X doesn't work! (And maybe it even worked before!) Fix it!
+A: Before reporting that a game doesn't work make sure that you're using the latest version. Load the app listing in the play store and confirm that the version it says is the same as the version that's displayed on the menu screen. New versions often fix bugs. In unusual cases a game could even have been working but stopped working due to the date (versions before 2.1.6.2a had this problem). And if you're using a version you didn't pay for that isn't the demo, please don't bother us with questions. They're broken on purpose.
+
+<b>Q: Okay, I've confirmed this game really doesn't work on the latest version I paid for, what should I do?
+A: Report the bug on these forums. Please keep it public instead of PMing or e-mailing us privately so that other users can help you or be helped if there's a solution to your problem. When you report a bug it's helpful if you can provide a save state and directions for how to reproduce the problem. Also include what device and what OS version you're using. If you have cheats enabled, try to turn them off so you can determine if they're related to the bug.
+
+<b>Q: Does DraStic support 3DS/2DS games? Will it in the future?
+A: No, it does not and never will. 3DS is an entirely different system, a full generation ahead, like N64 to Gamecube. And yes this means 2DS won't work either, it's the same thing as 3DS but with a different screen.
+
+<b>Q: Help, a game was working in the emulator before but I updated to a newer version and now it doesn't!
+A: Unfortunately, sometimes when we fix some issue in the emulator we accidentally break something else (since DS has thousands of games it gets complex). If you report the problem then hopefully we can correct it ASAP. We may also be able to give you an older verison of the emulator so you can go back to using it.
+
+<b>Q: Why doesn't the Google Drive feature work?
+A: Sometimes the automatic creation of the 'DraStic' folder on your Google Drive fails. Check if the folder is there after uploading a savestate, and if it isn't, create it manually and try uploading again. The download will only work, if the ROMs on all devices have the same filename!
+
+<b>Q: What is your refund policy?
+A: We used to offer refunds to almost everyone within 48 hours, but now that there's no BIOS requirement and there's a demo version we feel this is unnecessary. We will still offer refunds if we feel that the case is warranted - if you believe you're entitled to a refund send us an e-mail and explain why. Please understand that refunded installations can still be played, so we're a little reluctant to give out refunds for no reason.
+
+<b>Q: Pressing start isn't bringing up the menu in Pokemon games. This is the emulator's fault, you need to fix it, and I hate you.
+A: Actually, by default start never did anything in the games, although there's an option to change the controls to do this. To bring up the menu you're supposed to press X.
+
+<b>Q: When is the next version coming out?
+A: Sorry, but we usually don't do release dates. Please be patient.
+
+<b>Q: How fast should I expect DraStic to be?
+A: It varies greatly depending on the game you're trying to run. A device with 1GHz Cortex-A8 will run many games with a fair amount of frameskip. A 1.4+GHz dual-core Cortex-A9 will run most games with little or no frameskip most of the time.
+
+<b>Q: Does it help to have multiple CPU cores?
+A: Yes. If you have multiple cores DraStic is sped up by being able to offload screen update tasks to another thread. If you select the multi-threaded renderer option you will get even more benefit, but this option can cause graphical glitches and instability.
+
+<b>Q: Does DraStic use my GPU to render graphics? Does it help to have a faster GPU
+A: The GPU is only used to scale the image and apply filters so having a better one won't make much difference. OpenGL ES is not used to render the Nintendo DS graphics. This is because of idiosyncracies in the DS graphics hardware that would make this style of emulation incomplete and/or slow.
+
+<b>Q: Does DraStic support homebrew games?
+A: Yes. If you want to play a homebrew game that uses the DLDI filesystem, see 'Instructions' for explanations.
+
+<b>Q: Does DraStic support multiplayer/wifi?
+A: Wifi emulation is very complex and not something we have any plans to attempt at the moment.
+
+<b>Q: What should I do to report a bug?
+A: Report it on our forums here http://drastic-ds.com. Please keep it public instead of PMing or e-mailing us privately so that other users can help you or be helped if there's a solution to your problem. When you report a bug it's helpful if you can provide a save state and directions for how to reproduce the problem.
+
+<b>Q: Where's the source code?
+A: DraStic is closed source for the foreseeable future. It's written entirely by us and therefore not violating any licenses.
+
+<b>Q: What other platforms can I get DraStic on?
+A: It's currently available for the Open Pandora gaming computer handheld (http://www.openpandora.org).
+You can find download it for free at the repository here: http://repo.openpandora.org/?page=detail&app=DraStic
+
+<b>Q: Is there going to be an iOS port?
+A: It's up in the air right now. If it comes out it will require a jailbroken device.
+
+<b>Q: Are MOGA controllers supported?
+A: Yes. 'Native' support for MOGA controllers was added in version 2.2.0.0a. You don't need to map the buttons like with other controllers, they will be automatically assigned. You can see the mapping in Options > External Controller > Show MOGA Button Mapping.
+

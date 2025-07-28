@@ -1,0 +1,88 @@
+// FXAA shader
+=============================================
+<options>
+name=dxjxx
+textures=4
+</options>
+
+<fheader>
+#if GL_ES
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+#endif
+</fheader>
+
+<header>
+#define FXAA_PC 1
+#define FXAA_GATHER4_ALPHA 0
+
+#define half float
+#define half2 vec2
+#define half3 vec3
+#define half4 vec4
+#define int2 ivec2
+#define float2 vec2
+#define float3 vec3
+#define float4 vec4
+#define FxaaInt2 vec2
+#define FxaaFloat2 vec2
+#define FxaaFloat3 vec3
+#define FxaaFloat4 vec4
+#define FxaaDiscard discard
+#define FxaaDot3(a, b) dot(a, b)
+#define FxaaSat(x) clamp(x, 0.0, 1.0)
+#define FxaaLerp(x,y,s) mix(x,y,s)
+#define FxaaTex sampler2D
+#define FxaaTexTop(t, p) texture2D(t, p)
+#define FxaaTexOff(t, p, o, r) texture2D(t, p + (o * r))
+
+uniform vec4 u_texture_size;
+</header>
+
+<include>
+file=dxj.h
+</include>
+
+<texture:0>
+input=framebuffer
+min_filter=GL_LINEAR
+mag_filter=GL_LINEAR
+</texture>
+
+<texture:1>
+input=null
+format=GL_RGBA
+internalformat=GL_RGBA
+type=GL_UNSIGNED_BYTE
+min_filter=GL_LINEAR
+mag_filter=GL_LINEAR
+</texture>
+
+<texture:2>
+input=null
+format=GL_RGBA
+internalformat=GL_RGBA
+type=GL_UNSIGNED_BYTE
+min_filter=GL_LINEAR
+mag_filter=GL_LINEAR
+</texture>
+
+<pass>
+shader=dxj_luma.dsd
+sampler:u_texture=0
+output=1:1
+</pass>
+
+<pass>
+shader=fxaa/fxaa3.dsd
+sampler:u_texture=1
+output=2:1
+</pass>
+
+<pass>
+shader=quilez.dsd
+sampler:u_texture=2
+</pass>

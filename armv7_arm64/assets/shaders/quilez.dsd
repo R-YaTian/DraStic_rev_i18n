@@ -1,0 +1,33 @@
+<options>
+filter=linear
+</options>
+
+<vertex>
+attribute vec2 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+
+varying vec2 v_texture_coordinate;
+void main() {
+  gl_Position = vec4(a_vertex_coordinate.xy, 0.0, 1.0);
+  v_texture_coordinate = a_texture_coordinate;
+}
+</vertex> 
+
+<fragment>
+varying vec2 v_texture_coordinate;
+
+uniform sampler2D u_texture;
+
+void main(){
+  vec2 s_tex = u_texture_size.zw;
+  vec2 p = v_texture_coordinate.xy * s_tex + vec2(0.5);
+  vec2 i = floor(p);
+  vec2 f = p - i;
+  f = f * f * f * (f * (f * 6.0 - vec2(15.0)) + vec2(10.0));
+  p = i + f;
+  p = (p - vec2(0.5)) / s_tex;
+  vec4 color = texture2D(u_texture, p);
+  gl_FragColor = vec4(color.rgb, 1.0);
+}
+
+</fragment>

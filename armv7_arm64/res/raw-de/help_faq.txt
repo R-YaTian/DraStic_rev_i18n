@@ -1,0 +1,65 @@
+
+<b>F: Warum ist ein Cheat noch aktiv, nachdem ich ihn deaktiviert habe? Ist das ein Bug?
+A: Cheats modifizieren das Spiel während es läuft. Wenn ein Cheat deaktiviert wird, wird er nichtmehr ausgeführt, aber die Modifikation der meisten Cheats wird trotzdem noch vorhanden sein. Es ist für den Emulator unmöglich dies rückgängig zu machen, das würde der Arbeitsweise von Cheats widersprechen (Cheats stammen von Action Replay Codes, sie sind nicht etwas das wir erfunden haben). Die beste Vorgehensweise ist es, den Cheat zu deaktivieren, dann im Spiel selbst zu speichern und das Spiel zurückzusetzen. Das sollte den Cheat entfernen, solange er nichts beeinflusst hat, was Teil des Spiele-Speicherstands ist. Das funktioniert nur mit Spiele-Speicherständen, nicht mit Savestates!
+
+<b>F: Warum werden meine Savestates oder Spiele-Speicherstände immer gelöscht?
+A: Es sollte eigentlich nicht möglich sein, dass DraStic das verursacht. In jedem solchen Fall, von dem wir bis jetzt gehört haben, war eine andere installierte App dafür verantwortlich. Falls du also eine 'Memory Cleaner' App oder Anti-Virus App installiert hast, dann kofiguriere sie bitte so, dass der Inhalt des 'DraStic'-Ordners nicht gelöscht wird.
+
+<b>F: Warum ist der Touch-Bildschirm auf dem falschen Bildschirm, oder warum flickern doe Grafiken?
+A: Schalte 'Multi-Thread 3D Rendering' und 'Hauptbildschirm auf oberem Bildschirm anzeigen' in den Video-Optionen aus, da diese Einstellungen solche Probleme in manchen Spielen verursachen können.
+
+<b>F: Spiel X funktioniert nicht!
+A: Bevor du uns meldest, dass ein Spiel nicht funktioniert, stelle sicher, dass du die neueste Version der App verwendest. Lade die Google Play - Seite der App und vergleiche die Version mit der, die in der App angezeigt wird. Neue Versionen beheben oft Bugs. Falls du eine Version verwendest, die du nicht gekauft hast, und die nicht die Demo-Version ist, dann brauchst du uns garnicht erst kontaktieren. Viele Bugs treten nur mit gecrackten APKs auf.
+
+<b>F: Das Spiel funktioniert auf der neuesten Version, für die ich bezahlt habe, wirklich nicht. Was sollte ich tun?
+A: Melde den Bug in unserem Forum (drastic-ds.com). Das ist besser als eine E-Mail oder PM, da so andere Nutzer helfen können und ihnen geholfen wird, wenn sie das gleiche Problem haben. Wenn du einen Bug meldest ist es hilfreich, wenn du einen Speicherstand und eine Anleitung zur Reproduktion des Problems zur Verfügung stellen kannst. Nenne auch das Gerät und die Android-Version die du verwendest. Falls Cheats aktiviert sind, deaktiviere sie erst und starte das Spiel neu, um festzustellen, ob diese den Bug auslösen.
+
+<b>F: Unterstützt DraStic 3DS/2DS-Spiele? Werden sie in Zukunft unterstützt?
+A: Nein, DraStic unterstützt sie nicht und wird dies niemals tun. Das 3DS ist ein komplett anderes System und eine komplette Generation weiter als das DS (verhält sich z.B. wie N64 zu Gamecube). Und ja, das bedeutet, dass auch 2DS-Spiele nicht funktionieren, es ist das gleiche System, bis auf einen anderen Bildschirm.
+
+<b>F: Hilfe, nachdem ich die App aktualisiert habe funktioniert ein Spiel nichtmehr, welches vorher funktioniert hat!
+A: Leider können manchmal versehentlich neue Bugs entstehen, wenn wir alte beheben (da das DS tausende Spiele hat wird es kompliziert). Wenn du das Problem meldest, können wir es hoffentlich schnell korrigieren.
+
+<b>F: Warum funktioniert der Google Drive Up-/Download nicht?
+A: Manchmal schlägt das automatische Anlegen eines 'DraStic'-Ordners fehl. Falls nach einem Upload kein 'DraStic'-Ordner in deinem Google Drive erscheint, lege den Ordner bitte manuell an und versuche den Upload erneut. Der Download funktioniert natürlich nur, wenn die ROMs auf allen Geräten den exakt selben Dateinamen haben!
+
+<b>F: Wie steht's mit Rückerstattungen?
+A: Nach dem Zeitfenster während dem du die App auf Google Play erstatten kannst (normalerweise 2 Stunden), bieten wir Rückerstattungen nur an, wenn diese gerechtfertigt sind. Falls du denkst, dass du eine Erstattung erhalten solltest, dann sende uns bitte eine E-Mail und erkläre warum. Selbst nachdem wir den Preis zurückerstatten kann die App weiterhin verwendet werden, deshalb sind wir zurückhaltend mit unbegründeten Rückerstattungen.
+
+<b>F: Wenn ich 'Start' drücke öffnet sich das Menü in Pokemon-Spielen nicht. Das ist euere Schuld, ihr müsst es beheben, ich hasse euch!
+A: Die Start-Taste hat standardmäßig in diesen Spielen nie eine Funktion gehabt, aber es gibt in manchen von ihnen eine Option um die Tasten-Belegung zu ändern. Das Menü wird mormalerweise mit der 'X'-Taste geöffnet.
+
+<b>F: Wann kommt die nächste Version?
+A: Tut uns leid, aber normalerweise können wir das Release-Datum nicht im Voraus nennen. Sei bitte geduldig.
+
+<b>F: Wie schnell sollte DraStic bei mir laufen?
+A: Das hängt stark vom jeweiligen Spiel ab. Ein Gerät mit 1GHz Cortex-A8 CPU wird viele Spiele mit moderatem Frameskip spielen. Ein 1,4+GHz Gerät mit mindestens 2 CPU-Kernen wird die meisten Spiele mit wenig oder ohne Frameskip abspielen.
+
+<b>F: Hilft es mehrere CPU-Kerne zu haben?
+A: Ja. Falls du mehrere CPU-Kerne hast, wird DraStic beschleunigt, indem das Rendering auf mehrere Threads verteilt wird. Falls 'Multi-Thread 3D' eingeschalten ist fällt die Beschleunigung noch größer aus, allerdings kann diese Option grafische Fehler und in manchen Spielen sogar Abstürze verursachen.
+
+<b>F: Verwendet DraStic die GPU (Grafikchip) um die Grafiken darzustellen? Hilft es eine schnellere GPU zu haben?
+A: Die GPU wird nur verwendet um das Bild zu skalieren und zu filtern, deshalb macht eine bessere GPU keinen großen Unterschied. OpenGL ES wird nicht zum Rendern der Nintendo DS Grafiken verwendet. Das liegt an Eigenheiten der DS Grafik-Hardware, welche diese Art der Emulation unvollständig und/oder langsam machen würden.
+
+<b>F: Unterstützt DraStic Homebrew-Spiele?
+A: Ja. Wenn du Homebrew-Spiele spielen willst, welche das DLDI-Dateisystem verwenden, lese in der 'Anleitung', wie das funktioniert.
+
+<b>F: Unterstützt DraStic Multiplayer/Wifi?
+A: Wifi-Emulation ist sehr kompliziert und wir haben momentan keine Pläne es zu versuchen.
+
+<b>F: Was sollte ich tun um einen Bug zu melden?
+A: Melde den Bug in unserem Forum (drastic-ds.com). Das ist besser als eine E-Mail oder PM, da so andere Nutzer helfen können und ihnen geholfen wird, wenn sie das gleiche Problem haben. Wenn du einen Bug meldest ist es hilfreich, wenn du einen Speicherstand und eine Anleitung zur Reproduktion des Problems zur Verfügung stellen kannst. Nenne auch das Gerät und die Android-Version die du verwendest. Falls Cheats aktiviert sind, deaktiviere sie erst und starte das Spiel neu, um festzustellen, ob diese den Bug auslösen.
+
+<b>F: Wo ist der Quellcode?
+A: DraStic ist für absehbare Zeit 'Closed-Source'. Es wurde vollständig von uns entwickelt und verletzt deshalb auch keine Lizenzen.
+
+<b>F: Auf welchen anderen Platformen ist DraStic verfügbar?
+A: Es ist momentan auf dem Open Pandora Spiele-Computer-Handheld verfügbar (http://www.openpandora.org).
+Du findest es zum kostenlosen Download hier: http://repo.openpandora.org/?page=detail&app=DraStic
+
+<b>F: Wird es eine iOS-Version geben?
+A: Das ist im Moment ungewiss. Falls es herauskommt, dann wird es nur auf Geräten mit Jailbreak laufen.
+
+<b>F: Werden MOGA-Gamepads unterstützt?
+A: Ja. 'Native' Unterstützung für MOGA-Gamepads wurde in Version 2.2.0.0a hinzugefügt. Die Tasten müssen nicht wie mit anderen Gamepads zugeordnet werden, dies geschieht automatisch. Du kannst die Zuordnung unter 'Einstellungen > Externer Controller > MOGA Tasten-Zuordnung anzeigen' einsehen.
+

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="set_analogstick_items">
+        <item>Disabilitato</item>
+        <item>Modalità FPS</item>
+        <item>Modalità Stick</item>
+        <item>Modalità Puntatore</item>
+    </string-array>
+    <string-array name="set_audio_latency_items">
+        <item>Bassa</item>
+        <item>Media</item>
+        <item>Alta</item>
+        <item>Molto Alta</item>
+    </string-array>
+    <string-array name="set_autofire_frequency">
+        <item>Velocità 1 (velocissimo)</item>
+        <item>Velocità 2</item>
+        <item>Velocità 3</item>
+        <item>Velocità 4</item>
+        <item>Velocità 5 (lentissimo)</item>
+    </string-array>
+    <string-array name="set_autosave_type">
+        <item>Disabilitato</item>
+        <item>Quando metto in Pausa/Sospensione</item>
+        <item>Ogni 5 Minuti</item>
+        <item>Ogni 15 Minuti</item>
+        <item>Ogni 30 Minuti</item>
+    </string-array>
+    <string-array name="set_cheat_menu_tv">
+        <item>Aggiungi nuovo trucco</item>
+        <item>Disabilita tutti i trucchi</item>
+        <item>Modifica trucco selezionato</item>
+    </string-array>
+    <string-array name="set_editor_endmenu_tv">
+        <item>Salva come Layout Globale</item>
+        <item>Salva come Layout del Gioco</item>
+        <item>Continua a modificare</item>
+        <item>Esci senza salvare</item>
+    </string-array>
+    <string-array name="set_editor_startmenu_tv">
+        <item>Usa Layout Predefinito</item>
+        <item>Carica Layout Globale</item>
+        <item>Carica Layout del Gioco</item>
+    </string-array>
+    <string-array name="set_extdisplay_screen">
+        <item>Schermo Superiore</item>
+        <item>Schermo Inferiore</item>
+    </string-array>
+    <string-array name="set_extdisplay_type">
+        <item>Clona Dispositivo</item>
+        <item>Correggi Proporzioni Aspetto</item>
+        <item>Schermo Intero</item>
+    </string-array>
+    <string-array name="set_extra_funcs">
+        <item>Disabilitato</item>
+        <item>Avanti-Veloce</item>
+        <item>Salva-Rapido</item>
+        <item>Carica-Rapido</item>
+        <item>Scambia Schermi Superiore/Inferiore</item>
+        <item>Scambia Layout degli schermi 1 e 2</item>
+        <item>Mostra/Nascondi Bottoni Virtuali</item>
+        <item>Simula Disturbo del Microfono</item>
+        <item>Cycle Landscape Layouts</item>
+        <item>Fuoco-Rapido</item>
+    </string-array>
+    <string-array name="set_ffwd_speed_items">
+        <item>50%</item>
+        <item>150%</item>
+        <item>200%</item>
+        <item>300%</item>
+        <item>400%</item>
+        <item>Illimitato</item>
+    </string-array>
+    <string-array name="set_filer_items">
+        <item>Nessuno</item>
+        <item>Linear</item>
+        <item>Scale2X</item>
+        <item>HQ2X</item>
+        <item>Quilez</item>
+    </string-array>
+    <string-array name="set_filer_items_1cpu">
+        <item>Nessuno</item>
+        <item>Linear</item>
+        <item>Quilez</item>
+    </string-array>
+    <string-array name="set_fs_items">
+        <item>Nessuno</item>
+        <item>Manuale</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="set_fw_colors">
+        <item>Grigio Ardesia Chiaro</item>
+        <item>Redwood</item>
+        <item>Deep Chestnut</item>
+        <item>Plum</item>
+        <item>Arancione Persiano</item>
+        <item>Burlywood</item>
+        <item>Cachi Scuro</item>
+        <item>Mantis</item>
+        <item>Verde Veronese</item>
+        <item>Verde Marino Chiaro</item>
+        <item>Moonstone blue</item>
+        <item>Tufts Blue</item>
+        <item>Ceruleo Scuro</item>
+        <item>Toolbox</item>
+        <item>Rich Lavender</item>
+        <item>Mulberry</item>
+    </string-array>
+    <string-array name="set_fw_languages">
+        <item>日本語</item>
+        <item>English</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Italiano</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="set_gm_layouts">
+        <item>Orizzontale 1:1</item>
+        <item>Orizzontale x:1</item>
+        <item>Verticale 1:1</item>
+        <item>Aspetto Orizzontale</item>
+        <item>Orizzontale Schermo Intero</item>
+    </string-array>
+    <string-array name="set_gm_layouts_tv">
+        <item>Orizzontale 1:1</item>
+        <item>Orizzontale x:1</item>
+        <item>Verticale 1:1</item>
+        <item>Aspetto Orizzontale</item>
+        <item>Orizzontale Schermo Intero</item>
+        <item>Verticale Ruota-Sinistra</item>
+        <item>Verticale Ruota-Destra</item>
+    </string-array>
+    <string-array name="set_mapping_default">
+        <item>D-Pad;D-Pad, Naviga nei Menu</item>
+        <item>Left Stick;D-Pad, Naviga nei Menu</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Annulla nei Menu</item>
+        <item>A;B, Conferma nei Menu</item>
+        <item>Play;Start</item>
+        <item>Back;Apre il Menu</item>
+        <item>L1;L-trigger</item>
+        <item>R1;R-trigger</item>
+        <item>L3;Scambia Schermi</item>
+        <item>R3;Scambia Layout degli schermi 1 e 2</item>
+    </string-array>
+    <string-array name="set_mapping_moga_pocket">
+        <item>Left Stick;D-Pad, Naviga nei Menu</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Annulla nei Menu</item>
+        <item>A;B, Conferma nei Menu</item>
+        <item>L;L</item>
+        <item>R;R</item>
+        <item>Start;Start</item>
+        <item>Select;Apre il Menu</item>
+        <item>Select+L;Carica-Rapido</item>
+        <item>Select+R;Salva-Rapido</item>
+        <item>Select+X;Avanti-Veloce</item>
+        <item>Select+Y;Scambia Schermi</item>
+    </string-array>
+    <string-array name="set_mapping_moga_pro">
+        <item>D-Pad;D-Pad, Naviga nei Menu</item>
+        <item>Left Stick;D-Pad, Naviga nei Menu</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Annulla nei Menu</item>
+        <item>A;B, Conferma nei Menu</item>
+        <item>L2;L</item>
+        <item>R2;R</item>
+        <item>Start;Start</item>
+        <item>Select;Select</item>
+        <item>L3;Apre il Menu</item>
+        <item>R3+L1;Carica-Rapido</item>
+        <item>R3+R1;Salva-Rapido</item>
+        <item>L1;Scambia Schermi</item>
+        <item>R1;Avanti-Veloce</item>
+    </string-array>
+    <string-array name="set_mapping_shield">
+        <item>D-Pad;D-Pad, Naviga nei Menu</item>
+        <item>Left Stick;D-Pad, Naviga nei Menu</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Annulla nei Menu</item>
+        <item>A;B, Conferma nei Menu</item>
+        <item>Play;Start</item>
+        <item>Back;Apre il Menu</item>
+        <item>L1;Touchscreen Pointer press</item>
+        <item>R1;Avanti-Veloce</item>
+        <item>L2;L</item>
+        <item>R2;R</item>
+        <item>L3;Scambia Schermi</item>
+        <item>R3;Scambia Layout degli schermi 1 e 2</item>
+    </string-array>
+    <string-array name="set_mapping_xperiaplay">
+        <item>D-Pad;D-Pad, Naviga nei Menu</item>
+        <item>Select;Select</item>
+        <item>Start;Start</item>
+        <item>Triangolo;X</item>
+        <item>Quadrato;Y</item>
+        <item>Cerchio;A, Annulla nei Menu</item>
+        <item>X;B, Conferma nei Menu</item>
+        <item>L;L</item>
+        <item>R;R</item>
+        <item>Menu;Apre il Menu</item>
+    </string-array>
+    <string-array name="set_menu_button_position">
+        <item>Sotto</item>
+        <item>Sopra</item>
+        <item>A Sinistra</item>
+        <item>A Destra</item>
+        <item>Nascosto</item>
+    </string-array>
+    <string-array name="set_mic_level_items">
+        <item>Basso</item>
+        <item>Medio</item>
+        <item>Alto</item>
+        <item>Molto Alto</item>
+    </string-array>
+    <string-array name="set_rotation_type">
+        <item>Auto</item>
+        <item>Orizzontale</item>
+        <item>Orizzontale Inverso</item>
+    </string-array>
+</resources>

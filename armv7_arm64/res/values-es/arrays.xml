@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="set_analogstick_items">
+        <item>Desactivado</item>
+        <item>Modo FPS</item>
+        <item>Modo palanca</item>
+        <item>Modo puntero</item>
+    </string-array>
+    <string-array name="set_audio_latency_items">
+        <item>Baja</item>
+        <item>Mediana</item>
+        <item>Alta</item>
+        <item>Muy alta</item>
+    </string-array>
+    <string-array name="set_autofire_frequency">
+        <item>Velocidad 1 (la más rápida)</item>
+        <item>Velocidad 2</item>
+        <item>Velocidad 3</item>
+        <item>Velocidad 4</item>
+        <item>Velocidad 5 (la más lenta)</item>
+    </string-array>
+    <string-array name="set_autosave_type">
+        <item>Desactivado</item>
+        <item>Al pausar/suspender</item>
+        <item>Cada 5 minutos</item>
+        <item>Cada 15 minutos</item>
+        <item>Cada 30 minutos</item>
+    </string-array>
+    <string-array name="set_cheat_menu_tv">
+        <item>Añadir nuevo truco</item>
+        <item>Desactivar todos los trucos</item>
+        <item>Editar los trucos seleccionados</item>
+    </string-array>
+    <string-array name="set_editor_endmenu_tv">
+        <item>Guardar como disposición global</item>
+        <item>Guardar como disposición de juego</item>
+        <item>Continuar editando</item>
+        <item>Salir sin guardar</item>
+    </string-array>
+    <string-array name="set_editor_startmenu_tv">
+        <item>Usar disposición predeterminada</item>
+        <item>Cargar disposición global</item>
+        <item>Cargar disposición de juego</item>
+    </string-array>
+    <string-array name="set_extdisplay_screen">
+        <item>Pantalla superior</item>
+        <item>Pantalla inferior</item>
+    </string-array>
+    <string-array name="set_extdisplay_type">
+        <item>Clonar dispositivo</item>
+        <item>Radio de aspecto correcto</item>
+        <item>En pantalla completa</item>
+    </string-array>
+    <string-array name="set_extra_funcs">
+        <item>Desactivadas</item>
+        <item>Adelantar</item>
+        <item>Guardado rápido</item>
+        <item>Carga rápida</item>
+        <item>Intercambiar pantallas superior/inferior</item>
+        <item>Intercambiar disposiciones de pantalla 1 y 2</item>
+        <item>Mostrar/ocultar los botones virtuales</item>
+        <item>Simular ruido del micrófono</item>
+        <item>Suceder disposiciones horizontales</item>
+        <item>Activar fuego rápido</item>
+    </string-array>
+    <string-array name="set_ffwd_speed_items">
+        <item>50%</item>
+        <item>150%</item>
+        <item>200%</item>
+        <item>300%</item>
+        <item>400%</item>
+        <item>Ilimitada</item>
+    </string-array>
+    <string-array name="set_filer_items">
+        <item>Ninguno</item>
+        <item>Lineal</item>
+        <item>Scale2X</item>
+        <item>HQ2X</item>
+        <item>Quilez</item>
+    </string-array>
+    <string-array name="set_filer_items_1cpu">
+        <item>Ninguno</item>
+        <item>Lineal</item>
+        <item>Quilez</item>
+    </string-array>
+    <string-array name="set_fs_items">
+        <item>Ninguno</item>
+        <item>Manual</item>
+        <item>Automático</item>
+    </string-array>
+    <string-array name="set_fw_colors">
+        <item>Gris pizarra claro</item>
+        <item>Secoya</item>
+        <item>Castaño oscuro</item>
+        <item>Magenta lavanda mediano</item>
+        <item>Naranja persa</item>
+        <item>Burlywood</item>
+        <item>Caqui oscuro</item>
+        <item>Mantis</item>
+        <item>Viridián</item>
+        <item>Verde mar oscuro</item>
+        <item>Azul piedra de luna</item>
+        <item>Azul de Tufts</item>
+        <item>Cerúleo oscuro</item>
+        <item>Caja de herramientas</item>
+        <item>Lavanda rico</item>
+        <item>Moral</item>
+    </string-array>
+    <string-array name="set_fw_languages">
+        <item>日本語</item>
+        <item>English</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Italiano</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="set_gm_layouts">
+        <item>Horizontal 1:1</item>
+        <item>Horizontal x:1</item>
+        <item>Vertical 1:1</item>
+        <item>Aspecto horizontal</item>
+        <item>Pantalla completa horizontal</item>
+    </string-array>
+    <string-array name="set_gm_layouts_tv">
+        <item>Horizontal 1:1</item>
+        <item>Horizontal x:1</item>
+        <item>Vertical 1:1</item>
+        <item>Aspecto horizontal</item>
+        <item>Pantalla completa horizontal</item>
+        <item>Rotar a la izquierda vertical</item>
+        <item>Rotar a la derecha vertical</item>
+    </string-array>
+    <string-array name="set_mapping_default">
+        <item>Cruceta;Cruceta, Navegar menús</item>
+        <item>Palanca izquierda;Cruceta, Navegar menús</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Cancelar en menús</item>
+        <item>A;B, Confirmar en menús</item>
+        <item>Play;Start</item>
+        <item>Back;Abrir menú</item>
+        <item>L1;Gatillo izquierdo</item>
+        <item>R1;Gatillo derecho</item>
+        <item>L3;Intercambiar pantallas</item>
+        <item>R3;Intercambiar disposiciones de pantalla 1 y 2</item>
+    </string-array>
+    <string-array name="set_mapping_moga_pocket">
+        <item>Palanca izquierda;Cruceta, Navegar menús</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Cancelar en menús</item>
+        <item>A;B, Confirmar en menús</item>
+        <item>L;L</item>
+        <item>R;R</item>
+        <item>Start;Start</item>
+        <item>Select;Abrir menú</item>
+        <item>Select+L;Carga rápida</item>
+        <item>Select+R;Guardado rápido</item>
+        <item>Select+X;Adelantar</item>
+        <item>Select+Y;Intercambiar pantallas</item>
+    </string-array>
+    <string-array name="set_mapping_moga_pro">
+        <item>Cruceta;Cruceta, Navegar menús</item>
+        <item>Palanca izquierda;Cruceta, Navegar menús</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Cancelar en menús</item>
+        <item>A;B, Confirmar en menús</item>
+        <item>L2;L</item>
+        <item>R2;R</item>
+        <item>Start;Start</item>
+        <item>Select;Select</item>
+        <item>L3;Abrir menú</item>
+        <item>R3+L1;Carga rápida</item>
+        <item>R3+R1;Guardado rápido</item>
+        <item>L1;Intercambiar pantallas</item>
+        <item>R1;Adelantar</item>
+    </string-array>
+    <string-array name="set_mapping_shield">
+        <item>Cruceta;Cruceta, Navegar menús</item>
+        <item>Left Stick;Cruceta, Navegar menús</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Cancelar en menús</item>
+        <item>A;B, Confirmar en menús</item>
+        <item>Play;Start</item>
+        <item>Back;Abrir menú</item>
+        <item>L1;Presionar apuntador de pantalla táctil</item>
+        <item>R1;Adelantar</item>
+        <item>L2;L</item>
+        <item>R2;R</item>
+        <item>L3;Intercambiar pantallas</item>
+        <item>R3;Intercambiar disposiciones de pantalla 1 y 2</item>
+    </string-array>
+    <string-array name="set_mapping_xperiaplay">
+        <item>Cruceta;Cruceta, Navegar menus</item>
+        <item>Select;Select</item>
+        <item>Start;Start</item>
+        <item>Triángulo;X</item>
+        <item>Cuadrado;Y</item>
+        <item>Círculo;A, Cancelar en menús</item>
+        <item>X;B, Confirmar en menús</item>
+        <item>L;L</item>
+        <item>R;R</item>
+        <item>Menú;Abrir menú</item>
+    </string-array>
+    <string-array name="set_menu_button_position">
+        <item>Inferior</item>
+        <item>Superior</item>
+        <item>Izquierda</item>
+        <item>Derecha</item>
+        <item>Oculto</item>
+    </string-array>
+    <string-array name="set_mic_level_items">
+        <item>Bajo</item>
+        <item>Mediano</item>
+        <item>Alto</item>
+        <item>Muy alto</item>
+    </string-array>
+    <string-array name="set_rotation_type">
+        <item>Automático</item>
+        <item>Horizontal</item>
+        <item>Horizontal invertido</item>
+    </string-array>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:background="@color/menu_bg_header">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_settings_back_general" android:background="@drawable/btn_back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />
+                <ImageView android:src="@drawable/con_ds" android:contentDescription="@null" style="@style/drastic_option_hdr_image" />
+            </LinearLayout>
+            <TextView android:text="@string/str_set_hdr_general" style="@style/drastic_option_hdr_text" />
+        </TableRow>
+        <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+    </TableLayout>
+    <ScrollView android:id="@id/set_content" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/cb_showfps" android:text="@string/str_set_showfps" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_fpstransparent" android:text="@string/str_set_fpstransparent" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_rotation" android:text="@string/str_set_autorotate" style="@style/drastic_option_item_choicehdr_text" />
+            <TextView android:id="@id/set_selection_rotation" style="@style/drastic_option_item_selection_text" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_autosave" android:text="@string/str_set_autosave" style="@style/drastic_option_item_choicehdr_text" />
+            <TextView android:id="@id/set_selection_autosave" style="@style/drastic_option_item_selection_text" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_autoresume" android:text="@string/str_set_autoresume" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_overwrite" android:text="@string/str_set_overwrite" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_loadconfirm" android:text="@string/str_set_loadconfirm" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_cheats" android:text="@string/str_set_cheats" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_lua" android:text="@string/str_set_lua" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/btn_set_ext_devicebtn" android:weightSum="1.0" style="@style/drastic_option_item">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:text="@string/str_set_devicebtn" style="@style/drastic_option_item_ext_text" />
+                    <TextView android:text="@string/str_set_devicebtn_hint" style="@style/drastic_option_item_hint" />
+                </LinearLayout>
+                <CheckBox android:gravity="right" android:id="@id/cb_devicebtn" style="@style/drastic_checkbox_empty" />
+            </LinearLayout>
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_menubtn" android:text="@string/str_set_menubtn" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_defaultlayout" android:text="@string/str_set_defaultlayout" style="@style/drastic_option_item_choicehdr_text" />
+            <TextView android:id="@id/set_selection_defaultlayout" style="@style/drastic_option_item_selection_text" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_autofirespeed" android:text="@string/str_set_autofirespeed" style="@style/drastic_option_item_choicehdr_text" />
+            <TextView android:id="@id/set_selection_autofirespeed" style="@style/drastic_option_item_selection_text" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_sysdir" android:text="@string/str_set_sysdir" style="@style/drastic_option_item_choicehdr_text" />
+            <TextView android:id="@id/set_selection_sysdir" style="@style/drastic_option_item_selection_text" />
+            <View style="@style/drastic_seperator" />
+            <Button android:id="@id/btn_wifi" android:text="@string/str_set_wifi" style="@style/drastic_set_button" />
+        </TableLayout>
+    </ScrollView>
+    <View android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/menu_hd_tv" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/main_screen" android:layout_width="376.0dip" android:layout_height="236.0dip" android:layout_marginLeft="294.0dip" android:layout_marginTop="210.0dip" android:scaleType="fitXY" android:contentDescription="@null" android:alpha="0.1" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/item_big_tv" android:id="@id/tw_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="48.0dip" android:layout_marginBottom="27.0dip" android:text="@string/empty" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/item_big_tv" android:id="@id/tw_user" android:paddingLeft="6.0sp" android:paddingBottom="12.0sp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <ImageView android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="48.0dip" android:layout_marginBottom="27.0dip" android:src="@drawable/tv_start_menu_help" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+    <ImageView android:id="@id/main_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_loading" android:contentDescription="@null" />
+</RelativeLayout>

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Zur Startseite</string>
+    <string name="abc_action_bar_up_description">Nach oben</string>
+    <string name="abc_action_menu_overflow_description">Weitere Optionen</string>
+    <string name="abc_action_mode_done">Fertig</string>
+    <string name="abc_activity_chooser_view_see_all">Alle anzeigen</string>
+    <string name="abc_activitychooserview_choose_application">App auswählen</string>
+    <string name="abc_capital_off">AUS</string>
+    <string name="abc_capital_on">AN</string>
+    <string name="abc_menu_alt_shortcut_label">Alt +</string>
+    <string name="abc_menu_ctrl_shortcut_label">Strg +</string>
+    <string name="abc_menu_delete_shortcut_label">Löschen</string>
+    <string name="abc_menu_enter_shortcut_label">Eingabetaste</string>
+    <string name="abc_menu_function_shortcut_label">Funktionstaste +</string>
+    <string name="abc_menu_meta_shortcut_label">Meta-Taste +</string>
+    <string name="abc_menu_shift_shortcut_label">Umschalttaste +</string>
+    <string name="abc_menu_space_shortcut_label">Leertaste</string>
+    <string name="abc_menu_sym_shortcut_label">Sym-Taste +</string>
+    <string name="abc_prepend_shortcut_label">Menütaste +</string>
+    <string name="abc_search_hint">Suchen…</string>
+    <string name="abc_searchview_description_clear">Suchanfrage löschen</string>
+    <string name="abc_searchview_description_query">Suchanfrage</string>
+    <string name="abc_searchview_description_search">Suche</string>
+    <string name="abc_searchview_description_submit">Anfrage senden</string>
+    <string name="abc_searchview_description_voice">Sprachsuche</string>
+    <string name="abc_shareactionprovider_share_with">Teilen mit</string>
+    <string name="abc_shareactionprovider_share_with_application">Mit %s teilen</string>
+    <string name="abc_toolbar_collapse_description">Minimieren</string>
+    <string name="app_notification_text">Nintendo DS Emulator</string>
+    <string name="btn_rom_all">"Alle
+Spiele"</string>
+    <string name="btn_rom_recent">"Zuletzt
+gespielt"</string>
+    <string name="empty" />
+    <string name="menu_settings">Einstellungen</string>
+    <string name="search_menu_title">Suche</string>
+    <string name="set_moga_showmapping">MOGA Tasten-Zuordnung anzeigen</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="str_add_user">Neuen Nutzer hinzufügen</string>
+    <string name="str_add_user_button">Hinzufügen</string>
+    <string name="str_add_user_custom_dir">Nutzerspezifischen Ordner verwenden?</string>
+    <string name="str_add_user_dir_error">Nutzer-Ordner konnte nicht angelegt werden</string>
+    <string name="str_add_user_dir_exists">Nutzer-Ordner bereits vorhanden</string>
+    <string name="str_add_user_exists">Nutzer bereits vorhanden</string>
+    <string name="str_add_user_select_dir">OK</string>
+    <string name="str_cm_abxy_A">A</string>
+    <string name="str_cm_abxy_B">B</string>
+    <string name="str_cm_abxy_X">X</string>
+    <string name="str_cm_abxy_Y">Y</string>
+    <string name="str_cm_button_enabled">aktiv</string>
+    <string name="str_cm_ctrlcancel">Abbrechen</string>
+    <string name="str_cm_ctrldefault">Standard</string>
+    <string name="str_cm_ctrlheader">Tasten-Layout</string>
+    <string name="str_cm_ctrlhide">Verstecken</string>
+    <string name="str_cm_ctrlok">Anwenden</string>
+    <string name="str_cm_ctrlresize">Größe ändern</string>
+    <string name="str_cm_ctrlshow">Zeigen</string>
+    <string name="str_cm_defaultheader">Globales Layout</string>
+    <string name="str_cm_deleteforgame">Spiele-spezifisches Layout löschen</string>
+    <string name="str_cm_editbg">Wähle Hintergrundbild</string>
+    <string name="str_cm_editctrl">Controller-Layout bearbeiten</string>
+    <string name="str_cm_editdefault">Standard bearbeiten</string>
+    <string name="str_cm_editforgame">Spiel bearbeiten</string>
+    <string name="str_cm_forgameheader">Spiele-spezifisches Layout</string>
+    <string name="str_cm_layoutmenu">Menü</string>
+    <string name="str_cm_nobgfound">Keine Bilddateien gefunden in:</string>
+    <string name="str_cm_removebg">Hintergrundbild entfernen</string>
+    <string name="str_cm_resetdefault">Zurücksetzen</string>
+    <string name="str_cm_resizeok">Zurück</string>
+    <string name="str_cm_resizescreen">Bildschirm-Größe ändern</string>
+    <string name="str_cm_savedefault">Global speichern</string>
+    <string name="str_cm_saveforgame">Für Spiel speichern</string>
+    <string name="str_cm_scale_aspect">4:3 beibehalten</string>
+    <string name="str_cm_selectctrltoast">Bitte ein Element auswählen</string>
+    <string name="str_cm_selecttoast">Bitte einen Bildschirm auswählen</string>
+    <string name="str_cm_tool_close">Werkzeuge schließen</string>
+    <string name="str_cm_tool_open">Werkzeuge öffnen</string>
+    <string name="str_cpy_fail">Daten konnten nicht verschoben werden.</string>
+    <string name="str_cpy_success">Daten wurden erfolgreich verschoben.</string>
+    <string name="str_default_user">Standard</string>
+    <string name="str_dev_htcone">"Bitte deaktiviere HTC Gestures in den Einstellungen, damit die App alle Touch-Punkte registrieren kann.
+Auf diesem Gerät sollte die Audio-Latenz nicht auf Niedrig oder Mittel gestellt werden."</string>
+    <string name="str_editor_tv_end_msg">Sollen die Änderungen gespeichert werden?</string>
+    <string name="str_editor_tv_start_msg">Gespeicherte Layouts wurden gefunden</string>
+    <string name="str_err_badarc">"Die Archiv-Datei wird nicht unterstützt.
+Versuche die .nds-Datei daraus zu enpacken und lade diese direkt."</string>
+    <string name="str_err_badrom">Die gewünschte Datei ist keine gültige ROM-Datei. Evtl. ist die Datei fehlerhaft.</string>
+    <string name="str_err_encrom">Diese Version des ROMs ist verschlüsselt. Verschlüsselte ROMs können nur geladen werden, wenn ein originales Nintendo DS ARM7 BIOS, das von deinem DS gedumpt wurde, verwendet wird.</string>
+    <string name="str_err_install">"DraStic konnte nicht auf folgenden Pfad schreiben
+$path$ .
+Bitte überprüfe den freien internen Speicher und stelle sicher, dass für den Pfad Schreibrechte vorliegen.
+Versuche auch das Gerät neuzustarten."</string>
+    <string name="str_err_jniload">DraStic konnte nicht initialisiert werden. Bitte installiere die App erneut.</string>
+    <string name="str_err_lowmem">Es ist nur wenig RAM verfügbar, DraStic könnte unerwartet beendet werden.</string>
+    <string name="str_err_lowmem_zip">"Es ist nur wenig RAM verfügbar, DraStic könnte unerwartet beendet werden.
+Versuche das Spiel zu entpacken, da das Laden von gepackten Spielen mehr RAM benötigt."</string>
+    <string name="str_err_nomount">DraStic kann den Daten-Ordner nicht erstellen. Falls das Gerät mit einem PC oder MAC über USB verbunden ist, trenne bitte die Verbindung und starte Gerät und App neu.</string>
+    <string name="str_err_nospace">Das Spiel konnte nicht geladen werden. Bitte bereinige den internen Speicher.</string>
+    <string name="str_err_reload">"DraStic wurde beendet während die App im Hintergrund lief und musste neu gestartet werden.
+Drücke 'Spiel fortsetzen' um weiterzuspielen."</string>
+    <string name="str_err_reload_auto">"DraStic wurde beendet während die App im Hintergrund lief und musste neu gestartet werden.
+Um in so einem Fall das Spiel fortsetzen zu können, aktiviere bitte Auto-Speichern Pause/Suspend.
+Soll die Einstellunge jetzt aktiviert werden?"</string>
+    <string name="str_err_romgeneral">Bei dem Versuch das Spiel zu Laden ist ein Fehler aufgetreten</string>
+    <string name="str_err_rootpath">DraStic konnte nicht auf den Daten-Ordner zugreifen. Bitte starte die App neu.</string>
+    <string name="str_gm_changegame">Spiel wechseln</string>
+    <string name="str_gm_cheats">Cheats</string>
+    <string name="str_gm_cheats_add">Cheat hinzufügen</string>
+    <string name="str_gm_cheats_assorted">Assorted</string>
+    <string name="str_gm_cheats_code">Code</string>
+    <string name="str_gm_cheats_custom">Benutzerdefinierte Cheats</string>
+    <string name="str_gm_cheats_custom_enable">Cheat aktivieren</string>
+    <string name="str_gm_cheats_custom_note">Eigene Cheats hinzufügen</string>
+    <string name="str_gm_cheats_delete">Löschen</string>
+    <string name="str_gm_cheats_delete_confirm">Cheat löschen?</string>
+    <string name="str_gm_cheats_desc">Beschreibung</string>
+    <string name="str_gm_cheats_disable_all">Alle deaktivieren</string>
+    <string name="str_gm_cheats_edit">Cheat bearbeiten</string>
+    <string name="str_gm_cheats_menu">Menü</string>
+    <string name="str_gm_cheats_menu_header">Cheat-Menü</string>
+    <string name="str_gm_cheats_name">Name</string>
+    <string name="str_gm_cheats_ondisabled">Dieser Ordner erlaubt nicht mehr als einen Cheat gleichzeitig. Die anderen wurden deaktiviert.</string>
+    <string name="str_gm_cheats_save">Speichern</string>
+    <string name="str_gm_cheats_single">Nur einen auswählen</string>
+    <string name="str_gm_cheats_warning">Warnung: Cheats können unerwartete Folgen haben und ein Spiel sogar unspielbar machen. Sobald ein Cheat aktiviert wird, lässt er sich normalerweise nicht einfach wieder deaktivieren, bis das Spiel neu gestartet und ein Speicherstand im Spiel selbst geladen wird. Deshalb sollte zu Sicherheit immer auch im Spiel selbst gespeichert werden, wenn Cheats verwendet werden!</string>
+    <string name="str_gm_custom_error_add">Fehler: Cheat konnte nicht hinzugefügt werden.</string>
+    <string name="str_gm_custom_error_load">Fehler: Cheat-Datenbank nicht geladen.</string>
+    <string name="str_gm_custom_error_save">Fehler: Benutzerdefinierte Cheats konnten nicht gespeichert werden.</string>
+    <string name="str_gm_custom_invalid">Cheat ist in einem unzulässigen Format.</string>
+    <string name="str_gm_custom_warning">Cheat ist bereits vorhanden.</string>
+    <string name="str_gm_exit">Beenden</string>
+    <string name="str_gm_hdr_game">Spiel</string>
+    <string name="str_gm_hdr_misc">Mehr</string>
+    <string name="str_gm_hdr_settings">Einstellungen</string>
+    <string name="str_gm_help">Hilfe</string>
+    <string name="str_gm_layout">Bildschirme und Tasten bearbeiten</string>
+    <string name="str_gm_layout_hdr">Wähle ein Layout</string>
+    <string name="str_gm_layout_select">Bildschirm-Anordnung auswählen</string>
+    <string name="str_gm_layout_tv">Bildschirm-Anordnung bearbeiten</string>
+    <string name="str_gm_load">Schnell-Laden</string>
+    <string name="str_gm_loadstate">Savestate laden</string>
+    <string name="str_gm_mainmenu">Haupt-Menü</string>
+    <string name="str_gm_managestate">Savestates verwalten</string>
+    <string name="str_gm_newgame">Neues Spiel</string>
+    <string name="str_gm_reset">Spiel zurücksetzen</string>
+    <string name="str_gm_save">Schnell-Speichern</string>
+    <string name="str_gm_savestate">Savestate speichern</string>
+    <string name="str_gm_savestate_warning">Wir empfehlen sich nicht nur auf Savestates zu verlassen. Bitte speichere öfter mal auch im Spiel selbst.Falls ein Savestate bechädigt wird, oder zur falschen Zeit gespeichert wird, kann der gesamte Fortschritt verloren gehen.</string>
+    <string name="str_gm_settings">Einstellungen</string>
+    <string name="str_gm_shader_error" formatted="false">Filter %FILTER% konnte nicht geladen werden.</string>
+    <string name="str_gm_statemenu">Laden/Speichern</string>
+    <string name="str_hm_about">Über</string>
+    <string name="str_hm_changelog">Versions-Informationen</string>
+    <string name="str_hm_faq">FAQ</string>
+    <string name="str_hm_instructions">Anleitung</string>
+    <string name="str_lic_error">"Die Lizenz konnte nicht bestätigt werden.
+Stelle sicher, dass eine Internetverbindung besteht, wenn DraStic das nächste Mal gestartet wird, und dass Zeit und Datum korrekt eingestellt sind.
+Falls du DraStic noch nicht gekauft hast, kanns du dies jetzt über 'Kaufen' tun."</string>
+    <string name="str_lic_error_inernal">"Die Lizenz konnte nicht bestätigt werden.
+Falls Lucky Patcher installiert ist, deaktiviere bitte die Option 'Google Play License Verification Emulation'."</string>
+    <string name="str_lic_error_licensed">"Die Lizenz konnte nicht bestätigt werden.
+Stelle sicher, dass Zeit und Datum korrekt eingestellt sind.
+"</string>
+    <string name="str_lic_error_not_licensed">"Die Lizenz konnte nicht bestätigt werden.
+Stelle sicher, dass der Kauf erfolgreich war und versuche DraStic später nochmal zu starten."</string>
+    <string name="str_lic_error_online">"Die Lizenz konnte nicht bestätigt werden.
+Stelle sicher, dass eine Internetverbindung besteht und starte DraStic neu.
+Sobald die Lizenz bestätigt wurde, kannst du ohne Internetverbindung spielen."</string>
+    <string name="str_lic_error_retry">"Die Lizenz konnte nicht bestätigt werden.
+Stelle sicher, dass eine Internetverbindung besteht, wenn DraStic das nächste Mal gestartet wird, und dass Zeit und Datum korrekt eingestellt sind."</string>
+    <string name="str_menu_close">Schließen</string>
+    <string name="str_menu_continue">Weiter</string>
+    <string name="str_menu_cpufail">Die CPU des Geräts wird leider nicht unterstützt.</string>
+    <string name="str_menu_del_confirm">Speicherstand löschen?</string>
+    <string name="str_menu_delete">Löschen</string>
+    <string name="str_menu_delsysfolder">Sollen die Quelldaten gelöscht werden?</string>
+    <string name="str_menu_game">Tippe ein Symbol an um das Screen Layout zu ändern</string>
+    <string name="str_menu_help">Hilfe</string>
+    <string name="str_menu_home">Haupt-Menü</string>
+    <string name="str_menu_iconcache">Icon Cache wird aktualisiert</string>
+    <string name="str_menu_load">Laden</string>
+    <string name="str_menu_loadorresume">"Letzten Speicherstand fortsetzen?
+Wähle 'Nein' um ein neues Spiel zu starten."</string>
+    <string name="str_menu_main_confirm">Spiel verlassen?</string>
+    <string name="str_menu_movesysfolder">Daten nach /sdcard/DraStic verschieben? Speicherstände bleiben hierdurch erhalten, wenn die App neu- oder deinstalliert wird.</string>
+    <string name="str_menu_no">Nein</string>
+    <string name="str_menu_overwrite">Speichern</string>
+    <string name="str_menu_pause">Spiel-Menü</string>
+    <string name="str_menu_quit">DraStic verlassen</string>
+    <string name="str_menu_quit_confirm">Anwendung verlassen?</string>
+    <string name="str_menu_reset">Zurücksetzen</string>
+    <string name="str_menu_reset_confirm">Spiel zurücksetzen?</string>
+    <string name="str_menu_romscan">Spiele werden gesucht</string>
+    <string name="str_menu_rootmoved">DraStics Daten-Ordner wurde aktualisiert:</string>
+    <string name="str_menu_save">Speichern</string>
+    <string name="str_menu_saving_busy">Speichervorgang wird abgeschlossen</string>
+    <string name="str_menu_settings">Einstellungen</string>
+    <string name="str_menu_shortcut">Icon auf dem Desktop installieren?</string>
+    <string name="str_menu_states">Laden/Speichern</string>
+    <string name="str_menu_wo_confirm">Speicherstand überschreiben?</string>
+    <string name="str_menu_yes">Ja</string>
+    <string name="str_rom_continue">Letzten Speicherstand fortsetzen</string>
+    <string name="str_rom_delete">Spiel dauerhaft löschen?</string>
+    <string name="str_rom_loadstate">Anderen Speicherstand fortsetzen</string>
+    <string name="str_rom_newgame">Spiel starten</string>
+    <string name="str_rom_shortcut">Verknüpfung erstellen</string>
+    <string name="str_set_altmenu">Altes Start-Menü verwenden</string>
+    <string name="str_set_analogtouch">Modus für Rechten Analog-Steuerknüppel</string>
+    <string name="str_set_analogtouch_title">Rechter Analog-Steuerknüppel</string>
+    <string name="str_set_analogtriggers">Analoge Schultertasten aktivieren</string>
+    <string name="str_set_autofirespeed">Schnell-Feuer Geschwindigkeit</string>
+    <string name="str_set_autoload">Automatisch laden</string>
+    <string name="str_set_autoload_hint">Der letzte Spielstand wird automatisch geladen, wenn ein Spiel von der Schnellauswahl aus gestartet wird.</string>
+    <string name="str_set_autoresume">Letzten Speicherstand fortsetzen, wenn Verknüpfung gestartet wird</string>
+    <string name="str_set_autorotate">Landscape-Layout Rotation</string>
+    <string name="str_set_autosave">Auto-Speichern</string>
+    <string name="str_set_autosave_hint">Wenn das Spiel pausiert oder verlassen wird.</string>
+    <string name="str_set_autotrim">ROM automatisch trimmen</string>
+    <string name="str_set_backupinsave">Spiele-Speicherstände im Savestate speichern</string>
+    <string name="str_set_backupinsave_warn">"Warnung: Wenn diese Einstellung nicht aktiv ist, können Savestates und Spiel-Speicherstände ihre Synchronisation verlieren, was zu unlesbaren Savestates führen kann.
+Zur Änderung dieser Einstellung muss die App neu gestartet werden."</string>
+    <string name="str_set_bday">Geburtstag</string>
+    <string name="str_set_bday_hint">Monat/Tag</string>
+    <string name="str_set_bday_ok">Setzen</string>
+    <string name="str_set_btn_advanced">Erweitert</string>
+    <string name="str_set_btn_audio">Audio</string>
+    <string name="str_set_btn_controller">Externer Controller</string>
+    <string name="str_set_btn_general">Allgemein</string>
+    <string name="str_set_btn_input">Virtuelles Gamepad</string>
+    <string name="str_set_btn_system">System</string>
+    <string name="str_set_btn_video">Video</string>
+    <string name="str_set_btnmod">Action-Button Touch-Modifikator</string>
+    <string name="str_set_caching">Spiel in Datei entpacken</string>
+    <string name="str_set_cheats">Cheats aktivieren</string>
+    <string name="str_set_color">Bevorzugte Farbe</string>
+    <string name="str_set_confirm">Beenden/Neustarten muss bestätigt werden</string>
+    <string name="str_set_confirm_hint">Wenn ein Spiel neu gestartet oder verlassen wird, muss dies bestätigt werden, um einen Verlust des Fortschritts im Spiel zu vermeiden.</string>
+    <string name="str_set_ctrlalpha">Controller-Alpha</string>
+    <string name="str_set_ctrlskin">Skin</string>
+    <string name="str_set_ctrlskin_default">Standard</string>
+    <string name="str_set_custom_clock">Benutzerdefinierte System-Uhr</string>
+    <string name="str_set_custom_clock_enable">Benutzerdefinierte System-Uhr aktivieren</string>
+    <string name="str_set_custom_clock_msg">"Warnung:
+Eine benutzerdefinierte System-Zeit kann Probleme in Savestates verursachen.
+Zur Änderung dieser Einstellung muss die App neu gestartet werden."</string>
+    <string name="str_set_deadzone">Deadzone rechter Steuerknüppel</string>
+    <string name="str_set_debuginfo">Debug-Info:</string>
+    <string name="str_set_defaultlayout">Standard-Layout</string>
+    <string name="str_set_devicebtn">Zurück-Taste deaktivieren</string>
+    <string name="str_set_devicebtn_hint">"Vermeidet ein versehentliches Drücken während des Spielens.
+Die Taste ist in den Menüs weiterhin aktiv."</string>
+    <string name="str_set_disablemapped">Zugeordnete Tasten im virtuellen Gamepad ausblenden</string>
+    <string name="str_set_disablemapped_hint">Gampad-Tasten, die einer Geräte-Taste zugeordnet sind, werden im virtuellen Gamepad nicht angezeigt.</string>
+    <string name="str_set_display_border">Bildschirm-Rand</string>
+    <string name="str_set_dpadmod">D-Pad Touch-Modifikator</string>
+    <string name="str_set_edge_marking">Edge-Marking deaktivieren</string>
+    <string name="str_set_extdisplay">Externer Bildschirm-Modus</string>
+    <string name="str_set_extdisplay_border">Externer Bildschirm-Rand</string>
+    <string name="str_set_extdisplay_na">Nicht unterstützt. Benötigt Android 4.2.2 oder höher.</string>
+    <string name="str_set_extdisplay_screen">Externer Bildschirm</string>
+    <string name="str_set_extrafunc_1">Spezial-Taste I</string>
+    <string name="str_set_extrafunc_2">Spezial-Taste II</string>
+    <string name="str_set_extrafunc_3">Spezial-Taste III</string>
+    <string name="str_set_ffwd">Schnellvorlauf</string>
+    <string name="str_set_ffwd_150">150%</string>
+    <string name="str_set_ffwd_200">200%</string>
+    <string name="str_set_ffwd_300">300%</string>
+    <string name="str_set_ffwd_400">400%</string>
+    <string name="str_set_ffwd_50">50%</string>
+    <string name="str_set_ffwd_indicator">Schnellvorlauf-Symbol anzeigen</string>
+    <string name="str_set_ffwd_speed">Maximale Schnellvorlauf-Geschwindigkeit</string>
+    <string name="str_set_ffwd_unlimited">Unbegrenzt</string>
+    <string name="str_set_ffwdtoggle">Schnellvorlauf Umschalt-Modus</string>
+    <string name="str_set_fh2x">HQ2X</string>
+    <string name="str_set_filter">Filter</string>
+    <string name="str_set_fixmainscreen">Haupt-Bildschirm auf oberem Bildschirm anzeigen</string>
+    <string name="str_set_flinear">Linear</string>
+    <string name="str_set_fnone">Aus</string>
+    <string name="str_set_fpstransparent">FPS transparent darstellen</string>
+    <string name="str_set_fquilez">Quilez</string>
+    <string name="str_set_fs">Frameskip</string>
+    <string name="str_set_fs2x">Scale2X</string>
+    <string name="str_set_fs_auto">Auto</string>
+    <string name="str_set_fs_manual">Manuell</string>
+    <string name="str_set_fs_none">Aus</string>
+    <string name="str_set_fs_value">Frameskip-Wert</string>
+    <string name="str_set_gl16bit">16-Bit Rendering</string>
+    <string name="str_set_gl_sleep">Sleep im Rendering-Thread</string>
+    <string name="str_set_haptic">Haptisches Feedback</string>
+    <string name="str_set_hdr_advanced">Erweiterte Einstellungen</string>
+    <string name="str_set_hdr_audio">Audio-Einstellungen</string>
+    <string name="str_set_hdr_audio_game">Audio-Einstellungen (Spiel)</string>
+    <string name="str_set_hdr_controller">Externe Controller Einstellungen</string>
+    <string name="str_set_hdr_general">Allgemeine Einstellungen</string>
+    <string name="str_set_hdr_input">Virtuelle Gamepad Einstellungen</string>
+    <string name="str_set_hdr_system">System Einstellungen</string>
+    <string name="str_set_hdr_video">Video-Einstellungen</string>
+    <string name="str_set_hdr_video_game">Video-Einstellungen (Spiel)</string>
+    <string name="str_set_hires">Hochauflösendes 3D Rendering</string>
+    <string name="str_set_ignorecardlimit">Gamecard-Limit ignorieren</string>
+    <string name="str_set_key_cancel">Abbrechen</string>
+    <string name="str_set_key_clear">aufheben</string>
+    <string name="str_set_key_skip">Überspringen</string>
+    <string name="str_set_keyconfig">Tasten-Zuordnung bearbeiten</string>
+    <string name="str_set_keycustom">Virtualles Gamepad bearbeiten</string>
+    <string name="str_set_keyinput">Drücke Taste für:</string>
+    <string name="str_set_keyinput_mapped">Drücke andere Taste, bereits verwendet für</string>
+    <string name="str_set_keyinput_wait">Drücke Taste</string>
+    <string name="str_set_keymap">Zuordnung</string>
+    <string name="str_set_keymap_extra">Spezial-Zuordnung</string>
+    <string name="str_set_keymap_show">Zuordnung anzeigen</string>
+    <string name="str_set_keymapid">Tasten-Zuordnung auswählen</string>
+    <string name="str_set_keymapname">Umbenennen</string>
+    <string name="str_set_keymapnull">Keine Zuordnung</string>
+    <string name="str_set_keyname">Geräte-Namen setzen</string>
+    <string name="str_set_keyname_ok">OK</string>
+    <string name="str_set_language">Sprache für Spiele die mehrere Sprachen unterstützen</string>
+    <string name="str_set_language_title">System-Sprache</string>
+    <string name="str_set_layout">Layout-Auswahl</string>
+    <string name="str_set_loadconfirm">Laden von Savestates muss bestätigt werden</string>
+    <string name="str_set_lowrestextures">UI Texturen in niedriger Auflösung</string>
+    <string name="str_set_lua">Lua aktivieren</string>
+    <string name="str_set_mapping_device">Taste</string>
+    <string name="str_set_mapping_device_mapping">Zugeordneter Button</string>
+    <string name="str_set_mapping_ds_button">DS Button</string>
+    <string name="str_set_mapping_function">Funktion</string>
+    <string name="str_set_mapping_info">Standard-Zuordnung:</string>
+    <string name="str_set_menu_game_options">Spiele-Einstellungen</string>
+    <string name="str_set_menu_game_options_delete">Spiele-Einstellungen löschen</string>
+    <string name="str_set_menu_global_options">Globale Einstellungen</string>
+    <string name="str_set_menu_override_msg">Optionen mit durchgestrichenem Text werden durch per-Spiel Einstellungen überschrieben.</string>
+    <string name="str_set_menubtn">Menü-Taste deaktivieren</string>
+    <string name="str_set_menubtn_pos">Position der Menü-Taste</string>
+    <string name="str_set_menubtn_warn">Verstecke die virtualle Menü-Taste nur, wenn dem Menü eine Geräte-Taste zugeordnet ist.</string>
+    <string name="str_set_message">Nachricht</string>
+    <string name="str_set_micenabled">Geräte-Mikrofon verwenden</string>
+    <string name="str_set_miclevel">Mikrofon-Level</string>
+    <string name="str_set_nick">Spitzname</string>
+    <string name="str_set_no_menu_mapping">"Keine Taste ist dem Menü zugeordnet.
+Bitte öffne 'Spezial-Zuordnung' und ordne der Menü-Funktion eine Taste zu, sonst kann ein Spiel nicht verlassen werden."</string>
+    <string name="str_set_nodiagonals">Kein diagonaler Input für virtuelles D-Pad</string>
+    <string name="str_set_none">Aus</string>
+    <string name="str_set_overwrite">Überschreiben von Savestates muss bestätigt werden</string>
+    <string name="str_set_restart_req">Änderungen werden erst nach einem Neustart der App aktiv</string>
+    <string name="str_set_rtc_system_time">Immer Geräte-Zeit für RTC verwenden</string>
+    <string name="str_set_scaling">Skalierungs-Modus</string>
+    <string name="str_set_settings">Einstellungen</string>
+    <string name="str_set_settings_game">Einstellungen (Spiel)</string>
+    <string name="str_set_showfps">FPS anzeigen</string>
+    <string name="str_set_showmore">Start- und Select-Taste immer anzeigen</string>
+    <string name="str_set_sl_hi">Hoch</string>
+    <string name="str_set_sl_low">Niedrig</string>
+    <string name="str_set_sl_med">Mittel</string>
+    <string name="str_set_sl_vhi">Sehr hoch</string>
+    <string name="str_set_smartedit">Automatisches Einrasten und Anpassen der Größe im Layout-Editor</string>
+    <string name="str_set_soundenabled">Audio aktiv</string>
+    <string name="str_set_soundlatency">Audio-Latenz</string>
+    <string name="str_set_soundvolume">Lautstärke</string>
+    <string name="str_set_threaded">Multi-Thread 3D-Rendering</string>
+    <string name="str_set_threaded_hint">Verbessert die Leistung in Spielen mit vielen 3D-Grafiken, kann aber grafische Fehler in manchen Spielen verursachen.</string>
+    <string name="str_set_threaded_no">Diese Einstellung ist nur auf Multi-Core CPUs verfügbar.</string>
+    <string name="str_set_threaded_warn">Diese Option ist experimentell und kann grafische Fehler und Abstürze verursachen.</string>
+    <string name="str_set_touchthrough">Auch der Touch-Bildschirm unter Gamepad-Tasten wird berührt</string>
+    <string name="str_set_volume_value">Lautstärke</string>
+    <string name="str_set_wifi">Multiplayer/WiFi</string>
+    <string name="str_set_wifi_msg">Tut uns leid, aber Multiplayer/Wifi wird nicht unterstützt.</string>
+    <string name="str_sm_back">"Zum Spiel
+zurückkehren"</string>
+    <string name="str_sm_bioserror">Diese Datei ist nicht kompatibel. Sie wurde nicht mit den momentan aktiven BIOS Dateien gespeichert.</string>
+    <string name="str_sm_copy">Kopieren</string>
+    <string name="str_sm_copyok">Eine Kopie wurde erstellt</string>
+    <string name="str_sm_delete">Löschen</string>
+    <string name="str_sm_deleteok">Der Savestate wurde gelöscht</string>
+    <string name="str_sm_empty">LEER</string>
+    <string name="str_sm_load">Savestate laden</string>
+    <string name="str_sm_manage">Savestates verwalten</string>
+    <string name="str_sm_newsave">Neuer Savestate</string>
+    <string name="str_sm_play">Spielen</string>
+    <string name="str_sm_save">Savestate speichern</string>
+    <string name="str_sm_saveok">Das Spiel wurde gespeichert</string>
+    <string name="str_sm_sloterror">Keine weiteren Speicherstände verfügbar</string>
+    <string name="str_sm_state_corrupted">Die Datei ist beschädigt!</string>
+    <string name="str_sm_state_played">Gespielt</string>
+    <string name="str_sm_state_size">Größe</string>
+    <string name="str_sm_state_version">Gespeichert mit</string>
+    <string name="str_sys_copyerror">Auf den externen Speicher konnte nicht zugegriffen werden.</string>
+    <string name="str_sys_copyingsysfolder">Daten werden verschoben</string>
+    <string name="str_sys_deletesysfolder">Daten werden gelöscht</string>
+    <string name="str_ui_gamedetail">Spiel starten</string>
+    <string name="str_ui_gameselect">Spiel auswählen</string>
+    <string name="str_ui_help_firstgame">"Bitte drücke die 'Menü'-Taste im Spiel, um das Layout und die Einstellungen zu ändern, oder das Spiel zu Laden/Speichern."</string>
+    <string name="str_ui_help_firstsinglescreen">Bitte bedenke, dass wichtige Informationen oder Menüs verdeckt sein können, solange das Spiel auf nur einem Bildschirm angezeigt wird.</string>
+    <string name="str_ui_help_licerror">"Falls du DraStic gekauft hast, aber trotzdem ein Lizenz-Fehler angezeigt wird, versuche bitte folgendes:
+
+ 1. Stelle sicher, dass Datum und Uhrzeit korrekt eingestellt sind und eine aktive Internet-Verbindung besteht, wenn DraStic das nächste Mal gestartet wird
+ 2. Öffne Einstellungen->Anwendungen->Alle und lösche Daten und Cache der Google Play App und der Google Play Dienste
+
+ Falls der Fehler weitehin auftritt, kannst du zusätzlich versuchen:
+
+ 3. De-installiere DraStic
+ 4. Starte das Gerät neu
+ 5. Installiere DraStic von Google Play"</string>
+    <string name="str_ui_helptouch">Berühre den Bildschirm um fortzufahren</string>
+    <string name="str_ui_loadconfirm">Speicherstand laden?</string>
+    <string name="str_ui_nofiles">KEINE SPIELE VERFÜGBAR</string>
+    <string name="str_ui_numsaves">Speicherstände</string>
+    <string name="str_ui_overwrite">Speicherstand überschreiben?</string>
+    <string name="str_ui_quickselect">Spiele-Schnellauswahl</string>
+    <string name="str_ui_setcheats">Cheats</string>
+    <string name="str_ui_setcheatscustom">Benutzerdefinierte Cheats</string>
+    <string name="str_user_info">Nutzer:</string>
+    <string name="str_user_title">Aktiver Nutzer:</string>
+    <string name="str_warn_activities">"Bitte deaktiviere 'Kein Aktivitäts-Log' in den Entwickleroptionen, sonst funktioniert DraStic unter Umständen nicht."</string>
+</resources>

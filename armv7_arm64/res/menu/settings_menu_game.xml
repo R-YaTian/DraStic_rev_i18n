@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_set_goto_global" android:title="@string/str_set_menu_global_options" />
+    <item android:id="@id/menu_set_delete_game" android:title="@string/str_set_menu_game_options_delete" />
+</menu>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:id="@id/devicetext" android:padding="4.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0sp" />
+    <View android:background="#ff555555" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

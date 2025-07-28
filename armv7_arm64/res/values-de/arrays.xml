@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="set_analogstick_items">
+        <item>Aus</item>
+        <item>FPS-Modus</item>
+        <item>Stick-Modus</item>
+        <item>Zeiger-Modus</item>
+    </string-array>
+    <string-array name="set_audio_latency_items">
+        <item>Niedrig</item>
+        <item>Mittel</item>
+        <item>Hoch</item>
+        <item>Sehr hoch</item>
+    </string-array>
+    <string-array name="set_autofire_frequency">
+        <item>Geschwindigkeit 1 (schnell)</item>
+        <item>Geschwindigkeit 2</item>
+        <item>Geschwindigkeit 3</item>
+        <item>Geschwindigkeit 4</item>
+        <item>Geschwindigkeit 5 (langsam)</item>
+    </string-array>
+    <string-array name="set_autosave_type">
+        <item>Aus</item>
+        <item>Pause/Suspend</item>
+        <item>Alle 5 Minuten</item>
+        <item>Alle 15 Minuten</item>
+        <item>Alle 30 Minuten</item>
+    </string-array>
+    <string-array name="set_cheat_menu_tv">
+        <item>Cheat hinzufügen</item>
+        <item>Alle Cheats deaktivieren</item>
+        <item>Ausgewählten Cheat bearbeiten</item>
+    </string-array>
+    <string-array name="set_editor_endmenu_tv">
+        <item>Speichern als globales Layout</item>
+        <item>Speichern für geladenes Spiel</item>
+        <item>Zurück zum Editor</item>
+        <item>Verlassen ohne zu speichern</item>
+    </string-array>
+    <string-array name="set_editor_startmenu_tv">
+        <item>Lade Standard-Layout</item>
+        <item>Lade globales Layout</item>
+        <item>Lade Spiel-Layout</item>
+    </string-array>
+    <string-array name="set_extdisplay_screen">
+        <item>Oberer Bildschirm</item>
+        <item>Unterer Bildschirm</item>
+    </string-array>
+    <string-array name="set_extdisplay_type">
+        <item>Geräte-Bildschirm klonen</item>
+        <item>Korrektes Seitenverhältnis</item>
+        <item>Vollbild</item>
+    </string-array>
+    <string-array name="set_extra_funcs">
+        <item>Aus</item>
+        <item>Schnellvorlauf</item>
+        <item>Schnell-Speichern</item>
+        <item>Schnell-Laden</item>
+        <item>Bildschirme Oben/Unten wechseln</item>
+        <item>Zwischen 1- und 2-Bildschirm-Layouts wechseln</item>
+        <item>Virtuelle Tasten ein-/ausblenden</item>
+        <item>Mikrofon-Rauschen simulieren</item>
+        <item>Landscape Layouts durschwechseln</item>
+        <item>Schnellfeuer ein-/ausschalten</item>
+    </string-array>
+    <string-array name="set_ffwd_speed_items">
+        <item>50%</item>
+        <item>150%</item>
+        <item>200%</item>
+        <item>300%</item>
+        <item>400%</item>
+        <item>Unbegrenzt</item>
+    </string-array>
+    <string-array name="set_filer_items">
+        <item>Aus</item>
+        <item>Linear</item>
+        <item>Scale2X</item>
+        <item>HQ2X</item>
+        <item>Quilez</item>
+    </string-array>
+    <string-array name="set_filer_items_1cpu">
+        <item>Aus</item>
+        <item>Linear</item>
+        <item>Quilez</item>
+    </string-array>
+    <string-array name="set_fs_items">
+        <item>Aus</item>
+        <item>Manuell</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="set_fw_colors">
+        <item>Light Slate Gray</item>
+        <item>Redwood</item>
+        <item>Deep Chestnut</item>
+        <item>Medium Lavender Magenta</item>
+        <item>Persian Orange</item>
+        <item>Burlywood</item>
+        <item>Dark Khaki</item>
+        <item>Mantis</item>
+        <item>Viridian</item>
+        <item>Dark Sea Green</item>
+        <item>Moonstone blue</item>
+        <item>Tufts Blue</item>
+        <item>Dark Cerulean</item>
+        <item>Toolbox</item>
+        <item>Rich Lavender</item>
+        <item>Mulberry</item>
+    </string-array>
+    <string-array name="set_fw_languages">
+        <item>日本語</item>
+        <item>English</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Italiano</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="set_gm_layouts">
+        <item>Landscape 1:1</item>
+        <item>Landscape x:1</item>
+        <item>Portrait 1:1</item>
+        <item>Landscape (korrektes Seitenverhältnis)</item>
+        <item>Landscape (Vollbild)</item>
+    </string-array>
+    <string-array name="set_gm_layouts_tv">
+        <item>Landscape 1:1</item>
+        <item>Landscape x:1</item>
+        <item>Portrait 1:1</item>
+        <item>Landscape (korrektes Seitenverhältnis)</item>
+        <item>Landscape (Vollbild)</item>
+        <item>Portrait links rotiert</item>
+        <item>Portrait rechts rotiert</item>
+    </string-array>
+    <string-array name="set_mapping_default">
+        <item>D-Pad;D-Pad, Menü-Navigation</item>
+        <item>Left Stick;D-Pad, Menü-Navigation</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Abbrechen in Menüs</item>
+        <item>A;B, Bestätigen in Menüs</item>
+        <item>Play;Start</item>
+        <item>Back;Menü öffnen</item>
+        <item>L1;L-Schultertaste</item>
+        <item>R1;R-Schultertaste</item>
+        <item>L3;Bildschirme wechseln</item>
+        <item>R3;Zwischen 1- und 2-Bildschirm-Layouts wechseln</item>
+    </string-array>
+    <string-array name="set_mapping_moga_pocket">
+        <item>Left Stick;D-Pad, Menü-Navigation</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Abbrechen in Menüs</item>
+        <item>A;B, Bestätigen in Menüs</item>
+        <item>L;L</item>
+        <item>R;R</item>
+        <item>Start;Start</item>
+        <item>Select;Menü öffnen</item>
+        <item>Select+L;Schnell-Laden</item>
+        <item>Select+R;Quick-Save</item>
+        <item>Select+X;Schnell-Speichern</item>
+        <item>Select+Y;Bildschirme wechseln</item>
+    </string-array>
+    <string-array name="set_mapping_moga_pro">
+        <item>D-Pad;D-Pad, Menü-Navigation</item>
+        <item>Left Stick;D-Pad, Menü-Navigation</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Abbrechen in Menüs</item>
+        <item>A;B, Bestätigen in Menüs</item>
+        <item>L2;L</item>
+        <item>R2;R</item>
+        <item>Start;Start</item>
+        <item>Select;Select</item>
+        <item>L3;Menü öffnen</item>
+        <item>R3+L1;Schnell-Laden</item>
+        <item>R3+R1;Schnell-Speichern</item>
+        <item>L1;Bildschirme wechseln</item>
+        <item>R1;Schnellvorlauf</item>
+    </string-array>
+    <string-array name="set_mapping_shield">
+        <item>D-Pad;D-Pad, Menü-Navigation</item>
+        <item>Left Stick;D-Pad, Menü-Navigation</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Abbrechen in Menüs</item>
+        <item>A;B, Bestätigen in Menüs</item>
+        <item>Play;Start</item>
+        <item>Back;Menü öffnen</item>
+        <item>L1;Touch-Bildschirm pressen</item>
+        <item>R1;Schnellvorlauf</item>
+        <item>L2;L</item>
+        <item>R2;R</item>
+        <item>L3;Bildschirme wechseln</item>
+        <item>R3;Zwischen 1- und 2-Bildschirm-Layouts wechseln</item>
+    </string-array>
+    <string-array name="set_mapping_xperiaplay">
+        <item>D-Pad;D-Pad, Menü-Navigation</item>
+        <item>Select;Select</item>
+        <item>Start;Start</item>
+        <item>Triangle;X</item>
+        <item>Square;Y</item>
+        <item>Circle;A, Abbrechen in Menüs</item>
+        <item>X;B, Bestätigen in Menüs</item>
+        <item>L;L</item>
+        <item>R;R</item>
+        <item>Menu;Menü öffnen</item>
+    </string-array>
+    <string-array name="set_menu_button_position">
+        <item>Unten</item>
+        <item>Oben</item>
+        <item>Links</item>
+        <item>Rechts</item>
+        <item>Ausgeblendet</item>
+    </string-array>
+    <string-array name="set_mic_level_items">
+        <item>Niedrig</item>
+        <item>Mittel</item>
+        <item>Hoch</item>
+        <item>Sehr hoch</item>
+    </string-array>
+    <string-array name="set_rotation_type">
+        <item>Auto</item>
+        <item>Landscape</item>
+        <item>Reverse Landscape</item>
+    </string-array>
+</resources>

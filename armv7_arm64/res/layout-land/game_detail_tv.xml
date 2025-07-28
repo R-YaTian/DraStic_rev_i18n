@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_settings_back_romdetail" android:background="@drawable/btn_back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />
+            <ImageView android:src="@drawable/tv_back" android:contentDescription="@null" style="@style/drastic_option_hdr_image" />
+        </LinearLayout>
+        <TextView android:id="@id/romselect_title_detail" android:layout_width="wrap_content" android:text="@string/str_ui_gamedetail" android:layout_toRightOf="@id/btn_settings_back_romdetail" android:layout_centerVertical="true" style="@style/drastic_option_hdr_text" />
+        <View android:background="#00000000" android:layout_width="1.0dip" android:layout_height="40.0dip" android:layout_toRightOf="@id/romselect_title_detail" />
+    </RelativeLayout>
+    <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="#fff8f8f8" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip">
+        <ImageView android:id="@id/game_detail_img" android:layout_width="64.0dip" android:layout_height="64.0dip" android:contentDescription="@null" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/game_detail_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" />
+    </LinearLayout>
+    <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ScrollView android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="32.0dip">
+            <TextView android:id="@id/rom_newgame" android:text="@string/str_rom_newgame" style="@style/drastic_option_item_tv" />
+            <View style="@style/drastic_thin_seperator" />
+            <TextView android:id="@id/rom_continue" android:text="@string/str_rom_continue" style="@style/drastic_option_item_tv" />
+            <View style="@style/drastic_thin_seperator" />
+            <TextView android:id="@id/rom_loadstate" android:text="@string/str_rom_loadstate" style="@style/drastic_option_item_choicehdr_text_tv" />
+        </LinearLayout>
+    </ScrollView>
+</TableLayout>

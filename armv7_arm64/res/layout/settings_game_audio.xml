@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:background="@color/menu_bg_header">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_settings_back_audio_game" android:background="@drawable/btn_back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />
+                <ImageView android:src="@drawable/con_ds" android:contentDescription="@null" style="@style/drastic_option_hdr_image" />
+            </LinearLayout>
+            <TextView android:text="@string/str_set_hdr_audio_game" style="@style/drastic_option_hdr_text" />
+        </TableRow>
+        <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+    </TableLayout>
+    <ScrollView android:id="@id/set_content" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/set_select_soundlatency_game" android:tag="per_game" android:text="@string/str_set_soundlatency" style="@style/drastic_option_item_choicehdr_text" />
+            <TextView android:id="@id/set_selection_soundlatency_game" android:tag="per_game" style="@style/drastic_option_item_selection_text" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </TableLayout>
+    </ScrollView>
+    <View android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+</LinearLayout>

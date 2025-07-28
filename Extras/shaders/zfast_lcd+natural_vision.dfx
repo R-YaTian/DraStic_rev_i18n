@@ -1,0 +1,40 @@
+// zfast_lcd+natural_vision shader
+=============================================
+<options>
+name=zFast LCD + Natural Vision
+textures=1
+</options>
+
+<fheader>
+#if GL_ES
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+#endif
+// Configuration
+#define BORDERMULT 14.0  // "Border Multiplier" 14.0 -40.0 40.0 1.0
+                         // - default: 14.0, min: -40.0, max: 40.0, step: 1.0
+#define NATVIS_GIN 1.91  // "NaturalVision Gamma In"
+                         // - default: 1.91, min: 0.0, max: 10.0, step: 0.01
+#define NATVIS_GOUT 1.91 // "NaturalVision Gamma Out"
+                         // - default: 1.91, min: 0.0, max: 10.0, step: 0.01
+#define NATVIS_Y 1.1     // "NaturalVision Luminance"
+                         // - default: 1.1, min: 0.0, max: 10.0, step: 0.01
+#define NATVIS_I 1.1     // "NaturalVision Orange-Cyan"
+                         // - default: 1.1, min: 0.0, max: 10.0, step: 0.01
+#define NATVIS_Q 1.1     // "NaturalVision Magenta-Green"
+                         // - default: 1.1, min: 0.0, max: 10.0, step: 0.01
+</fheader>
+
+<texture:0>
+input=framebuffer
+min_filter=GL_NEAREST
+mag_filter=GL_NEAREST
+</texture>
+
+<pass>
+shader=zfast_lcd+natural_vision.dsd
+sampler:u_texture=0
+</pass>

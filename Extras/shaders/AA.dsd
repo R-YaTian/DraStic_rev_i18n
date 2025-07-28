@@ -1,0 +1,66 @@
+
+<vertex>
+attribute vec2 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+uniform vec4 u_texture_size;
+
+varying vec4 v_texture_coordinate;
+varying vec4 v_texture_coordinate_1;
+varying vec4 v_texture_coordinate_2;
+varying vec4 v_texture_coordinate_3;
+varying vec4 v_texture_coordinate_4;
+varying vec4 v_texture_coordinate_5;
+varying vec4 v_texture_coordinate_6;
+
+void main()
+{
+  float x = u_texture_size.x*0.5;
+  float y = u_texture_size.y*0.5;
+  vec2 dg1 = vec2( x,y);
+  vec2 dg2 = vec2(-x,y);
+  vec2 dx  = vec2(x,0.0);
+  vec2 dy  = vec2(0.0,y);
+  gl_Position = vec4(a_vertex_coordinate.xy, 0.0, 1.0);
+  v_texture_coordinate = a_texture_coordinate.xyxy;
+  v_texture_coordinate_1.xy = v_texture_coordinate.xy - dy;
+  v_texture_coordinate_2.xy = v_texture_coordinate.xy + dy;
+  v_texture_coordinate_3.xy = v_texture_coordinate.xy - dx;
+  v_texture_coordinate_4.xy = v_texture_coordinate.xy + dx;
+  v_texture_coordinate_5.xy = v_texture_coordinate.xy - dg1;
+  v_texture_coordinate_6.xy = v_texture_coordinate.xy + dg1;
+  v_texture_coordinate_1.zw = v_texture_coordinate.xy - dg2;
+  v_texture_coordinate_2.zw = v_texture_coordinate.xy + dg2;
+}
+   </vertex>
+   <fragment>
+   
+uniform sampler2D u_texture;
+
+varying vec4 v_texture_coordinate;
+varying vec4 v_texture_coordinate_1;
+varying vec4 v_texture_coordinate_2;
+varying vec4 v_texture_coordinate_3;
+varying vec4 v_texture_coordinate_4;
+varying vec4 v_texture_coordinate_5;
+varying vec4 v_texture_coordinate_6;
+
+void main()
+{
+  vec3 c00 = texture2D(u_texture, v_texture_coordinate_5.xy).xyz; 
+  vec3 c10 = texture2D(u_texture, v_texture_coordinate_1.xy).xyz; 
+  vec3 c20 = texture2D(u_texture, v_texture_coordinate_2.zw).xyz; 
+  vec3 c01 = texture2D(u_texture, v_texture_coordinate_3.xy).xyz; 
+  vec3 c11 = texture2D(u_texture, v_texture_coordinate.xy).xyz; 
+  vec3 c21 = texture2D(u_texture, v_texture_coordinate_4.xy).xyz; 
+  vec3 c02 = texture2D(u_texture, v_texture_coordinate_1.zw).xyz; 
+  vec3 c12 = texture2D(u_texture, v_texture_coordinate_2.xy).xyz; 
+  vec3 c22 = texture2D(u_texture, v_texture_coordinate_6.xy).xyz; 
+  vec3 dt = vec3(1.0,1.0,1.0); 
+  float d1=1.0/(dot(abs(c00-c22),dt)+0.0001);
+  float d2=1.0/(dot(abs(c20-c02),dt)+0.0001);
+  float hl=1.0/(dot(abs(c01-c21),dt)+0.0001);
+  float vl=1.0/(dot(abs(c10-c12),dt)+0.0001);
+  gl_FragColor.rgb=0.3333*((vl*(c10+c12)+hl*(c01+c21)+d2*(c20+c02)+d1*(c00+c22))/(hl+vl+d1+d2)+c11);
+}
+
+</fragment>

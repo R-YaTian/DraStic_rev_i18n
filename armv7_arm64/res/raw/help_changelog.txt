@@ -1,0 +1,387 @@
+<b>Version 2.6.0.4a:
+- Fix for savestates from previous versions not loading properly
+
+<b>Version 2.6.0.3a:
+- Fix RAR archive compatibility
+- Fix MKDS minimap, maybe other graphical issue
+- Make Android 10+ instructions more clear for where to change Data Directory
+
+<b>Version 2.6.0.2a:
+- Hotfix for virtual controller skins not loading
+
+<b>Version 2.6.0.1a:
+- Target Android API 33
+- Major Android storage improvements
+- Fix loading games on Chromebooks from some storage devices
+- Remove Google Drive support and account-related permissions
+- Update game database
+- Fix save file initialization
+- Fix fog on ARM64 in Pokemon B/W 2
+- Fix crash in Love Plus
+- Fix sprite glitches in Pokemon HG/SS
+
+<b>Version 2.5.2.2a:
+- Fix 7-zip-related crash
+- Fix crash on some Exynos devices
+- Fix crash on 32-bit devices
+- Fix crash on x86 devices
+- Attempt to fix notched-screen devices
+
+<b>Version 2.5.1.2a:
+- Fix kernel 4.4.160+/3.18.124+ crash
+- Fix virtual gamepad buttons disappearing
+- Fix NVIDIA Shield/Shield TV controls
+- Fix Android TV menu icons
+- Fix Android TV screen layout editor
+- Fix expected behavior when volume buttons are held
+- Added Spanish translation
+
+<b>Version 2.5.1.1a:
+- Fix for Android Pie
+- Fix crash with GDrive
+- Fix for performance issue in Rune Factory 3
+- Fix crash related to microphone on some phones
+- Fix crash in profile selection and creation
+- Fix crashes in Mario Hoops 3 on 3 and GTA: Chinatown Wars
+- Support for taller screens
+- Rumble emulation option for games that support the Rumble Pak
+- Option for slot 2 SRAM
+- Option for "safe frameskip"
+
+<b>Version 2.5.0.3a:
+- Fixed threaded 3d switching
+
+<b>Version 2.5.0.2a:
+- Fixed a graphical regression on x86 devices
+
+<b>Version 2.5.0.1a:
+- Fixed Android N permission issue
+
+<b>Version 2.5.0.0a:
+- Significant optimizations for X86 devices
+- Minor optimizations to 2D and 3D rendering
+- Changes to help prevent slowdowns in games like Ninja Gaiden: Dragon Sword
+- Added per-game video/audio settings
+- Added Lua support
+- Added Chinese localization
+- Added ability to add background images to screen layouts
+- Fixed Google Drive folder creation issue
+- Improved Android TV key mapping dialog
+- Improved screen scaling in layout editor
+- Some UI enhancements
+
+<b>Version 2.4.0.2a:
+- Stability fix for certain devices with Adreno GPUs
+- Fixed MOGA support on Lollipop
+- Touching the D-Pad center will not go through to the touchscreen anymore
+- Fixed cheat folder display
+- Fixed crash for unsupported 7z files
+- Fixed touchpads being interpreted as directional input
+
+<b>Version 2.4.0.1a:
+- Improved stability on certain Android devices
+- Fixed non-standard external controller support
+- Fixed some audio problems in homebrew
+- Fixed cheat folder description not showing properly
+- Fixed external display
+
+<b>Version 2.4.0.0a:
+- Added high-resolution 3D mode. Enhances DS 3D graphics so they're rendered at 512x384 resolution instead of 256x192. Has a big performance overhead and therefore works best with high end quad-core devices.
+- Added Android TV support
+- Added support for custom shaders
+- Added audio volume setting
+- Added more robust check for mapped memory, fixes crashes on some devices.
+- Fixed edge-marking setting not being saved
+- Fixed support for certain ZIP files
+- Fixed dpad issues after returning from menu
+- Fixed custom cheats only saving for default user
+- Fixed virtual gamepad texture coordinates
+- Fixed 7z files always being recognized as games
+- Fixed crash after coming back to suspended app
+- Fixes for in-game save files
+- Fixed layout editor grid for non-HD resolutions
+- Fixed a bug causing garbled graphics when capture is set to use invalid VRAM banks. Fixes graphical problems in Doki Doki Majo games.
+- Fixed multiple bugs with 2D sprites. Fixes glitches in Puyo Pop Fever, Wario Ware DIY, Final Fantasy Tactics A2, and probably others.
+- Fixed an incorrect implementation of VRAM bank mirroring. Fixes missing graphics in Daniel X.
+- Added a workaround that turns off deferred rendering to fix graphics glitches in Florist Shop.
+- Added timing fixes that address problems in Zhu Zhu Babies and Will o' Wisp DS.
+- Fixed a glitch in the custom BIOS that caused audio pitch and volume to be incorrect in some games that used them. Fixes Chrono Trigger and probably others.
+- Fixed implementation of strange viewport values to work like it does on a DS. Fixes missing graphics in Americal Girl: Kit's Mystery Challenge.
+- Fixed switching the 2D engine screens mid-frame. Fixes map scroll in Zelda Phantom Hourglass.
+- Fixed a bug with fog causing green dots to appear in some games like Animal Crossing and Zelda Spirit Tracks.
+- Fixed a savestate issue with audio. Prevents the sound from becoming extremely bad on savestate loads in Golden Sun Dark Dawn.
+- Fixed bug causing graphics problems in some games on x86 devices. Fixes Solatarobo.
+- Fixed implementation of toon highlight shading to modulate against R instead of RGB. Fixes color of tile highlighting in Advanced Wars DS.
+- Optimized screen darkening in 16-bit mode and brightening in all modes.
+- Changed in-game save generation code to only update the parts of the file that were modified. Makes an especially large difference for games with very big save files, eg Wario Ware DIY (32MB NAND)
+
+<b>Version 2.3.0.2a:
+- Fixed slowdown in Pokemon Mystery Dungeon
+
+<b>Version 2.3.0.1a:
+- Fix to fog causing glitches in some games
+
+<b>Version 2.3.0.0a:
+- Performance + compatibility fixes for Android Lollipop
+- Added a workaround for X86 on Android 4.4+
+- Added a custom cheat editor
+- Changed item selection in layout editor
+- Added user profiles
+- Fixed the custom clock UI
+- Emulator crashes will now save an input log if possible, to facilitate reproducing the crash.
+- Savestate is now saved to a temporary file first, so if a crash happens while the state is being saved it won't overwrite the old one.
+- Savestates made using BIOS files not currently in use will now switch to those files if they're in the system directory.
+- Homebrew games now pass a NitroFS path. Needed to run Minecraft DS.
+- Added DeSmuME footer to .dsv save files, allowing them to load in DeSmuME 0.9.10.
+- Added slot 2 (GBA cart) loading support, which can be used to access bonus content in some games. See the slot 2 section in 'Instructions' for more information.
+- Improved performance of indirect branches.
+- Special cased IRQ and SWI block lookups, slight performance improvement possible.
+- Optimized perspective division in geometry code.
+- Minor optimizations to 2D + 3D compositing code.
+- Optimized 3D polygons where W is constant.
+- Optimized 3D polygons where no pixels fail occlusion tests.
+- Optimized 3D to remove zero-length rows early.
+- Saving savestates now happens in the background so it doesn't necessarily stall the emulator completely.
+- Fixed some issues with division and sqrt operations, which also made them faster.
+- Fixed a bug where sleep mode was not properly exited from (fixes Tangled)
+- Fixed an error in block load operations containing the base register in the register list.
+- Rewrote 2D color effects handlers to better handle some edge cases.
+- Implemented 3D fog effect.
+- Implemented 3D edge marking effect (can be disabled).
+- Fixed Z/W depth selection latch delay. Fixes graphical glitches in Marvel Super Hero Squad.
+- Added several games to the game database, should fix save errors for many more recent releases.
+- Increased translation recursive buffer size. Fixes Minecraft DS and prevents some random crashes in Pokemon White and maybe others.
+- Corrected chip ID designation, allowing some previously broken games to work.
+- Fixed read value of slot 2 region when cart is not inserted. Fixes hangs in some Digimon World games.
+- Fixed a bug causing graphical problems when the same texture is used with different repeat modes. Fixes glitches in SaGa 3.
+- Fixed a VRAM mapping problem. Fixes GTA.
+- Implemented huge BGs in 2D, fixes Spyro.
+- Fixed invalid 2D layers showing garbage.
+- Added support for mosaic in 2D background layers.
+- Added a workaround for hang in Spider-Man Shattered Dimensions.
+- Added a workaround for hang in Puppy Palace.
+- Added a workaround for hang in Ore ga Omae o Mamoru.
+- Added a workaround for hang in Legend of Kay.
+- Fixed a bug with mode switching load/store block memory instructions.
+- Implemented CPU deep sleep.
+- Added geometry stalls, fixing graphical problems in American Girl games.
+- Fixed depth equality comparison. Fixes graphical glitches in Zelda Phantom Hourglass.
+- Fixed geometry Z precision. Fixes some menu bugs in Final Fantasy 4.
+- Fixed a texture caching bug. Fixes crashes in Final Fantasy 4.
+- Fixed a bug causing PSG sounds to go missing. Fixes missing sound effects in Fire Emblem.
+- Fixed audio voice looping. Fixes audio problems in Rune Factory.
+- Fixed a problem with I/O loads on x86 devices. Fixes broken sound.
+- Changed VRAM map initialization to be null. Fixes corrupt graphics when loading a state with Mario Kart.
+- Changed direct VRAM and RAM display modes to no longer use deferred rendering. Fixes graphical corruption in Holly Hobby.
+- Changed CPU block flushes to flush things which weren't properly being flushed, may avoid crashes.
+- Fixed horizontal offsets for 3D layers. Fixes menu in Fossil Fighters.
+- ROMs are now auto-trimmed if they can't be loaded, which fixes some problems on some Android systems.
+
+<b>Version 2.2.1.2a:
+- Fix for protected RAR archives
+- Added option to always sync RTC to system time
+- Games can be deleted (long-click on a game in the list)
+- Game database update
+- Improved 'Help' section
+
+<b>Version 2.2.1.1a:
+- Added ability to specify RTC start time instead of using system time
+- Changed sound handling during fast-forward
+- Fixed problems with certain archives
+
+<b>Version 2.2.1.0a:
+- Added support for 7z and RAR archives for ROM loading.
+- Added database info for many newer games.
+- Added emulation of NAND backup (huge thanks to Normmatt, and his work in DeSmuME and much direct help on the matter!) Allows play of Wario Ware: DIY and Jam with the Band
+- Added option to fix main 2D engine to top screen.
+- Fixed an initialization problem causing graphical glitches on resets and new loads.
+- Fixed graphics bug in Knytt Stories homebrew.
+- Fixed broken audio in jEnesis DS homebrew.
+- Fixed regression in Dark Spire causing missing map.
+- Fixed hangs in Digimon Story.
+- Fixed regression crashes in Final Fantasy 4.
+- Fixed crashes in Inazuma Eleven 2.
+- Fixed crash in Penguins of Madagascar.
+- Fixed crash in English patch of Super Robot Wars Exceed.
+- Fixed a bug causing problems in Infinite Space.
+- Fixed hang in Yu-Gi-Oh 5D's World Championship 2010.
+- Fixed crash in Sonic Chronicles
+- Fixed root directory contents not being displayed
+- Fixed external controller button release on touchscreen release
+- Fixed MOGA connection problems
+- Added support for external displays (HDMI) for Android 4.2.2 and higher
+- Added default layout option
+- Added confirmation for quick-save/load (if enabled)
+- Added rapid-fire toggle function
+- Start/Select hidden if assigned to external gamepad
+- Return to immersive mode after volume change
+- Changed skin format
+- Added auto-trimming option
+- Fixed cropped screens
+- Changed 100% vertical resize in portrait mode
+- Added option to keep main screen on top screen
+- Added detection of wrong screen size in KitKat
+- Added snapping grid to controller config
+- Added different landscape layout options
+- Fixed layout selection problem for locked landscape mode
+- Fixed radial menu screen getting stuck under certain conditions
+- Changed portrait mode default layout on 4:3 devices
+- Added mic level option
+
+<b>Version 2.2.0.2a:
+- Fixed a graphical regression in Legend Of Zelda
+- Fixed cheat browser background on Gingerbread devices
+- Fixed right-stick mode name display
+
+<b>Version 2.2.0.1a:
+- Fixed regression in Hotel Dusk
+- Fixed touchscreen issue in D-Pad area, when virtual pad disabled
+- On-Screen Fast-Forward indicator can be disabled in options
+- Incompatible custom portrait layouts from older versions are reset to default
+- Added deadzone config for right analog stick
+- Manifest additions for Mad Catz Mojo
+
+<b>Version 2.2.0.0a:
+- Added adaptive multi-threaded 2D/3D rendering. Improves performance on multi-core devices.
+- Added support for X86 and Tegra 2 devices (less optimized than ARM NEON version)
+- Improves performance in games that heavily modify ITCM like Golden Sun.
+- Several improvements to reduce the cost of compilation flushes, minimizes intermittent pauses in games during code modifications (eg Pokemon)
+- Switched from tracking just a small number of modified literal values to all positions in ITCM and main RAM. Prevents massive slowdown in C.O.P.
+- Now compiled with GCC 4.8.x, has some performance benefits sometimes
+- Geometry backface test and more 3D rendering functions are now done in optimized NEON
+- Division/sqrt routines are more properly retaining their values now, less redundant updates.
+- Optimized polygon sorting.
+- Changed cheat processing to minimize work done for cheats that aren't enabled.
+- Fixed a bug where loads were generated when misalignment wasn't properly detected as possible.
+- Games with backup files > 512KB are no longer stored in savestates regardless of the option to do so. Fixes save states with Art Academy and Zelda Spirit Tracks.
+- Fixed a bug with block loads over unallocated registers.
+- Game database lookup will now match on game code only if name doesn't match useful for some ROM hacks that changed the name) and will match on low 24-bits of gamecode if the whole thing doesn't match (useful for region variations not in the list)
+- Games that modify VRAM mid-frame via HDMA are now rendered differently to accommodate. Fixes screen glitches in Golden Sun.
+- Texture caching changes to fix some games.
+- Fixed a bug involving blending between 3D layers that happened when it shouldn't have. Fixes bad background color in Dragon Quest IX.
+- Now caches clear color/depth for next frame. Fixes missing graphics in Tales of Innocence.
+- Fixed a glitch in alpha ID test in NEON code. Fixes corruption during screen transition in Zelda games.
+- Updated savestates to include saving the power management registers. Fixes problems with microphone no longer working after resuming from a savestate.
+- Fixed DMA from ITCM region to read zero. Fixes Knights in the Nightmare graphical problems.
+- Fixed NEON code for some functions handling pixel spans of zero width. Removes some small graphical artifacts with tiny polygons.
+- Added a clamp for overflows in triangle coordinates. Fixes some crashes.
+- Register allocation fixes, fixes problems in Front Mission and de Blob 2.
+- Added auto-rotation and proper portrait mode
+- Improved stability
+- Some UI changes
+- Menus can be controlled with gamepad/input devices
+- Added more filters
+- Added MOGA support
+- Added ART support
+- Added support for DS 'multitouch'
+- Haptic feedback also reacts when sliding onto a button
+- Fixed D-Pad sliding, when D-Pad overlaps with DS touchscreen
+- Mapped fast-forward key/button can be set to toggle mode
+- External controller's D-Pad works now, if analog triggers are enabled
+- Autosave now saves on suspension/leaving a game
+- Added periodic autosave option
+- Added skin support for virtual gamepad
+- Changes to ROM scanning on first start
+- Added option to move menu button
+- Added support and auto-detection for specific devices (Shield, Xperia Play)
+- Added more info to savestate menu
+- Changed performance counters
+- 'DraStic' folder can be moved to external SD (or the root of anything that is mounted)
+- Added notification
+- Added 'unlimited' option to fast-forward speed
+- Fixed pause shader being active after closing menu under certain conditions
+- Fixed digital L/R not working when analog triggers were enabled
+- Removed overlay from ROM browser
+- Added iCade/8-bitty support
+- Added Kitkat full screen mode
+- Improved mic support
+- Added snapping and auto-resize to layout editor
+- Added 'Very High' audio latency option
+- Added 3 special virtual buttons that can be assigned to functions
+- ABXY buttons can be disabled individually
+- Improved support for BT keyboards
+
+<b>Version 2.1.6.2a:
+- Fix bug causing games not to work in October
+- Should now be visible in Xperia Play launcher
+
+<b>Version 2.1.6a:
+- In-game saves are now stored in savestates by default
+- Small performance optimization for some graphics situations
+- Fix for Panzer Tactics DS
+- Another fix for saves in Pokemon Mystery Dungeon Explorers of Sky
+- Fix for crashes from using C-Gear in Pokemon Black/White 2
+- Fix for pieces of graphics turning black in Pokemon games
+- Fixes to various crashes and graphical problems in games caused in version 2.1.5a
+- Fix for Art Academy
+- Fix for Cooking Mama games when not using Nintendo BIOS
+- Fix for graphics in Lock's Quest
+- Fix graphics glitches when changing Pokemon in battle in HeartGold/SoulSilver
+- Fix low battery report in games
+- Fixed missing graphics in a few games
+- Fix crash from Pokemon marking cheats
+- Fix inability to go in-game in Big Bang Mini
+- Fixed potential GLES init problem
+- Uses game icons in game browser and for game shortcuts
+- DraStic added as a standard app to open .nds files
+- Made Quick-Save/Load, Fast-Forward, Menu and diagonal directions mappable to keys/buttons
+- Added a fake mic button (playing white noise)
+- Device mic can be disabled
+- Switched to Holo theme for supported devices
+- Lights out mode for ICS+ devices
+- Will auto-scan for games until the first game was loaded
+- Optimized event handling
+- D-Pad and action button touch area can be configured in options
+- Buttons can be individually hidden in control layout editor
+- Diagonals can be disabled for on-screen D-Pad
+- Adds support for analog triggers and right analog stick for touch input (for FPS games)
+- Adds savestate delete feature (long-press save slot)
+- Adds fast-forward speed option
+- Main menu can be controlled by mapped external controller
+
+<b>Version 2.1.5.1a:
+- Fix regression that caused GTA: Chinatown Wars to hang in 2.1.5a
+- Reduces some graphics glitches introduced in 2.1.5a
+
+<b>Version 2.1.5a:
+- Timing fixes to reduce problems in Pokemon HeartGold, SoulSilver, and Platinum
+- Timing fixes to reduce problems in Mario & Luigi: Bowser's Inside Story
+- More fixes to the cheat engine, more cheats should work/not cause problems
+- Fixes for crashes in games like Heroes of Mana, Glory of Heracles, Assassin's Creed, Inazuma Eleven, probably others
+- Game database has been extensively overhauled, fewer games should have save problems
+- Added controller resize functionality in layout editor
+- 'Start' and 'Select' buttons can now be moved and resized as well
+- Full width and height scaling is now allowed in the layout editor
+- Shortcuts for games can be created
+- Separate options for disabling menu and back buttons
+- Added integer scaling option to the layout editor
+- Some layout changes were made for low resolution devices
+
+<b>Version 2.1.4a:
+- Address performance problems in Suikoden Tierkreis and Zelda: Phantom Hourglass
+- Fix to game saving in Pokemon Mystery Dungeon Explorers of Sky
+- Fix to copy-protection triggering in games like Pokemon Conquest
+- Now unzips zip files to keep memory free (can be turned off)
+- Some fixes to Google Drive integration
+
+<b>Version 2.1.3a:
+- Improved microphone support
+- Fix Google Drive issue with special chars in game name
+- DraStic root folder moved to /sdcard/drastic
+- Warn user of incompatible savestate instead of ignoring it
+- Fixed missing graphics errors in Justice League, Puyo Pop Fever, Adventure Time, Culdcept DS, Disgaea DS, Harvest Moon Isle of Happiness, and probably others
+- Fixed hang in Spore Creatures and Diddy Kong Racing
+- Fixed graphical glitches in Fire Emblem: Shadow Dragon
+- Fixed several bugs in the cheat engine, many more cheats should work now
+
+<b>Version 2.1.2a:
+- Fix for microphone bug in Zelda games
+- Fix for Megaman Battle Network 5 Double Team DS
+- Disabling sound shouldn't cause problems anymore
+- Some changes in Google Drive handling
+- Quick-saves don't override Auto-saves anymore
+- Fixed cheat menu crashing if a cheat string contains invalid characters
+
+<b>Version 2.1.1a:
+- No longer requires BIOS files
+- Pokemon HeartGold/SoulSilver are more playable now

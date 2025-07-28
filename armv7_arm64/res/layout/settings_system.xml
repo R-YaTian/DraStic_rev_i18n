@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:background="@color/menu_bg_header">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_settings_back_system" android:background="@drawable/btn_back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />
+                <ImageView android:src="@drawable/con_ds" android:contentDescription="@null" style="@style/drastic_option_hdr_image" />
+            </LinearLayout>
+            <TextView android:text="@string/str_set_hdr_system" style="@style/drastic_option_hdr_text" />
+        </TableRow>
+        <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+    </TableLayout>
+    <ScrollView android:id="@id/set_content" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="16.0dip" android:weightSum="1.0">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/item_big" android:layout_gravity="center_vertical" android:layout_width="100.0sp" android:layout_height="wrap_content" android:text="@string/str_set_nick" />
+                <EditText android:textStyle="bold" android:textColor="#ffffffee" android:layout_gravity="right" android:id="@id/sys_nick" android:background="#ff555555" android:padding="8.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:ems="10" android:maxLength="10" android:layout_weight="1.0" android:inputType="text" />
+            </LinearLayout>
+            <View style="@style/drastic_seperator" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="16.0dip" android:weightSum="1.0">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/item_big" android:layout_gravity="center_vertical" android:layout_width="100.0sp" android:layout_height="wrap_content" android:text="@string/str_set_bday" />
+                <EditText android:textStyle="bold" android:textColor="#ffffffee" android:layout_gravity="left" android:id="@id/sys_bday" android:background="#ff555555" android:padding="8.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:maxLength="5" android:layout_weight="0.6" android:inputType="date" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/item_big" android:layout_gravity="center_vertical" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/str_set_bday_hint" />
+            </LinearLayout>
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_language" android:text="@string/str_set_language" style="@style/drastic_option_item_choicehdr_text" />
+            <TextView android:id="@id/set_selection_language" style="@style/drastic_option_item_selection_text" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_color" android:text="@string/str_set_color" style="@style/drastic_option_item_choicehdr_text" />
+            <View android:id="@id/set_selection_color" android:background="#ffff0000" android:layout_width="32.0dip" android:layout_height="8.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_slot2_type" android:text="@string/str_set_slot2_type" style="@style/drastic_option_item_choicehdr_text" />
+            <TextView android:id="@id/set_selection_slot2_type" style="@style/drastic_option_item_selection_text" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_rtc_system_time" android:text="@string/str_set_rtc_system_time" style="@style/drastic_checkbox" />
+            <CheckBox android:id="@id/cb_custom_clock" android:text="@string/str_set_custom_clock_enable" style="@style/drastic_checkbox" />
+            <TextView android:id="@id/set_select_custom_clock" android:text="@string/str_set_custom_clock" style="@style/drastic_option_item_choicehdr_text" />
+            <TextView android:id="@id/set_selection_custom_clock" style="@style/drastic_option_item_selection_text" />
+        </TableLayout>
+    </ScrollView>
+    <View android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+</LinearLayout>

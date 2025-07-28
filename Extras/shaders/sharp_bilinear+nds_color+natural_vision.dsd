@@ -1,0 +1,128 @@
+// sharp_bilinear+nds_color+natural_vision - This is an integer prescale
+// filter that should be combined with bilinear hardware filtering (GL_LINEAR
+// filter or some such) to achieve a smooth scaling result with minimum blur.
+// This is good for pixel graphics that are scaled by non-integer factors. Also
+// applies NDS colour correction followed by 'Natural Vision' colour enhancement
+// 
+// - Original 'sharp_bilinear' code copyright (C) rsn8887 & TheMaister and
+//   released into the public domain
+// 
+// - Original 'nds_color' code written by hunterk, modified by Pokefan531 and
+//   released into the public domain
+// 
+// - Original 'natural_vision' code written by ShadX, modified by
+//   Hyllian and Sp00kyFox, released into the public domain
+// 
+// 'Ported' (i.e. copy/paste) to DraStic format by jdgleaver
+// 
+// This program is free software; you can redistribute it and/or modify it
+// under the terms of the GNU General Public License as published by the Free
+// Software Foundation; either version 2 of the License, or (at your option)
+// any later version.
+=============================================
+
+<vertex>
+
+attribute vec2 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+
+uniform vec4 u_texture_size;
+uniform vec2 u_target_size;
+
+varying vec2 precalc_texel;
+varying vec2 precalc_scale;
+
+void main()
+{
+	gl_Position = vec4(a_vertex_coordinate.xy, 0.0, 1.0);
+	
+	precalc_texel = a_texture_coordinate * u_texture_size.zw;
+	precalc_scale = floor(u_target_size.xy / u_texture_size.zw) + 1.0;
+}
+
+</vertex>
+
+<fragment>
+
+#ifndef NATVIS_GIN
+#define NATVIS_GIN 1.91
+#endif
+#ifndef NATVIS_GOUT
+#define NATVIS_GOUT 1.91
+#endif
+#ifndef NATVIS_Y
+#define NATVIS_Y 1.1
+#endif
+#ifndef NATVIS_I
+#define NATVIS_I 1.1
+#endif
+#ifndef NATVIS_Q
+#define NATVIS_Q 1.1
+#endif
+
+uniform sampler2D u_texture;
+
+uniform vec4 u_texture_size;
+uniform vec2 u_target_size;
+
+varying vec2 precalc_texel;
+varying vec2 precalc_scale;
+
+// NDS Colour defines
+#define NDS_LUM 0.89
+#define NDS_R 0.87
+#define NDS_G 0.645
+#define NDS_B 0.73
+#define NDS_RG 0.10
+#define NDS_RB 0.10
+#define NDS_GR 0.255
+#define NDS_GB 0.17
+#define NDS_BR -0.125
+#define NDS_BG 0.255
+
+const mat3 NDSColourMatrix = mat3(NDS_R,  NDS_RG, NDS_RB,
+											 NDS_GR, NDS_G,  NDS_GB,
+											 NDS_BR, NDS_BG, NDS_B);
+
+// Natural Vision helpers
+const mat3 RGBtoYIQ = mat3(0.299,  0.595716,  0.211456, 
+									0.587, -0.274453, -0.522591, 
+									0.114, -0.321263,  0.311135);
+
+const mat3 YIQtoRGB = mat3(1.0, 1.0, 1.0,
+									0.95629572,-0.27212210,-1.10698902,
+									0.62102442,-0.64738060, 1.70461500);
+
+const vec3 YIQ_lo = vec3(0.0, -0.595716, -0.522591);
+const vec3 YIQ_hi = vec3(1.0,  0.595716,  0.522591);
+
+void main()
+{
+	vec2 texel_floored = floor(precalc_texel);
+	vec2 s = fract(precalc_texel);
+	vec2 region_range = 0.5 - 0.5 / precalc_scale;
+	
+	// Figure out where in the texel to sample to get correct pre-scaled bilinear.
+	// Uses the hardware bilinear interpolator to avoid having to sample 4 times manually.
+	
+	vec2 center_dist = s - 0.5;
+	vec2 f = (center_dist - clamp(center_dist, -region_range, region_range)) * precalc_scale + 0.5;
+	
+	vec2 mod_texel = texel_floored + f;
+	
+	// Get colour sample and apply colour correction + enhancement
+	vec3 colour = pow(texture2D(u_texture, mod_texel / u_texture_size.zw).rgb, vec3(NATVIS_GIN));
+	// > NDS colour
+	colour = clamp(colour * NDS_LUM, 0.0, 1.0);
+	colour = NDSColourMatrix * colour;
+	// > Natural vision
+	colour = RGBtoYIQ * colour;
+	colour = vec3(pow(colour.x, NATVIS_Y), colour.y * NATVIS_I, colour.z * NATVIS_Q);
+	colour = clamp(colour, YIQ_lo, YIQ_hi);
+	colour = YIQtoRGB * colour;
+	colour = pow(colour, vec3(1.0 / NATVIS_GOUT));
+	
+	gl_FragColor = vec4(colour.rgb, 1.0);
+}
+
+</fragment>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="set_analogstick_items">
+        <item>Off</item>
+        <item>FPS Mode</item>
+        <item>Stick Mode</item>
+        <item>Pointer Mode</item>
+    </string-array>
+    <string-array name="set_audio_latency_items">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+        <item>Very High</item>
+    </string-array>
+    <string-array name="set_autofire_frequency">
+        <item>Speed 1 (fastest)</item>
+        <item>Speed 2</item>
+        <item>Speed 3</item>
+        <item>Speed 4</item>
+        <item>Speed 5 (slowest)</item>
+    </string-array>
+    <string-array name="set_autosave_type">
+        <item>Disabled</item>
+        <item>On Pause/Suspend</item>
+        <item>Every 5 Minutes</item>
+        <item>Every 15 Minutes</item>
+        <item>Every 30 Minutes</item>
+    </string-array>
+    <string-array name="set_cheat_menu_tv">
+        <item>Add new cheat</item>
+        <item>Disable all cheats</item>
+        <item>Edit selected cheat</item>
+    </string-array>
+    <string-array name="set_editor_endmenu_tv">
+        <item>Save as global layout</item>
+        <item>Save as game layout</item>
+        <item>Continue editing</item>
+        <item>Exit without saving</item>
+    </string-array>
+    <string-array name="set_editor_startmenu_tv">
+        <item>Use default layout</item>
+        <item>Load global layout</item>
+        <item>Load game layout</item>
+    </string-array>
+    <string-array name="set_extdisplay_screen">
+        <item>Top Screen</item>
+        <item>Bottom Screen</item>
+    </string-array>
+    <string-array name="set_extdisplay_type">
+        <item>Clone Device</item>
+        <item>Correct Aspect Ratio</item>
+        <item>Fullscreen</item>
+    </string-array>
+    <string-array name="set_extra_funcs">
+        <item>Disabled</item>
+        <item>Fast-Forward</item>
+        <item>Quick-Save</item>
+        <item>Quick-Load</item>
+        <item>Swap Top/Bottom Screens</item>
+        <item>Swap 1 and 2 Screen Layouts</item>
+        <item>Show/Hide Virtual Buttons</item>
+        <item>Simulate Microphone Noise</item>
+        <item>Cycle Landscape Layouts</item>
+        <item>Toggle Rapid-Fire</item>
+    </string-array>
+    <string-array name="set_ffwd_speed_items">
+        <item>50%</item>
+        <item>150%</item>
+        <item>200%</item>
+        <item>300%</item>
+        <item>400%</item>
+        <item>Unlimited</item>
+    </string-array>
+    <string-array name="set_filer_items">
+        <item>None</item>
+        <item>Linear</item>
+        <item>Scale2X</item>
+        <item>HQ2X</item>
+        <item>Quilez</item>
+    </string-array>
+    <string-array name="set_filer_items_1cpu">
+        <item>None</item>
+        <item>Linear</item>
+        <item>Quilez</item>
+    </string-array>
+    <string-array name="set_fs_items">
+        <item>None</item>
+        <item>Manual</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="set_fw_colors">
+        <item>Light Slate Gray</item>
+        <item>Redwood</item>
+        <item>Deep Chestnut</item>
+        <item>Medium Lavender Magenta</item>
+        <item>Persian Orange</item>
+        <item>Burlywood</item>
+        <item>Dark Khaki</item>
+        <item>Mantis</item>
+        <item>Viridian</item>
+        <item>Dark Sea Green</item>
+        <item>Moonstone blue</item>
+        <item>Tufts Blue</item>
+        <item>Dark Cerulean</item>
+        <item>Toolbox</item>
+        <item>Rich Lavender</item>
+        <item>Mulberry</item>
+    </string-array>
+    <string-array name="set_fw_languages">
+        <item>日本語</item>
+        <item>English</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Italiano</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="set_gm_layouts">
+        <item>Landscape 1:1</item>
+        <item>Landscape x:1</item>
+        <item>Portrait 1:1</item>
+        <item>Landscape Aspect</item>
+        <item>Landscape Fullscreen</item>
+    </string-array>
+    <string-array name="set_gm_layouts_tv">
+        <item>Landscape 1:1</item>
+        <item>Landscape x:1</item>
+        <item>Portrait 1:1</item>
+        <item>Landscape Aspect</item>
+        <item>Landscape Fullscreen</item>
+        <item>Portrait rotate-left</item>
+        <item>Portrait rotate-right</item>
+    </string-array>
+    <string-array name="set_mapping_default">
+        <item>D-Pad;D-Pad, Navigate Menus</item>
+        <item>Left Stick;D-Pad, Navigate Menus</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Cancel in Menus</item>
+        <item>A;B, Confirm in Menus</item>
+        <item>Play;Start</item>
+        <item>Back;Open Menu</item>
+        <item>L1;L-trigger</item>
+        <item>R1;R-trigger</item>
+        <item>L3;Swap Screens</item>
+        <item>R3;Swap 1 and 2 Screen Layouts</item>
+    </string-array>
+    <string-array name="set_mapping_moga_pocket">
+        <item>Left Stick;D-Pad, Navigate Menus</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Cancel in Menus</item>
+        <item>A;B, Confirm in Menus</item>
+        <item>L;L</item>
+        <item>R;R</item>
+        <item>Start;Start</item>
+        <item>Select;Open Menu</item>
+        <item>Select+L;Quick-Load</item>
+        <item>Select+R;Quick-Save</item>
+        <item>Select+X;Fast-Forward</item>
+        <item>Select+Y;Swap Screens</item>
+    </string-array>
+    <string-array name="set_mapping_moga_pro">
+        <item>D-Pad;D-Pad, Navigate Menus</item>
+        <item>Left Stick;D-Pad, Navigate Menus</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Cancel in Menus</item>
+        <item>A;B, Confirm in Menus</item>
+        <item>L2;L</item>
+        <item>R2;R</item>
+        <item>Start;Start</item>
+        <item>Select;Select</item>
+        <item>L3;Open Menu</item>
+        <item>R3+L1;Quick-Load</item>
+        <item>R3+R1;Quick-Save</item>
+        <item>L1;Swap Screens</item>
+        <item>R1;Fast-Forward</item>
+    </string-array>
+    <string-array name="set_mapping_shield">
+        <item>D-Pad;D-Pad, Navigate Menus</item>
+        <item>Left Stick;D-Pad, Navigate Menus</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, Cancel in Menus</item>
+        <item>A;B, Confirm in Menus</item>
+        <item>Play;Start</item>
+        <item>Back;Open Menu</item>
+        <item>L1;Touchscreen Pointer press</item>
+        <item>R1;Fast-Forward</item>
+        <item>L2;L</item>
+        <item>R2;R</item>
+        <item>L3;Swap Screens</item>
+        <item>R3;Swap 1 and 2 Screen Layouts</item>
+    </string-array>
+    <string-array name="set_mapping_xperiaplay">
+        <item>D-Pad;D-Pad, Navigate Menus</item>
+        <item>Select;Select</item>
+        <item>Start;Start</item>
+        <item>Triangle;X</item>
+        <item>Square;Y</item>
+        <item>Circle;A, Cancel in Menus</item>
+        <item>X;B, Confirm in Menus</item>
+        <item>L;L</item>
+        <item>R;R</item>
+        <item>Menu;Open Menu</item>
+    </string-array>
+    <string-array name="set_menu_button_position">
+        <item>Bottom</item>
+        <item>Top</item>
+        <item>Left</item>
+        <item>Right</item>
+        <item>Hidden</item>
+    </string-array>
+    <string-array name="set_mic_level_items">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+        <item>Very High</item>
+    </string-array>
+    <string-array name="set_rotation_type">
+        <item>Auto</item>
+        <item>Landscape</item>
+        <item>Reverse Landscape</item>
+    </string-array>
+    <string-array name="set_rumble_dev">
+        <item>None</item>
+        <item>Controller</item>
+        <item>Internal</item>
+    </string-array>
+    <string-array name="set_rumble_dev_tv">
+        <item>None</item>
+        <item>Controller</item>
+    </string-array>
+    <string-array name="set_slot2_cart_type">
+        <item>None</item>
+        <item>GBA Cart</item>
+        <item>SRAM Cart</item>
+        <item>Rumble Pack</item>
+        <item>Motion Pack (Official)</item>
+        <item>Motion Pack (Homebrew)</item>
+    </string-array>
+    <string-array name="set_sysdir_l">
+        <item>Default External Folder</item>
+        <item>Scoped Storage Folder</item>
+    </string-array>
+    <string-array name="set_sysdir_q">
+        <item>Default Internal Folder</item>
+        <item>Scoped Storage Folder</item>
+    </string-array>
+</resources>

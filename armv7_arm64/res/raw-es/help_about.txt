@@ -1,0 +1,42 @@
+
+<c1>Emulator de Nintendo DS DraStic
+<c2>~ A tiempos drásticos, medidas drásticas ~
+
+DraStic es un emulador veloz de Nintendo DS para Android. Además de ser capaz de jugar títulos de Nintendo DS a velocidad máxima en muchos dispositivos con Android, cuenta con las siguientes funcionalidades:
+
+- Personalizazr la ubicación y el tamaño de las pantallas de la DS, para los modos vertical y horizontal
+- Soporta plenamente controladores añadidos, y controles físicos en dispositivos cono NVidia Shield y Xperia Play
+- Guarda y reanuda tu progreso donde sea con los estados de guardado
+- Potencia tu experiencia jugable con una base de datos de miles de trucos
+- Sincroniza tus archivos de guardado con tu espacio de almacenamiento en línea de Google Drive
+- Incrementa la velocidad de emulación con el adelantamiento
+
+
+--------------------------
+<t2>Descargo de responsabilidad
+--------------------------
+DraStic está diseñado con la intención de jugar, de manera privada, copias de seguridad de títulos legalmente adquiridos de Nintendo DS.
+Este producto no está afiliado con o respaldado por Nintendo de ninguna manera.
+
+
+--------------------------
+<t2>Desarrolladores
+--------------------------
+Exophase      - Desarrollo central
+Lordus        - Todo lo relacionado con Android
+xperia64      - Restauración del código fuente en Android
+
+--------------------------
+<t2>Créditos y agradecimientos
+--------------------------
+notaz         - Invaluable ayuda y comprobación de codificación
+Slaeshjag     - Ayuda con los comprobación y la codificación, y algunos buenos vídeos demostrativos
+Neelix        - Comprometido comprobador de beta
+ANDROID       - Comprobador de beta en Android, y algunos buenos vídeos demostrativos
+FZERO         - Comprobador de beta en Android, y soporte del sitio web
+crualfoxhound - Comprobador de beta en Android
+beeflot       - Soporte y comprobación
+AsHperson     - Soporte y comprobación
+Jay Haru      - Soporte y comprobación
+Platybus      - Traducción y localización al español
+

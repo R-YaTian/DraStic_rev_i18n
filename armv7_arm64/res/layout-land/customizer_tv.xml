@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/customizer_main_view" android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tv_editor_help_icon" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="48.0dip" android:layout_marginBottom="27.0dip" android:src="@drawable/tv_start_menu_help" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+    <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="#ffffffff" android:id="@id/tv_editor_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginTop="27.0dip" android:text="@string/empty" />
+</RelativeLayout>

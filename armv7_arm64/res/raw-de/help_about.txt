@@ -1,0 +1,40 @@
+
+<c1>DraStic Nintendo DS Emulator
+<c2>~ desperate times call for drastic measures ~
+
+DraStic ist ein schneller Nintendo DS Emulator für Android.
+Ausser der Fähigkeit, Nintendo DS Spiele in voller Geschwindigkeit auf vielen Android Geräten abzuspielen, hat er noch folgende Features:
+
+- Die Position und Größe der beiden DS-Screens lässt sich völlig frei konfigurieren
+- Volle Unterstützung für externe Gamepads, und Geräte mit integrierten Spieltasten wie das nVidia Shield oder Xperia Play
+- Der Spielstand kann jederzeit gespeichert und fortgesetzt werden
+- Eine Datenbank mit tausenden von Cheats ermöglicht Dir, dein Spielerlebnis deinen Wünschen anzupassen
+- Deine Speicherstände können direkt aus der Anwendung heraus über dein Google Drive auf all deinen Geräten synchronisiert werden
+- Eine Vorspulfunktion ermöglicht dir die Spielgeschwindigkeit zu erhöhen
+
+--------------------------
+<t2>Disclaimer
+--------------------------
+DraStic ist nur dafür bestimmt, private Backups deiner legal erworbenen Nintendo DS Spiele zu spielen.
+Dieses Produkt steht in keinster Weise mit Nintendo in Verbindung, und wird nicht von Nintendo unterstützt.
+
+--------------------------
+<t2>Entwickler
+--------------------------
+Exophase      - Core-Entwicklung
+Lordus        - Android-Entwicklung
+xperia64      - Android-Ausbesserung
+
+--------------------------
+<t2>Danksagungen
+--------------------------
+notaz         - Unschätzbare Hilfe beim Programmieren und Testen
+Slaeshjag     - Tests, Programmierhilfe, und einige Demo-Videos
+Neelix        - Hardcore Beta-Tester
+ANDROID       - Android Beta-Tester, und einige Demo-Videos
+FZERO         - Android Beta-Tester, Website-Support
+crualfoxhound - Android Beta-Tester
+beeflot       - Support und Tester
+AsHperson     - Support und Tester
+Jay Haru      - Support und Tester
+

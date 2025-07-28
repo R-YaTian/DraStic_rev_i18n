@@ -1,0 +1,64 @@
+﻿
+<b>D: Perché i trucchi hanno ancora effetto dopo essere stati disabilitati? Questo è un difetto?
+R: I trucchi funzionano modificando il gioco nella sua esecuzione. Se disabiliti un trucco ne sarà fermata l'esecuzione. Ma per molti trucchi, ciò che hanno fatto per modificare il gioco rimarrà attivo anche dopo averli disabilitati. È impossibile per l'emulatore invertire ciò, una cosa del genere va contro le basi del funzionamento dei trucchi (nota che i trucchi provengono da codici Action Replay, non qualcosa che abbiamo inventato). La cosa migliore da fare è quella di creare un salvataggio di gioco e resettare con i trucchi disabilitati, ciò dovrebbe rimuovere il trucco a meno che non abbia influenzato qualcosa che fa parte del salvataggio. Fare ciò con un salvataggio di stato non funzionerà, deve essere un salvataggio di gioco.
+
+<b>D: Perché i salvataggi di stato o i salvataggi di gioco vengono eliminati ogni volta?
+R: Non dovrebbe essere possibile che DraStic li elimini. In tutti i casi che abbiamo visionato, a causare ciò era qualche altra applicazione installata. Perciò assicurati, se hai un pulitore di memoria o un anti-virus installato, di configurarlo affinché non elimini file dalla cartella 'DraStic'.
+
+<b>D: Perché il touchscreen è nello schermo sbagliato, o la grafica è tremolante?
+R: Disabilita 'Multi-threaded 3D' e 'Mantieni lo schermo principale sullo schermo superiore' nelle impostazioni video, possono causare questo problema in qualche gioco.
+
+<b>D: Ehi! Il gioco X non funziona! (E forse ha anche funzionato prima!) Risolvetelo!
+R: Prima di segnalare che un gioco non funziona, assicurati di stare usando l'ultima versione. Carica la lista delle app nel Play Store e assicurati che la versione indicata sia la stessa versione visualizzata nella schermata del menu. Le nuove versioni risolvono spesso dei problemi. In casi insoliti, un gioco che funziona potrebbe smettere a causa della data (le versioni precedenti alla 2.1.6.2a hanno avuto questo problema). E se stai usando una versione che non hai pagato e che non sia la demo, per piacere non disturbateci con le domande. Sono malfunzionanti di proposito.
+
+<b>D: Va bene, Ho confermato che questo gioco non funziona davvero nell'ultima versione dell'applicazione acquistata, cosa dovrei fare?
+R: Segnala il problema sul forum. Si prega di renderlo pubblico invece di mandarci privatamente messaggi o e-mail affinché gli altri utenti possano aiutarti o essere aiutati qualora vi fosse una soluzione al problema. Quando segnali un problema, è utile fornire un salvataggio di stato e le indicazioni su come riprodurre il problema. Includi anche quale dispositivo e quale versione del SO stai usando. Se hai i trucchi abilitati, prova a disabilitarli affinché tu possa capire se sono legati al problema.
+
+<b>D: DraStic supporta i giochi 3DS/2DS? Saranno supportati in futuro?
+R: No, non li supporta e non lo saranno mai. Il 3DS è un sistema interamente diverso, una generazione avanti, come l'N64 per il Gamecube. E sì, questo significa che il 2DS non funziona neanche, è la stessa cosa del 3DS, ma con uno schermo diverso.
+
+<b>D: Aiuto, un gioco prima funzionava con l'emulatore ma ho aggiornato alla nuova versione e ora non funziona!
+R: Sfortunatamente, qualche volta quando risolviamo un problema nell'emulatore, 'rompiamo' accidentalmente qualcos'altro (dal momento che il DS presenta migliaia di giochi, il tutto diventa complesso). Se segnali il problema, lo risolveremo il prima possibile. Possiamo anche darti una versione precedente dell'emulatore in modo da poter tornare a giocarci.
+
+<b>D: Perché la feature di Google Drive non funziona?
+R: Qualche volta la creazione automatica della cartella 'DraStic' fallisce su Google Drive. Controlla se la cartella è presente dopo aver caricato un salvataggio di stato, e se non c'è, creala manualmente e riprova a caricare. Il download funzionerà solamente se le ROM hanno lo stesso nome in tutti i dispositivi!
+
+<b>D: Qual è la vostra politica di rimborso?
+R: Eravamo soliti offrire il rimborso a quasi tutti entro le 48 ore, ma ora che non c'è alcuna esigenza del BIOS e che c'è la presenza di una versione demo, riteniamo che non sia necessario. Offriremmo il rimborso se riteniamo che il caso è giustificato - se credi di aver il diritto a un rimborso, inviarci una e-mail e spiegaci il motivo. Vi preghiamo di comprendere che dopo il rimborso l'applicazione installata può essere ancora utilizzata, quindi siamo un po' riluttanti a dare rimborsi senza alcun motivo.
+
+<b>D: Premendo 'START' non appare il menu nei giochi Pokemon. Questo è un difetto dell'emulatore, devi risolverlo, e ti odio.
+R: In realtà, 'START' normalmente non ha mai fatto nulla nei giochi. Nonostante ciò, c'è un'opzione per cambiare i controlli per tale scopo. Per richiamare il menu si suppone di premere X.
+
+<b>D: Quando uscirà la versione successiva?
+R: Ci scusiamo, ma generalmente non abbiamo date di rilascio. Siate pazienti.
+
+<b>D: Quale velocità dovrei aspettarmi da DraStic?
+R: La velocità varia notevolmente a seconda del gioco che si sta cercando di eseguire. Un dispositivo con 1GHz Cortex-A8 eseguirà molti giochi con un discreto frameskip. Un 1.4+GHz dual-core Cortex-A9 eseguirà la gran parte dei giochi con un piccolo o nullo frameskip la maggior parte delle volte.
+
+<b>D: Aiuta avere molteplici core nella CPU?
+R: Sì. Se hai molteplici core DraStic risulterà più veloce grazie alla possibilità di affidare il compito di aggiornare lo schermo ad un altro thread. Se selezioni l'opzione della renderizzazione multi-threaded otterrai un maggior rendimento, ma questa opzione può causare glitch grafici e instabilità.
+
+<b>D: DraStic usa la mia GPU per renderizzare la grafica? Aiuta avere una GPU veloce?
+R: La GPU è usata solamente per scalare l'immagine e applicare filtri, perciò averne una migliore non fa molta differenza. L'OpenGL ES non è usato per renderizzare la grafica del Nintendo DS. Questo a causa delle idiosincrasie del hardware grafico del DS che renderebbero questo stile di emulazione incompleto e/o lento.
+
+<b>D: DraStic supporta i giochi homebrew?
+R: Sì. Se vuoi giocare a un gioco homebrew che usa il filesystem DLDI, leggi 'Istruzioni' per le spiegazioni.
+
+<b>D: DraStic supporta il Mltiplayer/Wifi?
+R: L'emulazione del Wifi è molto complessa e non è qualcosa che abbiamo in programma di tentare al momento.
+
+<b>D: Cosa dovrei fare per segnalare un problema?
+R: Segnalalo sul nostro forum, qui http://drastic-ds.com. Si prega di renderlo pubblico invece di mandarci privatamente messaggi o e-mail affinché gli altri utenti possano aiutarti o essere aiutati qualora vi fosse una soluzione al problema. Quando segnali un problema, è utile fornire un salvataggio di stato e le indicazioni su come riprodurre il problema.
+
+<b>D: Dov'è il Source Code?
+R: DraStic è closed-source per il prossimo futuro. È interamente scritto da noi e quindi non sta violando alcuna licenza.
+
+<b>D: In quali altre piattaforme è possibile avere DraStic?
+R: È attualmente disponibile per il computer da gaming portatile Open Pandora ( http://www.openpandora.org ).
+Puoi trovare e scaricare gratuitamente il repertorio qui: http://repo.openpandora.org/?page=detail&app=DraStic
+
+<b>D: Ci sarà un porting per iOS?
+R: L'idea è in aria in questo momento. Se ci sarà, richiederà un dispositivo con effettuato il jailbreak.
+
+<b>D: Sono supportati i controller MOGA?
+R: Sì. Il supporto 'nativo' per i controller MOGA è stato aggiunto nella versione 2.2.0.0a. Non hai bisogno di rimappare i bottoni come per gli altri controller, saranno automaticamente assegnati. Puoi controllare la mappatura in Opzioni > Controller Esterno > Mostra Mappatura Bottoni MOGA.

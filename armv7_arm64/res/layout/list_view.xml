@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/listbgnorm" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:background="@color/menu_game_bg" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="4.0dip">
+        <ImageView android:id="@id/icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="1.0dip" android:contentDescription="@null" />
+        <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/rom_icon_overlay" android:contentDescription="@null" />
+    </RelativeLayout>
+    <LinearLayout android:background="@drawable/list_bg" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:layout_gravity="center_vertical" android:id="@id/text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

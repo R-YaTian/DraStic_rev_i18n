@@ -1,0 +1,140 @@
+// lcd1x+nds_color+natural_vision - Simple LCD 'scanline' shader, based on lcd3x
+// 
+// - Original lcd3x code by Gigaherz, released into the public domain
+// 
+// - Original 'nds_color' code written by hunterk, modified by Pokefan531 and
+//   released into the public domain
+// 
+// - Original 'natural_vision' code written by ShadX, modified by
+//   Hyllian and Sp00kyFox, released into the public domain
+// 
+// 'Ported' (i.e. copy/paste) to DraStic format by jdgleaver
+// 
+// This program is free software; you can redistribute it and/or modify it
+// under the terms of the GNU General Public License as published by the Free
+// Software Foundation; either version 2 of the License, or (at your option)
+// any later version.
+// 
+// lcd1x+natural_vision differs from lcd3x in the following manner:
+// 
+// > Omits LCD-style colour separation
+// 
+// > Has 'correctly' aligned scanlines
+// 
+// > Automatically supports 'high resolution 3d rendering' ON or OFF
+// 
+// > Applies NDS colour correction followed by 'Natural Vision'
+//   colour enhancement
+=============================================
+
+<vertex>
+
+attribute vec2 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+uniform vec4 u_texture_size;
+
+varying vec2 v_texture_coordinate;
+
+void main()
+{
+	v_texture_coordinate = a_texture_coordinate;
+	gl_Position = vec4(a_vertex_coordinate.xy, 0.0, 1.0);
+}
+
+</vertex>
+
+<fragment>
+
+#ifndef BRIGHTEN_SCANLINES
+#define BRIGHTEN_SCANLINES 16.0
+#endif
+#ifndef BRIGHTEN_LCD
+#define BRIGHTEN_LCD 4.0
+#endif
+#ifndef NATVIS_GIN
+#define NATVIS_GIN 1.91
+#endif
+#ifndef NATVIS_GOUT
+#define NATVIS_GOUT 1.91
+#endif
+#ifndef NATVIS_Y
+#define NATVIS_Y 1.1
+#endif
+#ifndef NATVIS_I
+#define NATVIS_I 1.1
+#endif
+#ifndef NATVIS_Q
+#define NATVIS_Q 1.1
+#endif
+
+#define PI 3.141592654
+
+uniform sampler2D u_texture;
+uniform vec4 u_texture_size;
+
+varying vec2 v_texture_coordinate;
+
+const float NDS_SCREEN_HEIGHT = 192.0;
+const float INV_BRIGHTEN_SCANLINES_INC = 1.0 / (BRIGHTEN_SCANLINES + 1.0);
+const float INV_BRIGHTEN_LCD_INC = 1.0 / (BRIGHTEN_LCD + 1.0);
+
+// NDS Colour defines
+#define NDS_LUM 0.89
+#define NDS_R 0.87
+#define NDS_G 0.645
+#define NDS_B 0.73
+#define NDS_RG 0.10
+#define NDS_RB 0.10
+#define NDS_GR 0.255
+#define NDS_GB 0.17
+#define NDS_BR -0.125
+#define NDS_BG 0.255
+
+const mat3 NDSColourMatrix = mat3(NDS_R,  NDS_RG, NDS_RB,
+											 NDS_GR, NDS_G,  NDS_GB,
+											 NDS_BR, NDS_BG, NDS_B);
+
+// Natural Vision helpers
+const mat3 RGBtoYIQ = mat3(0.299,  0.595716,  0.211456, 
+									0.587, -0.274453, -0.522591, 
+									0.114, -0.321263,  0.311135);
+
+const mat3 YIQtoRGB = mat3(1.0, 1.0, 1.0,
+									0.95629572,-0.27212210,-1.10698902,
+									0.62102442,-0.64738060, 1.70461500);
+
+const vec3 YIQ_lo = vec3(0.0, -0.595716, -0.522591);
+const vec3 YIQ_hi = vec3(1.0,  0.595716,  0.522591);
+
+void main()
+{
+	// Note to self: uniform vec4 u_texture_size(1.0/w, 1.0/h, w, h)
+	
+	// Generate LCD grid effect
+	// > Note the 0.25 pixel offset -> required to ensure that
+	//   scanlines occur *between* pixels
+	// > Divide pixel coordinate by current scale factor (texture_height / NDS_SCREEN_HEIGHT)
+	vec2 angle = 2.0 * PI * (((v_texture_coordinate.xy * u_texture_size.zw) * NDS_SCREEN_HEIGHT * u_texture_size.y) - 0.25);
+	
+	float yfactor = (BRIGHTEN_SCANLINES + sin(angle.y)) * INV_BRIGHTEN_SCANLINES_INC;
+	float xfactor = (BRIGHTEN_LCD + sin(angle.x)) * INV_BRIGHTEN_LCD_INC;
+	
+	// Get colour sample and apply apply colour correction + enhancement
+	vec3 colour = pow(texture2D(u_texture, v_texture_coordinate.xy).rgb, vec3(NATVIS_GIN));
+	// > NDS colour
+	colour = clamp(colour * NDS_LUM, 0.0, 1.0);
+	colour = NDSColourMatrix * colour;
+	// > Natural vision
+	colour = RGBtoYIQ * colour;
+	colour = vec3(pow(colour.x, NATVIS_Y), colour.y * NATVIS_I, colour.z * NATVIS_Q);
+	colour = clamp(colour, YIQ_lo, YIQ_hi);
+	colour = YIQtoRGB * colour;
+	colour = pow(colour, vec3(1.0 / NATVIS_GOUT));
+	
+	// Apply LCD grid effect
+	colour.rgb = yfactor * xfactor * colour.rgb;
+	
+	gl_FragColor = vec4(colour.rgb, 1.0);
+}
+
+</fragment>

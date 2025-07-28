@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/menu_bg_center_tv" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:background="@color/menu_bg_header_tv">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_settings_back_advanced" android:background="@drawable/btn_back_bg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />
+                <ImageView android:src="@drawable/tv_back" android:contentDescription="@null" style="@style/drastic_option_hdr_image" />
+            </LinearLayout>
+            <TextView android:text="@string/str_set_hdr_advanced" style="@style/drastic_option_hdr_text" />
+        </TableRow>
+        <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+    </TableLayout>
+    <ScrollView android:id="@id/set_content" android:background="@color/menu_bg_center_tv" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/cb_rawsavformat" android:text="@string/str_set_rawsavformat" style="@style/drastic_checkbox_tv" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_backupinsave" android:text="@string/str_set_backupinsave" style="@style/drastic_checkbox_tv" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_caching" android:text="@string/str_set_caching" style="@style/drastic_checkbox_tv" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_ignorecardlimit" android:text="@string/str_set_ignorecardlimit" style="@style/drastic_checkbox_tv" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_autotrim" android:text="@string/str_set_autotrim" style="@style/drastic_checkbox_tv" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_gl_sleep" android:text="@string/str_set_gl_sleep" style="@style/drastic_checkbox_tv" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_cpu_load_value_hdr" android:text="@string/str_set_cpu_load_value" style="@style/drastic_option_item_subhdr_text_tv" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/item_selection_tv" android:layout_gravity="left" android:id="@id/set_cpu_load_value" android:layout_width="48.0sp" android:layout_height="wrap_content" android:layout_marginLeft="32.0sp" android:layout_marginTop="14.0sp" android:layout_marginRight="10.0sp" />
+                <SeekBar android:layout_gravity="left" android:id="@id/sb_cpu_load_value" android:paddingTop="12.0dip" android:paddingBottom="18.0dip" android:layout_width="180.0sp" android:layout_height="wrap_content" android:max="300" android:progress="0" android:layout_toRightOf="@id/set_cpu_load_value" android:layout_centerInParent="false" android:layout_centerHorizontal="false" />
+            </RelativeLayout>
+            <View style="@style/drastic_seperator" />
+            <TextView android:text="@string/str_set_debuginfo" style="@style/drastic_option_item_subhdr_text_tv" />
+            <TextView android:textSize="13.0sp" android:textColor="#ffffffee" android:id="@id/system_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="16.0dip" android:text="@string/empty" />
+        </TableLayout>
+    </ScrollView>
+    <View android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+</LinearLayout>

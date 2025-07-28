@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="32.0dip">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="2.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/save_img_top_detail" android:background="#ff000000" android:layout_width="128.0dip" android:layout_height="96.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:contentDescription="@null" />
+                    <ImageView android:id="@id/save_img_bottom_detail" android:background="#ff000000" android:layout_width="128.0dip" android:layout_height="96.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:layout_below="@id/save_img_top_detail" android:contentDescription="@null" />
+                    <ImageView android:layout_width="132.0dip" android:layout_height="198.0dip" android:src="@drawable/savestate_overlay_detail" android:contentDescription="@null" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:id="@id/save_slot_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/item_big" android:id="@id/save_date_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/item_selection" android:id="@id/save_info_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/drastic_section_seperator" />
+            <TextView android:id="@id/btn_state_play" android:text="@string/str_sm_play" android:drawableLeft="@drawable/ic_play_arrow_black_24dp" style="@style/drastic_gamemenu_item" />
+            <View style="@style/drastic_thin_seperator" />
+            <TextView android:id="@id/btn_state_copy" android:text="@string/str_sm_copy" android:drawableLeft="@drawable/ic_content_copy_black_24dp" style="@style/drastic_gamemenu_item" />
+            <View style="@style/drastic_thin_seperator" />
+            <TextView android:id="@id/btn_state_delete" android:text="@string/str_sm_delete" android:drawableLeft="@drawable/ic_delete_forever_black_24dp" style="@style/drastic_gamemenu_item" />
+        </LinearLayout>
+    </ScrollView>
+</TableLayout>

@@ -1,0 +1,98 @@
+
+DraStic post-FX shader file format 
+=========================================
+Version: 1.0
+Note:
+If you want to modify any of the included shaders, please copy it and create a file with another name, 
+because it might be overwritten if we update the original.
+If a shader can't be compiled, you will get an error message in the app, stating that it couldn't be loaded.
+If that happens, you will find the shader error log <shader>dsd.log in the same directory as the <shader>.dsd file.
+
+
+DraStic FX file .dfx
+-----------------------------------------
+Defines all passes, inputs and outputs.
+
+Tags:
+// All file-paths are relative to the .dfx's path
+
+<options>
+name=<name, max. 31 chars>
+textures=<number of textures, range=[1;16]>
+</options>
+
+<vheader>
+// GLSL code, that will be prepended to ALL vertex shaders before global header
+</vheader>
+
+<fheader>
+// GLSL code, that will be prepended to ALL pixel shaders before global header
+</fheader>
+
+<header>
+// GLSL code, that will be prepended to ALL vertex and pixel shaders
+</header>
+
+<include>
+// Content of file will be prepended to ALL vertex and pixel shaders
+// (after the header).
+file=<filename>
+</include>
+
+<texture:index>
+// null: for FBO textures
+// framebuffer: DS screen framebuffer
+// filename.raw: for additionally needed custom textures
+input=<null,framebuffer,filename.raw>
+// width and height are only valid for textures loaded from files.
+// The size of FBO-bound textures is determined by the output-scale value in the pass.
+width=<width of texture>
+height=<height of texture>
+// format, internalformat and type are ignored for framebuffer input
+format=<OpenGL texture format>
+internalformat=<OpenGL internal texture format>
+type=<OpenGL data type>
+min_filter=<GL_LINEAR,GL_NEAREST>
+mag_filter=<GL_LINEAR,GL_NEAREST>
+</texture>
+
+// The order of <pass> tags will be the order in the render-chain
+<pass>
+// has to be the first element in the <pass>-tag
+shader=<filename of shader>
+// The order of samplers will determine the texture unit (GL_TEXTURE0 etc.)
+// For the 1st pass, the first sampler will always be set to GL_TEXTURE0,
+// where the framebuffer texture is bound to.
+sampler:<sampler2D variable>=<texture index>
+// Output will be ignored for final pass, which always renders to the screen.
+// For previous passes, an FBO will be created and bound to this texture.
+// scale: an integer value determining the texture scale for render targets,
+// compared to the input texture (DS screen framebuffer) size.
+output=<texture index>:<scale>
+</pass>
+
+
+DraStic shader definition file .dsd
+-----------------------------------------
+Defines vertex and pixel shaders for 1 pass.
+The following variables are built-in and set for each pass, IF they are declared
+within the shader:
+
+// (w,h) = size in pixels of the input texture for the pass.
+// This will be the screen resolution (e.g. 512x394 for high-resolution)
+// for the first pass, and be multiplied by the output scale for the pass.
+uniform vec4 u_texture_size(1.0/w, 1.0/h, w, h);
+// (w,h) = size in pixels of the target rectangle the screen is rendered to.
+uniform vec2 u_target_size(w, h);
+// time in seconds since rendering started
+uniform float u_time;
+
+Tags:
+
+<vertex>
+// Vertex shader GLSL code
+</vertex>
+
+<fragment>
+// Pixel shader GLSL code
+</fragment>

@@ -1,0 +1,35 @@
+
+<vertex>
+attribute vec4 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+varying vec2 v_texture_coordinate;
+
+void main() {
+  v_texture_coordinate = a_texture_coordinate;
+  gl_Position = a_vertex_coordinate;
+}
+
+</vertex>
+<fragment>
+
+uniform sampler2D sampler0;
+varying vec2 v_texture_coordinate;
+
+float amount = 1.0; // 范围 = 0.0 - 1.0
+float intensity = 0.5; // 范围 = 0.0 - 1.0
+
+void main()
+{
+float pos0 = ((v_texture_coordinate.x + 1.0) * 170.0*amount);
+float pos1 = ((v_texture_coordinate.y + 1.0) * 170.0*amount);
+float pos2 = cos((fract( pos0 + pos1 ) - 0.5)*3.1415926*intensity)*1.5;
+vec4 rgb = texture2D( sampler0, v_texture_coordinate );
+
+// 对比
+vec4 color = rgb*0.4+0.4*rgb*rgb*0.6;
+
+// 虛光
+color *= 1.1 - 0.6 * (dot(v_texture_coordinate - 0.5, v_texture_coordinate - 0.5) * 0.0);
+gl_FragColor.rgba = mix(vec4(0,0,0,0), color, pos2);
+}
+</fragment>

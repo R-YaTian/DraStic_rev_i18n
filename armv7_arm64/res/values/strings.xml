@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="androidx_startup">androidx.startup</string>
+    <string name="app_name">DraStic</string>
+    <string name="app_notification_text">Nintendo DS emulator</string>
+    <string name="app_version">Version r2.5.2.0a</string>
+    <string name="btn_rom_all">"All
+Games"</string>
+    <string name="btn_rom_recent">"Recent
+Games"</string>
+    <string name="empty" />
+    <string name="menu_settings">Settings</string>
+    <string name="search_menu_title">Search</string>
+    <string name="set_moga_showmapping">Show MOGA Button Mapping</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="str_romlist_nothing_found">No game folders added. Add one with the button above!</string>
+    <string name="str_add_user">Add New User</string>
+    <string name="str_add_user_button">Add</string>
+    <string name="str_add_user_custom_dir">Use custom user data directory?</string>
+    <string name="str_add_user_dir_error">Could not create user directory</string>
+    <string name="str_add_user_dir_exists">User directory already exists</string>
+    <string name="str_add_user_exists">User already exists</string>
+    <string name="str_add_user_select_dir">OK</string>
+    <string name="str_bios_error">"The BIOS files could not be installed automatically. Please copy the BIOS files manually to '/sdcard/Android/data/com.dsemu.drastic/files/system'.
+ Make sure, the files have the following names and sizes:
+ - nds_bios_arm7.bin (16384 bytes)
+ - nds_bios_arm9.bin (4096 bytes)
+ - nds_firmware.bin (262144 bytes)
+"</string>
+    <string name="str_bios_installed">The BIOS files were installed successfully, the files you copied to the device have been removed.</string>
+    <string name="str_bios_nodst">"The destination directory for the BIOS files could not be accessed.
+ Please copy the BIOS files manually to '/sdcard/Android/data/com.dsemu.drastic/files/system'.
+ Make sure, the files have the following names and sizes:
+ - nds_bios_arm7.bin (16384 bytes)
+ - nds_bios_arm9.bin (4096 bytes)
+ - nds_firmware.bin (262144 bytes)
+"</string>
+    <string name="str_bios_nosrc">"Access to the 'Download' directory and the SDCARD was denied.
+ Please make sure the 'Download' directory is not mounted on your PC."</string>
+    <string name="str_bios_notfound">"The BIOS files could not be found in the 'Download' directory.
+ Please make sure, you have the correct files located in your 'Download' directory and restart DraStic to re-try the installation."</string>
+    <string name="str_cm_abxy_A">A</string>
+    <string name="str_cm_abxy_B">B</string>
+    <string name="str_cm_abxy_X">X</string>
+    <string name="str_cm_abxy_Y">Y</string>
+    <string name="str_cm_button_enabled">enabled</string>
+    <string name="str_cm_ctrlcancel">Cancel</string>
+    <string name="str_cm_ctrldefault">Default</string>
+    <string name="str_cm_ctrlheader">Controller Layout</string>
+    <string name="str_cm_ctrlhide">Hide</string>
+    <string name="str_cm_ctrlok">Apply</string>
+    <string name="str_cm_ctrlresize">Resize</string>
+    <string name="str_cm_ctrlshow">Show</string>
+    <string name="str_cm_defaultheader">Global Layout</string>
+    <string name="str_cm_deleteforgame">Delete Game-specific Layout</string>
+    <string name="str_cm_editbg">Set background image</string>
+    <string name="str_cm_editctrl">Edit Controller Layout</string>
+    <string name="str_cm_editdefault">Edit Global</string>
+    <string name="str_cm_editforgame">Edit Game</string>
+    <string name="str_cm_forgameheader">Game-specific Layout</string>
+    <string name="str_cm_layoutmenu">Menu</string>
+    <string name="str_cm_nobgfound">No image files found in:</string>
+    <string name="str_cm_removebg">Remove image</string>
+    <string name="str_cm_resetdefault">Reset to Default</string>
+    <string name="str_cm_resizeok">Back</string>
+    <string name="str_cm_resizescreen">Resize Screen</string>
+    <string name="str_cm_savedefault">Save as global Layout</string>
+    <string name="str_cm_saveforgame">Save for current Game</string>
+    <string name="str_cm_scale_aspect">keep aspect</string>
+    <string name="str_cm_selectctrltoast">Please select an Element</string>
+    <string name="str_cm_selecttoast">Please select a Screen</string>
+    <string name="str_cm_tool_close">Close Tools</string>
+    <string name="str_cm_tool_open">Open Tools</string>
+    <string name="str_cpy_fail">Data could not be moved.</string>
+    <string name="str_cpy_success">Data was moved successfully.</string>
+    <string name="str_default_user">Default</string>
+    <string name="str_dev_htcone">"Please disable HTC Gestures in the settings, to allow the application to register all touch presses.
+Setting the sound latency to medium or low is not recommended on this device."</string>
+    <string name="str_drastic_channel_description">Displays a background notification for emulation quick resume</string>
+    <string name="str_drastic_channel_name">Background Notification</string>
+    <string name="str_editor_tv_end_msg">Do you want to save your changes?</string>
+    <string name="str_editor_tv_start_msg">Saved layouts were found</string>
+    <string name="str_err_badarc">"The archive you tried to open is not supported.
+Please try to extract the .nds file and load that instead"</string>
+    <string name="str_err_badrom">The file you tried to open is not a valid ROM.</string>
+    <string name="str_err_encrom">"This version of the ROM is encrypted. Encrypted ROMs can only be loaded using the Nintendo ARM7 BIOS dumped from your Nintendo DS.
+Please refer to our FAQ at drastic-ds.com for information about the Nintendo ARM7 BIOS, or how to decrypt the ROM yourself."</string>
+    <string name="str_err_install">"DraStic could not write to
+$path$.
+Please check the free space on the internal storage and make sure the directory has writing permission.
+Also try to reboot your device."</string>
+    <string name="str_err_jniload">DraStic could not be initialized. Please try downloading the app again.</string>
+    <string name="str_err_lowmem">The device is running low on memory, DraStic might close unexpectedly..</string>
+    <string name="str_err_lowmem_zip">"The device is running low on memory, DraStic might close unexpectedly.
+Try to unzip the game, as playing from .zip files takes more memory."</string>
+    <string name="str_err_nomount">DraStic can not create its save folder. If your device is connected to a PC/Mac through USB, please disconnect and restart DraStic.</string>
+    <string name="str_err_norumble_controller">The currently selected controller has no rumble functionality available. If you are certain your controller has rumble motors and are seeing this message, please Star this Android issue to encourage Google to address it: https://issuetracker.google.com/issues/128314303</string>
+    <string name="str_err_norumble_internal">The current device has no internal rumble motor. Rumble functionality will not work as expected.</string>
+    <string name="str_err_nospace">The game could not be loaded. Please free some space on your internal storage</string>
+    <string name="str_err_reload">"DraStic has been closed while it was suspended and needed to restart.
+You should be able to resume your game by pressing 'Continue'."</string>
+    <string name="str_err_reload_auto">"DraStic has been closed while it was suspended and needed to restart.
+To keep your progress in such cases, please enabled auto-saving on pause/suspend.
+Do you want to enable the setting now?"</string>
+    <string name="str_err_romgeneral">An error occurred while trying to load the game</string>
+    <string name="str_err_rootpath">DraStic could not access the data directory. Please restart the application</string>
+    <string name="str_gm_changegame">Change Game</string>
+    <string name="str_gm_cheats">Cheat Database</string>
+    <string name="str_gm_cheats_add">Add Cheat</string>
+    <string name="str_gm_cheats_assorted">Assorted</string>
+    <string name="str_gm_cheats_code">Code</string>
+    <string name="str_gm_cheats_custom">Custom Cheats</string>
+    <string name="str_gm_cheats_custom_enable">Enable Cheat</string>
+    <string name="str_gm_cheats_custom_note">Add your own cheats here</string>
+    <string name="str_gm_cheats_delete">Delete</string>
+    <string name="str_gm_cheats_delete_confirm">Delete Cheat?</string>
+    <string name="str_gm_cheats_desc">Description</string>
+    <string name="str_gm_cheats_disable_all">Disable All</string>
+    <string name="str_gm_cheats_edit">Edit Cheat</string>
+    <string name="str_gm_cheats_menu">Menu</string>
+    <string name="str_gm_cheats_menu_header">Custom Cheat Menu</string>
+    <string name="str_gm_cheats_name">Name</string>
+    <string name="str_gm_cheats_ondisabled">This folder only allows enabling one cheat at a time. The other cheats were disabled</string>
+    <string name="str_gm_cheats_save">Save</string>
+    <string name="str_gm_cheats_single">Select only one</string>
+    <string name="str_gm_cheats_warning">Warning: Cheats or combinations of cheats can cause unexpected things to happen in the game, including breaking it. Once you enable a cheat it will usually not go away if you disable it, unless you reset and load an in-game save. Always make sure you have in-game saves to fall back on when using cheats!</string>
+    <string name="str_gm_custom_error_add">Error: Cheat could not be added.</string>
+    <string name="str_gm_custom_error_load">Error: Cheat database not loaded.</string>
+    <string name="str_gm_custom_error_save">Error: Custom cheats could not be saved.</string>
+    <string name="str_gm_custom_invalid">The cheat format is not valid.</string>
+    <string name="str_gm_custom_warning">The cheat you are trying to add is already present.</string>
+    <string name="str_gm_exit">Quit</string>
+    <string name="str_gm_hdr_game">Game</string>
+    <string name="str_gm_hdr_misc">More</string>
+    <string name="str_gm_hdr_settings">Settings</string>
+    <string name="str_gm_help">Help</string>
+    <string name="str_gm_layout">Edit Screens and Virtual Pad</string>
+    <string name="str_gm_layout_hdr">Select Layout for Editing</string>
+    <string name="str_gm_layout_select">Select Screen Layout</string>
+    <string name="str_gm_layout_tv">Edit Screen Layout</string>
+    <string name="str_gm_load">Quick-Load</string>
+    <string name="str_gm_loadstate">Load Savestate</string>
+    <string name="str_gm_mainmenu">Main Menu</string>
+    <string name="str_gm_managestate">Manage Savestates</string>
+    <string name="str_gm_newgame">New Game</string>
+    <string name="str_gm_reset">Reset Game</string>
+    <string name="str_gm_save">Quick-Save</string>
+    <string name="str_gm_savestate">Save Savestate</string>
+    <string name="str_gm_savestate_warning">We strongly recommend to not rely on savestates exclusively. Please also make in-game saves from time to time. If a savestate is corrupted, or saved at the wrong time, you might lose your current progress.</string>
+    <string name="str_gm_settings">Options</string>
+    <string name="str_gm_shader_error" formatted="false">Filter %FILTER% could not be loaded. Using fallback.</string>
+    <string name="str_gm_statemenu">Load/Save</string>
+    <string name="str_hm_about">About</string>
+    <string name="str_hm_changelog">Changelog</string>
+    <string name="str_hm_faq">FAQ</string>
+    <string name="str_hm_instructions">Instructions</string>
+    <string name="str_lic_error">"Your license could not be verified.
+Please make sure to have an active internet connection, when you start DraStic the next time, and that your date and time are set correctly.
+If you did not buy DraStic, you can do so now by clicking the 'Buy' button."</string>
+    <string name="str_lic_error_inernal">"Your license could not be verified.
+If you have Lucky Patcher installed, please disable Google Play License Verification Emulation."</string>
+    <string name="str_lic_error_licensed">"Your license could not be verified.
+Please make sure that date and time are set correctly on your device.
+"</string>
+    <string name="str_lic_error_not_licensed">"Your license could not be verified.
+Please make sure that the purchase was successful and retry to start DraStic later."</string>
+    <string name="str_lic_error_online">"Your license could not be verified.
+Please make sure to have an active internet connection and restart DraStic.
+Once your license has been verified, you can continue playing offline."</string>
+    <string name="str_lic_error_retry">"Your license could not be verified.
+Please make sure to have an active internet connection, when you start DraStic the next time, and that your date and time are set correctly."</string>
+    <string name="str_menu_biosdialog">"DraStic requires the following BIOS files:
+ - nds_bios_arm7.bin (16384 bytes)
+ - nds_bios_arm9.bin (4096 bytes)
+ - nds_firmware.bin (262144 bytes)
+ 
+ The files are not installed yet, please copy the BIOS files to your 'Download' directory, or the root of your SDCARD, and press 'Install'.
+ Press 'Cancel' to quit DraStic."</string>
+    <string name="str_menu_close">Close</string>
+    <string name="str_menu_continue">Continue</string>
+    <string name="str_menu_cpufail">"Unfortunately your device's CPU is not supported.
+DraStic requires an ARMv7 CPU with Neon support."</string>
+    <string name="str_menu_del_confirm">Delete Save?</string>
+    <string name="str_menu_delete">Delete</string>
+    <string name="str_menu_delsysfolder">Do you want to delete the source data after it was copied successfully?</string>
+    <string name="str_menu_game">Tap an Icon to change the Screen Layout</string>
+    <string name="str_menu_game_h2">Long-click an Icon to edit the Screen/Controller Layout</string>
+    <string name="str_menu_help">Help</string>
+    <string name="str_menu_home">Main Menu</string>
+    <string name="str_menu_iconcache">Updating Icon Cache</string>
+    <string name="str_menu_load">Load</string>
+    <string name="str_menu_loadorresume">"Do you want to resume your last Save?
+Choose 'No' to start a new Game"</string>
+    <string name="str_menu_main_confirm">Quit current game?</string>
+    <string name="str_menu_movesysfolder">Do you want to move your data to /sdcard/DraStic? This will allow you to keep your save data after reinstalling or uninstalling the application.</string>
+    <string name="str_menu_no">No</string>
+    <string name="str_menu_overwrite">Save</string>
+    <string name="str_menu_pause">Game Menu</string>
+    <string name="str_menu_quit">Exit DraStic</string>
+    <string name="str_menu_quit_confirm">Quit Application?</string>
+    <string name="str_menu_reset">Reset</string>
+    <string name="str_menu_reset_confirm">"Reset Game?
+Current progress will be lost."</string>
+    <string name="str_menu_romscan">Scanning for Games</string>
+    <string name="str_menu_rootmoved">"DraStic's Data Directory set to:"</string>
+    <string name="str_menu_save">Save</string>
+    <string name="str_menu_saving_busy">Saving still in progress</string>
+    <string name="str_menu_settings">Settings</string>
+    <string name="str_menu_shortcut">Install shortcut to your Desktop?</string>
+    <string name="str_menu_stateheader">Select a slot and tap the Load or Save icon, to load/save your game.</string>
+    <string name="str_menu_states">Load/Save</string>
+    <string name="str_menu_wo_confirm">Overwrite Save?</string>
+    <string name="str_menu_yes">Yes</string>
+    <string name="str_perm_mic_rationale">DraStic needs to access the microphone for ROMs that require it. This is optional, but games that need it may not work.</string>
+    <string name="str_perm_mic_warn">Real microphone support for games is disabled. This can be re-enabled in Options.</string>
+    <string name="str_perm_stor_error">External storage permission is required to continue. Exiting.</string>
+    <string name="str_perm_stor_rationale">DraStic needs to access external storage to load ROMs and save its data. The app cannot continue without this permission.</string>
+    <string name="str_rom_continue">Continue last Save</string>
+    <string name="str_rom_delete">Delete Game permanently?</string>
+    <string name="str_rom_loadstate">Continue other Save</string>
+    <string name="str_rom_newgame">Start Game</string>
+    <string name="str_rom_shortcut">Create Shortcut</string>
+    <string name="str_set_altmenu">Use old Main-Menu</string>
+    <string name="str_set_analogtouch">Right Stick Mode</string>
+    <string name="str_set_analogtouch_title">Right Stick Mode</string>
+    <string name="str_set_analogtriggers">Enable Analog Triggers</string>
+    <string name="str_set_autofirespeed">Rapid-Fire Speed</string>
+    <string name="str_set_sysdir">System Directory</string>
+    <string name="str_set_autoload">Autoload</string>
+    <string name="str_set_autoload_hint">Automatically load the latest save, when starting a game from the quick selection dialog.</string>
+    <string name="str_set_autoresume">Resume last save when starting from shortcut</string>
+    <string name="str_set_autorotate">Landscape Layout Rotation</string>
+    <string name="str_set_autosave">Autosave</string>
+    <string name="str_set_autosave_hint">When the app is suspended or a game is left.</string>
+    <string name="str_set_autotrim">Auto-Trim ROM</string>
+    <string name="str_set_backupinsave">Store in-game Saves in Savestates</string>
+    <string name="str_set_backupinsave_warn">"Warning: Turning off this option can cause savestates and in-game saves to go out of sync, leading to savegame corruption.
+Please restart DraStic for the change to take effect."</string>
+    <string name="str_set_bday">Birthday</string>
+    <string name="str_set_bday_hint">Month/Day</string>
+    <string name="str_set_bday_ok">Set</string>
+    <string name="str_set_blend">Interframe Blending</string>
+    <string name="str_set_btn_advanced">Advanced</string>
+    <string name="str_set_btn_audio">Audio</string>
+    <string name="str_set_btn_controller">External Controller</string>
+    <string name="str_set_btn_general">General</string>
+    <string name="str_set_btn_input">Virtual Gamepad</string>
+    <string name="str_set_btn_system">System</string>
+    <string name="str_set_btn_video">Video</string>
+    <string name="str_set_btnmod">Action-Button Touch-Region Modifier</string>
+    <string name="str_set_caching">Enable uncompress to file</string>
+    <string name="str_set_cheats">Enable Cheats</string>
+    <string name="str_set_color">Favorite Color</string>
+    <string name="str_set_confirm">Quit/Reset needs Confirmation</string>
+    <string name="str_set_confirm_hint">When enabled, you need to confirm quitting or resetting a game, to avoid accidental loss of progress.</string>
+    <string name="str_set_cpu_load_value">Framerate Stabilizer</string>
+    <string name="str_set_ctrlalpha">Controller Opacity</string>
+    <string name="str_set_ctrlskin">Skin</string>
+    <string name="str_set_ctrlskin_default">Default</string>
+    <string name="str_set_custom_clock">Custom System Clock</string>
+    <string name="str_set_custom_clock_enable">Enable Custom Clock</string>
+    <string name="str_set_custom_clock_msg">"Warning:
+Setting a custom system time can cause problems if used with savestates.
+The setting will only take effect after restarting the game."</string>
+    <string name="str_set_deadzone">Right-Stick Deadzone</string>
+    <string name="str_set_debuginfo">Debug-Info:</string>
+    <string name="str_set_defaultlayout">Default Layout</string>
+    <string name="str_set_devicebtn">Disable Back Button</string>
+    <string name="str_set_devicebtn_hint">"Avoids pressing it accidentally during gameplay.
+The button will still be active in the menus."</string>
+    <string name="str_set_disablemapped">Disable mapped keys in overlay</string>
+    <string name="str_set_disablemapped_hint">Buttons with a key mapping will not be active in the controller overlay.</string>
+    <string name="str_set_display_border">Display Border</string>
+    <string name="str_set_dpadmod">D-Pad Touch-Region Modifier</string>
+    <string name="str_set_edge_marking">Disable Edge-Marking</string>
+    <string name="str_set_extdisplay">External Display Mode</string>
+    <string name="str_set_extdisplay_border">External Display Border</string>
+    <string name="str_set_extdisplay_na">Not supported. Needs Android 4.2.2 or higher.</string>
+    <string name="str_set_extdisplay_screen">External Display Screen</string>
+    <string name="str_set_extrafunc_1">Special Button I</string>
+    <string name="str_set_extrafunc_2">Special Button II</string>
+    <string name="str_set_extrafunc_3">Special Button III</string>
+    <string name="str_set_ffwd">Fast Forward</string>
+    <string name="str_set_ffwd_150">150%</string>
+    <string name="str_set_ffwd_200">200%</string>
+    <string name="str_set_ffwd_300">300%</string>
+    <string name="str_set_ffwd_400">400%</string>
+    <string name="str_set_ffwd_50">50%</string>
+    <string name="str_set_ffwd_indicator">Show Fast-Forward Indicator</string>
+    <string name="str_set_ffwd_speed">Fast-Forward maximum Speed</string>
+    <string name="str_set_ffwd_unlimited">Unlimited</string>
+    <string name="str_set_ffwdtoggle">Fast-Forward Toggle Mode</string>
+    <string name="str_set_fh2x">HQ2X</string>
+    <string name="str_set_filter">Filter</string>
+    <string name="str_set_fixmainscreen">Keep Main Screen on Top Screen</string>
+    <string name="str_set_flinear">Linear</string>
+    <string name="str_set_fnone">None</string>
+    <string name="str_set_fpstransparent">Transparent FPS Display</string>
+    <string name="str_set_fquilez">Quilez</string>
+    <string name="str_set_fs">Frameskip</string>
+    <string name="str_set_fs2x">Scale2X</string>
+    <string name="str_set_fs_auto">Auto</string>
+    <string name="str_set_fs_manual">Manual</string>
+    <string name="str_set_fs_none">None</string>
+    <string name="str_set_fs_safe">Safe Frameskip</string>
+    <string name="str_set_fs_value">Frameskip Value</string>
+    <string name="str_set_gl16bit">16-Bit Rendering</string>
+    <string name="str_set_gl_sleep">Sleep in Rendering-Thread</string>
+    <string name="str_set_haptic">Haptic Feedback</string>
+    <string name="str_set_hdr_advanced">Advanced Settings</string>
+    <string name="str_set_hdr_audio">Audio Settings</string>
+    <string name="str_set_hdr_audio_game">Audio Settings (Game)</string>
+    <string name="str_set_hdr_controller">External Controller Settings</string>
+    <string name="str_set_hdr_general">General Settings</string>
+    <string name="str_set_hdr_input">Virtual Gamepad Settings</string>
+    <string name="str_set_hdr_system">System Settings</string>
+    <string name="str_set_hdr_video">Video Settings</string>
+    <string name="str_set_hdr_video_game">Video Settings (Game)</string>
+    <string name="str_set_hires">High-Resolution 3D Rendering</string>
+    <string name="str_set_ignorecardlimit">Ignore Gamecard Limit</string>
+    <string name="str_set_key_cancel">Cancel</string>
+    <string name="str_set_key_clear">Unmap</string>
+    <string name="str_set_key_skip">Skip</string>
+    <string name="str_set_keyconfig">Configure Key Mapping</string>
+    <string name="str_set_keycustom">Customize On-Screen Controller</string>
+    <string name="str_set_keyinput">Press Key for:</string>
+    <string name="str_set_keyinput_mapped">Press another key, already mapped to</string>
+    <string name="str_set_keyinput_wait">Press Key</string>
+    <string name="str_set_keymap">Map Control</string>
+    <string name="str_set_keymap_extra">Map Special</string>
+    <string name="str_set_keymap_show">Show Mapping</string>
+    <string name="str_set_keymapid">Select Key Mapping</string>
+    <string name="str_set_keymapname">Rename</string>
+    <string name="str_set_keymapnull">No Mapping</string>
+    <string name="str_set_keyname">Set Device Name</string>
+    <string name="str_set_keyname_ok">OK</string>
+    <string name="str_set_language">Language for Multi-Language Games</string>
+    <string name="str_set_language_title">System Language</string>
+    <string name="str_set_layout">Select Layout</string>
+    <string name="str_set_loadconfirm">Savestate Loading needs Confirmation</string>
+    <string name="str_set_lowrestextures">Use Low-Res UI Textures</string>
+    <string name="str_set_lua">Enable Lua</string>
+    <string name="str_set_mapping_device">Button</string>
+    <string name="str_set_mapping_device_mapping">Mapped Button</string>
+    <string name="str_set_mapping_ds_button">DS Button</string>
+    <string name="str_set_mapping_function">Function</string>
+    <string name="str_set_mapping_info">Default Mapping:</string>
+    <string name="str_set_menu_game_options">Per-Game options</string>
+    <string name="str_set_menu_game_options_delete">Delete per-game options</string>
+    <string name="str_set_menu_global_options">Global options</string>
+    <string name="str_set_menu_override_msg">Options displayed with strike-through text are overriden by per-game options</string>
+    <string name="str_set_menubtn">Disable Menu Button</string>
+    <string name="str_set_menubtn_pos">Menu-Button Position</string>
+    <string name="str_set_menubtn_warn">Only hide the menu button, if you have a button assigned to opening the menu.</string>
+    <string name="str_set_message">Message</string>
+    <string name="str_set_micenabled">Device Microphone enabled</string>
+    <string name="str_set_miclevel">Microphone Level</string>
+    <string name="str_set_nick">Nickname</string>
+    <string name="str_set_no_menu_mapping">"No button is mapped for opening the menu, you won't be able to quit while in-game.
+Please map a button to the menu function in 'Map Special'"</string>
+    <string name="str_set_nodiagonals">No diagonal Input for On-Screen D-pad</string>
+    <string name="str_set_none">None</string>
+    <string name="str_set_overwrite">Savestate Overwrite needs Confirmation</string>
+    <string name="str_set_preload">Enable preloading unzipped games to RAM</string>
+    <string name="str_set_rawsavformat">Use raw .sav format (no footer)</string>
+    <string name="str_set_restart_req">Restart DraStic for change to take effect</string>
+    <string name="str_set_rtc_system_time">Always use System Time for RTC</string>
+    <string name="str_set_rumble_dev">Rumble Device</string>
+    <string name="str_set_rumble_dev_title">Select Rumble Device</string>
+    <string name="str_set_scaling">Scaling Mode</string>
+    <string name="str_set_settings">Configure Options</string>
+    <string name="str_set_settings_game">Configure Options (Game)</string>
+    <string name="str_set_showfps">Show FPS</string>
+    <string name="str_set_showmore">Always show Start and Select buttons</string>
+    <string name="str_set_sl_hi">High</string>
+    <string name="str_set_sl_low">Low</string>
+    <string name="str_set_sl_med">Medium</string>
+    <string name="str_set_sl_vhi">Very High</string>
+    <string name="str_set_slot2_type">Slot2 Cartridge Type</string>
+    <string name="str_set_slot2_type_title">Slot2 Cartridge</string>
+    <string name="str_set_smartedit">Auto-Snap and Resize in Layout-Editor</string>
+    <string name="str_set_soundenabled">Sound enabled</string>
+    <string name="str_set_soundlatency">Audio Latency</string>
+    <string name="str_set_soundvolume">Sound Volume</string>
+    <string name="str_set_threaded">Multi-Threaded 3D Rendering</string>
+    <string name="str_set_threaded_hint">"Improves performance in 3D heavy games, but may cause graphical glitches (like swapped screens) for some games.
+If you experience any rendering glitches, please disable this option."</string>
+    <string name="str_set_threaded_no">This setting is not available on single cpu-core devices.</string>
+    <string name="str_set_threaded_warn">This option is experimental and can cause problems or even crash the app. Please turn it off, before reporting any problems.</string>
+    <string name="str_set_touchthrough">Control presses also touch the DS Touchscreen</string>
+    <string name="str_set_volume_value">Volume</string>
+    <string name="str_set_wifi">Multiplayer/WiFi</string>
+    <string name="str_set_wifi_msg">Sorry but the emulator does not support multiplayer/WiFi</string>
+    <string name="str_sm_back">"Return
+to Game"</string>
+    <string name="str_sm_bioserror">"This Save is incompatible. Different BIOS files where used than what you're using now."</string>
+    <string name="str_sm_copy">Copy</string>
+    <string name="str_sm_copyok">A copy of the Savestate has been created</string>
+    <string name="str_sm_delete">Delete</string>
+    <string name="str_sm_deleteok">The Save has been deleted</string>
+    <string name="str_sm_empty">EMPTY</string>
+    <string name="str_sm_load">Load Savestate</string>
+    <string name="str_sm_manage">Manage Savestates</string>
+    <string name="str_sm_newsave">New Savestate</string>
+    <string name="str_sm_play">Play</string>
+    <string name="str_sm_save">Save Savestate</string>
+    <string name="str_sm_saveok">The Game has been saved</string>
+    <string name="str_sm_sloterror">No more free Slots available</string>
+    <string name="str_sm_state_corrupted">The Savestate is corrupted!</string>
+    <string name="str_sm_state_played">Played</string>
+    <string name="str_sm_state_size">Size</string>
+    <string name="str_sm_state_version">Recorded on</string>
+    <string name="str_sys_copyerror">Could not access the External Storage.</string>
+    <string name="str_sys_copyingsysfolder">Moving Data</string>
+    <string name="str_sys_deletesysfolder">Deleting Data</string>
+    <string name="str_ui_gamedetail">Start Game</string>
+    <string name="str_ui_gameselect">Select Game</string>
+    <string name="str_ui_help_firstgame">"While in-game, please press the 'Menu' button to change the screen layout, settings and to load and save your game.
+
+If a game only requires touchscreen control, you can press the stylus icon to hide the controller overlay.
+
+Please note, that there are also various settings in the 'Options' menu, to change the behaviour of the controller and touchscreen.
+You can also connect an external bluetooth controller to the device, and map the buttons in the 'Options' menu."</string>
+    <string name="str_ui_help_firstsinglescreen">Please be aware, that you can miss important information, or menus necessary to play the game, while in single-screen mode.</string>
+    <string name="str_ui_help_licerror">"If you bought DraStic, but are still getting a license error, please try the following:
+
+ 1. Make sure your device's date and time are set correctly and that you have an active internet connection the next time you start DraStic
+ 2. Go to Settings->Apps->All and delete cache and data of the Google Play App and Services
+
+ If you still get the license error, you can additionally try to:
+
+ 3. Uninstall DraStic
+ 4. Reboot your device
+ 5. Re-download and install DraStic from Google Play"</string>
+    <string name="str_ui_helptouch">Touch Screen to continue</string>
+    <string name="str_ui_loadconfirm">Load Save?</string>
+    <string name="str_ui_nofiles">NO GAMES AVAILABLE</string>
+    <string name="str_ui_numsaves">Saves</string>
+    <string name="str_ui_overwrite">Overwrite Save?</string>
+    <string name="str_ui_quickselect">Game Quickselect</string>
+    <string name="str_ui_setcheats">Cheats</string>
+    <string name="str_ui_setcheatscustom">Custom Cheats</string>
+    <string name="str_user_info">User:</string>
+    <string name="str_user_title">Current User:</string>
+    <string name="str_warn_activities">"Please disable 'Don't keep activities' in the developer settings for DraStic to function normally."</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/help_box" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/ui_helpbox" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/ui_helphint" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/str_ui_helptouch" android:layout_alignRight="@id/help_box" android:layout_alignBottom="@id/help_box" />
+    <View android:background="#cc969595" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignTop="@id/help_box" />
+    <View android:background="#cc969595" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignBottom="@id/help_box" />
+    <View android:background="#cc969595" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignLeft="@id/help_box" />
+    <View android:background="#cc969595" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignRight="@id/help_box" />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<vertex>
+//#version 130
+
+attribute vec2 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+
+varying vec2 v_texture_coordinate;
+varying vec4 v_offset[3];
+void main() {
+
+  vec4 offset[3];
+  SMAAEdgeDetectionVS(a_texture_coordinate, offset);
+  v_offset[0] = offset[0];
+  v_offset[1] = offset[1];
+  v_offset[2] = offset[2];
+
+  gl_Position = vec4(a_vertex_coordinate.xy, 0.0, 1.0);
+  v_texture_coordinate = a_texture_coordinate;
+}
+</vertex>
+
+<fragment>
+//#version 130
+
+//precision mediump float;
+varying vec2 v_texture_coordinate;
+varying vec4 v_offset[3];
+
+uniform sampler2D u_texture;
+
+void main() {
+  
+  #ifdef LUMA_EDGE_DETECTION
+  vec2 edges = SMAALumaEdgeDetectionPS(v_texture_coordinate, v_offset, u_texture);
+  #else
+  vec2 edges = SMAAColorEdgeDetectionPS(v_texture_coordinate, v_offset, u_texture);
+  #endif
+  
+  gl_FragColor = vec4(edges, 0.0, 0.0);
+
+//  vec4 color = texture2D(u_texture, v_texture_coordinate);
+//  gl_FragColor = vec4(color.rgb, 1.0);
+}
+</fragment>

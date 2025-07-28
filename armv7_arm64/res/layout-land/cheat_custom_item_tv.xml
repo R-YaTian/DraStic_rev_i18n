@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/state_list_bg_tv" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_cheatenabled" android:background="@drawable/cheat_0" android:layout_width="16.0sp" android:layout_height="16.0sp" android:layout_margin="6.0dip" android:contentDescription="@string/empty" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/item_big_tv" android:layout_gravity="center_vertical" android:id="@id/tw_cheatname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/empty" />
+    </LinearLayout>
+    <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

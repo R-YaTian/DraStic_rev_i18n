@@ -1,0 +1,32 @@
+// Scanline shader
+=============================================
+<options>
+name=Scanline
+textures=1
+</options>
+
+<fheader>
+#if GL_ES
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+#endif
+</fheader>
+
+<header>
+uniform mediump vec4 u_texture_size;
+uniform mediump vec2 u_target_size;
+</header>
+
+<texture:0>
+input=framebuffer
+min_filter=GL_LINEAR
+mag_filter=GL_LINEAR
+</texture>
+
+<pass>
+shader=scanline.dsd
+sampler:u_texture=0
+</pass>

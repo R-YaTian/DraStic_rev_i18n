@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/menu_bg_center_tv" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:background="@color/menu_bg_header_tv">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_settings_back_general" android:background="@drawable/btn_back_bg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />
+                <ImageView android:src="@drawable/tv_back" android:contentDescription="@null" style="@style/drastic_option_hdr_image" />
+            </LinearLayout>
+            <TextView android:text="@string/str_set_hdr_general" style="@style/drastic_option_hdr_text" />
+        </TableRow>
+        <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+    </TableLayout>
+    <ScrollView android:id="@id/set_content" android:background="@color/menu_bg_center_tv" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/cb_showfps" android:text="@string/str_set_showfps" style="@style/drastic_checkbox_tv" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_fpstransparent" android:text="@string/str_set_fpstransparent" style="@style/drastic_checkbox_tv" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_autosave" android:text="@string/str_set_autosave" style="@style/drastic_option_item_choicehdr_text_tv" />
+            <TextView android:id="@id/set_selection_autosave" style="@style/drastic_option_item_selection_text_tv" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_autoresume" android:text="@string/str_set_autoresume" style="@style/drastic_checkbox_tv" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_overwrite" android:text="@string/str_set_overwrite" style="@style/drastic_checkbox_tv" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_loadconfirm" android:text="@string/str_set_loadconfirm" style="@style/drastic_checkbox_tv" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_cheats" android:text="@string/str_set_cheats" style="@style/drastic_checkbox_tv" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_lua" android:text="@string/str_set_lua" style="@style/drastic_checkbox_tv" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_defaultlayout" android:text="@string/str_set_defaultlayout" style="@style/drastic_option_item_choicehdr_text_tv" />
+            <TextView android:id="@id/set_selection_defaultlayout" style="@style/drastic_option_item_selection_text_tv" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_autofirespeed" android:text="@string/str_set_autofirespeed" style="@style/drastic_option_item_choicehdr_text_tv" />
+            <TextView android:id="@id/set_selection_autofirespeed" style="@style/drastic_option_item_selection_text_tv" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_sysdir" android:text="@string/str_set_sysdir" style="@style/drastic_option_item_choicehdr_text_tv" />
+            <TextView android:id="@id/set_selection_sysdir" style="@style/drastic_option_item_selection_text_tv" />
+            <View style="@style/drastic_seperator" />
+            <Button android:id="@id/btn_wifi" android:text="@string/str_set_wifi" style="@style/drastic_set_button_tv" />
+        </TableLayout>
+    </ScrollView>
+    <View android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+</LinearLayout>

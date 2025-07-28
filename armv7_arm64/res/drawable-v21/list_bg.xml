@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/item_highlight_ripple"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_selected="true" android:drawable="@color/pressedbg" />
+            <item android:drawable="@color/normalbg" />
+        </selector>
+    </item>
+</ripple>

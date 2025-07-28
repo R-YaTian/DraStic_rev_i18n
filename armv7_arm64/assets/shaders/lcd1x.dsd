@@ -1,0 +1,79 @@
+// lcd1x - Simple LCD 'scanline' shader, based on lcd3x
+// 
+// Original code by Gigaherz, released into the public domain
+// 
+// 'Ported' (i.e. copy/paste) to DraStic format by jdgleaver
+// 
+// This program is free software; you can redistribute it and/or modify it
+// under the terms of the GNU General Public License as published by the Free
+// Software Foundation; either version 2 of the License, or (at your option)
+// any later version.
+// 
+// lcd1x differs from lcd3x in the following manner:
+// 
+// > Omits LCD-style colour separation
+// 
+// > Has 'correctly' aligned scanlines
+// 
+// > Automatically supports 'high resolution 3d rendering' ON or OFF
+=============================================
+
+<vertex>
+
+attribute vec2 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+uniform vec4 u_texture_size;
+
+varying vec2 v_texture_coordinate;
+
+void main()
+{
+	v_texture_coordinate = a_texture_coordinate;
+	gl_Position = vec4(a_vertex_coordinate.xy, 0.0, 1.0);
+}
+
+</vertex>
+
+<fragment>
+
+#ifndef BRIGHTEN_SCANLINES
+#define BRIGHTEN_SCANLINES 16.0
+#endif
+#ifndef BRIGHTEN_LCD
+#define BRIGHTEN_LCD 4.0
+#endif
+
+#define PI 3.141592654
+
+uniform sampler2D u_texture;
+uniform vec4 u_texture_size;
+
+varying vec2 v_texture_coordinate;
+
+const float NDS_SCREEN_HEIGHT = 192.0;
+const float INV_BRIGHTEN_SCANLINES_INC = 1.0 / (BRIGHTEN_SCANLINES + 1.0);
+const float INV_BRIGHTEN_LCD_INC = 1.0 / (BRIGHTEN_LCD + 1.0);
+
+void main()
+{
+	// Note to self: uniform vec4 u_texture_size(1.0/w, 1.0/h, w, h)
+	
+	// Generate LCD grid effect
+	// > Note the 0.25 pixel offset -> required to ensure that
+	//   scanlines occur *between* pixels
+	// > Divide pixel coordinate by current scale factor (texture_height / NDS_SCREEN_HEIGHT)
+	vec2 angle = 2.0 * PI * (((v_texture_coordinate.xy * u_texture_size.zw) * NDS_SCREEN_HEIGHT * u_texture_size.y) - 0.25);
+	
+	float yfactor = (BRIGHTEN_SCANLINES + sin(angle.y)) * INV_BRIGHTEN_SCANLINES_INC;
+	float xfactor = (BRIGHTEN_LCD + sin(angle.x)) * INV_BRIGHTEN_LCD_INC;
+	
+	// Get colour sample
+	vec3 colour = texture2D(u_texture, v_texture_coordinate.xy).rgb;
+	
+	// Apply LCD grid effect
+	colour.rgb = yfactor * xfactor * colour.rgb;
+	
+	gl_FragColor = vec4(colour.rgb, 1.0);
+}
+
+</fragment>

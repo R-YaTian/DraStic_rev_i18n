@@ -1,0 +1,65 @@
+<b>P: ¿Por qué los trucos siguen surtiendo efectos, incluso después de desactivarlos? ¿Es esto un error?
+R: Los trucos funcionan modificando el juego a medida que este se ejecuta. Si desactivas un truco, este dejará de ser ejecutado, pero para la mayoría de los trucos, lo que sea que hayan hecho para modificar el juego ya estará en efecto. Es imposible para el emulador revertir esto, ya que va en contra del planteo básico funcional de los trucos (ten en cuenta que los trucos vienen de los códigos de Action Replay, no son algo que hayamos inventado nosotros). La mejor parte para hacer esto es realizar un guardado dentro del juego, y reiniciar con los trucos desactivados; eso debería eliminar el truco siempre y cuando este no haya afectado algo que es parte del archivo de guardado. Hacer esto en un estado de guardado no funcionará, tiene que ser obligatoriamente en un guardado dentro del juego.
+
+<b>P: ¿Por qué mis estados de guardado o guardados dentro del juego son borrados todo el tiempo?
+R: No debería ser posible para DraStic hacer esto. En todos los casos que hemos visto hasta el momento, ha sido alguna otra aplicación instalada la que causó esto. Así que asegúrate de que, si tienes una aplicación de antivirus o liberador de memoria, esta no se encuentre configurada para borrar archivos de la carpeta	«DraStic».
+
+<b>P: ¿Por qué la pantalla táctil está en la pantalla incorrecta, o los gráficos están titilando?
+R: Desactiva «Multihilado 3D» y «Mantener la pantalla principal en la pantalla superior» en los ajustes de vídeo, ya que pueden causar tales problemas en algunos juegos.
+
+<b>P: ¡Oye! ¡El juego X no funciona! (¡Y quizás haya funcionado en el pasado!). ¡Arréglalo!
+R: Antes de informar que un juego no funciona, asegúrate de que estás usando la última versión de la aplicación. Carga el listado de apps en Play Store y confirma verifica que la versión allí mencionada sea la misma que la mostrada en la pantalla del menú. Las versiones nuevas suelen arreglar errores. En algunos casos inusuales, un juego que había estado funcionando dejó de funcionar debido a la fecha (las versiones previas a la 2.1.6.2a sufrían de este problema). Están fallando a propósito.
+
+<b>P: Vale, he verificado que este juego realmente no funciona en la última versión de la app por la cual pagué, ¿qué debería hacer?
+R: Informa el error en esos foros. Por favor, mantenlo en público en lugar de enviar un mensaje privado o un correo electrónico, así los demás usuarios pueden ayudarte o ser ayudados si hay una solución para tu problema. Cuando reportes un error, sería de ayuda que proveyeras un estado de guardado e instrucciones para reproducir el problema. Además, incluye los datos del dispositivo y qué versión del sistema operativo estás usando. Si tienes habilitados los trucos, intenta desactivarlos para poder determinar si están relacionados al error.
+
+<b>P: ¿Los juegos de 3DS/2DS son compatibles con DraStic? ¿Lo serán en el futuro?
+R: No, no lo son, y jamás lo serán. La 3DS es un sistema absolutamente distinto, el cual se encuentra una generación entera por delante, como lo está la Gamecube para la N64. Esto quiere decir que la 2DS tampoco funcionará, ya que es lo mismo que la 2DS pero con una pantalla distinta.
+
+<b>P: Ayuda, ¡un juego estaba funcionando en el emulador anteriormente pero actualicé a una versión más nueva y ahora ya no lo hace!
+R: Por desgracia y en ocasiones, cuando arreglamos algunos errores en el emulador rompemos accidentalmente algo más (como la DS tiene miles de título, esto se vuelve complejo). Si informas el problema, con suerte lo podremos corregir tan pronto como sea posible. También, podríamos ser capaces de proveerte una versión más antigua del emulador para que puedas seguir jugando el título.
+
+<b>P: ¿Por qué la funcionalidad de Google Drive no funciona?
+R: A veces, la creación automática de la carpeta «DraStic» en tu Google Drive, falla. Comprueba si la carpeta está ahí tras subir un estado de guardado, y si no lo está, créala manualmente y reintenta la subida. ¡La descarga funcionará únicamente si las ROM en todos los dispositivos tienen el mismo nombre de archivo!
+
+<b>P: ¿Cuáles son tus políticas de reembolso?
+R: Solíamos ofrecer reembolsos a casi todos en menos de 48 horas, pero ahora que no hay se requiere más una BIOS y que hay una versión de demostración, sentimos que esto es innecesario. Seguimos ofreciendo reembolsos si sentimos que el caso lo amerita; si crees que mereces un reembolso, envíanos un correo electrónico explicándonos el porqué. Por favor, entiende que las instalaciones reembolsadas pueden seguir siendo ejecutadas, así que somos un poco reacios a otorgar reeembolsos sin razón.
+
+<b>P: Presionar el botón Start no hace que se abra el menú en los juegos de Pokémon. Esto es culpa del emulador, necesitas arreglarlo, y te odio.
+R: En realidad, por defecto el botón Start nunca hizo nada en los juegos, aunque hay una opción para cambiar los controles y modificar esta situación. Para abrir el menú, se supone que presiones el botón X.
+
+<b>P: ¿Cuánto será lanzada la próxima versión?
+R: Lo lamentamos, pero normalmente no trabajamos con fechas de lanzamiento. Por favor, sé paciente.
+
+<b>P: ¿Qué tan rápido debería esperar que sea DraStic?
+R: Varía enormemente, dependiendo del juego que estés intentando ejecutar. Un dispositivo con un procesador Cortex-A8 de 1GHz ejecutará bastantes juegos con una cantidad considerable de omisión de fotogramas. Un Cortex-A9 de doble núcleo de 1,4 GHz ejecutará la mayoría de los juegos con una leve o inexistente omisión de fotogramas, la mayoría de las veces.
+
+<b>P: ¿Es de ayuda teber múltiples núcleos de CPU?
+R: Sí. Si tienes múltiples núcleos, DraStic aumentará su velocidad al ser capaz de descargar actualización de pantalla gracias a otro hilado. Si seleccionas la opción del renderizado multihilado, obtendrás incluso más beneficios, pero esta opción podría causar fallas gráficas e inestabilidad.
+
+<b>P: ¿DraStic utiliza mi GPU para renderizar gráficos? ¿Es de atyda tener una GPU más rápida?
+R: La GPU es usada únicamente para escalar la imagen y aplicar filtros, por lo que tener una mejor no hará mucha diferencia. OpenGL ES no es utilizada para renderizar gráficos de Nintendo DS. Esto se debe a idiosincrasias en el hardware gráfico de la DS, el cual haría que este estilo de emulación fuera incompleto y/o lento.
+
+<b>P: ¿DraStic es compatible con juegos de homebrew?
+R: Sí. Si deseas jugar un juego de homebrew qye utilice el sistema de archivos DLDI, visita «Instrucciones» para obtener explicaciones.
+
+<b>P: ¿DraStic es compatible con el multijugador/wifi?
+R: La emulación wifi es muy compleja y no es algo de lo cual tengamos ningún plan a intentar, de momento.
+
+<b>P: ¿Qué debería hacer para informar sobre un error?
+R: Informa sobre él en nuestros foros aquí: -ttp://drastic-ds.com. Por favor, mantenlo en público en lugar de enviar un mensaje privado o un correo electrónico, así los demás usuarios pueden ayudarte o ser ayudados si hay una solución para tu problema. Cuando reportes un error, sería de ayuda que proveyeras un estado de guardado e instrucciones para reproducir el problema.
+
+<b>P: ¿Dónde está el código fuente?
+R: DraStic es de código cerrado, y prevemos que lo seguirá siendo. Está escrito íntegramente por nosotros y, por lo tanto, no está violando ninguna licencia.
+
+<b>P: ¿En qué otras plataformas puedo obtener DraStic?
+R: De momento, está disponible para el ordenador portátil abierto de videojuegos, Open Pandora (http://www.openpandora.org).
+Puedes descargarlo gratuitamente en el repositorio, aquí: http://repo.openpandora.org/?page=detail&app=DraStic
+
+<b>P: ¿Habrá una portabilización hacia iOS?
+R: Ahora mismo, se cree que es muy probable que ocurra. Si llega a ser lanzada esa versión, seguramente se necesite un dispositivo con Jailbreak previo.
+
+<bP: ¿Los controladores MOGA son compatibles?
+R: Sí. El soporte «nativo» oara controladores MOGA fue añadido en la versión 2.2.0.0a. No necesitas estructurar los botones como con otros controladores,
+sino que estarán automáticamente asignados. Puedes ver e estructurado en Opciones > Controlador externo > Mostrar estructurado de botones de MOGA
+

@@ -1,0 +1,26 @@
+
+<options>
+name=SABR_v3.0_Optimized_lq
+textures=1
+</options>
+
+<fheader>
+#if GL_ES
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+#endif
+</fheader>
+
+<texture:0>
+input=framebuffer
+min_filter=GL_NEAREST
+mag_filter=GL_NEAREST
+</texture>
+
+<pass>
+shader=SABR_v3.0_Optimized_lq.dsd
+sampler:u_texture=0
+</pass>

@@ -1,0 +1,182 @@
+// https://raw.githubusercontent.com/libretro/common-shaders/master/crt/shaders/crt-geom.cg
+
+<vertex>
+attribute vec2 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+
+uniform vec4 u_texture_size;
+uniform vec2 u_target_size;
+
+varying vec2 v_texture_coordinate;
+
+varying vec2 one;
+varying float mod_factor;
+varying vec2 ilfac;
+varying vec3 stretch;
+varying vec2 sinangle;
+varying vec2 cosangle;
+varying vec2 TextureSize;
+
+void main() {
+  gl_Position = vec4(a_vertex_coordinate.xy, 0.0, 1.0);
+  v_texture_coordinate = a_texture_coordinate;
+  
+  sinangle = sin(vec2(x_tilt, y_tilt));
+  cosangle = cos(vec2(x_tilt, y_tilt));
+  stretch = maxscale(sinangle, cosangle);
+  TextureSize = vec2(SHARPER * u_texture_size.z, u_texture_size.w);
+
+  #ifdef INTERLACED
+    ilfac = vec2(1.0,clamp(floor(u_texture_size.w/200.0),1.0,2.0));
+  #else
+    ilfac = vec2(1.0,clamp(floor(u_texture_size.w/1000.0),1.0,2.0));
+  #endif
+
+  // The size of one texel, in texture-coordinates.
+  one = ilfac / TextureSize;
+
+  // Resulting X pixel-coordinate of the pixel we're drawing.
+  mod_factor = v_texture_coordinate.x * u_target_size.x;
+}
+</vertex>
+
+<fragment>
+uniform sampler2D u_texture;
+
+uniform vec4 u_texture_size;
+uniform vec2 u_target_size;
+uniform float u_time;
+
+varying vec2 v_texture_coordinate;
+
+varying vec2 one;
+varying float mod_factor;
+varying vec2 ilfac;
+varying vec3 stretch;
+varying vec2 sinangle;
+varying vec2 cosangle;
+varying vec2 TextureSize;
+
+void main() {
+  // Here's a helpful diagram to keep in mind while trying to
+  // understand the code:
+  //
+  //  |      |      |      |      |
+  // -------------------------------
+  //  |      |      |      |      |
+  //  |  01  |  11  |  21  |  31  | <-- current scanline
+  //  |      | @    |      |      |
+  // -------------------------------
+  //  |      |      |      |      |
+  //  |  02  |  12  |  22  |  32  | <-- next scanline
+  //  |      |      |      |      |
+  // -------------------------------
+  //  |      |      |      |      |
+  //
+  // Each character-cell represents a pixel on the output
+  // surface, "@" represents the current pixel (always somewhere
+  // in the bottom half of the current scan-line, or the top-half
+  // of the next scanline). The grid of lines represents the
+  // edges of the texels of the underlying texture.
+
+  // Texture coordinates of the texel containing the active pixel.
+  vec2 xy = vec2(0.0);
+  if (CURVATURE > 0.5) {
+    vec2 cd = v_texture_coordinate;
+    cd = (cd-vec2(0.5))*aspect*stretch.z+stretch.xy;
+    xy = (bkwtrans(cd, sinangle, cosangle)/vec2(overscan_x / 100.0, overscan_y / 100.0)/aspect+vec2(0.5));
+  }
+  else {
+    xy = v_texture_coordinate;
+  }
+
+  vec2 cd2 = xy;
+  cd2 = (cd2 - vec2(0.5)) * vec2(overscan_x / 100.0, overscan_y / 100.0) + vec2(0.5);
+  cd2 = min(cd2, vec2(1.0)-cd2) * aspect;
+  vec2 cdist = vec2(cornersize);
+  cd2 = (cdist - min(cd2,cdist));
+  float dist = sqrt(dot(cd2,cd2));
+  float cval = clamp((cdist.x-dist)*cornersmooth,0.0, 1.0);
+
+  vec2 xy2 = ((xy*TextureSize/u_texture_size.zw-vec2(0.5))*vec2(1.0,1.0)+vec2(0.5))*u_texture_size.zw/TextureSize;
+  // Of all the pixels that are mapped onto the texel we are
+  // currently rendering, which pixel are we currently rendering?
+  vec2 ilfloat = vec2(0.0,ilfac.y > 1.5 ? mod(floor(u_time/30.0),2.0) : 0.0);
+
+  vec2 ratio_scale = (xy * TextureSize - vec2(0.5) + ilfloat)/ilfac;
+
+  #ifdef OVERSAMPLE
+    float filter = u_texture_size.w / u_target_size.y;
+  #endif
+    vec2 uv_ratio = fract(ratio_scale);
+
+  // Snap to the center of the underlying texel.
+
+  xy = (floor(ratio_scale)*ilfac + vec2(0.5) - ilfloat) / TextureSize;
+
+  // Calculate Lanczos scaling coefficients describing the effect
+  // of various neighbour texels in a scanline on the current
+  // pixel.
+  vec4 coeffs = PI * vec4(1.0 + uv_ratio.x, uv_ratio.x, 1.0 - uv_ratio.x, 2.0 - uv_ratio.x);
+
+  // Prevent division by zero.
+  coeffs = FIX(coeffs);
+
+  // Lanczos2 kernel.
+  coeffs = 2.0 * sin(coeffs) * sin(coeffs / 2.0) / (coeffs * coeffs);
+
+  // Normalize.
+  coeffs /= dot(coeffs, vec4(1.0));
+  
+  // Calculate the effective colour of the current and next
+  // scanlines at the horizontal location of the current pixel,
+  // using the Lanczos coefficients above.
+  vec4 col = clamp(mat4(
+    TEX2D(xy + vec2(-one.x, 0.0)),
+    TEX2D(xy),
+    TEX2D(xy + vec2(one.x, 0.0)),
+    TEX2D(xy + vec2(2.0 * one.x, 0.0)))*coeffs,
+    0.0, 1.0);
+  vec4 col2 = clamp(mat4(
+    TEX2D(xy + vec2(-one.x, one.y)),
+    TEX2D(xy + vec2(0.0, one.y)),
+    TEX2D(xy + one),
+    TEX2D(xy + vec2(2.0 * one.x, one.y)))*coeffs,
+    0.0, 1.0);
+
+  #ifndef LINEAR_PROCESSING
+    col  = pow(col , vec4(CRTgamma));
+    col2 = pow(col2, vec4(CRTgamma));
+  #endif
+
+  // Calculate the influence of the current and next scanlines on
+  // the current pixel.
+  vec4 weights  = scanlineWeights(uv_ratio.y, col);
+  vec4 weights2 = scanlineWeights(1.0 - uv_ratio.y, col2);
+  #ifdef OVERSAMPLE
+    uv_ratio.y =uv_ratio.y+1.0/3.0*filter;
+    weights = (weights+scanlineWeights(uv_ratio.y, col))/3.0;
+    weights2=(weights2+scanlineWeights(abs(1.0-uv_ratio.y), col2))/3.0;
+    uv_ratio.y =uv_ratio.y-2.0/3.0*filter;
+    weights=weights+scanlineWeights(abs(uv_ratio.y), col)/3.0;
+    weights2=weights2+scanlineWeights(abs(1.0-uv_ratio.y), col2)/3.0;
+  #endif
+  vec3 mul_res  = (col * weights + col2 * weights2).rgb;
+  mul_res *= vec3(cval);
+
+  // dot-mask emulation:
+  // Output pixels are alternately tinted green and magenta.
+  vec3 dotMaskWeights = mix(
+    vec3(1.0, 1.0 - DOTMASK, 1.0),
+    vec3(1.0 - DOTMASK, 1.0, 1.0 - DOTMASK),
+    floor(mod(mod_factor, 2.0))
+  ); 
+  mul_res *= dotMaskWeights;
+
+  // Convert the image gamma for display on our output device.
+  mul_res = pow(mul_res, vec3(1.0 / monitorgamma));
+
+  // Color the texel.
+  gl_FragColor = vec4(mul_res, 1.0);
+}
+</fragment>

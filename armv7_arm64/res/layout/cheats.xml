@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cheats_root" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:background="@color/menu_bg_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_cheats_back" android:background="@drawable/btn_back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />
+                <ImageView android:src="@drawable/con_ds" android:contentDescription="@null" style="@style/drastic_option_hdr_image" />
+            </LinearLayout>
+            <TextView android:text="@string/str_ui_setcheats" style="@style/drastic_option_hdr_text" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/btn_cheats_deselect_all" android:background="@drawable/btn_back_bg" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/ic_select_all_white_36dp" android:contentDescription="@null" />
+        </TableRow>
+        <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/str_gm_cheats_warning" />
+        <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+    </TableLayout>
+    <ExpandableListView android:id="@id/cheatpicker" android:background="@color/menu_bg_center" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

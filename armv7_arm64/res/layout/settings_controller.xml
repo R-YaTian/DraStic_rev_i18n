@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:background="@color/menu_bg_header">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_settings_back_controller" android:background="@drawable/btn_back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />
+                <ImageView android:src="@drawable/con_ds" android:contentDescription="@null" style="@style/drastic_option_hdr_image" />
+            </LinearLayout>
+            <TextView android:text="@string/str_set_hdr_controller" style="@style/drastic_option_hdr_text" />
+        </TableRow>
+        <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+    </TableLayout>
+    <ScrollView android:id="@id/set_content" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/set_select_keymapid" android:text="@string/str_set_keymapid" style="@style/drastic_option_item_choicehdr_text" />
+            <TextView android:id="@id/set_selection_keymapid" style="@style/drastic_option_item_selection_text" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0sp" android:weightSum="1.0">
+                <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_inputconfig" android:background="@drawable/btn_bg" android:padding="8.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0sp" android:layout_marginRight="6.0sp" android:text="@string/str_set_keymap" android:layout_weight="0.5" />
+                <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_inputconfig_extra" android:background="@drawable/btn_bg" android:padding="8.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0sp" android:layout_marginRight="12.0sp" android:text="@string/str_set_keymap_extra" android:layout_weight="0.5" />
+            </LinearLayout>
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_inputname" android:background="@drawable/btn_bg" android:padding="8.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0sp" android:layout_marginRight="24.0sp" android:layout_marginBottom="12.0sp" android:text="@string/str_set_keymapname" />
+            <View style="@style/drastic_seperator" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/btn_set_ext_disablemapped" android:weightSum="1.0" style="@style/drastic_option_item">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:text="@string/str_set_disablemapped" style="@style/drastic_option_item_ext_text" />
+                    <TextView android:text="@string/str_set_disablemapped_hint" style="@style/drastic_option_item_hint" />
+                </LinearLayout>
+                <CheckBox android:gravity="right" android:id="@id/cb_disablemapped" style="@style/drastic_checkbox_empty" />
+            </LinearLayout>
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_ffwdtoggle" android:text="@string/str_set_ffwdtoggle" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_analogtriggers" android:text="@string/str_set_analogtriggers" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_analogtouch" android:text="@string/str_set_analogtouch" style="@style/drastic_option_item_choicehdr_text" />
+            <TextView android:id="@id/set_selection_analogtouch" style="@style/drastic_option_item_selection_text" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_rumbledev" android:text="@string/str_set_rumble_dev" style="@style/drastic_option_item_choicehdr_text" />
+            <TextView android:id="@id/set_selection_rumbledev" style="@style/drastic_option_item_selection_text" />
+            <View style="@style/drastic_seperator" />
+            <TextView android:text="@string/str_set_deadzone" style="@style/drastic_option_item_subhdr_text" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/item_selection" android:layout_gravity="left" android:id="@id/set_deadzone_value" android:layout_width="48.0sp" android:layout_height="wrap_content" android:layout_marginLeft="32.0sp" android:layout_marginTop="14.0sp" android:layout_marginRight="10.0sp" />
+                <SeekBar android:layout_gravity="left" android:id="@id/sb_deadzone_value" android:paddingTop="12.0dip" android:paddingBottom="18.0dip" android:layout_width="180.0sp" android:layout_height="wrap_content" android:max="100" android:progress="0" android:layout_toRightOf="@id/set_deadzone_value" android:layout_centerInParent="false" android:layout_centerHorizontal="false" />
+            </RelativeLayout>
+            <View android:id="@id/set_moga_seperator" style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_show_moga_mapping" android:text="@string/set_moga_showmapping" style="@style/drastic_option_item_choicehdr_text" />
+        </TableLayout>
+    </ScrollView>
+    <View android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+</LinearLayout>

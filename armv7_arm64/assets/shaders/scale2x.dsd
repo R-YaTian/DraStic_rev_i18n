@@ -1,0 +1,56 @@
+
+<vertex>
+attribute vec2 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+
+varying vec2 v_texture_coordinate;
+varying vec2 v_texture_coordinate_1;
+varying vec2 v_texture_coordinate_2;
+varying vec2 v_texture_coordinate_3;
+varying vec2 v_texture_coordinate_4;
+void main()
+{
+  vec2 offsetx;
+  vec2 offsety;
+  gl_Position = vec4(a_vertex_coordinate.xy, 0.0, 1.0);
+  v_texture_coordinate = a_texture_coordinate;
+  offsetx.x = u_texture_size.x;
+  offsetx.y = 0.0;
+  offsety.y = u_texture_size.y;
+  offsety.x = 0.0;
+  v_texture_coordinate_1 = v_texture_coordinate - offsetx;
+  v_texture_coordinate_2 = v_texture_coordinate + offsetx;
+  v_texture_coordinate_3 = v_texture_coordinate - offsety;
+  v_texture_coordinate_4 = v_texture_coordinate + offsety;
+}
+</vertex>
+
+<fragment>
+varying vec2 v_texture_coordinate;
+varying vec2 v_texture_coordinate_1;
+varying vec2 v_texture_coordinate_2;
+varying vec2 v_texture_coordinate_3;
+varying vec2 v_texture_coordinate_4;
+
+uniform sampler2D u_texture;
+
+void main()
+{
+  vec4 colOut, col0, col1, col2, col3, tmp;
+  vec2 sel, tex;
+  tex.x = u_texture_size.z;
+  tex.y = u_texture_size.w;
+  colOut  = texture2D(u_texture, v_texture_coordinate);
+  col0 = texture2D(u_texture, v_texture_coordinate_1);
+  col1 = texture2D(u_texture, v_texture_coordinate_2);
+  col2 = texture2D(u_texture, v_texture_coordinate_3);
+  col3 = texture2D(u_texture, v_texture_coordinate_4);
+  sel = fract(v_texture_coordinate.xy * tex.xy);
+  if(sel.y >= 0.5) { tmp = col2; col2 = col3; col3 = tmp; }
+  if(sel.x >= 0.5) { tmp = col1; col1 = col0; col0 = tmp; }
+  if(col2 == col0 && col2 != col1 && col0 != col3) {
+      colOut = col0;
+  }
+  gl_FragColor = colOut;
+}
+</fragment>

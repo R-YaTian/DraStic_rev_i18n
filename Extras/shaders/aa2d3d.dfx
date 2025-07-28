@@ -1,0 +1,29 @@
+
+<options>
+name=aa2d3d
+textures=2
+</options>
+
+<fheader>
+#if GL_ES
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+#endif
+</fheader>
+
+<texture:0>
+input=framebuffer
+min_filter=GL_NEAREST
+mag_filter=GL_NEAREST
+</texture>
+
+
+<pass>
+shader=aa2d3d.dsd
+sampler:u_texture=0
+output=1:2
+</pass>
+

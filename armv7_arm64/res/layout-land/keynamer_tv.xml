@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff0099cc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="96.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="96.0dip" android:layout_marginBottom="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/keynamer_root" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TableRow android:background="@color/menu_bg_header_tv"> android:layout_width="fill_parent"
+                android:layout_height="wrap_content"><ImageView android:layout_gravity="center_vertical" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="6.0dip" android:src="@drawable/ic_mode_edit_white_36dp" android:contentDescription="@null" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffee" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="0.0dip" android:text="@string/str_set_keyname" android:layout_weight="1.0" />
+            </TableRow>
+            <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                <EditText android:textStyle="bold" android:textColor="#ffffffee" android:id="@id/devicename" android:background="#ff555555" android:padding="8.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:ems="10" android:layout_weight="0.8" android:inputType="text" />
+                <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_inputname_ok" android:background="#ff333333" android:padding="8.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0sp" android:layout_marginRight="6.0sp" android:text="@string/str_set_keyname_ok" android:layout_weight="0.2" />
+            </LinearLayout>
+            <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+        </TableLayout>
+        <ListView android:id="@id/devicepicker" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#88111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff0099cc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="96.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="96.0dip" android:layout_marginBottom="48.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/cheats_root" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip">
+            <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_cheats_back" android:background="@drawable/btn_back_bg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />
+                        <ImageView android:src="@drawable/tv_back" android:contentDescription="@null" style="@style/drastic_option_hdr_image" />
+                    </LinearLayout>
+                    <TextView android:text="@string/str_ui_setcheats" style="@style/drastic_option_hdr_text" />
+                    <View android:layout_gravity="center_vertical" android:background="#ff666666" android:layout_width="1.0dip" android:layout_height="24.0dip" />
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/btn_back_bg_tv" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/tv_special_action" android:contentDescription="@null" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffffffee" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/str_gm_cheats_disable_all" />
+                </TableRow>
+                <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/str_gm_cheats_warning" />
+                <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+            </TableLayout>
+            <ExpandableListView android:id="@id/cheatpicker" android:background="#ff111111" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
