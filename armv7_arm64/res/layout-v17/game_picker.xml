@@ -19,7 +19,7 @@
         <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" />
         <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
             <ListView android:id="@id/romlist" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#ffdddddd" android:dividerHeight="1.0dip" />
-            <TextView android:id="@id/romlist_nothing_found" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="No game folders added. Add one with the button above!" />
+            <TextView android:id="@id/romlist_nothing_found" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/str_romlist_nothing_found" />
         </RelativeLayout>
     </TableLayout>
     <include android:id="@id/set_va_detail" layout="@layout/game_detail" />
