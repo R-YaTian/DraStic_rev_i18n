@@ -2525,6 +2525,9 @@
     <public type="string" name="str_warn_activities" id="0x7f0f0193" />
     <public type="string" name="str_set_sysdir" id="0x7f0f0194" />
     <public type="string" name="str_romlist_nothing_found" id="0x7f0f0195" />
+    <public type="string" name="str_menu_add_saf_dir" id="0x7f0f0196" />
+    <public type="string" name="str_menu_add_path" id="0x7f0f0197" />
+    <public type="string" name="str_menu_open_saf_file" id="0x7f0f0198" />
     <public type="style" name="AlertDialog.AppCompat" id="0x7f100000" />
     <public type="style" name="AlertDialog.AppCompat.Light" id="0x7f100001" />
     <public type="style" name="Animation.AppCompat.Dialog" id="0x7f100002" />

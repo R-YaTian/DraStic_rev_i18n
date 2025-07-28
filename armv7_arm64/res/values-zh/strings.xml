@@ -204,6 +204,9 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_menu_states">读取/保存</string>
     <string name="str_menu_wo_confirm">覆盖存档？</string>
     <string name="str_menu_yes">是</string>
+    <string name="str_menu_add_saf_dir">添加指定的存储路径</string>
+    <string name="str_menu_add_path">添加文件夹路径</string>
+    <string name="str_menu_open_saf_file">添加指定路径的文件</string>
     <string name="str_perm_mic_rationale">DraStic 需要麦克风权限以便于部分 ROM 使用麦克风。该权限不是必须的，但未授权会导致部分游戏无法使用麦克风功能。</string>
     <string name="str_perm_mic_warn">针对游戏的实体麦克风支持已禁用。你可以在设置中重新启用。</string>
     <string name="str_perm_stor_error">需要外部存储权限才能继续。正在退出。</string>

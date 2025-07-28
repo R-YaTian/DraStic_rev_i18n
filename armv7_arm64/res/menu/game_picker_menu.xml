@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@id/menu_add_saf_dir" android:visible="false" android:title="Add Scoped Storage Directory" />
-    <item android:id="@id/menu_add_path" android:visible="false" android:title="Add Folder Path" />
-    <item android:id="@id/menu_open_saf_file" android:visible="true" android:title="Open Scoped Storage File" />
+    <item android:id="@id/menu_add_saf_dir" android:visible="false" android:title="@string/str_menu_add_saf_dir" />
+    <item android:id="@id/menu_add_path" android:visible="false" android:title="@string/str_menu_add_path" />
+    <item android:id="@id/menu_open_saf_file" android:visible="true" android:title="@string/str_menu_open_saf_file" />
 </menu>

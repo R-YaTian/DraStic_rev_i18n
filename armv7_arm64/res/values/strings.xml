@@ -238,6 +238,9 @@ Current progress will be lost."</string>
     <string name="str_menu_states">Load/Save</string>
     <string name="str_menu_wo_confirm">Overwrite Save?</string>
     <string name="str_menu_yes">Yes</string>
+    <string name="str_menu_add_saf_dir">Add Scoped Storage Directory</string>
+    <string name="str_menu_add_path">Add Folder Path</string>
+    <string name="str_menu_open_saf_file">Open Scoped Storage File</string>
     <string name="str_perm_mic_rationale">DraStic needs to access the microphone for ROMs that require it. This is optional, but games that need it may not work.</string>
     <string name="str_perm_mic_warn">Real microphone support for games is disabled. This can be re-enabled in Options.</string>
     <string name="str_perm_stor_error">External storage permission is required to continue. Exiting.</string>
