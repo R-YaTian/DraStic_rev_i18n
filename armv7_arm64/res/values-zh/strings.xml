@@ -385,11 +385,17 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
 重启DraStic，以使更改设置生效。"</string>
     <string name="str_set_threaded_no">这个设置项在单核设备上不可用。</string>
     <string name="str_set_threaded_warn">这个选项仍在实验中，可能会造成一些问题。在您报告问题前，请先尝试关掉它。</string>
-    <string name="str_set_touchthrough">按键操作与ds触屏操作同时进行。</string>
+    <string name="str_set_touchthrough">按键操作同时触发DS触屏操作</string>
     <string name="str_set_volume_value">音量</string>
     <string name="str_set_wifi">多人游戏/WiFi</string>
     <string name="str_set_wifi_msg">抱歉，目前模拟器还不支持多人游戏/WiFi</string>
     <string name="str_set_sel_sysdir">选择新数据存储目录</string>
+    <string name="str_set_pending_format">(等待重启) %s</string>
+    <string name="str_set_def_ext">外置默认路径</string>
+    <string name="str_set_def_int">内置默认路径</string>
+    <string name="str_set_pending_def_ext">(等待重启) 外置默认路径</string>
+    <string name="str_set_pending_def_int">(等待重启) 内置默认路径</string>
+    <string name="str_set_pending">(等待重启)\u0020</string>
     <string name="str_sm_back">返回游戏</string>
     <string name="str_sm_bioserror">这个存档不兼容，这是由于旧版BIOS文件和新版不同造成的</string>
     <string name="str_sm_copy">复制</string>

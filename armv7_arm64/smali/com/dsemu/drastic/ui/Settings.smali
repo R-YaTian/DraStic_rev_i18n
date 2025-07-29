@@ -548,7 +548,7 @@
 .end method
 
 .method private B(Lcom/dsemu/drastic/filesystem/b;)V
-    .locals 3
+    .locals 4
 
     sget-object v0, Lf0/h;->d:Lcom/dsemu/drastic/filesystem/b;
 
@@ -629,7 +629,15 @@
 
     if-eqz p1, :cond_3
 
-    const-string p1, "Default External"
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v2, 0x7f0f019b
+
+    invoke-virtual {v3, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
 
     goto :goto_0
 
@@ -644,7 +652,15 @@
 
     if-eqz p1, :cond_4
 
-    const-string p1, "Default Internal"
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v2, 0x7f0f019c
+
+    invoke-virtual {v3, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
 
     goto :goto_0
 
@@ -666,7 +682,15 @@
 
     if-eqz v0, :cond_6
 
-    const-string p1, "(Pending) Default External"
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v2, 0x7f0f019d
+
+    invoke-virtual {v3, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
 
     goto :goto_0
 
@@ -681,7 +705,15 @@
 
     if-eqz v0, :cond_7
 
-    const-string p1, "(Pending) Default Internal"
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v2, 0x7f0f019e
+
+    invoke-virtual {v3, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
 
     goto :goto_0
 
@@ -698,7 +730,15 @@
 
     aput-object p1, v0, v1
 
-    const-string p1, "(Pending) %s"
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v2, 0x7f0f019a
+
+    invoke-virtual {v3, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
 
     invoke-static {p1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -7458,12 +7498,20 @@
 
     if-eqz v1, :cond_a
 
-    const-string v1, "(Pending) "
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v1, 0x7f0f019f
+
+    invoke-virtual {v3, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
 
     goto :goto_5
 
     :cond_a
-    const-string v1, " "
+    const-string v1, ""
 
     :goto_5
     if-eqz p1, :cond_d
@@ -7478,13 +7526,23 @@
 
     if-eqz v3, :cond_b
 
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const p1, 0x7f0f019b
+
+    invoke-virtual {v3, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, "Default External"
+    move-object v1, v3
 
     :goto_6
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -7506,13 +7564,23 @@
 
     if-eqz v3, :cond_c
 
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const p1, 0x7f0f019c
+
+    invoke-virtual {v3, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, "Default Internal"
+    move-object v1, v3
 
     goto :goto_6
 

@@ -2529,6 +2529,12 @@
     <public type="string" name="str_menu_add_path" id="0x7f0f0197" />
     <public type="string" name="str_menu_open_saf_file" id="0x7f0f0198" />
     <public type="string" name="str_set_sel_sysdir" id="0x7f0f0199" />
+    <public type="string" name="str_set_pending_format" id="0x7f0f019a" />
+    <public type="string" name="str_set_def_ext" id="0x7f0f019b" />
+    <public type="string" name="str_set_def_int" id="0x7f0f019c" />
+    <public type="string" name="str_set_pending_def_ext" id="0x7f0f019d" />
+    <public type="string" name="str_set_pending_def_int" id="0x7f0f019e" />
+    <public type="string" name="str_set_pending" id="0x7f0f019f" />
     <public type="style" name="AlertDialog.AppCompat" id="0x7f100000" />
     <public type="style" name="AlertDialog.AppCompat.Light" id="0x7f100001" />
     <public type="style" name="Animation.AppCompat.Dialog" id="0x7f100002" />
