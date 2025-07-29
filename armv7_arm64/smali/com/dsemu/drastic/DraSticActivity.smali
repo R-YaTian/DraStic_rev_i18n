@@ -5965,7 +5965,7 @@
 .end method
 
 .method private m0()Z
-    .locals 4
+    .locals 6
 
     invoke-static {}, Lcom/dsemu/drastic/filesystem/d;->i()Lcom/dsemu/drastic/filesystem/b;
 
@@ -5995,11 +5995,35 @@
 
     :cond_0
     :try_start_0
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v2, "zh"
+
+    invoke-virtual {v5, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :not_zh
+
+    const-string v4, "usrcheat_zh.dat"
+
+    goto :is_zh
+
+    :not_zh
+    const-string v4, "usrcheat.dat"
+
+    :is_zh
     invoke-virtual {p0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
     move-result-object v2
 
-    invoke-virtual {v2, v1}, Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;
+    invoke-virtual {v2, v4}, Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;
 
     move-result-object v1
     :try_end_0

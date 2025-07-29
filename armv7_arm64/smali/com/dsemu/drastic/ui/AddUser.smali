@@ -51,9 +51,33 @@
 .end method
 
 .method public static e(Landroid/content/Context;Lcom/dsemu/drastic/filesystem/b;)V
-    .locals 2
+    .locals 4
 
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "zh"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :not_zh
+
+    const-string v0, "usrcheat_zh.dat"
+
+    goto :is_zh
+
+    :not_zh
     const-string v0, "usrcheat.dat"
+
+    :is_zh
+    const-string v2, "usrcheat.dat"
 
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
@@ -64,7 +88,7 @@
 
     move-result-object v1
 
-    invoke-interface {p1, v0}, Lcom/dsemu/drastic/filesystem/b;->u(Ljava/lang/String;)Lcom/dsemu/drastic/filesystem/b;
+    invoke-interface {p1, v2}, Lcom/dsemu/drastic/filesystem/b;->u(Ljava/lang/String;)Lcom/dsemu/drastic/filesystem/b;
 
     move-result-object p1
 
