@@ -336,7 +336,7 @@ DeSmuME方面的工作和这个问题上的直接帮助！) 现已兼容
 - 修复整合Google Drive问题
 
 <b>版本 2.1.3a：
-- 【官方中文独享】已整合汉化版ROM金手指，全中文的金手指数据库，感谢网友@原啊原 提供。原数据库文件usrcheat.dat 将被重命名为 usrcheat_en.dat。如果您想要恢复，请将文件名改回 usrcheat.dat。您可以在/sdcard/DraSticCN路径里(或者/sdcard/Android/data/com.dsemu.drasticcn/files)找到它
+- 【官方中文独享】已整合汉化版ROM金手指，全中文的金手指数据库，感谢网友@原啊原 提供。原数据库文件 usrcheat.dat 将被重命名为 usrcheat_en.dat。如果您想要恢复，请将文件名改回 usrcheat.dat。您可以在/sdcard/DraSticCN路径里(或者/sdcard/Android/data/com.dsemu.drasticcn/files)找到它
 - 改进麦克风模拟
 - 修复 Google Drive 显示游戏名称乱码
 - DraStic 根目录移到 /sdcard/drasticcn
