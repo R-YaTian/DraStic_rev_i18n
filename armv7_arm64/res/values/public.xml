@@ -2535,6 +2535,19 @@
     <public type="string" name="str_set_pending_def_ext" id="0x7f0f019d" />
     <public type="string" name="str_set_pending_def_int" id="0x7f0f019e" />
     <public type="string" name="str_set_pending" id="0x7f0f019f" />
+    <public type="string" name="str_set_debug_notsupported" id="0x7f0f01a0" />
+    <public type="string" name="str_set_debug_thread" id="0x7f0f01a1" />
+    <public type="string" name="str_set_debug_mode" id="0x7f0f01a2" />
+    <public type="string" name="str_set_debug_sample_rate" id="0x7f0f01a3" />
+    <public type="string" name="str_set_debug_buf_size" id="0x7f0f01a4" />
+    <public type="string" name="str_set_sysdir_kitkat" id="0x7f0f01a5" />
+    <public type="string" name="str_set_already_ext" id="0x7f0f01a6" />
+    <public type="string" name="str_set_already_int" id="0x7f0f01a7" />
+    <public type="string" name="str_set_sysdir_already" id="0x7f0f01a8" />
+    <public type="string" name="str_set_sysdir_unusable" id="0x7f0f01a9" />
+    <public type="string" name="str_set_sysdir_int_tip" id="0x7f0f01aa" />
+    <public type="string" name="str_adduser_title" id="0x7f0f01ab" />
+    <public type="string" name="str_adduser_tip" id="0x7f0f01ac" />
     <public type="style" name="AlertDialog.AppCompat" id="0x7f100000" />
     <public type="style" name="AlertDialog.AppCompat.Light" id="0x7f100001" />
     <public type="style" name="Animation.AppCompat.Dialog" id="0x7f100002" />
