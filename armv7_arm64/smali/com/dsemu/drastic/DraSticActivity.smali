@@ -1930,11 +1930,19 @@
     goto :goto_8
 
     :cond_e
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    const v1, 0x7f0f01ad
+
+    invoke-virtual {v2, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    const-string v2, "Android 10以上系统, DraStic 将需要使用应用内置的 appdata 文件夹来保存数据; 该文件夹可被系统自带的文件管理APP访问(部分厂商定制系统的文件管理APP可能存在限制无法访问); 也可以在\"选项->常规\"中自行指定数据文件夹"
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
