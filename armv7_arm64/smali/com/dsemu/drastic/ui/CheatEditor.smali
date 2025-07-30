@@ -422,7 +422,7 @@
 .end method
 
 .method public onClick(Landroid/view/View;)V
-    .locals 8
+    .locals 9
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -552,11 +552,11 @@
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v1
+    move-result-object v8
 
     const v3, 0x7f0f0081
 
-    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v8, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -568,7 +568,11 @@
 
     move-result-object v0
 
-    const-string v1, "OK"
+    const v3, 0x7f0f0137
+
+    invoke-virtual {v8, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
 
     new-instance v3, Lcom/dsemu/drastic/ui/CheatEditor$c;
 
@@ -710,11 +714,11 @@
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v1
+    move-result-object v8
 
     const v2, 0x7f0f0072
 
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v8, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -730,7 +734,11 @@
 
     invoke-direct {v1, p0}, Lcom/dsemu/drastic/ui/CheatEditor$e;-><init>(Lcom/dsemu/drastic/ui/CheatEditor;)V
 
-    const-string v2, "Yes"
+    const v2, 0x7f0f00c1
+
+    invoke-virtual {v8, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -740,7 +748,11 @@
 
     invoke-direct {v1, p0}, Lcom/dsemu/drastic/ui/CheatEditor$d;-><init>(Lcom/dsemu/drastic/ui/CheatEditor;)V
 
-    const-string v2, "No"
+    const v2, 0x7f0f00b1
+
+    invoke-virtual {v8, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

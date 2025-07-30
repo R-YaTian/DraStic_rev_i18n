@@ -1345,7 +1345,7 @@
 
     iget v5, p0, Lcom/dsemu/drastic/ui/StateMenu;->k:I
 
-    invoke-static {v5}, Lcom/dsemu/drastic/ui/StateMenu;->v(I)Ljava/lang/String;
+    invoke-direct {p0, v5}, Lcom/dsemu/drastic/ui/StateMenu;->v(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -1690,7 +1690,7 @@
 
     iput-wide v3, v2, Lcom/dsemu/drastic/ui/StateMenu$m;->g:J
 
-    invoke-static {p2}, Lcom/dsemu/drastic/ui/StateMenu;->v(I)Ljava/lang/String;
+    invoke-direct {p0, p2}, Lcom/dsemu/drastic/ui/StateMenu;->v(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -2303,7 +2303,7 @@
 
     iput v3, p1, Lcom/dsemu/drastic/ui/StateMenu$m;->j:I
 
-    invoke-static {v3}, Lcom/dsemu/drastic/ui/StateMenu;->v(I)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/dsemu/drastic/ui/StateMenu;->v(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -2339,44 +2339,60 @@
     return-object v0
 .end method
 
-.method private static final v(I)Ljava/lang/String;
-    .locals 2
+.method private v(I)Ljava/lang/String;
+    .locals 4
+
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
 
     const/16 v0, 0x9
 
-    if-ne p0, v0, :cond_0
+    if-ne p1, v0, :cond_0
 
-    const-string p0, "Autosave"
+    const v2, 0x7f0f00d4
 
-    return-object p0
+    invoke-virtual {v3, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
 
     :cond_0
     const/16 v0, 0x8
 
-    if-ne p0, v0, :cond_1
+    if-ne p1, v0, :cond_1
 
-    const-string p0, "Quick-Save"
+    const v2, 0x7f0f0091
 
-    return-object p0
+    invoke-virtual {v3, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
 
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "Slot "
+    const v2, 0x7f0f01ae
+
+    invoke-virtual {v3, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    add-int/lit8 p0, p0, 0x1
+    add-int/lit8 p1, p1, 0x1
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object p1
 
-    return-object p0
+    return-object p1
 .end method
 
 .method public static final w(Landroid/content/Context;Lcom/dsemu/drastic/filesystem/b;I)Lcom/dsemu/drastic/filesystem/b;
