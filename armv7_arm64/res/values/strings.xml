@@ -177,6 +177,7 @@ Do you want to enable the setting now?"</string>
     <string name="str_gm_settings">Options</string>
     <string name="str_gm_shader_error" formatted="false">Filter %FILTER% could not be loaded. Using fallback.</string>
     <string name="str_gm_statemenu">Load/Save</string>
+    <string name="str_gm_slot">Slot\u0020</string>
     <string name="str_hm_about">About</string>
     <string name="str_hm_changelog">Changelog</string>
     <string name="str_hm_faq">FAQ</string>

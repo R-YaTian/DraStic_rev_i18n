@@ -143,6 +143,7 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_gm_settings">选项</string>
     <string name="str_gm_shader_error" formatted="false">滤镜 %FILTER% 无法加载。 使用后备滤镜。</string>
     <string name="str_gm_statemenu">读取/保存</string>
+    <string name="str_gm_slot">存档位\u0020</string>
     <string name="str_hm_about">关于</string>
     <string name="str_hm_changelog">更新日志</string>
     <string name="str_hm_faq">常见问题</string>
@@ -230,8 +231,7 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_set_autosave_hint">在退出程序或返回主菜单时自动保存.</string>
     <string name="str_set_autotrim">自动裁剪 ROM</string>
     <string name="str_set_backupinsave">在即时存档中保存电池存档</string>
-    <string name="str_set_backupinsave_warn">"警告：关闭此选项会造成即时存档和电池存档不同步，这会导致掉档。
-请重启DraStic以使改变生效。"</string>
+    <string name="str_set_backupinsave_warn">"警告：关闭此选项会造成即时存档和电池存档不同步，可能会导致掉档"</string>
     <string name="str_set_bday">生日</string>
     <string name="str_set_bday_hint">月/日</string>
     <string name="str_set_bday_ok">设置</string>
@@ -384,7 +384,7 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
 在单核设备上，开启多线程不会有模拟效果的提升。
 重启DraStic，以使更改设置生效。"</string>
     <string name="str_set_threaded_no">这个设置项在单核设备上不可用。</string>
-    <string name="str_set_threaded_warn">这个选项仍在实验中，可能会造成一些问题。在您报告问题前，请先尝试关掉它。</string>
+    <string name="str_set_threaded_warn">这个选项仍在实验中，可能会造成一些问题。</string>
     <string name="str_set_touchthrough">按键操作同时触发DS触屏操作</string>
     <string name="str_set_volume_value">音量</string>
     <string name="str_set_wifi">多人游戏/WiFi</string>

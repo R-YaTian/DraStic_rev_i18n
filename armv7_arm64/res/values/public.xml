@@ -2549,6 +2549,7 @@
     <public type="string" name="str_adduser_title" id="0x7f0f01ab" />
     <public type="string" name="str_adduser_tip" id="0x7f0f01ac" />
     <public type="string" name="str_androidq_tip" id="0x7f0f01ad" />
+    <public type="string" name="str_gm_slot" id="0x7f0f01ae" />
     <public type="style" name="AlertDialog.AppCompat" id="0x7f100000" />
     <public type="style" name="AlertDialog.AppCompat.Light" id="0x7f100001" />
     <public type="style" name="Animation.AppCompat.Dialog" id="0x7f100002" />

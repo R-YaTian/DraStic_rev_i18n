@@ -270,7 +270,7 @@
 .end method
 
 .method private D(Lcom/dsemu/drastic/filesystem/b;)V
-    .locals 3
+    .locals 5
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -292,11 +292,11 @@
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v0
+    move-result-object v3
 
     const v1, 0x7f0f018a
 
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v3, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -314,7 +314,11 @@
 
     invoke-direct {v1, p0}, Lcom/dsemu/drastic/ui/StateMenu$i;-><init>(Lcom/dsemu/drastic/ui/StateMenu;)V
 
-    const-string v2, "Yes"
+    const v4, 0x7f0f00c1
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -324,7 +328,11 @@
 
     invoke-direct {v1, p0}, Lcom/dsemu/drastic/ui/StateMenu$h;-><init>(Lcom/dsemu/drastic/ui/StateMenu;)V
 
-    const-string v2, "No"
+    const v4, 0x7f0f00b1
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -516,7 +524,7 @@
 .end method
 
 .method private G()V
-    .locals 7
+    .locals 8
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -638,11 +646,11 @@
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v2
+    move-result-object v7
 
     const v3, 0x7f0f0093
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v7, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -654,11 +662,15 @@
 
     move-result-object v1
 
+    const v2, 0x7f0f00a3
+
+    invoke-virtual {v7, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
     new-instance v2, Lcom/dsemu/drastic/ui/StateMenu$j;
 
     invoke-direct {v2, p0}, Lcom/dsemu/drastic/ui/StateMenu$j;-><init>(Lcom/dsemu/drastic/ui/StateMenu;)V
-
-    const-string v3, "Continue"
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3159,7 +3171,7 @@
 .end method
 
 .method public onClick(Landroid/view/View;)V
-    .locals 3
+    .locals 5
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -3207,11 +3219,11 @@
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v0
+    move-result-object v3
 
     const v2, 0x7f0f00a5
 
-    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v3, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -3227,7 +3239,11 @@
 
     invoke-direct {v1, p0}, Lcom/dsemu/drastic/ui/StateMenu$l;-><init>(Lcom/dsemu/drastic/ui/StateMenu;)V
 
-    const-string v2, "Yes"
+    const v4, 0x7f0f00c1
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3237,7 +3253,11 @@
 
     invoke-direct {v1, p0}, Lcom/dsemu/drastic/ui/StateMenu$k;-><init>(Lcom/dsemu/drastic/ui/StateMenu;)V
 
-    const-string v2, "No"
+    const v4, 0x7f0f00b1
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

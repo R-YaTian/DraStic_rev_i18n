@@ -358,6 +358,12 @@
 
     move-result-object p1
 
+    const v0, 0x7f0f0137
+
+    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
     const v0, 0x7f0f002b
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -375,8 +381,6 @@
     new-instance v0, Lm0/c;
 
     invoke-direct {v0}, Lm0/c;-><init>()V
-
-    const-string v1, "OK"
 
     invoke-virtual {p1, v1, v0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

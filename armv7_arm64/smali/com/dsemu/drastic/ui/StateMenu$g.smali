@@ -39,7 +39,7 @@
 
 # virtual methods
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
-    .locals 0
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -177,11 +177,11 @@
 
     invoke-virtual {p4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object p4
+    move-result-object v0
 
     const p5, 0x7f0f00a5
 
-    invoke-virtual {p4, p5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, p5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object p4
 
@@ -199,7 +199,11 @@
 
     invoke-direct {p5, p0, p3, p1}, Lcom/dsemu/drastic/ui/StateMenu$g$c;-><init>(Lcom/dsemu/drastic/ui/StateMenu$g;Lcom/dsemu/drastic/ui/StateMenu$m;Lcom/dsemu/drastic/ui/StateMenu$n;)V
 
-    const-string p1, "Yes"
+    const v1, 0x7f0f00c1
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    
+    move-result-object p1
 
     invoke-virtual {p4, p1, p5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -209,7 +213,11 @@
 
     invoke-direct {p3, p0}, Lcom/dsemu/drastic/ui/StateMenu$g$b;-><init>(Lcom/dsemu/drastic/ui/StateMenu$g;)V
 
-    const-string p4, "No"
+    const v1, 0x7f0f00b1
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    
+    move-result-object p4
 
     invoke-virtual {p1, p4, p3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
