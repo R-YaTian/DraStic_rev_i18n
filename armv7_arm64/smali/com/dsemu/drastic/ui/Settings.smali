@@ -5010,13 +5010,21 @@
         value = 0xb
     .end annotation
 
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f0f0137
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
     const v1, 0x7f0900cd
-
-    const-string v2, "OK"
 
     const/4 v3, 0x1
 

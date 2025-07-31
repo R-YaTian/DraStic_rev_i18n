@@ -8,7 +8,6 @@ DraStic is a fast Nintendo DS emulator for Android. In addition to being able to
 - Fully supports add-on controllers, and physical controls in devices like nVidia Shield and Xperia Play
 - Save and resume your progress anywhere with save states
 - Tweak your gaming experience with a database of thousands of cheat codes
-- Synchronize your save games with your online Google Drive space
 - Increase emulation speed with fast-forward
 
 

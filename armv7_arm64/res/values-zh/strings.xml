@@ -14,7 +14,7 @@
     <string name="str_add_user_dir_error">无法创建用户目录</string>
     <string name="str_add_user_dir_exists">用户目录已存在</string>
     <string name="str_add_user_exists">用户已存在</string>
-    <string name="str_add_user_select_dir">OK</string>
+    <string name="str_add_user_select_dir">确定</string>
     <string name="str_bios_error">"BIOS文件无法自动安装。 请将BIOS文件手动拷贝到如下路径'/sdcard/Android/data/com.dsemu.drastic/files/system'。
  并确保BIOS文件的文件名和大小如下：
  - nds_bios_arm7.bin (16384 bytes)
@@ -268,7 +268,7 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_set_disablemapped_hint">若开启此项,所有被映射到实体按键的虚拟按键，都不会再显示。</string>
     <string name="str_set_display_border">显示边框</string>
     <string name="str_set_dpadmod">十字键触摸有效区调节</string>
-    <string name="str_set_edge_marking">关闭边缘标记</string>
+    <string name="str_set_edge_marking">禁用边缘标记</string>
     <string name="str_set_extdisplay">视频输出模式</string>
     <string name="str_set_extdisplay_border">视频输出边框</string>
     <string name="str_set_extdisplay_na">不支持此功能，需要安卓4.2.2或以上。</string>
@@ -308,7 +308,7 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_set_hdr_audio_game">音频(游戏)</string>
     <string name="str_set_hdr_controller">外接控制器设置</string>
     <string name="str_set_hdr_general">常规</string>
-    <string name="str_set_hdr_input">输入</string>
+    <string name="str_set_hdr_input">虚拟按键设置</string>
     <string name="str_set_hdr_system">系统信息设置</string>
     <string name="str_set_hdr_video">视频</string>
     <string name="str_set_hdr_video_game">视频(游戏)</string>
