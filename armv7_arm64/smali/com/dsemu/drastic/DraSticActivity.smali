@@ -446,14 +446,6 @@
     return p0
 .end method
 
-.method static synthetic L(Lcom/dsemu/drastic/DraSticActivity;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/dsemu/drastic/DraSticActivity;->T()V
-
-    return-void
-.end method
-
 .method private static synthetic L0(Ljava/lang/String;Z)Z
     .locals 0
 
@@ -1136,28 +1128,6 @@
     goto :goto_0
 
     :cond_4
-    return-void
-.end method
-
-.method private final T()V
-    .locals 2
-
-    :try_start_0
-    const-string v0, "notification"
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/NotificationManager;
-
-    const v1, 0xaffe
-
-    invoke-virtual {v0, v1}, Landroid/app/NotificationManager;->cancel(I)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
     return-void
 .end method
 
@@ -6993,8 +6963,6 @@
 
     if-ne p2, p1, :cond_b
 
-    invoke-direct {p0}, Lcom/dsemu/drastic/DraSticActivity;->T()V
-
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     goto/16 :goto_5
@@ -7135,38 +7103,6 @@
     const/16 v1, 0x1a
 
     if-lt v0, v1, :cond_0
-
-    const v0, 0x7f0f0057
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    const v1, 0x7f0f0056
-
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    new-instance v2, Landroid/app/NotificationChannel;
-
-    const-string v3, "drastic_channel"
-
-    const/4 v4, 0x2
-
-    invoke-direct {v2, v3, v0, v4}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
-
-    invoke-static {v2, v1}, Le0/c;->a(Landroid/app/NotificationChannel;Ljava/lang/String;)V
-
-    const-string v0, "notification"
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/NotificationManager;
-
-    invoke-static {v0, v2}, Le0/d;->a(Landroid/app/NotificationManager;Landroid/app/NotificationChannel;)V
 
     :cond_0
     invoke-static {p0}, Lcom/dsemu/drastic/ui/q;->l(Landroid/app/Activity;)Z
@@ -7479,7 +7415,7 @@
 .end method
 
 .method public onDestroy()V
-    .locals 1
+    .locals 2
 
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
@@ -7508,9 +7444,18 @@
 
     if-eqz v0, :cond_1
 
-    const/4 v0, 0x0
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    invoke-static {v0}, Ljava/lang/System;->exit(I)V
+    const/16 v1, 0x10
+
+    if-lt v0, v1, :below_api_16
+
+    invoke-virtual {p0}, Landroid/app/Activity;->finishAffinity()V
+
+    goto :cond_1
+
+    :below_api_16
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     :cond_1
     return-void
@@ -7774,90 +7719,6 @@
 
     if-nez v0, :cond_2
 
-    :try_start_0
-    const-string v0, "notification"
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/NotificationManager;
-
-    new-instance v0, Landroidx/core/app/w;
-
-    const-string v1, "drastic_channel"
-
-    invoke-direct {v0, p0, v1}, Landroidx/core/app/w;-><init>(Landroid/content/Context;Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    const v2, 0x7f0f001c
-
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroidx/core/app/w;->e(Ljava/lang/CharSequence;)Landroidx/core/app/w;
-
-    move-result-object v0
-
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    const v2, 0x7f0f001d
-
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroidx/core/app/w;->d(Ljava/lang/CharSequence;)Landroidx/core/app/w;
-
-    move-result-object v0
-
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x15
-
-    if-lt v1, v2, :cond_1
-
-    const v1, -0xff432c
-
-    invoke-virtual {v0, v1}, Landroidx/core/app/w;->b(I)Landroidx/core/app/w;
-
-    const v1, 0x7f0800f7
-
-    invoke-virtual {v0, v1}, Landroidx/core/app/w;->f(I)Landroidx/core/app/w;
-
-    goto :goto_0
-
-    :cond_1
-    const v1, 0x7f0800f6
-
-    invoke-virtual {v0, v1}, Landroidx/core/app/w;->f(I)Landroidx/core/app/w;
-
-    :goto_0
-    new-instance v1, Landroid/content/Intent;
-
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
-
-    const/4 v2, 0x0
-
-    invoke-static {p0, v2, v1, v2}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroidx/core/app/w;->c(Landroid/app/PendingIntent;)Landroidx/core/app/w;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
     :cond_2
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 

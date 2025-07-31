@@ -43,8 +43,6 @@
 
     iget-object p1, p0, Lcom/dsemu/drastic/DraSticActivity$r;->f:Lcom/dsemu/drastic/DraSticActivity;
 
-    invoke-static {p1}, Lcom/dsemu/drastic/DraSticActivity;->L(Lcom/dsemu/drastic/DraSticActivity;)V
-
     iget-object p1, p0, Lcom/dsemu/drastic/DraSticActivity$r;->e:Landroid/app/Activity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V
