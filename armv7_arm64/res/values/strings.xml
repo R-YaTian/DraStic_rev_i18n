@@ -440,6 +440,9 @@ If you experience any rendering glitches, please disable this option."</string>
     <string name="str_set_sysdir_already">The system directory is already\u0020</string>
     <string name="str_set_sysdir_unusable">This directory is unusable</string>
     <string name="str_set_sysdir_int_tip">Please select \"Internal\" instead of \"Scoped Storage\" to use DraStic\'s internal data directory.</string>
+    <string name="str_romsel_remove_tip">Remove path from list?</string>
+    <string name="str_romsel_list_full">You have too many games folders! Please remove one before adding another!</string>
+    <string name="str_romsel_shortcut_tip">Shortcut pinning not supported</string>
     <string name="str_adduser_title">Please wait...</string>
     <string name="str_adduser_tip">Initializing user dir...</string>
     <string name="str_androidq_tip">On Android 10+, DraStic will use its internal appdata folder for saves; This can be accessed via the Android Files app; you can select a different directory in Options->General.</string>

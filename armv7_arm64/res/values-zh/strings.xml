@@ -407,6 +407,9 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_set_sysdir_already">数据存储目录已经为\u0020</string>
     <string name="str_set_sysdir_unusable">该路径不可用</string>
     <string name="str_set_sysdir_int_tip">请选择 \"内置默认文件夹\" 选项, 因为在 \"文件管理\" 应用中直接选择 DraStic 的内置默认文件夹是不受支持的!</string>
+    <string name="str_romsel_remove_tip">要从列表中移除该文件夹路径?</string>
+    <string name="str_romsel_list_full">添加的游戏文件夹路径已达上限! 请在添加新路径之前移除一个旧的!</string>
+    <string name="str_romsel_shortcut_tip">不支持创建快捷方式</string>
     <string name="str_adduser_title">请稍候...</string>
     <string name="str_adduser_tip">正在初始化用户数据文件夹...</string>
     <string name="str_androidq_tip">Android 10以上系统, DraStic 将需要使用应用内置的 appdata 文件夹来保存数据; 该文件夹可被系统自带的文件管理APP访问(部分厂商定制系统的文件管理APP可能存在限制无法访问); 也可以在\"选项->常规\"中自行指定数据文件夹</string>

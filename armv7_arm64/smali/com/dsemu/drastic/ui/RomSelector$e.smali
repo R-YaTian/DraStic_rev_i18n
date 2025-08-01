@@ -932,11 +932,21 @@
 .method private P(Landroid/content/Context;)V
     .locals 3
 
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    const v0, 0x7f0f01b0
+
+    invoke-virtual {v2, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const-string p1, "You have too many games folders! Please remove one before adding another!"
+    move-object p1, v2
 
     invoke-virtual {v0, p1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -1232,7 +1242,7 @@
 .end method
 
 .method private t(Lcom/dsemu/drastic/filesystem/b;)V
-    .locals 11
+    .locals 12
 
     if-nez p1, :cond_0
 
@@ -1571,9 +1581,17 @@
     goto :goto_3
 
     :cond_8
-    iget-object p1, p0, Lcom/dsemu/drastic/ui/RomSelector$e;->e:Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
-    const-string v0, "Shortcut pinning not supported"
+    move-result-object v11
+
+    const v0, 0x7f0f01b1
+
+    invoke-virtual {v11, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object p1, p0, Lcom/dsemu/drastic/ui/RomSelector$e;->e:Landroid/content/Context;
 
     invoke-static {p1, v0, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
@@ -2918,13 +2936,23 @@
     return p4
 
     :cond_1
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p5
+
+    const v0, 0x7f0f01af
+
+    invoke-virtual {p5, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
     new-instance p3, Landroid/app/AlertDialog$Builder;
 
     iget-object p5, p0, Lcom/dsemu/drastic/ui/RomSelector$e;->e:Landroid/content/Context;
 
     invoke-direct {p3, p5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const-string p5, "Remove path from list?"
+    move-object p5, v0
 
     invoke-virtual {p3, p5}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 

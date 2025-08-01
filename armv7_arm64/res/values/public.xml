@@ -2546,6 +2546,9 @@
     <public type="string" name="str_adduser_tip" id="0x7f0f01ac" />
     <public type="string" name="str_androidq_tip" id="0x7f0f01ad" />
     <public type="string" name="str_gm_slot" id="0x7f0f01ae" />
+    <public type="string" name="str_romsel_remove_tip" id="0x7f0f01af" />
+    <public type="string" name="str_romsel_list_full" id="0x7f0f01b0" />
+    <public type="string" name="str_romsel_shortcut_tip" id="0x7f0f01b1" />
     <public type="style" name="AlertDialog.AppCompat" id="0x7f100000" />
     <public type="style" name="AlertDialog.AppCompat.Light" id="0x7f100001" />
     <public type="style" name="Animation.AppCompat.Dialog" id="0x7f100002" />
