@@ -427,7 +427,7 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_sm_state_corrupted">存档已损坏!</string>
     <string name="str_sm_state_played">时间</string>
     <string name="str_sm_state_size">大小</string>
-    <string name="str_sm_state_version">保存时间</string>
+    <string name="str_sm_state_version">保存于</string>
     <string name="str_sys_copyerror">无法访问外接存储设备。</string>
     <string name="str_sys_copyingsysfolder">移动数据</string>
     <string name="str_sys_deletesysfolder">删除数据</string>

@@ -7458,6 +7458,12 @@
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     :cond_1
+    invoke-static {}, Landroid/os/Process;->myPid()I
+
+    move-result v0
+
+    invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
+
     return-void
 .end method
 

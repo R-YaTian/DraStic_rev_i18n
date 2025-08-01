@@ -1099,7 +1099,6 @@
     <public type="drawable" name="ic_delete" id="0x7f0800cb" />
     <public type="drawable" name="ic_delete_forever_black_24dp" id="0x7f0800cc" />
     <public type="drawable" name="ic_delete_forever_white_24dp" id="0x7f0800cd" />
-    <public type="drawable" name="ic_drive" id="0x7f0800ce" />
     <public type="drawable" name="ic_expand_less_black_18dp" id="0x7f0800cf" />
     <public type="drawable" name="ic_expand_less_white_18dp" id="0x7f0800d0" />
     <public type="drawable" name="ic_expand_more_black_18dp" id="0x7f0800d1" />
@@ -1131,7 +1130,6 @@
     <public type="drawable" name="ic_list_black_24dp" id="0x7f0800eb" />
     <public type="drawable" name="ic_list_white_24dp" id="0x7f0800ec" />
     <public type="drawable" name="ic_menu_add" id="0x7f0800ed" />
-    <public type="drawable" name="ic_menu_drive" id="0x7f0800ee" />
     <public type="drawable" name="ic_mode_edit_black_18dp" id="0x7f0800ef" />
     <public type="drawable" name="ic_mode_edit_black_24dp" id="0x7f0800f0" />
     <public type="drawable" name="ic_mode_edit_white_18dp" id="0x7f0800f1" />
@@ -1139,8 +1137,6 @@
     <public type="drawable" name="ic_mode_edit_white_36dp" id="0x7f0800f3" />
     <public type="drawable" name="ic_more_vert_black_24dp" id="0x7f0800f4" />
     <public type="drawable" name="ic_more_vert_white_24dp" id="0x7f0800f5" />
-    <public type="drawable" name="ic_notif" id="0x7f0800f6" />
-    <public type="drawable" name="ic_notif_l" id="0x7f0800f7" />
     <public type="drawable" name="ic_play_arrow_black_24dp" id="0x7f0800f8" />
     <public type="drawable" name="ic_play_arrow_white_24dp" id="0x7f0800f9" />
     <public type="drawable" name="ic_power_settings_new_black_24dp" id="0x7f0800fa" />
