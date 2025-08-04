@@ -1566,6 +1566,21 @@
 
     if-eqz v8, :cond_4
 
+    invoke-virtual {v8}, Landroid/net/Uri;->getHost()Ljava/lang/String;
+
+    move-result-object v10
+
+    const-string v2, "com.android.providers.downloads.documents"
+
+    invoke-virtual {v10, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :pass
+
+    goto :goto_4
+
+    :pass
     iget v10, v0, Lcom/dsemu/drastic/DraSticActivity;->E:I
 
     const/16 v11, 0xc3
@@ -7436,13 +7451,7 @@
 
     invoke-static {v0}, Lf0/h;->B(Landroid/content/Context;)V
 
-    invoke-static {}, Ljava/lang/System;->runFinalization()V
-
-    invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
+    # invoke-static {}, Ljava/lang/System;->runFinalization()V
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -7458,11 +7467,11 @@
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     :cond_1
-    invoke-static {}, Landroid/os/Process;->myPid()I
+    #invoke-static {}, Landroid/os/Process;->myPid()I
 
-    move-result v0
+    #move-result v0
 
-    invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
+    #invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
 
     return-void
 .end method
