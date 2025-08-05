@@ -1607,7 +1607,7 @@
     return v3
 
     :cond_6
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/dsemu/drastic/DraSticEmuActivity;->u()V
 
     :goto_1
     return v0

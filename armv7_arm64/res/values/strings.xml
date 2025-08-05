@@ -298,7 +298,7 @@ The setting will only take effect after restarting the game."</string>
     <string name="str_set_defaultlayout">Default Layout</string>
     <string name="str_set_devicebtn">Disable Back Button</string>
     <string name="str_set_devicebtn_hint">"Avoids pressing it accidentally during gameplay.
-The button will still be active in the menus."</string>
+The button will still be active in the menus. (If disabled, the button can be used to open the emulator menu.)"</string>
     <string name="str_set_disablemapped">Disable mapped keys in overlay</string>
     <string name="str_set_disablemapped_hint">Buttons with a key mapping will not be active in the controller overlay.</string>
     <string name="str_set_display_border">Display Border</string>

@@ -263,7 +263,7 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_set_defaultlayout">默认布局</string>
     <string name="str_set_devicebtn">禁用返回键</string>
     <string name="str_set_devicebtn_hint">"开启这项，将会在游戏中禁用返回键，以避免操作失误。
-菜单中返回键仍然可用。"</string>
+菜单中返回键仍然可用。(若关闭,则返回键可用于呼出模拟器菜单)"</string>
     <string name="str_set_disablemapped">禁用已映射的虚拟按键</string>
     <string name="str_set_disablemapped_hint">若开启此项,所有被映射到实体按键的虚拟按键，都不会再显示。</string>
     <string name="str_set_display_border">显示边框</string>
