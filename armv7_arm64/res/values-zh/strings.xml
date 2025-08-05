@@ -396,6 +396,10 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_set_pending_def_ext">(等待重启) 外置默认路径</string>
     <string name="str_set_pending_def_int">(等待重启) 内置默认路径</string>
     <string name="str_set_pending">(等待重启)\u0020</string>
+    <string name="str_set_sysdir_resel">重新选择</string>
+    <string name="str_set_sysdir_notempty">此目录看起来不像是 DraStic 文件夹，且为非空文件夹。你想继续使用该文件夹、创建一个 DraStic 子文件夹，还是重新选择另一个文件夹?</string>
+    <string name="str_set_sysdir_useit">直接使用</string>
+    <string name="str_set_sysdir_subfolder">使用子文件夹</string>
     <string name="str_set_debug_notsupported">不受支持</string>
     <string name="str_set_debug_thread">\n线程数:\u0020</string>
     <string name="str_set_debug_mode">\n模式:\u0020</string>
@@ -406,6 +410,11 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_set_already_int">数据存储目录已经为内置默认路径</string>
     <string name="str_set_sysdir_already">数据存储目录已经为\u0020</string>
     <string name="str_set_sysdir_unusable">该路径不可用</string>
+    <string name="str_set_sysdir_unusable_alt">该路径不可用于数据存储目录</string>
+    <string name="str_set_sysdir_requireperm">DraStic 需要存储权限以创建外置数据存储目录, 请授予权限或手动选择一个外置数据存储目录</string>
+    <string name="str_set_sysdir_grantperm">授予权限</string>
+    <string name="str_set_sysdir_selext">选择外置目录</string>
+    <string name="str_set_sysdir_resel_tip">DraStic 无法访问当前设置的数据存储目录, 重新选择?</string>
     <string name="str_set_sysdir_int_tip">请选择 \"内置默认文件夹\" 选项, 因为在 \"文件管理\" 应用中直接选择 DraStic 的内置默认文件夹是不受支持的!</string>
     <string name="str_romsel_remove_tip">要从列表中移除该文件夹路径?</string>
     <string name="str_romsel_list_full">添加的游戏文件夹路径已达上限! 请在添加新路径之前移除一个旧的!</string>

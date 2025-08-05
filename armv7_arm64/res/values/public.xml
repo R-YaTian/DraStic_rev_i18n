@@ -2549,6 +2549,15 @@
     <public type="string" name="str_romsel_remove_tip" id="0x7f0f01af" />
     <public type="string" name="str_romsel_list_full" id="0x7f0f01b0" />
     <public type="string" name="str_romsel_shortcut_tip" id="0x7f0f01b1" />
+    <public type="string" name="str_set_sysdir_resel" id="0x7f0f01b2" />
+    <public type="string" name="str_set_sysdir_notempty" id="0x7f0f01b3" />
+    <public type="string" name="str_set_sysdir_useit" id="0x7f0f01b4" />
+    <public type="string" name="str_set_sysdir_subfolder" id="0x7f0f01b5" />
+    <public type="string" name="str_set_sysdir_unusable_alt" id="0x7f0f01b6" />
+    <public type="string" name="str_set_sysdir_requireperm" id="0x7f0f01b7" />
+    <public type="string" name="str_set_sysdir_grantperm" id="0x7f0f01b8" />
+    <public type="string" name="str_set_sysdir_selext" id="0x7f0f01b9" />
+    <public type="string" name="str_set_sysdir_resel_tip" id="0x7f0f01ba" />
     <public type="style" name="AlertDialog.AppCompat" id="0x7f100000" />
     <public type="style" name="AlertDialog.AppCompat.Light" id="0x7f100001" />
     <public type="style" name="Animation.AppCompat.Dialog" id="0x7f100002" />
