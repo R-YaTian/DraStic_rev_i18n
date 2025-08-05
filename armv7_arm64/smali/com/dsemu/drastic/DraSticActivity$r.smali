@@ -45,7 +45,7 @@
 
     iget-object p1, p0, Lcom/dsemu/drastic/DraSticActivity$r;->e:Landroid/app/Activity;
 
-    invoke-virtual {p1}, Landroid/app/Activity;->finish()V
+    invoke-static {p1}, Landroidx/core/app/e;->g(Landroid/app/Activity;)V
 
     return-void
 .end method

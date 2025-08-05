@@ -6728,7 +6728,7 @@
 .end method
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
-    .locals 6
+    .locals 7
 
     const/16 v0, 0x16
 
@@ -6978,7 +6978,13 @@
 
     if-ne p2, p1, :cond_b
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-static {p0}, Landroidx/core/app/e;->g(Landroid/app/Activity;)V
+
+    invoke-static {}, Landroid/os/Process;->myPid()I
+
+    move-result v6
+
+    invoke-static {v6}, Landroid/os/Process;->killProcess(I)V
 
     goto/16 :goto_5
 
@@ -7430,7 +7436,7 @@
 .end method
 
 .method public onDestroy()V
-    .locals 2
+    .locals 1
 
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
@@ -7451,27 +7457,7 @@
 
     invoke-static {v0}, Lf0/h;->B(Landroid/content/Context;)V
 
-    # invoke-static {}, Ljava/lang/System;->runFinalization()V
-
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x10
-
-    if-lt v0, v1, :below_api_16
-
-    invoke-virtual {p0}, Landroid/app/Activity;->finishAffinity()V
-
-    goto :cond_1
-
-    :below_api_16
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
-
-    :cond_1
-    #invoke-static {}, Landroid/os/Process;->myPid()I
-
-    #move-result v0
-
-    #invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
+    invoke-static {}, Ljava/lang/System;->runFinalization()V
 
     return-void
 .end method
