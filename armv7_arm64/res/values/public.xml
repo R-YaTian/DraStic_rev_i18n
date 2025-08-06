@@ -2565,6 +2565,8 @@
     <public type="string" name="str_fpick_go" id="0x7f0f01bf" />
     <public type="string" name="str_fpick_useit" id="0x7f0f01c0" />
     <public type="string" name="app_provider_info" id="0x7f0f01c1" />
+    <public type="string" name="str_romsel_scoped_unusable" id="0x7f0f01c2" />
+    <public type="string" name="str_romsel_scoped_unusable_alt" id="0x7f0f01c3" />
     <public type="style" name="AlertDialog.AppCompat" id="0x7f100000" />
     <public type="style" name="AlertDialog.AppCompat.Light" id="0x7f100001" />
     <public type="style" name="Animation.AppCompat.Dialog" id="0x7f100002" />

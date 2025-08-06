@@ -232,7 +232,7 @@
     <string name="str_set_debuginfo">Información de depuración:</string>
     <string name="str_set_defaultlayout">Disposición predeterminada</string>
     <string name="str_set_devicebtn">Deshabilitar botón Regresar</string>
-    <string name="str_set_devicebtn_hint">Evita que se lo presione accidentalmente durante el juego. El botón seguirá permaneciendo activo dentro de los menús.</string>
+    <string name="str_set_devicebtn_hint">"Evita que se lo presione accidentalmente durante el juego. El botón seguirá permaneciendo activo dentro de los menús. (Si está desactivado, el botón se puede usar para abrir el menú del emulador.)"</string>
     <string name="str_set_disablemapped">Deshabilitar botones estructurados en la superposición</string>
     <string name="str_set_disablemapped_hint">Los botones con un estructurado no estarán activos en la superposición del controlador.</string>
     <string name="str_set_display_border">Visualizar borde</string>

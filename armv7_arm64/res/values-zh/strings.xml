@@ -211,7 +211,7 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_menu_open_saf_file">添加指定路径的文件</string>
     <string name="str_perm_mic_rationale">DraStic 需要麦克风权限以便于部分 ROM 使用麦克风。该权限不是必须的，但未授权会导致部分游戏无法使用麦克风功能。</string>
     <string name="str_perm_mic_warn">针对游戏的实体麦克风支持已禁用。你可以在设置中重新启用。</string>
-    <string name="str_perm_stor_error">需要外部存储权限才能继续。正在退出。</string>
+    <string name="str_perm_stor_error">DraStic 需要存储权限以访问外置数据存储目录</string>
     <string name="str_perm_stor_rationale">DraStic 需要访问外部存储器以加载 ROM 并保存存档数据。若未授权此权限，应用程序无法继续使用。</string>
     <string name="str_rom_continue">读取最近的模拟器存档</string>
     <string name="str_rom_delete">永久删除游戏吗?</string>
@@ -420,6 +420,8 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_romsel_remove_tip">要从列表中移除该文件夹路径?</string>
     <string name="str_romsel_list_full">添加的游戏文件夹路径已达上限! 请在添加新路径之前移除一个旧的!</string>
     <string name="str_romsel_shortcut_tip">不支持创建快捷方式</string>
+    <string name="str_romsel_scoped_unusable">很抱歉, 此设备不支持 Scoped Storage 功能。请联系设备制造商以实现 Intent.ACTION_OPEN_DOCUMENT_TREE 功能!</string>
+    <string name="str_romsel_scoped_unusable_alt">很抱歉, 此设备不支持 Scoped Storage 功能。请联系设备制造商以实现 Intent.ACTION_OPEN_DOCUMENT 功能!</string>
     <string name="str_fpick_createdir">创建文件夹</string>
     <string name="str_fpick_create">创建</string>
     <string name="str_fpick_emptyname">文件夹名称不得为空!</string>

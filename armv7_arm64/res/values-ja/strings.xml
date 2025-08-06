@@ -268,7 +268,7 @@ DraSticを実行するにはARMv7 CPU with Neon supportが必要です。"</stri
     <string name="str_set_defaultlayout">既定レイアウト</string>
     <string name="str_set_devicebtn">戻るキーを無効化</string>
     <string name="str_set_devicebtn_hint">"ゲームをプレイ中に誤って触ることを避けてください。
-有効にしてもメニューではボタンが利用可能です。"</string>
+有効にしてもメニューではボタンが利用可能です。(無効にすると、このボタンでエミュレータのメニューを開くことができます。)"</string>
     <string name="str_set_disablemapped">画面上のマッピングされたボタンを無効化</string>
     <string name="str_set_disablemapped_hint">マッピングされたボタンはコントローラーオーバーレイでは利用不可になります。</string>
     <string name="str_set_display_border">表示ボーダー</string>

@@ -245,7 +245,7 @@ Current progress will be lost."</string>
     <string name="str_menu_open_saf_file">Open Scoped Storage File</string>
     <string name="str_perm_mic_rationale">DraStic needs to access the microphone for ROMs that require it. This is optional, but games that need it may not work.</string>
     <string name="str_perm_mic_warn">Real microphone support for games is disabled. This can be re-enabled in Options.</string>
-    <string name="str_perm_stor_error">External storage permission is required to continue. Exiting.</string>
+    <string name="str_perm_stor_error">DraStic needs the storage permission to use the default external system directory</string>
     <string name="str_perm_stor_rationale">DraStic needs to access external storage to load ROMs and save its data. The app cannot continue without this permission.</string>
     <string name="str_rom_continue">Continue last Save</string>
     <string name="str_rom_delete">Delete Game permanently?</string>
@@ -453,6 +453,8 @@ If you experience any rendering glitches, please disable this option."</string>
     <string name="str_romsel_remove_tip">Remove path from list?</string>
     <string name="str_romsel_list_full">You have too many games folders! Please remove one before adding another!</string>
     <string name="str_romsel_shortcut_tip">Shortcut pinning not supported</string>
+    <string name="str_romsel_scoped_unusable">Sorry, scoped storage is not available on this device. Please ask your device manufacturer to implement Intent.ACTION_OPEN_DOCUMENT_TREE!</string>
+    <string name="str_romsel_scoped_unusable_alt">Sorry, scoped storage is not available on this device. Please ask your device manufacturer to implement Intent.ACTION_OPEN_DOCUMENT!</string>
     <string name="str_fpick_createdir">Create Folder</string>
     <string name="str_fpick_create">Create</string>
     <string name="str_fpick_emptyname">Folder name is empty!</string>

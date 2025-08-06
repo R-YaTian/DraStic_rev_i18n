@@ -249,7 +249,7 @@ Zur Änderung dieser Einstellung muss die App neu gestartet werden."</string>
     <string name="str_set_defaultlayout">Standard-Layout</string>
     <string name="str_set_devicebtn">Zurück-Taste deaktivieren</string>
     <string name="str_set_devicebtn_hint">"Vermeidet ein versehentliches Drücken während des Spielens.
-Die Taste ist in den Menüs weiterhin aktiv."</string>
+Die Taste ist in den Menüs weiterhin aktiv. (Wenn deaktiviert, kann die Taste verwendet werden, um das Emulator-Menü zu öffnen.)"</string>
     <string name="str_set_disablemapped">Zugeordnete Tasten im virtuellen Gamepad ausblenden</string>
     <string name="str_set_disablemapped_hint">Gampad-Tasten, die einer Geräte-Taste zugeordnet sind, werden im virtuellen Gamepad nicht angezeigt.</string>
     <string name="str_set_display_border">Bildschirm-Rand</string>

@@ -279,7 +279,7 @@ L'impostazione avrà effetto solo dopo aver riavviato il gioco."</string>
     <string name="str_set_defaultlayout">Layout Predefinito</string>
     <string name="str_set_devicebtn">Disabilita Bottone Back</string>
     <string name="str_set_devicebtn_hint">"Evita di premerlo accidentalmente durante la sessione di gioco.
-Il bottone continuerà a funzionare nei menu."</string>
+Il bottone continuerà a funzionare nei menu. (Se disattivato, il pulsante può essere utilizzato per aprire il menu dell'emulatore.)"</string>
     <string name="str_set_disablemapped">"Disabilita i bottoni mappati nell'overlay"</string>
     <string name="str_set_disablemapped_hint">"I bottoni mappati non saranno attivi nell'overlay del controller."</string>
     <string name="str_set_display_border">Mostra Bordi</string>
