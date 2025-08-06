@@ -1678,15 +1678,17 @@
 
     move-result-object v4
 
-    const v2, 0x7f0f01b5
+    const v5, 0x7f0f01b5
 
-    invoke-virtual {v4, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v5
 
     new-instance v4, Le0/m;
 
     invoke-direct {v4, v0, v2, v0}, Le0/m;-><init>(Lcom/dsemu/drastic/DraSticActivity;Lcom/dsemu/drastic/filesystem/b;Landroid/content/Context;)V
+
+    move-object v2, v5
 
     invoke-virtual {v3, v2, v4}, Landroid/app/AlertDialog$Builder;->setNeutralButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
