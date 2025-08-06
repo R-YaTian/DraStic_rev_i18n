@@ -2558,6 +2558,13 @@
     <public type="string" name="str_set_sysdir_grantperm" id="0x7f0f01b8" />
     <public type="string" name="str_set_sysdir_selext" id="0x7f0f01b9" />
     <public type="string" name="str_set_sysdir_resel_tip" id="0x7f0f01ba" />
+    <public type="string" name="str_fpick_createdir" id="0x7f0f01bb" />
+    <public type="string" name="str_fpick_create" id="0x7f0f01bc" />
+    <public type="string" name="str_fpick_emptyname" id="0x7f0f01bd" />
+    <public type="string" name="str_fpick_pickdir" id="0x7f0f01be" />
+    <public type="string" name="str_fpick_go" id="0x7f0f01bf" />
+    <public type="string" name="str_fpick_useit" id="0x7f0f01c0" />
+    <public type="string" name="app_provider_info" id="0x7f0f01c1" />
     <public type="style" name="AlertDialog.AppCompat" id="0x7f100000" />
     <public type="style" name="AlertDialog.AppCompat.Light" id="0x7f100001" />
     <public type="style" name="Animation.AppCompat.Dialog" id="0x7f100002" />

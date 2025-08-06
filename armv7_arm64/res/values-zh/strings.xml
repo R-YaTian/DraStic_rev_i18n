@@ -2,6 +2,7 @@
 <resources>
     <string name="app_notification_text">Nintendo DS 模拟器</string>
     <string name="app_version">版本 r2.6.0.4a</string>
+    <string name="app_provider_info">DraStic 内置数据存储目录</string>
     <string name="btn_rom_all">全部</string>
     <string name="btn_rom_recent">最近的</string>
     <string name="empty" />
@@ -222,7 +223,7 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_set_analogtouch_title">右摇杆模式选择</string>
     <string name="str_set_analogtriggers">启用控制器扳机键</string>
     <string name="str_set_autofirespeed">连发速度</string>
-    <string name="str_set_sysdir">数据存储文件夹</string>
+    <string name="str_set_sysdir">数据存储目录</string>
     <string name="str_set_autoload">自动读取</string>
     <string name="str_set_autoload_hint">从快速选取中打开游戏时，自动读取最后的存档</string>
     <string name="str_set_autoresume">从快捷方式打开时读取最近的模拟器存档</string>
@@ -419,6 +420,12 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_romsel_remove_tip">要从列表中移除该文件夹路径?</string>
     <string name="str_romsel_list_full">添加的游戏文件夹路径已达上限! 请在添加新路径之前移除一个旧的!</string>
     <string name="str_romsel_shortcut_tip">不支持创建快捷方式</string>
+    <string name="str_fpick_createdir">创建文件夹</string>
+    <string name="str_fpick_create">创建</string>
+    <string name="str_fpick_emptyname">文件夹名称不得为空!</string>
+    <string name="str_fpick_pickdir">选择文件夹</string>
+    <string name="str_fpick_go">转到</string>
+    <string name="str_fpick_useit">使用该文件夹</string>
     <string name="str_adduser_title">请稍候...</string>
     <string name="str_adduser_tip">正在初始化用户数据文件夹...</string>
     <string name="str_androidq_tip">Android 10以上系统, DraStic 将需要使用应用内置的 appdata 文件夹来保存数据; 该文件夹可被系统自带的文件管理APP访问(部分厂商定制系统的文件管理APP可能存在限制无法访问); 也可以在\"选项->常规\"中自行指定数据文件夹</string>

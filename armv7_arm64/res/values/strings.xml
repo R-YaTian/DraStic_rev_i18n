@@ -31,6 +31,7 @@
     <string name="app_name">DraStic</string>
     <string name="app_notification_text">Nintendo DS emulator</string>
     <string name="app_version">Version r2.5.2.0a</string>
+    <string name="app_provider_info">DraStic Internal Data</string>
     <string name="btn_rom_all">"All
 Games"</string>
     <string name="btn_rom_recent">"Recent
@@ -452,6 +453,12 @@ If you experience any rendering glitches, please disable this option."</string>
     <string name="str_romsel_remove_tip">Remove path from list?</string>
     <string name="str_romsel_list_full">You have too many games folders! Please remove one before adding another!</string>
     <string name="str_romsel_shortcut_tip">Shortcut pinning not supported</string>
+    <string name="str_fpick_createdir">Create Folder</string>
+    <string name="str_fpick_create">Create</string>
+    <string name="str_fpick_emptyname">Folder name is empty!</string>
+    <string name="str_fpick_pickdir">Pick Directory</string>
+    <string name="str_fpick_go">Go</string>
+    <string name="str_fpick_useit">Use This Folder</string>
     <string name="str_adduser_title">Please wait...</string>
     <string name="str_adduser_tip">Initializing user dir...</string>
     <string name="str_androidq_tip">On Android 10+, DraStic will use its internal appdata folder for saves; This can be accessed via the Android Files app; you can select a different directory in Options->General.</string>

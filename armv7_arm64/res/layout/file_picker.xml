@@ -4,20 +4,34 @@
     <TableLayout android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <TableRow android:background="@color/menu_bg_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <ImageView android:layout_gravity="center_vertical" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="6.0dip" android:src="@drawable/ic_folder_open" android:contentDescription="@null" />
-            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffee" android:layout_gravity="center_vertical" android:id="@id/picker_header_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="0.0dip" android:text="Pick a *****" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffee" android:layout_gravity="center_vertical" android:id="@id/picker_header_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="0.0dip" android:text="Pick" android:layout_weight="1.0" />
         </TableRow>
         <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
     </TableLayout>
-    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1">
         <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <EditText android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/directory_path_edittext" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="1" android:singleLine="true" android:layout_weight="0.75" android:imeOptions="actionGo" />
-            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_path_go" android:background="#ff333333" android:padding="0.0sp" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="6.0sp" android:layout_marginRight="3.0sp" android:text="Go" android:layout_weight="0.125" />
-            <ImageButton android:id="@id/btn_folder_add" android:background="#ff333333" android:padding="0.0sp" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="3.0sp" android:layout_marginRight="6.0sp" android:src="@drawable/ic_folder_add" android:layout_weight="0.125" />
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_path_go" android:background="#ff333333" android:padding="0.0sp" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="6.0sp" android:layout_marginRight="3.0sp" android:layout_marginBottom="6dp" android:text="@string/str_fpick_go" android:layout_weight="0.125" />
+            <ImageButton android:id="@id/btn_folder_add" android:background="#ff333333" android:padding="0.0sp" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="3.0sp" android:layout_marginRight="6.0sp" android:layout_marginBottom="6dp" android:src="@drawable/ic_folder_add" android:layout_weight="0.125" />
         </LinearLayout>
         <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
-        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
-            <ListView android:id="@id/pathpicker" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_selectfolder_ok" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
-            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_selectfolder_ok" android:background="#ff333333" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0sp" android:layout_marginRight="6.0sp" android:text="Use This Folder" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
-        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/pathpicker" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/btn_selectfolder_ok" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <Button
+                android:id="@id/btn_selectfolder_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="12dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/str_fpick_useit"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFFFF"
+                android:background="#FF333333"
+                android:visibility="visible" />
+        </FrameLayout>
     </LinearLayout>
 </LinearLayout>

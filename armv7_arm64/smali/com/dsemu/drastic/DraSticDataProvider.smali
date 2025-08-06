@@ -1577,9 +1577,17 @@
 
     invoke-static {p1, v2, v3}, Le0/p0;->a(Landroid/database/MatrixCursor$RowBuilder;Ljava/lang/String;Ljava/lang/Object;)Landroid/database/MatrixCursor$RowBuilder;
 
-    const-string v2, "summary"
+    invoke-virtual {p0}, Landroid/content/ContentProvider;->getContext()Landroid/content/Context;
 
-    const-string v3, "DraStic Internal Data"
+    move-result-object v2
+
+    const v3, 0x7f0f01c1
+
+    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v2, "summary"
 
     invoke-static {p1, v2, v3}, Le0/p0;->a(Landroid/database/MatrixCursor$RowBuilder;Ljava/lang/String;Ljava/lang/Object;)Landroid/database/MatrixCursor$RowBuilder;
 
