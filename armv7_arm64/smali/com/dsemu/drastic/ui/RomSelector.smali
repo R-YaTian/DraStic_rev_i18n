@@ -2571,7 +2571,7 @@
 
     invoke-direct {p1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const-string p2, "DraStic requires storage permissions to add an external directory."
+    const-string p2, "Storage permission not granted."
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 

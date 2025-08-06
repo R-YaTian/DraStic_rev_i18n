@@ -2567,6 +2567,13 @@
     <public type="string" name="app_provider_info" id="0x7f0f01c1" />
     <public type="string" name="str_romsel_scoped_unusable" id="0x7f0f01c2" />
     <public type="string" name="str_romsel_scoped_unusable_alt" id="0x7f0f01c3" />
+    <public type="string" name="str_romsel_dirdel_warn" id="0x7f0f01c4" />
+    <public type="string" name="str_romsel_perm_warn" id="0x7f0f01c5" />
+    <public type="string" name="str_romsel_dir_missing" id="0x7f0f01c6" />
+    <public type="string" name="str_romsel_perm_warn_alt" id="0x7f0f01c7" />
+    <public type="string" name="str_romsel_dir_missing_alt" id="0x7f0f01c8" />
+    <public type="string" name="str_romsel_androidq_warn" id="0x7f0f01c9" />
+    <public type="string" name="str_sysdir_perm_notgrant" id="0x7f0f01ca" />
     <public type="style" name="AlertDialog.AppCompat" id="0x7f100000" />
     <public type="style" name="AlertDialog.AppCompat.Light" id="0x7f100001" />
     <public type="style" name="Animation.AppCompat.Dialog" id="0x7f100002" />

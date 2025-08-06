@@ -633,7 +633,7 @@
 .end method
 
 .method private synthetic G(Lcom/dsemu/drastic/ui/RomSelector$h;Lcom/dsemu/drastic/ui/RomSelector$e$e;Landroid/content/DialogInterface;I)V
-    .locals 0
+    .locals 1
 
     iget-object p3, p0, Lcom/dsemu/drastic/ui/RomSelector$e;->m:Lcom/dsemu/drastic/ui/RomSelector;
 
@@ -680,7 +680,15 @@
 
     invoke-direct {p1, p2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const-string p2, "Folder currently in use by running game. Please select another game or restart DraStic to remove it."
+    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const p2, 0x7f0f01c4
+
+    invoke-virtual {v0, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p2
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -1122,7 +1130,7 @@
 .end method
 
 .method private s(Lh0/b;)V
-    .locals 4
+    .locals 5
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -1174,7 +1182,15 @@
 
     invoke-direct {p1, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const-string v1, "DraStic needs the external storage permission to add game folder. Alternatively, you may select a scoped storage folder without this permission."
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    const v1, 0x7f0f01c5
+
+    invoke-virtual {v4, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
 
     invoke-virtual {p1, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -2595,7 +2611,7 @@
 .end method
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
-    .locals 2
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2624,6 +2640,12 @@
 
     move-result-object p4
 
+    iget-object v2, p0, Lcom/dsemu/drastic/ui/RomSelector$e;->e:Landroid/content/Context;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
     const/4 p5, 0x3
 
     if-ne p2, p5, :cond_6
@@ -2646,7 +2668,11 @@
 
     if-eqz p3, :cond_0
 
-    const-string p2, "This folder no longer exists or DraStic no longer has permission to access it. Would you like to reselect it?"
+    const p2, 0x7f0f01c6
+
+    invoke-virtual {v2, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p2
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -2670,7 +2696,11 @@
 
     if-lt p2, p3, :cond_1
 
-    const-string p2, "This folder is unusable on Android 10.0 and above. Please remove it and select another."
+    const p2, 0x7f0f01c9
+
+    invoke-virtual {v2, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p2
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -2725,7 +2755,11 @@
     :goto_1
     if-eqz p2, :cond_3
 
-    const-string p2, "DraStic needs the external storage permission to access this game folder."
+    const p2, 0x7f0f01c7
+
+    invoke-virtual {v2, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p2
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -2760,7 +2794,11 @@
     return-void
 
     :cond_4
-    const-string p2, "This folder no longer exists. Would you like to reselect it?"
+    const p2, 0x7f0f01c8
+
+    invoke-virtual {v2, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p2
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
