@@ -450,6 +450,7 @@ If you experience any rendering glitches, please disable this option."</string>
     <string name="str_set_sysdir_selext">Select External</string>
     <string name="str_set_sysdir_resel_tip">DraStic no longer has access to its data dir. Reselect it?</string>
     <string name="str_set_sysdir_int_tip">Please select \"Internal\" instead of \"Scoped Storage\" to use DraStic\'s internal data directory.</string>
+    <string name="str_romsel_remove">Remove</string>
     <string name="str_romsel_remove_tip">Remove path from list?</string>
     <string name="str_romsel_list_full">You have too many games folders! Please remove one before adding another!</string>
     <string name="str_romsel_shortcut_tip">Shortcut pinning not supported</string>

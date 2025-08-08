@@ -417,6 +417,7 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_set_sysdir_selext">选择外置目录</string>
     <string name="str_set_sysdir_resel_tip">DraStic 无法访问当前设置的数据存储目录, 重新选择?</string>
     <string name="str_set_sysdir_int_tip">请选择 \"内置默认文件夹\" 选项, 因为在 \"文件管理\" 应用中直接选择 DraStic 的内置默认文件夹是不受支持的!</string>
+    <string name="str_romsel_remove">移除</string>
     <string name="str_romsel_remove_tip">要从列表中移除该文件夹路径?</string>
     <string name="str_romsel_list_full">添加的游戏文件夹路径已达上限! 请在添加新路径之前移除一个旧的!</string>
     <string name="str_romsel_shortcut_tip">不支持创建快捷方式</string>

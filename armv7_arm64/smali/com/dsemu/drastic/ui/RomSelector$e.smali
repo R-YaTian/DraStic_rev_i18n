@@ -598,12 +598,6 @@
     return-void
 .end method
 
-.method private static synthetic C(Landroid/content/DialogInterface;I)V
-    .locals 0
-
-    return-void
-.end method
-
 .method private synthetic D([Ljava/lang/String;Landroid/content/DialogInterface;I)V
     .locals 0
 
@@ -1077,14 +1071,6 @@
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/dsemu/drastic/ui/RomSelector$e;->y(Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method public static synthetic m(Landroid/content/DialogInterface;I)V
-    .locals 0
-
-    invoke-static {p0, p1}, Lcom/dsemu/drastic/ui/RomSelector$e;->C(Landroid/content/DialogInterface;I)V
 
     return-void
 .end method
@@ -2611,7 +2597,7 @@
 .end method
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
-    .locals 3
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2626,17 +2612,21 @@
 
     invoke-virtual {p1}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
 
-    move-result-object p1
+    move-result-object v4
 
-    check-cast p1, Lcom/dsemu/drastic/ui/RomSelector$e$e;
+    check-cast v4, Lcom/dsemu/drastic/ui/RomSelector$e$e;
 
-    invoke-virtual {p1, p3}, Lcom/dsemu/drastic/ui/RomSelector$e$e;->d(I)I
+    invoke-virtual {v4, p3}, Lcom/dsemu/drastic/ui/RomSelector$e$e;->e(I)Lcom/dsemu/drastic/ui/RomSelector$h;
+
+    move-result-object v3
+
+    invoke-virtual {v4, p3}, Lcom/dsemu/drastic/ui/RomSelector$e$e;->d(I)I
 
     move-result p2
 
-    invoke-virtual {p1, p3}, Lcom/dsemu/drastic/ui/RomSelector$e$e;->a(I)Ljava/lang/String;
+    invoke-virtual {v4, p3}, Lcom/dsemu/drastic/ui/RomSelector$e$e;->a(I)Ljava/lang/String;
 
-    invoke-virtual {p1, p3}, Lcom/dsemu/drastic/ui/RomSelector$e$e;->b(I)Lcom/dsemu/drastic/filesystem/b;
+    invoke-virtual {v4, p3}, Lcom/dsemu/drastic/ui/RomSelector$e$e;->b(I)Lcom/dsemu/drastic/filesystem/b;
 
     move-result-object p4
 
@@ -2650,6 +2640,11 @@
 
     if-ne p2, p5, :cond_6
 
+    if-nez v3, :not_null
+
+    return-void
+
+    :not_null
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
     iget-object p2, p0, Lcom/dsemu/drastic/ui/RomSelector$e;->e:Landroid/content/Context;
@@ -2710,11 +2705,17 @@
 
     move-result-object p2
 
-    new-instance p3, Lcom/dsemu/drastic/ui/i;
+    new-instance p3, Lcom/dsemu/drastic/ui/m;
 
-    invoke-direct {p3}, Lcom/dsemu/drastic/ui/i;-><init>()V
+    invoke-direct {p3, p0, v3, v4}, Lcom/dsemu/drastic/ui/m;-><init>(Lcom/dsemu/drastic/ui/RomSelector$e;Lcom/dsemu/drastic/ui/RomSelector$h;Lcom/dsemu/drastic/ui/RomSelector$e$e;)V
 
-    invoke-virtual {p2, p5, p3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    const v4, 0x7f0f01cb
+
+    invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {p2, v4, p3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     goto :goto_3
 
@@ -2908,11 +2909,7 @@
 
     invoke-static {p2, p3}, Lcom/dsemu/drastic/ui/RomSelector;->w(Lcom/dsemu/drastic/ui/RomSelector;I)I
 
-    invoke-virtual {p1, p3}, Lcom/dsemu/drastic/ui/RomSelector$e$e;->e(I)Lcom/dsemu/drastic/ui/RomSelector$h;
-
-    move-result-object p1
-
-    if-nez p1, :cond_8
+    if-nez v3, :cond_8
 
     return-void
 
@@ -2921,7 +2918,7 @@
 
     invoke-static {p2, p4}, Lcom/dsemu/drastic/ui/RomSelector;->r(Lcom/dsemu/drastic/ui/RomSelector;Lcom/dsemu/drastic/filesystem/b;)Lcom/dsemu/drastic/filesystem/b;
 
-    invoke-virtual {p0, p4, p1}, Lcom/dsemu/drastic/ui/RomSelector$e;->N(Lcom/dsemu/drastic/filesystem/b;Lcom/dsemu/drastic/ui/RomSelector$h;)V
+    invoke-virtual {p0, p4, v3}, Lcom/dsemu/drastic/ui/RomSelector$e;->N(Lcom/dsemu/drastic/filesystem/b;Lcom/dsemu/drastic/ui/RomSelector$h;)V
 
     :cond_9
     :goto_4

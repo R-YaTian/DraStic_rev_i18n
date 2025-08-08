@@ -2574,6 +2574,7 @@
     <public type="string" name="str_romsel_dir_missing_alt" id="0x7f0f01c8" />
     <public type="string" name="str_romsel_androidq_warn" id="0x7f0f01c9" />
     <public type="string" name="str_sysdir_perm_notgrant" id="0x7f0f01ca" />
+    <public type="string" name="str_romsel_remove" id="0x7f0f01cb" />
     <public type="style" name="AlertDialog.AppCompat" id="0x7f100000" />
     <public type="style" name="AlertDialog.AppCompat.Light" id="0x7f100001" />
     <public type="style" name="Animation.AppCompat.Dialog" id="0x7f100002" />
