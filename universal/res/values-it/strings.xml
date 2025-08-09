@@ -27,7 +27,6 @@
     <string name="abc_shareactionprovider_share_with">Condividi con</string>
     <string name="abc_shareactionprovider_share_with_application">Condividi tramite %s</string>
     <string name="abc_toolbar_collapse_description">Comprimi</string>
-    <string name="app_notification_text">Emulatore Nintendo DS</string>
     <string name="btn_rom_all">"Tutti i
 Giochi"</string>
     <string name="btn_rom_recent">"Giochi
@@ -39,29 +38,7 @@ Recenti"</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="str_add_user">Aggiungi Nuovo Utente</string>
     <string name="str_add_user_button">Aggiunti</string>
-    <string name="str_add_user_custom_dir">Usare una cartella utente personalizzata?</string>
-    <string name="str_add_user_dir_error">Impossibile creare la cartella utente</string>
-    <string name="str_add_user_dir_exists">Cartella utente già esistente</string>
     <string name="str_add_user_exists">"L'Utente esiste già"</string>
-    <string name="str_add_user_select_dir">OK</string>
-    <string name="str_bios_error">"Impossibile installare automaticamente i file BIOS. Si prega di copiare manualmente i file BIOS in '/sdcard/Android/data/com.dsemu.drastic/files/system'.
- Assicurati che i file abbiano il seguente nome e dimensione:
- - nds_bios_arm7.bin (16384 byte)
- - nds_bios_arm9.bin (4096 byte)
- - nds_firmware.bin (262144 byte)
-"</string>
-    <string name="str_bios_installed">I file BIOS sono stati installati correttamente, i file che hai copiato nel telefono sono stati rimossi.</string>
-    <string name="str_bios_nodst">"Impossibile accedere alla cartella di destinazione dei file BIOS.
- Si prega di copiare manualmente i file BIOS in '/sdcard/Android/data/com.dsemu.drastic/files/system'.
- Assicurati che i file abbiano il seguente nome e dimensione:
- - nds_bios_arm7.bin (16384 byte)
- - nds_bios_arm9.bin (4096 byte)
- - nds_firmware.bin (262144 byte)
-"</string>
-    <string name="str_bios_nosrc">"L'accesso alla cartella 'Download' e alla SDCARD è stato negato.
- Assicurati che la cartella 'Download' non sia montata nel PC."</string>
-    <string name="str_bios_notfound">"Impossibile trovare i file BIOS nella cartella 'Download'.
- Assicurati di avere i file corretti nella cartella 'Download' e di riavviare DraStic per riprovare a installare."</string>
     <string name="str_cm_abxy_A">A</string>
     <string name="str_cm_abxy_B">B</string>
     <string name="str_cm_abxy_X">X</string>
@@ -96,7 +73,6 @@ Recenti"</string>
     <string name="str_cm_tool_open">Apri Strumenti</string>
     <string name="str_cpy_fail">Impossibile spostare i file Data.</string>
     <string name="str_cpy_success">File Data spostati correttamente.</string>
-    <string name="str_default_user">Predefinito</string>
     <string name="str_dev_htcone">"Si prega di disabilitare Gesti HTC nelle impostazioni, per permettere all'applicazione di registrare tutti i tocchi.
 Impostare la latenza del suono a media o bassa non è congigliato su questo dispositivo."</string>
     <string name="str_editor_tv_end_msg">Vuoi salvare le modifiche?</string>
@@ -130,8 +106,6 @@ Vuoi attivare quest'opzione ora?"</string>
     <string name="str_gm_cheats_code">Codice</string>
     <string name="str_gm_cheats_custom">Trucchi Personalizzati</string>
     <string name="str_gm_cheats_custom_enable">Abilita Trucco</string>
-    <string name="str_gm_cheats_custom_note">Aggiungi i tuoi trucchi qui</string>
-    <string name="str_gm_cheats_delete">Elimina</string>
     <string name="str_gm_cheats_delete_confirm">Eliminare il Trucco?</string>
     <string name="str_gm_cheats_desc">Descrizione</string>
     <string name="str_gm_cheats_disable_all">Disabilita Tutti</string>
@@ -144,7 +118,6 @@ Vuoi attivare quest'opzione ora?"</string>
     <string name="str_gm_cheats_single">Selezionane solo uno</string>
     <string name="str_gm_cheats_warning">Attenzione: Cheats or combinations of cheats can cause unexpected things to happen in the game, including breaking it. Once you enable a cheat it will usually not go away if you disable it, unless you reset and load an in-game save. Always make sure you have in-game saves to fall back on when using cheats!</string>
     <string name="str_gm_custom_error_add">Errore: Impossibile aggiungere il Trucco.</string>
-    <string name="str_gm_custom_error_load">Errore: Database dei Trucchi non caricato.</string>
     <string name="str_gm_custom_error_save">Errore: Impossibile aggiungere il Trucco Personalizzato.</string>
     <string name="str_gm_custom_invalid">Il formato del trucco non è valido.</string>
     <string name="str_gm_custom_warning">Il trucco che stai cercando di aggiungere è già presente.</string>
@@ -159,70 +132,35 @@ Vuoi attivare quest'opzione ora?"</string>
     <string name="str_gm_layout_tv">Modifica Layout dello Schermo</string>
     <string name="str_gm_load">Carica-Rapido</string>
     <string name="str_gm_loadstate">Carica Salv. di Stato</string>
-    <string name="str_gm_mainmenu">Menu Principale</string>
     <string name="str_gm_managestate">Gestisci Salv. di Stato</string>
-    <string name="str_gm_newgame">Nuovo Gioco</string>
     <string name="str_gm_reset">Resetta il Gioco</string>
     <string name="str_gm_save">Salva-Rapido</string>
     <string name="str_gm_savestate">Salva Salv. di Stato</string>
     <string name="str_gm_savestate_warning">Si consiglia vivamente di non fare affidamento esclusivamente sui Salv. di Stato. Si prega di fare un Salv. di Gioco di tanto in tanto. Se un Salv. di Stato si danneggia , o viene salvato nel momento sbagliato , si potrebbero perdere i progressi attuali.</string>
     <string name="str_gm_settings">Opzioni</string>
     <string name="str_gm_shader_error" formatted="false">Impossibile caricare il filtro %FILTER% . Using fallback.</string>
-    <string name="str_gm_statemenu">Carica/Salva</string>
     <string name="str_hm_about">Info</string>
     <string name="str_hm_changelog">Changelog</string>
     <string name="str_hm_faq">FAQ</string>
     <string name="str_hm_instructions">Istruzioni</string>
-    <string name="str_lic_error">"Impossibile verificare la licenza.
-Assicurati di essere connesso a Internet, quando avvierai DraStic la prossima volta, e che la data e l'ora siano impostate correttamente.
-Se non hai comprato DraStic, puoi farlo ora cliccando sul bottone 'Compra'."</string>
-    <string name="str_lic_error_inernal">"Impossibile verificare la licenza.
-Se hai Lucky Patcher installato, si prega di disabilitare la Google Play License Verification Emulation."</string>
-    <string name="str_lic_error_licensed">"Impossibile verificare la licenza.
-Assicurati che la data e l'ora sia impostata correttamente sul tuo dispositivo.
-"</string>
-    <string name="str_lic_error_not_licensed">"Impossibile verificare la licenza.
-Assicurati che il pagamento sia stato effettuato con successo e in seguito avvia DraStic."</string>
-    <string name="str_lic_error_online">"Impossibile verificare la licenza.
-Assicurati di essere connesso a Internet e di riavviare DraStic.
-Una volta che la tua licenza è stata verificata, puoi continuare a giocare senza essere connesso."</string>
-    <string name="str_lic_error_retry">"Impossibile verificare la licenza.
-Assicurati di essere connesso a Internet, quando avvierai DraStic la prossima volta, e che la data e l'ora siano impostate correttamente."</string>
-    <string name="str_menu_biosdialog">"DraStic ha bisogno dei seguenti file BIOS:
- - nds_bios_arm7.bin (16384 byte)
- - nds_bios_arm9.bin (4096 byte)
- - nds_firmware.bin (262144 byte)
- 
- I file non sono ancora installati, si prega di copiare i file BIOS nella cartella 'Download', o nella cartella principale della SDCARD, e premere 'Installa'.
- Premi 'Annulla' per uscire da DraStic."</string>
     <string name="str_menu_close">Chiudi</string>
     <string name="str_menu_continue">Continua</string>
-    <string name="str_menu_cpufail">"Sfortunatamente la CPU del tuo dispositivo non è supportata.
-DraStic ha bisogno di una CPU ARMv7 con il supporto a Neon."</string>
     <string name="str_menu_del_confirm">Eliminare il salvataggio?</string>
-    <string name="str_menu_delete">Elimina</string>
     <string name="str_menu_delsysfolder">Vuoi eliminare i file sorgenti dopo il completamento della copia?</string>
     <string name="str_menu_game">"Tocca un'icona per cambiare il Layout degli Schermi"</string>
     <string name="str_menu_game_h2">"Tieni premuta un'icona per modificare il Layout dello Schermo/Controller"</string>
     <string name="str_menu_help">Aiuto</string>
-    <string name="str_menu_home">Menu Principale</string>
     <string name="str_menu_iconcache">Aggiornamento della Cache delle Icone</string>
     <string name="str_menu_load">Carica</string>
     <string name="str_menu_loadorresume">"Vuoi riprendere dal tuo ultimo salvataggio?
 Scegli 'No' per iniziare una nuova partita"</string>
-    <string name="str_menu_main_confirm">Uscire dal gioco?</string>
-    <string name="str_menu_movesysfolder">"Vuoi spostare i tuoi dati in /sdcard/DraStic? Questo ti permetterà di mantenere i salvataggi dopo aver reinstallato o disinstallato l'applicazione."</string>
     <string name="str_menu_no">No</string>
-    <string name="str_menu_overwrite">Salva</string>
     <string name="str_menu_pause">Menu di Gioco</string>
-    <string name="str_menu_quit">Esci</string>
-    <string name="str_menu_quit_confirm">"Uscire dall'Applicazione?"</string>
     <string name="str_menu_reset">Resetta</string>
     <string name="str_menu_reset_confirm">"Resettare il gioco?
 I progressi attuali verranno persi."</string>
     <string name="str_menu_romscan">Ricerca dei giochi</string>
     <string name="str_menu_rootmoved">La Cartella Dati di DraStic è impostata su:</string>
-    <string name="str_menu_save">Salva</string>
     <string name="str_menu_saving_busy">Azione di Salvataggio ancora in corso</string>
     <string name="str_menu_settings">Impostazioni</string>
     <string name="str_menu_shortcut">Creare una scorciatoia nella Home?</string>
@@ -403,7 +341,6 @@ al Gioco"</string>
     <string name="str_sm_copyok">Una copia del Salv. di Stato è stata creata</string>
     <string name="str_sm_delete">Elimina</string>
     <string name="str_sm_deleteok">Il salvataggio è stato eliminato</string>
-    <string name="str_sm_empty">VUOTO</string>
     <string name="str_sm_load">Carica Salv. di Stato</string>
     <string name="str_sm_manage">Gestisci Salv. di Stato</string>
     <string name="str_sm_newsave">Nuovo Salv. di Stato</string>
@@ -427,16 +364,6 @@ Se il gioco necessita soltanto del touchscreen, puoi premere l'icona dello stilo
 Si prega di notare, che ci sono anche diverse impostazioni nel menu 'Opzioni', per modificare il comportamento del controller e del touchscreen.
 Puoi anche connettere un controller bluetooth esterno al dispositivo, e mappare i bottoni nel menu 'Opzioni'."</string>
     <string name="str_ui_help_firstsinglescreen">Sii consapevole, che si possono perdere informazioni importanti, o menu necessari per giocare al gioco, mentre si è nella modalità a schermo singolo.</string>
-    <string name="str_ui_help_licerror">"Se hai comprato DraStic, ma ricevi ancora l'errore della licenza, si prega di provare le seguenti operazioni:
-
- 1. Assicurati che la data e l'ora del tuo dispositivo sia impostata correttamente e di essere connesso a Internet la prossima volta che avvierai DraStic
- 2. Vai su Impostazioni->App->Tutte ed elimina i dati e la cache dell'App e dei Servizi Google Play
-
- Se ricevi ancora l'errore della licenza, puoi provare anche a:
-
- 3. Disinstalla DraStic
- 4. Riavvia il tuo Dispositivo
- 5. Riscarica e installa DraStic da Google Play"</string>
     <string name="str_ui_helptouch">Tocca lo schermo per continuare</string>
     <string name="str_ui_loadconfirm">Caricare il salvataggio?</string>
     <string name="str_ui_nofiles">NESSUN GIOCO DISPONIBILE</string>

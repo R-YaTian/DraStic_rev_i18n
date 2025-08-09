@@ -29,8 +29,6 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="androidx_startup">androidx.startup</string>
     <string name="app_name">DraStic</string>
-    <string name="app_notification_text">Nintendo DS emulator</string>
-    <string name="app_version">Version r2.5.2.0a</string>
     <string name="app_provider_info">DraStic Internal Data</string>
     <string name="btn_rom_all">"All
 Games"</string>
@@ -44,29 +42,7 @@ Games"</string>
     <string name="str_romlist_nothing_found">No game folders added. Add one with the button above!</string>
     <string name="str_add_user">Add New User</string>
     <string name="str_add_user_button">Add</string>
-    <string name="str_add_user_custom_dir">Use custom user data directory?</string>
-    <string name="str_add_user_dir_error">Could not create user directory</string>
-    <string name="str_add_user_dir_exists">User directory already exists</string>
     <string name="str_add_user_exists">User already exists</string>
-    <string name="str_add_user_select_dir">OK</string>
-    <string name="str_bios_error">"The BIOS files could not be installed automatically. Please copy the BIOS files manually to '/sdcard/Android/data/com.dsemu.drastic/files/system'.
- Make sure, the files have the following names and sizes:
- - nds_bios_arm7.bin (16384 bytes)
- - nds_bios_arm9.bin (4096 bytes)
- - nds_firmware.bin (262144 bytes)
-"</string>
-    <string name="str_bios_installed">The BIOS files were installed successfully, the files you copied to the device have been removed.</string>
-    <string name="str_bios_nodst">"The destination directory for the BIOS files could not be accessed.
- Please copy the BIOS files manually to '/sdcard/Android/data/com.dsemu.drastic/files/system'.
- Make sure, the files have the following names and sizes:
- - nds_bios_arm7.bin (16384 bytes)
- - nds_bios_arm9.bin (4096 bytes)
- - nds_firmware.bin (262144 bytes)
-"</string>
-    <string name="str_bios_nosrc">"Access to the 'Download' directory and the SDCARD was denied.
- Please make sure the 'Download' directory is not mounted on your PC."</string>
-    <string name="str_bios_notfound">"The BIOS files could not be found in the 'Download' directory.
- Please make sure, you have the correct files located in your 'Download' directory and restart DraStic to re-try the installation."</string>
     <string name="str_cm_abxy_A">A</string>
     <string name="str_cm_abxy_B">B</string>
     <string name="str_cm_abxy_X">X</string>
@@ -101,11 +77,8 @@ Games"</string>
     <string name="str_cm_tool_open">Open Tools</string>
     <string name="str_cpy_fail">Data could not be moved.</string>
     <string name="str_cpy_success">Data was moved successfully.</string>
-    <string name="str_default_user">Default</string>
     <string name="str_dev_htcone">"Please disable HTC Gestures in the settings, to allow the application to register all touch presses.
 Setting the sound latency to medium or low is not recommended on this device."</string>
-    <string name="str_drastic_channel_description">Displays a background notification for emulation quick resume</string>
-    <string name="str_drastic_channel_name">Background Notification</string>
     <string name="str_editor_tv_end_msg">Do you want to save your changes?</string>
     <string name="str_editor_tv_start_msg">Saved layouts were found</string>
     <string name="str_err_badarc">"The archive you tried to open is not supported.
@@ -139,8 +112,6 @@ Do you want to enable the setting now?"</string>
     <string name="str_gm_cheats_code">Code</string>
     <string name="str_gm_cheats_custom">Custom Cheats</string>
     <string name="str_gm_cheats_custom_enable">Enable Cheat</string>
-    <string name="str_gm_cheats_custom_note">Add your own cheats here</string>
-    <string name="str_gm_cheats_delete">Delete</string>
     <string name="str_gm_cheats_delete_confirm">Delete Cheat?</string>
     <string name="str_gm_cheats_desc">Description</string>
     <string name="str_gm_cheats_disable_all">Disable All</string>
@@ -153,7 +124,6 @@ Do you want to enable the setting now?"</string>
     <string name="str_gm_cheats_single">Select only one</string>
     <string name="str_gm_cheats_warning">Warning: Cheats or combinations of cheats can cause unexpected things to happen in the game, including breaking it. Once you enable a cheat it will usually not go away if you disable it, unless you reset and load an in-game save. Always make sure you have in-game saves to fall back on when using cheats!</string>
     <string name="str_gm_custom_error_add">Error: Cheat could not be added.</string>
-    <string name="str_gm_custom_error_load">Error: Cheat database not loaded.</string>
     <string name="str_gm_custom_error_save">Error: Custom cheats could not be saved.</string>
     <string name="str_gm_custom_invalid">The cheat format is not valid.</string>
     <string name="str_gm_custom_warning">The cheat you are trying to add is already present.</string>
@@ -168,71 +138,36 @@ Do you want to enable the setting now?"</string>
     <string name="str_gm_layout_tv">Edit Screen Layout</string>
     <string name="str_gm_load">Quick-Load</string>
     <string name="str_gm_loadstate">Load Savestate</string>
-    <string name="str_gm_mainmenu">Main Menu</string>
     <string name="str_gm_managestate">Manage Savestates</string>
-    <string name="str_gm_newgame">New Game</string>
     <string name="str_gm_reset">Reset Game</string>
     <string name="str_gm_save">Quick-Save</string>
     <string name="str_gm_savestate">Save Savestate</string>
     <string name="str_gm_savestate_warning">We strongly recommend to not rely on savestates exclusively. Please also make in-game saves from time to time. If a savestate is corrupted, or saved at the wrong time, you might lose your current progress.</string>
     <string name="str_gm_settings">Options</string>
     <string name="str_gm_shader_error" formatted="false">Filter %FILTER% could not be loaded. Using fallback.</string>
-    <string name="str_gm_statemenu">Load/Save</string>
     <string name="str_gm_slot">Slot\u0020</string>
     <string name="str_hm_about">About</string>
     <string name="str_hm_changelog">Changelog</string>
     <string name="str_hm_faq">FAQ</string>
     <string name="str_hm_instructions">Instructions</string>
-    <string name="str_lic_error">"Your license could not be verified.
-Please make sure to have an active internet connection, when you start DraStic the next time, and that your date and time are set correctly.
-If you did not buy DraStic, you can do so now by clicking the 'Buy' button."</string>
-    <string name="str_lic_error_inernal">"Your license could not be verified.
-If you have Lucky Patcher installed, please disable Google Play License Verification Emulation."</string>
-    <string name="str_lic_error_licensed">"Your license could not be verified.
-Please make sure that date and time are set correctly on your device.
-"</string>
-    <string name="str_lic_error_not_licensed">"Your license could not be verified.
-Please make sure that the purchase was successful and retry to start DraStic later."</string>
-    <string name="str_lic_error_online">"Your license could not be verified.
-Please make sure to have an active internet connection and restart DraStic.
-Once your license has been verified, you can continue playing offline."</string>
-    <string name="str_lic_error_retry">"Your license could not be verified.
-Please make sure to have an active internet connection, when you start DraStic the next time, and that your date and time are set correctly."</string>
-    <string name="str_menu_biosdialog">"DraStic requires the following BIOS files:
- - nds_bios_arm7.bin (16384 bytes)
- - nds_bios_arm9.bin (4096 bytes)
- - nds_firmware.bin (262144 bytes)
- 
- The files are not installed yet, please copy the BIOS files to your 'Download' directory, or the root of your SDCARD, and press 'Install'.
- Press 'Cancel' to quit DraStic."</string>
     <string name="str_menu_close">Close</string>
     <string name="str_menu_continue">Continue</string>
-    <string name="str_menu_cpufail">"Unfortunately your device's CPU is not supported.
-DraStic requires an ARMv7 CPU with Neon support."</string>
     <string name="str_menu_del_confirm">Delete Save?</string>
-    <string name="str_menu_delete">Delete</string>
     <string name="str_menu_delsysfolder">Do you want to delete the source data after it was copied successfully?</string>
     <string name="str_menu_game">Tap an Icon to change the Screen Layout</string>
     <string name="str_menu_game_h2">Long-click an Icon to edit the Screen/Controller Layout</string>
     <string name="str_menu_help">Help</string>
-    <string name="str_menu_home">Main Menu</string>
     <string name="str_menu_iconcache">Updating Icon Cache</string>
     <string name="str_menu_load">Load</string>
     <string name="str_menu_loadorresume">"Do you want to resume your last Save?
 Choose 'No' to start a new Game"</string>
-    <string name="str_menu_main_confirm">Quit current game?</string>
-    <string name="str_menu_movesysfolder">Do you want to move your data to /sdcard/DraStic? This will allow you to keep your save data after reinstalling or uninstalling the application.</string>
     <string name="str_menu_no">No</string>
-    <string name="str_menu_overwrite">Save</string>
     <string name="str_menu_pause">Game Menu</string>
-    <string name="str_menu_quit">Exit DraStic</string>
-    <string name="str_menu_quit_confirm">Quit Application?</string>
     <string name="str_menu_reset">Reset</string>
     <string name="str_menu_reset_confirm">"Reset Game?
 Current progress will be lost."</string>
     <string name="str_menu_romscan">Scanning for Games</string>
     <string name="str_menu_rootmoved">"DraStic's Data Directory set to:"</string>
-    <string name="str_menu_save">Save</string>
     <string name="str_menu_saving_busy">Saving still in progress</string>
     <string name="str_menu_settings">Settings</string>
     <string name="str_menu_shortcut">Install shortcut to your Desktop?</string>
@@ -479,7 +414,6 @@ to Game"</string>
     <string name="str_sm_copyok">A copy of the Savestate has been created</string>
     <string name="str_sm_delete">Delete</string>
     <string name="str_sm_deleteok">The Save has been deleted</string>
-    <string name="str_sm_empty">EMPTY</string>
     <string name="str_sm_load">Load Savestate</string>
     <string name="str_sm_manage">Manage Savestates</string>
     <string name="str_sm_newsave">New Savestate</string>
@@ -503,16 +437,6 @@ If a game only requires touchscreen control, you can press the stylus icon to hi
 Please note, that there are also various settings in the 'Options' menu, to change the behaviour of the controller and touchscreen.
 You can also connect an external bluetooth controller to the device, and map the buttons in the 'Options' menu."</string>
     <string name="str_ui_help_firstsinglescreen">Please be aware, that you can miss important information, or menus necessary to play the game, while in single-screen mode.</string>
-    <string name="str_ui_help_licerror">"If you bought DraStic, but are still getting a license error, please try the following:
-
- 1. Make sure your device's date and time are set correctly and that you have an active internet connection the next time you start DraStic
- 2. Go to Settings->Apps->All and delete cache and data of the Google Play App and Services
-
- If you still get the license error, you can additionally try to:
-
- 3. Uninstall DraStic
- 4. Reboot your device
- 5. Re-download and install DraStic from Google Play"</string>
     <string name="str_ui_helptouch">Touch Screen to continue</string>
     <string name="str_ui_loadconfirm">Load Save?</string>
     <string name="str_ui_nofiles">NO GAMES AVAILABLE</string>

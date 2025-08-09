@@ -2144,8 +2144,6 @@
     <public type="string" name="abc_toolbar_collapse_description" id="0x7f0f001a" />
     <public type="string" name="androidx_startup" id="0x7f0f001b" />
     <public type="string" name="app_name" id="0x7f0f001c" />
-    <public type="string" name="app_notification_text" id="0x7f0f001d" />
-    <public type="string" name="app_version" id="0x7f0f001e" />
     <public type="string" name="btn_rom_all" id="0x7f0f001f" />
     <public type="string" name="btn_rom_recent" id="0x7f0f0020" />
     <public type="string" name="empty" id="0x7f0f0021" />
@@ -2155,16 +2153,7 @@
     <public type="string" name="status_bar_notification_info_overflow" id="0x7f0f0025" />
     <public type="string" name="str_add_user" id="0x7f0f0026" />
     <public type="string" name="str_add_user_button" id="0x7f0f0027" />
-    <public type="string" name="str_add_user_custom_dir" id="0x7f0f0028" />
-    <public type="string" name="str_add_user_dir_error" id="0x7f0f0029" />
-    <public type="string" name="str_add_user_dir_exists" id="0x7f0f002a" />
     <public type="string" name="str_add_user_exists" id="0x7f0f002b" />
-    <public type="string" name="str_add_user_select_dir" id="0x7f0f002c" />
-    <public type="string" name="str_bios_error" id="0x7f0f002d" />
-    <public type="string" name="str_bios_installed" id="0x7f0f002e" />
-    <public type="string" name="str_bios_nodst" id="0x7f0f002f" />
-    <public type="string" name="str_bios_nosrc" id="0x7f0f0030" />
-    <public type="string" name="str_bios_notfound" id="0x7f0f0031" />
     <public type="string" name="str_cm_abxy_A" id="0x7f0f0032" />
     <public type="string" name="str_cm_abxy_B" id="0x7f0f0033" />
     <public type="string" name="str_cm_abxy_X" id="0x7f0f0034" />
@@ -2199,10 +2188,7 @@
     <public type="string" name="str_cm_tool_open" id="0x7f0f0051" />
     <public type="string" name="str_cpy_fail" id="0x7f0f0052" />
     <public type="string" name="str_cpy_success" id="0x7f0f0053" />
-    <public type="string" name="str_default_user" id="0x7f0f0054" />
     <public type="string" name="str_dev_htcone" id="0x7f0f0055" />
-    <public type="string" name="str_drastic_channel_description" id="0x7f0f0056" />
-    <public type="string" name="str_drastic_channel_name" id="0x7f0f0057" />
     <public type="string" name="str_editor_tv_end_msg" id="0x7f0f0058" />
     <public type="string" name="str_editor_tv_start_msg" id="0x7f0f0059" />
     <public type="string" name="str_err_badarc" id="0x7f0f005a" />
@@ -2227,8 +2213,6 @@
     <public type="string" name="str_gm_cheats_code" id="0x7f0f006d" />
     <public type="string" name="str_gm_cheats_custom" id="0x7f0f006e" />
     <public type="string" name="str_gm_cheats_custom_enable" id="0x7f0f006f" />
-    <public type="string" name="str_gm_cheats_custom_note" id="0x7f0f0070" />
-    <public type="string" name="str_gm_cheats_delete" id="0x7f0f0071" />
     <public type="string" name="str_gm_cheats_delete_confirm" id="0x7f0f0072" />
     <public type="string" name="str_gm_cheats_desc" id="0x7f0f0073" />
     <public type="string" name="str_gm_cheats_disable_all" id="0x7f0f0074" />
@@ -2241,7 +2225,6 @@
     <public type="string" name="str_gm_cheats_single" id="0x7f0f007b" />
     <public type="string" name="str_gm_cheats_warning" id="0x7f0f007c" />
     <public type="string" name="str_gm_custom_error_add" id="0x7f0f007d" />
-    <public type="string" name="str_gm_custom_error_load" id="0x7f0f007e" />
     <public type="string" name="str_gm_custom_error_save" id="0x7f0f007f" />
     <public type="string" name="str_gm_custom_invalid" id="0x7f0f0080" />
     <public type="string" name="str_gm_custom_warning" id="0x7f0f0081" />
@@ -2256,52 +2239,33 @@
     <public type="string" name="str_gm_layout_tv" id="0x7f0f008a" />
     <public type="string" name="str_gm_load" id="0x7f0f008b" />
     <public type="string" name="str_gm_loadstate" id="0x7f0f008c" />
-    <public type="string" name="str_gm_mainmenu" id="0x7f0f008d" />
     <public type="string" name="str_gm_managestate" id="0x7f0f008e" />
-    <public type="string" name="str_gm_newgame" id="0x7f0f008f" />
     <public type="string" name="str_gm_reset" id="0x7f0f0090" />
     <public type="string" name="str_gm_save" id="0x7f0f0091" />
     <public type="string" name="str_gm_savestate" id="0x7f0f0092" />
     <public type="string" name="str_gm_savestate_warning" id="0x7f0f0093" />
     <public type="string" name="str_gm_settings" id="0x7f0f0094" />
     <public type="string" name="str_gm_shader_error" id="0x7f0f0095" />
-    <public type="string" name="str_gm_statemenu" id="0x7f0f0096" />
     <public type="string" name="str_hm_about" id="0x7f0f0097" />
     <public type="string" name="str_hm_changelog" id="0x7f0f0098" />
     <public type="string" name="str_hm_faq" id="0x7f0f0099" />
     <public type="string" name="str_hm_instructions" id="0x7f0f009a" />
-    <public type="string" name="str_lic_error" id="0x7f0f009b" />
-    <public type="string" name="str_lic_error_inernal" id="0x7f0f009c" />
-    <public type="string" name="str_lic_error_licensed" id="0x7f0f009d" />
-    <public type="string" name="str_lic_error_not_licensed" id="0x7f0f009e" />
-    <public type="string" name="str_lic_error_online" id="0x7f0f009f" />
-    <public type="string" name="str_lic_error_retry" id="0x7f0f00a0" />
-    <public type="string" name="str_menu_biosdialog" id="0x7f0f00a1" />
     <public type="string" name="str_menu_close" id="0x7f0f00a2" />
     <public type="string" name="str_menu_continue" id="0x7f0f00a3" />
-    <public type="string" name="str_menu_cpufail" id="0x7f0f00a4" />
     <public type="string" name="str_menu_del_confirm" id="0x7f0f00a5" />
-    <public type="string" name="str_menu_delete" id="0x7f0f00a6" />
     <public type="string" name="str_menu_delsysfolder" id="0x7f0f00a7" />
     <public type="string" name="str_menu_game" id="0x7f0f00a8" />
     <public type="string" name="str_menu_game_h2" id="0x7f0f00a9" />
     <public type="string" name="str_menu_help" id="0x7f0f00aa" />
-    <public type="string" name="str_menu_home" id="0x7f0f00ab" />
     <public type="string" name="str_menu_iconcache" id="0x7f0f00ac" />
     <public type="string" name="str_menu_load" id="0x7f0f00ad" />
     <public type="string" name="str_menu_loadorresume" id="0x7f0f00ae" />
-    <public type="string" name="str_menu_main_confirm" id="0x7f0f00af" />
-    <public type="string" name="str_menu_movesysfolder" id="0x7f0f00b0" />
     <public type="string" name="str_menu_no" id="0x7f0f00b1" />
-    <public type="string" name="str_menu_overwrite" id="0x7f0f00b2" />
     <public type="string" name="str_menu_pause" id="0x7f0f00b3" />
-    <public type="string" name="str_menu_quit" id="0x7f0f00b4" />
-    <public type="string" name="str_menu_quit_confirm" id="0x7f0f00b5" />
     <public type="string" name="str_menu_reset" id="0x7f0f00b6" />
     <public type="string" name="str_menu_reset_confirm" id="0x7f0f00b7" />
     <public type="string" name="str_menu_romscan" id="0x7f0f00b8" />
     <public type="string" name="str_menu_rootmoved" id="0x7f0f00b9" />
-    <public type="string" name="str_menu_save" id="0x7f0f00ba" />
     <public type="string" name="str_menu_saving_busy" id="0x7f0f00bb" />
     <public type="string" name="str_menu_settings" id="0x7f0f00bc" />
     <public type="string" name="str_menu_shortcut" id="0x7f0f00bd" />
@@ -2488,7 +2452,6 @@
     <public type="string" name="str_sm_copyok" id="0x7f0f0172" />
     <public type="string" name="str_sm_delete" id="0x7f0f0173" />
     <public type="string" name="str_sm_deleteok" id="0x7f0f0174" />
-    <public type="string" name="str_sm_empty" id="0x7f0f0175" />
     <public type="string" name="str_sm_load" id="0x7f0f0176" />
     <public type="string" name="str_sm_manage" id="0x7f0f0177" />
     <public type="string" name="str_sm_newsave" id="0x7f0f0178" />
@@ -2507,7 +2470,6 @@
     <public type="string" name="str_ui_gameselect" id="0x7f0f0185" />
     <public type="string" name="str_ui_help_firstgame" id="0x7f0f0186" />
     <public type="string" name="str_ui_help_firstsinglescreen" id="0x7f0f0187" />
-    <public type="string" name="str_ui_help_licerror" id="0x7f0f0188" />
     <public type="string" name="str_ui_helptouch" id="0x7f0f0189" />
     <public type="string" name="str_ui_loadconfirm" id="0x7f0f018a" />
     <public type="string" name="str_ui_nofiles" id="0x7f0f018b" />

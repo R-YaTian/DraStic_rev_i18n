@@ -27,7 +27,6 @@
     <string name="abc_shareactionprovider_share_with">共有</string>
     <string name="abc_shareactionprovider_share_with_application">%sと共有</string>
     <string name="abc_toolbar_collapse_description">折りたたむ</string>
-    <string name="app_notification_text">Nintendo DS エミュレータ</string>
     <string name="btn_rom_all">全てのゲーム</string>
     <string name="btn_rom_recent">最近プレイしたゲーム</string>
     <string name="empty" />
@@ -37,29 +36,7 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="str_add_user">新規ユーザーを追加</string>
     <string name="str_add_user_button">追加</string>
-    <string name="str_add_user_custom_dir">カスタムユーザーデータディレクトリを使用しますか？</string>
-    <string name="str_add_user_dir_error">ユーザーディレクトリを作成できませんでした。</string>
-    <string name="str_add_user_dir_exists">このユーザーディレクトリはすでに存在しています。</string>
     <string name="str_add_user_exists">このユーザーはすでに存在しています。</string>
-    <string name="str_add_user_select_dir">OK</string>
-    <string name="str_bios_error">"自動的にBIOSファイルをインストールできませんでした。 手動に「/sdcard/Android/data/com.dsemu.drastic/files/system」ヘBIOSファイルをコピーしてください。
- ファイルの名前とサイズが下記通りであるよう確認してください：
- - nds_bios_arm7.bin （16384 バイト）
- - nds_bios_arm9.bin （4096 バイト）
- - nds_firmware.bin （262144 バイト）
-"</string>
-    <string name="str_bios_installed">BIOSを正常にインストールしました。あなたがデバイスヘコピーしたファイルを削除しました。</string>
-    <string name="str_bios_nodst">"BIOSのインストールディレクトリにアクセスできませんでした。
- 手動に「/sdcard/Android/data/com.dsemu.drastic/files/system」BIOSファイルをコピーしてください。
- ファイルの名前とサイズが下記通りであるよう確認してください：
- - nds_bios_arm7.bin （16384 バイト）
- - nds_bios_arm9.bin （4096 バイト）
- - nds_firmware.bin （262144 バイト）
-"</string>
-    <string name="str_bios_nosrc">"「Download」ディレクトリにアクセスできませんでした。
- 「Download」ディレクトリはPCにマウントされていないよう、確認してください。"</string>
-    <string name="str_bios_notfound">"BIOSファイルは「Download」フォルダにはありません。
- 「Download」には正しいファイルがあることを確認し、DraSticを再起動してもう一度インストールしてください。"</string>
     <string name="str_cm_abxy_A">A</string>
     <string name="str_cm_abxy_B">B</string>
     <string name="str_cm_abxy_X">X</string>
@@ -90,7 +67,6 @@
     <string name="str_cm_tool_open">ツールメニューを開く</string>
     <string name="str_cpy_fail">データを移動できませんでした。</string>
     <string name="str_cpy_success">データを正常に移動しました。</string>
-    <string name="str_default_user">既定</string>
     <string name="str_dev_htcone">"設定でHTC Gesturesを無効にすることで、タッチプレスの登録をアプリに許可してください。
 このデバイスではサウンドレイテンシを「一般」と「低い」に設定しないことをおすすめします。"</string>
     <string name="str_editor_tv_end_msg">変更を保存しますか？</string>
@@ -122,8 +98,6 @@ $path$.
     <string name="str_gm_cheats_code">コード</string>
     <string name="str_gm_cheats_custom">カスタムチート</string>
     <string name="str_gm_cheats_custom_enable">チートを有効化</string>
-    <string name="str_gm_cheats_custom_note">ここでカスタムチートを追加できます。</string>
-    <string name="str_gm_cheats_delete">削除</string>
     <string name="str_gm_cheats_delete_confirm">チートを削除しますか？</string>
     <string name="str_gm_cheats_desc">記述</string>
     <string name="str_gm_cheats_disable_all">全て無効化</string>
@@ -136,7 +110,6 @@ $path$.
     <string name="str_gm_cheats_single">ひとつのみ選択可能</string>
     <string name="str_gm_cheats_warning">ご注意：チート、もしくは複数のチートを有効にすると、ゲームが破損することを含むゲーム中に予期しない問題が発生することがあります。チートを有効にする後、無効にしても、通常、効果が消えません。完璧に効果を消すには、ゲームをリセットし、ゲーム内のセーブデータをロードしなければなりません。チートを使用するとき、巻き戻すためのゲーム内セーブデータがあることを確保してください！</string>
     <string name="str_gm_custom_error_add">エラー：チートを追加できませんでした。</string>
-    <string name="str_gm_custom_error_load">エラー：チートデータベースをロードできません。</string>
     <string name="str_gm_custom_error_save">エラー：カスタムチートをセーブできませんでした。</string>
     <string name="str_gm_custom_invalid">チートのフォーマットは無効です。</string>
     <string name="str_gm_custom_warning">追加しようとしていたチートはすでに存在しています。</string>
@@ -150,69 +123,34 @@ $path$.
     <string name="str_gm_layout_tv">画面レイアウトを編集</string>
     <string name="str_gm_load">クイックロード</string>
     <string name="str_gm_loadstate">状態データをロード</string>
-    <string name="str_gm_mainmenu">メインメニュー</string>
     <string name="str_gm_managestate">状態データを管理</string>
-    <string name="str_gm_newgame">ニューゲーム</string>
     <string name="str_gm_reset">ゲームをリセット</string>
     <string name="str_gm_save">クイックセーブ</string>
     <string name="str_gm_savestate">状態データをセーブ</string>
     <string name="str_gm_savestate_warning">状態セーブデータに頼り過ぎないことを強くおすすめします。ときどきゲーム内でセーブデータも作成してください。状態データが破損される場合、または悪いタイミングで作成されてしまう場合は、ゲーム進行状況は失われます。</string>
     <string name="str_gm_settings">オプション</string>
     <string name="str_gm_shader_error" formatted="false">フィルタ%FILTER%をロードできませんでした。前回のフィルタに切り替えます。</string>
-    <string name="str_gm_statemenu">ロード/セーブ</string>
     <string name="str_hm_about">アプリ情報</string>
     <string name="str_hm_changelog">変更履歴</string>
     <string name="str_hm_faq">FAQ</string>
     <string name="str_hm_instructions">設定のヘルプ</string>
-    <string name="str_lic_error">"ライセンスの認証に失敗しました。
-利用可能なインターネット接続とお使いのデバイスの日付と時刻が正しいことを確認してからもう一度お試しください。
-また購入していない場合は、「購入」ボタンをクリックしてDraSticを購入できます。"</string>
-    <string name="str_lic_error_inernal">"ライセンスの認証に失敗しました。
-ラッキーパッチャーがインストールされている場合は、Googleライセンス認証エミュレーションを無効にしてください。"</string>
-    <string name="str_lic_error_licensed">"ライセンスの認証に失敗しました。
-お使いのデバイスの日付と時刻を確認してください。
-"</string>
-    <string name="str_lic_error_not_licensed">"ライセンスの認証に失敗しました。
-購入が成功したことを確認してからもう一度お試しください。"</string>
-    <string name="str_lic_error_online">"ライセンスの認証に失敗しました。
-インターネットへの接続を確認してからもう一度お試しください。
-ライセンス認証が成功する後、インターネット接続なしでもプレイいただけます。"</string>
-    <string name="str_lic_error_retry">"ライセンスの認証に失敗しました。
-利用可能なインターネット接続とお使いのデバイスの日付と時刻が正しいことを確認してからもう一度お試しください。"</string>
-    <string name="str_menu_biosdialog">"DraSticには次のBIOSファイルが必要です：
- - nds_bios_arm7.bin （16384 バイト）
- - nds_bios_arm9.bin （4096 バイト）
- - nds_firmware.bin （262144 バイト）
- 
- これらのファイルはまだインストールされていません。ファイルをあなたの「Download」フォルダあるいはSDカードのルートディレクトリヘコピーし、「インストール」を押してください。
- 「キャンセル」を押すとDraSticを終了します。"</string>
     <string name="str_menu_close">終了</string>
-    <string name="str_menu_cpufail">"お使いのデバイスのCPUはサポートされていません。
-DraSticを実行するにはARMv7 CPU with Neon supportが必要です。"</string>
     <string name="str_menu_del_confirm">セーブデータを削除しますか？</string>
-    <string name="str_menu_delete">削除</string>
     <string name="str_menu_delsysfolder">コピーが完了する後、ソースデータを削除しますか？</string>
     <string name="str_menu_game">アイコンをタップして画面レイアウトを変更</string>
     <string name="str_menu_game_h2">アイコンを長押しで画面/コントローラーレイアウトを変更</string>
     <string name="str_menu_help">ヘルプ</string>
-    <string name="str_menu_home">メインメニュー</string>
     <string name="str_menu_iconcache">アイコンキャッシュを更新中</string>
     <string name="str_menu_load">ロード</string>
     <string name="str_menu_loadorresume">"前回のセーブデータをロードしますか？
 「いいえ」を押すと新規ゲームを開始します。"</string>
-    <string name="str_menu_main_confirm">このゲームを終了しますか？</string>
-    <string name="str_menu_movesysfolder">データを/sdcard/DraSticヘコピーしますか？今後、アプリをインストールか再インストールしてもデータを保存できます。</string>
     <string name="str_menu_no">いいえ</string>
-    <string name="str_menu_overwrite">セーブ</string>
     <string name="str_menu_pause">ゲームメニュー</string>
-    <string name="str_menu_quit">DraSticを終了</string>
-    <string name="str_menu_quit_confirm">アプリを終了しますか？</string>
     <string name="str_menu_reset">リセット</string>
     <string name="str_menu_reset_confirm">"ゲームをリセットしますか？
 現在の進行状況は失われます。"</string>
     <string name="str_menu_romscan">ゲームをスキャン中</string>
     <string name="str_menu_rootmoved">DraSticのデータディレクトリは次にセットしました：</string>
-    <string name="str_menu_save">セーブ</string>
     <string name="str_menu_saving_busy">今はセーブ中です</string>
     <string name="str_menu_settings">設定</string>
     <string name="str_menu_shortcut">デスクトップにショートカットをインストールしますか？</string>
@@ -378,7 +316,6 @@ DraSticを実行するにはARMv7 CPU with Neon supportが必要です。"</stri
     <string name="str_sm_copyok">状態データのコピーを作成しました。</string>
     <string name="str_sm_delete">削除</string>
     <string name="str_sm_deleteok">セーブデータを削除しました</string>
-    <string name="str_sm_empty">空きリスト</string>
     <string name="str_sm_load">状態データをロード</string>
     <string name="str_sm_manage">状態データを管理</string>
     <string name="str_sm_newsave">新規状態データ</string>
@@ -402,16 +339,6 @@ DraSticを実行するにはARMv7 CPU with Neon supportが必要です。"</stri
 なお、「オプション」メニューではコントローラーとタッチスクリーンの振る舞いの変更などのいろいろな設定があります。
 さらには、Bluetoothで外部コントローラーをお使いのデバイスヘ接続し、「オプション」メニューでコントローラーのボタンをマップすることもできます。"</string>
     <string name="str_ui_help_firstsinglescreen">シングルスクリーンモードでプレイする場合は、重要な情報、メニューなどを見落とすことがありますので、ご注意ください。</string>
-    <string name="str_ui_help_licerror">"確かにDraSticを購入したが、ライセンスエラーがまた発生する場合、これらのステップをお試しください：
-
- 1. お使いのデバイスの日付と時刻が正しくセットされており、利用可能なインターネット接続があることを確定する
- 2. 「設定->アプリ->全て」でGoogle Playアプリとサービスのキャッシュとデータを削除する
-
- ライセンスエラーがそれでも発生する場合は、次のステップもお試しください：
-
- 3. DraSticをアンインストールする
- 4. お使いのデバイスを再起動する
- 5. もう一度Google PlayからDraSticをダウンロードしてインストールする"</string>
     <string name="str_ui_helptouch">画面をタッチすると続行</string>
     <string name="str_ui_loadconfirm">セーブデータをロードしますか？</string>
     <string name="str_ui_nofiles">利用可能なゲームなし</string>

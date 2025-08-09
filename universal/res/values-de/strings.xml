@@ -27,7 +27,6 @@
     <string name="abc_shareactionprovider_share_with">Teilen mit</string>
     <string name="abc_shareactionprovider_share_with_application">Mit %s teilen</string>
     <string name="abc_toolbar_collapse_description">Minimieren</string>
-    <string name="app_notification_text">Nintendo DS Emulator</string>
     <string name="btn_rom_all">"Alle
 Spiele"</string>
     <string name="btn_rom_recent">"Zuletzt
@@ -39,11 +38,7 @@ gespielt"</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="str_add_user">Neuen Nutzer hinzufügen</string>
     <string name="str_add_user_button">Hinzufügen</string>
-    <string name="str_add_user_custom_dir">Nutzerspezifischen Ordner verwenden?</string>
-    <string name="str_add_user_dir_error">Nutzer-Ordner konnte nicht angelegt werden</string>
-    <string name="str_add_user_dir_exists">Nutzer-Ordner bereits vorhanden</string>
     <string name="str_add_user_exists">Nutzer bereits vorhanden</string>
-    <string name="str_add_user_select_dir">OK</string>
     <string name="str_cm_abxy_A">A</string>
     <string name="str_cm_abxy_B">B</string>
     <string name="str_cm_abxy_X">X</string>
@@ -78,7 +73,6 @@ gespielt"</string>
     <string name="str_cm_tool_open">Werkzeuge öffnen</string>
     <string name="str_cpy_fail">Daten konnten nicht verschoben werden.</string>
     <string name="str_cpy_success">Daten wurden erfolgreich verschoben.</string>
-    <string name="str_default_user">Standard</string>
     <string name="str_dev_htcone">"Bitte deaktiviere HTC Gestures in den Einstellungen, damit die App alle Touch-Punkte registrieren kann.
 Auf diesem Gerät sollte die Audio-Latenz nicht auf Niedrig oder Mittel gestellt werden."</string>
     <string name="str_editor_tv_end_msg">Sollen die Änderungen gespeichert werden?</string>
@@ -111,8 +105,6 @@ Soll die Einstellunge jetzt aktiviert werden?"</string>
     <string name="str_gm_cheats_code">Code</string>
     <string name="str_gm_cheats_custom">Benutzerdefinierte Cheats</string>
     <string name="str_gm_cheats_custom_enable">Cheat aktivieren</string>
-    <string name="str_gm_cheats_custom_note">Eigene Cheats hinzufügen</string>
-    <string name="str_gm_cheats_delete">Löschen</string>
     <string name="str_gm_cheats_delete_confirm">Cheat löschen?</string>
     <string name="str_gm_cheats_desc">Beschreibung</string>
     <string name="str_gm_cheats_disable_all">Alle deaktivieren</string>
@@ -125,7 +117,6 @@ Soll die Einstellunge jetzt aktiviert werden?"</string>
     <string name="str_gm_cheats_single">Nur einen auswählen</string>
     <string name="str_gm_cheats_warning">Warnung: Cheats können unerwartete Folgen haben und ein Spiel sogar unspielbar machen. Sobald ein Cheat aktiviert wird, lässt er sich normalerweise nicht einfach wieder deaktivieren, bis das Spiel neu gestartet und ein Speicherstand im Spiel selbst geladen wird. Deshalb sollte zu Sicherheit immer auch im Spiel selbst gespeichert werden, wenn Cheats verwendet werden!</string>
     <string name="str_gm_custom_error_add">Fehler: Cheat konnte nicht hinzugefügt werden.</string>
-    <string name="str_gm_custom_error_load">Fehler: Cheat-Datenbank nicht geladen.</string>
     <string name="str_gm_custom_error_save">Fehler: Benutzerdefinierte Cheats konnten nicht gespeichert werden.</string>
     <string name="str_gm_custom_invalid">Cheat ist in einem unzulässigen Format.</string>
     <string name="str_gm_custom_warning">Cheat ist bereits vorhanden.</string>
@@ -140,60 +131,33 @@ Soll die Einstellunge jetzt aktiviert werden?"</string>
     <string name="str_gm_layout_tv">Bildschirm-Anordnung bearbeiten</string>
     <string name="str_gm_load">Schnell-Laden</string>
     <string name="str_gm_loadstate">Savestate laden</string>
-    <string name="str_gm_mainmenu">Haupt-Menü</string>
     <string name="str_gm_managestate">Savestates verwalten</string>
-    <string name="str_gm_newgame">Neues Spiel</string>
     <string name="str_gm_reset">Spiel zurücksetzen</string>
     <string name="str_gm_save">Schnell-Speichern</string>
     <string name="str_gm_savestate">Savestate speichern</string>
     <string name="str_gm_savestate_warning">Wir empfehlen sich nicht nur auf Savestates zu verlassen. Bitte speichere öfter mal auch im Spiel selbst.Falls ein Savestate bechädigt wird, oder zur falschen Zeit gespeichert wird, kann der gesamte Fortschritt verloren gehen.</string>
     <string name="str_gm_settings">Einstellungen</string>
     <string name="str_gm_shader_error" formatted="false">Filter %FILTER% konnte nicht geladen werden.</string>
-    <string name="str_gm_statemenu">Laden/Speichern</string>
     <string name="str_hm_about">Über</string>
     <string name="str_hm_changelog">Versions-Informationen</string>
     <string name="str_hm_faq">FAQ</string>
     <string name="str_hm_instructions">Anleitung</string>
-    <string name="str_lic_error">"Die Lizenz konnte nicht bestätigt werden.
-Stelle sicher, dass eine Internetverbindung besteht, wenn DraStic das nächste Mal gestartet wird, und dass Zeit und Datum korrekt eingestellt sind.
-Falls du DraStic noch nicht gekauft hast, kanns du dies jetzt über 'Kaufen' tun."</string>
-    <string name="str_lic_error_inernal">"Die Lizenz konnte nicht bestätigt werden.
-Falls Lucky Patcher installiert ist, deaktiviere bitte die Option 'Google Play License Verification Emulation'."</string>
-    <string name="str_lic_error_licensed">"Die Lizenz konnte nicht bestätigt werden.
-Stelle sicher, dass Zeit und Datum korrekt eingestellt sind.
-"</string>
-    <string name="str_lic_error_not_licensed">"Die Lizenz konnte nicht bestätigt werden.
-Stelle sicher, dass der Kauf erfolgreich war und versuche DraStic später nochmal zu starten."</string>
-    <string name="str_lic_error_online">"Die Lizenz konnte nicht bestätigt werden.
-Stelle sicher, dass eine Internetverbindung besteht und starte DraStic neu.
-Sobald die Lizenz bestätigt wurde, kannst du ohne Internetverbindung spielen."</string>
-    <string name="str_lic_error_retry">"Die Lizenz konnte nicht bestätigt werden.
-Stelle sicher, dass eine Internetverbindung besteht, wenn DraStic das nächste Mal gestartet wird, und dass Zeit und Datum korrekt eingestellt sind."</string>
     <string name="str_menu_close">Schließen</string>
     <string name="str_menu_continue">Weiter</string>
-    <string name="str_menu_cpufail">Die CPU des Geräts wird leider nicht unterstützt.</string>
     <string name="str_menu_del_confirm">Speicherstand löschen?</string>
-    <string name="str_menu_delete">Löschen</string>
     <string name="str_menu_delsysfolder">Sollen die Quelldaten gelöscht werden?</string>
     <string name="str_menu_game">Tippe ein Symbol an um das Screen Layout zu ändern</string>
     <string name="str_menu_help">Hilfe</string>
-    <string name="str_menu_home">Haupt-Menü</string>
     <string name="str_menu_iconcache">Icon Cache wird aktualisiert</string>
     <string name="str_menu_load">Laden</string>
     <string name="str_menu_loadorresume">"Letzten Speicherstand fortsetzen?
 Wähle 'Nein' um ein neues Spiel zu starten."</string>
-    <string name="str_menu_main_confirm">Spiel verlassen?</string>
-    <string name="str_menu_movesysfolder">Daten nach /sdcard/DraStic verschieben? Speicherstände bleiben hierdurch erhalten, wenn die App neu- oder deinstalliert wird.</string>
     <string name="str_menu_no">Nein</string>
-    <string name="str_menu_overwrite">Speichern</string>
     <string name="str_menu_pause">Spiel-Menü</string>
-    <string name="str_menu_quit">DraStic verlassen</string>
-    <string name="str_menu_quit_confirm">Anwendung verlassen?</string>
     <string name="str_menu_reset">Zurücksetzen</string>
     <string name="str_menu_reset_confirm">Spiel zurücksetzen?</string>
     <string name="str_menu_romscan">Spiele werden gesucht</string>
     <string name="str_menu_rootmoved">DraStics Daten-Ordner wurde aktualisiert:</string>
-    <string name="str_menu_save">Speichern</string>
     <string name="str_menu_saving_busy">Speichervorgang wird abgeschlossen</string>
     <string name="str_menu_settings">Einstellungen</string>
     <string name="str_menu_shortcut">Icon auf dem Desktop installieren?</string>
@@ -372,7 +336,6 @@ zurückkehren"</string>
     <string name="str_sm_copyok">Eine Kopie wurde erstellt</string>
     <string name="str_sm_delete">Löschen</string>
     <string name="str_sm_deleteok">Der Savestate wurde gelöscht</string>
-    <string name="str_sm_empty">LEER</string>
     <string name="str_sm_load">Savestate laden</string>
     <string name="str_sm_manage">Savestates verwalten</string>
     <string name="str_sm_newsave">Neuer Savestate</string>
@@ -391,16 +354,6 @@ zurückkehren"</string>
     <string name="str_ui_gameselect">Spiel auswählen</string>
     <string name="str_ui_help_firstgame">"Bitte drücke die 'Menü'-Taste im Spiel, um das Layout und die Einstellungen zu ändern, oder das Spiel zu Laden/Speichern."</string>
     <string name="str_ui_help_firstsinglescreen">Bitte bedenke, dass wichtige Informationen oder Menüs verdeckt sein können, solange das Spiel auf nur einem Bildschirm angezeigt wird.</string>
-    <string name="str_ui_help_licerror">"Falls du DraStic gekauft hast, aber trotzdem ein Lizenz-Fehler angezeigt wird, versuche bitte folgendes:
-
- 1. Stelle sicher, dass Datum und Uhrzeit korrekt eingestellt sind und eine aktive Internet-Verbindung besteht, wenn DraStic das nächste Mal gestartet wird
- 2. Öffne Einstellungen->Anwendungen->Alle und lösche Daten und Cache der Google Play App und der Google Play Dienste
-
- Falls der Fehler weitehin auftritt, kannst du zusätzlich versuchen:
-
- 3. De-installiere DraStic
- 4. Starte das Gerät neu
- 5. Installiere DraStic von Google Play"</string>
     <string name="str_ui_helptouch">Berühre den Bildschirm um fortzufahren</string>
     <string name="str_ui_loadconfirm">Speicherstand laden?</string>
     <string name="str_ui_nofiles">KEINE SPIELE VERFÜGBAR</string>

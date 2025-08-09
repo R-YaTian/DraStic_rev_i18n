@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_notification_text">Nintendo DS 模拟器</string>
-    <string name="app_version">版本 r2.6.0.4a</string>
     <string name="app_provider_info">DraStic 内置数据存储目录</string>
     <string name="btn_rom_all">全部</string>
     <string name="btn_rom_recent">最近的</string>
@@ -11,29 +9,7 @@
     <string name="str_romlist_nothing_found">尚未添加游戏资源文件夹。请点触右上角按钮添加!</string>
     <string name="str_add_user">添加新用户</string>
     <string name="str_add_user_button">添加</string>
-    <string name="str_add_user_custom_dir">使用自定义用户目录?</string>
-    <string name="str_add_user_dir_error">无法创建用户目录</string>
-    <string name="str_add_user_dir_exists">用户目录已存在</string>
     <string name="str_add_user_exists">用户已存在</string>
-    <string name="str_add_user_select_dir">确定</string>
-    <string name="str_bios_error">"BIOS文件无法自动安装。 请将BIOS文件手动拷贝到如下路径'/sdcard/Android/data/com.dsemu.drastic/files/system'。
- 并确保BIOS文件的文件名和大小如下：
- - nds_bios_arm7.bin (16384 bytes)
- - nds_bios_arm9.bin (4096 bytes)
- - nds_firmware.bin (262144 bytes)
-"</string>
-    <string name="str_bios_installed">BIOS文件安装成功，复制到存储卡中的BIOS文件已移除。</string>
-    <string name="str_bios_nodst">"BIOS文件的目标目录无法访问。
- 请将BIOS文件手动拷贝到如下路径'/sdcard/Android/data/com.dsemu.drastic/files/system'。
- 并确保BIOS文件的文件名和大小如下：
- - nds_bios_arm7.bin (16384 bytes)
- - nds_bios_arm9.bin (4096 bytes)
- - nds_firmware.bin (262144 bytes)
-"</string>
-    <string name="str_bios_nosrc">"A'Download'目录以及SD卡被拒绝访问。
- 请确保'Download'目录并未挂载至您的电脑。"</string>
-    <string name="str_bios_notfound">"'Download'目录下未找到BIOS文件。
- 请确保您已将正确的BIOS文件放在'Download'文件夹下，重启DraStic并重新安装。"</string>
     <string name="str_cm_abxy_A">A</string>
     <string name="str_cm_abxy_B">B</string>
     <string name="str_cm_abxy_X">X</string>
@@ -55,49 +31,46 @@
     <string name="str_cm_forgameheader">游戏专用布局</string>
     <string name="str_cm_layoutmenu">菜单</string>
     <string name="str_cm_nobgfound">未找到图片:</string>
-    <string name="str_cm_removebg">去掉图片</string>
+    <string name="str_cm_removebg">移除背景</string>
     <string name="str_cm_resetdefault">重设回默认</string>
     <string name="str_cm_resizeok">返回</string>
     <string name="str_cm_resizescreen">调整屏幕大小</string>
     <string name="str_cm_savedefault">保存为全局布局</string>
     <string name="str_cm_saveforgame">保存为当前游戏布局</string>
     <string name="str_cm_scale_aspect">保持单屏</string>
-    <string name="str_cm_selectctrltoast">请选择一个部分</string>
+    <string name="str_cm_selectctrltoast">请选择一个控件</string>
     <string name="str_cm_selecttoast">请选择一块DS屏幕</string>
     <string name="str_cm_tool_close">关闭工具箱</string>
     <string name="str_cm_tool_open">打开工具箱</string>
     <string name="str_cpy_fail">无法移动数据</string>
     <string name="str_cpy_success">数据移动成功。</string>
-    <string name="str_default_user">默认</string>
-    <string name="str_dev_htcone">"请在菜单中关闭HTC手势功能，以避免和本应用的操作发生冲突。
+    <string name="str_dev_htcone">"请在菜单中关闭HTC手势功能, 以避免和本应用的操作发生冲突。
 建议您不要在这台设备上把声音延时设为中或低"</string>
-    <string name="str_drastic_channel_description">显示一个通知栏通知以便于快速回到模拟器</string>
-    <string name="str_drastic_channel_name">后台通知</string>
     <string name="str_editor_tv_end_msg">是否保存更改</string>
     <string name="str_editor_tv_start_msg">发现已保存的布局</string>
-    <string name="str_err_badarc">"您尝试打开的文件尚不支持。
-请解压并载入nds文件。"</string>
+    <string name="str_err_badarc">"您尝试打开的文件类型尚不支持。
+请尝试解压并载入.nds文件。"</string>
     <string name="str_err_badrom">您尝试打开的并不是有效的游戏ROM。</string>
-    <string name="str_err_encrom">"这个版本的rom是加密的，加密的rom只能用dump自您的NDS的任天堂ARM7 BIOS来装载。
-关于任天堂ARM V7以及如何解密rom，请您参考 drastic-ds.com上的常见问题解答。"</string>
-    <string name="str_err_install">DraStic无法创建运转所需的文件，请您重装应用程序</string>
+    <string name="str_err_encrom">"这个版本的ROM是加密的, 加密的ROM只能用转储自您NDS设备的任天堂ARM7 BIOS来加载。
+关于任天堂ARM7 BIOS以及如何解密rom, 请您参考 drastic-ds.com 上的常见问题解答。"</string>
+    <string name="str_err_install">DraStic无法创建运转所需的文件, 请您重装应用程序</string>
     <string name="str_err_jniload">DraStic无法初始化。请您尝试重新下载。</string>
-    <string name="str_err_lowmem">"内存不足，DraStic将会意外关闭。
-DraStic正在努力生成一个恢复存档。如果成功的话，您在下次打开DraStic时，点击'继续'即可继续游戏。"</string>
-    <string name="str_err_lowmem_zip">"内存不足，DraStic将会意外关闭。
-请解压游戏，使用zip压缩包进行游戏会占用更多内存。
-DraStic正在努力生成一个恢复存档。如果成功的话，您在下次打开DraStic时，点击'继续'即可继续游戏。"</string>
-    <string name="str_err_nomount">DraStic无法创建存档文件夹。如果您的设备正通过USB连接到 PC/Mac ，请断开连接并重启DraStic。</string>
-    <string name="str_err_norumble_controller">当前选定的控制器没有振动功能。如果确定你的控制器有振动马达但仍然看到这条消息，请 Star 这条安卓 issue，以激励谷歌解决：https://issuetracker.google.com/issues/128314303</string>
+    <string name="str_err_lowmem">"内存不足, DraStic将会意外关闭。
+DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打开DraStic时, 点击'继续'即可继续游戏。"</string>
+    <string name="str_err_lowmem_zip">"内存不足, DraStic将会意外关闭。
+请解压游戏, 使用zip压缩包进行游戏会占用更多内存。
+DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打开DraStic时, 点击'继续'即可继续游戏。"</string>
+    <string name="str_err_nomount">DraStic无法创建存档文件夹。如果您的设备正通过USB连接到PC/Mac, 请断开连接并重启DraStic。</string>
+    <string name="str_err_norumble_controller">当前选定的控制器没有振动功能。如果确定该控制器有振动马达但仍然不可用, 这可能是安卓系统Bug导致的, 目前Google官方没有提供解决方案(未来可能也不会提供)</string>
     <string name="str_err_norumble_internal">当前设备并未内置振动马达，振动功能无法按预期工作。</string>
     <string name="str_err_nospace">游戏无法读取，请释放一些内存。</string>
-    <string name="str_err_reload">"DraStic在后台运行时被关闭了，请重启。
-您可以点击 '继续'来继续您的游戏"</string>
-    <string name="str_err_reload_auto">"DraStic在后台运行时被关闭了，请重启。
+    <string name="str_err_reload">"DraStic在后台运行时被关闭, 故导致应用重启。
+您可以点击'继续'来继续游戏"</string>
+    <string name="str_err_reload_auto">"DraStic在后台运行时被关闭了, 故导致应用重启。
 若出现以上情况，开启后台时自动保存选项即可保留您的进度。
 现在开启吗?"</string>
     <string name="str_err_romgeneral">读取游戏时出错了</string>
-    <string name="str_err_rootpath">DraStic 无法获取数据路径，请您重启应用程序</string>
+    <string name="str_err_rootpath">DraStic 无法获取数据存储目录，请您重启应用程序</string>
     <string name="str_gm_changegame">切换游戏</string>
     <string name="str_gm_cheats">金手指</string>
     <string name="str_gm_cheats_add">添加金手指</string>
@@ -105,8 +78,6 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_gm_cheats_code">代码</string>
     <string name="str_gm_cheats_custom">自定义金手指</string>
     <string name="str_gm_cheats_custom_enable">开启金手指</string>
-    <string name="str_gm_cheats_custom_note">在此添加金手指</string>
-    <string name="str_gm_cheats_delete">删除</string>
     <string name="str_gm_cheats_delete_confirm">删除金手指?</string>
     <string name="str_gm_cheats_desc">描述</string>
     <string name="str_gm_cheats_disable_all">全部关闭</string>
@@ -114,12 +85,11 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_gm_cheats_menu">菜单</string>
     <string name="str_gm_cheats_menu_header">自定义金手指菜单</string>
     <string name="str_gm_cheats_name">名称</string>
-    <string name="str_gm_cheats_ondisabled">这个文件夹中的金手指只能同时开启一个。请勿再开启其他的</string>
+    <string name="str_gm_cheats_ondisabled">这个文件夹中的金手指只能同时开启一个。请勿再开启其他的!</string>
     <string name="str_gm_cheats_save">保存</string>
     <string name="str_gm_cheats_single">只能选择一个</string>
     <string name="str_gm_cheats_warning">警告：金手指修改了游戏内存。大多数金手指需要重置游戏才能关闭。如果您开启金手指导致游戏出现问题，请尝试关掉所有金手指。</string>
     <string name="str_gm_custom_error_add">错误: 金手指无法添加。</string>
-    <string name="str_gm_custom_error_load">错误: 金手指数据库未加载。</string>
     <string name="str_gm_custom_error_save">错误: 自定义金手指无法保存。</string>
     <string name="str_gm_custom_invalid">金手指格式错误。</string>
     <string name="str_gm_custom_warning">您添加的金手指已存在。</string>
@@ -133,72 +103,37 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_gm_layout_select">选择屏幕布局</string>
     <string name="str_gm_layout_tv">编辑屏幕布局</string>
     <string name="str_gm_load">快速读档</string>
-    <string name="str_gm_loadstate">读取模拟器存档</string>
-    <string name="str_gm_mainmenu">主菜单</string>
-    <string name="str_gm_managestate">管理模拟器存档</string>
-    <string name="str_gm_newgame">切换游戏</string>
+    <string name="str_gm_loadstate">读取即时存档</string>
+    <string name="str_gm_managestate">管理即时存档</string>
     <string name="str_gm_reset">重置游戏</string>
     <string name="str_gm_save">快速存档</string>
-    <string name="str_gm_savestate">保存模拟器存档</string>
-    <string name="str_gm_savestate_warning">我们强烈建议您不要依赖模拟器存档。请时常保存游戏内存档。若模拟器存档损坏或保存时机出错，您将会失去游戏进度。</string>
+    <string name="str_gm_savestate">保存即时存档</string>
+    <string name="str_gm_savestate_warning">我们强烈建议您不要依赖即时存档。请时常保存游戏内存档。若即时存档损坏或保存时机出错，您将会失去游戏进度。</string>
     <string name="str_gm_settings">选项</string>
-    <string name="str_gm_shader_error" formatted="false">滤镜 %FILTER% 无法加载。 使用后备滤镜。</string>
-    <string name="str_gm_statemenu">读取/保存</string>
+    <string name="str_gm_shader_error" formatted="false">滤镜 %FILTER% 无法加载, 回滚到此前的配置。</string>
     <string name="str_gm_slot">存档位\u0020</string>
     <string name="str_hm_about">关于</string>
     <string name="str_hm_changelog">更新日志</string>
     <string name="str_hm_faq">常见问题</string>
     <string name="str_hm_instructions">介绍</string>
-    <string name="str_lic_error">"验证错误
-请确保您的设备日期和时间设置正确，并确保您下次打开DraStic时网络连接正确（科学上网）
-如果您尚未购买，请点击 '购买'"</string>
-    <string name="str_lic_error_inernal">"验证错误
-如果您安装了幸运破解器, 请关掉Google Play License Verification Emulation."</string>
-    <string name="str_lic_error_licensed">"验证错误
-请确保您的设备日期和时间设置正确
-"</string>
-    <string name="str_lic_error_not_licensed">"验证错误
-请确保支付成功，稍后再打开DraStic"</string>
-    <string name="str_lic_error_online">"验证错误
-请确保网络连接正确（科学上网）并重启DraStic 
-验证成功后，即可继续离线使用"</string>
-    <string name="str_lic_error_retry">"验证错误
-请确保您的设备日期和时间设置正确，并确保您下次打开DraStic时网络连接正确（科学上网）"</string>
-    <string name="str_menu_biosdialog">"DraStic需要以下 BIOS文件:
- - nds_bios_arm7.bin (16384 bytes)
- - nds_bios_arm9.bin (4096 bytes)
- - nds_firmware.bin (262144 bytes)
- 
- BIOS文件未安装，请将BIOS文件拷贝至'Download'目录下或SD卡根目录，并点击'安装'。
- 点击'取消'来退出。"</string>
     <string name="str_menu_close">关闭</string>
     <string name="str_menu_continue">继续</string>
-    <string name="str_menu_cpufail">"很遗憾，DraStic不支持您的设备的 CPU。
-它需要ARMv7 CPU和Neon指令集。"</string>
     <string name="str_menu_del_confirm">删除存档吗？</string>
-    <string name="str_menu_delete">删除</string>
     <string name="str_menu_delsysfolder">数据拷贝完成后，是否要将原路径里的数据全部删除？</string>
     <string name="str_menu_game">点击图标来改变屏幕布局</string>
     <string name="str_menu_game_h2">长按图标来编辑屏幕布局</string>
     <string name="str_menu_help">帮助</string>
-    <string name="str_menu_home">主菜单</string>
-    <string name="str_menu_iconcache">更新小图标缓存</string>
+    <string name="str_menu_iconcache">更新图标缓存</string>
     <string name="str_menu_load">读取</string>
     <string name="str_menu_loadorresume">"继续上次保存的游戏吗？
-选择'不'来开始新游戏"</string>
-    <string name="str_menu_main_confirm">退出当前游戏吗？</string>
-    <string name="str_menu_movesysfolder">您是否愿意将您的数据移动到 /sdcard/DraStic？这能防止您在更新或者卸载程序后丢失数据。</string>
+选择'不'以开始新游戏"</string>
     <string name="str_menu_no">否</string>
-    <string name="str_menu_overwrite">保存</string>
     <string name="str_menu_pause">游戏菜单</string>
-    <string name="str_menu_quit">退出</string>
-    <string name="str_menu_quit_confirm">退出程序吗?</string>
     <string name="str_menu_reset">重置</string>
     <string name="str_menu_reset_confirm">"重置游戏吗?
 未保存的进度将会消失。"</string>
     <string name="str_menu_romscan">扫描游戏</string>
     <string name="str_menu_rootmoved">"DraStic'中的数据直接移动到:"</string>
-    <string name="str_menu_save">保存</string>
     <string name="str_menu_saving_busy">正在保存</string>
     <string name="str_menu_settings">设置</string>
     <string name="str_menu_shortcut">在桌面建立快捷方式吗？</string>
@@ -213,9 +148,9 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_perm_mic_warn">针对游戏的实体麦克风支持已禁用。你可以在设置中重新启用。</string>
     <string name="str_perm_stor_error">DraStic 需要存储权限以访问外置数据存储目录</string>
     <string name="str_perm_stor_rationale">DraStic 需要访问外部存储器以加载 ROM 并保存存档数据。若未授权此权限，应用程序无法继续使用。</string>
-    <string name="str_rom_continue">读取最近的模拟器存档</string>
+    <string name="str_rom_continue">读取最近的即时存档</string>
     <string name="str_rom_delete">永久删除游戏吗?</string>
-    <string name="str_rom_loadstate">读取其他模拟器存档</string>
+    <string name="str_rom_loadstate">读取其他即时存档</string>
     <string name="str_rom_newgame">开始游戏</string>
     <string name="str_rom_shortcut">创建快捷方式</string>
     <string name="str_set_altmenu">使用旧版主菜单</string>
@@ -226,7 +161,7 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_set_sysdir">数据存储目录</string>
     <string name="str_set_autoload">自动读取</string>
     <string name="str_set_autoload_hint">从快速选取中打开游戏时，自动读取最后的存档</string>
-    <string name="str_set_autoresume">从快捷方式打开时读取最近的模拟器存档</string>
+    <string name="str_set_autoresume">从快捷方式打开时读取最近的即时存档</string>
     <string name="str_set_autorotate">横屏模式旋转</string>
     <string name="str_set_autosave">自动保存</string>
     <string name="str_set_autosave_hint">在退出程序或返回主菜单时自动保存.</string>
@@ -442,15 +377,14 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
     <string name="str_sm_back">返回游戏</string>
     <string name="str_sm_bioserror">这个存档不兼容，这是由于旧版BIOS文件和新版不同造成的</string>
     <string name="str_sm_copy">复制</string>
-    <string name="str_sm_copyok">复制模拟器存档成功</string>
+    <string name="str_sm_copyok">复制即时存档成功</string>
     <string name="str_sm_delete">删除</string>
     <string name="str_sm_deleteok">存档已删除</string>
-    <string name="str_sm_empty">空</string>
-    <string name="str_sm_load">读取</string>
-    <string name="str_sm_manage">管理模拟器存档</string>
+    <string name="str_sm_load">读取即时存档</string>
+    <string name="str_sm_manage">管理即时存档</string>
     <string name="str_sm_newsave">创建新存档</string>
     <string name="str_sm_play">读取</string>
-    <string name="str_sm_save">保存</string>
+    <string name="str_sm_save">保存即时存档</string>
     <string name="str_sm_saveok">游戏已保存</string>
     <string name="str_sm_sloterror">存档位已用完</string>
     <string name="str_sm_state_corrupted">存档已损坏!</string>
@@ -469,16 +403,6 @@ DraStic正在努力生成一个恢复存档。如果成功的话，您在下次�
 请注意，'选项'中也有用来更改虚拟按键和ds触摸屏操作的各种设置项。
 您还可以连接蓝牙手柄来进行游戏，并在'选项'中进行按键映射。"</string>
     <string name="str_ui_help_firstsinglescreen">请注意，单屏幕模式下，您可能会错过游戏中的重要信息或无法使用游戏菜单。</string>
-    <string name="str_ui_help_licerror">"如果您已经购买 DraStic, 验证错误依然出现, 请尝试以下操作:
-
- 1. 确保您的设备's 日期和时间设置正确，并确保您下次打开DraStic时网络连接正确（科学上网）
- 2. 在设置->应用程序信息内清空Play 商店和Google设置的数据和缓存
-
- 如果您依然遇到验证错误，请尝试以下操作:
-
- 3. 卸载 DraStic
- 4. 重启设备
- 5. 从Play商店重新下载安装DraStic"</string>
     <string name="str_ui_helptouch">触摸屏幕以继续</string>
     <string name="str_ui_loadconfirm">读取存档？</string>
     <string name="str_ui_nofiles">无可用游戏</string>
