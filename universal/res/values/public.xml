@@ -2153,6 +2153,7 @@
     <public type="string" name="status_bar_notification_info_overflow" id="0x7f0f0025" />
     <public type="string" name="str_add_user" id="0x7f0f0026" />
     <public type="string" name="str_add_user_button" id="0x7f0f0027" />
+    <public type="string" name="str_add_user_exists_case" id="0x7f0f0028" />
     <public type="string" name="str_add_user_exists" id="0x7f0f002b" />
     <public type="string" name="str_cm_abxy_A" id="0x7f0f0032" />
     <public type="string" name="str_cm_abxy_B" id="0x7f0f0033" />
@@ -2316,7 +2317,6 @@
     <public type="string" name="str_set_cpu_load_value" id="0x7f0f00ea" />
     <public type="string" name="str_set_ctrlalpha" id="0x7f0f00eb" />
     <public type="string" name="str_set_ctrlskin" id="0x7f0f00ec" />
-    <public type="string" name="str_set_ctrlskin_default" id="0x7f0f00ed" />
     <public type="string" name="str_set_custom_clock" id="0x7f0f00ee" />
     <public type="string" name="str_set_custom_clock_enable" id="0x7f0f00ef" />
     <public type="string" name="str_set_custom_clock_msg" id="0x7f0f00f0" />

@@ -206,7 +206,6 @@ Si prega di riavviare DraStic affinché le modifiche abbiano effetto."</string>
     <string name="str_set_confirm_hint">Quando abilitato, è necessario dare conferma per uscire o resettare un gioco, per prevenire la perdita accidentale dei progressi.</string>
     <string name="str_set_ctrlalpha">Opacità del Controller</string>
     <string name="str_set_ctrlskin">Skin</string>
-    <string name="str_set_ctrlskin_default">Predefinita</string>
     <string name="str_set_custom_clock">Data di Sistema Personalizzata</string>
     <string name="str_set_custom_clock_enable">Abilita Data Personalizzata</string>
     <string name="str_set_custom_clock_msg">"Attenzione:

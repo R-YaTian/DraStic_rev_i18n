@@ -43,6 +43,7 @@ Games"</string>
     <string name="str_add_user">Add New User</string>
     <string name="str_add_user_button">Add</string>
     <string name="str_add_user_exists">User already exists</string>
+    <string name="str_add_user_exists_case">Failed to create the user data folder, probably because a user with the same name already exists (usernames are case-insensitive).</string>
     <string name="str_cm_abxy_A">A</string>
     <string name="str_cm_abxy_B">B</string>
     <string name="str_cm_abxy_X">X</string>
@@ -223,7 +224,6 @@ Please restart DraStic for the change to take effect."</string>
     <string name="str_set_cpu_load_value">Framerate Stabilizer</string>
     <string name="str_set_ctrlalpha">Controller Opacity</string>
     <string name="str_set_ctrlskin">Skin</string>
-    <string name="str_set_ctrlskin_default">Default</string>
     <string name="str_set_custom_clock">Custom System Clock</string>
     <string name="str_set_custom_clock_enable">Enable Custom Clock</string>
     <string name="str_set_custom_clock_msg">"Warning:

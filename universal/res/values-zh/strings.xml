@@ -10,6 +10,7 @@
     <string name="str_add_user">添加新用户</string>
     <string name="str_add_user_button">添加</string>
     <string name="str_add_user_exists">用户已存在</string>
+    <string name="str_add_user_exists_case">创建用户数据文件夹失败, 这很有可能是由于同名用户已存在(用户名不区分大小写)</string>
     <string name="str_cm_abxy_A">A</string>
     <string name="str_cm_abxy_B">B</string>
     <string name="str_cm_abxy_X">X</string>
@@ -188,7 +189,6 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_cpu_load_value">帧率稳定器</string>
     <string name="str_set_ctrlalpha">虚拟按键不透明度</string>
     <string name="str_set_ctrlskin">皮肤</string>
-    <string name="str_set_ctrlskin_default">默认</string>
     <string name="str_set_custom_clock">自定义时钟</string>
     <string name="str_set_custom_clock_enable">启用自定义时钟</string>
     <string name="str_set_custom_clock_msg">"警告:

@@ -191,7 +191,6 @@
     <string name="str_set_confirm_hint">Cuando esté activado, necesitas confirmar la salida o el reinicio del juego, para evitar la pérdida accidental del progreso.</string>
     <string name="str_set_ctrlalpha">Opacidad del controlador</string>
     <string name="str_set_ctrlskin">Piel</string>
-    <string name="str_set_ctrlskin_default">Predeterminada</string>
     <string name="str_set_custom_clock">Reloj del sistema personalizado</string>
     <string name="str_set_custom_clock_enable">Habilitar reloj del sistema personalizado</string>
     <string name="str_set_custom_clock_msg">Advertencia: establecer un sistema horario personalizado puede ocasionar problemas si se utiliza con los estados de guardado. Este ajuste solamente tomará efecto tras reiniciar el juego.</string>

@@ -202,7 +202,6 @@ Zur Änderung dieser Einstellung muss die App neu gestartet werden."</string>
     <string name="str_set_confirm_hint">Wenn ein Spiel neu gestartet oder verlassen wird, muss dies bestätigt werden, um einen Verlust des Fortschritts im Spiel zu vermeiden.</string>
     <string name="str_set_ctrlalpha">Controller-Alpha</string>
     <string name="str_set_ctrlskin">Skin</string>
-    <string name="str_set_ctrlskin_default">Standard</string>
     <string name="str_set_custom_clock">Benutzerdefinierte System-Uhr</string>
     <string name="str_set_custom_clock_enable">Benutzerdefinierte System-Uhr aktivieren</string>
     <string name="str_set_custom_clock_msg">"Warnung:

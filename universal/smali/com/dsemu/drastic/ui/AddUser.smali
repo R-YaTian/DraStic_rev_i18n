@@ -257,7 +257,7 @@
 .end method
 
 .method private synthetic i(Lcom/dsemu/drastic/filesystem/b;Ljava/lang/String;Landroid/app/AlertDialog;)V
-    .locals 1
+    .locals 2
 
     invoke-direct {p0, p1}, Lcom/dsemu/drastic/ui/AddUser;->f(Lcom/dsemu/drastic/filesystem/b;)Z
 
@@ -277,7 +277,24 @@
 
     invoke-virtual {p0, p2, p1}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
+    goto :cond_1
+
     :cond_0
+    new-instance p1, Landroid/content/Intent;
+
+    invoke-direct {p1}, Landroid/content/Intent;-><init>()V
+
+    const-string v0, "Username"
+
+    const-string v1, "default"
+
+    invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const/4 p2, -0x1
+
+    invoke-virtual {p0, p2, p1}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
+
+    :cond_1
     invoke-virtual {p3}, Landroid/app/Dialog;->dismiss()V
 
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
@@ -286,7 +303,7 @@
 .end method
 
 .method private synthetic j(Landroid/app/Activity;Landroid/view/View;)V
-    .locals 5
+    .locals 7
 
     iget-object p2, p0, Lcom/dsemu/drastic/ui/AddUser;->e:Landroid/widget/EditText;
 
@@ -338,6 +355,44 @@
 
     move-result-object v0
 
+    invoke-virtual {p2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v2, "default"
+
+    invoke-virtual {v5, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :pass_0
+
+    goto :dup_user
+
+    :pass_0
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    const v6, 0x7f0f0038
+
+    invoke-virtual {v2, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v5, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :pass_1
+
+    goto :dup_user
+
+    :pass_1
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
@@ -350,6 +405,7 @@
 
     if-eqz v1, :cond_0
 
+    :dup_user
     new-instance p2, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {p2, p1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
@@ -373,6 +429,8 @@
     invoke-virtual {p2, p1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
+
+    const/4 v2, 0x0
 
     invoke-virtual {p1, v2}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 

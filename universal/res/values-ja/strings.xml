@@ -195,7 +195,6 @@ $path$.
     <string name="str_set_confirm_hint">誤操作によるデータの失いを避けるため、ゲームを終了またはリセットするとき確認を表示します。</string>
     <string name="str_set_ctrlalpha">コントローラー不透過度</string>
     <string name="str_set_ctrlskin">テーマ</string>
-    <string name="str_set_ctrlskin_default">既定</string>
     <string name="str_set_custom_clock">システム時計をカスタマイズ</string>
     <string name="str_set_custom_clock_enable">カスタム時計を有効化</string>
     <string name="str_set_custom_clock_msg">"ご注意：
