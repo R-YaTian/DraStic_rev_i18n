@@ -1562,7 +1562,6 @@
     <public type="id" name="groups" id="0x7f09016d" />
     <public type="id" name="hdr_settings" id="0x7f09016e" />
     <public type="id" name="help_animator" id="0x7f09016f" />
-    <public type="id" name="help_box" id="0x7f090170" />
     <public type="id" name="help_content_layout" id="0x7f090171" />
     <public type="id" name="help_index_layout" id="0x7f090172" />
     <public type="id" name="help_text_view" id="0x7f090173" />
@@ -1889,8 +1888,6 @@
     <public type="id" name="tw_migratestatus" id="0x7f0902b4" />
     <public type="id" name="tw_user" id="0x7f0902b5" />
     <public type="id" name="tw_version" id="0x7f0902b6" />
-    <public type="id" name="ui_helpbox" id="0x7f0902b7" />
-    <public type="id" name="ui_helphint" id="0x7f0902b8" />
     <public type="id" name="unchecked" id="0x7f0902b9" />
     <public type="id" name="uniform" id="0x7f0902ba" />
     <public type="id" name="up" id="0x7f0902bb" />
@@ -1970,7 +1967,6 @@
     <public type="layout" name="cheats_custom_tv" id="0x7f0c002a" />
     <public type="layout" name="cheats_tv" id="0x7f0c002b" />
     <public type="layout" name="color_view" id="0x7f0c002c" />
-    <public type="layout" name="context_help" id="0x7f0c002d" />
     <public type="layout" name="ctrlcfg" id="0x7f0c002e" />
     <public type="layout" name="custom_dialog" id="0x7f0c002f" />
     <public type="layout" name="customizer" id="0x7f0c0030" />
@@ -2265,7 +2261,6 @@
     <public type="string" name="str_menu_pause" id="0x7f0f00b3" />
     <public type="string" name="str_menu_reset" id="0x7f0f00b6" />
     <public type="string" name="str_menu_reset_confirm" id="0x7f0f00b7" />
-    <public type="string" name="str_menu_romscan" id="0x7f0f00b8" />
     <public type="string" name="str_menu_rootmoved" id="0x7f0f00b9" />
     <public type="string" name="str_menu_saving_busy" id="0x7f0f00bb" />
     <public type="string" name="str_menu_settings" id="0x7f0f00bc" />
@@ -2470,7 +2465,6 @@
     <public type="string" name="str_ui_gameselect" id="0x7f0f0185" />
     <public type="string" name="str_ui_help_firstgame" id="0x7f0f0186" />
     <public type="string" name="str_ui_help_firstsinglescreen" id="0x7f0f0187" />
-    <public type="string" name="str_ui_helptouch" id="0x7f0f0189" />
     <public type="string" name="str_ui_loadconfirm" id="0x7f0f018a" />
     <public type="string" name="str_ui_nofiles" id="0x7f0f018b" />
     <public type="string" name="str_ui_numsaves" id="0x7f0f018c" />

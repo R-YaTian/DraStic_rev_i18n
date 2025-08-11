@@ -276,7 +276,6 @@
     <item type="id" name="group_divider" />
     <item type="id" name="hdr_settings" />
     <item type="id" name="help_animator" />
-    <item type="id" name="help_box" />
     <item type="id" name="help_content_layout" />
     <item type="id" name="help_index_layout" />
     <item type="id" name="help_text_view" />
@@ -529,8 +528,6 @@
     <item type="id" name="tw_migratestatus" />
     <item type="id" name="tw_user" />
     <item type="id" name="tw_version" />
-    <item type="id" name="ui_helpbox" />
-    <item type="id" name="ui_helphint" />
     <item type="id" name="unchecked" />
     <item type="id" name="up" />
     <item type="id" name="user_name" />

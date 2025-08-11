@@ -159,7 +159,6 @@ Scegli 'No' per iniziare una nuova partita"</string>
     <string name="str_menu_reset">Resetta</string>
     <string name="str_menu_reset_confirm">"Resettare il gioco?
 I progressi attuali verranno persi."</string>
-    <string name="str_menu_romscan">Ricerca dei giochi</string>
     <string name="str_menu_rootmoved">La Cartella Dati di DraStic è impostata su:</string>
     <string name="str_menu_saving_busy">Azione di Salvataggio ancora in corso</string>
     <string name="str_menu_settings">Impostazioni</string>
@@ -363,7 +362,6 @@ Se il gioco necessita soltanto del touchscreen, puoi premere l'icona dello stilo
 Si prega di notare, che ci sono anche diverse impostazioni nel menu 'Opzioni', per modificare il comportamento del controller e del touchscreen.
 Puoi anche connettere un controller bluetooth esterno al dispositivo, e mappare i bottoni nel menu 'Opzioni'."</string>
     <string name="str_ui_help_firstsinglescreen">Sii consapevole, che si possono perdere informazioni importanti, o menu necessari per giocare al gioco, mentre si è nella modalità a schermo singolo.</string>
-    <string name="str_ui_helptouch">Tocca lo schermo per continuare</string>
     <string name="str_ui_loadconfirm">Caricare il salvataggio?</string>
     <string name="str_ui_nofiles">NESSUN GIOCO DISPONIBILE</string>
     <string name="str_ui_numsaves">Salvataggi</string>

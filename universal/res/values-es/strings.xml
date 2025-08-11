@@ -145,7 +145,6 @@
     <string name="str_menu_pause">Menú de juego</string>
     <string name="str_menu_reset">Reiniciar</string>
     <string name="str_menu_reset_confirm">¿Desea reiniciar el juego? El progreso actual se perderá.</string>
-    <string name="str_menu_romscan">Escaneando en busca de juegos</string>
     <string name="str_menu_rootmoved">Ajustar directorio de datos de DraStic a:</string>
     <string name="str_menu_saving_busy">Guardado todavía en progreso</string>
     <string name="str_menu_settings">Ajustes</string>
@@ -337,7 +336,6 @@
     <string name="str_ui_gameselect">Seleccionar juego</string>
     <string name="str_ui_help_firstgame">Mientras estés dentro del juego, por favor presiona el botón «Menú» para cambiar la disposición de la pantalla, los ajustes y para cargar y guardar tus juegos. Si un juego solamente requiere el control de la pantalla táctil, puedes presionar el icono del stylus para ocultar la superposición del controlador. Por favor, tenga en cuenta que hay varios ajustes en el menú de «Opciones», para cambiar el comportamiento del controlador y de la pantalla táctil. Además, puedes conectar un controlador de Bluetooth externo al dispositivo, y estructurar los botones en el menú de «Opciones».</string>
     <string name="str_ui_help_firstsinglescreen">Por favor, esté atento de que puede omitir información importante, o menús necesarios para jugar al juego, en el modo de una sola pantalla.</string>
-    <string name="str_ui_helptouch">Toca la pantalla para continuar</string>
     <string name="str_ui_loadconfirm">¿Cargar archivo de guardado?</string>
     <string name="str_ui_nofiles">NINGÚN JUEGO DISPONIBLE</string>
     <string name="str_ui_numsaves">Archivos de guardado</string>

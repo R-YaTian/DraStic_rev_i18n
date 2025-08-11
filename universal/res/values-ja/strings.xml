@@ -149,7 +149,6 @@ $path$.
     <string name="str_menu_reset">リセット</string>
     <string name="str_menu_reset_confirm">"ゲームをリセットしますか？
 現在の進行状況は失われます。"</string>
-    <string name="str_menu_romscan">ゲームをスキャン中</string>
     <string name="str_menu_rootmoved">DraSticのデータディレクトリは次にセットしました：</string>
     <string name="str_menu_saving_busy">今はセーブ中です</string>
     <string name="str_menu_settings">設定</string>
@@ -337,8 +336,6 @@ $path$.
 
 なお、「オプション」メニューではコントローラーとタッチスクリーンの振る舞いの変更などのいろいろな設定があります。
 さらには、Bluetoothで外部コントローラーをお使いのデバイスヘ接続し、「オプション」メニューでコントローラーのボタンをマップすることもできます。"</string>
-    <string name="str_ui_help_firstsinglescreen">シングルスクリーンモードでプレイする場合は、重要な情報、メニューなどを見落とすことがありますので、ご注意ください。</string>
-    <string name="str_ui_helptouch">画面をタッチすると続行</string>
     <string name="str_ui_loadconfirm">セーブデータをロードしますか？</string>
     <string name="str_ui_nofiles">利用可能なゲームなし</string>
     <string name="str_ui_numsaves">セーブデータ</string>

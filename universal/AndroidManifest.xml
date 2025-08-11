@@ -52,8 +52,6 @@
         <activity android:name="com.dsemu.drastic.ui.CheatsCustom"/>
         <activity android:name="com.dsemu.drastic.ui.CheatEditor"/>
         <activity android:name="com.dsemu.drastic.ui.Help"/>
-        <activity android:name="com.dsemu.drastic.ui.ContextHelp"/>
-        <activity android:name="com.dsemu.drastic.ui.RomScanActivity" android:theme="@style/AppTheme.Transparent"/>
         <activity android:name="com.dsemu.drastic.ui.IconCacheActivity" android:theme="@style/AppTheme.Transparent"/>
         <activity android:name="com.dsemu.drastic.ui.SystemMigrationActivity" android:theme="@style/AppTheme.Transparent"/>
         <activity android:name="com.dsemu.drastic.ui.SaveActivity" android:theme="@style/AppTheme.Transparent"/>

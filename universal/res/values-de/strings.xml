@@ -156,7 +156,6 @@ Wähle 'Nein' um ein neues Spiel zu starten."</string>
     <string name="str_menu_pause">Spiel-Menü</string>
     <string name="str_menu_reset">Zurücksetzen</string>
     <string name="str_menu_reset_confirm">Spiel zurücksetzen?</string>
-    <string name="str_menu_romscan">Spiele werden gesucht</string>
     <string name="str_menu_rootmoved">DraStics Daten-Ordner wurde aktualisiert:</string>
     <string name="str_menu_saving_busy">Speichervorgang wird abgeschlossen</string>
     <string name="str_menu_settings">Einstellungen</string>
@@ -353,7 +352,6 @@ zurückkehren"</string>
     <string name="str_ui_gameselect">Spiel auswählen</string>
     <string name="str_ui_help_firstgame">"Bitte drücke die 'Menü'-Taste im Spiel, um das Layout und die Einstellungen zu ändern, oder das Spiel zu Laden/Speichern."</string>
     <string name="str_ui_help_firstsinglescreen">Bitte bedenke, dass wichtige Informationen oder Menüs verdeckt sein können, solange das Spiel auf nur einem Bildschirm angezeigt wird.</string>
-    <string name="str_ui_helptouch">Berühre den Bildschirm um fortzufahren</string>
     <string name="str_ui_loadconfirm">Speicherstand laden?</string>
     <string name="str_ui_nofiles">KEINE SPIELE VERFÜGBAR</string>
     <string name="str_ui_numsaves">Speicherstände</string>

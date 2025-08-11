@@ -167,7 +167,6 @@ Choose 'No' to start a new Game"</string>
     <string name="str_menu_reset">Reset</string>
     <string name="str_menu_reset_confirm">"Reset Game?
 Current progress will be lost."</string>
-    <string name="str_menu_romscan">Scanning for Games</string>
     <string name="str_menu_rootmoved">"DraStic's Data Directory set to:"</string>
     <string name="str_menu_saving_busy">Saving still in progress</string>
     <string name="str_menu_settings">Settings</string>
@@ -437,7 +436,6 @@ If a game only requires touchscreen control, you can press the stylus icon to hi
 Please note, that there are also various settings in the 'Options' menu, to change the behaviour of the controller and touchscreen.
 You can also connect an external bluetooth controller to the device, and map the buttons in the 'Options' menu."</string>
     <string name="str_ui_help_firstsinglescreen">Please be aware, that you can miss important information, or menus necessary to play the game, while in single-screen mode.</string>
-    <string name="str_ui_helptouch">Touch Screen to continue</string>
     <string name="str_ui_loadconfirm">Load Save?</string>
     <string name="str_ui_nofiles">NO GAMES AVAILABLE</string>
     <string name="str_ui_numsaves">Saves</string>

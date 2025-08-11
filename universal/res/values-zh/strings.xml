@@ -133,7 +133,6 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_menu_reset">重置</string>
     <string name="str_menu_reset_confirm">"重置游戏吗?
 未保存的进度将会消失。"</string>
-    <string name="str_menu_romscan">扫描游戏</string>
     <string name="str_menu_rootmoved">"DraStic'中的数据直接移动到:"</string>
     <string name="str_menu_saving_busy">正在保存</string>
     <string name="str_menu_settings">设置</string>
@@ -403,7 +402,6 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
 请注意，'选项'中也有用来更改虚拟按键和ds触摸屏操作的各种设置项。
 您还可以连接蓝牙手柄来进行游戏，并在'选项'中进行按键映射。"</string>
     <string name="str_ui_help_firstsinglescreen">请注意，单屏幕模式下，您可能会错过游戏中的重要信息或无法使用游戏菜单。</string>
-    <string name="str_ui_helptouch">触摸屏幕以继续</string>
     <string name="str_ui_loadconfirm">读取存档？</string>
     <string name="str_ui_nofiles">无可用游戏</string>
     <string name="str_ui_numsaves">存档</string>
