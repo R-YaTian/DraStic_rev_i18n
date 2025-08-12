@@ -6,12 +6,25 @@
 # instance fields
 .field private e:Landroid/widget/EditText;
 
+.field private usrs:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/dsemu/drastic/ui/AddUser$w;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 # direct methods
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/dsemu/drastic/ui/AddUser;->usrs:Ljava/util/List;
 
     return-void
 .end method
@@ -302,6 +315,164 @@
     return-void
 .end method
 
+.method private delDirRecursive(Lcom/dsemu/drastic/filesystem/b;)Z
+    .locals 7
+
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const/4 v6, 0x0
+
+    invoke-interface {p1, v0, v6}, Lcom/dsemu/drastic/filesystem/b;->j(Landroid/content/Context;Lcom/dsemu/drastic/filesystem/b$c;)[Lcom/dsemu/drastic/filesystem/b;
+
+    move-result-object v6
+
+    array-length v1, v6
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v1, :cond_1
+
+    aget-object v4, v6, v3
+
+    invoke-interface {v4, v0}, Lcom/dsemu/drastic/filesystem/b;->i(Landroid/content/Context;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    invoke-direct {p0, v4}, Lcom/dsemu/drastic/ui/AddUser;->m(Lcom/dsemu/drastic/filesystem/b;)Z
+
+    move-result v5
+
+    and-int/2addr v2, v5
+
+    :cond_0
+    invoke-interface {v4, v0}, Lcom/dsemu/drastic/filesystem/b;->n(Landroid/content/Context;)Z
+
+    move-result v4
+
+    and-int/2addr v2, v4
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    invoke-interface {p1, p0}, Lcom/dsemu/drastic/filesystem/b;->n(Landroid/content/Context;)Z
+
+    return v2
+.end method
+
+.method private ListUsers()V
+    .locals 8
+
+    invoke-static {}, Lcom/dsemu/drastic/filesystem/d;->i()Lcom/dsemu/drastic/filesystem/b;
+
+    move-result-object v0
+
+    const-string v1, "users"
+
+    invoke-interface {v0, v1}, Lcom/dsemu/drastic/filesystem/b;->u(Ljava/lang/String;)Lcom/dsemu/drastic/filesystem/b;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Lcom/dsemu/drastic/filesystem/b;->c(Landroid/content/Context;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Lcom/dsemu/drastic/filesystem/b;->d(Landroid/content/Context;)Z
+
+    goto :goto_1
+
+    :cond_0
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v1, p0, Lcom/dsemu/drastic/ui/AddUser;->usrs:Ljava/util/List;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Lcom/dsemu/drastic/filesystem/b;->q(Landroid/content/Context;)[Lcom/dsemu/drastic/filesystem/b;
+
+    move-result-object v0
+
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v1, :cond_2
+
+    aget-object v3, v0, v2
+
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-interface {v3, v4}, Lcom/dsemu/drastic/filesystem/b;->i(Landroid/content/Context;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    iget-object v4, p0, Lcom/dsemu/drastic/ui/AddUser;->usrs:Ljava/util/List;
+
+    new-instance v5, Lcom/dsemu/drastic/ui/AddUser$w;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v6
+
+    invoke-interface {v3, v6}, Lcom/dsemu/drastic/filesystem/b;->w(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v6
+
+    const-string v7, "path.cfg"
+
+    invoke-interface {v3, v7}, Lcom/dsemu/drastic/filesystem/b;->u(Ljava/lang/String;)Lcom/dsemu/drastic/filesystem/b;
+
+    move-result-object v3
+
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v7
+
+    invoke-interface {v3, v7}, Lcom/dsemu/drastic/filesystem/b;->c(Landroid/content/Context;)Z
+
+    move-result v3
+
+    invoke-direct {v5, v6, v3}, Lcom/dsemu/drastic/ui/AddUser$w;-><init>(Ljava/lang/String;Z)V
+
+    invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_1
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    :goto_1
+    return-void
+.end method
+
 .method private synthetic j(Landroid/app/Activity;Landroid/view/View;)V
     .locals 7
 
@@ -521,7 +692,7 @@
 
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
-    .locals 3
+    .locals 5
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -600,6 +771,40 @@
     invoke-direct {v0, p0, p0}, Lm0/b;-><init>(Lcom/dsemu/drastic/ui/AddUser;Landroid/app/Activity;)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    invoke-direct {p0}, Lcom/dsemu/drastic/ui/AddUser;->ListUsers()V
+
+    iget-object v4, p0, Lcom/dsemu/drastic/ui/AddUser;->usrs:Ljava/util/List;
+
+    const/4 v3, 0x0
+
+    new-array v3, v3, [Lcom/dsemu/drastic/ui/AddUser$w;
+
+    invoke-interface {v4, v3}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, [Lcom/dsemu/drastic/ui/AddUser$w;
+
+    const p1, 0x7f0902b7
+
+    invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/widget/ListView;
+
+    new-instance v3, Lcom/dsemu/drastic/ui/AddUser$v;
+
+    invoke-direct {v3, p0, v4}, Lcom/dsemu/drastic/ui/AddUser$v;-><init>(Landroid/content/Context;[Lcom/dsemu/drastic/ui/AddUser$w;)V
+
+    invoke-virtual {p1, v3}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
+
+    new-instance v3, Lcom/dsemu/drastic/ui/AddUser$ItemClickListener;
+
+    invoke-direct {v3, p0}, Lcom/dsemu/drastic/ui/AddUser$ItemClickListener;-><init>(Lcom/dsemu/drastic/ui/AddUser;)V
+
+    invoke-virtual {p1, v3}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     return-void
 .end method

@@ -1888,6 +1888,7 @@
     <public type="id" name="tw_migratestatus" id="0x7f0902b4" />
     <public type="id" name="tw_user" id="0x7f0902b5" />
     <public type="id" name="tw_version" id="0x7f0902b6" />
+    <public type="id" name="user_view" id="0x7f0902b7" />
     <public type="id" name="unchecked" id="0x7f0902b9" />
     <public type="id" name="uniform" id="0x7f0902ba" />
     <public type="id" name="up" id="0x7f0902bb" />

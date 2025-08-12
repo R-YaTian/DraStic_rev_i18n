@@ -7025,7 +7025,7 @@
 
     invoke-direct {p0, v8, v7}, Lcom/dsemu/drastic/DraSticActivity;->X0(Ljava/lang/String;Z)V
 
-    goto :cond_12
+    move-object p1, v7
 
     :pass
     invoke-direct {p0}, Lcom/dsemu/drastic/DraSticActivity;->f0()V

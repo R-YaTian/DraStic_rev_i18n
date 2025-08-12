@@ -528,6 +528,7 @@
     <item type="id" name="tw_migratestatus" />
     <item type="id" name="tw_user" />
     <item type="id" name="tw_version" />
+    <item type="id" name="user_view" />
     <item type="id" name="unchecked" />
     <item type="id" name="up" />
     <item type="id" name="user_name" />
