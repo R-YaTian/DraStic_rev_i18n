@@ -11,8 +11,8 @@
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1">
         <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <EditText android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/directory_path_edittext" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="1" android:singleLine="true" android:layout_weight="0.75" android:imeOptions="actionGo" />
-            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_path_go" android:background="#ff333333" android:padding="0.0sp" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="6.0sp" android:layout_marginRight="3.0sp" android:layout_marginBottom="6dp" android:text="@string/str_fpick_go" android:layout_weight="0.125" />
-            <ImageButton android:id="@id/btn_folder_add" android:background="#ff333333" android:padding="0.0sp" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="3.0sp" android:layout_marginRight="6.0sp" android:layout_marginBottom="6dp" android:src="@drawable/ic_folder_add" android:layout_weight="0.125" />
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_path_go" android:background="@drawable/btn_bg" android:padding="0.0sp" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="6.0sp" android:layout_marginRight="3.0sp" android:layout_marginBottom="6dp" android:text="@string/str_fpick_go" android:layout_weight="0.125" />
+            <ImageButton android:id="@id/btn_folder_add" android:background="@drawable/btn_bg" android:padding="0.0sp" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="3.0sp" android:layout_marginRight="6.0sp" android:layout_marginBottom="6dp" android:src="@drawable/ic_folder_add" android:layout_weight="0.125" />
         </LinearLayout>
         <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
         <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
@@ -30,7 +30,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="#FFFFFFFF"
-                android:background="#FF333333"
+                android:background="@drawable/btn_bg"
                 android:visibility="visible" />
         </FrameLayout>
     </LinearLayout>

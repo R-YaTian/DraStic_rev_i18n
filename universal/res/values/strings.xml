@@ -151,6 +151,8 @@ Do you want to enable the setting now?"</string>
     <string name="str_hm_changelog">Changelog</string>
     <string name="str_hm_faq">FAQ</string>
     <string name="str_hm_instructions">Instructions</string>
+    <string name="str_bt_perm">DraStic can use the bluetooth permission to list known device names</string>
+    <string name="str_bt_noperm">Bluetooth device names will not be available</string>
     <string name="str_menu_close">Close</string>
     <string name="str_menu_continue">Continue</string>
     <string name="str_menu_del_confirm">Delete Save?</string>

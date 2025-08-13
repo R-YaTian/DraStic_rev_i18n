@@ -8,8 +8,8 @@
         </TableRow>
         <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
         <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
-            <EditText android:textStyle="bold" android:textColor="#ffffffee" android:id="@id/devicename" android:background="#ff555555" android:padding="8.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:ems="10" android:layout_weight="0.8" android:inputType="text" />
-            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_inputname_ok" android:background="#ff333333" android:padding="8.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0sp" android:layout_marginRight="6.0sp" android:text="@string/str_set_keyname_ok" android:layout_weight="0.2" />
+            <EditText android:textStyle="bold" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/devicename" android:padding="8.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:ems="10" android:layout_weight="0.8" android:inputType="text" />
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_inputname_ok" android:background="@drawable/btn_bg" android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:padding="8.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0sp" android:layout_marginRight="6.0sp" android:text="@string/str_set_keyname_ok" android:layout_weight="0.2" />
         </LinearLayout>
         <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
     </TableLayout>
