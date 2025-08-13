@@ -55,6 +55,16 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    const v3, 0x7f0f0137
+
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
     iget-object v1, p0, Lcom/dsemu/drastic/DraSticActivity$h;->f:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
@@ -70,8 +80,6 @@
     new-instance v2, Lcom/dsemu/drastic/DraSticActivity$h$a;
 
     invoke-direct {v2, p0}, Lcom/dsemu/drastic/DraSticActivity$h$a;-><init>(Lcom/dsemu/drastic/DraSticActivity$h;)V
-
-    const-string v3, "OK"
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

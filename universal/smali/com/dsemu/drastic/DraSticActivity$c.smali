@@ -325,6 +325,10 @@
 
     invoke-direct {v0, p1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
     new-array p7, p7, [Ljava/lang/Object;
 
     aput-object p8, p7, p4
@@ -335,7 +339,11 @@
 
     aput-object p8, p7, p5
 
-    const-string p5, "This user is using a legacy external directory %s which is no longer supported or accessible by DraStic. Please copy the contents of it to your current system DraStic/users/%s directory, and select \'Continue\' when done to complete the migration. If you do not want to copy the data, select \'Continue\' now to use the folder as-is."
+    const v2, 0x7f0f0029
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p5
 
     invoke-static {p5, p7}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -349,21 +357,25 @@
 
     move-result-object p4
 
+    move-object v4, p1
+
+    const v2, 0x7f0f00a3
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
     new-instance p5, Lcom/dsemu/drastic/b;
 
     move-object v1, p5
 
     move-object v2, p0
 
-    move-object v4, p1
-
     move-object v5, p2
 
     move v6, p6
 
     invoke-direct/range {v1 .. v6}, Lcom/dsemu/drastic/b;-><init>(Lcom/dsemu/drastic/DraSticActivity$c;Lcom/dsemu/drastic/filesystem/b;Landroid/app/Activity;[Lcom/dsemu/drastic/DraSticActivity$w;I)V
-
-    const-string p1, "Continue"
 
     invoke-virtual {p4, p1, p5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

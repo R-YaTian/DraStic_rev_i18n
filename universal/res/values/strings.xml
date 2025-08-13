@@ -44,6 +44,7 @@ Games"</string>
     <string name="str_add_user_button">Add</string>
     <string name="str_add_user_exists">User already exists</string>
     <string name="str_add_user_exists_case">Failed to create the user data folder, probably because a user with the same name already exists (usernames are case-insensitive).</string>
+    <string name="str_user_oldpathwarn" formatted="false">This user is using a legacy external directory %s which is no longer supported or accessible by DraStic. Please copy the contents of it to your current system directory\'s \'/users/%s\' directory, and select \'Continue\' when done to complete the migration. If you do not want to copy the data, select \'Continue\' now to use the folder as-is.</string>
     <string name="str_cm_abxy_A">A</string>
     <string name="str_cm_abxy_B">B</string>
     <string name="str_cm_abxy_X">X</string>

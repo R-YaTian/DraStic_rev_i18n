@@ -39,7 +39,7 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 5
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -52,6 +52,18 @@
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
+
+    const v2, 0x7f0f00a2
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    const v2, 0x7f0f009d
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
 
     const v2, 0x7f0f005f
 
@@ -73,8 +85,6 @@
 
     invoke-direct {v2, p0}, Lcom/dsemu/drastic/DraSticActivity$j$b;-><init>(Lcom/dsemu/drastic/DraSticActivity$j;)V
 
-    const-string v3, "Close"
-
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
@@ -83,7 +93,7 @@
 
     invoke-direct {v2, p0}, Lcom/dsemu/drastic/DraSticActivity$j$a;-><init>(Lcom/dsemu/drastic/DraSticActivity$j;)V
 
-    const-string v3, "Don\'t show again"
+    move-object v3, v4
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
