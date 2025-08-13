@@ -2250,6 +2250,7 @@
     <public type="string" name="str_hm_instructions" id="0x7f0f009a" />
     <public type="string" name="str_bt_perm" id="0x7f0f009b" />
     <public type="string" name="str_bt_noperm" id="0x7f0f009c" />
+    <public type="string" name="str_donot_showagain" id="0x7f0f009d" />
     <public type="string" name="str_menu_close" id="0x7f0f00a2" />
     <public type="string" name="str_menu_continue" id="0x7f0f00a3" />
     <public type="string" name="str_menu_del_confirm" id="0x7f0f00a5" />

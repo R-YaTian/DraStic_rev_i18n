@@ -119,6 +119,7 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_hm_instructions">介绍</string>
     <string name="str_bt_perm">DraStic 将通过蓝牙权限以列出已知设备的名称</string>
     <string name="str_bt_noperm">蓝牙设备名称将不可用</string>
+    <string name="str_donot_showagain">不再显示</string>
     <string name="str_menu_close">关闭</string>
     <string name="str_menu_continue">继续</string>
     <string name="str_menu_del_confirm">删除存档吗？</string>
