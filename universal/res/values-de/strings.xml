@@ -44,13 +44,13 @@ gespielt"</string>
     <string name="str_cm_abxy_X">X</string>
     <string name="str_cm_abxy_Y">Y</string>
     <string name="str_cm_button_enabled">aktiv</string>
-    <string name="str_cm_ctrlcancel">Abbrechen</string>
-    <string name="str_cm_ctrldefault">Standard</string>
+    <string name="str_common_cancel">Abbrechen</string>
+    <string name="str_common_default">Standard</string>
     <string name="str_cm_ctrlheader">Tasten-Layout</string>
-    <string name="str_cm_ctrlhide">Verstecken</string>
-    <string name="str_cm_ctrlok">Anwenden</string>
+    <string name="str_common_hide">Verstecken</string>
+    <string name="str_common_apply">Anwenden</string>
     <string name="str_cm_ctrlresize">Größe ändern</string>
-    <string name="str_cm_ctrlshow">Zeigen</string>
+    <string name="str_common_show">Zeigen</string>
     <string name="str_cm_defaultheader">Globales Layout</string>
     <string name="str_cm_deleteforgame">Spiele-spezifisches Layout löschen</string>
     <string name="str_cm_editbg">Wähle Hintergrundbild</string>
@@ -58,7 +58,7 @@ gespielt"</string>
     <string name="str_cm_editdefault">Standard bearbeiten</string>
     <string name="str_cm_editforgame">Spiel bearbeiten</string>
     <string name="str_cm_forgameheader">Spiele-spezifisches Layout</string>
-    <string name="str_cm_layoutmenu">Menü</string>
+    <string name="str_common_menu">Menü</string>
     <string name="str_cm_nobgfound">Keine Bilddateien gefunden in:</string>
     <string name="str_cm_removebg">Hintergrundbild entfernen</string>
     <string name="str_cm_resetdefault">Zurücksetzen</string>
@@ -109,7 +109,6 @@ Soll die Einstellunge jetzt aktiviert werden?"</string>
     <string name="str_gm_cheats_desc">Beschreibung</string>
     <string name="str_gm_cheats_disable_all">Alle deaktivieren</string>
     <string name="str_gm_cheats_edit">Cheat bearbeiten</string>
-    <string name="str_gm_cheats_menu">Menü</string>
     <string name="str_gm_cheats_menu_header">Cheat-Menü</string>
     <string name="str_gm_cheats_name">Name</string>
     <string name="str_gm_cheats_ondisabled">Dieser Ordner erlaubt nicht mehr als einen Cheat gleichzeitig. Die anderen wurden deaktiviert.</string>
@@ -261,7 +260,6 @@ Die Taste ist in den Menüs weiterhin aktiv. (Wenn deaktiviert, kann die Taste v
     <string name="str_set_hdr_video_game">Video-Einstellungen (Spiel)</string>
     <string name="str_set_hires">Hochauflösendes 3D Rendering</string>
     <string name="str_set_ignorecardlimit">Gamecard-Limit ignorieren</string>
-    <string name="str_set_key_cancel">Abbrechen</string>
     <string name="str_set_key_clear">aufheben</string>
     <string name="str_set_key_skip">Überspringen</string>
     <string name="str_set_keyconfig">Tasten-Zuordnung bearbeiten</string>

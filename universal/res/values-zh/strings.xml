@@ -17,13 +17,13 @@
     <string name="str_cm_abxy_X">X</string>
     <string name="str_cm_abxy_Y">Y</string>
     <string name="str_cm_button_enabled">启用</string>
-    <string name="str_cm_ctrlcancel">取消</string>
-    <string name="str_cm_ctrldefault">默认</string>
+    <string name="str_common_cancel">取消</string>
+    <string name="str_common_default">默认</string>
     <string name="str_cm_ctrlheader">虚拟按键布局</string>
-    <string name="str_cm_ctrlhide">隐藏</string>
-    <string name="str_cm_ctrlok">应用</string>
+    <string name="str_common_hide">隐藏</string>
+    <string name="str_common_apply">应用</string>
     <string name="str_cm_ctrlresize">调整大小</string>
-    <string name="str_cm_ctrlshow">显示</string>
+    <string name="str_common_show">显示</string>
     <string name="str_cm_defaultheader">全局布局</string>
     <string name="str_cm_deleteforgame">删除游戏专用布局</string>
     <string name="str_cm_editbg">设置背景图</string>
@@ -31,7 +31,7 @@
     <string name="str_cm_editdefault">编辑全局布局</string>
     <string name="str_cm_editforgame">编辑当前布局</string>
     <string name="str_cm_forgameheader">游戏专用布局</string>
-    <string name="str_cm_layoutmenu">菜单</string>
+    <string name="str_common_menu">菜单</string>
     <string name="str_cm_nobgfound">未找到图片:</string>
     <string name="str_cm_removebg">移除背景</string>
     <string name="str_cm_resetdefault">重设回默认</string>
@@ -84,7 +84,6 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_gm_cheats_desc">描述</string>
     <string name="str_gm_cheats_disable_all">全部关闭</string>
     <string name="str_gm_cheats_edit">编辑金手指</string>
-    <string name="str_gm_cheats_menu">菜单</string>
     <string name="str_gm_cheats_menu_header">自定义金手指菜单</string>
     <string name="str_gm_cheats_name">名称</string>
     <string name="str_gm_cheats_ondisabled">这个文件夹中的金手指只能同时开启一个。请勿再开启其他的!</string>
@@ -253,7 +252,6 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_hdr_video_game">视频(游戏)</string>
     <string name="str_set_hires">高分辨率 3D 渲染</string>
     <string name="str_set_ignorecardlimit">忽略游戏卡带限制</string>
-    <string name="str_set_key_cancel">取消</string>
     <string name="str_set_key_clear">取消映射</string>
     <string name="str_set_key_skip">跳过</string>
     <string name="str_set_keyconfig">配置按键映射</string>

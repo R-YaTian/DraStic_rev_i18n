@@ -50,13 +50,13 @@ Games"</string>
     <string name="str_cm_abxy_X">X</string>
     <string name="str_cm_abxy_Y">Y</string>
     <string name="str_cm_button_enabled">enabled</string>
-    <string name="str_cm_ctrlcancel">Cancel</string>
-    <string name="str_cm_ctrldefault">Default</string>
+    <string name="str_common_cancel">Cancel</string>
+    <string name="str_common_default">Default</string>
     <string name="str_cm_ctrlheader">Controller Layout</string>
-    <string name="str_cm_ctrlhide">Hide</string>
-    <string name="str_cm_ctrlok">Apply</string>
+    <string name="str_common_hide">Hide</string>
+    <string name="str_common_apply">Apply</string>
     <string name="str_cm_ctrlresize">Resize</string>
-    <string name="str_cm_ctrlshow">Show</string>
+    <string name="str_common_show">Show</string>
     <string name="str_cm_defaultheader">Global Layout</string>
     <string name="str_cm_deleteforgame">Delete Game-specific Layout</string>
     <string name="str_cm_editbg">Set background image</string>
@@ -64,7 +64,7 @@ Games"</string>
     <string name="str_cm_editdefault">Edit Global</string>
     <string name="str_cm_editforgame">Edit Game</string>
     <string name="str_cm_forgameheader">Game-specific Layout</string>
-    <string name="str_cm_layoutmenu">Menu</string>
+    <string name="str_common_menu">Menu</string>
     <string name="str_cm_nobgfound">No image files found in:</string>
     <string name="str_cm_removebg">Remove image</string>
     <string name="str_cm_resetdefault">Reset to Default</string>
@@ -118,7 +118,6 @@ Do you want to enable the setting now?"</string>
     <string name="str_gm_cheats_desc">Description</string>
     <string name="str_gm_cheats_disable_all">Disable All</string>
     <string name="str_gm_cheats_edit">Edit Cheat</string>
-    <string name="str_gm_cheats_menu">Menu</string>
     <string name="str_gm_cheats_menu_header">Custom Cheat Menu</string>
     <string name="str_gm_cheats_name">Name</string>
     <string name="str_gm_cheats_ondisabled">This folder only allows enabling one cheat at a time. The other cheats were disabled</string>
@@ -288,7 +287,6 @@ The button will still be active in the menus. (If disabled, the button can be us
     <string name="str_set_hdr_video_game">Video Settings (Game)</string>
     <string name="str_set_hires">High-Resolution 3D Rendering</string>
     <string name="str_set_ignorecardlimit">Ignore Gamecard Limit</string>
-    <string name="str_set_key_cancel">Cancel</string>
     <string name="str_set_key_clear">Unmap</string>
     <string name="str_set_key_skip">Skip</string>
     <string name="str_set_keyconfig">Configure Key Mapping</string>

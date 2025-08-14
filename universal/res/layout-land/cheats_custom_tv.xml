@@ -12,7 +12,7 @@
                     <TextView android:text="@string/str_ui_setcheatscustom" style="@style/drastic_option_hdr_text" />
                     <View android:layout_gravity="center_vertical" android:background="#ff666666" android:layout_width="1.0dip" android:layout_height="24.0dip" />
                     <ImageView android:layout_gravity="center_vertical" android:background="@drawable/btn_back_bg_tv" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/tv_special_action" android:contentDescription="@null" />
-                    <TextView android:textSize="12.0sp" android:textColor="#ffffffee" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/str_gm_cheats_menu" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffffffee" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/str_common_menu" />
                 </TableRow>
                 <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
                 <TextView android:textSize="10.0sp" android:textColor="#ffffffee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/str_gm_cheats_warning" />

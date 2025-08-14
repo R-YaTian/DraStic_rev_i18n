@@ -2158,13 +2158,13 @@
     <public type="string" name="str_cm_abxy_X" id="0x7f0f0034" />
     <public type="string" name="str_cm_abxy_Y" id="0x7f0f0035" />
     <public type="string" name="str_cm_button_enabled" id="0x7f0f0036" />
-    <public type="string" name="str_cm_ctrlcancel" id="0x7f0f0037" />
-    <public type="string" name="str_cm_ctrldefault" id="0x7f0f0038" />
+    <public type="string" name="str_common_cancel" id="0x7f0f0037" />
+    <public type="string" name="str_common_default" id="0x7f0f0038" />
     <public type="string" name="str_cm_ctrlheader" id="0x7f0f0039" />
-    <public type="string" name="str_cm_ctrlhide" id="0x7f0f003a" />
-    <public type="string" name="str_cm_ctrlok" id="0x7f0f003b" />
+    <public type="string" name="str_common_hide" id="0x7f0f003a" />
+    <public type="string" name="str_common_apply" id="0x7f0f003b" />
     <public type="string" name="str_cm_ctrlresize" id="0x7f0f003c" />
-    <public type="string" name="str_cm_ctrlshow" id="0x7f0f003d" />
+    <public type="string" name="str_common_show" id="0x7f0f003d" />
     <public type="string" name="str_cm_defaultheader" id="0x7f0f003e" />
     <public type="string" name="str_cm_deleteforgame" id="0x7f0f003f" />
     <public type="string" name="str_cm_editbg" id="0x7f0f0040" />
@@ -2172,7 +2172,7 @@
     <public type="string" name="str_cm_editdefault" id="0x7f0f0042" />
     <public type="string" name="str_cm_editforgame" id="0x7f0f0043" />
     <public type="string" name="str_cm_forgameheader" id="0x7f0f0044" />
-    <public type="string" name="str_cm_layoutmenu" id="0x7f0f0045" />
+    <public type="string" name="str_common_menu" id="0x7f0f0045" />
     <public type="string" name="str_cm_nobgfound" id="0x7f0f0046" />
     <public type="string" name="str_cm_removebg" id="0x7f0f0047" />
     <public type="string" name="str_cm_resetdefault" id="0x7f0f0048" />
@@ -2216,7 +2216,6 @@
     <public type="string" name="str_gm_cheats_desc" id="0x7f0f0073" />
     <public type="string" name="str_gm_cheats_disable_all" id="0x7f0f0074" />
     <public type="string" name="str_gm_cheats_edit" id="0x7f0f0075" />
-    <public type="string" name="str_gm_cheats_menu" id="0x7f0f0076" />
     <public type="string" name="str_gm_cheats_menu_header" id="0x7f0f0077" />
     <public type="string" name="str_gm_cheats_name" id="0x7f0f0078" />
     <public type="string" name="str_gm_cheats_ondisabled" id="0x7f0f0079" />
@@ -2375,7 +2374,6 @@
     <public type="string" name="str_set_hdr_video_game" id="0x7f0f0125" />
     <public type="string" name="str_set_hires" id="0x7f0f0126" />
     <public type="string" name="str_set_ignorecardlimit" id="0x7f0f0127" />
-    <public type="string" name="str_set_key_cancel" id="0x7f0f0128" />
     <public type="string" name="str_set_key_clear" id="0x7f0f0129" />
     <public type="string" name="str_set_key_skip" id="0x7f0f012a" />
     <public type="string" name="str_set_keyconfig" id="0x7f0f012b" />

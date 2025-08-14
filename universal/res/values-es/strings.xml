@@ -42,13 +42,13 @@
     <string name="str_cm_abxy_X">X</string>
     <string name="str_cm_abxy_Y">Y</string>
     <string name="str_cm_button_enabled">activado</string>
-    <string name="str_cm_ctrlcancel">Cancelar</string>
-    <string name="str_cm_ctrldefault">Predeterminado</string>
+    <string name="str_common_cancel">Cancelar</string>
+    <string name="str_common_default">Predeterminado</string>
     <string name="str_cm_ctrlheader">Disposición del controlador</string>
-    <string name="str_cm_ctrlhide">Ocultar</string>
-    <string name="str_cm_ctrlok">Aplicar</string>
+    <string name="str_common_hide">Ocultar</string>
+    <string name="str_common_apply">Aplicar</string>
     <string name="str_cm_ctrlresize">Redimensionar</string>
-    <string name="str_cm_ctrlshow">Mostrar</string>
+    <string name="str_common_show">Mostrar</string>
     <string name="str_cm_defaultheader">Disposición global</string>
     <string name="str_cm_deleteforgame">Borrar disposición específica de juego</string>
     <string name="str_cm_editbg">Establecer imagen de fondo</string>
@@ -56,7 +56,7 @@
     <string name="str_cm_editdefault">Editar disposición global</string>
     <string name="str_cm_editforgame">Editar disposición de juego</string>
     <string name="str_cm_forgameheader">Disposición específica de juego</string>
-    <string name="str_cm_layoutmenu">Menú</string>
+    <string name="str_common_menu">Menú</string>
     <string name="str_cm_nobgfound">No se encontró ningún archivo de imagen en:</string>
     <string name="str_cm_removebg">Eliminar imagen</string>
     <string name="str_cm_resetdefault">Reiniciar al ajuste predeterminado</string>
@@ -98,7 +98,6 @@
     <string name="str_gm_cheats_desc">Descripción</string>
     <string name="str_gm_cheats_disable_all">Desactivar todos</string>
     <string name="str_gm_cheats_edit">Editar truco</string>
-    <string name="str_gm_cheats_menu">Menú</string>
     <string name="str_gm_cheats_menu_header">Menú de trucos personalizado</string>
     <string name="str_gm_cheats_name">Nombre</string>
     <string name="str_gm_cheats_ondisabled">Esta carpeta solamente permite activar un truco a la vez. Los otros trucos fueron desactivados.</string>
@@ -247,7 +246,6 @@
     <string name="str_set_hdr_video_game">Ajustes de vídeo (por juego)</string>
     <string name="str_set_hires">Renderizado 3D de alta resolución</string>
     <string name="str_set_ignorecardlimit">Ignorar el límite de la tarjeta de juego</string>
-    <string name="str_set_key_cancel">Cancelar</string>
     <string name="str_set_key_clear">Desestructurar</string>
     <string name="str_set_key_skip">Omitir</string>
     <string name="str_set_keyconfig">Configurar estructurado de botones</string>

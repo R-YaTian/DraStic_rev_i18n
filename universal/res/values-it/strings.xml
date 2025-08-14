@@ -44,13 +44,13 @@ Recenti"</string>
     <string name="str_cm_abxy_X">X</string>
     <string name="str_cm_abxy_Y">Y</string>
     <string name="str_cm_button_enabled">abilitato</string>
-    <string name="str_cm_ctrlcancel">Annulla</string>
-    <string name="str_cm_ctrldefault">Predefinito</string>
+    <string name="str_common_cancel">Annulla</string>
+    <string name="str_common_default">Predefinito</string>
     <string name="str_cm_ctrlheader">Layout del Controller</string>
-    <string name="str_cm_ctrlhide">Nascondi</string>
-    <string name="str_cm_ctrlok">Applica</string>
+    <string name="str_common_hide">Nascondi</string>
+    <string name="str_common_apply">Applica</string>
     <string name="str_cm_ctrlresize">Ridimensiona</string>
-    <string name="str_cm_ctrlshow">Mostra</string>
+    <string name="str_common_show">Mostra</string>
     <string name="str_cm_defaultheader">Layout Globale</string>
     <string name="str_cm_deleteforgame">Elimina Layout Specifico per Gioco</string>
     <string name="str_cm_editbg">Imposta sfondo</string>
@@ -58,7 +58,7 @@ Recenti"</string>
     <string name="str_cm_editdefault">Modifica Globale</string>
     <string name="str_cm_editforgame">Modifica per il Gioco</string>
     <string name="str_cm_forgameheader">Layout Specifico per Gioco</string>
-    <string name="str_cm_layoutmenu">Menu</string>
+    <string name="str_common_menu">Menu</string>
     <string name="str_cm_nobgfound">Nessuna immagine trovata in:</string>
     <string name="str_cm_removebg">Rimuovi immagine</string>
     <string name="str_cm_resetdefault">Predefinito</string>
@@ -110,7 +110,6 @@ Vuoi attivare quest'opzione ora?"</string>
     <string name="str_gm_cheats_desc">Descrizione</string>
     <string name="str_gm_cheats_disable_all">Disabilita Tutti</string>
     <string name="str_gm_cheats_edit">Modifica Trucco</string>
-    <string name="str_gm_cheats_menu">Menu</string>
     <string name="str_gm_cheats_menu_header">Menu Trucchi Personalizzati</string>
     <string name="str_gm_cheats_name">Nome</string>
     <string name="str_gm_cheats_ondisabled">"Questa cartella consente solo l'abilitazione di un trucco alla volta . Gli altri trucchi sono stati disabilitati"</string>
@@ -265,7 +264,6 @@ Il bottone continuerà a funzionare nei menu. (Se disattivato, il pulsante può 
     <string name="str_set_hdr_video_game">Impostazioni Video (Gioco)</string>
     <string name="str_set_hires">Rendering 3D ad Alta-Risoluzione</string>
     <string name="str_set_ignorecardlimit">Ignora Limite della Cartuccia</string>
-    <string name="str_set_key_cancel">Annulla</string>
     <string name="str_set_key_clear">Demappa</string>
     <string name="str_set_key_skip">Salta</string>
     <string name="str_set_keyconfig">Configura la Mappatura dei Tasti</string>
