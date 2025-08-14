@@ -43,7 +43,7 @@ Recenti"</string>
     <string name="str_cm_abxy_B">B</string>
     <string name="str_cm_abxy_X">X</string>
     <string name="str_cm_abxy_Y">Y</string>
-    <string name="str_cm_button_enabled">abilitato</string>
+    <string name="str_common_enabled">abilitato</string>
     <string name="str_common_cancel">Annulla</string>
     <string name="str_common_default">Predefinito</string>
     <string name="str_cm_ctrlheader">Layout del Controller</string>
@@ -62,7 +62,7 @@ Recenti"</string>
     <string name="str_cm_nobgfound">Nessuna immagine trovata in:</string>
     <string name="str_cm_removebg">Rimuovi immagine</string>
     <string name="str_cm_resetdefault">Predefinito</string>
-    <string name="str_cm_resizeok">Indietro</string>
+    <string name="str_common_back">Indietro</string>
     <string name="str_cm_resizescreen">Ridimensiona Schermo</string>
     <string name="str_cm_savedefault">Salva come Layout Globale</string>
     <string name="str_cm_saveforgame">Salva per il Gioco Attuale</string>
@@ -123,18 +123,14 @@ Vuoi attivare quest'opzione ora?"</string>
     <string name="str_gm_exit">Esci</string>
     <string name="str_gm_hdr_game">Gioco</string>
     <string name="str_gm_hdr_misc">Altro</string>
-    <string name="str_gm_hdr_settings">Impostazioni</string>
-    <string name="str_gm_help">Aiuto</string>
     <string name="str_gm_layout">Modifica Schermi e Pad Virtuale</string>
     <string name="str_gm_layout_hdr">Seleziona Layout da modificare</string>
     <string name="str_gm_layout_select">Seleziona Layout dello Schermo</string>
     <string name="str_gm_layout_tv">Modifica Layout dello Schermo</string>
-    <string name="str_gm_load">Carica-Rapido</string>
     <string name="str_gm_loadstate">Carica Salv. di Stato</string>
     <string name="str_gm_managestate">Gestisci Salv. di Stato</string>
     <string name="str_gm_reset">Resetta il Gioco</string>
     <string name="str_gm_save">Salva-Rapido</string>
-    <string name="str_gm_savestate">Salva Salv. di Stato</string>
     <string name="str_gm_savestate_warning">Si consiglia vivamente di non fare affidamento esclusivamente sui Salv. di Stato. Si prega di fare un Salv. di Gioco di tanto in tanto. Se un Salv. di Stato si danneggia , o viene salvato nel momento sbagliato , si potrebbero perdere i progressi attuali.</string>
     <string name="str_gm_settings">Opzioni</string>
     <string name="str_gm_shader_error" formatted="false">Impossibile caricare il filtro %FILTER% . Using fallback.</string>
@@ -146,49 +142,35 @@ Vuoi attivare quest'opzione ora?"</string>
     <string name="str_menu_continue">Continua</string>
     <string name="str_menu_del_confirm">Eliminare il salvataggio?</string>
     <string name="str_menu_delsysfolder">Vuoi eliminare i file sorgenti dopo il completamento della copia?</string>
-    <string name="str_menu_game">"Tocca un'icona per cambiare il Layout degli Schermi"</string>
-    <string name="str_menu_game_h2">"Tieni premuta un'icona per modificare il Layout dello Schermo/Controller"</string>
     <string name="str_menu_help">Aiuto</string>
     <string name="str_menu_iconcache">Aggiornamento della Cache delle Icone</string>
-    <string name="str_menu_load">Carica</string>
     <string name="str_menu_loadorresume">"Vuoi riprendere dal tuo ultimo salvataggio?
 Scegli 'No' per iniziare una nuova partita"</string>
     <string name="str_menu_no">No</string>
     <string name="str_menu_pause">Menu di Gioco</string>
-    <string name="str_menu_reset">Resetta</string>
     <string name="str_menu_reset_confirm">"Resettare il gioco?
 I progressi attuali verranno persi."</string>
     <string name="str_menu_rootmoved">La Cartella Dati di DraStic è impostata su:</string>
     <string name="str_menu_saving_busy">Azione di Salvataggio ancora in corso</string>
-    <string name="str_menu_settings">Impostazioni</string>
     <string name="str_menu_shortcut">Creare una scorciatoia nella Home?</string>
-    <string name="str_menu_stateheader">"Seleziona uno slot e tocca l'icona Carica o Salva, per caricare/salvare il gioco."</string>
-    <string name="str_menu_states">Carica/Salva</string>
-    <string name="str_menu_wo_confirm">Sovrascrivere il salvataggio?</string>
     <string name="str_menu_yes">Sì</string>
     <string name="str_rom_continue">"Continua dall'ultimo Salvataggio"</string>
-    <string name="str_rom_delete">Eliminare il Gioco permanentemente?</string>
     <string name="str_rom_loadstate">Continua con un altro Salvataggio</string>
     <string name="str_rom_newgame">Avvia Gioco</string>
     <string name="str_rom_shortcut">Crea Collegamento</string>
-    <string name="str_set_altmenu">Usa vecchio Menu Principale</string>
     <string name="str_set_analogtouch">Right Stick Mode</string>
     <string name="str_set_analogtouch_title">Right Stick Mode</string>
     <string name="str_set_analogtriggers">Enable Analog Triggers</string>
     <string name="str_set_autofirespeed">Velocità Fuoco-Rapido</string>
-    <string name="str_set_autoload">Caricamento Autocatico</string>
-    <string name="str_set_autoload_hint">"Carica automaticamente l'ultimo salvataggio, quando si avvia un gioco dalla finestra di dialogo selezione rapida."</string>
     <string name="str_set_autoresume">"Continua l'ultimo salvataggio quando si avvia da collegamento"</string>
     <string name="str_set_autorotate">Rotazione Layout Orizzontale</string>
     <string name="str_set_autosave">Auto-Salvataggio</string>
-    <string name="str_set_autosave_hint">"Quando l'app è in sospensione o lasci un gioco."</string>
     <string name="str_set_autotrim">Taglio Automatico della ROM</string>
     <string name="str_set_backupinsave">Archivia Salv. di Gioco nei Salv. di Stato</string>
     <string name="str_set_backupinsave_warn">"Attenzione: Disattivare quest'opzione può causare la de-sincrinizzazione dei Salv. di Stato e dei Salv. di Gioco, portando al danneggiamento dei salvataggi.
 Si prega di riavviare DraStic affinché le modifiche abbiano effetto."</string>
     <string name="str_set_bday">Compleanno</string>
     <string name="str_set_bday_hint">Mese/Giorno</string>
-    <string name="str_set_bday_ok">Imposta</string>
     <string name="str_set_btn_advanced">Avanzate</string>
     <string name="str_set_btn_audio">Audio</string>
     <string name="str_set_btn_controller">Controller Esterno</string>
@@ -201,7 +183,6 @@ Si prega di riavviare DraStic affinché le modifiche abbiano effetto."</string>
     <string name="str_set_cheats">Abilita Trucchi</string>
     <string name="str_set_color">Colore Preferito</string>
     <string name="str_set_confirm">Esci/Resetta richieda una Conferma</string>
-    <string name="str_set_confirm_hint">Quando abilitato, è necessario dare conferma per uscire o resettare un gioco, per prevenire la perdita accidentale dei progressi.</string>
     <string name="str_set_ctrlalpha">Opacità del Controller</string>
     <string name="str_set_ctrlskin">Skin</string>
     <string name="str_set_custom_clock">Data di Sistema Personalizzata</string>
@@ -227,7 +208,6 @@ Il bottone continuerà a funzionare nei menu. (Se disattivato, il pulsante può 
     <string name="str_set_extrafunc_1">Bottone Speciale I</string>
     <string name="str_set_extrafunc_2">Bottone Speciale II</string>
     <string name="str_set_extrafunc_3">Bottone Speciale III</string>
-    <string name="str_set_ffwd">Avanti-Veloce</string>
     <string name="str_set_ffwd_150">150%</string>
     <string name="str_set_ffwd_200">200%</string>
     <string name="str_set_ffwd_300">300%</string>
@@ -237,7 +217,6 @@ Il bottone continuerà a funzionare nei menu. (Se disattivato, il pulsante può 
     <string name="str_set_ffwd_speed">Avanti-Veloce Massima Velocità</string>
     <string name="str_set_ffwd_unlimited">Illimitato</string>
     <string name="str_set_ffwdtoggle">Fast-Forward Toggle Mode</string>
-    <string name="str_set_fh2x">HQ2X</string>
     <string name="str_set_filter">Filtro</string>
     <string name="str_set_fixmainscreen">Mantieni lo schermo principale sullo schermo superiore</string>
     <string name="str_set_flinear">Linear</string>

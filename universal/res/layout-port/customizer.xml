@@ -16,11 +16,11 @@
     </LinearLayout>
     <LinearLayout android:orientation="horizontal" android:id="@id/custom_zoombar" android:background="#00000000" android:padding="4.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_alignParentBottom="true">
         <View android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="0.8" />
-        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/btn_resizeok" android:background="#ff333333" android:padding="4.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0sp" android:layout_marginRight="8.0sp" android:text="@string/str_cm_resizeok" android:layout_weight="0.2" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/btn_resizeok" android:background="#ff333333" android:padding="4.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0sp" android:layout_marginRight="8.0sp" android:text="@string/str_common_back" android:layout_weight="0.2" />
     </LinearLayout>
     <LinearLayout android:orientation="horizontal" android:id="@id/custom_zoombar_ctrl" android:background="#cc303030" android:padding="4.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_alignParentBottom="true">
         <SeekBar android:id="@id/sb_screensize" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="1000" android:progress="0" android:layout_weight="0.75" />
-        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/btn_resizeok_ctrl" android:background="#ff333333" android:padding="4.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0sp" android:layout_marginRight="8.0sp" android:text="@string/str_cm_resizeok" android:layout_weight="0.25" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/btn_resizeok_ctrl" android:background="#ff333333" android:padding="4.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0sp" android:layout_marginRight="8.0sp" android:text="@string/str_common_back" android:layout_weight="0.25" />
     </LinearLayout>
     <LinearLayout android:orientation="horizontal" android:id="@id/custom_tools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
         <LinearLayout android:orientation="vertical" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content">
@@ -84,6 +84,6 @@
         <CheckBox android:id="@id/editor_abxy_y" android:text="@string/str_cm_abxy_Y" style="@style/drastic_checkbox_editor" />
     </LinearLayout>
     <LinearLayout android:orientation="vertical" android:id="@id/custom_enable_panel" android:background="#88333333" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
-        <CheckBox android:id="@id/editor_button_enabled" android:text="@string/str_cm_button_enabled" style="@style/drastic_checkbox_editor" />
+        <CheckBox android:id="@id/editor_button_enabled" android:text="@string/str_common_enabled" style="@style/drastic_checkbox_editor" />
     </LinearLayout>
 </RelativeLayout>

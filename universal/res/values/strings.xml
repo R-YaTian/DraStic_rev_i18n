@@ -49,7 +49,7 @@ Games"</string>
     <string name="str_cm_abxy_B">B</string>
     <string name="str_cm_abxy_X">X</string>
     <string name="str_cm_abxy_Y">Y</string>
-    <string name="str_cm_button_enabled">enabled</string>
+    <string name="str_common_enabled">enabled</string>
     <string name="str_common_cancel">Cancel</string>
     <string name="str_common_default">Default</string>
     <string name="str_cm_ctrlheader">Controller Layout</string>
@@ -68,7 +68,7 @@ Games"</string>
     <string name="str_cm_nobgfound">No image files found in:</string>
     <string name="str_cm_removebg">Remove image</string>
     <string name="str_cm_resetdefault">Reset to Default</string>
-    <string name="str_cm_resizeok">Back</string>
+    <string name="str_common_back">Back</string>
     <string name="str_cm_resizescreen">Resize Screen</string>
     <string name="str_cm_savedefault">Save as global Layout</string>
     <string name="str_cm_saveforgame">Save for current Game</string>
@@ -131,18 +131,14 @@ Do you want to enable the setting now?"</string>
     <string name="str_gm_exit">Quit</string>
     <string name="str_gm_hdr_game">Game</string>
     <string name="str_gm_hdr_misc">More</string>
-    <string name="str_gm_hdr_settings">Settings</string>
-    <string name="str_gm_help">Help</string>
     <string name="str_gm_layout">Edit Screens and Virtual Pad</string>
     <string name="str_gm_layout_hdr">Select Layout for Editing</string>
     <string name="str_gm_layout_select">Select Screen Layout</string>
     <string name="str_gm_layout_tv">Edit Screen Layout</string>
-    <string name="str_gm_load">Quick-Load</string>
     <string name="str_gm_loadstate">Load Savestate</string>
     <string name="str_gm_managestate">Manage Savestates</string>
     <string name="str_gm_reset">Reset Game</string>
     <string name="str_gm_save">Quick-Save</string>
-    <string name="str_gm_savestate">Save Savestate</string>
     <string name="str_gm_savestate_warning">We strongly recommend to not rely on savestates exclusively. Please also make in-game saves from time to time. If a savestate is corrupted, or saved at the wrong time, you might lose your current progress.</string>
     <string name="str_gm_settings">Options</string>
     <string name="str_gm_shader_error" formatted="false">Filter %FILTER% could not be loaded. Using fallback.</string>
@@ -158,25 +154,17 @@ Do you want to enable the setting now?"</string>
     <string name="str_menu_continue">Continue</string>
     <string name="str_menu_del_confirm">Delete Save?</string>
     <string name="str_menu_delsysfolder">Do you want to delete the source data after it was copied successfully?</string>
-    <string name="str_menu_game">Tap an Icon to change the Screen Layout</string>
-    <string name="str_menu_game_h2">Long-click an Icon to edit the Screen/Controller Layout</string>
     <string name="str_menu_help">Help</string>
     <string name="str_menu_iconcache">Updating Icon Cache</string>
-    <string name="str_menu_load">Load</string>
     <string name="str_menu_loadorresume">"Do you want to resume your last Save?
 Choose 'No' to start a new Game"</string>
     <string name="str_menu_no">No</string>
     <string name="str_menu_pause">Game Menu</string>
-    <string name="str_menu_reset">Reset</string>
     <string name="str_menu_reset_confirm">"Reset Game?
 Current progress will be lost."</string>
     <string name="str_menu_rootmoved">"DraStic's Data Directory set to:"</string>
     <string name="str_menu_saving_busy">Saving still in progress</string>
-    <string name="str_menu_settings">Settings</string>
     <string name="str_menu_shortcut">Install shortcut to your Desktop?</string>
-    <string name="str_menu_stateheader">Select a slot and tap the Load or Save icon, to load/save your game.</string>
-    <string name="str_menu_states">Load/Save</string>
-    <string name="str_menu_wo_confirm">Overwrite Save?</string>
     <string name="str_menu_yes">Yes</string>
     <string name="str_menu_add_saf_dir">Add Scoped Storage Directory</string>
     <string name="str_menu_add_path">Add Folder Path</string>
@@ -186,30 +174,23 @@ Current progress will be lost."</string>
     <string name="str_perm_stor_error">DraStic needs the storage permission to use the default external system directory</string>
     <string name="str_perm_stor_rationale">DraStic needs to access external storage to load ROMs and save its data. The app cannot continue without this permission.</string>
     <string name="str_rom_continue">Continue last Save</string>
-    <string name="str_rom_delete">Delete Game permanently?</string>
     <string name="str_rom_loadstate">Continue other Save</string>
     <string name="str_rom_newgame">Start Game</string>
     <string name="str_rom_shortcut">Create Shortcut</string>
-    <string name="str_set_altmenu">Use old Main-Menu</string>
     <string name="str_set_analogtouch">Right Stick Mode</string>
     <string name="str_set_analogtouch_title">Right Stick Mode</string>
     <string name="str_set_analogtriggers">Enable Analog Triggers</string>
     <string name="str_set_autofirespeed">Rapid-Fire Speed</string>
     <string name="str_set_sysdir">System Directory</string>
-    <string name="str_set_autoload">Autoload</string>
-    <string name="str_set_autoload_hint">Automatically load the latest save, when starting a game from the quick selection dialog.</string>
     <string name="str_set_autoresume">Resume last save when starting from shortcut</string>
     <string name="str_set_autorotate">Landscape Layout Rotation</string>
     <string name="str_set_autosave">Autosave</string>
-    <string name="str_set_autosave_hint">When the app is suspended or a game is left.</string>
     <string name="str_set_autotrim">Auto-Trim ROM</string>
     <string name="str_set_backupinsave">Store in-game Saves in Savestates</string>
     <string name="str_set_backupinsave_warn">"Warning: Turning off this option can cause savestates and in-game saves to go out of sync, leading to savegame corruption.
 Please restart DraStic for the change to take effect."</string>
     <string name="str_set_bday">Birthday</string>
     <string name="str_set_bday_hint">Month/Day</string>
-    <string name="str_set_bday_ok">Set</string>
-    <string name="str_set_blend">Interframe Blending</string>
     <string name="str_set_btn_advanced">Advanced</string>
     <string name="str_set_btn_audio">Audio</string>
     <string name="str_set_btn_controller">External Controller</string>
@@ -222,7 +203,6 @@ Please restart DraStic for the change to take effect."</string>
     <string name="str_set_cheats">Enable Cheats</string>
     <string name="str_set_color">Favorite Color</string>
     <string name="str_set_confirm">Quit/Reset needs Confirmation</string>
-    <string name="str_set_confirm_hint">When enabled, you need to confirm quitting or resetting a game, to avoid accidental loss of progress.</string>
     <string name="str_set_cpu_load_value">Framerate Stabilizer</string>
     <string name="str_set_ctrlalpha">Controller Opacity</string>
     <string name="str_set_ctrlskin">Skin</string>
@@ -249,7 +229,6 @@ The button will still be active in the menus. (If disabled, the button can be us
     <string name="str_set_extrafunc_1">Special Button I</string>
     <string name="str_set_extrafunc_2">Special Button II</string>
     <string name="str_set_extrafunc_3">Special Button III</string>
-    <string name="str_set_ffwd">Fast Forward</string>
     <string name="str_set_ffwd_150">150%</string>
     <string name="str_set_ffwd_200">200%</string>
     <string name="str_set_ffwd_300">300%</string>
@@ -259,7 +238,6 @@ The button will still be active in the menus. (If disabled, the button can be us
     <string name="str_set_ffwd_speed">Fast-Forward maximum Speed</string>
     <string name="str_set_ffwd_unlimited">Unlimited</string>
     <string name="str_set_ffwdtoggle">Fast-Forward Toggle Mode</string>
-    <string name="str_set_fh2x">HQ2X</string>
     <string name="str_set_filter">Filter</string>
     <string name="str_set_fixmainscreen">Keep Main Screen on Top Screen</string>
     <string name="str_set_flinear">Linear</string>

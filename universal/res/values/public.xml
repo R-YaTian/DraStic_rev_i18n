@@ -2157,7 +2157,7 @@
     <public type="string" name="str_cm_abxy_B" id="0x7f0f0033" />
     <public type="string" name="str_cm_abxy_X" id="0x7f0f0034" />
     <public type="string" name="str_cm_abxy_Y" id="0x7f0f0035" />
-    <public type="string" name="str_cm_button_enabled" id="0x7f0f0036" />
+    <public type="string" name="str_common_enabled" id="0x7f0f0036" />
     <public type="string" name="str_common_cancel" id="0x7f0f0037" />
     <public type="string" name="str_common_default" id="0x7f0f0038" />
     <public type="string" name="str_cm_ctrlheader" id="0x7f0f0039" />
@@ -2176,7 +2176,7 @@
     <public type="string" name="str_cm_nobgfound" id="0x7f0f0046" />
     <public type="string" name="str_cm_removebg" id="0x7f0f0047" />
     <public type="string" name="str_cm_resetdefault" id="0x7f0f0048" />
-    <public type="string" name="str_cm_resizeok" id="0x7f0f0049" />
+    <public type="string" name="str_common_back" id="0x7f0f0049" />
     <public type="string" name="str_cm_resizescreen" id="0x7f0f004a" />
     <public type="string" name="str_cm_savedefault" id="0x7f0f004b" />
     <public type="string" name="str_cm_saveforgame" id="0x7f0f004c" />
@@ -2229,18 +2229,14 @@
     <public type="string" name="str_gm_exit" id="0x7f0f0082" />
     <public type="string" name="str_gm_hdr_game" id="0x7f0f0083" />
     <public type="string" name="str_gm_hdr_misc" id="0x7f0f0084" />
-    <public type="string" name="str_gm_hdr_settings" id="0x7f0f0085" />
-    <public type="string" name="str_gm_help" id="0x7f0f0086" />
     <public type="string" name="str_gm_layout" id="0x7f0f0087" />
     <public type="string" name="str_gm_layout_hdr" id="0x7f0f0088" />
     <public type="string" name="str_gm_layout_select" id="0x7f0f0089" />
     <public type="string" name="str_gm_layout_tv" id="0x7f0f008a" />
-    <public type="string" name="str_gm_load" id="0x7f0f008b" />
     <public type="string" name="str_gm_loadstate" id="0x7f0f008c" />
     <public type="string" name="str_gm_managestate" id="0x7f0f008e" />
     <public type="string" name="str_gm_reset" id="0x7f0f0090" />
     <public type="string" name="str_gm_save" id="0x7f0f0091" />
-    <public type="string" name="str_gm_savestate" id="0x7f0f0092" />
     <public type="string" name="str_gm_savestate_warning" id="0x7f0f0093" />
     <public type="string" name="str_gm_settings" id="0x7f0f0094" />
     <public type="string" name="str_gm_shader_error" id="0x7f0f0095" />
@@ -2255,51 +2251,36 @@
     <public type="string" name="str_menu_continue" id="0x7f0f00a3" />
     <public type="string" name="str_menu_del_confirm" id="0x7f0f00a5" />
     <public type="string" name="str_menu_delsysfolder" id="0x7f0f00a7" />
-    <public type="string" name="str_menu_game" id="0x7f0f00a8" />
-    <public type="string" name="str_menu_game_h2" id="0x7f0f00a9" />
     <public type="string" name="str_menu_help" id="0x7f0f00aa" />
     <public type="string" name="str_menu_iconcache" id="0x7f0f00ac" />
-    <public type="string" name="str_menu_load" id="0x7f0f00ad" />
     <public type="string" name="str_menu_loadorresume" id="0x7f0f00ae" />
     <public type="string" name="str_menu_no" id="0x7f0f00b1" />
     <public type="string" name="str_menu_pause" id="0x7f0f00b3" />
-    <public type="string" name="str_menu_reset" id="0x7f0f00b6" />
     <public type="string" name="str_menu_reset_confirm" id="0x7f0f00b7" />
     <public type="string" name="str_menu_rootmoved" id="0x7f0f00b9" />
     <public type="string" name="str_menu_saving_busy" id="0x7f0f00bb" />
-    <public type="string" name="str_menu_settings" id="0x7f0f00bc" />
     <public type="string" name="str_menu_shortcut" id="0x7f0f00bd" />
-    <public type="string" name="str_menu_stateheader" id="0x7f0f00be" />
-    <public type="string" name="str_menu_states" id="0x7f0f00bf" />
-    <public type="string" name="str_menu_wo_confirm" id="0x7f0f00c0" />
     <public type="string" name="str_menu_yes" id="0x7f0f00c1" />
     <public type="string" name="str_perm_mic_rationale" id="0x7f0f00c2" />
     <public type="string" name="str_perm_mic_warn" id="0x7f0f00c3" />
     <public type="string" name="str_perm_stor_error" id="0x7f0f00c4" />
     <public type="string" name="str_perm_stor_rationale" id="0x7f0f00c5" />
     <public type="string" name="str_rom_continue" id="0x7f0f00c6" />
-    <public type="string" name="str_rom_delete" id="0x7f0f00c7" />
     <public type="string" name="str_rom_loadstate" id="0x7f0f00c8" />
     <public type="string" name="str_rom_newgame" id="0x7f0f00c9" />
     <public type="string" name="str_rom_shortcut" id="0x7f0f00ca" />
-    <public type="string" name="str_set_altmenu" id="0x7f0f00cb" />
     <public type="string" name="str_set_analogtouch" id="0x7f0f00cc" />
     <public type="string" name="str_set_analogtouch_title" id="0x7f0f00cd" />
     <public type="string" name="str_set_analogtriggers" id="0x7f0f00ce" />
     <public type="string" name="str_set_autofirespeed" id="0x7f0f00cf" />
-    <public type="string" name="str_set_autoload" id="0x7f0f00d0" />
-    <public type="string" name="str_set_autoload_hint" id="0x7f0f00d1" />
     <public type="string" name="str_set_autoresume" id="0x7f0f00d2" />
     <public type="string" name="str_set_autorotate" id="0x7f0f00d3" />
     <public type="string" name="str_set_autosave" id="0x7f0f00d4" />
-    <public type="string" name="str_set_autosave_hint" id="0x7f0f00d5" />
     <public type="string" name="str_set_autotrim" id="0x7f0f00d6" />
     <public type="string" name="str_set_backupinsave" id="0x7f0f00d7" />
     <public type="string" name="str_set_backupinsave_warn" id="0x7f0f00d8" />
     <public type="string" name="str_set_bday" id="0x7f0f00d9" />
     <public type="string" name="str_set_bday_hint" id="0x7f0f00da" />
-    <public type="string" name="str_set_bday_ok" id="0x7f0f00db" />
-    <public type="string" name="str_set_blend" id="0x7f0f00dc" />
     <public type="string" name="str_set_btn_advanced" id="0x7f0f00dd" />
     <public type="string" name="str_set_btn_audio" id="0x7f0f00de" />
     <public type="string" name="str_set_btn_controller" id="0x7f0f00df" />
@@ -2312,7 +2293,6 @@
     <public type="string" name="str_set_cheats" id="0x7f0f00e6" />
     <public type="string" name="str_set_color" id="0x7f0f00e7" />
     <public type="string" name="str_set_confirm" id="0x7f0f00e8" />
-    <public type="string" name="str_set_confirm_hint" id="0x7f0f00e9" />
     <public type="string" name="str_set_cpu_load_value" id="0x7f0f00ea" />
     <public type="string" name="str_set_ctrlalpha" id="0x7f0f00eb" />
     <public type="string" name="str_set_ctrlskin" id="0x7f0f00ec" />
@@ -2336,7 +2316,6 @@
     <public type="string" name="str_set_extrafunc_1" id="0x7f0f00ff" />
     <public type="string" name="str_set_extrafunc_2" id="0x7f0f0100" />
     <public type="string" name="str_set_extrafunc_3" id="0x7f0f0101" />
-    <public type="string" name="str_set_ffwd" id="0x7f0f0102" />
     <public type="string" name="str_set_ffwd_150" id="0x7f0f0103" />
     <public type="string" name="str_set_ffwd_200" id="0x7f0f0104" />
     <public type="string" name="str_set_ffwd_300" id="0x7f0f0105" />
@@ -2346,7 +2325,6 @@
     <public type="string" name="str_set_ffwd_speed" id="0x7f0f0109" />
     <public type="string" name="str_set_ffwd_unlimited" id="0x7f0f010a" />
     <public type="string" name="str_set_ffwdtoggle" id="0x7f0f010b" />
-    <public type="string" name="str_set_fh2x" id="0x7f0f010c" />
     <public type="string" name="str_set_filter" id="0x7f0f010d" />
     <public type="string" name="str_set_fixmainscreen" id="0x7f0f010e" />
     <public type="string" name="str_set_flinear" id="0x7f0f010f" />

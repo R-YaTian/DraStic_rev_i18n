@@ -43,7 +43,7 @@ gespielt"</string>
     <string name="str_cm_abxy_B">B</string>
     <string name="str_cm_abxy_X">X</string>
     <string name="str_cm_abxy_Y">Y</string>
-    <string name="str_cm_button_enabled">aktiv</string>
+    <string name="str_common_enabled">aktiv</string>
     <string name="str_common_cancel">Abbrechen</string>
     <string name="str_common_default">Standard</string>
     <string name="str_cm_ctrlheader">Tasten-Layout</string>
@@ -62,7 +62,7 @@ gespielt"</string>
     <string name="str_cm_nobgfound">Keine Bilddateien gefunden in:</string>
     <string name="str_cm_removebg">Hintergrundbild entfernen</string>
     <string name="str_cm_resetdefault">Zurücksetzen</string>
-    <string name="str_cm_resizeok">Zurück</string>
+    <string name="str_common_back">Zurück</string>
     <string name="str_cm_resizescreen">Bildschirm-Größe ändern</string>
     <string name="str_cm_savedefault">Global speichern</string>
     <string name="str_cm_saveforgame">Für Spiel speichern</string>
@@ -122,18 +122,14 @@ Soll die Einstellunge jetzt aktiviert werden?"</string>
     <string name="str_gm_exit">Beenden</string>
     <string name="str_gm_hdr_game">Spiel</string>
     <string name="str_gm_hdr_misc">Mehr</string>
-    <string name="str_gm_hdr_settings">Einstellungen</string>
-    <string name="str_gm_help">Hilfe</string>
     <string name="str_gm_layout">Bildschirme und Tasten bearbeiten</string>
     <string name="str_gm_layout_hdr">Wähle ein Layout</string>
     <string name="str_gm_layout_select">Bildschirm-Anordnung auswählen</string>
     <string name="str_gm_layout_tv">Bildschirm-Anordnung bearbeiten</string>
-    <string name="str_gm_load">Schnell-Laden</string>
     <string name="str_gm_loadstate">Savestate laden</string>
     <string name="str_gm_managestate">Savestates verwalten</string>
     <string name="str_gm_reset">Spiel zurücksetzen</string>
     <string name="str_gm_save">Schnell-Speichern</string>
-    <string name="str_gm_savestate">Savestate speichern</string>
     <string name="str_gm_savestate_warning">Wir empfehlen sich nicht nur auf Savestates zu verlassen. Bitte speichere öfter mal auch im Spiel selbst.Falls ein Savestate bechädigt wird, oder zur falschen Zeit gespeichert wird, kann der gesamte Fortschritt verloren gehen.</string>
     <string name="str_gm_settings">Einstellungen</string>
     <string name="str_gm_shader_error" formatted="false">Filter %FILTER% konnte nicht geladen werden.</string>
@@ -145,46 +141,34 @@ Soll die Einstellunge jetzt aktiviert werden?"</string>
     <string name="str_menu_continue">Weiter</string>
     <string name="str_menu_del_confirm">Speicherstand löschen?</string>
     <string name="str_menu_delsysfolder">Sollen die Quelldaten gelöscht werden?</string>
-    <string name="str_menu_game">Tippe ein Symbol an um das Screen Layout zu ändern</string>
     <string name="str_menu_help">Hilfe</string>
     <string name="str_menu_iconcache">Icon Cache wird aktualisiert</string>
-    <string name="str_menu_load">Laden</string>
     <string name="str_menu_loadorresume">"Letzten Speicherstand fortsetzen?
 Wähle 'Nein' um ein neues Spiel zu starten."</string>
     <string name="str_menu_no">Nein</string>
     <string name="str_menu_pause">Spiel-Menü</string>
-    <string name="str_menu_reset">Zurücksetzen</string>
     <string name="str_menu_reset_confirm">Spiel zurücksetzen?</string>
     <string name="str_menu_rootmoved">DraStics Daten-Ordner wurde aktualisiert:</string>
     <string name="str_menu_saving_busy">Speichervorgang wird abgeschlossen</string>
-    <string name="str_menu_settings">Einstellungen</string>
     <string name="str_menu_shortcut">Icon auf dem Desktop installieren?</string>
-    <string name="str_menu_states">Laden/Speichern</string>
-    <string name="str_menu_wo_confirm">Speicherstand überschreiben?</string>
     <string name="str_menu_yes">Ja</string>
     <string name="str_rom_continue">Letzten Speicherstand fortsetzen</string>
-    <string name="str_rom_delete">Spiel dauerhaft löschen?</string>
     <string name="str_rom_loadstate">Anderen Speicherstand fortsetzen</string>
     <string name="str_rom_newgame">Spiel starten</string>
     <string name="str_rom_shortcut">Verknüpfung erstellen</string>
-    <string name="str_set_altmenu">Altes Start-Menü verwenden</string>
     <string name="str_set_analogtouch">Modus für Rechten Analog-Steuerknüppel</string>
     <string name="str_set_analogtouch_title">Rechter Analog-Steuerknüppel</string>
     <string name="str_set_analogtriggers">Analoge Schultertasten aktivieren</string>
     <string name="str_set_autofirespeed">Schnell-Feuer Geschwindigkeit</string>
-    <string name="str_set_autoload">Automatisch laden</string>
-    <string name="str_set_autoload_hint">Der letzte Spielstand wird automatisch geladen, wenn ein Spiel von der Schnellauswahl aus gestartet wird.</string>
     <string name="str_set_autoresume">Letzten Speicherstand fortsetzen, wenn Verknüpfung gestartet wird</string>
     <string name="str_set_autorotate">Landscape-Layout Rotation</string>
     <string name="str_set_autosave">Auto-Speichern</string>
-    <string name="str_set_autosave_hint">Wenn das Spiel pausiert oder verlassen wird.</string>
     <string name="str_set_autotrim">ROM automatisch trimmen</string>
     <string name="str_set_backupinsave">Spiele-Speicherstände im Savestate speichern</string>
     <string name="str_set_backupinsave_warn">"Warnung: Wenn diese Einstellung nicht aktiv ist, können Savestates und Spiel-Speicherstände ihre Synchronisation verlieren, was zu unlesbaren Savestates führen kann.
 Zur Änderung dieser Einstellung muss die App neu gestartet werden."</string>
     <string name="str_set_bday">Geburtstag</string>
     <string name="str_set_bday_hint">Monat/Tag</string>
-    <string name="str_set_bday_ok">Setzen</string>
     <string name="str_set_btn_advanced">Erweitert</string>
     <string name="str_set_btn_audio">Audio</string>
     <string name="str_set_btn_controller">Externer Controller</string>
@@ -197,7 +181,6 @@ Zur Änderung dieser Einstellung muss die App neu gestartet werden."</string>
     <string name="str_set_cheats">Cheats aktivieren</string>
     <string name="str_set_color">Bevorzugte Farbe</string>
     <string name="str_set_confirm">Beenden/Neustarten muss bestätigt werden</string>
-    <string name="str_set_confirm_hint">Wenn ein Spiel neu gestartet oder verlassen wird, muss dies bestätigt werden, um einen Verlust des Fortschritts im Spiel zu vermeiden.</string>
     <string name="str_set_ctrlalpha">Controller-Alpha</string>
     <string name="str_set_ctrlskin">Skin</string>
     <string name="str_set_custom_clock">Benutzerdefinierte System-Uhr</string>
@@ -223,7 +206,6 @@ Die Taste ist in den Menüs weiterhin aktiv. (Wenn deaktiviert, kann die Taste v
     <string name="str_set_extrafunc_1">Spezial-Taste I</string>
     <string name="str_set_extrafunc_2">Spezial-Taste II</string>
     <string name="str_set_extrafunc_3">Spezial-Taste III</string>
-    <string name="str_set_ffwd">Schnellvorlauf</string>
     <string name="str_set_ffwd_150">150%</string>
     <string name="str_set_ffwd_200">200%</string>
     <string name="str_set_ffwd_300">300%</string>
@@ -233,7 +215,6 @@ Die Taste ist in den Menüs weiterhin aktiv. (Wenn deaktiviert, kann die Taste v
     <string name="str_set_ffwd_speed">Maximale Schnellvorlauf-Geschwindigkeit</string>
     <string name="str_set_ffwd_unlimited">Unbegrenzt</string>
     <string name="str_set_ffwdtoggle">Schnellvorlauf Umschalt-Modus</string>
-    <string name="str_set_fh2x">HQ2X</string>
     <string name="str_set_filter">Filter</string>
     <string name="str_set_fixmainscreen">Haupt-Bildschirm auf oberem Bildschirm anzeigen</string>
     <string name="str_set_flinear">Linear</string>

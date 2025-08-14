@@ -20,7 +20,7 @@
                     <View style="@style/drastic_thin_seperator" />
                     <TextView android:id="@id/btn_gm_loadstate" android:text="@string/str_gm_loadstate" android:drawableLeft="@drawable/ic_unarchive_white_24dp" style="@style/drastic_gamemenu_item_tv" />
                     <View style="@style/drastic_thin_seperator" />
-                    <TextView android:id="@id/btn_gm_savestate" android:text="@string/str_gm_savestate" android:drawableLeft="@drawable/ic_archive_white_24dp" style="@style/drastic_gamemenu_item_tv" />
+                    <TextView android:id="@id/btn_gm_savestate" android:text="@string/str_sm_save" android:drawableLeft="@drawable/ic_archive_white_24dp" style="@style/drastic_gamemenu_item_tv" />
                     <View style="@style/drastic_thin_seperator" />
                     <TextView android:id="@id/btn_gm_managestate" android:text="@string/str_gm_managestate" android:drawableLeft="@drawable/ic_folder_open_white_24dp" style="@style/drastic_gamemenu_item_tv" />
                     <View style="@style/drastic_thin_seperator" />
@@ -30,13 +30,13 @@
                     <View style="@style/drastic_thin_seperator" />
                     <TextView android:id="@id/btn_gm_reset" android:text="@string/str_gm_reset" android:drawableLeft="@drawable/ic_replay_white_24dp" style="@style/drastic_gamemenu_item_tv" />
                     <View style="@style/drastic_section_seperator_tv" />
-                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="6.0dip" android:text="@string/str_gm_hdr_settings" />
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="6.0dip" android:text="@string/menu_settings" />
                     <TextView android:id="@id/btn_gm_settings" android:text="@string/str_gm_settings" android:drawableLeft="@drawable/ic_settings_white_24dp" style="@style/drastic_gamemenu_item_tv" />
                     <View style="@style/drastic_thin_seperator" />
                     <TextView android:id="@id/btn_gm_layout" android:text="@string/str_gm_layout_tv" android:drawableLeft="@drawable/ic_mode_edit_white_24dp" style="@style/drastic_gm_item_choicehdr_text_tv" />
                     <View style="@style/drastic_section_seperator_tv" />
                     <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="6.0dip" android:text="@string/str_gm_hdr_misc" />
-                    <TextView android:id="@id/btn_gm_help" android:text="@string/str_gm_help" android:drawableLeft="@drawable/ic_help_outline_white_24dp" style="@style/drastic_gamemenu_item_tv" />
+                    <TextView android:id="@id/btn_gm_help" android:text="@string/str_menu_help" android:drawableLeft="@drawable/ic_help_outline_white_24dp" style="@style/drastic_gamemenu_item_tv" />
                     <View style="@style/drastic_thin_seperator" />
                     <TextView android:id="@id/btn_gm_exit" android:text="@string/str_gm_exit" android:drawableLeft="@drawable/ic_power_settings_new_white_24dp" style="@style/drastic_gamemenu_item_tv" />
                 </TableLayout>
