@@ -1399,7 +1399,6 @@
     <public type="id" name="btn_tool_right" id="0x7f0900ca" />
     <public type="id" name="btn_tool_top" id="0x7f0900cb" />
     <public type="id" name="btn_tool_v100" id="0x7f0900cc" />
-    <public type="id" name="btn_wifi" id="0x7f0900cd" />
     <public type="id" name="buttonPanel" id="0x7f0900ce" />
     <public type="id" name="button_continue" id="0x7f0900cf" />
     <public type="id" name="button_exit" id="0x7f0900d0" />
@@ -2410,8 +2409,6 @@
     <public type="string" name="str_set_threaded_warn" id="0x7f0f016a" />
     <public type="string" name="str_set_touchthrough" id="0x7f0f016b" />
     <public type="string" name="str_set_volume_value" id="0x7f0f016c" />
-    <public type="string" name="str_set_wifi" id="0x7f0f016d" />
-    <public type="string" name="str_set_wifi_msg" id="0x7f0f016e" />
     <public type="string" name="str_sm_back" id="0x7f0f016f" />
     <public type="string" name="str_sm_bioserror" id="0x7f0f0170" />
     <public type="string" name="str_sm_copy" id="0x7f0f0171" />

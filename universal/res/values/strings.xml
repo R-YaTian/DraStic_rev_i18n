@@ -325,8 +325,6 @@ If you experience any rendering glitches, please disable this option."</string>
     <string name="str_set_threaded_warn">This option is experimental and can cause problems or even crash the app. Please turn it off, before reporting any problems.</string>
     <string name="str_set_touchthrough">Control presses also touch the DS Touchscreen</string>
     <string name="str_set_volume_value">Volume</string>
-    <string name="str_set_wifi">Multiplayer/WiFi</string>
-    <string name="str_set_wifi_msg">Sorry but the emulator does not support multiplayer/WiFi</string>
     <string name="str_set_sel_sysdir">Select New System Directory</string>
     <string name="str_set_pending_format">(Pending) %s</string>
     <string name="str_set_def_ext">Default External</string>

@@ -273,8 +273,6 @@ $path$.
     <string name="str_set_threaded_warn">設定を反映するにはDraSticを再起動してください。これは実験的な機能であり、問題を発生させる、またはアプリをクラッシュさせることがあります。問題を避けるには、オフにしてください。</string>
     <string name="str_set_touchthrough">コントローラーの押しをDSタッチスクリーンにも送る</string>
     <string name="str_set_volume_value">音量</string>
-    <string name="str_set_wifi">マルチプレイヤー/WiFi</string>
-    <string name="str_set_wifi_msg">申し訳ございませんが、エミュレータはマルチプレイヤー/WiFiをサポートしておりません。</string>
     <string name="str_sm_back">"ゲームへ
 戻る"</string>
     <string name="str_sm_bioserror">違うBIOSファイルで作成されているため、このセーブデータをサポートしません。</string>

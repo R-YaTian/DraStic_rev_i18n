@@ -109,9 +109,13 @@
 
     const/16 v9, 0xf
 
-    new-array v9, v9, [I
+    const/16 v2, 0xe
+
+    new-array v9, v2, [I
 
     fill-array-data v9, :array_5
+
+    const/4 v2, 0x5
 
     aput-object v9, v0, v2
 
@@ -199,7 +203,7 @@
 
     aput-object v6, v0, v8
 
-    new-array v5, v5, [I
+    new-array v5, v7, [I
 
     fill-array-data v5, :array_e
 
@@ -344,7 +348,6 @@
         0x7f09021f
         0x7f09021a
         0x7f090234
-        0x7f0900cd
     .end array-data
 
     :array_6
@@ -456,7 +459,6 @@
         0x7f09021f
         0x7f09021a
         0x7f090234
-        0x7f0900cd
     .end array-data
 
     :array_f
@@ -5032,11 +5034,7 @@
 
     move-result v0
 
-    const v1, 0x7f0900cd
-
     const/4 v3, 0x1
-
-    if-eq v0, v1, :cond_16
 
     const-string v1, "MAPPINGNAME"
 
@@ -6823,33 +6821,6 @@
     const-string v0, "MOGA Pocket"
 
     goto :goto_17
-
-    :cond_16
-    new-instance p1, Landroid/app/AlertDialog$Builder;
-
-    invoke-direct {p1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v1, 0x7f0f016e
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v0
-
-    new-instance v1, Lcom/dsemu/drastic/ui/Settings$u;
-
-    invoke-direct {v1, p0}, Lcom/dsemu/drastic/ui/Settings$u;-><init>(Lcom/dsemu/drastic/ui/Settings;)V
 
     :goto_19
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;

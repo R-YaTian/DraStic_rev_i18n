@@ -297,8 +297,6 @@ Se si verificano glitch di rendering, si prega di disabilitare quest'opzione."</
     <string name="str_set_threaded_warn">"Questa è un'opzione sperimentale e può causare problemi o perfino far crashare l'app. Si prega di disabilitarla prima di segnalare qualsiasi problema."</string>
     <string name="str_set_touchthrough">I tocchi sui Controlli agiscono anche sul touchscreen del DS</string>
     <string name="str_set_volume_value">Volume</string>
-    <string name="str_set_wifi">Multiplayer/WiFi</string>
-    <string name="str_set_wifi_msg">"Siamo spiacenti ma l'emulatore non supporta il Multiplayer/WiFi"</string>
     <string name="str_sm_back">"Torna
 al Gioco"</string>
     <string name="str_sm_bioserror">Questo Salvataggio è incompatible. È stato utilizzato un BIOS differente da quello che stai usando ora.</string>

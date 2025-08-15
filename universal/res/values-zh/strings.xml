@@ -291,8 +291,6 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_threaded_warn">这个选项仍在实验中，可能会造成一些问题。</string>
     <string name="str_set_touchthrough">按键操作同时触发DS触屏操作</string>
     <string name="str_set_volume_value">音量</string>
-    <string name="str_set_wifi">多人游戏/WiFi</string>
-    <string name="str_set_wifi_msg">抱歉，目前模拟器还不支持多人游戏/WiFi</string>
     <string name="str_set_sel_sysdir">选择新数据存储目录</string>
     <string name="str_set_pending_format">(等待重启) %s</string>
     <string name="str_set_def_ext">外置默认路径</string>

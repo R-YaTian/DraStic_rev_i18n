@@ -277,8 +277,6 @@
     <string name="str_set_threaded_warn">Esta opción es experimental y puede causar problemas o incluso hacer dejar de funcionar la app. Por favor desactívala, antes de reportar ningún problema.</string>
     <string name="str_set_touchthrough">Las presiones del control también tocan la pantalla táctil de la DS</string>
     <string name="str_set_volume_value">Volumen</string>
-    <string name="str_set_wifi">Multijugador/wifi</string>
-    <string name="str_set_wifi_msg">Lo sentimos, pero el emulador no tiene soporte para multijugador/wifi</string>
     <string name="str_sm_back">Regresar al juego</string>
     <string name="str_sm_bioserror">Este archivo de guardado es incompatible. Archivos BIOS distintos a los actuales fueron usados.</string>
     <string name="str_sm_copy">Copiar</string>

@@ -294,8 +294,6 @@ Bitte öffne 'Spezial-Zuordnung' und ordne der Menü-Funktion eine Taste zu, son
     <string name="str_set_threaded_warn">Diese Option ist experimentell und kann grafische Fehler und Abstürze verursachen.</string>
     <string name="str_set_touchthrough">Auch der Touch-Bildschirm unter Gamepad-Tasten wird berührt</string>
     <string name="str_set_volume_value">Lautstärke</string>
-    <string name="str_set_wifi">Multiplayer/WiFi</string>
-    <string name="str_set_wifi_msg">Tut uns leid, aber Multiplayer/Wifi wird nicht unterstützt.</string>
     <string name="str_sm_back">"Zum Spiel
 zurückkehren"</string>
     <string name="str_sm_bioserror">Diese Datei ist nicht kompatibel. Sie wurde nicht mit den momentan aktiven BIOS Dateien gespeichert.</string>
