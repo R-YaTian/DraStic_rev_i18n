@@ -156,12 +156,12 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_backupinsave_warn">"警告：关闭此选项会造成即时存档和电池存档不同步，可能会导致掉档"</string>
     <string name="str_set_bday">生日</string>
     <string name="str_set_bday_hint">月/日</string>
-    <string name="str_set_btn_advanced">高级设置</string>
+    <string name="str_set_btn_advanced">高级</string>
     <string name="str_set_btn_audio">音频</string>
     <string name="str_set_btn_controller">外接控制器</string>
     <string name="str_set_btn_general">常规</string>
     <string name="str_set_btn_input">虚拟按键</string>
-    <string name="str_set_btn_system">系统信息设置</string>
+    <string name="str_set_btn_system">系统</string>
     <string name="str_set_btn_video">视频</string>
     <string name="str_set_btnmod">动作键触摸有效区调节</string>
     <string name="str_set_caching">启用解压功能</string>
@@ -205,35 +205,29 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_ffwdtoggle">加速键切换模式</string>
     <string name="str_set_filter">滤镜</string>
     <string name="str_set_fixmainscreen">强制上屏为主屏</string>
-    <string name="str_set_flinear">线性过滤</string>
-    <string name="str_set_fnone">无</string>
     <string name="str_set_fpstransparent">透明FPS显示器</string>
-    <string name="str_set_fquilez">Quilez</string>
     <string name="str_set_fs">跳帧</string>
-    <string name="str_set_fs2x">2倍柔化</string>
     <string name="str_set_fs_auto">自动</string>
     <string name="str_set_fs_manual">手动</string>
-    <string name="str_set_fs_none">无</string>
     <string name="str_set_fs_safe">安全跳帧</string>
     <string name="str_set_fs_value">跳帧值</string>
     <string name="str_set_gl16bit">16位渲染</string>
     <string name="str_set_gl_sleep">针对某些 Adreno GPU 设备优化</string>
     <string name="str_set_haptic">按键震动</string>
     <string name="str_set_hdr_advanced">高级设置</string>
-    <string name="str_set_hdr_audio">音频</string>
-    <string name="str_set_hdr_audio_game">音频(游戏)</string>
+    <string name="str_set_hdr_audio">音频设置</string>
+    <string name="str_set_hdr_audio_game">音频设置(游戏)</string>
     <string name="str_set_hdr_controller">外接控制器设置</string>
-    <string name="str_set_hdr_general">常规</string>
+    <string name="str_set_hdr_general">常规设置</string>
     <string name="str_set_hdr_input">虚拟按键设置</string>
-    <string name="str_set_hdr_system">系统信息设置</string>
-    <string name="str_set_hdr_video">视频</string>
-    <string name="str_set_hdr_video_game">视频(游戏)</string>
+    <string name="str_set_hdr_system">系统设置</string>
+    <string name="str_set_hdr_video">视频设置</string>
+    <string name="str_set_hdr_video_game">视频设置(游戏)</string>
     <string name="str_set_hires">高分辨率 3D 渲染</string>
     <string name="str_set_ignorecardlimit">忽略游戏卡带限制</string>
     <string name="str_set_key_clear">取消映射</string>
     <string name="str_set_key_skip">跳过</string>
     <string name="str_set_keyconfig">配置按键映射</string>
-    <string name="str_set_keycustom">虚拟按键设置</string>
     <string name="str_set_keyinput">将按键映射为：</string>
     <string name="str_set_keyinput_mapped">请尝试其他按键，此键已被映射为</string>
     <string name="str_set_keyinput_wait">请按键</string>
@@ -244,7 +238,7 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_keymapname">重命名</string>
     <string name="str_set_keymapnull">无映射</string>
     <string name="str_set_keyname">设置控制器名称</string>
-    <string name="str_set_keyname_ok">确定</string>
+    <string name="str_set_ok">确定</string>
     <string name="str_set_language">设置多语言游戏内的语言</string>
     <string name="str_set_language_title">系统语言</string>
     <string name="str_set_layout">选择布局</string>
@@ -255,11 +249,10 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_mapping_device_mapping">已映射按键</string>
     <string name="str_set_mapping_ds_button">DS 按键</string>
     <string name="str_set_mapping_function">功能</string>
-    <string name="str_set_mapping_info">默认映射:</string>
     <string name="str_set_menu_game_options">单一游戏设置</string>
     <string name="str_set_menu_game_options_delete">删除单一游戏设置</string>
     <string name="str_set_menu_global_options">全局设置</string>
-    <string name="str_set_menu_override_msg">被单一游戏设置覆盖的设置选项已被划掉</string>
+    <string name="str_set_menu_override_msg">被单一游戏设置覆盖的选项已被划掉</string>
     <string name="str_set_menubtn">禁用菜单键</string>
     <string name="str_set_menubtn_pos">菜单键位置</string>
     <string name="str_set_menubtn_warn">隐藏菜单键，请确保您已经设置好打开菜单用的按键</string>
@@ -267,18 +260,17 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_micenabled">启用设备的麦克风</string>
     <string name="str_set_miclevel">麦克风灵敏度</string>
     <string name="str_set_nick">昵称</string>
-    <string name="str_set_no_menu_mapping">"未映射菜单键，游戏中游戏中您将无法退出
+    <string name="str_set_no_menu_mapping">"未映射菜单键，游戏中您将无法退出
 请在'特殊键映射'中进行设置"</string>
     <string name="str_set_nodiagonals">禁用十字键斜向输入</string>
     <string name="str_set_none">无</string>
     <string name="str_set_overwrite">覆盖即时存档需要确认</string>
     <string name="str_set_preload">启用预加载未压缩的游戏到内存</string>
     <string name="str_set_rawsavformat">使用原始 .sav 存档格式 (无尾部信息)</string>
-    <string name="str_set_restart_req">重启DraStic以使改变生效</string>
+    <string name="str_set_restart_req">重启DraStic以使变更生效</string>
     <string name="str_set_rtc_system_time">强制系统时间作为实时时钟</string>
     <string name="str_set_rumble_dev">振动设备</string>
     <string name="str_set_rumble_dev_title">选择振动设备</string>
-    <string name="str_set_scaling">缩放模式</string>
     <string name="str_set_settings">配置选项</string>
     <string name="str_set_settings_game">配置选项(游戏)</string>
     <string name="str_set_showfps">显示FPS</string>
@@ -292,13 +284,10 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_smartedit">布局编辑器自动校准</string>
     <string name="str_set_soundenabled">开启声音</string>
     <string name="str_set_soundlatency">声音延时</string>
-    <string name="str_set_soundvolume">音量</string>
     <string name="str_set_threaded">多线程3D渲染</string>
-    <string name="str_set_threaded_hint">"多线程3D渲染可以在大型3D游戏中大幅提升模拟效果，但是在某些游戏中可能会导致图像故障。
+    <string name="str_set_threaded_hint">"多线程3D渲染可以在大型3D游戏中大幅提升模拟效果, 但是在某些游戏中可能会导致图像故障。
 如果出现故障，请关闭此项。
-在单核设备上，开启多线程不会有模拟效果的提升。
-重启DraStic，以使更改设置生效。"</string>
-    <string name="str_set_threaded_no">这个设置项在单核设备上不可用。</string>
+需重启 DraStic 以使更改设置生效。"</string>
     <string name="str_set_threaded_warn">这个选项仍在实验中，可能会造成一些问题。</string>
     <string name="str_set_touchthrough">按键操作同时触发DS触屏操作</string>
     <string name="str_set_volume_value">音量</string>
@@ -354,7 +343,7 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_adduser_tip">正在初始化用户数据文件夹...</string>
     <string name="str_androidq_tip">Android 10以上系统, DraStic 将需要使用应用内置的 appdata 文件夹来保存数据; 该文件夹可被系统自带的文件管理APP访问(部分厂商定制系统的文件管理APP可能存在限制无法访问); 也可以在\"选项->常规\"中自行指定数据文件夹</string>
     <string name="str_sm_back">返回游戏</string>
-    <string name="str_sm_bioserror">这个存档不兼容，这是由于旧版BIOS文件和新版不同造成的</string>
+    <string name="str_sm_bioserror">该存档不兼容, 这是存档使用的BIOS文件与当前使用的不同导致</string>
     <string name="str_sm_copy">复制</string>
     <string name="str_sm_copyok">复制即时存档成功</string>
     <string name="str_sm_delete">删除</string>
@@ -370,24 +359,12 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_sm_state_played">时间</string>
     <string name="str_sm_state_size">大小</string>
     <string name="str_sm_state_version">保存于</string>
-    <string name="str_sys_copyerror">无法访问外接存储设备。</string>
     <string name="str_sys_copyingsysfolder">移动数据</string>
     <string name="str_sys_deletesysfolder">删除数据</string>
     <string name="str_ui_gamedetail">开始游戏</string>
-    <string name="str_ui_gameselect">选取游戏</string>
-    <string name="str_ui_help_firstgame">"运行游戏时，请按'菜单'键来更改屏幕布局或设置，或即时存档读档。
-
-如果游戏中只需ds触摸屏操作的话，您可以通过按触控笔图标来隐藏虚拟按键。
-
-请注意，'选项'中也有用来更改虚拟按键和ds触摸屏操作的各种设置项。
-您还可以连接蓝牙手柄来进行游戏，并在'选项'中进行按键映射。"</string>
-    <string name="str_ui_help_firstsinglescreen">请注意，单屏幕模式下，您可能会错过游戏中的重要信息或无法使用游戏菜单。</string>
     <string name="str_ui_loadconfirm">读取存档？</string>
-    <string name="str_ui_nofiles">无可用游戏</string>
-    <string name="str_ui_numsaves">存档</string>
     <string name="str_ui_overwrite">覆盖存档？</string>
-    <string name="str_ui_quickselect">快速选取游戏</string>
-    <string name="str_ui_setcheats">启用/禁用作弊</string>
+    <string name="str_ui_setcheats">金手指</string>
     <string name="str_ui_setcheatscustom">自定义金手指</string>
     <string name="str_user_info">用户:</string>
     <string name="str_user_title">当前用户:</string>

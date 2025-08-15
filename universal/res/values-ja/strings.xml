@@ -209,15 +209,10 @@ $path$.
     <string name="str_set_ffwdtoggle">早送りスイッチモード</string>
     <string name="str_set_filter">フィルタ</string>
     <string name="str_set_fixmainscreen">メインスクリーンをトップに維持</string>
-    <string name="str_set_flinear">Linear</string>
-    <string name="str_set_fnone">なし</string>
     <string name="str_set_fpstransparent">透明FPS表示</string>
-    <string name="str_set_fquilez">Quilez</string>
     <string name="str_set_fs">フレームのスキップ</string>
-    <string name="str_set_fs2x">Scale2X</string>
     <string name="str_set_fs_auto">自動</string>
     <string name="str_set_fs_manual">カスタム</string>
-    <string name="str_set_fs_none">なし</string>
     <string name="str_set_fs_value">フレームのスキップ量</string>
     <string name="str_set_gl16bit">16ビットレンダリング</string>
     <string name="str_set_gl_sleep">レンダリングスレッドでスリープ</string>
@@ -233,7 +228,6 @@ $path$.
     <string name="str_set_ignorecardlimit">ゲームカード制限を無視</string>
     <string name="str_set_key_skip">スキップ</string>
     <string name="str_set_keyconfig">キーマッピングを設定</string>
-    <string name="str_set_keycustom">画面中のコントローラーをカスタマイズ</string>
     <string name="str_set_keyinput">キーを押す：</string>
     <string name="str_set_keymap">コントロールをマッピング</string>
     <string name="str_set_keymap_extra">特殊マッピング</string>
@@ -242,7 +236,7 @@ $path$.
     <string name="str_set_keymapname">名前を変更</string>
     <string name="str_set_keymapnull">マッピングなし</string>
     <string name="str_set_keyname">デバイス名を設定</string>
-    <string name="str_set_keyname_ok">OK</string>
+    <string name="str_set_ok">OK</string>
     <string name="str_set_language">マルチ言語ゲームの言語</string>
     <string name="str_set_language_title">システム言語</string>
     <string name="str_set_layout">レイアウトを選択</string>
@@ -250,7 +244,6 @@ $path$.
     <string name="str_set_lowrestextures">低解像度UIテクスチャを使用</string>
     <string name="str_set_mapping_device">ボタン</string>
     <string name="str_set_mapping_function">機能</string>
-    <string name="str_set_mapping_info">既定マッピング：</string>
     <string name="str_set_menubtn">メニューキーを無効化</string>
     <string name="str_set_menubtn_pos">メニューボタン位置</string>
     <string name="str_set_menubtn_warn">メニューを開くためのボタンが割り当てられている場合だけはメニューボタンを隠します。</string>
@@ -263,7 +256,6 @@ $path$.
     <string name="str_set_overwrite">状態データ上書き確認を表示</string>
     <string name="str_set_restart_req">変更を反映するにはDraSticを再起動してください</string>
     <string name="str_set_rtc_system_time">常にシステム時刻をRTCとして使用</string>
-    <string name="str_set_scaling">Scaling Mode</string>
     <string name="str_set_settings">設定を変更</string>
     <string name="str_set_showfps">FPS表示</string>
     <string name="str_set_showmore">スタートとセレクトボタンを常に表示</string>
@@ -274,12 +266,10 @@ $path$.
     <string name="str_set_smartedit">レイアウトエディタで自動的にスナップまたはリサイズ</string>
     <string name="str_set_soundenabled">サウンドを有効化</string>
     <string name="str_set_soundlatency">サウンドレイテンシ</string>
-    <string name="str_set_soundvolume">音量</string>
     <string name="str_set_threaded">マルチスレッド3Dレンダリング</string>
     <string name="str_set_threaded_hint">"3D効果の多くのゲームのパーフォーマンスを向上させます。しかし、かえってあるゲームでは画面の故障を起こすことがあります（画面のスワップなど）。
 レンダリング故障が発生する場合、このオプションをオフにしてください。
 変更を反映するにはDraSticを再起動してください。"</string>
-    <string name="str_set_threaded_no">この設定はシングルコアCPUデバイスに利用不可です。</string>
     <string name="str_set_threaded_warn">設定を反映するにはDraSticを再起動してください。これは実験的な機能であり、問題を発生させる、またはアプリをクラッシュさせることがあります。問題を避けるには、オフにしてください。</string>
     <string name="str_set_touchthrough">コントローラーの押しをDSタッチスクリーンにも送る</string>
     <string name="str_set_volume_value">音量</string>
@@ -303,22 +293,10 @@ $path$.
     <string name="str_sm_state_played">プレイ時間</string>
     <string name="str_sm_state_size">サイズ</string>
     <string name="str_sm_state_version">作成日時</string>
-    <string name="str_sys_copyerror">外部ストレージにアクセスできません。</string>
     <string name="str_sys_copyingsysfolder">データを移動しています</string>
     <string name="str_sys_deletesysfolder">データを削除しています</string>
     <string name="str_ui_gamedetail">ゲームをスタート</string>
-    <string name="str_ui_gameselect">ゲームを選択</string>
-    <string name="str_ui_help_firstgame">"ゲーム中は、「メニュー」キーを押すと、画面レイアウト、設定を変更したりセーブまたはロードしたりできます。
-
-スタイラスペンだけが必要なゲームをプレイするとき、スタイラスアイコンを押してコントローラーオーバーレイを隠せます。
-
-なお、「オプション」メニューではコントローラーとタッチスクリーンの振る舞いの変更などのいろいろな設定があります。
-さらには、Bluetoothで外部コントローラーをお使いのデバイスヘ接続し、「オプション」メニューでコントローラーのボタンをマップすることもできます。"</string>
-    <string name="str_ui_loadconfirm">セーブデータをロードしますか？</string>
-    <string name="str_ui_nofiles">利用可能なゲームなし</string>
-    <string name="str_ui_numsaves">セーブデータ</string>
     <string name="str_ui_overwrite">セーブデータを上書きしますか？</string>
-    <string name="str_ui_quickselect">ゲームクイック選択</string>
     <string name="str_ui_setcheats">チート</string>
     <string name="str_ui_setcheatscustom">カスタムチート</string>
     <string name="str_user_info">ユーザー：</string>

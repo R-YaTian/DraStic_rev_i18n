@@ -2327,15 +2327,10 @@
     <public type="string" name="str_set_ffwdtoggle" id="0x7f0f010b" />
     <public type="string" name="str_set_filter" id="0x7f0f010d" />
     <public type="string" name="str_set_fixmainscreen" id="0x7f0f010e" />
-    <public type="string" name="str_set_flinear" id="0x7f0f010f" />
-    <public type="string" name="str_set_fnone" id="0x7f0f0110" />
     <public type="string" name="str_set_fpstransparent" id="0x7f0f0111" />
-    <public type="string" name="str_set_fquilez" id="0x7f0f0112" />
     <public type="string" name="str_set_fs" id="0x7f0f0113" />
-    <public type="string" name="str_set_fs2x" id="0x7f0f0114" />
     <public type="string" name="str_set_fs_auto" id="0x7f0f0115" />
     <public type="string" name="str_set_fs_manual" id="0x7f0f0116" />
-    <public type="string" name="str_set_fs_none" id="0x7f0f0117" />
     <public type="string" name="str_set_fs_safe" id="0x7f0f0118" />
     <public type="string" name="str_set_fs_value" id="0x7f0f0119" />
     <public type="string" name="str_set_gl16bit" id="0x7f0f011a" />
@@ -2355,7 +2350,6 @@
     <public type="string" name="str_set_key_clear" id="0x7f0f0129" />
     <public type="string" name="str_set_key_skip" id="0x7f0f012a" />
     <public type="string" name="str_set_keyconfig" id="0x7f0f012b" />
-    <public type="string" name="str_set_keycustom" id="0x7f0f012c" />
     <public type="string" name="str_set_keyinput" id="0x7f0f012d" />
     <public type="string" name="str_set_keyinput_mapped" id="0x7f0f012e" />
     <public type="string" name="str_set_keyinput_wait" id="0x7f0f012f" />
@@ -2366,7 +2360,7 @@
     <public type="string" name="str_set_keymapname" id="0x7f0f0134" />
     <public type="string" name="str_set_keymapnull" id="0x7f0f0135" />
     <public type="string" name="str_set_keyname" id="0x7f0f0136" />
-    <public type="string" name="str_set_keyname_ok" id="0x7f0f0137" />
+    <public type="string" name="str_set_ok" id="0x7f0f0137" />
     <public type="string" name="str_set_language" id="0x7f0f0138" />
     <public type="string" name="str_set_language_title" id="0x7f0f0139" />
     <public type="string" name="str_set_layout" id="0x7f0f013a" />
@@ -2377,7 +2371,6 @@
     <public type="string" name="str_set_mapping_device_mapping" id="0x7f0f013f" />
     <public type="string" name="str_set_mapping_ds_button" id="0x7f0f0140" />
     <public type="string" name="str_set_mapping_function" id="0x7f0f0141" />
-    <public type="string" name="str_set_mapping_info" id="0x7f0f0142" />
     <public type="string" name="str_set_menu_game_options" id="0x7f0f0143" />
     <public type="string" name="str_set_menu_game_options_delete" id="0x7f0f0144" />
     <public type="string" name="str_set_menu_global_options" id="0x7f0f0145" />
@@ -2399,7 +2392,6 @@
     <public type="string" name="str_set_rtc_system_time" id="0x7f0f0155" />
     <public type="string" name="str_set_rumble_dev" id="0x7f0f0156" />
     <public type="string" name="str_set_rumble_dev_title" id="0x7f0f0157" />
-    <public type="string" name="str_set_scaling" id="0x7f0f0158" />
     <public type="string" name="str_set_settings" id="0x7f0f0159" />
     <public type="string" name="str_set_settings_game" id="0x7f0f015a" />
     <public type="string" name="str_set_showfps" id="0x7f0f015b" />
@@ -2413,10 +2405,8 @@
     <public type="string" name="str_set_smartedit" id="0x7f0f0163" />
     <public type="string" name="str_set_soundenabled" id="0x7f0f0164" />
     <public type="string" name="str_set_soundlatency" id="0x7f0f0165" />
-    <public type="string" name="str_set_soundvolume" id="0x7f0f0166" />
     <public type="string" name="str_set_threaded" id="0x7f0f0167" />
     <public type="string" name="str_set_threaded_hint" id="0x7f0f0168" />
-    <public type="string" name="str_set_threaded_no" id="0x7f0f0169" />
     <public type="string" name="str_set_threaded_warn" id="0x7f0f016a" />
     <public type="string" name="str_set_touchthrough" id="0x7f0f016b" />
     <public type="string" name="str_set_volume_value" id="0x7f0f016c" />
@@ -2439,18 +2429,11 @@
     <public type="string" name="str_sm_state_played" id="0x7f0f017e" />
     <public type="string" name="str_sm_state_size" id="0x7f0f017f" />
     <public type="string" name="str_sm_state_version" id="0x7f0f0180" />
-    <public type="string" name="str_sys_copyerror" id="0x7f0f0181" />
     <public type="string" name="str_sys_copyingsysfolder" id="0x7f0f0182" />
     <public type="string" name="str_sys_deletesysfolder" id="0x7f0f0183" />
     <public type="string" name="str_ui_gamedetail" id="0x7f0f0184" />
-    <public type="string" name="str_ui_gameselect" id="0x7f0f0185" />
-    <public type="string" name="str_ui_help_firstgame" id="0x7f0f0186" />
-    <public type="string" name="str_ui_help_firstsinglescreen" id="0x7f0f0187" />
     <public type="string" name="str_ui_loadconfirm" id="0x7f0f018a" />
-    <public type="string" name="str_ui_nofiles" id="0x7f0f018b" />
-    <public type="string" name="str_ui_numsaves" id="0x7f0f018c" />
     <public type="string" name="str_ui_overwrite" id="0x7f0f018d" />
-    <public type="string" name="str_ui_quickselect" id="0x7f0f018e" />
     <public type="string" name="str_ui_setcheats" id="0x7f0f018f" />
     <public type="string" name="str_ui_setcheatscustom" id="0x7f0f0190" />
     <public type="string" name="str_user_info" id="0x7f0f0191" />

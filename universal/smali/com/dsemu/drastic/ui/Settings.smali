@@ -2948,7 +2948,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    const p2, 0x7f0f0117
+    const p2, 0x7f0f0150
 
     goto/16 :goto_2
 

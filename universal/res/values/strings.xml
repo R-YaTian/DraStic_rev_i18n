@@ -240,15 +240,10 @@ The button will still be active in the menus. (If disabled, the button can be us
     <string name="str_set_ffwdtoggle">Fast-Forward Toggle Mode</string>
     <string name="str_set_filter">Filter</string>
     <string name="str_set_fixmainscreen">Keep Main Screen on Top Screen</string>
-    <string name="str_set_flinear">Linear</string>
-    <string name="str_set_fnone">None</string>
     <string name="str_set_fpstransparent">Transparent FPS Display</string>
-    <string name="str_set_fquilez">Quilez</string>
     <string name="str_set_fs">Frameskip</string>
-    <string name="str_set_fs2x">Scale2X</string>
     <string name="str_set_fs_auto">Auto</string>
     <string name="str_set_fs_manual">Manual</string>
-    <string name="str_set_fs_none">None</string>
     <string name="str_set_fs_safe">Safe Frameskip</string>
     <string name="str_set_fs_value">Frameskip Value</string>
     <string name="str_set_gl16bit">16-Bit Rendering</string>
@@ -268,7 +263,6 @@ The button will still be active in the menus. (If disabled, the button can be us
     <string name="str_set_key_clear">Unmap</string>
     <string name="str_set_key_skip">Skip</string>
     <string name="str_set_keyconfig">Configure Key Mapping</string>
-    <string name="str_set_keycustom">Customize On-Screen Controller</string>
     <string name="str_set_keyinput">Press Key for:</string>
     <string name="str_set_keyinput_mapped">Press another key, already mapped to</string>
     <string name="str_set_keyinput_wait">Press Key</string>
@@ -279,7 +273,7 @@ The button will still be active in the menus. (If disabled, the button can be us
     <string name="str_set_keymapname">Rename</string>
     <string name="str_set_keymapnull">No Mapping</string>
     <string name="str_set_keyname">Set Device Name</string>
-    <string name="str_set_keyname_ok">OK</string>
+    <string name="str_set_ok">OK</string>
     <string name="str_set_language">Language for Multi-Language Games</string>
     <string name="str_set_language_title">System Language</string>
     <string name="str_set_layout">Select Layout</string>
@@ -290,7 +284,6 @@ The button will still be active in the menus. (If disabled, the button can be us
     <string name="str_set_mapping_device_mapping">Mapped Button</string>
     <string name="str_set_mapping_ds_button">DS Button</string>
     <string name="str_set_mapping_function">Function</string>
-    <string name="str_set_mapping_info">Default Mapping:</string>
     <string name="str_set_menu_game_options">Per-Game options</string>
     <string name="str_set_menu_game_options_delete">Delete per-game options</string>
     <string name="str_set_menu_global_options">Global options</string>
@@ -313,7 +306,6 @@ Please map a button to the menu function in 'Map Special'"</string>
     <string name="str_set_rtc_system_time">Always use System Time for RTC</string>
     <string name="str_set_rumble_dev">Rumble Device</string>
     <string name="str_set_rumble_dev_title">Select Rumble Device</string>
-    <string name="str_set_scaling">Scaling Mode</string>
     <string name="str_set_settings">Configure Options</string>
     <string name="str_set_settings_game">Configure Options (Game)</string>
     <string name="str_set_showfps">Show FPS</string>
@@ -327,11 +319,9 @@ Please map a button to the menu function in 'Map Special'"</string>
     <string name="str_set_smartedit">Auto-Snap and Resize in Layout-Editor</string>
     <string name="str_set_soundenabled">Sound enabled</string>
     <string name="str_set_soundlatency">Audio Latency</string>
-    <string name="str_set_soundvolume">Sound Volume</string>
     <string name="str_set_threaded">Multi-Threaded 3D Rendering</string>
     <string name="str_set_threaded_hint">"Improves performance in 3D heavy games, but may cause graphical glitches (like swapped screens) for some games.
 If you experience any rendering glitches, please disable this option."</string>
-    <string name="str_set_threaded_no">This setting is not available on single cpu-core devices.</string>
     <string name="str_set_threaded_warn">This option is experimental and can cause problems or even crash the app. Please turn it off, before reporting any problems.</string>
     <string name="str_set_touchthrough">Control presses also touch the DS Touchscreen</string>
     <string name="str_set_volume_value">Volume</string>
@@ -404,23 +394,11 @@ to Game"</string>
     <string name="str_sm_state_played">Played</string>
     <string name="str_sm_state_size">Size</string>
     <string name="str_sm_state_version">Recorded on</string>
-    <string name="str_sys_copyerror">Could not access the External Storage.</string>
     <string name="str_sys_copyingsysfolder">Moving Data</string>
     <string name="str_sys_deletesysfolder">Deleting Data</string>
     <string name="str_ui_gamedetail">Start Game</string>
-    <string name="str_ui_gameselect">Select Game</string>
-    <string name="str_ui_help_firstgame">"While in-game, please press the 'Menu' button to change the screen layout, settings and to load and save your game.
-
-If a game only requires touchscreen control, you can press the stylus icon to hide the controller overlay.
-
-Please note, that there are also various settings in the 'Options' menu, to change the behaviour of the controller and touchscreen.
-You can also connect an external bluetooth controller to the device, and map the buttons in the 'Options' menu."</string>
-    <string name="str_ui_help_firstsinglescreen">Please be aware, that you can miss important information, or menus necessary to play the game, while in single-screen mode.</string>
     <string name="str_ui_loadconfirm">Load Save?</string>
-    <string name="str_ui_nofiles">NO GAMES AVAILABLE</string>
-    <string name="str_ui_numsaves">Saves</string>
     <string name="str_ui_overwrite">Overwrite Save?</string>
-    <string name="str_ui_quickselect">Game Quickselect</string>
     <string name="str_ui_setcheats">Cheats</string>
     <string name="str_ui_setcheatscustom">Custom Cheats</string>
     <string name="str_user_info">User:</string>

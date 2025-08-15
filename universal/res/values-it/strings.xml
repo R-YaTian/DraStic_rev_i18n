@@ -219,15 +219,10 @@ Il bottone continuerà a funzionare nei menu. (Se disattivato, il pulsante può 
     <string name="str_set_ffwdtoggle">Fast-Forward Toggle Mode</string>
     <string name="str_set_filter">Filtro</string>
     <string name="str_set_fixmainscreen">Mantieni lo schermo principale sullo schermo superiore</string>
-    <string name="str_set_flinear">Linear</string>
-    <string name="str_set_fnone">Nessuno</string>
     <string name="str_set_fpstransparent">Rendi Trasparenti gli FPS</string>
-    <string name="str_set_fquilez">Quilez</string>
     <string name="str_set_fs">Frameskip</string>
-    <string name="str_set_fs2x">Scale2X</string>
     <string name="str_set_fs_auto">Auto</string>
     <string name="str_set_fs_manual">Manuale</string>
-    <string name="str_set_fs_none">Nessuno</string>
     <string name="str_set_fs_value">Valore del Frameskip</string>
     <string name="str_set_gl16bit">Rendering a 16-Bit</string>
     <string name="str_set_gl_sleep">Sleep in Rendering-Thread</string>
@@ -246,7 +241,6 @@ Il bottone continuerà a funzionare nei menu. (Se disattivato, il pulsante può 
     <string name="str_set_key_clear">Demappa</string>
     <string name="str_set_key_skip">Salta</string>
     <string name="str_set_keyconfig">Configura la Mappatura dei Tasti</string>
-    <string name="str_set_keycustom">Personalizza il Controller On-Screen</string>
     <string name="str_set_keyinput">Premi il Tasto per:</string>
     <string name="str_set_keyinput_mapped">Premi un altro tasto, già mappato per</string>
     <string name="str_set_keyinput_wait">Premi il Tasto:</string>
@@ -257,7 +251,7 @@ Il bottone continuerà a funzionare nei menu. (Se disattivato, il pulsante può 
     <string name="str_set_keymapname">Rinomina</string>
     <string name="str_set_keymapnull">Non Mappato</string>
     <string name="str_set_keyname">Imposta Nome del Dispositivo</string>
-    <string name="str_set_keyname_ok">OK</string>
+    <string name="str_set_ok">OK</string>
     <string name="str_set_language">Lingua per i giochi Multi-Lingua</string>
     <string name="str_set_language_title">Lingua di Sistema</string>
     <string name="str_set_layout">Seleziona Layout</string>
@@ -268,7 +262,6 @@ Il bottone continuerà a funzionare nei menu. (Se disattivato, il pulsante può 
     <string name="str_set_mapping_device_mapping">Bottone Mappato</string>
     <string name="str_set_mapping_ds_button">Bottone del DS</string>
     <string name="str_set_mapping_function">Funzione</string>
-    <string name="str_set_mapping_info">Mappatura Predefinita:</string>
     <string name="str_set_menu_game_options">Opzioni Per-Gioco</string>
     <string name="str_set_menu_game_options_delete">Elimina opzioni per-gioco</string>
     <string name="str_set_menu_global_options">Opzioni Globali</string>
@@ -287,7 +280,6 @@ Si prega di mappare un bottone per tale funzione tramite 'Mappa C. Speciali'"</s
     <string name="str_set_overwrite">Sovrascrivere un Salv. di Stato richiede una Conferma</string>
     <string name="str_set_restart_req">Riavvia DraStic affinché le modifiche abbiano effetto</string>
     <string name="str_set_rtc_system_time">"Usa sempre la Data di Sistema per l'RTC"</string>
-    <string name="str_set_scaling">Scaling Mode</string>
     <string name="str_set_settings">Configura Opzioni</string>
     <string name="str_set_settings_game">Configura Opzioni (Gioco)</string>
     <string name="str_set_showfps">Mostra FPS</string>
@@ -299,11 +291,9 @@ Si prega di mappare un bottone per tale funzione tramite 'Mappa C. Speciali'"</s
     <string name="str_set_smartedit">Auto-Snap and Resize in Layout-Editor</string>
     <string name="str_set_soundenabled">Suono abilitato</string>
     <string name="str_set_soundlatency">Latenza Audio</string>
-    <string name="str_set_soundvolume">Volume Suono</string>
     <string name="str_set_threaded">Multi-Threaded 3D Rendering</string>
     <string name="str_set_threaded_hint">"Migliora il rendimento nei giochi 3D, ma può causare glitch grafici (come lo scambio degli schermi) su qualche gioco.
 Se si verificano glitch di rendering, si prega di disabilitare quest'opzione."</string>
-    <string name="str_set_threaded_no">Questa opzione non è disponibile nei dispositivi aventi una CPU a un solo core.</string>
     <string name="str_set_threaded_warn">"Questa è un'opzione sperimentale e può causare problemi o perfino far crashare l'app. Si prega di disabilitarla prima di segnalare qualsiasi problema."</string>
     <string name="str_set_touchthrough">I tocchi sui Controlli agiscono anche sul touchscreen del DS</string>
     <string name="str_set_volume_value">Volume</string>
@@ -327,23 +317,11 @@ al Gioco"</string>
     <string name="str_sm_state_played">Durata di Gioco</string>
     <string name="str_sm_state_size">Dimensione</string>
     <string name="str_sm_state_version">Creato nella</string>
-    <string name="str_sys_copyerror">Impossibile accedere alla Memoria Esterna.</string>
     <string name="str_sys_copyingsysfolder">Spostando i file Data</string>
     <string name="str_sys_deletesysfolder">Eliminando i file Data</string>
     <string name="str_ui_gamedetail">Avvia Gioco</string>
-    <string name="str_ui_gameselect">Seleziona Gioco</string>
-    <string name="str_ui_help_firstgame">"Mentre giochi, si prega di premere il bottone 'Menu' per cambiare il layout dello schermo, le impostazioni e per caricare e salvare il gioco.
-
-Se il gioco necessita soltanto del touchscreen, puoi premere l'icona dello stilo per nascondere l'overlay del controller.
-
-Si prega di notare, che ci sono anche diverse impostazioni nel menu 'Opzioni', per modificare il comportamento del controller e del touchscreen.
-Puoi anche connettere un controller bluetooth esterno al dispositivo, e mappare i bottoni nel menu 'Opzioni'."</string>
-    <string name="str_ui_help_firstsinglescreen">Sii consapevole, che si possono perdere informazioni importanti, o menu necessari per giocare al gioco, mentre si è nella modalità a schermo singolo.</string>
     <string name="str_ui_loadconfirm">Caricare il salvataggio?</string>
-    <string name="str_ui_nofiles">NESSUN GIOCO DISPONIBILE</string>
-    <string name="str_ui_numsaves">Salvataggi</string>
     <string name="str_ui_overwrite">Sovrascrivere il salvataggio?</string>
-    <string name="str_ui_quickselect">Selezione Rapida dei Giochi</string>
     <string name="str_ui_setcheats">Trucchi</string>
     <string name="str_ui_setcheatscustom">Trucchi Personalizzati</string>
     <string name="str_user_info">Utente:</string>
