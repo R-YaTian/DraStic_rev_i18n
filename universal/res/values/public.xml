@@ -1099,6 +1099,7 @@
     <public type="drawable" name="ic_delete" id="0x7f0800cb" />
     <public type="drawable" name="ic_delete_forever_black_24dp" id="0x7f0800cc" />
     <public type="drawable" name="ic_delete_forever_white_24dp" id="0x7f0800cd" />
+    <public type="drawable" name="editmulti_border" id="0x7f0800ce" />
     <public type="drawable" name="ic_expand_less_black_18dp" id="0x7f0800cf" />
     <public type="drawable" name="ic_expand_less_white_18dp" id="0x7f0800d0" />
     <public type="drawable" name="ic_expand_more_black_18dp" id="0x7f0800d1" />

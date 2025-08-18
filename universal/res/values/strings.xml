@@ -203,7 +203,7 @@ Please restart DraStic for the change to take effect."</string>
     <string name="str_set_cheats">Enable Cheats</string>
     <string name="str_set_color">Favorite Color</string>
     <string name="str_set_confirm">Quit/Reset needs Confirmation</string>
-    <string name="str_set_cpu_load_value">Framerate Stabilizer</string>
+    <string name="str_set_cpu_load_value">Framerate Stabilizer (Additional CPU Load)</string>
     <string name="str_set_ctrlalpha">Controller Opacity</string>
     <string name="str_set_ctrlskin">Skin</string>
     <string name="str_set_custom_clock">Custom System Clock</string>

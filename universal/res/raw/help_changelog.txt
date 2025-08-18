@@ -1,3 +1,21 @@
+<b>Version 2.6.0.4a Rev 250818 (BY R-YaTian):
+- Remove useless WiFi button from settings
+- Remove unused notification code
+- Fix crash that occurs when reopening the app immediately after exiting from the menu on Android 13+
+- Fixes the issue on Android 13+ where the app would crash on the next time game load after selecting "Exit" from the menu in a previous session
+- Make the Back button open the emulator menu quickly, fixing menu access on devices without a menu key and preventing crashes from accidental activity exit
+- Avoid access "com.android.providers.downloads.documents" on Android 5-9 to avoid crash
+- Improve layout and styling for filepicker menu (This menu is only available on Android 4–9)
+- Set the internal storage as the default URI for invoking SAF to prevent crashes on lower Android versions when SAF tries to access a deleted folder
+- Optimized the "Add-User" feature logic: since usernames are case-insensitive, an additional check was added to prompt the user when attempting to add a username that differs only in case
+- Adding a user named "default" is now disallowed, as this is the system’s default user name and could cause confusion
+- Improve romselector menu: Add remove button functionality for Android 10+ tips
+- Improve styling for keynamer (Bluetooth devices rename) menu
+- Improve styling for custom cheat edit menu
+- Add a user list view to AddUser menu and allow deleting users here
+- Update the cheat database to "DeadSkullzJr's NDS(i) Cheat Database (2025-08-12)"
+- Added logic to automatically extract either the Chinese or English cheat database based on the device's system language
+
 <b>Version 2.6.0.4a:
 - Fix for savestates from previous versions not loading properly
 
