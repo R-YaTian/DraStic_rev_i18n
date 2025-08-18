@@ -20,9 +20,6 @@ A: Nein, DraStic unterstützt sie nicht und wird dies niemals tun. Das 3DS ist e
 <b>F: Hilfe, nachdem ich die App aktualisiert habe funktioniert ein Spiel nichtmehr, welches vorher funktioniert hat!
 A: Leider können manchmal versehentlich neue Bugs entstehen, wenn wir alte beheben (da das DS tausende Spiele hat wird es kompliziert). Wenn du das Problem meldest, können wir es hoffentlich schnell korrigieren.
 
-<b>F: Warum funktioniert der Google Drive Up-/Download nicht?
-A: Manchmal schlägt das automatische Anlegen eines 'DraStic'-Ordners fehl. Falls nach einem Upload kein 'DraStic'-Ordner in deinem Google Drive erscheint, lege den Ordner bitte manuell an und versuche den Upload erneut. Der Download funktioniert natürlich nur, wenn die ROMs auf allen Geräten den exakt selben Dateinamen haben!
-
 <b>F: Wie steht's mit Rückerstattungen?
 A: Nach dem Zeitfenster während dem du die App auf Google Play erstatten kannst (normalerweise 2 Stunden), bieten wir Rückerstattungen nur an, wenn diese gerechtfertigt sind. Falls du denkst, dass du eine Erstattung erhalten solltest, dann sende uns bitte eine E-Mail und erkläre warum. Selbst nachdem wir den Preis zurückerstatten kann die App weiterhin verwendet werden, deshalb sind wir zurückhaltend mit unbegründeten Rückerstattungen.
 

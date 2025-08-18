@@ -9,7 +9,6 @@ Ausser der Fähigkeit, Nintendo DS Spiele in voller Geschwindigkeit auf vielen A
 - Volle Unterstützung für externe Gamepads, und Geräte mit integrierten Spieltasten wie das nVidia Shield oder Xperia Play
 - Der Spielstand kann jederzeit gespeichert und fortgesetzt werden
 - Eine Datenbank mit tausenden von Cheats ermöglicht Dir, dein Spielerlebnis deinen Wünschen anzupassen
-- Deine Speicherstände können direkt aus der Anwendung heraus über dein Google Drive auf all deinen Geräten synchronisiert werden
 - Eine Vorspulfunktion ermöglicht dir die Spielgeschwindigkeit zu erhöhen
 
 --------------------------

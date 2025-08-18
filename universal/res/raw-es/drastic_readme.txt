@@ -237,20 +237,7 @@ Establece la disposición predeterminada a ser usada, al iniciar un juego nuevo,
 Establece la velocidad/frecuencia del fuego automático.
 
    
-<t2>1.6 Google Drive
-
-<b>Refrescar disponibilidad de guardado en Google Drive
-Cada vez que ingreses al menú de guardado/carga, puedes refrescar manualmente la disponibildad de los archivos de guardado en Google Drive al presionar el botón  «Disponible en Google Drive». Esto te mostrará, mediante un indicador en cada ranura de guardado, si un estado de guardado para esa ranura está disponible en tu Google Drive.
-Si habilitas este ajuste, esta actualización se realizará de forma automática, cada vez que entres al menú de guardado/carga.
-Nota: para que este ajuste funcione, debes estar conectado a internet al entrar al menú de guardado/carga.
-Si no quieres que DraStic acceda al internet automáticamente, entonces desactiva esta opción.
-
-<b>Reiniciar cuenta de Google Drive
-Presiona esto para limpiar los datos de la cuenta usada para la funcionalidad de Google Drive.
-De esta manera, puedes seleccionar otra cuenta la próxima vez que estés usando cualquiera de las funciones de Google Drive.
-
-   
-<t2>1.7 Ajustes del sistema
+<t2>1.6 Ajustes del sistema
 
 Aquí puedes modificar tus datos personales igual que lo harías en el firmware de una Nintendo DS.
 Estos serán usados por varios juegos para mostrar tu sobrenombre, por ejemplo.
@@ -265,7 +252,7 @@ Para sincronizar con el tiempo del mundo real, reinicia el juego y carga los gua
 Con este ajuste, puedes especificar la hora de inicio del reloj en tiempo real usando el tiempo del sistema.
 
 
-<t2>1.8 Avanzado
+<t2>1.7 Avanzado
 Por favor, solamente cambia estos ajustes si sabes qué estás haciendo, ya que podrían romper los juegos o causar inestabilidad.
 
 <b>Almacenar guardados dentro del juego en estados de guardado
@@ -340,7 +327,7 @@ Solamente se habilitará, si ya has creado un estado de guardado.
 Guarda tu progreso actual a una ranura de estado de guardado.
 
 <b>Administrar estados de guardado
-Aquí puedes eliminar/copiar tus estados de guardado y, además, subir o descargar tus archivos a Google Drive.
+Aquí puedes eliminar/copiar tus estados de guardado y.
    
 <b>Base de datos de trucos
 Presiona aquí para habilitar o deshabilitar trucos para el juego activo en el momento.
@@ -475,11 +462,11 @@ la homebrewya funciona con R4. Puedes hacer esto ya sea mediante una hombrew que
 esté diseñada para funcionar con R4, o utilizar un software para parchear. Por ejemplo,
 puedes usar dlditool, el cual puede ser descargado aquí:
 
-http://chishm.drunkencoders.com/DLDI/
+https://www.chishm.com/DLDI/index.html
 
-Descarga dlditool y r4ts.dldi, e invócalo con el siguiente para parchear una ROM de homebrew compatible con DLDI, para usar R4:
+Descarga dlditool y "R4(DS) - Revolution for DS: DLDI v1", e invócalo con el siguiente para parchear una ROM de homebrew compatible con DLDI, para usar R4:
 
-dlditool r4ts.dldi <homebrew.nds>
+dlditool r4tf.dldi <homebrew.nds>
 
 
 <t1>8. Interfaz en Lua

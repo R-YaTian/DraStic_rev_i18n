@@ -212,21 +212,7 @@ Stellt das Standard-Layout beim Starten eines neuen Spiels ein, für das bisher 
 Stellt ein, wie schnell die Tasten automatisch betätigt werden sollen.
 
    
-<t2>1.6 Google Drive
-
-<b>Verfügbare Speicherstände von Google Drive aktualisieren
-Jedes mal wenn 'Savestates verwalten' geöffnet wird, können die auf Google Drive verfügbaren Savestates manuell aktualisiert werden, indem die Google Drive Taste rechts oben gedrückt wird.
-Neben dem Savestate wird dann ein Symbol angezeigt, welches darauf hinweist, das der Savestate auch auf Google Drive existiert.
-Falls er nur auf Google Drive aber nicht lokal verfügbar ist, erscheint 'EMPTY' in der Anzeige der Savestate-Details.
-Nach Aktivierung dieser Option werden die verfügbaren Savestates automatisch bei Öffnen von 'Savestates verwalten' überprüft.
-Hinweis: Damit dies funktioniert (bzw. die Google Drive Funktion generell), muss natürlich eine aktive Internetverbindung bestehen.
-Falls du nicht willst, dass DraStic automatisch auf das Internet zugreift (wenn es aktiv ist), dann deaktiviere diese Option.
-
-<b>Google Drive Konto zurücksetzen
-Hiermit werden die Daten des Google Drive Kontos zurückgesetzt, damit bei der nächsten Verwendung einer der Google Drive Funktionen ein neues Konto ausgewählt werden kann.
-
-   
-<t2>1.7 System
+<t2>1.6 System
 
 Hier können die persönlichen Daten bearbeitet werden, wie dies in der Firmware eines Nintendo DS möglich ist.
 Diese Daten werden von Spielen z.B. dazu verwendet, deinen (Spitz)namen anzuzeigen.
@@ -241,7 +227,7 @@ Setze das Spiel zurück und lade einen Speicherstand im Spiel, um wieder mit der
 Mit dieser Einstellung lässt sich Zeit/Datum festlegen zu dem die interne Uhr gestartet wird, anstelle Zeit/Datum des Android-Geräts zu verwenden.
 
 
-<t2>1.8 Erweitert
+<t2>1.7 Erweitert
 
 <b>Spiele-Speicherstände im Savestate speichern
 Speichert eine Kopie des Spiele-Speicherstandes in der Savesate-Datei. Damit wird sichergestellt, dass der Spiele-Speicherstand und Savestate synchronisiert sind.
@@ -314,7 +300,7 @@ Die Taste ist nur aktiv, falls bereits Savestates gespeichert wurden.
 Hier können Savestates gespeichert werden.
 
 <b>Savestates verwalten
-Hier können Savestates gelöscht und kopiert werden, außerdem lassen sie sich auf Google Drive hoch- und herunterladen.
+Hier können Savestates gelöscht und kopiert werden.
    
 <b>Cheats
 Hier können die einzelnen Cheats aus der Cheat-Datenbank ein- und ausgeschalten werden.
@@ -452,11 +438,11 @@ Automatisches DLDI-Patching wird (noch) nicht vollzogen, stelle also sicher, das
 Dazu kann entweder ein Hombrew verwenden, das bereits gepatcht ist, oder patche es selbst für das R4.
 Letzteres kann z.B. mit dlditool gemacht werden, welches sich hier herunterladen lässt:
 
-http://chishm.drunkencoders.com/DLDI/
+https://www.chishm.com/DLDI/index.html
 
-Lade dlditool und r4ts.dldi herunter, dann führe es mit folgender Befehlszeile aus, um ein DLDI-konformes Homebrew mit R4-Unterstützung zu erzeugen:
+Lade dlditool und "R4(DS) - Revolution for DS: DLDI v1" herunter, dann führe es mit folgender Befehlszeile aus, um ein DLDI-konformes Homebrew mit R4-Unterstützung zu erzeugen:
 
-dlditool r4ts.dldi <homebrew.nds>
+dlditool r4tf.dldi <homebrew.nds>
 
 
 <t1>8. Lua Interface
@@ -566,7 +552,7 @@ Return: Float mit dem Wert der Y-Achse des rechten Sticks, falls ein externes Ga
 
 <b>android.get_rotation()
 Return: Integer mit dem Wert der momentanen Geräte-Rotation.
-Die Werte liegen im Bereich [0,-180[ bei Rotation gegen den Uhrzeigersinn, bzw. [0,180] bei Rotation im Uhrzeigersinn.
+Die Werte liegen im Bereich [0,-180] bei Rotation gegen den Uhrzeigersinn, bzw. [0,180] bei Rotation im Uhrzeigersinn.
 
 <b>android.set_layout(layout)
 Setzt das Bildschirm-Layout (Bereich [0,4], die Reihenfolge ist dieselbe wie in den Menüs der App).

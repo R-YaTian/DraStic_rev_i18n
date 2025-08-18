@@ -20,9 +20,6 @@ R: No, non li supporta e non lo saranno mai. Il 3DS è un sistema interamente di
 <b>D: Aiuto, un gioco prima funzionava con l'emulatore ma ho aggiornato alla nuova versione e ora non funziona!
 R: Sfortunatamente, qualche volta quando risolviamo un problema nell'emulatore, 'rompiamo' accidentalmente qualcos'altro (dal momento che il DS presenta migliaia di giochi, il tutto diventa complesso). Se segnali il problema, lo risolveremo il prima possibile. Possiamo anche darti una versione precedente dell'emulatore in modo da poter tornare a giocarci.
 
-<b>D: Perché la feature di Google Drive non funziona?
-R: Qualche volta la creazione automatica della cartella 'DraStic' fallisce su Google Drive. Controlla se la cartella è presente dopo aver caricato un salvataggio di stato, e se non c'è, creala manualmente e riprova a caricare. Il download funzionerà solamente se le ROM hanno lo stesso nome in tutti i dispositivi!
-
 <b>D: Qual è la vostra politica di rimborso?
 R: Eravamo soliti offrire il rimborso a quasi tutti entro le 48 ore, ma ora che non c'è alcuna esigenza del BIOS e che c'è la presenza di una versione demo, riteniamo che non sia necessario. Offriremmo il rimborso se riteniamo che il caso è giustificato - se credi di aver il diritto a un rimborso, inviarci una e-mail e spiegaci il motivo. Vi preghiamo di comprendere che dopo il rimborso l'applicazione installata può essere ancora utilizzata, quindi siamo un po' riluttanti a dare rimborsi senza alcun motivo.
 

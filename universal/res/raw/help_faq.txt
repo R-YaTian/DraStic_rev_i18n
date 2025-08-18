@@ -20,9 +20,6 @@ A: No, it does not and never will. 3DS is an entirely different system, a full g
 <b>Q: Help, a game was working in the emulator before but I updated to a newer version and now it doesn't!
 A: Unfortunately, sometimes when we fix some issue in the emulator we accidentally break something else (since DS has thousands of games it gets complex). If you report the problem then hopefully we can correct it ASAP. We may also be able to give you an older verison of the emulator so you can go back to using it.
 
-<b>Q: Why doesn't the Google Drive feature work?
-A: Sometimes the automatic creation of the 'DraStic' folder on your Google Drive fails. Check if the folder is there after uploading a savestate, and if it isn't, create it manually and try uploading again. The download will only work, if the ROMs on all devices have the same filename!
-
 <b>Q: What is your refund policy?
 A: We used to offer refunds to almost everyone within 48 hours, but now that there's no BIOS requirement and there's a demo version we feel this is unnecessary. We will still offer refunds if we feel that the case is warranted - if you believe you're entitled to a refund send us an e-mail and explain why. Please understand that refunded installations can still be played, so we're a little reluctant to give out refunds for no reason.
 

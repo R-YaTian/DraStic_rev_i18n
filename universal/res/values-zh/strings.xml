@@ -39,7 +39,7 @@
     <string name="str_cm_resizescreen">调整屏幕大小</string>
     <string name="str_cm_savedefault">保存为全局布局</string>
     <string name="str_cm_saveforgame">保存为当前游戏布局</string>
-    <string name="str_cm_scale_aspect">保持单屏</string>
+    <string name="str_cm_scale_aspect">保持比例</string>
     <string name="str_cm_selectctrltoast">请选择一个控件</string>
     <string name="str_cm_selecttoast">请选择一块DS屏幕</string>
     <string name="str_cm_tool_close">关闭工具箱</string>
@@ -168,7 +168,7 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_cheats">启用金手指</string>
     <string name="str_set_color">最喜欢的颜色</string>
     <string name="str_set_confirm">退出/重置时需要确认</string>
-    <string name="str_set_cpu_load_value">帧率稳定器</string>
+    <string name="str_set_cpu_load_value">帧率稳定器(额外 CPU 负载)</string>
     <string name="str_set_ctrlalpha">虚拟按键不透明度</string>
     <string name="str_set_ctrlskin">皮肤</string>
     <string name="str_set_custom_clock">自定义时钟</string>
@@ -212,7 +212,7 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_fs_safe">安全跳帧</string>
     <string name="str_set_fs_value">跳帧值</string>
     <string name="str_set_gl16bit">16位渲染</string>
-    <string name="str_set_gl_sleep">针对某些 Adreno GPU 设备优化</string>
+    <string name="str_set_gl_sleep">在渲染线程中休眠</string>
     <string name="str_set_haptic">按键震动</string>
     <string name="str_set_hdr_advanced">高级设置</string>
     <string name="str_set_hdr_audio">音频设置</string>

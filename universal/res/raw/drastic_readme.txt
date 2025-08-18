@@ -218,21 +218,7 @@ Sets default layout to be used, when starting a new game, that doesn't have a cu
 Set the speed/frequency of auto-fire.
 
    
-<t2>1.6 Google Drive
-
-<b>Refresh save availability on Google Drive
-Each time you enter the save/load menu, you can manually refresh the availability of save games on Google Drive by pressing the button "Available on Google Drive".
-This will show you by an indicator on each save slot, if a savestate for that slot is available on your Google Drive.
-If you enable this setting, this update will be done automatically, each time you enter the save/load menu.
-Note: for this setting to work, you need to be connected to the internet when entering the save/load menu.
-If you don't want DraStic to access the internet automatically, then disable this option.
-
-<b>Reset Google Drive account
-Press this to clear the account data used for the Google Drive feature.
-This way you can select another account the next time you are using any of the Google Drive functions.
-
-   
-<t2>1.7 System Settings
+<t2>1.6 System Settings
    
 Here you can modify your personal data as you would in the firmware of a Nintendo DS.
 This data will be used by various games to display your nickname, for example.
@@ -247,7 +233,7 @@ To get synchronized with real world time reset the game and load in-game saves.
 With this setting, you can specify the RTC start time instead of using system time.
 
 
-<t2>1.8 Advanced
+<t2>1.7 Advanced
 Please only change these settings if you know what you're doing, as they could break games or cause instability.
 
 <b>Store in-game saves in savestates
@@ -327,7 +313,7 @@ Will only be enabled, if you already created a savestate.
 Save your current progress to a savestate slot.
 
 <b>Manage Savestates
-Here you can delete/copy your savestates and also also up- or download your saves to Google Drive.
+Here you can delete/copy your savestates.
    
 <b>Cheat Database
 Press here to enable or disable cheats for the currently active game.
@@ -464,11 +450,11 @@ homebrew already works with R4. You can do this either by using homebrew that
 works out of the box with R4 or by using an offline patcher. For example, you
 can use dlditool which can currently be downloaded here:
 
-http://chishm.drunkencoders.com/DLDI/
+https://www.chishm.com/DLDI/index.html
 
-Download dlditool and r4ts.dldi, and invoke it with the following to patch a DLDI-compliant homebrew ROM to use R4:
+Download dlditool and "R4(DS) - Revolution for DS: DLDI v1", and invoke it with the following to patch a DLDI-compliant homebrew ROM to use R4:
 
-dlditool r4ts.dldi <homebrew.nds>
+dlditool r4tf.dldi <homebrew.nds>
 
 
 <t1>8. Lua interface
@@ -579,7 +565,7 @@ Returns a float with the right thumb stick Y-axis value, if an external controll
 
 <b>android.get_rotation()
 Returns an integer with the current device rotation in degrees.
-The range is [0,-180[ for counter-clockwise rotation and [0,180] for clockwise rotation.
+The range is [0,-180] for counter-clockwise rotation and [0,180] for clockwise rotation.
 
 <b>android.set_layout(layout)
 Sets the current screen layout (range [0,4], in the order the layouts are displayed in the app's menus).

@@ -8,7 +8,6 @@ DraStic es un emulador veloz de Nintendo DS para Android. Además de ser capaz d
 - Soporta plenamente controladores añadidos, y controles físicos en dispositivos cono NVidia Shield y Xperia Play
 - Guarda y reanuda tu progreso donde sea con los estados de guardado
 - Potencia tu experiencia jugable con una base de datos de miles de trucos
-- Sincroniza tus archivos de guardado con tu espacio de almacenamiento en línea de Google Drive
 - Incrementa la velocidad de emulación con el adelantamiento
 
 
