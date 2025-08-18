@@ -364,6 +364,9 @@ If you experience any rendering glitches, please disable this option."</string>
     <string name="str_romsel_perm_warn_alt">DraStic needs the external storage permission to access this game folder.</string>
     <string name="str_romsel_dir_missing_alt">This folder no longer exists. Would you like to reselect it?</string>
     <string name="str_romsel_androidq_warn">This folder is unusable on Android 10.0 and above. Please remove it and select another.</string>
+    <string name="str_romsel_dup">This directory is already added</string>
+    <string name="str_romsel_dir_unusable">This directory is unusable</string>
+    <string name="str_romsel_file_unusable">This file is unusable</string>
     <string name="str_sysdir_perm_notgrant">Storage permission not granted.</string>
     <string name="str_fpick_createdir">Create Folder</string>
     <string name="str_fpick_create">Create</string>

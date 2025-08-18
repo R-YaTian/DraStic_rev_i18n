@@ -213,6 +213,12 @@
 
     move-result-object v0
 
+    const v1, 0x7f0f00a2
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
     const v1, 0x7f0f005c
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -230,8 +236,6 @@
     new-instance v1, Lcom/dsemu/drastic/ui/RomSelector$d;
 
     invoke-direct {v1, p0}, Lcom/dsemu/drastic/ui/RomSelector$d;-><init>(Lcom/dsemu/drastic/ui/RomSelector;)V
-
-    const-string v3, "Close"
 
     invoke-virtual {v0, v3, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1452,15 +1456,27 @@
 
     const/4 p2, 0x1
 
-    const-string v0, "This directory is already added"
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f0f009f
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    const v1, 0x7f0f009e
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
 
     const/16 v1, 0x15
 
     const-string v2, "Unreachable"
 
     const/16 v3, 0xc1
-
-    const-string v4, "This directory is unusable"
 
     const v5, 0x104000a
 
@@ -1554,11 +1570,19 @@
     invoke-static {p0}, Lcom/dsemu/drastic/filesystem/d;->n(Landroid/content/Context;)V
 
     :cond_3
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    const p2, 0x7f0f00a0
+
+    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p2
+
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {p1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    const-string p2, "This file is unusable"
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -2514,11 +2538,19 @@
 
     if-eqz v2, :cond_1
 
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    const p2, 0x7f0f01ca
+
+    invoke-virtual {v2, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p2
+
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {p1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    const-string p2, "Storage permission not granted."
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -2567,11 +2599,19 @@
 
     if-eqz v2, :cond_4
 
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    const p2, 0x7f0f01ca
+
+    invoke-virtual {v2, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p2
+
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {p1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    const-string p2, "Storage permission not granted."
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 

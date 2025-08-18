@@ -54,7 +54,8 @@
 请尝试解压并载入.nds文件。"</string>
     <string name="str_err_badrom">您尝试打开的并不是有效的游戏ROM。</string>
     <string name="str_err_encrom">"这个版本的ROM是加密的, 加密的ROM只能用转储自您NDS设备的任天堂ARM7 BIOS来加载。
-关于任天堂ARM7 BIOS以及如何解密rom, 请您参考 drastic-ds.com 上的常见问题解答。"</string>
+关于任天堂ARM7 BIOS以及如何解密ROM, 请您参考 drastic-ds.com 上的常见问题解答。
+若尝试加载DSiWare或DSi专用ROM时看到这条消息, 那么您可以直接使用隔壁melonDS模拟器, 因为DraStic不支持DSi模拟。"</string>
     <string name="str_err_install">DraStic无法创建运转所需的文件, 请您重装应用程序</string>
     <string name="str_err_jniload">DraStic无法初始化。请您尝试重新下载。</string>
     <string name="str_err_lowmem">"内存不足, DraStic将会意外关闭。
@@ -330,6 +331,9 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_romsel_perm_warn_alt">DraStic 需要外置存储权限以访问该游戏文件夹。</string>
     <string name="str_romsel_dir_missing_alt">此文件夹已不存在。需要重新选择一个文件夹吗?</string>
     <string name="str_romsel_androidq_warn">该文件夹在安卓10以上版本已不可用, 请移除并重新选择。</string>
+    <string name="str_romsel_dup">该目录已添加</string>
+    <string name="str_romsel_dir_unusable">该目录不可用</string>
+    <string name="str_romsel_file_unusable">该文件不可用</string>
     <string name="str_sysdir_perm_notgrant">存储权限未授予</string>
     <string name="str_fpick_createdir">创建文件夹</string>
     <string name="str_fpick_create">创建</string>
