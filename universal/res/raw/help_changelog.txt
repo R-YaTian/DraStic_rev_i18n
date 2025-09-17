@@ -1,4 +1,4 @@
-<b>Version 2.6.0.4a Rev 250818 (BY R-YaTian):
+<b>Version 2.6.0.4a Rev 250917 (BY R-YaTian):
 - Remove useless WiFi button from settings
 - Remove unused notification code
 - Fix crash that occurs when reopening the app immediately after exiting from the menu on Android 13+
