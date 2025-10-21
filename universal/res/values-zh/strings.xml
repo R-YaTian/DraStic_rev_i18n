@@ -319,6 +319,14 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_sysdir_selext">选择外置目录</string>
     <string name="str_set_sysdir_resel_tip">DraStic 无法访问当前设置的数据存储目录, 重新选择?</string>
     <string name="str_set_sysdir_int_tip">请选择 \"内置默认文件夹\" 选项, 因为在 \"文件管理\" 应用中直接选择 DraStic 的内置默认文件夹是不受支持的!</string>
+    <string name="str_set_sysdir_reset" formatted="false">DraStic 无法访问数据存储目录, 将会由 %s 重置为 %s</string>
+    <string name="str_set_sysdir_kitkat_reset" formatted="false">DraStic 在安卓4.4.x版本无法使用自定义数据存储目录, 将会由 %s 重置为 %s</string>
+    <string name="str_set_sysdir_migration">数据迁移</string>
+    <string name="str_set_sysdir_copytonew">DraStic 将会复制所有数据文件到新数据存储目录</string>
+    <string name="str_set_sysdir_exist">已存在数据文件</string>
+    <string name="str_set_sysdir_keep_or_overwrite">新数据存储目录中似乎已存在 DraStic 数据文件。现在是要迁移旧数据文件到新目录并覆盖相同文件, 还是要保留新目录中的数据文件并直接使用此目录?</string>
+    <string name="str_set_sysdir_overwrite">覆盖</string>
+    <string name="str_set_keep">保留</string>
     <string name="str_romsel_remove">移除</string>
     <string name="str_romsel_remove_tip">要从列表中移除该文件夹路径?</string>
     <string name="str_romsel_list_full">添加的游戏文件夹路径已达上限! 请在添加新路径之前移除一个旧的!</string>

@@ -2272,18 +2272,24 @@
     <public type="string" name="str_rom_loadstate" id="0x7f0f00c8" />
     <public type="string" name="str_rom_newgame" id="0x7f0f00c9" />
     <public type="string" name="str_rom_shortcut" id="0x7f0f00ca" />
+    <public type="string" name="str_set_sysdir_reset" id="0x7f0f00cb" />
     <public type="string" name="str_set_analogtouch" id="0x7f0f00cc" />
     <public type="string" name="str_set_analogtouch_title" id="0x7f0f00cd" />
     <public type="string" name="str_set_analogtriggers" id="0x7f0f00ce" />
     <public type="string" name="str_set_autofirespeed" id="0x7f0f00cf" />
+    <public type="string" name="str_set_sysdir_kitkat_reset" id="0x7f0f00d0" />
+    <public type="string" name="str_set_sysdir_migration" id="0x7f0f00d1" />
     <public type="string" name="str_set_autoresume" id="0x7f0f00d2" />
     <public type="string" name="str_set_autorotate" id="0x7f0f00d3" />
     <public type="string" name="str_set_autosave" id="0x7f0f00d4" />
+    <public type="string" name="str_set_sysdir_copytonew" id="0x7f0f00d5" />
     <public type="string" name="str_set_autotrim" id="0x7f0f00d6" />
     <public type="string" name="str_set_backupinsave" id="0x7f0f00d7" />
     <public type="string" name="str_set_backupinsave_warn" id="0x7f0f00d8" />
     <public type="string" name="str_set_bday" id="0x7f0f00d9" />
     <public type="string" name="str_set_bday_hint" id="0x7f0f00da" />
+    <public type="string" name="str_set_sysdir_exist" id="0x7f0f00db" />
+    <public type="string" name="str_set_sysdir_keep_or_overwrite" id="0x7f0f00dc" />
     <public type="string" name="str_set_btn_advanced" id="0x7f0f00dd" />
     <public type="string" name="str_set_btn_audio" id="0x7f0f00de" />
     <public type="string" name="str_set_btn_controller" id="0x7f0f00df" />
@@ -2296,6 +2302,7 @@
     <public type="string" name="str_set_cheats" id="0x7f0f00e6" />
     <public type="string" name="str_set_color" id="0x7f0f00e7" />
     <public type="string" name="str_set_confirm" id="0x7f0f00e8" />
+    <public type="string" name="str_set_keep" id="0x7f0f00e9" />
     <public type="string" name="str_set_cpu_load_value" id="0x7f0f00ea" />
     <public type="string" name="str_set_ctrlalpha" id="0x7f0f00eb" />
     <public type="string" name="str_set_ctrlskin" id="0x7f0f00ec" />
@@ -2319,6 +2326,7 @@
     <public type="string" name="str_set_extrafunc_1" id="0x7f0f00ff" />
     <public type="string" name="str_set_extrafunc_2" id="0x7f0f0100" />
     <public type="string" name="str_set_extrafunc_3" id="0x7f0f0101" />
+    <public type="string" name="str_set_sysdir_overwrite" id="0x7f0f0102" />
     <public type="string" name="str_set_ffwd_150" id="0x7f0f0103" />
     <public type="string" name="str_set_ffwd_200" id="0x7f0f0104" />
     <public type="string" name="str_set_ffwd_300" id="0x7f0f0105" />

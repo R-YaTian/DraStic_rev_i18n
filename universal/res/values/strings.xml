@@ -352,6 +352,14 @@ If you experience any rendering glitches, please disable this option."</string>
     <string name="str_set_sysdir_selext">Select External</string>
     <string name="str_set_sysdir_resel_tip">DraStic no longer has access to its data dir. Reselect it?</string>
     <string name="str_set_sysdir_int_tip">Please select \"Internal\" instead of \"Scoped Storage\" to use DraStic\'s internal data directory.</string>
+    <string name="str_set_sysdir_reset" formatted="false">DraStic can no access its system directory. It will be reset from %s to %s.</string>
+    <string name="str_set_sysdir_kitkat_reset" formatted="false">DraStic can no longer use an alternate system directory on KitKat. It will be reset from %s to %s.</string>
+    <string name="str_set_sysdir_migration">System Migration</string>
+    <string name="str_set_sysdir_copytonew">DraStic will now copy your system data files to your new system data folder.</string>
+    <string name="str_set_sysdir_exist">Existing Files</string>
+    <string name="str_set_sysdir_keep_or_overwrite">The new system directory seems to contain DraStic data. Would you like to copy your old system files to it and overwrite the existing files, or keep them and use the folder as-is?</string>
+    <string name="str_set_sysdir_overwrite">Overwrite</string>
+    <string name="str_set_keep">Keep</string>
     <string name="str_romsel_remove">Remove</string>
     <string name="str_romsel_remove_tip">Remove path from list?</string>
     <string name="str_romsel_list_full">You have too many games folders! Please remove one before adding another!</string>

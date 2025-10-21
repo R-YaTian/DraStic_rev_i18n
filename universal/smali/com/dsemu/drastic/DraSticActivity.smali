@@ -2377,11 +2377,13 @@
 
     if-nez v4, :cond_19
 
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    sget-object v4, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     new-array v5, v10, [Ljava/lang/Object;
 
@@ -2391,7 +2393,13 @@
 
     aput-object v3, v5, v2
 
-    const-string v2, "DraStic can no access its system directory. It will be reset from %s to %s."
+    const v2, 0x7f0f00cb
+
+    invoke-virtual {v4, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    sget-object v4, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     invoke-static {v4, v2, v5}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -2492,6 +2500,16 @@
     goto :goto_f
 
     :cond_1d
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x7f0f00d0
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
     invoke-static {}, Lcom/dsemu/drastic/ui/q;->e()Lh0/b;
 
     move-result-object v3
@@ -2501,8 +2519,6 @@
     move-result-object v3
 
     sget-object v4, Lf0/h;->c:Ljava/lang/String;
-
-    const-string v5, "DraStic can no longer use an alternate system directory on KitKat. It will be reset from %s to %s."
 
     if-eqz v4, :cond_1e
 
@@ -2745,11 +2761,25 @@
 
     if-nez v1, :cond_25
 
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const v4, 0x7f0f00d1
+
+    invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    const v5, 0x7f0f00d5
+
+    invoke-virtual {v1, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    const-string v4, "System Migration"
 
     invoke-virtual {v1, v4}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -2758,8 +2788,6 @@
     invoke-virtual {v4, v15}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
     move-result-object v4
-
-    const-string v5, "DraStic will now copy your system data files to your new system data folder."
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -2780,17 +2808,29 @@
     return-void
 
     :cond_25
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const v4, 0x7f0f00db
+
+    invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    const v5, 0x7f0f00dc
+
+    invoke-virtual {v1, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const-string v4, "Existing Files"
-
     invoke-virtual {v1, v4}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v4
-
-    const-string v5, "The new system directory seems to contain DraStic data. Would you like to copy your old system files to it and overwrite the existing files, or keep them and use the folder as-is?"
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -2800,11 +2840,19 @@
 
     move-result-object v4
 
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v8
+
     new-instance v5, Le0/p;
 
     invoke-direct {v5, v0, v3, v2}, Le0/p;-><init>(Lcom/dsemu/drastic/DraSticActivity;Lcom/dsemu/drastic/filesystem/b;Lcom/dsemu/drastic/filesystem/b;)V
 
-    const-string v3, "Overwrite"
+    const v3, 0x7f0f0102
+
+    invoke-virtual {v8, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
 
     invoke-virtual {v4, v3, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -2814,7 +2862,11 @@
 
     invoke-direct {v4, v0, v2}, Le0/q;-><init>(Lcom/dsemu/drastic/DraSticActivity;Lcom/dsemu/drastic/filesystem/b;)V
 
-    const-string v2, "Keep"
+    const v2, 0x7f0f00e9
+
+    invoke-virtual {v8, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-virtual {v3, v2, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3280,6 +3332,12 @@
 
     move-result-object p1
 
+    if-nez p1, :not_null
+
+    goto :cond_2
+
+    :not_null
+
     sget-object v2, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const/4 v3, 0x1
@@ -3321,6 +3379,12 @@
     invoke-interface {v1, p0, v2}, Lcom/dsemu/drastic/filesystem/b;->v(Landroid/content/Context;Lcom/dsemu/drastic/filesystem/b$c;)[Lcom/dsemu/drastic/filesystem/b;
 
     move-result-object p1
+
+    if-nez p1, :not_null_1
+
+    goto :cond_2
+
+    :not_null_1
 
     array-length v1, p1
 
@@ -7512,11 +7576,19 @@
 
     move-result-object v0
 
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const v2, 0x7f0f0137
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
     new-instance v1, Le0/w;
 
     invoke-direct {v1, p0}, Le0/w;-><init>(Lcom/dsemu/drastic/DraSticActivity;)V
-
-    const-string v2, "OK"
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNeutralButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
