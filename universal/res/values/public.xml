@@ -2263,6 +2263,9 @@
     <public type="string" name="str_menu_rootmoved" id="0x7f0f00b9" />
     <public type="string" name="str_menu_saving_busy" id="0x7f0f00bb" />
     <public type="string" name="str_menu_shortcut" id="0x7f0f00bd" />
+    <public type="string" name="str_menu_shortcut_err" id="0x7f0f00be" />
+    <public type="string" name="str_menu_shortcut_game_err" id="0x7f0f00bf" />
+    <public type="string" name="str_menu_error" id="0x7f0f00c0" />
     <public type="string" name="str_menu_yes" id="0x7f0f00c1" />
     <public type="string" name="str_perm_mic_rationale" id="0x7f0f00c2" />
     <public type="string" name="str_perm_mic_warn" id="0x7f0f00c3" />
@@ -2336,8 +2339,11 @@
     <public type="string" name="str_set_ffwd_speed" id="0x7f0f0109" />
     <public type="string" name="str_set_ffwd_unlimited" id="0x7f0f010a" />
     <public type="string" name="str_set_ffwdtoggle" id="0x7f0f010b" />
+    <public type="string" name="str_set_sysdir_inaccessible" id="0x7f0f010c" />
     <public type="string" name="str_set_filter" id="0x7f0f010d" />
     <public type="string" name="str_set_fixmainscreen" id="0x7f0f010e" />
+    <public type="string" name="str_set_sysdir_cpdatafail" id="0x7f0f010f" />
+    <public type="string" name="str_set_sysdir_missing" id="0x7f0f0110" />
     <public type="string" name="str_set_fpstransparent" id="0x7f0f0111" />
     <public type="string" name="str_set_fs" id="0x7f0f0113" />
     <public type="string" name="str_set_fs_auto" id="0x7f0f0115" />
@@ -2421,6 +2427,8 @@
     <public type="string" name="str_set_threaded_warn" id="0x7f0f016a" />
     <public type="string" name="str_set_touchthrough" id="0x7f0f016b" />
     <public type="string" name="str_set_volume_value" id="0x7f0f016c" />
+    <public type="string" name="str_set_sysdir_tipext" id="0x7f0f016d" />
+    <public type="string" name="str_set_sysdir_tipint" id="0x7f0f016e" />
     <public type="string" name="str_sm_back" id="0x7f0f016f" />
     <public type="string" name="str_sm_bioserror" id="0x7f0f0170" />
     <public type="string" name="str_sm_copy" id="0x7f0f0171" />

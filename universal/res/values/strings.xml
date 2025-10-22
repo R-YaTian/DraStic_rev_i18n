@@ -165,6 +165,9 @@ Current progress will be lost."</string>
     <string name="str_menu_rootmoved">"DraStic's Data Directory set to:"</string>
     <string name="str_menu_saving_busy">Saving still in progress</string>
     <string name="str_menu_shortcut">Install shortcut to your Desktop?</string>
+    <string name="str_menu_shortcut_err">Unable to open shortcut</string>
+    <string name="str_menu_shortcut_game_err">Unable to open game from \'</string>
+    <string name="str_menu_error">Error</string>
     <string name="str_menu_yes">Yes</string>
     <string name="str_menu_add_saf_dir">Add Scoped Storage Directory</string>
     <string name="str_menu_add_path">Add Folder Path</string>
@@ -360,6 +363,11 @@ If you experience any rendering glitches, please disable this option."</string>
     <string name="str_set_sysdir_keep_or_overwrite">The new system directory seems to contain DraStic data. Would you like to copy your old system files to it and overwrite the existing files, or keep them and use the folder as-is?</string>
     <string name="str_set_sysdir_overwrite">Overwrite</string>
     <string name="str_set_keep">Keep</string>
+    <string name="str_set_sysdir_inaccessible">Newly selected system directory is inaccessible; Using the old one.</string>
+    <string name="str_set_sysdir_cpdatafail">Could not copy data into new system dir; Please restart the app.</string>
+    <string name="str_set_sysdir_missing">System folders are missing and could not be created!</string>
+    <string name="str_set_sysdir_tipext">Due to Android OS updates, your DraStic data dir is unavailable and must be reselected; Would you like to select this directory now, or use the default external?</string>
+    <string name="str_set_sysdir_tipint">Due to Android OS updates, your DraStic data dir is unavailable and must be reselected; Would you like to select this directory now, or use the default internal?</string>
     <string name="str_romsel_remove">Remove</string>
     <string name="str_romsel_remove_tip">Remove path from list?</string>
     <string name="str_romsel_list_full">You have too many games folders! Please remove one before adding another!</string>

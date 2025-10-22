@@ -2897,17 +2897,29 @@
     goto :goto_14
 
     :cond_27
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const v3, 0x7f0f00c0
+
+    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    const v4, 0x7f0f010c
+
+    invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const-string v3, "Error"
-
     invoke-virtual {v1, v3}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v3
-
-    const-string v4, "Newly selected system directory is inaccessible; Using the old one;"
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -3006,6 +3018,12 @@
 
     move-result-object v2
 
+    const v4, 0x7f0f00c1
+
+    invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
     const v3, 0x7f0f00ae
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -3022,7 +3040,7 @@
 
     move-result-object v2
 
-    const-string v3, "Yes"
+    move-object v3, v4
 
     new-instance v4, Lcom/dsemu/drastic/DraSticActivity$n;
 
@@ -3032,7 +3050,15 @@
 
     move-result-object v0
 
-    const-string v2, "No"
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v2, 0x7f0f00b1
+
+    invoke-virtual {v3, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
 
     new-instance v3, Lcom/dsemu/drastic/DraSticActivity$m;
 
@@ -3246,11 +3272,11 @@
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v2
+    move-result-object v3
 
-    const v3, 0x7f0f0193
+    const v2, 0x7f0f0193
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v3, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3262,7 +3288,11 @@
 
     move-result-object v0
 
-    const-string v2, "OK"
+    const v2, 0x7f0f0137
+
+    invoke-virtual {v3, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
 
     new-instance v3, Lcom/dsemu/drastic/DraSticActivity$l;
 
@@ -3563,7 +3593,15 @@
 
     invoke-static {v2, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    const-string v1, "Unable to open shortcut"
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    const v1, 0x7f0f00be
+
+    invoke-virtual {v2, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
 
     const/4 v2, 0x0
 
@@ -3694,11 +3732,19 @@
     return-object v1
 
     :cond_4
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    const v3, 0x7f0f00bf
+
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Unable to open game from \'"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3762,13 +3808,21 @@
 .end method
 
 .method private a1()V
-    .locals 4
+    .locals 5
+
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const-string v1, "Due to Android OS updates, your DraStic data dir is unavailable and must be reselected; Would you like to select this directory now, or use the default external?"
+    const v1, 0x7f0f016d
+
+    invoke-virtual {v4, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -3784,7 +3838,11 @@
 
     invoke-direct {v2, p0}, Le0/z;-><init>(Lcom/dsemu/drastic/DraSticActivity;)V
 
-    const-string v3, "Pick External"
+    const v3, 0x7f0f01b9
+
+    invoke-virtual {v4, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3794,7 +3852,11 @@
 
     invoke-direct {v2, p0}, Le0/a0;-><init>(Lcom/dsemu/drastic/DraSticActivity;)V
 
-    const-string v3, "Default External"
+    const v3, 0x7f0f019b
+
+    invoke-virtual {v4, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3917,13 +3979,21 @@
 .end method
 
 .method private b1()V
-    .locals 4
+    .locals 5
+
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const-string v1, "Due to Android OS updates, your DraStic data dir is unavailable and must be reselected; Would you like to select this directory now, or use the default internal?"
+    const v1, 0x7f0f016e
+
+    invoke-virtual {v4, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -3939,7 +4009,11 @@
 
     invoke-direct {v2, p0}, Le0/b0;-><init>(Lcom/dsemu/drastic/DraSticActivity;)V
 
-    const-string v3, "Pick External"
+    const v3, 0x7f0f01b9
+
+    invoke-virtual {v4, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3949,7 +4023,11 @@
 
     invoke-direct {v2, p0}, Le0/c0;-><init>(Lcom/dsemu/drastic/DraSticActivity;)V
 
-    const-string v3, "Default Internal"
+    const v3, 0x7f0f019c
+
+    invoke-virtual {v4, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -4010,6 +4088,23 @@
 
     move-result-object v2
 
+    if-nez v2, :pass_0
+
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v5
+
+    const v2, 0x7f0f0110
+
+    invoke-virtual {v5, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-direct {p0, v2, v4}, Lcom/dsemu/drastic/DraSticActivity;->X0(Ljava/lang/String;Z)V
+
+    return-void
+
+    :pass_0
     array-length v2, v2
 
     const-string v5, "game_database.xml"
@@ -4047,7 +4142,15 @@
 
     if-nez v2, :cond_2
 
-    const-string v2, "System folders are missing and could not be created!"
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v7
+
+    const v2, 0x7f0f0110
+
+    invoke-virtual {v7, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-direct {p0, v2, v4}, Lcom/dsemu/drastic/DraSticActivity;->X0(Ljava/lang/String;Z)V
 
@@ -7022,13 +7125,21 @@
 
     invoke-direct {p1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const-string p2, "Error"
+    const p2, 0x7f0f00c0
+
+    invoke-virtual {v8, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p2
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p2
 
-    const-string p3, "Could not copy data into new system dir; Please restart the app;"
+    const p3, 0x7f0f010f
+
+    invoke-virtual {v8, p3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p3
 
     invoke-virtual {p2, p3}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 

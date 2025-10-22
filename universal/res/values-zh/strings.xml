@@ -11,7 +11,7 @@
     <string name="str_add_user_button">添加</string>
     <string name="str_add_user_exists">用户已存在</string>
     <string name="str_add_user_exists_case">创建用户数据文件夹失败, 这很有可能是由于同名用户已存在(用户名不区分大小写)</string>
-    <string name="str_user_oldpathwarn" formatted="false">该用户正在使用的旧版外置数据目录 %s 已不再被 DraStic 支持或访问。请将该用户的所有数据复制到您当前数据存储路径的 \"/users/%s\" 目录中,  并在复制完成后点击\"继续\"以完成数据迁移。如果您不想迁移数据, 可直接点击\"继续\"以使用新用户数据目录。</string>
+    <string name="str_user_oldpathwarn" formatted="false">该用户正在使用的旧版外置数据目录 %s 已不再被 DraStic 支持或访问。请将该用户的所有数据复制到您当前数据存储目录的 \"/users/%s\" 目录中,  并在复制完成后点击\"继续\"以完成数据迁移。如果您不想迁移数据, 可直接点击\"继续\"以使用新用户数据目录。</string>
     <string name="str_cm_abxy_A">A</string>
     <string name="str_cm_abxy_B">B</string>
     <string name="str_cm_abxy_X">X</string>
@@ -124,7 +124,7 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_menu_help">帮助</string>
     <string name="str_menu_iconcache">更新图标缓存</string>
     <string name="str_menu_loadorresume">"继续上次保存的游戏吗？
-选择'不'以开始新游戏"</string>
+选择'否'以开始新游戏"</string>
     <string name="str_menu_no">否</string>
     <string name="str_menu_pause">游戏菜单</string>
     <string name="str_menu_reset_confirm">"重置游戏吗?
@@ -132,6 +132,9 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_menu_rootmoved">"DraStic'中的数据直接移动到:"</string>
     <string name="str_menu_saving_busy">正在保存</string>
     <string name="str_menu_shortcut">在桌面建立快捷方式吗？</string>
+    <string name="str_menu_shortcut_err">无法打开快捷方式</string>
+    <string name="str_menu_shortcut_game_err">无法打开游戏: \'</string>
+    <string name="str_menu_error">错误</string>
     <string name="str_menu_yes">是</string>
     <string name="str_menu_add_saf_dir">添加指定的存储路径</string>
     <string name="str_menu_add_path">添加文件夹路径</string>
@@ -327,6 +330,11 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_sysdir_keep_or_overwrite">新数据存储目录中似乎已存在 DraStic 数据文件。现在是要迁移旧数据文件到新目录并覆盖相同文件, 还是要保留新目录中的数据文件并直接使用此目录?</string>
     <string name="str_set_sysdir_overwrite">覆盖</string>
     <string name="str_set_keep">保留</string>
+    <string name="str_set_sysdir_inaccessible">新数据存储目录无法访问, 将使用旧目录!</string>
+    <string name="str_set_sysdir_cpdatafail">无法复制数据到新数据存储目录, 请重启应用程序!</string>
+    <string name="str_set_sysdir_missing">找不到数据存储目录且无法创建该目录!</string>
+    <string name="str_set_sysdir_tipext">由于安卓系统更新, 此前设定的 DraStic 数据存储目录已不可用需要重新设定。现在要选择新数据存储目录还是使用外置默认路径?</string>
+    <string name="str_set_sysdir_tipint">由于安卓系统更新, 此前设定的 DraStic 数据存储目录已不可用需要重新设定。现在要选择新数据存储目录还是使用内置默认路径?</string>
     <string name="str_romsel_remove">移除</string>
     <string name="str_romsel_remove_tip">要从列表中移除该文件夹路径?</string>
     <string name="str_romsel_list_full">添加的游戏文件夹路径已达上限! 请在添加新路径之前移除一个旧的!</string>
