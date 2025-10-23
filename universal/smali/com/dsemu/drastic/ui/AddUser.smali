@@ -270,7 +270,7 @@
 .end method
 
 .method private synthetic i(Lcom/dsemu/drastic/filesystem/b;Ljava/lang/String;Landroid/app/AlertDialog;)V
-    .locals 2
+    .locals 1
 
     invoke-direct {p0, p1}, Lcom/dsemu/drastic/ui/AddUser;->f(Lcom/dsemu/drastic/filesystem/b;)Z
 
@@ -290,24 +290,7 @@
 
     invoke-virtual {p0, p2, p1}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
-    goto :cond_1
-
     :cond_0
-    new-instance p1, Landroid/content/Intent;
-
-    invoke-direct {p1}, Landroid/content/Intent;-><init>()V
-
-    const-string v0, "Username"
-
-    const-string v1, "default"
-
-    invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    const/4 p2, -0x1
-
-    invoke-virtual {p0, p2, p1}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
-
-    :cond_1
     invoke-virtual {p3}, Landroid/app/Dialog;->dismiss()V
 
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
@@ -530,15 +513,39 @@
 
     move-result-object v5
 
-    const-string v2, "default"
-
-    invoke-virtual {v5, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
+    iget-object v2, p0, Lcom/dsemu/drastic/ui/AddUser;->usrs:Ljava/util/List;
 
     if-eqz v2, :pass_0
 
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v3
+
+    const/4 v4, 0x0
+
+    :users_loop
+    if-ge v4, v3, :pass_0
+
+    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    move-result-object v6
+
+    check-cast v6, Lcom/dsemu/drastic/ui/AddUser$w;
+
+    iget-object v6, v6, Lcom/dsemu/drastic/ui/AddUser$w;->a:Ljava/lang/String;
+
+    invoke-virtual {v6}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v6
+
+    if-eqz v6, :users_next
+
     goto :dup_user
+
+    :users_next
+    add-int/lit8 v4, v4, 0x1
+    goto :users_loop
 
     :pass_0
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
