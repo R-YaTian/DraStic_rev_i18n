@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="set_analogstick_items">
+        <item>關</item>
+        <item>FPS 模式</item>
+        <item>搖桿模式</item>
+        <item>觸筆模式</item>
+    </string-array>
+    <string-array name="set_audio_latency_items">
+        <item>低</item>
+        <item>中</item>
+        <item>高</item>
+        <item>很高</item>
+    </string-array>
+    <string-array name="set_autofire_frequency">
+        <item>速度 1 (最快)</item>
+        <item>速度 2</item>
+        <item>速度 3</item>
+        <item>速度 4</item>
+        <item>速度 5 (最慢)</item>
+    </string-array>
+    <string-array name="set_autosave_type">
+        <item>禁用</item>
+        <item>暫停時</item>
+        <item>每隔 5 分鐘</item>
+        <item>每隔 15 分鐘</item>
+        <item>每隔 30 分鐘</item>
+    </string-array>
+    <string-array name="set_cheat_menu_tv">
+        <item>添加金手指</item>
+        <item>禁用全部金手指</item>
+        <item>編輯選中金手指</item>
+    </string-array>
+    <string-array name="set_editor_endmenu_tv">
+        <item>保存為全局佈局設置</item>
+        <item>保存為遊戲佈局設置</item>
+        <item>繼續編輯</item>
+        <item>退出並且不保存</item>
+    </string-array>
+    <string-array name="set_editor_startmenu_tv">
+        <item>使用默認佈局</item>
+        <item>載入全局佈局設置</item>
+        <item>載入遊戲佈局設置</item>
+    </string-array>
+    <string-array name="set_extdisplay_screen">
+        <item>上屏</item>
+        <item>下屏</item>
+    </string-array>
+    <string-array name="set_extdisplay_type">
+        <item>完全同步</item>
+        <item>按比例模式</item>
+        <item>全屏模式</item>
+    </string-array>
+    <string-array name="set_extra_funcs">
+        <item>禁用</item>
+        <item>加速</item>
+        <item>快速存檔</item>
+        <item>快速讀檔</item>
+        <item>切換上下屏</item>
+        <item>切換屏幕佈局</item>
+        <item>顯示/隱藏虛擬按鍵</item>
+        <item>虛擬麥克風鍵</item>
+        <item>橫屏模式佈局循環</item>
+        <item>連發</item>
+    </string-array>
+    <string-array name="set_ffwd_speed_items">
+        <item>50%</item>
+        <item>150%</item>
+        <item>200%</item>
+        <item>300%</item>
+        <item>400%</item>
+        <item>無限</item>
+    </string-array>
+    <string-array name="set_filer_items">
+        <item>無</item>
+        <item>線性過濾</item>
+        <item>2倍柔化</item>
+        <item>HQ2X</item>
+        <item>Quilez</item>
+    </string-array>
+    <string-array name="set_filer_items_1cpu">
+        <item>無</item>
+        <item>線性過濾</item>
+        <item>Quilez</item>
+    </string-array>
+    <string-array name="set_fs_items">
+        <item>無</item>
+        <item>手動</item>
+        <item>自動</item>
+    </string-array>
+    <string-array name="set_fw_colors">
+        <item>淺青灰</item>
+        <item>紅杉</item>
+        <item>深栗色</item>
+        <item>薰衣草紫紅</item>
+        <item>波斯橙</item>
+        <item>原木</item>
+        <item>深卡其</item>
+        <item>螳螂綠</item>
+        <item>鮮綠</item>
+        <item>暗海藍</item>
+        <item>寶石藍</item>
+        <item>毛藍</item>
+        <item>深藍</item>
+        <item>工具箱</item>
+        <item>深薰衣草</item>
+        <item>桑葚</item>
+    </string-array>
+    <string-array name="set_fw_languages">
+        <item>日本語</item>
+        <item>English</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Italiano</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="set_gm_layouts">
+        <item>橫屏模式 1:1</item>
+        <item>橫屏模式 x:1</item>
+        <item>豎屏模式 1:1</item>
+        <item>橫屏模式 單屏</item>
+        <item>橫屏模式 全屏</item>
+    </string-array>
+    <string-array name="set_gm_layouts_tv">
+        <item>橫屏模式 1:1</item>
+        <item>橫屏模式 x:1</item>
+        <item>豎屏模式 1:1</item>
+        <item>橫屏模式 單屏</item>
+        <item>橫屏模式 全屏</item>
+        <item>豎屏左轉模式</item>
+        <item>豎屏右轉模式</item>
+    </string-array>
+    <string-array name="set_mapping_default">
+        <item>D-Pad;D-Pad, 菜單導航</item>
+        <item>Left Stick;D-Pad, 菜單導航</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, 菜單中取消</item>
+        <item>A;B, 菜單中確認</item>
+        <item>Play;Start</item>
+        <item>Back;打開菜單</item>
+        <item>L1;L-trigger</item>
+        <item>R1;R-trigger</item>
+        <item>L3;切換屏幕</item>
+        <item>R3;切換屏幕佈局</item>
+    </string-array>
+    <string-array name="set_mapping_moga_pocket">
+        <item>Left Stick;D-Pad, 菜單導航</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, 菜單中取消</item>
+        <item>A;B, 菜單中確認</item>
+        <item>L;L</item>
+        <item>R;R</item>
+        <item>Start;Start</item>
+        <item>Select;打開菜單</item>
+        <item>Select+L;快速讀檔</item>
+        <item>Select+R;快速存檔</item>
+        <item>Select+X;加速</item>
+        <item>Select+Y;切換屏幕</item>
+    </string-array>
+    <string-array name="set_mapping_moga_pro">
+        <item>D-Pad;D-Pad, 菜單導航</item>
+        <item>Left Stick;D-Pad, 菜單導航</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, 菜單中取消</item>
+        <item>A;B, 菜單中確認</item>
+        <item>L2;L</item>
+        <item>R2;R</item>
+        <item>Start;Start</item>
+        <item>Select;Select</item>
+        <item>L3;打開菜單</item>
+        <item>R3+L1;快速讀檔</item>
+        <item>R3+R1;快速存檔</item>
+        <item>L1;切換屏幕</item>
+        <item>R1;加速</item>
+    </string-array>
+    <string-array name="set_mapping_shield">
+        <item>D-Pad;D-Pad, 菜單導航</item>
+        <item>Left Stick;D-Pad, 菜單導航</item>
+        <item>Y;X</item>
+        <item>X;Y</item>
+        <item>B;A, 菜單中取消</item>
+        <item>A;B, 菜單中確認</item>
+        <item>Play;Start</item>
+        <item>Back;打開菜單</item>
+        <item>L1;Select</item>
+        <item>R1;加速</item>
+        <item>L2;L</item>
+        <item>R2;R</item>
+        <item>L3;切換屏幕</item>
+        <item>R3;切換屏幕佈局</item>
+    </string-array>
+    <string-array name="set_mapping_xperiaplay">
+        <item>D-Pad;D-Pad, 菜單導航</item>
+        <item>Select;Select</item>
+        <item>Start;Start</item>
+        <item>Triangle;X</item>
+        <item>Square;Y</item>
+        <item>Circle;A, 菜單中取消</item>
+        <item>X;B, 菜單中確認</item>
+        <item>L;L</item>
+        <item>R;R</item>
+        <item>Menu;打開菜單</item>
+    </string-array>
+    <string-array name="set_menu_button_position">
+        <item>底部</item>
+        <item>頂部</item>
+        <item>左</item>
+        <item>右</item>
+        <item>隱藏</item>
+    </string-array>
+    <string-array name="set_mic_level_items">
+        <item>低</item>
+        <item>中</item>
+        <item>高</item>
+        <item>很高</item>
+    </string-array>
+    <string-array name="set_rotation_type">
+        <item>自動</item>
+        <item>橫屏</item>
+        <item>反向橫屏</item>
+    </string-array>
+    <string-array name="set_rumble_dev">
+        <item>無</item>
+        <item>控制器</item>
+        <item>內置</item>
+    </string-array>
+    <string-array name="set_rumble_dev_tv">
+        <item>無</item>
+        <item>控制器</item>
+    </string-array>
+    <string-array name="set_slot2_cart_type">
+        <item>無</item>
+        <item>GBA 卡帶</item>
+        <item>SRAM 卡帶</item>
+        <item>震動卡</item>
+        <item>運動擴展卡 (官方)</item>
+        <item>運動擴展卡 (自製)</item>
+    </string-array>
+    <string-array name="set_sysdir_l">
+        <item>外置默認文件夾</item>
+        <item>指定的存儲路徑</item>
+    </string-array>
+    <string-array name="set_sysdir_q">
+        <item>內置默認文件夾</item>
+        <item>指定的存儲路徑</item>
+    </string-array>
+</resources>

@@ -270,7 +270,7 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_none">无</string>
     <string name="str_set_overwrite">覆盖即时存档需要确认</string>
     <string name="str_set_preload">启用预加载未压缩的游戏到内存</string>
-    <string name="str_set_rawsavformat">使用原始 .sav 存档格式 (无尾部信息)</string>
+    <string name="str_set_rawsavformat">使用原始 .sav 存档格式(无尾部信息)</string>
     <string name="str_set_restart_req">重启DraStic以使变更生效</string>
     <string name="str_set_rtc_system_time">强制系统时间作为实时时钟</string>
     <string name="str_set_rumble_dev">振动设备</string>
