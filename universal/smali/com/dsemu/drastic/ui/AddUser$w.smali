@@ -19,6 +19,8 @@
 
 .field public final b:Z
 
+.field public final c:Lcom/dsemu/drastic/filesystem/b;
+
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
@@ -31,7 +33,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Z)V
+.method public constructor <init>(Ljava/lang/String;ZLcom/dsemu/drastic/filesystem/b;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,6 +41,8 @@
     iput-object p1, p0, Lcom/dsemu/drastic/ui/AddUser$w;->a:Ljava/lang/String;
 
     iput-boolean p2, p0, Lcom/dsemu/drastic/ui/AddUser$w;->b:Z
+
+    iput-object p3, p0, Lcom/dsemu/drastic/ui/AddUser$w;->c:Lcom/dsemu/drastic/filesystem/b;
 
     return-void
 .end method

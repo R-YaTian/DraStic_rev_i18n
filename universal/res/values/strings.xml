@@ -40,10 +40,10 @@ Games"</string>
     <string name="set_moga_showmapping">Show MOGA Button Mapping</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="str_romlist_nothing_found">No game folders added. Add one with the button above!</string>
-    <string name="str_add_user">Add New User</string>
+    <string name="str_add_user">Add or Delete User</string>
     <string name="str_add_user_button">Add</string>
     <string name="str_add_user_exists">User already exists</string>
-    <string name="str_add_user_exists_case">Failed to create the user data folder, probably because a user with the same name already exists (usernames are case-insensitive).</string>
+    <string name="str_add_user_del_warn">Deleting a user will erase all data files belonging to that user (battery saves, savestates, custom cheats, layout configurations, etc.). This action cannot be undone! Are you sure you want to continue? (After deletion, it will automatically switch to the default user and refresh the user list to avoid potential issues.)</string>
     <string name="str_user_oldpathwarn" formatted="false">This user is using a legacy external directory %s which is no longer supported or accessible by DraStic. Please copy the contents of it to your current system directory\'s \'/users/%s\' directory, and select \'Continue\' when done to complete the migration. If you do not want to copy the data, select \'Continue\' now to use the folder as-is.</string>
     <string name="str_cm_abxy_A">A</string>
     <string name="str_cm_abxy_B">B</string>

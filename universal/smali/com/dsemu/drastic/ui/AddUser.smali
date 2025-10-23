@@ -53,6 +53,38 @@
     return-void
 .end method
 
+.method public synthetic delUser(Lcom/dsemu/drastic/filesystem/b;)V
+    .locals 3
+
+    invoke-direct {p0, p1}, Lcom/dsemu/drastic/ui/AddUser;->delDirRecursive(Lcom/dsemu/drastic/filesystem/b;)Z
+
+    new-instance v1, Landroid/content/Intent;
+
+    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
+
+    const-string v0, "Username"
+
+    const-string v2, ""
+
+    invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const/4 v2, -0x1
+
+    invoke-virtual {p0, v2, v1}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
+
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+
+    return-void
+.end method
+
+.method public static synthetic getUsers(Lcom/dsemu/drastic/ui/AddUser;)Ljava/util/List;
+    .locals 1
+
+    iget-object v0, p0, Lcom/dsemu/drastic/ui/AddUser;->usrs:Ljava/util/List;
+
+    return-object v0
+.end method
+
 .method public static synthetic d(Lcom/dsemu/drastic/ui/AddUser;Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
     .locals 0
 
@@ -328,7 +360,7 @@
 
     if-eqz v5, :cond_0
 
-    invoke-direct {p0, v4}, Lcom/dsemu/drastic/ui/AddUser;->m(Lcom/dsemu/drastic/filesystem/b;)Z
+    invoke-direct {p0, v4}, Lcom/dsemu/drastic/ui/AddUser;->delDirRecursive(Lcom/dsemu/drastic/filesystem/b;)Z
 
     move-result v5
 
@@ -352,7 +384,7 @@
 .end method
 
 .method private ListUsers()V
-    .locals 8
+    .locals 9
 
     invoke-static {}, Lcom/dsemu/drastic/filesystem/d;->i()Lcom/dsemu/drastic/filesystem/b;
 
@@ -406,6 +438,8 @@
 
     aget-object v3, v0, v2
 
+    move-object v8, v3
+
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
@@ -442,7 +476,7 @@
 
     move-result v3
 
-    invoke-direct {v5, v6, v3}, Lcom/dsemu/drastic/ui/AddUser$w;-><init>(Ljava/lang/String;Z)V
+    invoke-direct {v5, v6, v3, v8}, Lcom/dsemu/drastic/ui/AddUser$w;-><init>(Ljava/lang/String;ZLcom/dsemu/drastic/filesystem/b;)V
 
     invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

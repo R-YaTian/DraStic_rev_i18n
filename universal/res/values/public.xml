@@ -2150,7 +2150,7 @@
     <public type="string" name="status_bar_notification_info_overflow" id="0x7f0f0025" />
     <public type="string" name="str_add_user" id="0x7f0f0026" />
     <public type="string" name="str_add_user_button" id="0x7f0f0027" />
-    <public type="string" name="str_add_user_exists_case" id="0x7f0f0028" />
+    <public type="string" name="str_add_user_del_warn" id="0x7f0f0028" />
     <public type="string" name="str_user_oldpathwarn" id="0x7f0f0029" />
     <public type="string" name="str_add_user_exists" id="0x7f0f002b" />
     <public type="string" name="str_cm_abxy_A" id="0x7f0f0032" />

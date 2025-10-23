@@ -7,10 +7,10 @@
     <string name="menu_settings">设置</string>
     <string name="set_moga_showmapping">显示 MOGA 按键映射</string>
     <string name="str_romlist_nothing_found">尚未添加游戏资源文件夹。请点触右上角按钮添加!</string>
-    <string name="str_add_user">添加新用户</string>
+    <string name="str_add_user">添加或删除用户</string>
     <string name="str_add_user_button">添加</string>
     <string name="str_add_user_exists">用户已存在</string>
-    <string name="str_add_user_exists_case">创建用户数据文件夹失败, 这很有可能是由于同名用户已存在(用户名不区分大小写)</string>
+    <string name="str_add_user_del_warn">删除用户将会清除该用户的所有数据文件(电池存档、即时存档、自定义金手指以及布局配置等)。该操作无法撤销! 确定要继续吗? (为了防止出现问题, 删除操作完成后将自动切换到默认用户并刷新用户列表)</string>
     <string name="str_user_oldpathwarn" formatted="false">该用户正在使用的旧版外置数据目录 %s 已不再被 DraStic 支持或访问。请将该用户的所有数据复制到您当前数据存储目录的 \"/users/%s\" 目录中,  并在复制完成后点击\"继续\"以完成数据迁移。如果您不想迁移数据, 可直接点击\"继续\"以使用新用户数据目录。</string>
     <string name="str_cm_abxy_A">A</string>
     <string name="str_cm_abxy_B">B</string>

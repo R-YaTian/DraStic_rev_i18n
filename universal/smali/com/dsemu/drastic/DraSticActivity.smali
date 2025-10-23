@@ -6973,7 +6973,7 @@
 .end method
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
-    .locals 8
+    .locals 9
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -7182,6 +7182,19 @@
 
     if-eqz p1, :cond_12
 
+    const-string v8, ""
+
+    invoke-virtual {p1, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-eqz v8, :pass
+
+    const/4 v8, 0x0
+
+    move-object p1, v8
+
+    :pass
     invoke-direct {p0}, Lcom/dsemu/drastic/DraSticActivity;->f0()V
 
     sput-object p1, Lf0/h;->h:Ljava/lang/String;

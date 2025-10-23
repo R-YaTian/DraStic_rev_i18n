@@ -34,7 +34,7 @@
     <string name="search_menu_title">Buscar</string>
     <string name="set_moga_showmapping">Mostrar estructurado de botones de MOGA</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="str_add_user">Añadir nuevo usuario</string>
+    <string name="str_add_user">Añadir o eliminar usuario</string>
     <string name="str_add_user_button">Añadir</string>
     <string name="str_add_user_exists">El usuario ya existe</string>
     <string name="str_cm_abxy_A">A</string>

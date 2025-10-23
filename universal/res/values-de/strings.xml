@@ -36,7 +36,7 @@ gespielt"</string>
     <string name="search_menu_title">Suche</string>
     <string name="set_moga_showmapping">MOGA Tasten-Zuordnung anzeigen</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="str_add_user">Neuen Nutzer hinzufügen</string>
+    <string name="str_add_user">Nutzer hinzufügen oder löschen</string>
     <string name="str_add_user_button">Hinzufügen</string>
     <string name="str_add_user_exists">Nutzer bereits vorhanden</string>
     <string name="str_cm_abxy_A">A</string>
