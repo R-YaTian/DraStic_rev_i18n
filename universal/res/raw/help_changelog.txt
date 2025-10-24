@@ -16,7 +16,7 @@
 - Add a user list view to AddUser menu and allow deleting users here
 - Update the cheat database to "DeadSkullzJr's NDS(i) Cheat Database (2025-08-12)"
 - Added logic to automatically extract either the Chinese or English cheat database based on the device's system language
-- Added Traditional Chinese UI language support for Android 5.0 and above
+- Added Traditional Chinese UI language support for Android 7.0 and above
 
 <b>Version 2.6.0.4a:
 - Fix for savestates from previous versions not loading properly

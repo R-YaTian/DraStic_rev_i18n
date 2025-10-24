@@ -20,7 +20,7 @@
         <item>速度 5 (最慢)</item>
     </string-array>
     <string-array name="set_autosave_type">
-        <item>禁用</item>
+        <item>停用</item>
         <item>暫停時</item>
         <item>每隔 5 分鐘</item>
         <item>每隔 15 分鐘</item>
@@ -28,39 +28,39 @@
     </string-array>
     <string-array name="set_cheat_menu_tv">
         <item>添加金手指</item>
-        <item>禁用全部金手指</item>
+        <item>停用全部金手指</item>
         <item>編輯選中金手指</item>
     </string-array>
     <string-array name="set_editor_endmenu_tv">
-        <item>保存為全局佈局設置</item>
-        <item>保存為遊戲佈局設置</item>
+        <item>保存為全局佈局設定</item>
+        <item>保存為遊戲佈局設定</item>
         <item>繼續編輯</item>
         <item>退出並且不保存</item>
     </string-array>
     <string-array name="set_editor_startmenu_tv">
-        <item>使用默認佈局</item>
-        <item>載入全局佈局設置</item>
-        <item>載入遊戲佈局設置</item>
+        <item>使用預設佈局</item>
+        <item>載入全局佈局設定</item>
+        <item>載入遊戲佈局設定</item>
     </string-array>
     <string-array name="set_extdisplay_screen">
-        <item>上屏</item>
-        <item>下屏</item>
+        <item>上螢幕</item>
+        <item>下螢幕</item>
     </string-array>
     <string-array name="set_extdisplay_type">
         <item>完全同步</item>
         <item>按比例模式</item>
-        <item>全屏模式</item>
+        <item>全螢幕模式</item>
     </string-array>
     <string-array name="set_extra_funcs">
-        <item>禁用</item>
+        <item>停用</item>
         <item>加速</item>
         <item>快速存檔</item>
         <item>快速讀檔</item>
-        <item>切換上下屏</item>
-        <item>切換屏幕佈局</item>
+        <item>切換上下螢幕</item>
+        <item>切換螢幕佈局</item>
         <item>顯示/隱藏虛擬按鍵</item>
         <item>虛擬麥克風鍵</item>
-        <item>橫屏模式佈局循環</item>
+        <item>橫向模式佈局循環</item>
         <item>連發</item>
     </string-array>
     <string-array name="set_ffwd_speed_items">
@@ -115,94 +115,94 @@
         <item>Español</item>
     </string-array>
     <string-array name="set_gm_layouts">
-        <item>橫屏模式 1:1</item>
-        <item>橫屏模式 x:1</item>
-        <item>豎屏模式 1:1</item>
-        <item>橫屏模式 單屏</item>
-        <item>橫屏模式 全屏</item>
+        <item>橫向模式 1:1</item>
+        <item>橫向模式 x:1</item>
+        <item>直向模式 1:1</item>
+        <item>橫向模式 單螢幕</item>
+        <item>橫向模式 全螢幕</item>
     </string-array>
     <string-array name="set_gm_layouts_tv">
-        <item>橫屏模式 1:1</item>
-        <item>橫屏模式 x:1</item>
-        <item>豎屏模式 1:1</item>
-        <item>橫屏模式 單屏</item>
-        <item>橫屏模式 全屏</item>
-        <item>豎屏左轉模式</item>
-        <item>豎屏右轉模式</item>
+        <item>橫向模式 1:1</item>
+        <item>橫向模式 x:1</item>
+        <item>直向模式 1:1</item>
+        <item>橫向模式 單螢幕</item>
+        <item>橫向模式 全螢幕</item>
+        <item>直向左轉模式</item>
+        <item>直向右轉模式</item>
     </string-array>
     <string-array name="set_mapping_default">
-        <item>D-Pad;D-Pad, 菜單導航</item>
-        <item>Left Stick;D-Pad, 菜單導航</item>
+        <item>D-Pad;D-Pad, 選單導航</item>
+        <item>Left Stick;D-Pad, 選單導航</item>
         <item>Y;X</item>
         <item>X;Y</item>
-        <item>B;A, 菜單中取消</item>
-        <item>A;B, 菜單中確認</item>
+        <item>B;A, 選單中取消</item>
+        <item>A;B, 選單中確認</item>
         <item>Play;Start</item>
-        <item>Back;打開菜單</item>
+        <item>Back;打開選單</item>
         <item>L1;L-trigger</item>
         <item>R1;R-trigger</item>
-        <item>L3;切換屏幕</item>
-        <item>R3;切換屏幕佈局</item>
+        <item>L3;切換螢幕</item>
+        <item>R3;切換螢幕佈局</item>
     </string-array>
     <string-array name="set_mapping_moga_pocket">
-        <item>Left Stick;D-Pad, 菜單導航</item>
+        <item>Left Stick;D-Pad, 選單導航</item>
         <item>Y;X</item>
         <item>X;Y</item>
-        <item>B;A, 菜單中取消</item>
-        <item>A;B, 菜單中確認</item>
+        <item>B;A, 選單中取消</item>
+        <item>A;B, 選單中確認</item>
         <item>L;L</item>
         <item>R;R</item>
         <item>Start;Start</item>
-        <item>Select;打開菜單</item>
+        <item>Select;打開選單</item>
         <item>Select+L;快速讀檔</item>
         <item>Select+R;快速存檔</item>
         <item>Select+X;加速</item>
-        <item>Select+Y;切換屏幕</item>
+        <item>Select+Y;切換螢幕</item>
     </string-array>
     <string-array name="set_mapping_moga_pro">
-        <item>D-Pad;D-Pad, 菜單導航</item>
-        <item>Left Stick;D-Pad, 菜單導航</item>
+        <item>D-Pad;D-Pad, 選單導航</item>
+        <item>Left Stick;D-Pad, 選單導航</item>
         <item>Y;X</item>
         <item>X;Y</item>
-        <item>B;A, 菜單中取消</item>
-        <item>A;B, 菜單中確認</item>
+        <item>B;A, 選單中取消</item>
+        <item>A;B, 選單中確認</item>
         <item>L2;L</item>
         <item>R2;R</item>
         <item>Start;Start</item>
         <item>Select;Select</item>
-        <item>L3;打開菜單</item>
+        <item>L3;打開選單</item>
         <item>R3+L1;快速讀檔</item>
         <item>R3+R1;快速存檔</item>
-        <item>L1;切換屏幕</item>
+        <item>L1;切換螢幕</item>
         <item>R1;加速</item>
     </string-array>
     <string-array name="set_mapping_shield">
-        <item>D-Pad;D-Pad, 菜單導航</item>
-        <item>Left Stick;D-Pad, 菜單導航</item>
+        <item>D-Pad;D-Pad, 選單導航</item>
+        <item>Left Stick;D-Pad, 選單導航</item>
         <item>Y;X</item>
         <item>X;Y</item>
-        <item>B;A, 菜單中取消</item>
-        <item>A;B, 菜單中確認</item>
+        <item>B;A, 選單中取消</item>
+        <item>A;B, 選單中確認</item>
         <item>Play;Start</item>
-        <item>Back;打開菜單</item>
+        <item>Back;打開選單</item>
         <item>L1;Select</item>
         <item>R1;加速</item>
         <item>L2;L</item>
         <item>R2;R</item>
-        <item>L3;切換屏幕</item>
-        <item>R3;切換屏幕佈局</item>
+        <item>L3;切換螢幕</item>
+        <item>R3;切換螢幕佈局</item>
     </string-array>
     <string-array name="set_mapping_xperiaplay">
-        <item>D-Pad;D-Pad, 菜單導航</item>
+        <item>D-Pad;D-Pad, 選單導航</item>
         <item>Select;Select</item>
         <item>Start;Start</item>
         <item>Triangle;X</item>
         <item>Square;Y</item>
-        <item>Circle;A, 菜單中取消</item>
-        <item>X;B, 菜單中確認</item>
+        <item>Circle;A, 選單中取消</item>
+        <item>X;B, 選單中確認</item>
         <item>L;L</item>
         <item>R;R</item>
-        <item>Menu;打開菜單</item>
+        <item>Menu;打開選單</item>
     </string-array>
     <string-array name="set_menu_button_position">
         <item>底部</item>
@@ -219,8 +219,8 @@
     </string-array>
     <string-array name="set_rotation_type">
         <item>自動</item>
-        <item>橫屏</item>
-        <item>反向橫屏</item>
+        <item>橫向</item>
+        <item>反轉橫向</item>
     </string-array>
     <string-array name="set_rumble_dev">
         <item>無</item>
@@ -240,11 +240,11 @@
         <item>運動擴展卡 (自製)</item>
     </string-array>
     <string-array name="set_sysdir_l">
-        <item>外置默認文件夾</item>
+        <item>外置預設資料夾</item>
         <item>指定的存儲路徑</item>
     </string-array>
     <string-array name="set_sysdir_q">
-        <item>內置默認文件夾</item>
+        <item>內置預設資料夾</item>
         <item>指定的存儲路徑</item>
     </string-array>
 </resources>
