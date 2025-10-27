@@ -2629,7 +2629,7 @@
 
     const/high16 v8, 0x42480000    # 50.0f
 
-    const/high16 v9, 0x3f800000    # 1.0f
+    const/high16 v9, 0x40000000    # 2.0f
 
     const/16 v10, 0x11
 
@@ -3413,11 +3413,15 @@
 
     sget p2, Lf0/h;->P:F
 
-    sub-float/2addr p2, v9
+    mul-float p2, p2, v11
 
-    mul-float p2, p2, v8
+    div-float p2, p2, v9
 
-    float-to-int p2, p2
+    sub-float p2, p2, v8
+
+    invoke-static {p2}, Ljava/lang/Math;->round(F)I
+
+    move-result p2
 
     invoke-virtual {p1, p2}, Landroid/widget/ProgressBar;->setProgress(I)V
 
@@ -3625,11 +3629,15 @@
 
     sget p2, Lf0/h;->Q:F
 
-    sub-float/2addr p2, v9
+    mul-float p2, p2, v11
 
-    mul-float p2, p2, v8
+    div-float p2, p2, v9
 
-    float-to-int p2, p2
+    sub-float p2, p2, v8
+
+    invoke-static {p2}, Ljava/lang/Math;->round(F)I
+
+    move-result p2
 
     invoke-virtual {p1, p2}, Landroid/widget/ProgressBar;->setProgress(I)V
 
