@@ -68,7 +68,7 @@
 
     iget-object v1, p0, Lcom/dsemu/drastic/DraSticEmuActivity$p;->a:Lcom/dsemu/drastic/DraSticEmuActivity;
 
-    invoke-static {p2}, Le0/v0;->a(Landroid/media/MediaRouter$RouteInfo;)Landroid/view/Display;
+    invoke-static {p2, v1}, Le0/v0;->a(Landroid/media/MediaRouter$RouteInfo;Landroid/content/Context;)Landroid/view/Display;
 
     move-result-object p2
 

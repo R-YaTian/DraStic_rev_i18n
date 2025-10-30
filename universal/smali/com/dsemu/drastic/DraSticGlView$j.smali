@@ -995,10 +995,29 @@
     iput v6, v0, Lcom/dsemu/drastic/DraSticGlView$j;->H:I
 
     :cond_6
+    iget-object v7, v0, Lcom/dsemu/drastic/DraSticGlView$j;->Q:Lcom/dsemu/drastic/DraSticGlView;
+
+    invoke-static {v7}, Lcom/dsemu/drastic/DraSticGlView;->e0(Lcom/dsemu/drastic/DraSticGlView;)Landroid/content/Context;
+
+    move-result-object v7
+
+    invoke-static {v7}, Lf0/h;->o(Landroid/content/Context;)I
+
+    move-result v7
+
+    const/4 v6, 0x3
+
+    if-eq v7, v6, :single_screen
+
+    const/4 v6, 0x4
+
+    if-eq v7, v6, :single_screen
+
     iget-boolean v6, v0, Lcom/dsemu/drastic/DraSticGlView$j;->L:Z
 
     if-eqz v6, :cond_7
 
+    :single_screen
     iget v6, v2, Lf0/l;->a:F
 
     iget v7, v2, Lf0/l;->b:F

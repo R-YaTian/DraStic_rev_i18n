@@ -6,7 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/dsemu/drastic/DraSticExtGlView$a;
+        Lcom/dsemu/drastic/DraSticExtGlView$a;,
+        Lcom/dsemu/drastic/DraSticExtGlView$TouchListener;
     }
 .end annotation
 
@@ -19,6 +20,8 @@
 .field private g:F
 
 .field private h:F
+
+.field private k:Lcom/dsemu/drastic/DraSticGlView;
 
 
 # direct methods
@@ -51,27 +54,18 @@
 .end method
 
 .method private c()V
-    .locals 8
+    .locals 1
 
     const/4 v0, 0x2
 
     invoke-virtual {p0, v0}, Landroid/opengl/GLSurfaceView;->setEGLContextClientVersion(I)V
 
-    const/4 v2, 0x5
+    # Use Custom EGLConfigChooser
+    new-instance v0, Lcom/dsemu/drastic/DraSticEGLConfigChooser;
 
-    const/4 v3, 0x6
+    invoke-direct {v0}, Lcom/dsemu/drastic/DraSticEGLConfigChooser;-><init>()V
 
-    const/4 v4, 0x5
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    move-object v1, p0
-
-    invoke-virtual/range {v1 .. v7}, Landroid/opengl/GLSurfaceView;->setEGLConfigChooser(IIIIII)V
+    invoke-virtual {p0, v0}, Landroid/opengl/GLSurfaceView;->setEGLConfigChooser(Landroid/opengl/GLSurfaceView$EGLConfigChooser;)V
 
     new-instance v0, Lcom/dsemu/drastic/DraSticExtGlView$a;
 
@@ -86,6 +80,12 @@
     invoke-virtual {p0, v0}, Landroid/opengl/GLSurfaceView;->setRenderMode(I)V
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setKeepScreenOn(Z)V
+
+    new-instance v0, Lcom/dsemu/drastic/DraSticExtGlView$TouchListener;
+
+    invoke-direct {v0, p0}, Lcom/dsemu/drastic/DraSticExtGlView$TouchListener;-><init>(Lcom/dsemu/drastic/DraSticExtGlView;)V
+
+    invoke-virtual {p0, v0}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     return-void
 .end method
@@ -138,6 +138,22 @@
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticExtGlView;->e:Lcom/dsemu/drastic/DraSticExtGlView$a;
 
     invoke-virtual {v0, p1}, Lcom/dsemu/drastic/DraSticExtGlView$a;->e(I)V
+
+    return-void
+.end method
+
+.method public getDraSticGlView()Lcom/dsemu/drastic/DraSticGlView;
+    .locals 1
+
+    iget-object v0, p0, Lcom/dsemu/drastic/DraSticExtGlView;->k:Lcom/dsemu/drastic/DraSticGlView;
+
+    return-object v0
+.end method
+
+.method public setDraSticGlView(Lcom/dsemu/drastic/DraSticGlView;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/dsemu/drastic/DraSticExtGlView;->k:Lcom/dsemu/drastic/DraSticGlView;
 
     return-void
 .end method

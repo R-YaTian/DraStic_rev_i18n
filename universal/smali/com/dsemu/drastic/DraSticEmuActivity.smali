@@ -576,7 +576,7 @@
 
     if-eqz v1, :cond_1
 
-    invoke-static {v0}, Le0/v0;->a(Landroid/media/MediaRouter$RouteInfo;)Landroid/view/Display;
+    invoke-static {v0, p0}, Le0/v0;->a(Landroid/media/MediaRouter$RouteInfo;Landroid/content/Context;)Landroid/view/Display;
 
     move-result-object v1
 
@@ -584,7 +584,7 @@
 
     new-instance v1, Lcom/dsemu/drastic/DraSticEmuActivity$q;
 
-    invoke-static {v0}, Le0/v0;->a(Landroid/media/MediaRouter$RouteInfo;)Landroid/view/Display;
+    invoke-static {v0, p0}, Le0/v0;->a(Landroid/media/MediaRouter$RouteInfo;Landroid/content/Context;)Landroid/view/Display;
 
     move-result-object v0
 
@@ -1899,7 +1899,9 @@
 
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
 
-    invoke-virtual {v0, p1}, Lcom/dsemu/drastic/DraSticGlView;->y0(Landroid/view/MotionEvent;)Z
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, p1, v1}, Lcom/dsemu/drastic/DraSticGlView;->y0(Landroid/view/MotionEvent;Z)Z
 
     move-result p1
 

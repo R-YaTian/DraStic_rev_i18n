@@ -531,27 +531,18 @@
 .end method
 
 .method private p0()V
-    .locals 8
+    .locals 3
 
     const/4 v0, 0x2
 
     invoke-virtual {p0, v0}, Landroid/opengl/GLSurfaceView;->setEGLContextClientVersion(I)V
 
-    const/4 v2, 0x5
+    # Use Custom EGLConfigChooser
+    new-instance v0, Lcom/dsemu/drastic/DraSticEGLConfigChooser;
 
-    const/4 v3, 0x6
+    invoke-direct {v0}, Lcom/dsemu/drastic/DraSticEGLConfigChooser;-><init>()V
 
-    const/4 v4, 0x5
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    move-object v1, p0
-
-    invoke-virtual/range {v1 .. v7}, Landroid/opengl/GLSurfaceView;->setEGLConfigChooser(IIIIII)V
+    invoke-virtual {p0, v0}, Landroid/opengl/GLSurfaceView;->setEGLConfigChooser(Landroid/opengl/GLSurfaceView$EGLConfigChooser;)V
 
     new-instance v0, Ln0/i;
 
@@ -2747,9 +2738,46 @@
     return-void
 .end method
 
-.method public y0(Landroid/view/MotionEvent;)Z
-    .locals 6
+.method public y0(Landroid/view/MotionEvent;Z)Z
+    .locals 7
 
+    const/4 v6, 0x0
+
+    if-eqz p2, :not_from_extscreen
+
+    iget-object p2, p0, Lcom/dsemu/drastic/DraSticGlView;->g:Ln0/i;
+
+    invoke-virtual {p2}, Ln0/i;->setInputLock()V
+
+    goto :pass_touch_lock
+
+    :not_from_extscreen
+    iget-object v1, p0, Lcom/dsemu/drastic/DraSticGlView;->f:Landroid/content/Context;
+
+    invoke-static {v1}, Lf0/h;->o(Landroid/content/Context;)I
+
+    move-result v2
+
+    invoke-static {v1}, Lf0/h;->p(Landroid/content/Context;)Z
+
+    move-result v1
+
+    const/4 v0, 0x3
+
+    if-eq v0, v2, :check_swap
+
+    const/4 v0, 0x4
+
+    if-eq v0, v2, :check_swap
+
+    goto :pass_touch_lock
+
+    :check_swap
+    if-nez v1, :pass_touch_lock
+
+    const/4 v6, 0x1
+
+    :pass_touch_lock
     iget-boolean v0, p0, Lcom/dsemu/drastic/DraSticGlView;->D:Z
 
     const/4 v1, 0x0
@@ -2840,7 +2868,7 @@
     :goto_1
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticGlView;->R:Ln0/d;
 
-    invoke-virtual {p1, v0}, Ln0/i;->v(Ln0/d;)Z
+    invoke-virtual {p1, v0, v6}, Ln0/i;->v(Ln0/d;Z)Z
 
     goto/16 :goto_4
 
@@ -2907,7 +2935,7 @@
 
     iget-object v5, p0, Lcom/dsemu/drastic/DraSticGlView;->R:Ln0/d;
 
-    invoke-virtual {v4, v5}, Ln0/i;->v(Ln0/d;)Z
+    invoke-virtual {v4, v5, v6}, Ln0/i;->v(Ln0/d;Z)Z
 
     move-result v4
 
@@ -3023,7 +3051,7 @@
 
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticGlView;->R:Ln0/d;
 
-    invoke-virtual {p1, v0}, Ln0/i;->v(Ln0/d;)Z
+    invoke-virtual {p1, v0, v6}, Ln0/i;->v(Ln0/d;Z)Z
 
     move-result p1
 
