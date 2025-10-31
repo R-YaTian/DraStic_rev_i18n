@@ -22,9 +22,17 @@
 
 .field private b:I
 
-.field private c:I
+.field public c:I
 
-.field private d:I
+.field public d:I
+
+.field private width:I
+
+.field private height:I
+
+.field public x:I
+
+.field public y:I
 
 .field private e:Z
 
@@ -147,7 +155,7 @@
 .end method
 
 .method private final f()V
-    .locals 14
+    .locals 15
 
     const/16 v0, 0x30
 
@@ -313,6 +321,36 @@
 
     iput v2, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->d:I
 
+    const/high16 v8, 0x40000000    # 2.0f
+
+    iget v14, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->width:I
+
+    iget v3, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->c:I
+
+    sub-int v14, v14, v3
+
+    int-to-float v14, v14
+
+    div-float v14, v14, v8
+
+    float-to-int v14, v14
+
+    iput v14, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->x:I
+
+    iget v14, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->height:I
+
+    iget v2, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->d:I
+
+    sub-int v14, v14, v2
+
+    int-to-float v14, v14
+
+    div-float v14, v14, v8
+
+    float-to-int v14, v14
+
+    iput v14, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->y:I 
+
     invoke-virtual {v1, v7}, Ljava/nio/FloatBuffer;->put([F)Ljava/nio/FloatBuffer;
 
     invoke-virtual {v1}, Ljava/nio/FloatBuffer;->flip()Ljava/nio/Buffer;
@@ -367,7 +405,7 @@
 .end method
 
 .method public onDrawFrame(Ljavax/microedition/khronos/opengles/GL10;)V
-    .locals 7
+    .locals 8
 
     iget-boolean p1, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->e:Z
 
@@ -398,8 +436,23 @@
 
     iget v6, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->d:I
 
+    # Get the DraSticExtGlView instance
+    iget-object v7, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->g:Lcom/dsemu/drastic/DraSticExtGlView;
+
+    # Get the DraSticGlView reference
+    invoke-virtual {v7}, Lcom/dsemu/drastic/DraSticExtGlView;->getDraSticGlView()Lcom/dsemu/drastic/DraSticGlView;
+
+    move-result-object v7
+
+    invoke-static {v7}, Lcom/dsemu/drastic/DraSticGlView;->H(Lcom/dsemu/drastic/DraSticGlView;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_1
+
     invoke-static/range {v1 .. v6}, Lcom/dsemu/drastic/DraSticJNI;->extfxRender(IIIIII)V
 
+    :cond_1
     const/16 p1, 0xde1
 
     invoke-static {p1, v0}, Landroid/opengl/GLES20;->glBindTexture(II)V
@@ -457,6 +510,10 @@
     const/4 v4, 0x1
 
     invoke-direct {v0, v3, p2, p3, v4}, Le0/b1;-><init>(Landroid/content/Context;IIZ)V
+
+    iput p2, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->width:I
+
+    iput p3, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->height:I
 
     iput-object v0, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->f:Le0/b1;
 

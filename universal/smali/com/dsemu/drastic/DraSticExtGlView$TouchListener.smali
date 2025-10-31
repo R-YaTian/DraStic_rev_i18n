@@ -22,7 +22,37 @@
 
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 2
+    .locals 8
+
+    sget v0, Lf0/h;->A:I
+
+    if-eqz v0, :return_0
+
+    # Log x,y with TouchDebug
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
+    move-result v2
+
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
+    move-result v3
+
+    new-instance v4, Ljava/lang/StringBuilder;
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "x="
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v5, ", y="
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v6
+
+    const-string v5, "TouchDebug"
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     # Get the DraSticExtGlView instance
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticExtGlView$TouchListener;->this$0:Lcom/dsemu/drastic/DraSticExtGlView;
@@ -41,6 +71,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
+    :return_0
     const/4 v0, 0x0
 
     return v0

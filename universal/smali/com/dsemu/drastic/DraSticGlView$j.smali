@@ -997,11 +997,7 @@
     :cond_6
     iget-object v7, v0, Lcom/dsemu/drastic/DraSticGlView$j;->Q:Lcom/dsemu/drastic/DraSticGlView;
 
-    invoke-static {v7}, Lcom/dsemu/drastic/DraSticGlView;->e0(Lcom/dsemu/drastic/DraSticGlView;)Landroid/content/Context;
-
-    move-result-object v7
-
-    invoke-static {v7}, Lf0/h;->o(Landroid/content/Context;)I
+    invoke-static {v7}, Lcom/dsemu/drastic/DraSticGlView;->A(Lcom/dsemu/drastic/DraSticGlView;)I
 
     move-result v7
 

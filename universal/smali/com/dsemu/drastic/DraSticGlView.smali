@@ -2745,18 +2745,12 @@
 
     if-eqz p2, :not_from_extscreen
 
-    iget-object p2, p0, Lcom/dsemu/drastic/DraSticGlView;->g:Ln0/i;
-
-    invoke-virtual {p2}, Ln0/i;->setInputLock()V
-
     goto :pass_touch_lock
 
     :not_from_extscreen
     iget-object v1, p0, Lcom/dsemu/drastic/DraSticGlView;->f:Landroid/content/Context;
 
-    invoke-static {v1}, Lf0/h;->o(Landroid/content/Context;)I
-
-    move-result v2
+    iget v2, p0, Lcom/dsemu/drastic/DraSticGlView;->v:I
 
     invoke-static {v1}, Lf0/h;->p(Landroid/content/Context;)Z
 
@@ -2858,7 +2852,7 @@
     :goto_0
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticGlView;->R:Ln0/d;
 
-    invoke-virtual {p1, v0}, Lo0/b;->e(Ln0/d;)Z
+    invoke-virtual {p1, v0, p2}, Lo0/b;->e(Ln0/d;Z)Z
 
     goto/16 :goto_4
 
@@ -2868,7 +2862,7 @@
     :goto_1
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticGlView;->R:Ln0/d;
 
-    invoke-virtual {p1, v0, v6}, Ln0/i;->v(Ln0/d;Z)Z
+    invoke-virtual {p1, v0, v6, p2}, Ln0/i;->v(Ln0/d;ZZ)Z
 
     goto/16 :goto_4
 
@@ -2926,7 +2920,7 @@
 
     iget-object v5, p0, Lcom/dsemu/drastic/DraSticGlView;->R:Ln0/d;
 
-    invoke-virtual {v4, v5}, Lo0/b;->e(Ln0/d;)Z
+    invoke-virtual {v4, v5, p2}, Lo0/b;->e(Ln0/d;Z)Z
 
     goto :goto_3
 
@@ -2935,7 +2929,7 @@
 
     iget-object v5, p0, Lcom/dsemu/drastic/DraSticGlView;->R:Ln0/d;
 
-    invoke-virtual {v4, v5, v6}, Ln0/i;->v(Ln0/d;Z)Z
+    invoke-virtual {v4, v5, v6, p2}, Ln0/i;->v(Ln0/d;ZZ)Z
 
     move-result v4
 
@@ -3051,7 +3045,7 @@
 
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticGlView;->R:Ln0/d;
 
-    invoke-virtual {p1, v0, v6}, Ln0/i;->v(Ln0/d;Z)Z
+    invoke-virtual {p1, v0, v6, p2}, Ln0/i;->v(Ln0/d;ZZ)Z
 
     move-result p1
 

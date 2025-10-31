@@ -50,9 +50,9 @@
 
 .field private H:I
 
-.field private I:I
+.field public I:I
 
-.field private J:I
+.field public J:I
 
 .field private K:I
 
@@ -118,6 +118,9 @@
 
 .field private z:I
 
+.field public width:I
+
+.field public height:I
 
 # direct methods
 .method static constructor <clinit>()V
@@ -5023,6 +5026,10 @@
 
     iput p2, p0, Ln0/i;->J:I
 
+    iput p3, p0, Ln0/i;->width:I
+
+    iput p4, p0, Ln0/i;->height:I
+
     iget-object v0, p0, Ln0/i;->g:Ln0/i$b;
 
     const/4 v1, -0x1
@@ -7099,7 +7106,7 @@
     return-void
 .end method
 
-.method public v(Ln0/d;)Z
+.method public v(Ln0/d;ZZ)Z
     .locals 16
 
     move-object/from16 v0, p0
@@ -7117,6 +7124,8 @@
     const/4 v6, 0x0
 
     if-nez v4, :cond_0
+
+    if-nez p3, :cond_0
 
     iget v4, v0, Ln0/i;->m:I
 
@@ -7189,6 +7198,8 @@
     iget-boolean v9, v12, Ln0/i$b;->f:Z
 
     if-nez v9, :cond_5
+
+    if-nez p3, :cond_5
 
     iget v9, v12, Ln0/i$b;->b:I
 
@@ -7275,6 +7286,8 @@
     iget-boolean v15, v12, Ln0/i$b;->f:Z
 
     if-nez v15, :cond_c
+
+    if-nez p3, :cond_c
 
     iget v15, v12, Ln0/i$b;->b:I
 
@@ -7397,6 +7410,8 @@
     iget-boolean v14, v12, Ln0/i$b;->f:Z
 
     if-nez v14, :cond_14
+
+    if-nez p3, :cond_14
 
     iget-object v14, v12, Ln0/i$b;->a:Ln0/e;
 
@@ -7546,6 +7561,8 @@
     iget-boolean v12, v10, Ln0/i$b;->f:Z
 
     if-nez v12, :cond_1b
+
+    if-nez p3, :cond_1b
 
     iget-object v12, v10, Ln0/i$b;->a:Ln0/e;
 
@@ -7717,9 +7734,19 @@
 
     if-nez v10, :cond_21
 
+    if-nez p2, :cond_21
+
     invoke-direct/range {p0 .. p1}, Ln0/i;->o(Ln0/d;)Z
 
     move-result v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v7, "TouchDebugn0/i;->v|o="
+
+    invoke-static {v7, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     or-int/2addr v5, v1
 

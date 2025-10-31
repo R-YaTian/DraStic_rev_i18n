@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-.method public static getCustomDisplay(Landroid/content/Context;)Landroid/view/Display;
+.method public static getExternalDisplay(Landroid/content/Context;)Landroid/view/Display;
     .locals 5
 
     const-string v0, "display"
@@ -58,7 +58,7 @@
 
     if-nez p0, :return
 
-    invoke-static {p1}, Le0/v0;->getCustomDisplay(Landroid/content/Context;)Landroid/view/Display;
+    invoke-static {p1}, Le0/v0;->getExternalDisplay(Landroid/content/Context;)Landroid/view/Display;
 
     move-result-object p0
 

@@ -1579,15 +1579,18 @@
     return-void
 .end method
 
-.method public e(Ln0/d;)Z
+.method public e(Ln0/d;Z)Z
     .locals 6
 
     iget-boolean v0, p0, Lo0/b;->w:Z
 
     const/4 v1, 0x0
 
+    if-nez p2, :return
+
     if-nez v0, :cond_0
 
+    :return
     return v1
 
     :cond_0

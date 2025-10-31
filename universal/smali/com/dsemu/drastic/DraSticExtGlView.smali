@@ -157,3 +157,11 @@
 
     return-void
 .end method
+
+.method public geta()Lcom/dsemu/drastic/DraSticExtGlView$a;
+    .locals 1
+
+    iget-object v0, p0, Lcom/dsemu/drastic/DraSticExtGlView;->e:Lcom/dsemu/drastic/DraSticExtGlView$a;
+
+    return-object v0
+.end method
