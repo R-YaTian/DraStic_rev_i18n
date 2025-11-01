@@ -325,7 +325,7 @@
 
     iget v14, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->width:I
 
-    iget v3, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->c:I
+    # iget v3, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->c:I
 
     sub-int v14, v14, v3
 
@@ -339,7 +339,7 @@
 
     iget v14, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->height:I
 
-    iget v2, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->d:I
+    # iget v2, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->d:I
 
     sub-int v14, v14, v2
 
