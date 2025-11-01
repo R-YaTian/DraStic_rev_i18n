@@ -28,9 +28,11 @@
 
     if-eqz v0, :return_0
 
+    # Get the subTouchX
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
     move-result v2
 
+    # Get the subTouchY
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
     move-result v3
 
@@ -39,34 +41,37 @@
 
     # Get DraSticExtGlView$a
     invoke-virtual {v0}, Lcom/dsemu/drastic/DraSticExtGlView;->geta()Lcom/dsemu/drastic/DraSticExtGlView$a;
-
     move-result-object v4
 
+    # Get the contentLeft
     iget v5, v4, Lcom/dsemu/drastic/DraSticExtGlView$a;->x:I
 
+    # Get the contentTop
     iget v6, v4, Lcom/dsemu/drastic/DraSticExtGlView$a;->y:I
 
+    # Get the contentW
     iget v7, v4, Lcom/dsemu/drastic/DraSticExtGlView$a;->c:I
 
+    # Get the contentH
     iget v4, v4, Lcom/dsemu/drastic/DraSticExtGlView$a;->d:I
 
-    # if (subTouchX < contentLeft)
     float-to-int v8, v2
 
+    # if (subTouchX < contentLeft)
     if-lt v8, v5, :return_0
 
-    # temp = contentLeft + contentW
+    # v1 = contentLeft + contentW
     add-int v1, v5, v7
 
     # if (subTouchX > contentLeft + contentW)
     if-gt v8, v1, :return_0
 
-    # if (subTouchY < contentTop)
     float-to-int v8, v3
 
+    # if (subTouchY < contentTop)
     if-lt v8, v6, :return_0
 
-    # temp = contentTop + contentH
+    # v1 = contentTop + contentH
     add-int v1, v6, v4
 
     # if (subTouchY > contentTop + contentH)
@@ -108,7 +113,6 @@
     return v0
 
     :cond_0
-
     invoke-static {v1}, Lcom/dsemu/drastic/DraSticGlView;->E(Lcom/dsemu/drastic/DraSticGlView;)Ln0/i;
 
     move-result-object v0

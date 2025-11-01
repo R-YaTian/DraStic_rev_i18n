@@ -7740,14 +7740,6 @@
 
     move-result v1
 
-    invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string v7, "TouchDebugn0/i;->v|o="
-
-    invoke-static {v7, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
     or-int/2addr v5, v1
 
     :cond_21

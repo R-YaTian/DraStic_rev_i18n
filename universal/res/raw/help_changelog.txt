@@ -1,3 +1,9 @@
+<b>Version 2.6.0.4a Rev 251031 (BY R-YaTian):
+- Improve external display detection for external screens
+- Introduce new EGL config chooser for better compatibility. This fixes EGL initialization for some VMs, e.g. AVD
+- Fix an issue where the touchscreen responded incorrectly in single-screen layout
+- Fix touchscreen input for certain dual screen handheld devices, such as AYN Thor
+
 <b>Version 2.6.0.4a Rev 251027 (BY R-YaTian):
 - Fix an issue where DpadModifier and ButtonModifier settings could fail to save or load correctly in certain cases due to floating-point storage precision
 
