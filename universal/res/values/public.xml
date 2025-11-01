@@ -1106,7 +1106,7 @@
     <public type="drawable" name="ic_expand_more_white_18dp" id="0x7f0800d2" />
     <public type="drawable" name="ic_file_black" id="0x7f0800d3" />
     <public type="drawable" name="ic_folder_add" id="0x7f0800d4" />
-    <public type="drawable" name="ic_folder_black_24dp" id="0x7f0800d5" />
+    <public type="drawable" name="ic_folder" id="0x7f0800d5" />
     <public type="drawable" name="ic_folder_open" id="0x7f0800d6" />
     <public type="drawable" name="ic_folder_open_black_24dp" id="0x7f0800d7" />
     <public type="drawable" name="ic_folder_open_white_24dp" id="0x7f0800d8" />
@@ -1154,7 +1154,6 @@
     <public type="drawable" name="ic_video_library_black_24dp" id="0x7f080105" />
     <public type="drawable" name="ic_video_library_white_24dp" id="0x7f080106" />
     <public type="drawable" name="ic_warning" id="0x7f080107" />
-    <public type="drawable" name="ico_folder" id="0x7f080108" />
     <public type="drawable" name="ico_mark" id="0x7f080109" />
     <public type="drawable" name="list_bg" id="0x7f08010a" />
     <public type="drawable" name="list_bg_tv" id="0x7f08010b" />
