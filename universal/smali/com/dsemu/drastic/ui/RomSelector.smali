@@ -2360,6 +2360,8 @@
 
     sget-object p2, Lf0/h;->i1:[I
 
+    const/4 v0, 0x3
+
     aget v0, p2, v0
 
     if-ne p1, v0, :cond_9
@@ -2369,7 +2371,7 @@
     :cond_9
     if-eq p1, v1, :cond_f
 
-    const/4 v0, 0x3
+    const/4 v0, 0x2
 
     aget v0, p2, v0
 

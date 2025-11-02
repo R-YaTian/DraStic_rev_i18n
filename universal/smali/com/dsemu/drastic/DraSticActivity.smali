@@ -7774,7 +7774,7 @@
 
     const/16 v1, 0x61
 
-    const/4 v2, 0x2
+    const/4 v2, 0x3
 
     const/16 v3, 0xc
 
@@ -7782,7 +7782,7 @@
 
     const/4 v5, 0x0
 
-    const/4 v6, 0x3
+    const/4 v6, 0x2
 
     const/4 v7, 0x1
 
