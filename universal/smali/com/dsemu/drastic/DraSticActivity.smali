@@ -6716,7 +6716,9 @@
 .end method
 
 .method public a(Ld0/h;)V
-    .locals 3
+    .locals 4
+
+    sget-object v3, Lf0/h;->i1:[I
 
     invoke-virtual {p1}, Ld0/h;->y()I
 
@@ -6740,11 +6742,15 @@
 
     if-eq p1, v0, :cond_2
 
-    const/16 v0, 0x60
+    const/16 v0, 0x3
+
+    aget v0, v3, v0
 
     if-eq p1, v0, :cond_1
 
-    const/16 v0, 0x61
+    const/16 v0, 0x2
+
+    aget v0, v3, v0
 
     if-eq p1, v0, :cond_0
 
@@ -7822,9 +7828,9 @@
 
     if-eq p2, v2, :cond_5
 
-    if-ne p2, v0, :cond_2
+    # if-ne p2, v0, :cond_2
 
-    goto :goto_2
+    # goto :goto_2
 
     :cond_2
     const/4 v0, 0x4
@@ -7835,9 +7841,9 @@
 
     if-eq p2, p1, :cond_4
 
-    if-ne p2, v1, :cond_3
+    # if-ne p2, v1, :cond_3
 
-    goto :goto_1
+    # goto :goto_1
 
     :cond_3
     iget-boolean p1, p0, Lcom/dsemu/drastic/DraSticActivity;->w:Z

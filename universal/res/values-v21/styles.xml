@@ -8,6 +8,8 @@
         <item name="menu_color_highlight_ripple">@color/item_highlight_ripple</item>
         <item name="menu_color_text">@color/item_big</item>
         <item name="menu_color_text_selection">@color/item_selection</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorControlHighlight">@android:color/transparent</item>
     </style>
     <style name="AppTheme.Transparent" parent="@android:style/Theme.Material.NoActionBar.Fullscreen">
         <item name="android:windowBackground">@android:color/transparent</item>

@@ -574,7 +574,7 @@
 
 # virtual methods
 .method public a(Ld0/h;)V
-    .locals 6
+    .locals 7
 
     invoke-virtual {p1}, Ld0/h;->y()I
 
@@ -605,11 +605,17 @@
 
     move-result p1
 
-    const/16 v0, 0x60
+    sget-object v6, Lf0/h;->i1:[I
+
+    const/16 v0, 0x3
+
+    aget v0, v6, v0
 
     if-eq p1, v0, :cond_2
 
-    const/16 v0, 0x61
+    const/16 v0, 0x2
+
+    aget v0, v6, v0
 
     if-eq p1, v0, :cond_1
 
