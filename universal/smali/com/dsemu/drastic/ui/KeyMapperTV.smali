@@ -293,9 +293,13 @@
 
     iget-object v1, p0, Lcom/dsemu/drastic/ui/KeyMapperTV;->p:Ln0/h;
 
+    invoke-virtual {v1}, Ln0/h;->setMapperGuard()V
+
     invoke-virtual {v1, p1}, Ln0/h;->a(Landroid/view/KeyEvent;)Landroid/view/KeyEvent;
 
     move-result-object p1
+
+    invoke-virtual {v1}, Ln0/h;->clearMapperGuard()V
 
     if-eqz p1, :cond_2
 
