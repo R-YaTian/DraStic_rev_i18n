@@ -80,9 +80,6 @@
     <color name="menu_game_bg">#fff8f8f8</color>
     <color name="normalbg">#ffffffff</color>
     <color name="normalbg_tv">#ff111111</color>
-    <color name="notification_action_color_filter">#ffffffff</color>
-    <color name="notification_icon_bg_color">#ff9e9e9e</color>
-    <color name="notification_material_background_media_default_color">#ff424242</color>
     <color name="pressedbg">#200099cc</color>
     <color name="pressedbg_dark">#200099cc</color>
     <color name="pressedbg_tv">#ff014359</color>

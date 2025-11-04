@@ -252,7 +252,6 @@
     <item type="id" name="devicename" />
     <item type="id" name="devicepicker" />
     <item type="id" name="devicetext" />
-    <item type="id" name="dialog_button" />
     <item type="id" name="directory_path_edittext" />
     <item type="id" name="directoryicon" />
     <item type="id" name="directorytext" />
@@ -321,9 +320,6 @@
     <item type="id" name="menu_settings" />
     <item type="id" name="message" />
     <item type="id" name="motion_base" />
-    <item type="id" name="notification_background" />
-    <item type="id" name="notification_main_column" />
-    <item type="id" name="notification_main_column_container" />
     <item type="id" name="off" />
     <item type="id" name="on" />
     <item type="id" name="parentPanel" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="vertical" android:id="@id/game_menu_root" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
+  xmlns:android="http://schemas.android.com/apk/res/android" android:defaultFocusHighlightEnabled="false">
     <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
         <TableRow android:background="@color/menu_bg_header">
             <LinearLayout android:orientation="horizontal" android:id="@id/btn_gm_back" android:background="@drawable/btn_back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">

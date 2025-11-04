@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:background="#ff0099cc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="96.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="96.0dip" android:layout_marginBottom="48.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <TableLayout android:id="@id/keymapper_tv_root" android:background="@color/menu_bg_center_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip">
+    <TableLayout android:id="@id/keymapper_tv_root" android:background="@color/menu_bg_center_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:defaultFocusHighlightEnabled="false">
         <RelativeLayout android:orientation="horizontal" android:background="@color/menu_bg_header_tv" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_back_keymapper_tv" android:background="@drawable/btn_back_bg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content">
                 <ImageView android:contentDescription="@null" style="@style/drastic_btn_back" />

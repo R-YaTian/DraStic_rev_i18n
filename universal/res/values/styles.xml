@@ -5,10 +5,7 @@
     <style name="Animation.AppCompat.Dialog" parent="@style/Base.Animation.AppCompat.Dialog" />
     <style name="Animation.AppCompat.DropDownUp" parent="@style/Base.Animation.AppCompat.DropDownUp" />
     <style name="Animation.AppCompat.Tooltip" parent="@style/Base.Animation.AppCompat.Tooltip" />
-    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:colorControlHighlight">@android:color/transparent</item>
-    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
     <style name="AppTheme" parent="@style/AppBaseTheme" />
     <style name="AppTheme.Transparent" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
         <item name="android:windowBackground">@android:color/transparent</item>
