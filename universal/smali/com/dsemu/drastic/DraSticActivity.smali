@@ -3332,9 +3332,9 @@
 
     if-eqz p1, :cond_2
 
-    instance-of v1, p1, Lj0/a;
+    # instance-of v1, p1, Lj0/a;
 
-    if-nez v1, :cond_2
+    # if-nez v1, :cond_2
 
     invoke-interface {p1, p0}, Lcom/dsemu/drastic/filesystem/b;->c(Landroid/content/Context;)Z
 
@@ -3367,7 +3367,6 @@
     goto :cond_2
 
     :not_null
-
     sget-object v2, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const/4 v3, 0x1
