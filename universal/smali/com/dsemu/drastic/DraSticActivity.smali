@@ -95,6 +95,9 @@
 
 .field private z:I
 
+# Added: holder for OnUnhandledKeyEventListener
+.field private H0:Landroid/view/View$OnUnhandledKeyEventListener;
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -612,6 +615,14 @@
     invoke-direct {p0}, Lcom/dsemu/drastic/DraSticActivity;->W()V
 
     return-void
+.end method
+
+.method static synthetic getRootLayout(Lcom/dsemu/drastic/DraSticActivity;)Landroid/widget/RelativeLayout;
+    .locals 0
+
+    iget-object p0, p0, Lcom/dsemu/drastic/DraSticActivity;->j:Landroid/widget/RelativeLayout;
+
+    return-object p0
 .end method
 
 .method private S(Landroid/widget/RelativeLayout;IIZ)V
@@ -6955,25 +6966,143 @@
 .end method
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
-    .locals 1
+    .locals 12
 
-    iget-object v0, p0, Lcom/dsemu/drastic/DraSticActivity;->t:Ln0/h;
+    # Log incoming event details
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
+    move-result v0
 
-    invoke-virtual {v0, p1}, Ln0/h;->a(Landroid/view/KeyEvent;)Landroid/view/KeyEvent;
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getScanCode()I
+    move-result v1
 
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getSource()I
+    move-result v2
+
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getFlags()I
+    move-result v3
+
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getDeviceId()I
+    move-result v4
+
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getAction()I
+    move-result v5
+
+    new-instance v6, Ljava/lang/StringBuilder;
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v7, "incoming key: code="
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v7, " scan="
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v7, " source=0x"
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+    move-result-object v8
+    invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v7, " flags=0x"
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+    move-result-object v8
+    invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v7, " dev="
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v7, " action="
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v9
+    const-string v10, "DraSticKeyDebug"
+    invoke-static {v10, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result v11
+
+    # Keep previous mapping behavior
+    iget-object v11, p0, Lcom/dsemu/drastic/DraSticActivity;->t:Ln0/h;
+    invoke-virtual {v11, p1}, Ln0/h;->a(Landroid/view/KeyEvent;)Landroid/view/KeyEvent;
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    # Log mapped/forwarded event or swallowed case
+    if-eqz p1, :cond_swallowed
+
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
+    move-result v0
+
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getScanCode()I
+    move-result v1
+
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getSource()I
+    move-result v2
+
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getFlags()I
+    move-result v3
+
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getDeviceId()I
+    move-result v4
+
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getAction()I
+    move-result v5
+
+    new-instance v6, Ljava/lang/StringBuilder;
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v7, "forward key: code="
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v7, " scan="
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v7, " source=0x"
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+    move-result-object v8
+    invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v7, " flags=0x"
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+    move-result-object v8
+    invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v7, " dev="
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v7, " action="
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v9
+    const-string v10, "DraSticKeyDebug"
+    invoke-static {v10, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result v11
 
     invoke-super {p0, p1}, Landroid/app/Activity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    move-result v0
 
-    move-result p1
+    new-instance v1, Ljava/lang/StringBuilder;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v2, "super.dispatchKeyEvent result="
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
+    const-string v4, "DraSticKeyDebug"
+    invoke-static {v4, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result v5
 
-    return p1
+    return v0
 
-    :cond_0
+    :cond_swallowed
+    const-string v0, "DraSticKeyDebug"
+    const-string v1, "event swallowed before super (mapped null)"
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result v2
+
     const/4 p1, 0x1
-
     return p1
 .end method
 
@@ -7386,7 +7515,7 @@
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
-    .locals 5
+    .locals 8
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -7514,6 +7643,21 @@
     iget-object v2, p0, Lcom/dsemu/drastic/DraSticActivity;->j:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2, p0}, Landroid/view/View;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
+
+    # API >= 28: add OnUnhandledKeyEventListener on root view
+    sget v5, Landroid/os/Build$VERSION;->SDK_INT:I
+    const/16 v6, 0x1c
+    if-lt v5, v6, :cond_unhandled_skip
+
+    new-instance v5, Lcom/dsemu/drastic/DraSticActivity$Unhandled;
+    invoke-direct {v5, p0}, Lcom/dsemu/drastic/DraSticActivity$Unhandled;-><init>(Lcom/dsemu/drastic/DraSticActivity;)V
+
+    iput-object v5, p0, Lcom/dsemu/drastic/DraSticActivity;->H0:Landroid/view/View$OnUnhandledKeyEventListener;
+
+    iget-object v6, p0, Lcom/dsemu/drastic/DraSticActivity;->j:Landroid/widget/RelativeLayout;
+    invoke-virtual {v6, v5}, Landroid/view/View;->addOnUnhandledKeyEventListener(Landroid/view/View$OnUnhandledKeyEventListener;)V
+
+    :cond_unhandled_skip
 
     iget-object v2, p0, Lcom/dsemu/drastic/DraSticActivity;->r:Landroid/widget/ImageView;
 
@@ -7723,9 +7867,27 @@
 .end method
 
 .method public onDestroy()V
-    .locals 1
+    .locals 3
 
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
+
+    # Remove OnUnhandledKeyEventListener if present (API >= 28)
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    const/16 v1, 0x1c
+    if-lt v0, v1, :cond_remove_done
+
+    iget-object v0, p0, Lcom/dsemu/drastic/DraSticActivity;->H0:Landroid/view/View$OnUnhandledKeyEventListener;
+    if-eqz v0, :cond_remove_done
+
+    iget-object v1, p0, Lcom/dsemu/drastic/DraSticActivity;->j:Landroid/widget/RelativeLayout;
+    if-eqz v1, :cond_remove_done
+
+    invoke-virtual {v1, v0}, Landroid/view/View;->removeOnUnhandledKeyEventListener(Landroid/view/View$OnUnhandledKeyEventListener;)V
+
+    const/4 v2, 0x0
+    iput-object v2, p0, Lcom/dsemu/drastic/DraSticActivity;->H0:Landroid/view/View$OnUnhandledKeyEventListener;
+
+    :cond_remove_done
 
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticActivity;->u:Ld0/b;
 
