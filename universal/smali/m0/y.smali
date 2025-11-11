@@ -574,7 +574,7 @@
 
 # virtual methods
 .method public a(Ld0/h;)V
-    .locals 7
+    .locals 6
 
     invoke-virtual {p1}, Ld0/h;->y()I
 
@@ -605,17 +605,11 @@
 
     move-result p1
 
-    sget-object v6, Lf0/h;->i1:[I
-
-    const/16 v0, 0x3
-
-    aget v0, v6, v0
+    const/16 v0, 0x60
 
     if-eq p1, v0, :cond_2
 
-    const/16 v0, 0x2
-
-    aget v0, v6, v0
+    const/16 v0, 0x61
 
     if-eq p1, v0, :cond_1
 
@@ -1346,34 +1340,22 @@
 
     if-eq p1, v3, :cond_7
 
-    const/4 v3, 0x3
+    const/16 v3, 0x60
 
-    aget v3, v0, v3
+    if-ne p1, v3, :cond_4
 
-    if-eq p1, v3, :cond_7
-
-    # const/16 v3, 0x60
-
-    # if-ne p1, v3, :cond_4
-
-    # goto :goto_2
+    goto :goto_2
 
     :cond_4
     const/4 v3, 0x4
 
     if-eq p1, v3, :cond_6
 
-    const/4 v3, 0x2
+    const/16 v0, 0x61
 
-    aget v0, v0, v3
+    if-ne p1, v0, :cond_5
 
-    if-eq p1, v0, :cond_6
-
-    # const/16 v0, 0x61
-
-    # if-ne p1, v0, :cond_5
-
-    # goto :goto_0
+    goto :goto_0
 
     :cond_5
     const/4 v1, 0x0

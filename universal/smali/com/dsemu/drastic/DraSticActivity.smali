@@ -3343,10 +3343,6 @@
 
     if-eqz p1, :cond_2
 
-    # instance-of v1, p1, Lj0/a;
-
-    # if-nez v1, :cond_2
-
     invoke-interface {p1, p0}, Lcom/dsemu/drastic/filesystem/b;->c(Landroid/content/Context;)Z
 
     move-result v1
@@ -6726,9 +6722,7 @@
 .end method
 
 .method public a(Ld0/h;)V
-    .locals 4
-
-    sget-object v3, Lf0/h;->i1:[I
+    .locals 3
 
     invoke-virtual {p1}, Ld0/h;->y()I
 
@@ -6752,15 +6746,11 @@
 
     if-eq p1, v0, :cond_2
 
-    const/16 v0, 0x3
-
-    aget v0, v3, v0
+    const/16 v0, 0x60
 
     if-eq p1, v0, :cond_1
 
-    const/16 v0, 0x2
-
-    aget v0, v3, v0
+    const/16 v0, 0x61
 
     if-eq p1, v0, :cond_0
 
@@ -7941,7 +7931,7 @@
 
     const/16 v1, 0x61
 
-    const/4 v2, 0x3
+    const/4 v2, 0x2
 
     const/16 v3, 0xc
 
@@ -7949,7 +7939,7 @@
 
     const/4 v5, 0x0
 
-    const/4 v6, 0x2
+    const/4 v6, 0x3
 
     const/4 v7, 0x1
 
@@ -7985,26 +7975,18 @@
 
     if-eq p2, v3, :cond_5
 
-    aget v2, p1, v2
+    if-ne p2, v0, :cond_2
 
-    if-eq p2, v2, :cond_5
-
-    # if-ne p2, v0, :cond_2
-
-    # goto :goto_2
+    goto :goto_2
 
     :cond_2
     const/4 v0, 0x4
 
     if-eq p2, v0, :cond_4
 
-    aget p1, p1, v6
+    if-ne p2, v1, :cond_3
 
-    if-eq p2, p1, :cond_4
-
-    # if-ne p2, v1, :cond_3
-
-    # goto :goto_1
+    goto :goto_1
 
     :cond_3
     iget-boolean p1, p0, Lcom/dsemu/drastic/DraSticActivity;->w:Z
@@ -8106,11 +8088,11 @@
 
     if-eq p2, v3, :cond_c
 
-    aget v3, p1, v6
+    const/16 v3, 0x13
 
     if-eq p2, v3, :cond_c
 
-    aget p1, p1, v2
+    const/16 p1, 0x14
 
     if-eq p2, p1, :cond_c
 

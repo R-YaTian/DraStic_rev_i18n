@@ -1205,9 +1205,7 @@
 .end method
 
 .method public a(Ld0/h;)V
-    .locals 4
-
-    sget-object v3, Lf0/h;->i1:[I
+    .locals 3
 
     invoke-virtual {p1}, Ld0/h;->y()I
 
@@ -1227,17 +1225,13 @@
 
     move-result p1
 
-    const/16 v1, 0x3
-
-    aget v1, v3, v1
+    const/16 v1, 0x60
 
     const/4 v2, -0x1
 
     if-eq p1, v1, :cond_2
 
-    const/16 v1, 0x2
-
-    aget v1, v3, v1
+    const/16 v1, 0x61
 
     if-eq p1, v1, :cond_1
 
@@ -2366,9 +2360,7 @@
 
     sget-object p2, Lf0/h;->i1:[I
 
-    const/4 v0, 0x3
-
-    aget v0, p2, v0
+    const/16 v0, 0x60
 
     if-ne p1, v0, :cond_9
 
@@ -2377,9 +2369,7 @@
     :cond_9
     if-eq p1, v1, :cond_f
 
-    const/4 v0, 0x2
-
-    aget v0, p2, v0
+    const/16 v0, 0x61
 
     if-ne p1, v0, :cond_a
 

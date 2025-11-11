@@ -649,13 +649,9 @@
 
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->m:Ln0/h;
 
-    invoke-virtual {v0}, Ln0/h;->setMapperGuard()V
-
     invoke-virtual {v0, p1}, Ln0/h;->a(Landroid/view/KeyEvent;)Landroid/view/KeyEvent;
 
     move-result-object p1
-
-    invoke-virtual {v0}, Ln0/h;->clearMapperGuard()V
 
     if-eqz p1, :cond_0
 
