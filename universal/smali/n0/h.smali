@@ -24,8 +24,6 @@
 
 .field private b:Ln0/h$a;
 
-.field private m:Z
-
 
 # direct methods
 .method static constructor <clinit>()V
@@ -152,26 +150,6 @@
     return-object v0
 .end method
 
-.method public setMapperGuard()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Ln0/h;->m:Z
-
-    return-void
-.end method
-
-.method public clearMapperGuard()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Ln0/h;->m:Z
-
-    return-void
-.end method
-
 .method private c()V
     .locals 4
     .annotation build Landroid/annotation/SuppressLint;
@@ -183,8 +161,6 @@
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Ln0/h;->a:Z
-
-    iput-boolean v0, p0, Ln0/h;->m:Z
 
     sget-object v0, Ln0/h$a;->e:Ln0/h$a;
 
@@ -267,13 +243,13 @@
 
     iget-boolean v0, p0, Ln0/h;->a:Z
 
-    if-eqz v0, :cond_n
+    if-eqz v0, :cond_3
 
     iget-object v0, p0, Ln0/h;->b:Ln0/h$a;
 
     sget-object v1, Ln0/h$a;->f:Ln0/h$a;
 
-    if-ne v0, v1, :cond_n
+    if-ne v0, v1, :cond_3
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
@@ -346,45 +322,6 @@
     if-nez p1, :cond_2
 
     return-object v1
-
-    :cond_n
-    iget-boolean v0, p0, Ln0/h;->m:Z
-
-    if-nez v0, :cond_3
-
-    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
-
-    move-result v0
-
-    const/16 v1, 0x60
-
-    if-eq v0, v1, :cond_a
-
-    const/16 v1, 0x61
-
-    if-ne v0, v1, :cond_3
-
-    const/16 v1, 0x2
-
-    goto :cond_b
-
-    :cond_a
-    const/16 v1, 0x3
-
-    :cond_b
-    sget-object v3, Lf0/h;->i1:[I
-
-    aget v1, v3, v1
-
-    invoke-virtual {p1}, Landroid/view/KeyEvent;->getAction()I
-
-    move-result v0
-
-    new-instance p1, Landroid/view/KeyEvent;
-
-    invoke-direct {p1, v0, v1}, Landroid/view/KeyEvent;-><init>(II)V
-
-    goto :cond_3
 
     :cond_2
     new-instance p1, Landroid/view/KeyEvent;
