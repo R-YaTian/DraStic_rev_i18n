@@ -849,6 +849,88 @@
     return v2
 .end method
 
+.method public static final findOdinController()Z
+    .locals 9
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "NewApi"
+        }
+    .end annotation
+
+    invoke-static {}, Landroid/view/InputDevice;->getDeviceIds()[I
+
+    move-result-object v0
+
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v1, :cond_3
+
+    aget v4, v0, v3
+
+    invoke-static {v4}, Landroid/view/InputDevice;->getDevice(I)Landroid/view/InputDevice;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/view/InputDevice;->getSources()I
+
+    move-result v5
+
+    sget v6, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    and-int/lit16 v7, v5, 0x401
+
+    const/16 v8, 0x401
+
+    if-eq v7, v8, :cond_0
+
+    const v7, 0x1000010
+
+    and-int/2addr v5, v7
+
+    if-ne v5, v7, :cond_1
+
+    :cond_0
+    const/16 v5, 0x10
+
+    if-lt v6, v5, :cond_3
+
+    invoke-static {v4}, Lm0/b1;->a(Landroid/view/InputDevice;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_1
+
+    invoke-virtual {v4}, Landroid/view/InputDevice;->getName()Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "Odin "
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_2
+
+    :cond_1
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_3
+    return v2
+.end method
+
 .method public static final k(Landroid/content/Context;)Z
     .locals 1
 

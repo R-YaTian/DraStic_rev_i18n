@@ -204,6 +204,21 @@
         <item>R;R</item>
         <item>Menu;ﾒﾆｭｰを開く</item>
     </string-array>
+    <string-array name="set_mapping_odin">
+        <item>D-Pad;D-Pad, メニューでナビ</item>
+        <item>左ｽﾃｨｯｸ;D-Pad, メニューでナビ</item>
+        <item>Y;Y</item>
+        <item>X;X</item>
+        <item>B;B, ﾒﾆｭｰでｷｬﾝｾﾙ</item>
+        <item>A;A, ﾒﾆｭｰで確認</item>
+        <item>Play;スタート</item>
+        <item>Stop;セレクト</item>
+        <item>Back;ﾒﾆｭｰを開く</item>
+        <item>L1;Lﾄﾘｶﾞｰ</item>
+        <item>R1;Rﾄﾘｶﾞｰ</item>
+        <item>L3;スクリーンを交換</item>
+        <item>R3;一と二の画面レイアウトを交換</item>
+    </string-array>
     <string-array name="set_menu_button_position">
         <item>ボトム</item>
         <item>トップ</item>

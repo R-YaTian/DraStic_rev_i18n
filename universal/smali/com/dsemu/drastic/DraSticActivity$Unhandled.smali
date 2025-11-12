@@ -31,20 +31,23 @@
 
 # virtual methods
 .method public onUnhandledKeyEvent(Landroid/view/View;Landroid/view/KeyEvent;)Z
-    .locals 4
+    .locals 1
 
     # Obtain keyCode
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
+
     move-result v0
 
     # Forward to Activity.onKey using root view j
-    iget-object v1, p0, Lcom/dsemu/drastic/DraSticActivity$Unhandled;->a:Lcom/dsemu/drastic/DraSticActivity;
+    iget-object p0, p0, Lcom/dsemu/drastic/DraSticActivity$Unhandled;->a:Lcom/dsemu/drastic/DraSticActivity;
 
-    invoke-static {v1}, Lcom/dsemu/drastic/DraSticActivity;->getRootLayout(Lcom/dsemu/drastic/DraSticActivity;)Landroid/widget/RelativeLayout;
-    move-result-object v2
+    invoke-static {p0}, Lcom/dsemu/drastic/DraSticActivity;->getRootLayout(Lcom/dsemu/drastic/DraSticActivity;)Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v1, v2, v0, p2}, Lcom/dsemu/drastic/DraSticActivity;->onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
-    move-result v3
+    move-result-object p1
 
-    return v3
+    invoke-virtual {p0, p1, v0, p2}, Lcom/dsemu/drastic/DraSticActivity;->onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
+
+    move-result v0
+
+    return v0
 .end method

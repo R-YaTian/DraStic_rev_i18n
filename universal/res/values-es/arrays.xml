@@ -204,6 +204,21 @@
         <item>R;R</item>
         <item>Menú;Abrir menú</item>
     </string-array>
+    <string-array name="set_mapping_odin">
+        <item>Cruceta;Cruceta, Navegar menús</item>
+        <item>Palanca izquierda;Cruceta, Navegar menús</item>
+        <item>Y;Y</item>
+        <item>X;X</item>
+        <item>B;B, Cancelar en menús</item>
+        <item>A;A, Confirmar en menús</item>
+        <item>Play;Start</item>
+        <item>Stop;Select</item>
+        <item>Back;Abrir menú</item>
+        <item>L1;Gatillo izquierdo</item>
+        <item>R1;Gatillo derecho</item>
+        <item>L3;Intercambiar pantallas</item>
+        <item>R3;Intercambiar disposiciones de pantalla 1 y 2</item>
+    </string-array>
     <string-array name="set_menu_button_position">
         <item>Inferior</item>
         <item>Superior</item>

@@ -42,7 +42,7 @@
 .end method
 
 .method public static a(Landroid/content/Context;)Ljava/lang/String;
-    .locals 7
+    .locals 8
 
     sget-boolean v0, Lf0/h;->b1:Z
 
@@ -94,6 +94,12 @@
     :goto_1
     if-eqz v0, :cond_2
 
+    const v7, 0x7f0f0137
+
+    invoke-virtual {p0, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v7
+
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
@@ -110,7 +116,7 @@
 
     invoke-direct {v0}, Lf0/d$a;-><init>()V
 
-    const-string v2, "OK"
+    move-object v2, v7
 
     invoke-virtual {p0, v2, v0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

@@ -33,12 +33,14 @@
 
 .field public static final enum i:Lf0/c$b;
 
+.field public static final enum o:Lf0/c$b;
+
 .field private static final synthetic j:[Lf0/c$b;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
+    .locals 14
 
     new-instance v0, Lf0/c$b;
 
@@ -90,7 +92,17 @@
 
     sput-object v7, Lf0/c$b;->i:Lf0/c$b;
 
-    const/4 v9, 0x5
+    new-instance v11, Lf0/c$b;
+
+    const-string v12, "Odin"
+
+    const/4 v13, 0x5
+
+    invoke-direct {v11, v12, v13}, Lf0/c$b;-><init>(Ljava/lang/String;I)V
+
+    sput-object v11, Lf0/c$b;->o:Lf0/c$b;
+
+    const/4 v9, 0x6
 
     new-array v9, v9, [Lf0/c$b;
 
@@ -103,6 +115,8 @@
     aput-object v5, v9, v8
 
     aput-object v7, v9, v10
+
+    aput-object v11, v9, v13
 
     sput-object v9, Lf0/c$b;->j:[Lf0/c$b;
 

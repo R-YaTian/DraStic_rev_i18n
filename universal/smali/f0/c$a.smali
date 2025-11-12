@@ -87,12 +87,28 @@
 
     move-result v1
 
-    const/4 v2, 0x4
+    const/4 v2, 0x5
 
     aput v2, v0, v1
     :try_end_3
     .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
     :catch_3
+    :try_start_4
+    sget-object v0, Lf0/c$a;->a:[I
+
+    sget-object v1, Lf0/c$b;->o:Lf0/c$b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x4
+
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
     return-void
 .end method

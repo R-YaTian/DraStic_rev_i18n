@@ -327,6 +327,14 @@
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setFocusableInTouchMode(Z)V
 
+    invoke-virtual {p1, v0}, Landroid/view/View;->setFocusable(Z)V
+
+    invoke-virtual {p1}, Landroid/view/View;->requestFocus()Z
+
+    const v0, 0x60000    # ViewGroup.FOCUS_BLOCK_DESCENDANTS
+
+    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->setDescendantFocusability(I)V
+
     invoke-static {}, Ln0/h;->b()Ln0/h;
 
     move-result-object p1

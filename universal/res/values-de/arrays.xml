@@ -204,6 +204,21 @@
         <item>R;R</item>
         <item>Menu;Menü öffnen</item>
     </string-array>
+    <string-array name="set_mapping_odin">
+        <item>D-Pad;D-Pad, Menü-Navigation</item>
+        <item>Left Stick;D-Pad, Menü-Navigation</item>
+        <item>Y;Y</item>
+        <item>X;X</item>
+        <item>B;B, Abbrechen in Menüs</item>
+        <item>A;A, Bestätigen in Menüs</item>
+        <item>Play;Start</item>
+        <item>Stop;Select</item>
+        <item>Back;Menü öffnen</item>
+        <item>L1;L-Schultertaste</item>
+        <item>R1;R-Schultertaste</item>
+        <item>L3;Bildschirme wechseln</item>
+        <item>R3;Zwischen 1- und 2-Bildschirm-Layouts wechseln</item>
+    </string-array>
     <string-array name="set_menu_button_position">
         <item>Unten</item>
         <item>Oben</item>

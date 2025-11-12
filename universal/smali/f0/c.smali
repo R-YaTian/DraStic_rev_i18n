@@ -18,6 +18,8 @@
 
 .field private static final c:[I
 
+.field private static final o:[I
+
 .field private static d:Lf0/c$b;
 
 
@@ -38,6 +40,12 @@
     fill-array-data v1, :array_1
 
     sput-object v1, Lf0/c;->b:[I
+
+    new-array v1, v0, [I
+
+    fill-array-data v1, :array_3
+
+    sput-object v1, Lf0/c;->o:[I
 
     new-array v0, v0, [I
 
@@ -149,6 +157,39 @@
         -0x1
         -0x1
     .end array-data
+
+    :array_3
+    .array-data 4
+        0x63
+        0x64
+        0x61
+        0x60
+        0x67
+        0x66
+        0x6c
+        0x6d
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x13
+        0x16
+        0x14
+        0x15
+        0x6a
+        -0x1
+        -0x1
+        -0x1
+        0x4
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x6b
+        -0x1
+        -0x1
+        -0x1
+    .end array-data
 .end method
 
 .method public static a()Z
@@ -235,6 +276,17 @@
     goto :goto_0
 
     :cond_3
+    invoke-static {}, Lcom/dsemu/drastic/ui/q;->findOdinController()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_o
+
+    sget-object v0, Lf0/c$b;->o:Lf0/c$b;
+
+    goto :goto_0
+
+    :cond_o
     invoke-static {}, Lcom/dsemu/drastic/ui/q;->j()Z
 
     move-result v0
@@ -295,6 +347,10 @@
 
     const/4 v1, 0x4
 
+    if-eq v0, v1, :cond_3
+
+    const/4 v1, 0x5
+
     if-eq v0, v1, :cond_0
 
     const/4 v0, 0x0
@@ -313,6 +369,11 @@
 
     :cond_2
     sget-object v0, Lf0/c;->b:[I
+
+    return-object v0
+
+    :cond_3
+    sget-object v0, Lf0/c;->o:[I
 
     return-object v0
 .end method
@@ -344,6 +405,10 @@
 
     const/4 v1, 0x4
 
+    if-eq v0, v1, :cond_4
+
+    const/4 v1, 0x5
+
     if-eq v0, v1, :cond_0
 
     const/4 v0, 0x0
@@ -367,6 +432,11 @@
 
     :cond_3
     const-string v0, "NVIDIA SHIELD"
+
+    return-object v0
+
+    :cond_4
+    const-string v0, "Odin Controller"
 
     return-object v0
 .end method
@@ -398,6 +468,10 @@
 
     const/4 v1, 0x4
 
+    if-eq v0, v1, :cond_3
+
+    const/4 v1, 0x5
+
     if-eq v0, v1, :cond_0
 
     const/4 v0, -0x1
@@ -418,6 +492,11 @@
     const v0, 0x7f030015
 
     return v0
+
+    :cond_3
+    const v0, 0x7f03001f
+
+    return v0
 .end method
 
 .method public static final e()Z
@@ -432,6 +511,12 @@
     sget-object v0, Lf0/c;->d:Lf0/c$b;
 
     sget-object v1, Lf0/c$b;->i:Lf0/c$b;
+
+    if-eq v0, v1, :cond_1
+
+    sget-object v0, Lf0/c;->d:Lf0/c$b;
+
+    sget-object v1, Lf0/c$b;->o:Lf0/c$b;
 
     if-eq v0, v1, :cond_1
 
@@ -485,6 +570,10 @@
 
     const/4 v4, 0x4
 
+    if-eq v0, v4, :cond_odin
+
+    const/4 v4, 0x5
+
     if-eq v0, v4, :cond_0
 
     goto :goto_1
@@ -528,6 +617,19 @@
 
     :goto_0
     sput-boolean v1, Lf0/h;->T:Z
+
+    sput v3, Lf0/h;->t:I
+
+    sput-boolean v2, Lf0/h;->Y:Z
+
+    goto :goto_1
+
+    :cond_odin
+    sput-boolean v2, Lf0/h;->Z:Z
+
+    sput-boolean v2, Lf0/h;->d0:Z
+
+    sput v2, Lf0/h;->D:I
 
     sput v3, Lf0/h;->t:I
 

@@ -2402,7 +2402,7 @@
     goto :goto_4
 
     :cond_c
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     goto :goto_8
 

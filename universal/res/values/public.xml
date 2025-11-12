@@ -63,6 +63,7 @@
     <public type="array" name="set_slot2_cart_type" id="0x7f03001c" />
     <public type="array" name="set_sysdir_l" id="0x7f03001d" />
     <public type="array" name="set_sysdir_q" id="0x7f03001e" />
+    <public type="array" name="set_mapping_odin" id="0x7f03001f" />
     <public type="attr" name="SharedValue" id="0x7f040000" />
     <public type="attr" name="SharedValueId" id="0x7f040001" />
     <public type="attr" name="actionBarDivider" id="0x7f040002" />

@@ -204,6 +204,21 @@
         <item>R;R</item>
         <item>Menu;打開選單</item>
     </string-array>
+    <string-array name="set_mapping_odin">
+        <item>D-Pad;D-Pad, 選單導航</item>
+        <item>Left Stick;D-Pad, 選單導航</item>
+        <item>Y;Y</item>
+        <item>X;X</item>
+        <item>B;B, 選單中取消</item>
+        <item>A;A, 選單中確認</item>
+        <item>Play;Start</item>
+        <item>Stop;Select</item>
+        <item>Back;打開選單</item>
+        <item>L1;L-trigger</item>
+        <item>R1;R-trigger</item>
+        <item>L3;切換螢幕</item>
+        <item>R3;切換螢幕佈局</item>
+    </string-array>
     <string-array name="set_menu_button_position">
         <item>底部</item>
         <item>頂部</item>
