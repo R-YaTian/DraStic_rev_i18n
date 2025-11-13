@@ -216,8 +216,10 @@
         <item>Back;Open Menu</item>
         <item>L1;L-trigger</item>
         <item>R1;R-trigger</item>
+        <item>L2;Swap 1 and 2 Screen Layouts</item>
+        <item>R2;Fast-Forward</item>
         <item>L3;Swap Screens</item>
-        <item>R3;Swap 1 and 2 Screen Layouts</item>
+        <item>R3;Touchscreen Pointer press</item>
     </string-array>
     <string-array name="set_menu_button_position">
         <item>Bottom</item>

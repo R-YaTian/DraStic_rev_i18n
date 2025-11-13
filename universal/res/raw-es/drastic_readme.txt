@@ -291,9 +291,9 @@ Esto solamente muestra algo de información interna, la cual podría ayudarnos a
 Puedes abrir este menú al presionar el botón de la flecha ^ mientras estás en el juego, o al presionar el butón que has estructurado para «Abrir menú».
 El menú puede ser controlado mediante entrada táctil, o a través de un dispositivo de entrada externo (mando de juego).
 
-Al usar un mando de juego, la palanca analógica izquierda, o la Cruceta digital puedes seleccionar el segmento, y el bótón que has estructurado para el botón B de la DS confirmará la selección. El botón estructurado para el botón A de la DS cancelará la operación.
-Si deseas cargar un estado de guardado, por ejemplo, presiona Izquierda en la Cruceta, y luego el botón B.
-Si deseas activar el adelantamiento, solamente presiona el botón B tras abrir el menú.
+Al usar un mando de juego, la palanca analógica izquierda, o la Cruceta digital puedes seleccionar el segmento, y el bótón que has estructurado para el botón A de la DS confirmará la selección. El botón estructurado para el botón B de la DS cancelará la operación.
+Si deseas cargar un estado de guardado, por ejemplo, presiona Izquierda en la Cruceta, y luego el botón A.
+Si deseas activar el adelantamiento, solamente presiona el botón A tras abrir el menú.
 
 Los cuatro botones circulares pequeños alrededor del círculo central están directamente estructurados a botones particulares:
 Gatillo izquierdo: sonido encendido/apagado

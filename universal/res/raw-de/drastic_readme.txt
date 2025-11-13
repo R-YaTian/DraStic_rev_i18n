@@ -263,9 +263,9 @@ Hier wird nur Debug-Information angezeigt, die uns helfen könnte, falls auf dei
 Dieses Menü kann bei aktivem Spiel über die Pfeiltaste '^', oder durch Drücken der Taste, die 'Menü öffnen' zugeordnet ist, geöffnet werden.
 Das Kreis-Menü kann über den Touch-Bildschirm, oder mithilfe eines externen Gamepads bedient werden.
 
-Falls ein Gamepad verwendet wird, kann mit dem D-Pad oder dem linken Steuerknüppel das Segment des Kreises ausgewählt, und Eingaben mit der Taste, die der B-Taste des DS zugeordnet ist, bestätigt werden.
-Wenn du z.B. Schnell-Laden willst, dann drücke Links auf dem D-Pad und dann die B-Taste.
-Um den Schnellvorlauf zu aktivieren, drücke einfach die B-Taste nachdem das Menü geöffnet wurde.
+Falls ein Gamepad verwendet wird, kann mit dem D-Pad oder dem linken Steuerknüppel das Segment des Kreises ausgewählt, und Eingaben mit der Taste, die der A-Taste des DS zugeordnet ist, bestätigt werden.
+Wenn du z.B. Schnell-Laden willst, dann drücke Links auf dem D-Pad und dann die A-Taste.
+Um den Schnellvorlauf zu aktivieren, drücke einfach die A-Taste nachdem das Menü geöffnet wurde.
 
 Die 4 kleineren Kreis-Tasten um den mittleren Kreis sind direkt bestimmten Tasten zugeordnet:
 L-Schultertaste: Ton an/aus

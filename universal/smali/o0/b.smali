@@ -2366,15 +2366,15 @@
 
     :cond_4
     :goto_2
-    and-int/lit8 p1, v0, 0x4
+    and-int/lit8 p1, v0, 0x8
 
-    const/16 p2, 0x8
+    const/16 p2, 0x4
 
     if-nez p1, :cond_5
 
     iget v4, p0, Lo0/b;->G:I
 
-    and-int/lit8 v4, v4, 0x4
+    and-int/lit8 v4, v4, 0x8
 
     if-eqz v4, :cond_5
 
@@ -2389,7 +2389,7 @@
 
     iget p1, p0, Lo0/b;->G:I
 
-    and-int/lit8 p1, p1, 0x4
+    and-int/lit8 p1, p1, 0x8
 
     if-nez p1, :cond_6
 
@@ -2400,7 +2400,7 @@
     goto :goto_4
 
     :cond_6
-    and-int/lit8 p1, v0, 0x8
+    and-int/lit8 p1, v0, 0x4
 
     if-eqz p1, :cond_7
 
@@ -2449,6 +2449,8 @@
     and-int/lit8 v5, v5, 0x2
 
     if-eqz v5, :cond_9
+
+    const p2, 0x8
 
     iput p2, p0, Lo0/b;->t:I
 

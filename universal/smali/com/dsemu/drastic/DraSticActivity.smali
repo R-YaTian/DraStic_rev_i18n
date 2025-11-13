@@ -7915,11 +7915,7 @@
     goto :goto_1
 
     :cond_3
-    iget-boolean p1, p0, Lcom/dsemu/drastic/DraSticActivity;->w:Z
-
-    if-eqz p1, :cond_d
-
-    if-ne p2, p3, :cond_d
+    if-ne p2, p3, :cond_key_y
 
     new-instance p1, Landroid/content/Intent;
 
@@ -7928,6 +7924,21 @@
     invoke-direct {p1, p0, p2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    goto :goto_6
+
+    :cond_key_y
+    iget-boolean p1, p0, Lcom/dsemu/drastic/DraSticActivity;->w:Z
+
+    if-nez p1, :cond_d
+
+    const p1, 0x64
+
+    if-ne p2, p1, :cond_d
+
+    iget-object p2, p0, Lcom/dsemu/drastic/DraSticActivity;->p:Landroid/widget/Button;
+
+    invoke-virtual {p2}, Landroid/view/View;->performClick()Z
 
     goto :goto_6
 

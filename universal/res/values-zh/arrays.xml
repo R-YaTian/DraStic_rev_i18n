@@ -185,7 +185,7 @@
         <item>A;B, 菜单中确认</item>
         <item>Play;Start</item>
         <item>Back;打开菜单</item>
-        <item>L1;Select</item>
+        <item>L1;虚拟触笔按下</item>
         <item>R1;加速</item>
         <item>L2;L</item>
         <item>R2;R</item>
@@ -216,8 +216,10 @@
         <item>Back;打开菜单</item>
         <item>L1;L-trigger</item>
         <item>R1;R-trigger</item>
+        <item>L2;切换屏幕布局</item>
+        <item>R2;加速</item>
         <item>L3;切换屏幕</item>
-        <item>R3;切换屏幕布局</item>
+        <item>R3;虚拟触笔按下</item>
     </string-array>
     <string-array name="set_menu_button_position">
         <item>底部</item>

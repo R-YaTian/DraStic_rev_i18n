@@ -177,7 +177,7 @@
         0x14
         0x15
         0x6a
-        -0x1
+        0x69
         -0x1
         -0x1
         0x4
@@ -185,10 +185,10 @@
         -0x1
         -0x1
         -0x1
+        0x68
+        -0x1
+        -0x1
         0x6b
-        -0x1
-        -0x1
-        -0x1
     .end array-data
 .end method
 
@@ -544,6 +544,31 @@
 .method public static final f(Landroid/content/Context;)V
     .locals 5
 
+    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    const-string v1, "AYN Thor"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_not_thor
+
+    const/4 v0, 0x3
+
+    const/4 v1, 0x1
+
+    const/16 v2, 0xe
+
+    sput v0, Lf0/h;->y:I
+
+    sput v1, Lf0/h;->z:I
+
+    sput v1, Lf0/h;->A:I
+
+    sput v2, Lf0/h;->B:I
+
+    :cond_not_thor
     sget-object v0, Lf0/c$a;->a:[I
 
     sget-object v1, Lf0/c;->d:Lf0/c$b;
@@ -629,11 +654,11 @@
 
     sput-boolean v2, Lf0/h;->d0:Z
 
+    sput v1, Lf0/h;->s:I
+
     sput v2, Lf0/h;->D:I
 
-    sput v3, Lf0/h;->t:I
-
-    sput-boolean v2, Lf0/h;->Y:Z
+    sput-boolean v2, Lf0/h;->D0:Z
 
     goto :goto_1
 

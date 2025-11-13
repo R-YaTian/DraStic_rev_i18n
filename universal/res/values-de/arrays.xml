@@ -216,8 +216,10 @@
         <item>Back;Menü öffnen</item>
         <item>L1;L-Schultertaste</item>
         <item>R1;R-Schultertaste</item>
+        <item>L2;Zwischen 1- und 2-Bildschirm-Layouts wechseln</item>
+        <item>R2;Schnellvorlauf</item>
         <item>L3;Bildschirme wechseln</item>
-        <item>R3;Zwischen 1- und 2-Bildschirm-Layouts wechseln</item>
+        <item>R3;Touch-Bildschirm pressen</item>
     </string-array>
     <string-array name="set_menu_button_position">
         <item>Unten</item>

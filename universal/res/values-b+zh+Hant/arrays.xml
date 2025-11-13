@@ -185,7 +185,7 @@
         <item>A;B, 選單中確認</item>
         <item>Play;Start</item>
         <item>Back;打開選單</item>
-        <item>L1;Select</item>
+        <item>L1;虛擬觸筆按下</item>
         <item>R1;加速</item>
         <item>L2;L</item>
         <item>R2;R</item>
@@ -216,8 +216,10 @@
         <item>Back;打開選單</item>
         <item>L1;L-trigger</item>
         <item>R1;R-trigger</item>
+        <item>L2;切換螢幕佈局</item>
+        <item>R2;加速</item>
         <item>L3;切換螢幕</item>
-        <item>R3;切換螢幕佈局</item>
+        <item>R3;虛擬觸筆按下</item>
     </string-array>
     <string-array name="set_menu_button_position">
         <item>底部</item>

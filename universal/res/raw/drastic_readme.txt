@@ -276,10 +276,10 @@ This just shows some internal information, which could help us debug any issues 
 You can open this menu by pressing the ^ arrow button while in-game, or by pressing the key/button you have mapped to 'Open Menu'.
 The menu can be controlled by touch-input, or using an external input device (gamepad).
 
-When using a gamepad, the analog left stick, or digital D-Pad can select the segment, and the button you have mapped to the DS's B-button
-will confirm the selection. The button mapped to the DS's A-Button will cancel.
-If you want to load a quick-save for example, press Left on the D-Pad, and then the B-button.
-If you want to enabled fast-forward, just press the B-button after opening the menu.
+When using a gamepad, the analog left stick, or digital D-Pad can select the segment, and the button you have mapped to the DS's A-button
+will confirm the selection. The button mapped to the DS's B-Button will cancel.
+If you want to load a quick-save for example, press Left on the D-Pad, and then the A-button.
+If you want to enabled fast-forward, just press the A-button after opening the menu.
 
 The 4 smaller circle buttons around the central circle are directly mapped to buttons:
 L-trigger: Sound on/off

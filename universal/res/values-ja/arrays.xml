@@ -216,8 +216,10 @@
         <item>Back;ﾒﾆｭｰを開く</item>
         <item>L1;Lﾄﾘｶﾞｰ</item>
         <item>R1;Rﾄﾘｶﾞｰ</item>
+        <item>L2;一と二の画面レイアウトを交換</item>
+        <item>R2;早送り</item>
         <item>L3;スクリーンを交換</item>
-        <item>R3;一と二の画面レイアウトを交換</item>
+        <item>R3;ﾀｯﾁｽｸﾘｰﾝﾎﾟｲﾝﾀ押し</item>
     </string-array>
     <string-array name="set_menu_button_position">
         <item>ボトム</item>

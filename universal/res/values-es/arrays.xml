@@ -216,8 +216,10 @@
         <item>Back;Abrir menú</item>
         <item>L1;Gatillo izquierdo</item>
         <item>R1;Gatillo derecho</item>
+        <item>L2;Intercambiar disposiciones de pantalla 1 y 2</item>
+        <item>R2;Adelantar</item>
         <item>L3;Intercambiar pantallas</item>
-        <item>R3;Intercambiar disposiciones de pantalla 1 y 2</item>
+        <item>R3;Presionar apuntador de pantalla táctil</item>
     </string-array>
     <string-array name="set_menu_button_position">
         <item>Inferior</item>

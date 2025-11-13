@@ -216,8 +216,10 @@
         <item>Back;Apre il Menu</item>
         <item>L1;L-trigger</item>
         <item>R1;R-trigger</item>
+        <item>L2;Scambia Layout degli schermi 1 e 2</item>
+        <item>R2;Avanti-Veloce</item>
         <item>L3;Scambia Schermi</item>
-        <item>R3;Scambia Layout degli schermi 1 e 2</item>
+        <item>R3;Touchscreen Pointer press</item>
     </string-array>
     <string-array name="set_menu_button_position">
         <item>Sotto</item>
