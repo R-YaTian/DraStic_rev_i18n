@@ -1,0 +1,81 @@
+// retro-tiles.dsd
+// Author: Hyllian, ported by MiZai
+<vertex>
+attribute vec2 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+uniform vec4 u_texture_size;  // (1/w, 1/h, w, h)
+uniform vec2 u_target_size;   // (target width, target height)
+
+varying vec2 vTexCoord;
+
+void main()
+{
+    gl_Position = vec4(a_vertex_coordinate.xy, 0.0, 1.0);
+
+    // 步骤1：自动计算ZhengShuBei（NDS原始分辨率的整数倍）
+    float integer_scale_x = u_target_size.x / 256.0;
+    float integer_scale_y = u_target_size.y / 192.0;
+    float integer_scale = floor(min(integer_scale_x, integer_scale_y));  // 取宽高倍数最小值并向下取整
+    integer_scale = max(integer_scale, 1.0);  // 确保ZhengShuBei至少为1
+
+    // 步骤2：计算基准目标尺寸（256*integer_scale, 192*integer_scale）
+    vec2 base_target_size = vec2(256.0 * integer_scale, 192.0 * integer_scale);
+
+    // 步骤3：基于基准目标尺寸计算scale_factor
+    vec2 scale_factor = base_target_size / u_texture_size.zw;
+
+    // 应用过扫描并限制最小缩放
+    vec2 box_scale = scale_factor + OVERSCAN;
+    box_scale = vec2(min(box_scale.x, box_scale.y));
+    box_scale = max(box_scale, vec2(1.0 / SCREEN_RES_SCALE));
+
+    // 计算纹理坐标缩放比例
+    vec2 scale = scale_factor / box_scale;
+    vec2 middle = vec2(0.5);
+    vec2 diff = a_texture_coordinate * 1.0001 - middle;  // 避免精度丢失
+    vTexCoord = middle + diff * scale;  // 居中并缩放纹理坐标
+}
+</vertex>
+
+<fragment>
+uniform sampler2D u_texture;
+uniform vec4 u_texture_size;  // (1/w, 1/h, w, h)
+
+varying vec2 vTexCoord;
+
+float fade(float size) {
+    size = clamp(size, -TILE_DEPTH, 1.0);
+    size = 1.0 - size * size * size * mix(size * size, 1.0, TILE_FORMAT);
+    return size * size;
+}
+
+void main() {
+    // 手动检查纹理坐标是否超出有效范围，超出则输出黑色边框
+    if (vTexCoord.x < 0.0 || vTexCoord.x > 1.0 || vTexCoord.y < 0.0 || vTexCoord.y > 1.0) {
+        gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);  // 边框颜色（黑色）
+        return;
+    }
+    
+    // 瓷砖效果计算
+    vec2 pos = fract(vTexCoord * u_texture_size.zw / SCREEN_RES_SCALE) - vec2(0.5);
+    vec2 dir = sign(pos);
+    vec2 g1 = dir * vec2(u_texture_size.x, 0.0);  // 1/w step
+    vec2 g2 = dir * vec2(0.0, u_texture_size.y);  // 1/h step
+
+    // 采样相邻像素(带Gamma校正)
+    vec3 A = GAMMA_IN(texture2D(u_texture, vTexCoord).xyz);
+    vec3 B = GAMMA_IN(texture2D(u_texture, vTexCoord + g1).xyz);
+    vec3 C = GAMMA_IN(texture2D(u_texture, vTexCoord + g2).xyz);
+    vec3 D = GAMMA_IN(texture2D(u_texture, vTexCoord + g1 + g2).xyz);
+
+    // 瓷砖边缘混合
+    vec2 dx = vec2(pos.x, 1.0 - pos.x) / TILE_SIZE;
+    vec2 dy = vec2(pos.y, 1.0 - pos.y) / TILE_SIZE;
+    vec2 wx = vec2(fade(dx.x), fade(dx.y));
+    vec2 wy = vec2(fade(dy.x), fade(dy.y));
+    vec3 color = (A * wx.x + B * wx.y) * wy.x + (C * wx.x + D * wx.y) * wy.y;
+    color *= COLOR_BOOST;
+
+    gl_FragColor = vec4(GAMMA_OUT(color), 1.0);
+}
+</fragment>

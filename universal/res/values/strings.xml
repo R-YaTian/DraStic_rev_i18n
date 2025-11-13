@@ -360,7 +360,7 @@ If you experience any rendering glitches, please disable this option."</string>
     <string name="str_set_sysdir_migration">System Migration</string>
     <string name="str_set_sysdir_copytonew">DraStic will now copy your system data files to your new system data folder.</string>
     <string name="str_set_sysdir_exist">Existing Files</string>
-    <string name="str_set_sysdir_keep_or_overwrite">The new system directory seems to contain DraStic data. Would you like to copy your old system files to it and overwrite the existing files, or keep them and use the folder as-is?</string>
+    <string name="str_set_sysdir_keep_or_overwrite">The new system directory seems to contain DraStic data. Would you like to copy your old system files to it and overwrite the existing files, or keep them and use the folder as-is? (If you choose to keep it, DraStic will display a loading screen until the resource extraction process is complete. Please be patient!)</string>
     <string name="str_set_sysdir_overwrite">Overwrite</string>
     <string name="str_set_keep">Keep</string>
     <string name="str_set_sysdir_inaccessible">Newly selected system directory is inaccessible; Using the old one.</string>

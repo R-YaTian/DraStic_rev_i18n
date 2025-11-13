@@ -1,0 +1,51 @@
+// Dot shader
+=============================================
+<options>
+name=Dot_MiZai
+textures=1
+</options>
+
+<vheader>
+// screen resolution scale (2.0 for current High-Resolution 3D Rendering)
+#define SCREEN_RES_SCALE 1.0
+</vheader>
+
+<fheader>
+#if GL_ES
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+#endif
+
+// Natural Vision参数
+#define NATVIS_GIN 1.91     // 输入Gamma
+#define NATVIS_GOUT 1.91    // 输出Gamma
+#define NATVIS_Y 1.1        // 亮度增益
+#define NATVIS_I 1.1        // 橙蓝通道增益
+#define NATVIS_Q 1.1        // 品红绿色通道增益
+
+// NDS颜色校正参数
+#define NDS_LUM 1.0        // 亮度系数
+#define NDS_R 0.87          // 红色系数
+#define NDS_G 0.645         // 绿色系数
+#define NDS_B 0.73          // 蓝色系数
+#define NDS_RG 0.10         // 红-绿交叉系数
+#define NDS_RB 0.10         // 红-蓝交叉系数
+#define NDS_GR 0.255        // 绿-红交叉系数
+#define NDS_GB 0.17         // 绿-蓝交叉系数
+#define NDS_BR -0.125       // 蓝-红交叉系数
+#define NDS_BG 0.255        // 蓝-绿交叉系数
+</fheader>
+
+<texture:0>
+input=framebuffer
+min_filter=GL_NEAREST
+mag_filter=GL_NEAREST
+</texture>
+
+<pass>
+shader=Dot_MiZai+nds_color+natural_vision.dsd
+sampler:u_texture=0
+</pass>

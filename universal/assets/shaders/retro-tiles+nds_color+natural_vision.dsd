@@ -1,0 +1,155 @@
+// retro-tiles+nds_color+natural_vision.dsd
+// Author: Hyllian, ported by MiZai
+
+<vertex>
+attribute vec2 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+uniform vec4 u_texture_size;  // (1/w, 1/h, w, h)
+uniform vec2 u_target_size;   // (target width, target height)
+
+varying vec2 vTexCoord;       // 瓷砖效果纹理坐标
+varying vec2 vOrigTexCoord;   // 原始纹理坐标(用于扫描线计算)
+
+void main()
+{
+    gl_Position = vec4(a_vertex_coordinate.xy, 0.0, 1.0);
+    vOrigTexCoord = a_texture_coordinate;  // 传递原始纹理坐标
+
+    /*if(SCREEN_RES_SCALE < 1.1){
+        // 瓷砖缩放计算
+        //vec2 scaled_texture_size = u_texture_size.zw * SCREEN_RES_SCALE;
+        vec2 box_scale = floor(u_target_size.xy / u_texture_size.zw) + OVERSCAN;
+        box_scale = max(box_scale, vec2(1.0));
+        box_scale = vec2(min(box_scale.x, box_scale.y));
+        vec2 scale = (u_target_size.xy / u_texture_size.zw) / box_scale;
+        vec2 middle = vec2(0.5);
+        vec2 diff = a_texture_coordinate * 1.0001 - middle;
+        vTexCoord = middle + diff * scale;  // 计算瓷砖纹理坐标
+    }
+    else{*/
+        // 计算纹理和目标的宽高比
+        /*float tex_aspect = u_texture_size.z / u_texture_size.w;
+        float target_aspect = u_target_size.x / u_target_size.y;        
+
+        // 根据宽高比决定缩放方向
+        if (tex_aspect > target_aspect) {
+            scale_factor.x = u_target_size.x / u_texture_size.z;
+            scale_factor.y = scale_factor.x;
+        } else {
+            scale_factor.y = u_target_size.y / u_texture_size.w;
+            scale_factor.x = scale_factor.y;
+        }*/
+	
+        float integer_scale_x = u_target_size.x / 256.0;
+        float integer_scale_y = u_target_size.y / 192.0;
+        float integer_scale = floor(min(integer_scale_x, integer_scale_y));  // 取宽高倍数最小值并向下取整
+        integer_scale = max(integer_scale, 1.0);  // 确保ZhengShuBei至少为1
+
+        // 步骤2：计算基准目标尺寸（256*integer_scale, 192*integer_scale）
+        vec2 base_target_size = vec2(256.0 * integer_scale, 192.0 * integer_scale);
+
+        // 步骤3：基于基准目标尺寸计算scale_factor
+        vec2 scale_factor = base_target_size / u_texture_size.zw;
+
+        // 应用过扫描并限制最小缩放
+        vec2 box_scale = scale_factor + OVERSCAN;
+        box_scale = vec2(min(box_scale.x, box_scale.y));
+        //box_scale = max(box_scale, vec2(1.0));
+        box_scale = max(box_scale, vec2(1.0 / SCREEN_RES_SCALE));
+
+        // 计算纹理坐标缩放比例
+        vec2 scale = scale_factor / box_scale;
+        vec2 middle = vec2(0.5);
+        vec2 diff = a_texture_coordinate * 1.0001 - middle;  // 避免精度丢失
+        vTexCoord = middle + diff * scale;  // 居中并缩放纹理坐标
+    //}
+}
+</vertex>
+
+<fragment>
+uniform sampler2D u_texture;
+uniform vec4 u_texture_size;  // (1/w, 1/h, w, h)
+
+varying vec2 vTexCoord;       // 瓷砖效果纹理坐标
+varying vec2 vOrigTexCoord;   // 原始纹理坐标
+
+// NDS颜色校正矩阵
+const mat3 NDSColourMatrix = mat3(
+    NDS_R,  NDS_RG, NDS_RB,
+    NDS_GR, NDS_G,  NDS_GB,
+    NDS_BR, NDS_BG, NDS_B
+);
+
+// YIQ色彩空间转换矩阵
+const mat3 RGBtoYIQ = mat3(
+    0.299,  0.595716,  0.211456,
+    0.587, -0.274453, -0.522591,
+    0.114, -0.321263,  0.311135
+);
+const mat3 YIQtoRGB = mat3(
+    1.0, 1.0, 1.0,
+    0.95629572,-0.27212210,-1.10698902,
+    0.62102442,-0.64738060, 1.70461500
+);
+const vec3 YIQ_lo = vec3(0.0, -0.595716, -0.522591);
+const vec3 YIQ_hi = vec3(1.0,  0.595716,  0.522591);
+
+//const float NDS_SCREEN_HEIGHT = 192.0;
+//const float INV_BRIGHTEN_SCANLINES_INC = 1.0 / (BRIGHTEN_SCANLINES + 1.0);
+//const float INV_BRIGHTEN_LCD_INC = 1.0 / (BRIGHTEN_LCD + 1.0);
+
+float fade(float size) {
+    size = clamp(size, -TILE_DEPTH, 1.0);
+    size = 1.0 - size * size * size * mix(size * size, 1.0, TILE_FORMAT);
+    return size * size;
+}
+
+void main() {
+    // 手动检查纹理坐标是否超出有效范围，超出则输出黑色边框
+    if (vTexCoord.x < 0.0 || vTexCoord.x > 1.0 || vTexCoord.y < 0.0 || vTexCoord.y > 1.0) {
+        gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);  // 边框颜色（黑色）
+        return;
+    }
+    
+    // 瓷砖效果计算
+    vec2 pos = fract(vTexCoord * u_texture_size.zw / SCREEN_RES_SCALE) - vec2(0.5);
+    vec2 dir = sign(pos);
+    vec2 g1 = dir * vec2(u_texture_size.x, 0.0);  // 水平纹理步长
+    vec2 g2 = dir * vec2(0.0, u_texture_size.y);  // 垂直纹理步长
+
+    // 采样相邻像素(带Gamma校正)
+    vec3 A = GAMMA_IN(texture2D(u_texture, vTexCoord).xyz);
+    vec3 B = GAMMA_IN(texture2D(u_texture, vTexCoord + g1).xyz);
+    vec3 C = GAMMA_IN(texture2D(u_texture, vTexCoord + g2).xyz);
+    vec3 D = GAMMA_IN(texture2D(u_texture, vTexCoord + g1 + g2).xyz);
+
+    // 瓷砖边缘混合
+    vec2 dx = vec2(pos.x, 1.0 - pos.x) / TILE_SIZE;
+    vec2 dy = vec2(pos.y, 1.0 - pos.y) / TILE_SIZE;
+    vec2 wx = vec2(fade(dx.x), fade(dx.y));
+    vec2 wy = vec2(fade(dy.x), fade(dy.y));
+    vec3 color = (A * wx.x + B * wx.y) * wy.x + (C * wx.x + D * wx.y) * wy.y;
+    color *= COLOR_BOOST;
+
+    // NDS颜色校正
+    color = clamp(color * NDS_LUM, 0.0, 1.0);
+    color = NDSColourMatrix * color;
+
+    // Natural Vision增强
+    color = RGBtoYIQ * color;
+    color = vec3(pow(color.x, NATVIS_Y), color.y * NATVIS_I, color.z * NATVIS_Q);
+    color = clamp(color, YIQ_lo, YIQ_hi);
+    color = YIQtoRGB * color;
+
+    // 输出Gamma校正
+    color = GAMMA_OUT(color);
+
+    // LCD扫描线效果
+    //vec2 angle = 2.0 * PI * (((vOrigTexCoord.xy * u_texture_size.zw) * NDS_SCREEN_HEIGHT * u_texture_size.y) - 0.25);
+    //float yfactor = (BRIGHTEN_SCANLINES + sin(angle.y)) * INV_BRIGHTEN_SCANLINES_INC;
+    //float xfactor = (BRIGHTEN_LCD + sin(angle.x)) * INV_BRIGHTEN_LCD_INC;
+    //color *= yfactor * xfactor;
+
+    gl_FragColor = vec4(color, 1.0);
+}
+</fragment>

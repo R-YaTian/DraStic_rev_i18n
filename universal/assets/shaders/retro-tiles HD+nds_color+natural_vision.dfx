@@ -1,0 +1,65 @@
+// retro-tiles HD+nds_color+natural_vision.dfx
+// Author: Hyllian, ported by MiZai
+<options>
+name=retro-tiles HD+nds_color+natural_vision
+textures=1
+</options>
+<header>
+#define SCREEN_RES_SCALE 2.0
+</header>
+
+<header>
+#if GL_ES
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+#endif
+// 瓷砖效果参数
+#define TILE_FORMAT 0.0     // 瓷砖格式 [0=Normal,1=Deep]
+#define TILE_DEPTH 1.0      // 瓷砖深度 (0.0-1.0)
+#define TILE_SIZE 0.5       // 瓷砖大小 (0.4-0.6)
+#define COLOR_BOOST 1.0     // 颜色增强 (1.0-2.0)
+#define OVERSCAN 0.0      // "Over Scan" (-3.0-3.0)
+#define InputGamma 2.4      // 输入Gamma (0.0-4.0)
+#define OutputGamma 2.2     // 输出Gamma (0.0-3.0)
+
+// LCD扫描线参数
+//#define BRIGHTEN_SCANLINES 16.0 // 水平扫描线亮度
+//#define BRIGHTEN_LCD 4.0        // 垂直扫描线亮度
+
+// Natural Vision参数
+#define NATVIS_GIN 1.91     // 输入Gamma
+#define NATVIS_GOUT 1.91    // 输出Gamma
+#define NATVIS_Y 1.1        // 亮度增益
+#define NATVIS_I 1.1        // 橙蓝通道增益
+#define NATVIS_Q 1.1        // 品红绿色通道增益
+
+// NDS颜色校正参数
+#define NDS_LUM 1.0        // 亮度系数
+#define NDS_R 0.87          // 红色系数
+#define NDS_G 0.645         // 绿色系数
+#define NDS_B 0.73          // 蓝色系数
+#define NDS_RG 0.10         // 红-绿交叉系数
+#define NDS_RB 0.10         // 红-蓝交叉系数
+#define NDS_GR 0.255        // 绿-红交叉系数
+#define NDS_GB 0.17         // 绿-蓝交叉系数
+#define NDS_BR -0.125       // 蓝-红交叉系数
+#define NDS_BG 0.255        // 蓝-绿交叉系数
+
+#define PI 3.141592654
+#define GAMMA_IN(color)     pow(color, vec3(InputGamma))
+#define GAMMA_OUT(color)    pow(color, vec3(1.0 / OutputGamma))
+</header>
+
+<texture:0>
+input=framebuffer
+min_filter=GL_NEAREST
+mag_filter=GL_NEAREST
+</texture>
+
+<pass>
+shader=retro-tiles+nds_color+natural_vision.dsd
+sampler:u_texture=0
+</pass>

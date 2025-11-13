@@ -6409,7 +6409,7 @@
     return p0
 .end method
 
-.method private synthetic n0(Lcom/dsemu/drastic/filesystem/b;Landroid/content/DialogInterface;I)V
+.method public synthetic n0(Lcom/dsemu/drastic/filesystem/b;Landroid/content/DialogInterface;I)V
     .locals 0
 
     const/4 p2, 0x0
@@ -6516,9 +6516,17 @@
 .end method
 
 .method public static synthetic s(Lcom/dsemu/drastic/DraSticActivity;Lcom/dsemu/drastic/filesystem/b;Landroid/content/DialogInterface;I)V
-    .locals 0
+    .locals 2
 
-    invoke-direct {p0, p1, p2, p3}, Lcom/dsemu/drastic/DraSticActivity;->n0(Lcom/dsemu/drastic/filesystem/b;Landroid/content/DialogInterface;I)V
+    new-instance v0, Ljava/lang/Thread;
+
+    new-instance v1, Lcom/dsemu/drastic/DraSticActivity$n0;
+
+    invoke-direct {v1, p0, p1, p2, p3}, Lcom/dsemu/drastic/DraSticActivity$n0;-><init>(Lcom/dsemu/drastic/DraSticActivity;Lcom/dsemu/drastic/filesystem/b;Landroid/content/DialogInterface;I)V
+
+    invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     return-void
 .end method

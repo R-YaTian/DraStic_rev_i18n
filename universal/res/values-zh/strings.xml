@@ -327,7 +327,7 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_sysdir_migration">数据迁移</string>
     <string name="str_set_sysdir_copytonew">DraStic 将会复制所有数据文件到新数据存储目录</string>
     <string name="str_set_sysdir_exist">已存在数据文件</string>
-    <string name="str_set_sysdir_keep_or_overwrite">新数据存储目录中似乎已存在 DraStic 数据文件。现在是要迁移旧数据文件到新目录并覆盖相同文件, 还是要保留新目录中的数据文件并直接使用此目录?</string>
+    <string name="str_set_sysdir_keep_or_overwrite">新数据存储目录中似乎已存在 DraStic 数据文件。现在是要迁移旧数据文件到新目录并覆盖相同文件, 还是要保留新目录中的数据文件并直接使用此目录? (若选择保留, 则 DraStic 将显示载入画面直到资源释放操作完成, 请耐心等待!)</string>
     <string name="str_set_sysdir_overwrite">覆盖</string>
     <string name="str_set_keep">保留</string>
     <string name="str_set_sysdir_inaccessible">新数据存储目录无法访问, 将使用旧目录!</string>
