@@ -12,7 +12,7 @@
             </TableRow>
             <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
         </TableLayout>
-        <ScrollView android:id="@id/set_content" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:id="@id/set_content" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="wrap_content" android:defaultFocusHighlightEnabled="false">
             <ViewAnimator android:id="@id/help_animator" android:layout_width="fill_parent" android:layout_height="wrap_content">
                 <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
                     <TextView android:id="@id/btn_help_instructions" android:focusable="false" android:text="@string/str_hm_instructions" style="@style/drastic_option_item_tv" />

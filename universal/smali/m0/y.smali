@@ -1340,12 +1340,6 @@
 
     if-eq p1, v3, :cond_7
 
-    const/4 v3, 0x2
-
-    aget v3, v0, v3
-
-    if-eq p1, v3, :cond_7
-
     const/16 v3, 0x60
 
     if-ne p1, v3, :cond_4
@@ -1356,12 +1350,6 @@
     const/4 v3, 0x4
 
     if-eq p1, v3, :cond_6
-
-    const/4 v3, 0x3
-
-    aget v0, v0, v3
-
-    if-eq p1, v0, :cond_6
 
     const/16 v0, 0x61
 

@@ -3560,15 +3560,13 @@
     goto :goto_4
 
     :cond_0
-    const/16 p2, 0x42
+    const/16 p2, 0x60
 
     if-eq p1, p2, :cond_8
 
     sget-object p2, Lf0/h;->i1:[I
 
-    const/4 v3, 0x2
-
-    aget v3, p2, v3
+    const/16 v3, 0x42
 
     if-ne p1, v3, :cond_1
 
@@ -3577,9 +3575,7 @@
     :cond_1
     if-eq p1, v0, :cond_7
 
-    const/4 v0, 0x3
-
-    aget v0, p2, v0
+    const/16 v0, 0x61
 
     if-ne p1, v0, :cond_2
 

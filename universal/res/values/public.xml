@@ -743,9 +743,6 @@
     <public type="color" name="menu_game_bg" id="0x7f060061" />
     <public type="color" name="normalbg" id="0x7f060062" />
     <public type="color" name="normalbg_tv" id="0x7f060063" />
-    <public type="color" name="notification_action_color_filter" id="0x7f060064" />
-    <public type="color" name="notification_icon_bg_color" id="0x7f060065" />
-    <public type="color" name="notification_material_background_media_default_color" id="0x7f060066" />
     <public type="color" name="pressedbg" id="0x7f060067" />
     <public type="color" name="pressedbg_dark" id="0x7f060068" />
     <public type="color" name="pressedbg_tv" id="0x7f060069" />
@@ -859,8 +856,6 @@
     <public type="dimen" name="compat_button_padding_horizontal_material" id="0x7f070053" />
     <public type="dimen" name="compat_button_padding_vertical_material" id="0x7f070054" />
     <public type="dimen" name="compat_control_corner_material" id="0x7f070055" />
-    <public type="dimen" name="compat_notification_large_icon_max_height" id="0x7f070056" />
-    <public type="dimen" name="compat_notification_large_icon_max_width" id="0x7f070057" />
     <public type="dimen" name="disabled_alpha_material_dark" id="0x7f070058" />
     <public type="dimen" name="disabled_alpha_material_light" id="0x7f070059" />
     <public type="dimen" name="highlight_alpha_material_colored" id="0x7f07005a" />
@@ -870,21 +865,6 @@
     <public type="dimen" name="hint_alpha_material_light" id="0x7f07005e" />
     <public type="dimen" name="hint_pressed_alpha_material_dark" id="0x7f07005f" />
     <public type="dimen" name="hint_pressed_alpha_material_light" id="0x7f070060" />
-    <public type="dimen" name="notification_action_icon_size" id="0x7f070061" />
-    <public type="dimen" name="notification_action_text_size" id="0x7f070062" />
-    <public type="dimen" name="notification_big_circle_margin" id="0x7f070063" />
-    <public type="dimen" name="notification_content_margin_start" id="0x7f070064" />
-    <public type="dimen" name="notification_large_icon_height" id="0x7f070065" />
-    <public type="dimen" name="notification_large_icon_width" id="0x7f070066" />
-    <public type="dimen" name="notification_main_column_padding_top" id="0x7f070067" />
-    <public type="dimen" name="notification_media_narrow_margin" id="0x7f070068" />
-    <public type="dimen" name="notification_right_icon_size" id="0x7f070069" />
-    <public type="dimen" name="notification_right_side_padding_top" id="0x7f07006a" />
-    <public type="dimen" name="notification_small_icon_background_padding" id="0x7f07006b" />
-    <public type="dimen" name="notification_small_icon_size_as_large" id="0x7f07006c" />
-    <public type="dimen" name="notification_subtext_size" id="0x7f07006d" />
-    <public type="dimen" name="notification_top_pad" id="0x7f07006e" />
-    <public type="dimen" name="notification_top_pad_large_text" id="0x7f07006f" />
     <public type="dimen" name="tooltip_corner_radius" id="0x7f070070" />
     <public type="dimen" name="tooltip_horizontal_padding" id="0x7f070071" />
     <public type="dimen" name="tooltip_margin" id="0x7f070072" />
@@ -1164,18 +1144,6 @@
     <public type="drawable" name="menubg" id="0x7f080110" />
     <public type="drawable" name="menubg_port" id="0x7f080111" />
     <public type="drawable" name="menubg_port_sm" id="0x7f080112" />
-    <public type="drawable" name="notification_action_background" id="0x7f080113" />
-    <public type="drawable" name="notification_bg" id="0x7f080114" />
-    <public type="drawable" name="notification_bg_low" id="0x7f080115" />
-    <public type="drawable" name="notification_bg_low_normal" id="0x7f080116" />
-    <public type="drawable" name="notification_bg_low_pressed" id="0x7f080117" />
-    <public type="drawable" name="notification_bg_normal" id="0x7f080118" />
-    <public type="drawable" name="notification_bg_normal_pressed" id="0x7f080119" />
-    <public type="drawable" name="notification_icon_background" id="0x7f08011a" />
-    <public type="drawable" name="notification_template_icon_bg" id="0x7f08011b" />
-    <public type="drawable" name="notification_template_icon_low_bg" id="0x7f08011c" />
-    <public type="drawable" name="notification_tile_bg" id="0x7f08011d" />
-    <public type="drawable" name="notify_panel_notification_icon_bg" id="0x7f08011e" />
     <public type="drawable" name="resize" id="0x7f08011f" />
     <public type="drawable" name="rom_detail_overlay" id="0x7f080120" />
     <public type="drawable" name="rom_icon_overlay" id="0x7f080121" />
@@ -1507,7 +1475,6 @@
     <public type="id" name="devicename" id="0x7f090137" />
     <public type="id" name="devicepicker" id="0x7f090138" />
     <public type="id" name="devicetext" id="0x7f090139" />
-    <public type="id" name="dialog_button" id="0x7f09013a" />
     <public type="id" name="dimensions" id="0x7f09013b" />
     <public type="id" name="direct" id="0x7f09013c" />
     <public type="id" name="directory_path_edittext" id="0x7f09013d" />
@@ -1634,9 +1601,6 @@
     <public type="id" name="none" id="0x7f0901b7" />
     <public type="id" name="normal" id="0x7f0901b8" />
     <public type="id" name="north" id="0x7f0901b9" />
-    <public type="id" name="notification_background" id="0x7f0901ba" />
-    <public type="id" name="notification_main_column" id="0x7f0901bb" />
-    <public type="id" name="notification_main_column_container" id="0x7f0901bc" />
     <public type="id" name="off" id="0x7f0901bd" />
     <public type="id" name="on" id="0x7f0901be" />
     <public type="id" name="onInterceptTouchReturnSwipe" id="0x7f0901bf" />
@@ -1967,8 +1931,6 @@
     <public type="layout" name="cheats_custom_tv" id="0x7f0c002a" />
     <public type="layout" name="cheats_tv" id="0x7f0c002b" />
     <public type="layout" name="color_view" id="0x7f0c002c" />
-    <public type="layout" name="ctrlcfg" id="0x7f0c002e" />
-    <public type="layout" name="custom_dialog" id="0x7f0c002f" />
     <public type="layout" name="customizer" id="0x7f0c0030" />
     <public type="layout" name="customizer_tv" id="0x7f0c0031" />
     <public type="layout" name="device_item" id="0x7f0c0032" />
@@ -1984,8 +1946,6 @@
     <public type="layout" name="game_picker_tv" id="0x7f0c003c" />
     <public type="layout" name="help" id="0x7f0c003d" />
     <public type="layout" name="help_customizer_tv" id="0x7f0c003e" />
-    <public type="layout" name="help_item" id="0x7f0c003f" />
-    <public type="layout" name="help_item_tv" id="0x7f0c0040" />
     <public type="layout" name="help_text_view" id="0x7f0c0041" />
     <public type="layout" name="help_tv" id="0x7f0c0042" />
     <public type="layout" name="keymapper" id="0x7f0c0043" />
@@ -2010,21 +1970,6 @@
     <public type="layout" name="mapping_info_view" id="0x7f0c0056" />
     <public type="layout" name="mapping_info_view_tv" id="0x7f0c0057" />
     <public type="layout" name="migrationactivity" id="0x7f0c0058" />
-    <public type="layout" name="notification_action" id="0x7f0c0059" />
-    <public type="layout" name="notification_action_tombstone" id="0x7f0c005a" />
-    <public type="layout" name="notification_media_action" id="0x7f0c005b" />
-    <public type="layout" name="notification_media_cancel_action" id="0x7f0c005c" />
-    <public type="layout" name="notification_template_big_media" id="0x7f0c005d" />
-    <public type="layout" name="notification_template_big_media_custom" id="0x7f0c005e" />
-    <public type="layout" name="notification_template_big_media_narrow" id="0x7f0c005f" />
-    <public type="layout" name="notification_template_big_media_narrow_custom" id="0x7f0c0060" />
-    <public type="layout" name="notification_template_custom_big" id="0x7f0c0061" />
-    <public type="layout" name="notification_template_icon_group" id="0x7f0c0062" />
-    <public type="layout" name="notification_template_lines_media" id="0x7f0c0063" />
-    <public type="layout" name="notification_template_media" id="0x7f0c0064" />
-    <public type="layout" name="notification_template_media_custom" id="0x7f0c0065" />
-    <public type="layout" name="notification_template_part_chronometer" id="0x7f0c0066" />
-    <public type="layout" name="notification_template_part_time" id="0x7f0c0067" />
     <public type="layout" name="select_dialog_item_material" id="0x7f0c0068" />
     <public type="layout" name="select_dialog_multichoice_material" id="0x7f0c0069" />
     <public type="layout" name="select_dialog_singlechoice_material" id="0x7f0c006a" />
