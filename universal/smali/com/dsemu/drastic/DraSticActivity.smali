@@ -95,8 +95,6 @@
 
 .field private z:I
 
-.field private H0:Landroid/view/View$OnUnhandledKeyEventListener;
-
 
 # direct methods
 .method static constructor <clinit>()V
@@ -1078,7 +1076,7 @@
     const/4 v3, 0x0
 
     :goto_set
-    invoke-virtual {v1, v3}, Landroid/view/View;->setPressed(Z)V
+    invoke-virtual {v1, v3}, Landroid/view/View;->setSelected(Z)V
 
     add-int/lit8 v2, v2, 0x1
 
@@ -1161,7 +1159,7 @@
     const/4 v3, 0x0
 
     :goto_1
-    invoke-virtual {v1, v3}, Landroid/view/View;->setPressed(Z)V
+    invoke-virtual {v1, v3}, Landroid/view/View;->setSelected(Z)V
 
     add-int/lit8 v0, v0, 0x1
 
@@ -7072,7 +7070,7 @@
     const/4 v4, 0x0
 
     :goto_1
-    invoke-virtual {v3, v4}, Landroid/view/View;->setPressed(Z)V
+    invoke-virtual {v3, v4}, Landroid/view/View;->setSelected(Z)V
 
     add-int/lit8 v0, v0, 0x1
 
@@ -7572,8 +7570,6 @@
 
     invoke-direct {v5, p0}, Lcom/dsemu/drastic/DraSticActivity$Unhandled;-><init>(Lcom/dsemu/drastic/DraSticActivity;)V
 
-    iput-object v5, p0, Lcom/dsemu/drastic/DraSticActivity;->H0:Landroid/view/View$OnUnhandledKeyEventListener;
-
     iget-object v6, p0, Lcom/dsemu/drastic/DraSticActivity;->j:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v6, v5}, Landroid/view/View;->addOnUnhandledKeyEventListener(Landroid/view/View$OnUnhandledKeyEventListener;)V
@@ -7791,28 +7787,6 @@
 
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
-    # Remove OnUnhandledKeyEventListener if present (API >= 28)
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x1c
-
-    if-lt v0, v1, :cond_remove_done
-
-    iget-object v0, p0, Lcom/dsemu/drastic/DraSticActivity;->H0:Landroid/view/View$OnUnhandledKeyEventListener;
-
-    if-eqz v0, :cond_remove_done
-
-    iget-object v1, p0, Lcom/dsemu/drastic/DraSticActivity;->j:Landroid/widget/RelativeLayout;
-
-    if-eqz v1, :cond_remove_done
-
-    invoke-virtual {v1, v0}, Landroid/view/View;->removeOnUnhandledKeyEventListener(Landroid/view/View$OnUnhandledKeyEventListener;)V
-
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/dsemu/drastic/DraSticActivity;->H0:Landroid/view/View$OnUnhandledKeyEventListener;
-
-    :cond_remove_done
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticActivity;->u:Ld0/b;
 
     if-eqz v0, :cond_0

@@ -1163,6 +1163,10 @@
     <public type="drawable" name="tv_dpad_lr" id="0x7f08012f" />
     <public type="drawable" name="tv_special_action" id="0x7f080130" />
     <public type="drawable" name="tv_start_menu_help" id="0x7f080131" />
+    <public type="drawable" name="btn_continue_pressed" id="0x7f080132" />
+    <public type="drawable" name="btn_newgame_pressed" id="0x7f080133" />
+    <public type="drawable" name="btn_options_pressed" id="0x7f080134" />
+    <public type="drawable" name="btn_exit_pressed" id="0x7f080135" />
     <public type="id" name="ALT" id="0x7f090000" />
     <public type="id" name="CTRL" id="0x7f090001" />
     <public type="id" name="FUNCTION" id="0x7f090002" />
@@ -2044,7 +2048,6 @@
     <public type="raw" name="loading" id="0x7f0e001d" />
     <public type="raw" name="loading_bg" id="0x7f0e001e" />
     <public type="raw" name="loading_bg_low" id="0x7f0e001f" />
-    <public type="raw" name="loading_bg_tv" id="0x7f0e0020" />
     <public type="raw" name="loading_low" id="0x7f0e0021" />
     <public type="raw" name="padbuttons_0" id="0x7f0e0022" />
     <public type="raw" name="padbuttons_0_low" id="0x7f0e0023" />

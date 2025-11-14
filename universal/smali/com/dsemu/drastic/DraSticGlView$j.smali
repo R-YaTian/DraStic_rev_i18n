@@ -3431,7 +3431,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0e0020
+    const v5, 0x7f0e001e
 
     iget v6, v0, Lcom/dsemu/drastic/DraSticGlView$j;->s:I
 

@@ -373,6 +373,17 @@
 
     iput-object v1, v0, Lcom/dsemu/drastic/ui/RomSelector$e$e$a;->b:Landroid/widget/ImageView;
 
+    iget-boolean v2, p0, Lcom/dsemu/drastic/ui/RomSelector$e$e;->i:Z
+
+    if-eqz v2, :cond_not_tv
+
+    iget-object v1, v0, Lcom/dsemu/drastic/ui/RomSelector$e$e$a;->b:Landroid/widget/ImageView;
+
+    const v2, -0xddddde
+
+    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setBackgroundColor(I)V
+
+    :cond_not_tv
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     goto :goto_1
