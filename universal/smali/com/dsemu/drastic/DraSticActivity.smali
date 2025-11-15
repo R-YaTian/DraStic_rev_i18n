@@ -832,15 +832,11 @@
 
     div-float v11, v9, v10
 
-    iget v12, v0, Lcom/dsemu/drastic/DraSticActivity;->e:F
-
     if-ge v2, v3, :cond_2
 
     div-float v8, v6, v10
 
     div-float v11, v9, v7
-
-    iget v12, v0, Lcom/dsemu/drastic/DraSticActivity;->f:F
 
     const/high16 v6, 0x43d90000    # 434.0f
 
@@ -850,19 +846,41 @@
     const/high16 v6, 0x433c0000    # 188.0f
 
     :goto_0
+    cmpl-float v15, v11, v8
+
+    if-lez v15, :get_min
+
+    move v15, v8
+
+    goto :cmp_done
+
+    :get_min
+    move v15, v11
+
+    :cmp_done
     const/high16 v7, 0x43a90000    # 338.0f
 
-    mul-float v7, v7, v8
+    # v12 = 338.0f * v15
+    mul-float v12, v7, v15
 
-    float-to-int v7, v7
+    float-to-int v7, v12
 
     const/high16 v9, 0x42500000    # 52.0f
 
-    mul-float v9, v9, v11
+    mul-float v9, v9, v15
 
     float-to-int v9, v9
 
-    mul-float v12, v12, v8
+    const/high16 v10, 0x40000000   # 2.0f
+
+    # v15 = v12 / 2.0f
+    div-float v15, v12, v10
+
+    # v13 = (float) width / 2.0f
+    int-to-float v13, v2
+    div-float v13, v13, v10
+
+    sub-float v12, v13, v15
 
     float-to-int v10, v12
 
@@ -7436,9 +7454,31 @@
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v1, 0x1a
+    const/16 v1, 0x1c
 
     if-lt v0, v1, :cond_0
+
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->layoutInDisplayCutoutMode:I
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
+
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v1
+
+    const v2, 0x1706
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setSystemUiVisibility(I)V
 
     :cond_0
     invoke-static {p0}, Lcom/dsemu/drastic/ui/q;->l(Landroid/app/Activity;)Z

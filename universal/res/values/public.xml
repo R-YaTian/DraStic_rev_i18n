@@ -1144,7 +1144,6 @@
     <public type="drawable" name="menu_hd_tv" id="0x7f08010f" />
     <public type="drawable" name="menubg" id="0x7f080110" />
     <public type="drawable" name="menubg_port" id="0x7f080111" />
-    <public type="drawable" name="menubg_center" id="0x7f080112" />
     <public type="drawable" name="btn_continue_3" id="0x7f080113" />
     <public type="drawable" name="btn_newgame_3" id="0x7f080114" />
     <public type="drawable" name="btn_options_3" id="0x7f080115" />
