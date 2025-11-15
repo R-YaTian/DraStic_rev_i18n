@@ -2,6 +2,6 @@
 <selector
   xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_selected="true" android:drawable="@drawable/btn_newgame_1" />
-    <item android:state_pressed="true" android:drawable="@drawable/btn_newgame_pressed" />
+    <item android:state_pressed="true" android:drawable="@drawable/btn_newgame_3" />
     <item android:drawable="@drawable/btn_newgame_0" />
 </selector>

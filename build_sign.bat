@@ -2,4 +2,5 @@ del *.apk
 del *.idsig
 java -jar apktool.jar b -o DraStic_r2.6.0.4a_build109_universal_rev.apk universal
 java -jar uber-apk-signer.jar --apks DraStic_r2.6.0.4a_build109_universal_rev.apk --ks drasticrev.jks --ksAlias drasticrev
+rmdir /s /q universal\build
 pause

@@ -1144,7 +1144,11 @@
     <public type="drawable" name="menu_hd_tv" id="0x7f08010f" />
     <public type="drawable" name="menubg" id="0x7f080110" />
     <public type="drawable" name="menubg_port" id="0x7f080111" />
-    <public type="drawable" name="menubg_port_sm" id="0x7f080112" />
+    <public type="drawable" name="menubg_center" id="0x7f080112" />
+    <public type="drawable" name="btn_continue_3" id="0x7f080113" />
+    <public type="drawable" name="btn_newgame_3" id="0x7f080114" />
+    <public type="drawable" name="btn_options_3" id="0x7f080115" />
+    <public type="drawable" name="btn_exit_3" id="0x7f080116" />
     <public type="drawable" name="resize" id="0x7f08011f" />
     <public type="drawable" name="rom_detail_overlay" id="0x7f080120" />
     <public type="drawable" name="rom_icon_overlay" id="0x7f080121" />
@@ -1163,10 +1167,6 @@
     <public type="drawable" name="tv_dpad_lr" id="0x7f08012f" />
     <public type="drawable" name="tv_special_action" id="0x7f080130" />
     <public type="drawable" name="tv_start_menu_help" id="0x7f080131" />
-    <public type="drawable" name="btn_continue_pressed" id="0x7f080132" />
-    <public type="drawable" name="btn_newgame_pressed" id="0x7f080133" />
-    <public type="drawable" name="btn_options_pressed" id="0x7f080134" />
-    <public type="drawable" name="btn_exit_pressed" id="0x7f080135" />
     <public type="id" name="ALT" id="0x7f090000" />
     <public type="id" name="CTRL" id="0x7f090001" />
     <public type="id" name="FUNCTION" id="0x7f090002" />
