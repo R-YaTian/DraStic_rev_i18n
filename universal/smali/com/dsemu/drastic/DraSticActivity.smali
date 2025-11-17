@@ -35,10 +35,6 @@
 
 .field private E:I
 
-.field private e:F
-
-.field private f:F
-
 .field private g:I
 
 .field h:Ljava/util/ArrayList;
@@ -115,14 +111,6 @@
     .locals 2
 
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
-
-    const/high16 v0, 0x43680000    # 232.0f
-
-    iput v0, p0, Lcom/dsemu/drastic/DraSticActivity;->e:F
-
-    const/high16 v0, 0x42900000    # 72.0f
-
-    iput v0, p0, Lcom/dsemu/drastic/DraSticActivity;->f:F
 
     const/4 v0, -0x1
 
@@ -1401,14 +1389,6 @@
 
     check-cast v1, Landroid/widget/RelativeLayout;
 
-    const/high16 v3, 0x436c0000    # 236.0f
-
-    iput v3, p0, Lcom/dsemu/drastic/DraSticActivity;->e:F
-
-    const/high16 v3, 0x42940000    # 74.0f
-
-    iput v3, p0, Lcom/dsemu/drastic/DraSticActivity;->f:F
-
     goto :goto_0
 
     :cond_0
@@ -1423,14 +1403,6 @@
     move-result-object v1
 
     check-cast v1, Landroid/widget/RelativeLayout;
-
-    const/high16 v3, 0x43680000    # 232.0f
-
-    iput v3, p0, Lcom/dsemu/drastic/DraSticActivity;->e:F
-
-    const/high16 v3, 0x42900000    # 72.0f
-
-    iput v3, p0, Lcom/dsemu/drastic/DraSticActivity;->f:F
 
     :goto_0
     invoke-direct {p0, v1, p1, p2, v2}, Lcom/dsemu/drastic/DraSticActivity;->S(Landroid/widget/RelativeLayout;IIZ)V
@@ -7452,15 +7424,11 @@
 
     invoke-virtual {v0, v1, v1}, Landroid/view/Window;->setFlags(II)V
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
-    if-lt v0, v1, :cond_0
-
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
+    if-lt v2, v1, :cond_0
 
     invoke-virtual {v0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 

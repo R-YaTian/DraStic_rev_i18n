@@ -9,6 +9,15 @@
         <item name="menu_color_text">@color/item_big</item>
         <item name="menu_color_text_selection">@color/item_selection</item>
     </style>
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="item_bg_color_pressed">@color/pressedbg</item>
+        <item name="menu_bg_color_center">@color/menu_bg_center</item>
+        <item name="menu_bg_color_header">@color/menu_bg_header</item>
+        <item name="menu_color_highlight">@color/item_highlight</item>
+        <item name="menu_color_highlight_ripple">@color/item_highlight_ripple</item>
+        <item name="menu_color_text">@color/item_big</item>
+        <item name="menu_color_text_selection">@color/item_selection</item>
+    </style>
     <style name="AppTheme.Transparent" parent="@android:style/Theme.Material.NoActionBar.Fullscreen">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>

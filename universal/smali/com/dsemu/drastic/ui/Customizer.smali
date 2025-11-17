@@ -5590,7 +5590,7 @@
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
-    .locals 4
+    .locals 5
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "NewApi"
@@ -5619,6 +5619,27 @@
 
     invoke-virtual {v3, v2, v2}, Landroid/view/Window;->setFlags(II)V
 
+    if-lt v0, v1, :cond_not_1c
+
+    invoke-virtual {v3}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+
+    move-result-object v4
+
+    const/4 v2, 0x1
+
+    iput v2, v4, Landroid/view/WindowManager$LayoutParams;->layoutInDisplayCutoutMode:I
+
+    invoke-virtual {v3, v4}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
+
+    invoke-virtual {v3}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v3
+
+    const v2, 0x1706
+
+    invoke-virtual {v3, v2}, Landroid/view/View;->setSystemUiVisibility(I)V
+
+    :cond_not_1c
     const/16 v2, 0x13
 
     if-lt v0, v2, :cond_1

@@ -1066,6 +1066,31 @@
 
     invoke-virtual {p1, v3, v3}, Landroid/view/Window;->setFlags(II)V
 
+    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v4, 0x1c
+
+    if-lt v3, v4, :cond_not_1c
+
+    invoke-virtual {p1}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+
+    move-result-object v4
+
+    const/4 v3, 0x1
+
+    iput v3, v4, Landroid/view/WindowManager$LayoutParams;->layoutInDisplayCutoutMode:I
+
+    invoke-virtual {p1, v4}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
+
+    invoke-virtual {p1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object p1
+
+    const v3, 0x1706
+
+    invoke-virtual {p1, v3}, Landroid/view/View;->setSystemUiVisibility(I)V
+
+    :cond_not_1c
     const p1, 0x7f0c0036
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setContentView(I)V
