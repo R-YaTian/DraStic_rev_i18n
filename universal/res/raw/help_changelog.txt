@@ -1,3 +1,28 @@
+<b>Version 2.6.0.4a Rev 251117 (BY R-YaTian):
+- Clean up unused notification-related resources
+- Improve the text display on the MappingInfo page
+- New folder icon
+- New main menu backgrounds and button images (Made by Handheld企鹅)
+- New Fast-Access menu resources (Made by Handheld企鹅 and 月月鸟)
+- Fixed an issue in which launching a ROM through the AM service could occasionally prevent the recently savestates from being loaded automatically
+- Fixed screen dimming caused by gamepad-triggered focus changes on certain pages for Android 8+ devices
+- Reworked the gamepad input logic for menus. Confirmation and cancel actions in menus now fully follow the physical A/B buttons on the controller instead of the key mapping table. This unifies menu operation logic, improves user experience, and resolves issues where both A and B buttons were recognized as confirmation actions or where their functions were reversed in certain menus
+- Fixed the visual appearance of certain UI elements in TV mode and resolved a longstanding issue where missing elements could cause the options menu to crash
+- Add automatic detection and mapping policy for Odin controller
+- Added the default option settings when the Odin controller is first detected
+- Added initialization default option settings for AYN Thor devices
+- Improve focus handling in KeyMapper page, state menu, and main menu
+- Adjusted and optimized the key logic of the Fast-Access menu. The controller button mapped to the DS A key is now used for menu confirmation actions
+- In non-TV mode, the main menu now supports pressing X to open the help page and Y to open the user management menu
+- SystemMigration: Fixed the apparent freeze issue when choosing to keep data
+- Added dot_MiZai series shaders and the retro-tiles series shaders (Thanks to MiZai)
+- Improve game picker and detail layouts for TV mode, update loading background image for TV
+- Introduced OnUnhandledKeyEventListener on the main menu for Android 9+ devices to fix issues where certain devices pre-processed DPAD events, preventing them from being dispatched correctly. This improves gamepad navigation on the main menu for affected devices
+- Main menu buttons now individually handle the selected state rather than using the pressed state, improving gamepad experience and touch feedback
+- New images have been introduced for the pressed and selected states of main menu buttons to improve visual feedback (Made by Handheld企鹅)
+- Adjusted main menu button display strategy to enhance button image appearance
+- Improved display cutout support for Android 9+ devices. This allows the app content to extend across the full screen and ensures the navigation bar and status bar are hidden. It may resolve issues where certain devices show white bars at the top or bottom. If the notch obscures game screen content, please adjust the screen layout
+
 <b>Version 2.6.0.4a Rev 251031 (BY R-YaTian):
 - Improve external display detection for external screens
 - Introduce new EGL config chooser for better compatibility. This fixes EGL initialization for some VMs, e.g. AVD

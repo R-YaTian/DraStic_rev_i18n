@@ -79,14 +79,14 @@ vec3 lookup(vec2 pixel_no, float offset_x, float offset_y, vec3 color)
   return color * exp(-gamma * delta * color_bloom(color));
 }
 
-// NDSÑÕÉ«Ğ£Õı¾ØÕó
+// NDSé¢œè‰²æ ¡æ­£çŸ©é˜µ
 const mat3 NDSColourMatrix = mat3(
     NDS_R,  NDS_RG, NDS_RB,
     NDS_GR, NDS_G,  NDS_GB,
     NDS_BR, NDS_BG, NDS_B
 );
 
-// YIQÉ«²Ê¿Õ¼ä×ª»»¾ØÕó
+// YIQè‰²å½©ç©ºé—´è½¬æ¢çŸ©é˜µ
 const mat3 RGBtoYIQ = mat3(
     0.299,  0.595716,  0.211456,
     0.587, -0.274453, -0.522591,
@@ -135,7 +135,7 @@ void main()
     color += lookup(pixel_no,  0.0,  1.0, c12);
     color += lookup(pixel_no,  1.0,  1.0, c22);
 
-    // »ìºÏÖĞĞÄÏñËØÓëÖÜÎ§ÏñËØÑÕÉ«
+    // æ··åˆä¸­å¿ƒåƒç´ ä¸å‘¨å›´åƒç´ é¢œè‰²
     color = mix(1.2 * mid_color, color, blend);
 
     gl_FragColor.rgb = color;

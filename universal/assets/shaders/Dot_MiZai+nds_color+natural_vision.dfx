@@ -19,24 +19,24 @@ precision mediump float;
 #endif
 #endif
 
-// Natural Vision²ÎÊı
-#define NATVIS_GIN 1.91     // ÊäÈëGamma
-#define NATVIS_GOUT 1.91    // Êä³öGamma
-#define NATVIS_Y 1.1        // ÁÁ¶ÈÔöÒæ
-#define NATVIS_I 1.1        // ³ÈÀ¶Í¨µÀÔöÒæ
-#define NATVIS_Q 1.1        // Æ·ºìÂÌÉ«Í¨µÀÔöÒæ
+// Natural Visionå‚æ•°
+#define NATVIS_GIN 1.91     // è¾“å…¥Gamma
+#define NATVIS_GOUT 1.91    // è¾“å‡ºGamma
+#define NATVIS_Y 1.1        // äº®åº¦å¢ç›Š
+#define NATVIS_I 1.1        // æ©™è“é€šé“å¢ç›Š
+#define NATVIS_Q 1.1        // å“çº¢ç»¿è‰²é€šé“å¢ç›Š
 
-// NDSÑÕÉ«Ğ£Õı²ÎÊı
-#define NDS_LUM 1.0        // ÁÁ¶ÈÏµÊı
-#define NDS_R 0.87          // ºìÉ«ÏµÊı
-#define NDS_G 0.645         // ÂÌÉ«ÏµÊı
-#define NDS_B 0.73          // À¶É«ÏµÊı
-#define NDS_RG 0.10         // ºì-ÂÌ½»²æÏµÊı
-#define NDS_RB 0.10         // ºì-À¶½»²æÏµÊı
-#define NDS_GR 0.255        // ÂÌ-ºì½»²æÏµÊı
-#define NDS_GB 0.17         // ÂÌ-À¶½»²æÏµÊı
-#define NDS_BR -0.125       // À¶-ºì½»²æÏµÊı
-#define NDS_BG 0.255        // À¶-ÂÌ½»²æÏµÊı
+// NDSé¢œè‰²æ ¡æ­£å‚æ•°
+#define NDS_LUM 1.0        // äº®åº¦ç³»æ•°
+#define NDS_R 0.87          // çº¢è‰²ç³»æ•°
+#define NDS_G 0.645         // ç»¿è‰²ç³»æ•°
+#define NDS_B 0.73          // è“è‰²ç³»æ•°
+#define NDS_RG 0.10         // çº¢-ç»¿äº¤å‰ç³»æ•°
+#define NDS_RB 0.10         // çº¢-è“äº¤å‰ç³»æ•°
+#define NDS_GR 0.255        // ç»¿-çº¢äº¤å‰ç³»æ•°
+#define NDS_GB 0.17         // ç»¿-è“äº¤å‰ç³»æ•°
+#define NDS_BR -0.125       // è“-çº¢äº¤å‰ç³»æ•°
+#define NDS_BG 0.255        // è“-ç»¿äº¤å‰ç³»æ•°
 </fheader>
 
 <texture:0>
