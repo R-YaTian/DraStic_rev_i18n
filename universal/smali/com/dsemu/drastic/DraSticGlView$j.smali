@@ -1810,11 +1810,43 @@
     :cond_9
     iget-object v1, v0, Lcom/dsemu/drastic/DraSticGlView$j;->Q:Lcom/dsemu/drastic/DraSticGlView;
 
+    invoke-static {v1}, Lcom/dsemu/drastic/DraSticGlView;->A(Lcom/dsemu/drastic/DraSticGlView;)I
+
+    move-result v6
+
+    invoke-static {v1}, Lcom/dsemu/drastic/DraSticGlView;->e0(Lcom/dsemu/drastic/DraSticGlView;)Landroid/content/Context;
+
+    move-result-object v7
+
+    invoke-static {v7}, Lf0/h;->p(Landroid/content/Context;)Z
+
+    move-result v7
+
+    const/4 v8, 0x3
+
+    if-eq v8, v6, :check_swap
+
+    const/4 v8, 0x4
+
+    if-eq v8, v6, :check_swap
+
+    const/4 v8, 0x0
+
+    goto :pass_touch_lock
+
+    :check_swap
+    const/4 v8, 0x0
+
+    if-nez v7, :pass_touch_lock
+
+    const/4 v8, 0x1
+
+    :pass_touch_lock
     invoke-static {v1}, Lcom/dsemu/drastic/DraSticGlView;->E(Lcom/dsemu/drastic/DraSticGlView;)Ln0/i;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ln0/i;->H()V
+    invoke-virtual {v1, v8}, Ln0/i;->H(Z)V
 
     iget-object v1, v0, Lcom/dsemu/drastic/DraSticGlView$j;->Q:Lcom/dsemu/drastic/DraSticGlView;
 
@@ -2515,6 +2547,36 @@
 
     iget-object v1, v0, Lcom/dsemu/drastic/DraSticGlView$j;->Q:Lcom/dsemu/drastic/DraSticGlView;
 
+    invoke-static {v1}, Lcom/dsemu/drastic/DraSticGlView;->A(Lcom/dsemu/drastic/DraSticGlView;)I
+
+    move-result v3
+
+    invoke-static {v1}, Lcom/dsemu/drastic/DraSticGlView;->e0(Lcom/dsemu/drastic/DraSticGlView;)Landroid/content/Context;
+
+    move-result-object v12
+
+    invoke-static {v12}, Lf0/h;->p(Landroid/content/Context;)Z
+
+    move-result v12
+
+    const/16 v13, 0x12
+
+    const/4 v10, 0x3
+
+    if-eq v10, v3, :check_swap_1
+
+    const/4 v10, 0x4
+
+    if-eq v10, v3, :check_swap_1
+
+    goto :pass_touch_lock_1
+
+    :check_swap_1
+    if-nez v12, :pass_touch_lock_1
+
+    const/4 v13, 0x0
+
+    :pass_touch_lock_1
     invoke-static {v1}, Lcom/dsemu/drastic/DraSticGlView;->E(Lcom/dsemu/drastic/DraSticGlView;)Ln0/i;
 
     move-result-object v1
@@ -2524,8 +2586,6 @@
     iget v10, v0, Lcom/dsemu/drastic/DraSticGlView$j;->C:I
 
     iget v12, v0, Lcom/dsemu/drastic/DraSticGlView$j;->D:I
-
-    const/16 v13, 0x12
 
     invoke-virtual {v1, v13, v3, v10, v12}, Ln0/i;->x(IIII)Z
 

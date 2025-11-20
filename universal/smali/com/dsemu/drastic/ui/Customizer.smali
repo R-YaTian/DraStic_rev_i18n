@@ -4300,49 +4300,6 @@
 
     if-lt v0, v1, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-static {v0}, Landroidx/core/view/x3;->a(Landroid/view/View;)Landroid/view/WindowInsets;
-
-    move-result-object v0
-
-    invoke-static {v0}, Landroidx/core/view/j6;->a(Landroid/view/WindowInsets;)Landroid/view/DisplayCutout;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    new-instance v1, Landroid/graphics/Rect;
-
-    invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
-
-    iput-object v1, p0, Lcom/dsemu/drastic/ui/Customizer;->X:Landroid/graphics/Rect;
-
-    invoke-static {v0}, Landroidx/core/view/p;->a(Landroid/view/DisplayCutout;)I
-
-    move-result v2
-
-    invoke-static {v0}, Landroidx/core/view/q;->a(Landroid/view/DisplayCutout;)I
-
-    move-result v3
-
-    invoke-static {v0}, Landroidx/core/view/r;->a(Landroid/view/DisplayCutout;)I
-
-    move-result v4
-
-    invoke-static {v0}, Landroidx/core/view/o;->a(Landroid/view/DisplayCutout;)I
-
-    move-result v0
-
-    invoke-virtual {v1, v2, v3, v4, v0}, Landroid/graphics/Rect;->set(IIII)V
-
-    :cond_0
     invoke-virtual {p0}, Lcom/dsemu/drastic/ui/Customizer;->s()V
 
     :cond_1

@@ -2572,7 +2572,7 @@
 .end method
 
 .method public w0(IZ)V
-    .locals 1
+    .locals 3
 
     iget-boolean v0, p0, Lcom/dsemu/drastic/DraSticGlView;->D:Z
 
@@ -2603,6 +2603,34 @@
     goto :goto_0
 
     :cond_2
+    const/16 v1, 0x1c
+
+    if-ne v1, p1, :pass_pointer_lock
+
+    iget-object v1, p0, Lcom/dsemu/drastic/DraSticGlView;->f:Landroid/content/Context;
+
+    iget v2, p0, Lcom/dsemu/drastic/DraSticGlView;->v:I
+
+    invoke-static {v1}, Lf0/h;->p(Landroid/content/Context;)Z
+
+    move-result v1
+
+    const/4 v0, 0x3
+
+    if-eq v0, v2, :check_swap
+
+    const/4 v0, 0x4
+
+    if-eq v0, v2, :check_swap
+
+    goto :pass_pointer_lock
+
+    :check_swap
+    if-nez v1, :pass_pointer_lock
+
+    goto :goto_0
+
+    :pass_pointer_lock
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticGlView;->g:Ln0/i;
 
     invoke-virtual {v0, p1, p2}, Ln0/i;->C(IZ)V

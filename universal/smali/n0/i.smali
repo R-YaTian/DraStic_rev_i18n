@@ -5302,7 +5302,7 @@
     goto :goto_1
 .end method
 
-.method public H()V
+.method public H(Z)V
     .locals 5
 
     sget-boolean v0, Lf0/h;->Y:Z
@@ -5316,6 +5316,8 @@
     const/4 v2, 0x6
 
     if-ne v0, v1, :cond_8
+
+    if-nez p1, :cond_0
 
     iget v0, p0, Ln0/i;->t:F
 
@@ -7898,6 +7900,8 @@
     const/4 v2, 0x0
 
     if-ne v0, v1, :cond_6
+
+    if-eqz p1, :cond_6
 
     iget v0, p0, Ln0/i;->F:I
 
