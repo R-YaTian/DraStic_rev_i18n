@@ -30,6 +30,6 @@ mag_filter=GL_NEAREST
 </texture>
 
 <pass>
-shader=lcd3x.dsd
+shader=LCD3x.dsd
 sampler:u_texture=0
 </pass>
