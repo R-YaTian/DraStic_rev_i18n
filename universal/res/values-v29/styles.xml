@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Material.Light.NoActionBar.Fullscreen">
+        <item name="item_bg_color_pressed">@color/pressedbg</item>
+        <item name="menu_bg_color_center">@color/menu_bg_center</item>
+        <item name="menu_bg_color_header">@color/menu_bg_header</item>
+        <item name="menu_color_highlight">@color/item_highlight</item>
+        <item name="menu_color_highlight_ripple">@color/item_highlight_ripple</item>
+        <item name="menu_color_text">@color/item_big</item>
+        <item name="menu_color_text_selection">@color/item_selection</item>
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+</resources>
