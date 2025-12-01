@@ -744,6 +744,7 @@
     <public type="color" name="menu_game_bg" id="0x7f060061" />
     <public type="color" name="normalbg" id="0x7f060062" />
     <public type="color" name="normalbg_tv" id="0x7f060063" />
+    <public type="color" name="menu_text_color" id="0x7f060064" />
     <public type="color" name="pressedbg" id="0x7f060067" />
     <public type="color" name="pressedbg_dark" id="0x7f060068" />
     <public type="color" name="pressedbg_tv" id="0x7f060069" />

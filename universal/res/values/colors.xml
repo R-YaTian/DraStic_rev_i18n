@@ -78,6 +78,7 @@
     <color name="menu_bg_header_dark">#ff546e7a</color>
     <color name="menu_bg_header_tv">#ff222222</color>
     <color name="menu_game_bg">#fff8f8f8</color>
+    <color name="menu_text_color">#ff111111</color>
     <color name="normalbg">#ffffffff</color>
     <color name="normalbg_tv">#ff111111</color>
     <color name="pressedbg">#200099cc</color>
