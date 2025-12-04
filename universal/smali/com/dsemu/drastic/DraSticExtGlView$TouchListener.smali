@@ -24,9 +24,18 @@
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 10
 
-    sget v0, Lf0/h;->A:I
+    # Get the DraSticExtGlView instance
+    iget-object v0, p0, Lcom/dsemu/drastic/DraSticExtGlView$TouchListener;->this$0:Lcom/dsemu/drastic/DraSticExtGlView;
 
-    if-eqz v0, :return_0
+    invoke-static {v0}, Lcom/dsemu/drastic/DraSticExtGlView;->a(Lcom/dsemu/drastic/DraSticExtGlView;)Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lf0/h;->isBottomScreenDisplayedExt(Landroid/content/Context;)Z
+
+    move-result v1
+
+    if-eqz v1, :return_0
 
     # Get the subTouchX
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
@@ -35,9 +44,6 @@
     # Get the subTouchY
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
     move-result v3
-
-    # Get the DraSticExtGlView instance
-    iget-object v0, p0, Lcom/dsemu/drastic/DraSticExtGlView$TouchListener;->this$0:Lcom/dsemu/drastic/DraSticExtGlView;
 
     # Get DraSticExtGlView$a
     invoke-virtual {v0}, Lcom/dsemu/drastic/DraSticExtGlView;->geta()Lcom/dsemu/drastic/DraSticExtGlView$a;

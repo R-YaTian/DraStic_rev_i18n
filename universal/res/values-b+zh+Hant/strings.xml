@@ -257,7 +257,7 @@ DraStic正在努力生成一個恢復存檔。若成功的話, 您在下次打�
     <string name="str_set_menu_game_options_delete">刪除單一遊戲設定</string>
     <string name="str_set_menu_global_options">全局設定</string>
     <string name="str_set_menu_override_msg">被單一遊戲設定覆蓋的選項已被劃掉</string>
-    <string name="str_set_menu_singlelayout_usebottom">在單螢幕佈局中輸出 DS 的下螢幕</string>
+    <string name="str_set_menu_singlelayout_usebottom">在單螢幕佈局中輸出 DS 下螢幕</string>
     <string name="str_set_menubtn">停用選單鍵</string>
     <string name="str_set_menubtn_pos">選單鍵位置</string>
     <string name="str_set_menubtn_warn">隱藏選單鍵, 請確保您已經設定好打開選單用的按鍵</string>

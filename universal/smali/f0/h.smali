@@ -3966,6 +3966,58 @@
     return v1
 .end method
 
+.method public static isBottomScreenDisplayedExt(Landroid/content/Context;)Z
+    .locals 4
+
+    sget-object v0, Lf0/h;->e:Lcom/dsemu/drastic/filesystem/b;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    sget-object v0, Lf0/h;->a:Ljava/lang/String;
+
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    sget-object v2, Lf0/h;->e:Lcom/dsemu/drastic/filesystem/b;
+
+    invoke-interface {v2, p0}, Lcom/dsemu/drastic/filesystem/b;->w(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object p0
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "_ScreenSwap_"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-interface {v0, p0, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result p0
+
+    sget v1, Lf0/h;->A:I
+
+    if-eqz v1, :not_use_bottom
+
+    xor-int/lit8 p0, p0, 0x1
+
+    :not_use_bottom
+    return p0
+
+    :cond_0
+    return v1
+.end method
+
 .method public static q(Landroid/content/Context;)I
     .locals 4
 

@@ -1,3 +1,18 @@
+<b>Version 2.6.0.4a Rev 251204 (BY R-YaTian):
+- Fixed the loading issue with the LCD3x HD and LCD3x shaders (requires deleting LCD3x HD.dfx and LCD3x.dfx from the data directory to take effect)
+- Introduced full dark theme support for Android 10 and above
+- Hide the stylus image and disabled pointer-down actions when the bottom screen is not visible and the right-stick mode is set to Stylus Pointer
+- Removed buggy display cutout handling code from the Customizer activity, fixing the issue where the layout editor could not use the bottom area
+- Updated and improved main menu button images (BY Handheld企鹅)
+- Added new default virtual controller theme (Made by Handheld企鹅). Preserved the original theme and renamed it to "DraStic Classic"
+- Added new option for display the DS bottom screen in single-screen layout
+- Remove outdated virtual controller assets
+- Improve the settings and help pages in TV mode
+- Update Fast-Access menu images for TV mode (Made by Handheld企鹅)
+- Adjusted the position of menu options in the main menu when in landscape mode
+- Fixed a long-standing issue where selecting the Default Layout option in the General Settings page caused a crash in TV mode
+- The Screen-Swap feature now applies to the external display
+
 <b>Version 2.6.0.4a Rev 251117 (BY R-YaTian):
 - Clean up unused notification-related resources
 - Improve the text display on the MappingInfo page
