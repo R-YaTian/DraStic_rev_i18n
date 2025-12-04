@@ -291,6 +291,7 @@ The button will still be active in the menus. (If disabled, the button can be us
     <string name="str_set_menu_game_options_delete">Delete per-game options</string>
     <string name="str_set_menu_global_options">Global options</string>
     <string name="str_set_menu_override_msg">Options displayed with strike-through text are overriden by per-game options</string>
+    <string name="str_set_menu_singlelayout_usebottom">Display the DS bottom screen in single-screen layout</string>
     <string name="str_set_menubtn">Disable Menu Button</string>
     <string name="str_set_menubtn_pos">Menu-Button Position</string>
     <string name="str_set_menubtn_warn">Only hide the menu button, if you have a button assigned to opening the menu.</string>

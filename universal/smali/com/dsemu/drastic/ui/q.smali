@@ -973,14 +973,14 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lcom/dsemu/drastic/ui/q;->m(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/dsemu/drastic/ui/q;->isTVModeUI(Landroid/content/Context;)Z
 
     move-result p0
 
     return p0
 .end method
 
-.method public static m(Landroid/content/Context;)Z
+.method public static isTVModeUI(Landroid/content/Context;)Z
     .locals 1
     .annotation build Landroid/annotation/SuppressLint;
         value = {

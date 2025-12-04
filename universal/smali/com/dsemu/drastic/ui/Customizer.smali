@@ -1847,6 +1847,19 @@
 
     move-result v7
 
+    iget-object v8, v0, Lcom/dsemu/drastic/ui/Customizer;->f:Lf0/k;
+
+    iget-boolean v8, v8, Lf0/k;->c:Z
+
+    if-nez v8, :not_f_c
+
+    sget-boolean v9, Lf0/h;->fb:Z
+
+    if-eqz v9, :not_f_c
+
+    xor-int/lit8 v7, v7, 0x1
+
+    :not_f_c
     invoke-static {v6, v3}, Lcom/dsemu/drastic/DraSticJNI;->getScreenBuffers([I[I)V
 
     sget-object v8, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;

@@ -831,7 +831,7 @@
     goto :goto_0
 
     :cond_2
-    const/high16 v6, 0x433c0000    # 188.0f
+    const/high16 v6, 0x43500000    # 208.0f
 
     :goto_0
     cmpl-float v15, v11, v8

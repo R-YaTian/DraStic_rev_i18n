@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="#ff0099cc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="96.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="96.0dip" android:layout_marginBottom="48.0dip"
+<RelativeLayout android:background="#88111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout android:background="#ff0099cc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="96.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="96.0dip" android:layout_marginBottom="48.0dip">
     <LinearLayout android:orientation="vertical" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip">
         <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
             <TableRow android:background="@color/menu_bg_header_tv">
@@ -29,4 +30,5 @@
             </ViewAnimator>
         </ScrollView>
     </LinearLayout>
+</RelativeLayout>
 </RelativeLayout>

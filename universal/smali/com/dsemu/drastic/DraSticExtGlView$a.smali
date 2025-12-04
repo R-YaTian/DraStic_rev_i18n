@@ -121,6 +121,10 @@
 
     const p1, 0x8892
 
+    iget v2, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->a:I
+
+    invoke-static {p1, v2}, Landroid/opengl/GLES20;->glBindBuffer(II)V
+
     invoke-static {p1, v0, v0, v1}, Landroid/opengl/GLES20;->glBufferSubData(IIILjava/nio/Buffer;)V
 
     return-void
@@ -353,6 +357,10 @@
 
     const v2, 0x8892
 
+    iget v14, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->a:I
+
+    invoke-static {v2, v14}, Landroid/opengl/GLES20;->glBindBuffer(II)V
+
     invoke-static {v2, v11, v0, v1}, Landroid/opengl/GLES20;->glBufferSubData(IIILjava/nio/Buffer;)V
 
     return-void
@@ -401,7 +409,7 @@
 .end method
 
 .method public onDrawFrame(Ljavax/microedition/khronos/opengles/GL10;)V
-    .locals 8
+    .locals 10
 
     iget-boolean p1, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->e:Z
 
@@ -435,6 +443,19 @@
     # Get the DraSticExtGlView instance
     iget-object v7, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->g:Lcom/dsemu/drastic/DraSticExtGlView;
 
+    invoke-static {v7}, Lcom/dsemu/drastic/DraSticExtGlView;->a(Lcom/dsemu/drastic/DraSticExtGlView;)Landroid/content/Context;
+
+    move-result-object v8
+
+    invoke-static {v8}, Lf0/h;->p(Landroid/content/Context;)Z
+
+    move-result v9
+
+    if-eqz v9, :not_swap
+
+    xor-int/lit8 v2, v2, 0x1
+
+    :not_swap
     # Get the DraSticGlView reference
     invoke-virtual {v7}, Lcom/dsemu/drastic/DraSticExtGlView;->getDraSticGlView()Lcom/dsemu/drastic/DraSticGlView;
 
@@ -445,6 +466,12 @@
     move-result v7
 
     if-nez v7, :cond_1
+
+    const v9, 0xcf5
+
+    const/4 v8, 0x1
+
+    invoke-static {v9, v8}, Landroid/opengl/GLES20;->glPixelStorei(II)V
 
     invoke-static/range {v1 .. v6}, Lcom/dsemu/drastic/DraSticJNI;->extfxRender(IIIIII)V
 
@@ -457,7 +484,7 @@
 .end method
 
 .method public onSurfaceChanged(Ljavax/microedition/khronos/opengles/GL10;II)V
-    .locals 9
+    .locals 10
 
     const/4 p1, 0x0
 
@@ -589,6 +616,10 @@
 
     const v0, 0x8892
 
+    iget v9, p0, Lcom/dsemu/drastic/DraSticExtGlView$a;->a:I
+
+    invoke-static {v0, v9}, Landroid/opengl/GLES20;->glBindBuffer(II)V
+
     invoke-static {v0, p1, p1, v1}, Landroid/opengl/GLES20;->glBufferSubData(IIILjava/nio/Buffer;)V
 
     sget-boolean p1, Lf0/h;->V0:Z
@@ -649,7 +680,7 @@
 .end method
 
 .method public onSurfaceCreated(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V
-    .locals 11
+    .locals 13
 
     sget-boolean p1, Lf0/h;->V0:Z
 
@@ -735,6 +766,12 @@
     const v7, 0x8363
 
     :goto_1
+    const v11, 0xcf5
+
+    const/4 v12, 0x1
+
+    invoke-static {v11, v12}, Landroid/opengl/GLES20;->glPixelStorei(II)V
+
     const/4 v8, 0x0
 
     invoke-static/range {v0 .. v8}, Landroid/opengl/GLES20;->glTexImage2D(IIIIIIIILjava/nio/Buffer;)V

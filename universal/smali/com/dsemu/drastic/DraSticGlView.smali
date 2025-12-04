@@ -2611,7 +2611,7 @@
 
     iget v2, p0, Lcom/dsemu/drastic/DraSticGlView;->v:I
 
-    invoke-static {v1}, Lf0/h;->p(Landroid/content/Context;)Z
+    invoke-static {v1}, Lf0/h;->isBottomScreenDisplayed(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -2780,7 +2780,7 @@
 
     iget v2, p0, Lcom/dsemu/drastic/DraSticGlView;->v:I
 
-    invoke-static {v1}, Lf0/h;->p(Landroid/content/Context;)Z
+    invoke-static {v1}, Lf0/h;->isBottomScreenDisplayed(Landroid/content/Context;)Z
 
     move-result v1
 

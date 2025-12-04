@@ -1818,7 +1818,7 @@
 
     move-result-object v7
 
-    invoke-static {v7}, Lf0/h;->p(Landroid/content/Context;)Z
+    invoke-static {v7}, Lf0/h;->isBottomScreenDisplayed(Landroid/content/Context;)Z
 
     move-result v7
 
@@ -2051,6 +2051,19 @@
 
     iget-boolean v13, v0, Lcom/dsemu/drastic/DraSticGlView$j;->L:Z
 
+    invoke-virtual {v0}, Lcom/dsemu/drastic/DraSticGlView$j;->isSingleLayout()Z
+
+    move-result v14
+
+    if-eqz v14, :not_single_layout_2
+
+    sget-boolean v14, Lf0/h;->fb:Z
+
+    if-eqz v14, :not_single_layout_2
+
+    xor-int/lit8 v13, v13, 0x1
+
+    :not_single_layout_2
     invoke-static {v11, v12, v13}, Lcom/dsemu/drastic/DraSticJNI;->renderFrame(IIZ)V
 
     goto :goto_5
@@ -2060,6 +2073,19 @@
 
     iget-boolean v12, v0, Lcom/dsemu/drastic/DraSticGlView$j;->L:Z
 
+    invoke-virtual {v0}, Lcom/dsemu/drastic/DraSticGlView$j;->isSingleLayout()Z
+
+    move-result v13
+
+    if-eqz v13, :not_single_layout_3
+
+    sget-boolean v13, Lf0/h;->fb:Z
+
+    if-eqz v13, :not_single_layout_3
+
+    xor-int/lit8 v12, v12, 0x1
+
+    :not_single_layout_3
     invoke-static {v11, v5, v12}, Lcom/dsemu/drastic/DraSticJNI;->renderFrame(IIZ)V
 
     goto :goto_5
@@ -2095,6 +2121,19 @@
 
     iget-boolean v4, v0, Lcom/dsemu/drastic/DraSticGlView$j;->L:Z
 
+    invoke-virtual {v0}, Lcom/dsemu/drastic/DraSticGlView$j;->isSingleLayout()Z
+
+    move-result v17
+
+    if-eqz v17, :not_single_layout
+
+    sget-boolean v17, Lf0/h;->fb:Z
+
+    if-eqz v17, :not_single_layout
+
+    xor-int/lit8 v4, v4, 0x1
+
+    :not_single_layout
     move/from16 v17, v11
 
     move/from16 v18, v6
@@ -2130,6 +2169,19 @@
 
     iget-boolean v12, v0, Lcom/dsemu/drastic/DraSticGlView$j;->L:Z
 
+    invoke-virtual {v0}, Lcom/dsemu/drastic/DraSticGlView$j;->isSingleLayout()Z
+
+    move-result v22
+
+    if-eqz v22, :not_single_layout_1
+
+    sget-boolean v22, Lf0/h;->fb:Z
+
+    if-eqz v22, :not_single_layout_1
+
+    xor-int/lit8 v12, v12, 0x1
+
+    :not_single_layout_1
     move/from16 v22, v2
 
     move/from16 v27, v3
@@ -2555,7 +2607,7 @@
 
     move-result-object v12
 
-    invoke-static {v12}, Lf0/h;->p(Landroid/content/Context;)Z
+    invoke-static {v12}, Lf0/h;->isBottomScreenDisplayed(Landroid/content/Context;)Z
 
     move-result v12
 
@@ -3966,4 +4018,31 @@
     iput-boolean v2, v0, Lcom/dsemu/drastic/DraSticGlView$j;->O:Z
 
     return-void
+.end method
+
+.method public isSingleLayout()Z
+    .locals 2
+
+    iget-object v0, p0, Lcom/dsemu/drastic/DraSticGlView$j;->Q:Lcom/dsemu/drastic/DraSticGlView;
+
+    invoke-static {v0}, Lcom/dsemu/drastic/DraSticGlView;->A(Lcom/dsemu/drastic/DraSticGlView;)I
+
+    move-result v0
+
+    const/4 v1, 0x3
+
+    if-eq v0, v1, :cond_0
+
+    const/4 v1, 0x4
+
+    if-eq v0, v1, :cond_0
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x1
+
+    return v0
 .end method

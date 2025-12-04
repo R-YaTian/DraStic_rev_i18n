@@ -43,6 +43,8 @@
             <View style="@style/drastic_seperator" />
             <CheckBox android:id="@id/cb_menubtn" android:text="@string/str_set_menubtn" style="@style/drastic_checkbox" />
             <View style="@style/drastic_seperator" />
+            <CheckBox android:id="@id/cb_singlelayout_usebottom" android:text="@string/str_set_menu_singlelayout_usebottom" style="@style/drastic_checkbox" />
+            <View style="@style/drastic_seperator" />
             <TextView android:id="@id/set_select_defaultlayout" android:text="@string/str_set_defaultlayout" style="@style/drastic_option_item_choicehdr_text" />
             <TextView android:id="@id/set_selection_defaultlayout" style="@style/drastic_option_item_selection_text" />
             <View style="@style/drastic_seperator" />

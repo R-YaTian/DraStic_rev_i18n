@@ -604,7 +604,7 @@
     goto :goto_1
 
     :cond_0
-    invoke-static {p0}, Lcom/dsemu/drastic/ui/q;->m(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/dsemu/drastic/ui/q;->isTVModeUI(Landroid/content/Context;)Z
 
     move-result p0
 

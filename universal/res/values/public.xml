@@ -1426,9 +1426,10 @@
     <public type="id" name="cb_threaded" id="0x7f090101" />
     <public type="id" name="cb_threaded_game" id="0x7f090102" />
     <public type="id" name="cb_touchthrough" id="0x7f090103" />
-    <public type="id" name="center" id="0x7f090104" />
-    <public type="id" name="center_horizontal" id="0x7f090105" />
-    <public type="id" name="center_vertical" id="0x7f090106" />
+    <public type="id" name="cb_singlelayout_usebottom" id="0x7f090104" />
+    <public type="id" name="center" id="0x7f090304" />
+    <public type="id" name="center_horizontal" id="0x7f090305" />
+    <public type="id" name="center_vertical" id="0x7f090306" />
     <public type="id" name="chain" id="0x7f090107" />
     <public type="id" name="chain2" id="0x7f090108" />
     <public type="id" name="chains" id="0x7f090109" />
@@ -2336,6 +2337,7 @@
     <public type="string" name="str_set_mapping_device_mapping" id="0x7f0f013f" />
     <public type="string" name="str_set_mapping_ds_button" id="0x7f0f0140" />
     <public type="string" name="str_set_mapping_function" id="0x7f0f0141" />
+    <public type="string" name="str_set_menu_singlelayout_usebottom" id="0x7f0f0142" />
     <public type="string" name="str_set_menu_game_options" id="0x7f0f0143" />
     <public type="string" name="str_set_menu_game_options_delete" id="0x7f0f0144" />
     <public type="string" name="str_set_menu_global_options" id="0x7f0f0145" />

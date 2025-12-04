@@ -109,7 +109,7 @@
 
     const/16 v9, 0xf
 
-    const/16 v2, 0xe
+    const/16 v2, 0xf
 
     new-array v9, v2, [I
 
@@ -203,7 +203,11 @@
 
     aput-object v6, v0, v8
 
+    const/16 v7, 0xc
+
     new-array v5, v7, [I
+
+    const/16 v7, 0xb
 
     fill-array-data v5, :array_e
 
@@ -345,6 +349,7 @@
         0x7f0900f5
         0x7f09009a
         0x7f0900f6
+        0x7f090104
         0x7f09021f
         0x7f09021a
         0x7f090234
@@ -456,6 +461,7 @@
         0x7f0900f3
         0x7f0900de
         0x7f0900f5
+        0x7f090104
         0x7f09021f
         0x7f09021a
         0x7f090234
@@ -3943,6 +3949,13 @@
 
     goto/16 :goto_8
 
+    :sswitch_4
+    check-cast p1, Landroid/widget/CheckBox;
+
+    sget-boolean p2, Lf0/h;->fb:Z
+
+    goto/16 :goto_c
+
     :sswitch_2
     check-cast p1, Landroid/widget/CheckBox;
 
@@ -4168,6 +4181,7 @@
     .sparse-switch
         0x7f0900e0 -> :sswitch_3
         0x7f090103 -> :sswitch_2
+        0x7f090104 -> :sswitch_4
         0x7f0901f9 -> :sswitch_1
         0x7f09021d -> :sswitch_0
     .end sparse-switch
@@ -5638,7 +5652,7 @@
 
     iget-boolean v0, p0, Lcom/dsemu/drastic/ui/Settings;->k:Z
 
-    if-eqz v0, :cond_8
+    if-nez v0, :cond_8
 
     const v0, 0x7f030010
 
@@ -5879,6 +5893,17 @@
     move-result p1
 
     sput-boolean p1, Lf0/h;->a0:Z
+
+    goto/16 :goto_1c
+
+    :pswitch_1x
+    check-cast p1, Landroid/widget/CheckBox;
+
+    invoke-virtual {p1}, Landroid/widget/CompoundButton;->isChecked()Z
+
+    move-result p1
+
+    sput-boolean p1, Lf0/h;->fb:Z
 
     goto/16 :goto_1c
 
@@ -6938,6 +6963,7 @@
         :pswitch_1e
         :pswitch_1d
         :pswitch_1c
+        :pswitch_1x
     .end packed-switch
 
     :pswitch_data_5
@@ -7482,7 +7508,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f030010
+    const v1, 0x7f030011
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 

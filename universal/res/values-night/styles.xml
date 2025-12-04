@@ -8,4 +8,13 @@
     <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge" />
     <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
     <style name="ThemeOverlay.AppCompat.DayNight" parent="@style/ThemeOverlay.AppCompat.Dark" />
+    <style name="drastic_section_seperator">
+        <item name="android:background">@drawable/section_separator_24_black</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">6.0dip</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginRight">0.0dip</item>
+        <item name="android:layout_marginBottom">4.0dip</item>
+    </style>
 </resources>

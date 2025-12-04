@@ -142,6 +142,8 @@
 
 .field public static f0:Z
 
+.field public static fb:Z
+
 .field public static f1:Z
 
 .field public static g:Ljava/lang/String;
@@ -354,6 +356,8 @@
     sput-boolean v2, Lf0/h;->e0:Z
 
     sput-boolean v0, Lf0/h;->f0:Z
+
+    sput-boolean v0, Lf0/h;->fb:Z
 
     sput-boolean v0, Lf0/h;->g0:Z
 
@@ -943,6 +947,12 @@
     const-string v2, "_DisableMenuButton"
 
     sget-boolean v3, Lf0/h;->f0:Z
+
+    invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    const-string v2, "_UseBottomInSingleLayout"
+
+    sget-boolean v3, Lf0/h;->fb:Z
 
     invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
@@ -3904,6 +3914,58 @@
     return v1
 .end method
 
+.method public static isBottomScreenDisplayed(Landroid/content/Context;)Z
+    .locals 4
+
+    sget-object v0, Lf0/h;->e:Lcom/dsemu/drastic/filesystem/b;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    sget-object v0, Lf0/h;->a:Ljava/lang/String;
+
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    sget-object v2, Lf0/h;->e:Lcom/dsemu/drastic/filesystem/b;
+
+    invoke-interface {v2, p0}, Lcom/dsemu/drastic/filesystem/b;->w(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object p0
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "_ScreenSwap_"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-interface {v0, p0, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result p0
+
+    sget-boolean v1, Lf0/h;->fb:Z
+
+    if-eqz v1, :not_use_bottom
+
+    xor-int/lit8 p0, p0, 0x1
+
+    :not_use_bottom
+    return p0
+
+    :cond_0
+    return v1
+.end method
+
 .method public static q(Landroid/content/Context;)I
     .locals 4
 
@@ -4662,6 +4724,14 @@
 
     sput-boolean v0, Lf0/h;->f0:Z
 
+    const-string v0, "_UseBottomInSingleLayout"
+
+    invoke-interface {v2, v0, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    sput-boolean v0, Lf0/h;->fb:Z
+
     const-string v0, "_Threaded3D"
 
     invoke-interface {v2, v0, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
@@ -5158,7 +5228,7 @@
 
     sput v0, Lf0/h;->L:I
 
-    invoke-static {p0}, Lcom/dsemu/drastic/ui/q;->m(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/dsemu/drastic/ui/q;->isTVModeUI(Landroid/content/Context;)Z
 
     move-result v0
 
