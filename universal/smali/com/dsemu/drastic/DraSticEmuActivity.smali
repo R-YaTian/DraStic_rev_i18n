@@ -1876,6 +1876,13 @@
     :cond_5
     iput-boolean v2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->x:Z
 
+    iget-object v1, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->F:Landroid/app/Presentation;
+
+    if-eqz v1, :cond_6
+
+    invoke-virtual {v1}, Landroid/app/Presentation;->dismiss()V
+
+    :cond_6
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
     return-void
@@ -1914,6 +1921,13 @@
     invoke-virtual {v0}, Lcom/dsemu/drastic/DraSticGlView;->onResume()V
 
     :cond_1
+    iget-object v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->F:Landroid/app/Presentation;
+
+    if-eqz v0, :cond_2
+
+    invoke-virtual {v0}, Landroid/app/Presentation;->show()V
+
+    :cond_2
     return-void
 .end method
 

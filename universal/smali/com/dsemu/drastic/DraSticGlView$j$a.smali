@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/dsemu/drastic/DraSticGlView$j;->d()V
+    value = Lcom/dsemu/drastic/DraSticGlView$j;->loadFX()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

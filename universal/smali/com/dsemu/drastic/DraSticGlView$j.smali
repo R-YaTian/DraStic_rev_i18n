@@ -322,7 +322,7 @@
     .end array-data
 .end method
 
-.method private d()V
+.method private loadFX()V
     .locals 3
 
     invoke-static {}, Lf0/h;->g()Ljava/lang/String;
@@ -1791,7 +1791,7 @@
     const/16 v8, 0xc0
 
     :goto_3
-    invoke-direct/range {p0 .. p0}, Lcom/dsemu/drastic/DraSticGlView$j;->d()V
+    invoke-direct/range {p0 .. p0}, Lcom/dsemu/drastic/DraSticGlView$j;->loadFX()V
 
     const/4 v9, 0x0
 
@@ -3345,7 +3345,7 @@
     const/16 v1, 0x100
 
     :goto_0
-    invoke-direct/range {p0 .. p0}, Lcom/dsemu/drastic/DraSticGlView$j;->d()V
+    invoke-direct/range {p0 .. p0}, Lcom/dsemu/drastic/DraSticGlView$j;->loadFX()V
 
     new-instance v4, Lf0/n;
 
