@@ -69,9 +69,5 @@
             <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
             <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
         </provider>
-        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
-        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
-        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
-        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
     </application>
 </manifest>
