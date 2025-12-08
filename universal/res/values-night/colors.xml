@@ -2,4 +2,10 @@
 <resources>
     <color name="menu_text_color">#ffffffff</color>
     <color name="menu_bg_header">#ff222222</color>
+    <color name="menu_game_bg">#ff1b1b1b</color>
+    <color name="menu_bg_center">#ff1b1b1b</color>
+    <color name="item_big">#ffffffff</color>
+    <color name="darkgrey">#ffcccccc</color>
+    <color name="btn_normal">#ff333333</color>
+    <color name="btn_pressed">#ff444444</color>
 </resources>

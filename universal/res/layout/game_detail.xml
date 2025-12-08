@@ -11,7 +11,7 @@
     </RelativeLayout>
     <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" />
     <LinearLayout android:orientation="horizontal" android:background="@color/menu_bg_detail" android:paddingLeft="16.0dip" android:paddingTop="6.0dip" android:paddingRight="16.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip">
-        <RelativeLayout android:background="@color/menu_game_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/menu_game_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:forceDarkAllowed="false">
             <ImageView android:id="@id/game_detail_img" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="2.0dip" android:contentDescription="@null" />
             <ImageView android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/rom_detail_overlay" android:contentDescription="@null" />
         </RelativeLayout>
