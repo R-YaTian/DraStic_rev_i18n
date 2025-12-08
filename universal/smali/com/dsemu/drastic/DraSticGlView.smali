@@ -2920,7 +2920,7 @@
 
     iget v5, v4, Ln0/d;->d:I
 
-    invoke-virtual {p1, v5}, Landroid/view/MotionEvent;->getX(I)F
+    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v5
 
@@ -2932,7 +2932,7 @@
 
     iget v5, v4, Ln0/d;->d:I
 
-    invoke-virtual {p1, v5}, Landroid/view/MotionEvent;->getY(I)F
+    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result v5
 
