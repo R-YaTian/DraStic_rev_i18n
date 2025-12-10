@@ -11,9 +11,9 @@
         </TableRow>
         <View android:background="#ff666666" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
     </TableLayout>
-    <ScrollView android:id="@id/set_content" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:defaultFocusHighlightEnabled="false">
+    <ScrollView android:id="@id/set_content" android:background="@color/menu_bg_center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:defaultFocusHighlightEnabled="false" android:forceDarkAllowed="false">
         <ViewAnimator android:id="@id/help_animator" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:forceDarkAllowed="false">
+            <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
                 <TextView android:id="@id/btn_help_instructions" android:focusable="false" android:text="@string/str_hm_instructions" style="@style/drastic_option_item" />
                 <View style="@style/drastic_thin_seperator" />
                 <TextView android:id="@id/btn_help_faq" android:focusable="false" android:text="@string/str_hm_faq" style="@style/drastic_option_item" />
