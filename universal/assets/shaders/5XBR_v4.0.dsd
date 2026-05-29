@@ -189,20 +189,7 @@ varying vec4 v_texture_coordinate_7;
       bvec4 fx_up    = greaterThan(Ay * fp.y + By * fp.x, Cy);
       bvec4 fx3_left = greaterThan(Az * fp.y + Bz * fp.x, Cz);
       bvec4 fx3_up   = greaterThan(Aw * fp.y + Bw * fp.x, Cw);
-	  
-     // bvec4 t1 = _and_( notEqual(e, f), notEqual(e, h) );
-     // bvec4 t2 = _and_( not(close(f, b)), not(close(h, d)));
-     // bvec4 t3 = _and_( not(close(f, i4)), not(close(h, i5)));
-     // bvec4 t4 = _or_( close(e, g), close(e, c) );
-     // bvec4 t5 = _and_( close(e, i), _or_(t3, t4) );
-     // bvec4 t6 = _and_( notEqual(f, f4), notEqual(f, i));
-     // bvec4 t7 = _and_( notEqual(h, h5), notEqual(h, i));
-     // bvec4 t8 = _or_( notEqual(h, g), notEqual(f, c));
-     // bvec4 t9 = _and_( close(b, c1), close(d, g0));
-	 // bvec4 t10 = _or_(t2, t5);
-	 // bvec4 t11 = _or_(_or_(t6, t7), _or_(t8, t9));
-	 // bvec4 interp_restriction_lv1 = _and_(t1, _and_(t10, t11));
-	  
+
       bvec4 t1 = _and_( notEqual(e, f), notEqual(e, h) );
       bvec4 t2 = _and_( not(close(f, b)), not(close(h, d)) );
       bvec4 t3 = _and_( not(close(h, i4)), not(close(h, i5)) );
@@ -211,14 +198,14 @@ varying vec4 v_texture_coordinate_7;
       bvec4 t6 = _and_( close(e, i), _or_(t4, t5) );
       bvec4 t7 = _or_( close(e, g), close(e, c) );
       bvec4 t8 = _and_( close(b, c1), close(d, g0));
-	  bvec4 t9 = _or_( notEqual(h, g), notEqual(f, c));
+      bvec4 t9 = _or_( notEqual(h, g), notEqual(f, c));
       bvec4 interp_restriction_lv1 = _and_( t1, _or_(_or_(_or_( _or_( _or_(t2, t3), t6 ), t7 ), t8), t9 ));
-	  
+
       bvec4 interp_restriction_lv2_left = _and_( notEqual(e, g), notEqual(d, g) );
       bvec4 interp_restriction_lv2_up   = _and_( notEqual(e, c), notEqual(b, c) );
       bvec4 interp_restriction_lv3_left = _and_( eq2(g,g0), not(eq2(d0,g0)) );
       bvec4 interp_restriction_lv3_up   = _and_( eq2(c,c1), not(eq2(b1,c1)) );
-	  
+
       bvec4 edr      = _and_( lessThan(weighted_distance(e, c, g, i, h5, f4, h, f), 
                                        weighted_distance(h, d, i5, f, i4, b, e, i)), interp_restriction_lv1 );
       bvec4 edr_left = _and_( lessThanEqual(coef * df(f, g), df(h, c)), interp_restriction_lv2_left );
@@ -227,7 +214,7 @@ varying vec4 v_texture_coordinate_7;
       bvec4 edr3_up = interp_restriction_lv3_up;
 
 
-	  
+
 	  bvec4 t13 = _or_(fx_left, _and_(edr3_left, fx3_left));
 	  bvec4 t14 = _or_(fx_up, _and_(edr3_up, fx3_up));
 	  bvec4 nc = _and_(edr, _or_(fx,  _or_(_and_(edr_left, t13), _and_(edr_up, t14))));

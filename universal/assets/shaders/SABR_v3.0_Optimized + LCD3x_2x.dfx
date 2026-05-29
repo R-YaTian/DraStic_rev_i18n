@@ -30,7 +30,7 @@ mag_filter=GL_NEAREST
 </texture>
 
 <pass>
-shader=SABR_v3.0_Optimized + LCD3x.dsd
+shader=SABR_v3.0_Optimized.dsd
 sampler:u_texture=0
 output=1:3
 </pass>

@@ -49,15 +49,11 @@ uniform sampler2D u_texture;
 uniform vec4 u_texture_size;
 varying vec4 v_texture_coordinate;
 varying vec4 v_texture_coordinate_1;
-	const float InputGamma  = 2.4;
-    const float OutputGamma = 2.2;
 
-    // 0.5 = ?�y?�b�������W - �O�d��l����--//--���y�u�b�������W-�O�d��l����.--//
-    // 1.0 = ?�y?�b�������U - ?�J��������--//--���y�u�b�������U-���J��������.--//
-    const float SPOT_HEIGHT = 0.5;
-
-	// ---�Τ_����?����?�M�� �p�̹�?�G--//--�Ω�����L�������M��-�p�ù��ӫG.--//
-    const float COLOR_BOOST = 1.30; // Default:1.45
+const float InputGamma  = 2.4;
+const float OutputGamma = 2.2;
+const float SPOT_HEIGHT = 0.5;
+const float COLOR_BOOST = 1.30; // Default:1.45
 
 const float coef = 2.0;
 const vec3 dtt = vec3(65536.0, 255.0, 1.0);

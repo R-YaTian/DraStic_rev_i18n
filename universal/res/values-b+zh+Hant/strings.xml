@@ -378,6 +378,7 @@ DraStic正在努力生成一個恢復存檔。若成功的話, 您在下次打�
     <string name="str_sm_state_played">時間</string>
     <string name="str_sm_state_size">大小</string>
     <string name="str_sm_state_version">保存於</string>
+    <string name="str_sys_copyingshaders">正在解壓縮著色器檔案</string>
     <string name="str_sys_copyingsysfolder">移動資料</string>
     <string name="str_sys_deletesysfolder">刪除資料</string>
     <string name="str_ui_gamedetail">開始遊戲</string>

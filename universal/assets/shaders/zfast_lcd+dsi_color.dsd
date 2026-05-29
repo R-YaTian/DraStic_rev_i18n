@@ -1,0 +1,115 @@
+// zfast_lcd+dsi_color - A very simple LCD shader meant to be used at 1080p
+// 
+// - Original 'zfast_lcd' code copyright (C) 2017 Greg Hogan (SoltanGris42)
+// 
+// - DSi colour profile derived from Pokefan531's DS Lite colour correction
+//   (hunterk's Color Mangler, public domain), with warm-shift adjustments
+//   to approximate the Nintendo DSi's characteristically warmer white point
+//   and slightly higher contrast compared to the DS Lite
+// 
+// 'Ported' (i.e. copy/paste) to DraStic format by jdgleaver
+// 
+// This program is free software; you can redistribute it and/or modify it
+// under the terms of the GNU General Public License as published by the Free
+// Software Foundation; either version 2 of the License, or (at your option)
+// any later version.
+// 
+// Notes: This shader applies colour correction to mimic the display
+//        characteristics of a Nintendo DSi. The DSi screen is known to have
+//        a slightly warmer white point and better contrast compared to the
+//        DS Lite, while still being much closer to sRGB than the original
+//        NDS Phat. The colour matrix is derived from Pokefan531's calibrated
+//        DS Lite sRGB profile with a subtle warm bias applied.
+//        A simple grid effect is then applied, darkening the borders of
+//        'virtual' pixels at the native NDS resolution to imitate an LCD
+//        screen. You can change the darkness/thickness of the borders.
+//        The shader is compatible with both 'native' and 'high resolution' 3D
+//        rendering modes.
+// 
+// *** Integer screen scaling is recommended for best results
+=============================================
+
+<vertex>
+
+attribute vec2 a_vertex_coordinate;
+attribute vec2 a_texture_coordinate;
+uniform vec4 u_texture_size;
+
+varying vec2 v_texture_coordinate;
+
+void main()
+{
+	v_texture_coordinate = a_texture_coordinate;
+	gl_Position = vec4(a_vertex_coordinate.xy, 0.0, 1.0);
+}
+
+</vertex>
+
+<fragment>
+
+#ifndef BORDERMULT
+#define BORDERMULT 14.0
+#endif
+
+// Colour defines (Nintendo DSi colour profile)
+// Derived from Pokefan531's DS Lite sRGB profile with warm-shift adjustments:
+//   - Slightly warmer white point (reduced blue, increased red/green cross-talk)
+//   - Slightly higher luminance (DSi has better contrast perception)
+//   - DSi white balance: R≈1.02 G≈1.02 B≈0.99 (subtle warm tint vs DS Lite's neutral 1:1:1)
+#define target_gamma 2.2
+#define display_gamma 2.2
+#define lum 0.94
+#define r 0.935
+#define g 0.89
+#define b 0.99
+#define rg 0.04
+#define rb 0.02
+#define gr 0.16
+#define gb -0.02
+#define br -0.075
+#define bg 0.09
+
+uniform sampler2D u_texture;
+uniform vec4 u_texture_size;
+
+varying vec2 v_texture_coordinate;
+
+const float NDS_SCREEN_HEIGHT = 192.0;
+
+void main()
+{
+	// Generate grid pattern (in native NDS coordinate space)
+	// - Have to divide by the current scale factor...
+	//   There can only be two values here:
+	//   > 'High-Resolution 3D Rendering' OFF - scale factor == 1
+	//   > 'High-Resolution 3D Rendering' ON  - scale factor == 2
+	//   But it's easiest to assume the general case...
+	//    scale_factor == texture_height / NDS_SCREEN_HEIGHT
+	vec2 texcoordInPixels = v_texture_coordinate.xy * u_texture_size.zw * (NDS_SCREEN_HEIGHT * u_texture_size.y);
+	vec2 centerCoord = floor(texcoordInPixels.xy) + vec2(0.5, 0.5);
+	vec2 distFromCenter = abs(centerCoord - texcoordInPixels);
+	
+	float Y = max(distFromCenter.x, distFromCenter.y);
+	
+	Y = Y * Y;
+	float YY = Y * Y;
+	float YYY = YY * Y;
+	
+	float LineWeight = YY - 2.7 * YYY;
+	LineWeight = 1.0 - BORDERMULT * LineWeight;
+	
+	// Apply colour correction (DSi profile)
+	vec3 screen = pow(texture2D(u_texture, v_texture_coordinate.xy).rgb, vec3(target_gamma));
+	screen = clamp(screen * lum, 0.0, 1.0);
+	screen = pow(
+		mat3(r,  rg, rb,
+			  gr, g,  gb,
+			  br, bg, b) * screen,
+		vec3(1.0 / display_gamma)
+	);
+	
+	// Add grid lines
+	gl_FragColor = vec4(screen * LineWeight, 1.0);
+}
+
+</fragment>

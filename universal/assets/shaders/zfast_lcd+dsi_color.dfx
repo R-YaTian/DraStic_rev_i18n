@@ -1,7 +1,8 @@
-
+// zfast_lcd+dsi_color shader
+=============================================
 <options>
-name=cartoon
-textures=4
+name=zFast LCD + DSi Color
+textures=1
 </options>
 
 <fheader>
@@ -12,6 +13,8 @@ precision highp float;
 precision mediump float;
 #endif
 #endif
+// Configuration: BORDERMULT "Border Multiplier" 14.0 -40.0 40.0 1.0
+#define BORDERMULT 14.0
 </fheader>
 
 <texture:0>
@@ -20,10 +23,7 @@ min_filter=GL_NEAREST
 mag_filter=GL_NEAREST
 </texture>
 
-
 <pass>
-shader=cartoon.dsd
+shader=zfast_lcd+dsi_color.dsd
 sampler:u_texture=0
-output=1:2
 </pass>
-

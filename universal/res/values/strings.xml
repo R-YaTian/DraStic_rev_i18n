@@ -412,6 +412,7 @@ to Game"</string>
     <string name="str_sm_state_played">Played</string>
     <string name="str_sm_state_size">Size</string>
     <string name="str_sm_state_version">Recorded on</string>
+    <string name="str_sys_copyingshaders">Extracting shader files</string>
     <string name="str_sys_copyingsysfolder">Moving Data</string>
     <string name="str_sys_deletesysfolder">Deleting Data</string>
     <string name="str_ui_gamedetail">Start Game</string>

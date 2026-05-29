@@ -2396,6 +2396,7 @@
     <public type="string" name="str_sm_state_played" id="0x7f0f017e" />
     <public type="string" name="str_sm_state_size" id="0x7f0f017f" />
     <public type="string" name="str_sm_state_version" id="0x7f0f0180" />
+    <public type="string" name="str_sys_copyingshaders" id="0x7f0f0181" />
     <public type="string" name="str_sys_copyingsysfolder" id="0x7f0f0182" />
     <public type="string" name="str_sys_deletesysfolder" id="0x7f0f0183" />
     <public type="string" name="str_ui_gamedetail" id="0x7f0f0184" />

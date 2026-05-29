@@ -30,7 +30,7 @@ mag_filter=GL_NEAREST
 </texture>
 
 <pass>
-shader=5XBR_v3.7A + LCD3x.dsd
+shader=5XBR_v3.7A.dsd
 sampler:u_texture=0
 output=1:2
 </pass>

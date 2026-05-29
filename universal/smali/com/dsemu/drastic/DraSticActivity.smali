@@ -4396,7 +4396,7 @@
     invoke-static {v2}, Lcom/dsemu/drastic/ui/q;->p(Ljava/lang/String;)V
 
     :cond_c
-    invoke-direct {p0}, Lcom/dsemu/drastic/DraSticActivity;->k0()V
+    invoke-direct {p0}, Lcom/dsemu/drastic/DraSticActivity;->installShadersThread()V
 
     invoke-direct {p0}, Lcom/dsemu/drastic/DraSticActivity;->l0()V
 
@@ -5856,7 +5856,7 @@
     return-void
 .end method
 
-.method private k0()V
+.method public k0(Landroid/app/AlertDialog;)V
     .locals 3
 
     sget v0, Lf0/h;->m:I
@@ -5884,6 +5884,8 @@
     move-result-object v1
 
     invoke-direct {p0, v2, v1, v0}, Lcom/dsemu/drastic/DraSticActivity;->g0(Ljava/lang/String;Lcom/dsemu/drastic/filesystem/b;Z)V
+
+    invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V
 
     return-void
 .end method
@@ -6499,6 +6501,60 @@
     const/16 p2, 0x18
 
     invoke-static {p0, p2, p1}, Lcom/dsemu/drastic/filesystem/c;->l(Landroid/app/Activity;ILandroid/net/Uri;)V
+
+    return-void
+.end method
+
+.method private synthetic installShadersThread()V
+    .locals 5
+
+    const/4 v2, 0x0
+
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    const v3, 0x7f0f01ab
+
+    invoke-virtual {v4, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const v3, 0x7f0f0181
+
+    invoke-virtual {v4, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    new-instance v4, Landroid/app/AlertDialog$Builder;
+
+    invoke-direct {v4, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v4, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v3}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+
+    invoke-virtual {v4}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/app/Dialog;->show()V
+
+    new-instance v0, Ljava/lang/Thread;
+
+    new-instance v1, Lcom/dsemu/drastic/DraSticActivity$k0;
+
+    invoke-direct {v1, p0, v4}, Lcom/dsemu/drastic/DraSticActivity$k0;-><init>(Lcom/dsemu/drastic/DraSticActivity;Landroid/app/AlertDialog;)V
+
+    invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     return-void
 .end method

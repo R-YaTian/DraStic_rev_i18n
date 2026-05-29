@@ -1,7 +1,7 @@
 
 <options>
-name=nataa
-textures=2
+name=5XBR_v3.7a_CRT Very High
+textures=1
 </options>
 
 <fheader>
@@ -20,11 +20,7 @@ min_filter=GL_NEAREST
 mag_filter=GL_NEAREST
 </texture>
 
-
-
 <pass>
-shader=nataa.dsd
+shader=5XBR_v3.7a_CRT + High Configuration.dsd
 sampler:u_texture=0
-output=1:2
 </pass>
-
