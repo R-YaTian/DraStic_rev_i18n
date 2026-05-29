@@ -8514,11 +8514,11 @@
     goto :goto_0
 
     :cond_2
-    const/16 v2, 0x14
+    const/16 v2, 0x32
 
     if-le v1, v2, :cond_3
 
-    const/16 v1, 0x14
+    const/16 v1, 0x32
 
     :cond_3
     :goto_0

@@ -57,7 +57,7 @@
             <TextView android:text="@string/str_set_extdisplay_border" style="@style/drastic_option_item_subhdr_text" />
             <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
                 <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/item_selection" android:layout_gravity="left" android:id="@id/set_extborder_value" android:layout_width="48.0sp" android:layout_height="wrap_content" android:layout_marginLeft="32.0sp" android:layout_marginTop="14.0sp" android:layout_marginRight="10.0sp" />
-                <SeekBar android:layout_gravity="left" android:id="@id/sb_extborder_value" android:paddingTop="12.0dip" android:paddingBottom="18.0dip" android:layout_width="180.0sp" android:layout_height="wrap_content" android:max="20" android:progress="0" android:layout_toRightOf="@id/set_extborder_value" android:layout_centerInParent="false" android:layout_centerHorizontal="false" />
+                <SeekBar android:layout_gravity="left" android:id="@id/sb_extborder_value" android:paddingTop="12.0dip" android:paddingBottom="18.0dip" android:layout_width="180.0sp" android:layout_height="wrap_content" android:max="50" android:progress="0" android:layout_toRightOf="@id/set_extborder_value" android:layout_centerInParent="false" android:layout_centerHorizontal="false" />
             </RelativeLayout>
         </TableLayout>
     </ScrollView>
