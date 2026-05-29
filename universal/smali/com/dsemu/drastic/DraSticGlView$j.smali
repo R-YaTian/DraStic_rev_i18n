@@ -612,7 +612,7 @@
     return-void
 .end method
 
-.method private final l()V
+.method private final updateScreenLayout()V
     .locals 25
 
     move-object/from16 v0, p0
@@ -713,7 +713,7 @@
 
     move-result v12
 
-    invoke-virtual/range {v6 .. v12}, Lo0/b;->d(Landroid/content/Context;IIIIZ)V
+    invoke-virtual/range {v6 .. v12}, Lo0/b;->init(Landroid/content/Context;IIIIZ)V
 
     iget-object v2, v0, Lcom/dsemu/drastic/DraSticGlView$j;->P:Le0/b1;
 
@@ -995,19 +995,9 @@
     iput v6, v0, Lcom/dsemu/drastic/DraSticGlView$j;->H:I
 
     :cond_6
-    iget-object v7, v0, Lcom/dsemu/drastic/DraSticGlView$j;->Q:Lcom/dsemu/drastic/DraSticGlView;
+    iget-boolean v7, v0, Lcom/dsemu/drastic/DraSticGlView$j;->K:Z
 
-    invoke-static {v7}, Lcom/dsemu/drastic/DraSticGlView;->A(Lcom/dsemu/drastic/DraSticGlView;)I
-
-    move-result v7
-
-    const/4 v6, 0x3
-
-    if-eq v7, v6, :single_screen
-
-    const/4 v6, 0x4
-
-    if-eq v7, v6, :single_screen
+    if-eqz v7, :single_screen
 
     iget-boolean v6, v0, Lcom/dsemu/drastic/DraSticGlView$j;->L:Z
 
@@ -1746,7 +1736,7 @@
 
     iput-boolean v5, v0, Lcom/dsemu/drastic/DraSticGlView$j;->J:Z
 
-    invoke-direct/range {p0 .. p0}, Lcom/dsemu/drastic/DraSticGlView$j;->l()V
+    invoke-direct/range {p0 .. p0}, Lcom/dsemu/drastic/DraSticGlView$j;->updateScreenLayout()V
 
     iget-object v1, v0, Lcom/dsemu/drastic/DraSticGlView$j;->Q:Lcom/dsemu/drastic/DraSticGlView;
 
@@ -1836,6 +1826,10 @@
 
     :check_swap
     const/4 v8, 0x0
+
+    iget-boolean v6, v0, Lcom/dsemu/drastic/DraSticGlView$j;->K:Z
+
+    if-nez v6, :pass_touch_lock
 
     if-nez v7, :pass_touch_lock
 
@@ -2624,6 +2618,10 @@
     goto :pass_touch_lock_1
 
     :check_swap_1
+    iget-boolean v10, v0, Lcom/dsemu/drastic/DraSticGlView$j;->K:Z
+
+    if-nez v10, :pass_touch_lock_1
+
     if-nez v12, :pass_touch_lock_1
 
     const/4 v13, 0x0
@@ -4021,28 +4019,19 @@
 .end method
 
 .method public isSingleLayout()Z
-    .locals 2
+    .locals 1
 
-    iget-object v0, p0, Lcom/dsemu/drastic/DraSticGlView$j;->Q:Lcom/dsemu/drastic/DraSticGlView;
+    iget-boolean v0, p0, Lcom/dsemu/drastic/DraSticGlView$j;->K:Z
 
-    invoke-static {v0}, Lcom/dsemu/drastic/DraSticGlView;->A(Lcom/dsemu/drastic/DraSticGlView;)I
-
-    move-result v0
-
-    const/4 v1, 0x3
-
-    if-eq v0, v1, :cond_0
-
-    const/4 v1, 0x4
-
-    if-eq v0, v1, :cond_0
-
-    const/4 v0, 0x0
+    xor-int/lit8 v0, v0, 0x1
 
     return v0
+.end method
 
-    :cond_0
-    const/4 v0, 0x1
+.method static synthetic isBottomScreenActived(Lcom/dsemu/drastic/DraSticGlView$j;)Z
+    .locals 0
 
-    return v0
+    iget-boolean p0, p0, Lcom/dsemu/drastic/DraSticGlView$j;->K:Z
+
+    return p0
 .end method

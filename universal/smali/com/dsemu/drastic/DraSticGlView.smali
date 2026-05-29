@@ -2626,6 +2626,14 @@
     goto :pass_pointer_lock
 
     :check_swap
+    iget-object v2, p0, Lcom/dsemu/drastic/DraSticGlView;->e:Lcom/dsemu/drastic/DraSticGlView$j;
+
+    invoke-static {v2}, Lcom/dsemu/drastic/DraSticGlView$j;->isBottomScreenActived(Lcom/dsemu/drastic/DraSticGlView$j;)Z
+
+    move-result v2
+
+    if-nez v2, :pass_pointer_lock
+
     if-nez v1, :pass_pointer_lock
 
     goto :goto_0
@@ -2795,6 +2803,14 @@
     goto :pass_touch_lock
 
     :check_swap
+    iget-object v2, p0, Lcom/dsemu/drastic/DraSticGlView;->e:Lcom/dsemu/drastic/DraSticGlView$j;
+
+    invoke-static {v2}, Lcom/dsemu/drastic/DraSticGlView$j;->isBottomScreenActived(Lcom/dsemu/drastic/DraSticGlView$j;)Z
+
+    move-result v2
+
+    if-nez v2, :pass_touch_lock
+
     if-nez v1, :pass_touch_lock
 
     const/4 v6, 0x1

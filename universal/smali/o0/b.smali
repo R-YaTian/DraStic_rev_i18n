@@ -666,7 +666,7 @@
     return-void
 .end method
 
-.method public d(Landroid/content/Context;IIIIZ)V
+.method public init(Landroid/content/Context;IIIIZ)V
     .locals 29
 
     move-object/from16 v0, p0
