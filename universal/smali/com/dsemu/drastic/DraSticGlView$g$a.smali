@@ -81,6 +81,8 @@
 
     invoke-static {p2, v0}, Lcom/dsemu/drastic/DraSticGlView;->i0(Lcom/dsemu/drastic/DraSticGlView;Z)Z
 
+    invoke-static {p2}, Lcom/dsemu/drastic/DraSticGlView;->tryUpdateExtScreen(Lcom/dsemu/drastic/DraSticGlView;)V
+
     :cond_0
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 

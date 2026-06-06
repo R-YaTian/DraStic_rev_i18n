@@ -462,6 +462,25 @@
     return p1
 .end method
 
+.method static synthetic tryUpdateExtScreen(Lcom/dsemu/drastic/DraSticGlView;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/dsemu/drastic/DraSticGlView;->k:Lcom/dsemu/drastic/DraSticEmuActivity;
+
+    invoke-static {v0}, Lcom/dsemu/drastic/DraSticEmuActivity;->f(Lcom/dsemu/drastic/DraSticEmuActivity;)Landroid/app/Presentation;
+
+    move-result-object v0
+
+    if-eqz v0, :return
+
+    invoke-virtual {v0}, Landroid/app/Presentation;->dismiss()V
+
+    invoke-virtual {v0}, Landroid/app/Presentation;->show()V
+
+    :return
+    return-void
+.end method
+
 .method static synthetic j0(Lcom/dsemu/drastic/DraSticGlView;)Lo0/b;
     .locals 0
 
