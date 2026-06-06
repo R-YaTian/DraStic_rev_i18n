@@ -258,6 +258,7 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_menu_global_options">全局设置</string>
     <string name="str_set_menu_override_msg">被单一游戏设置覆盖的选项已被划掉</string>
     <string name="str_set_menu_singlelayout_usebottom">单屏布局输出DS下屏幕</string>
+    <string name="str_set_fastmenu_usetvmode">快捷菜单使用TV模式风格</string>
     <string name="str_set_menubtn">禁用菜单键</string>
     <string name="str_set_menubtn_pos">菜单键位置</string>
     <string name="str_set_menubtn_warn">隐藏菜单键，请确保您已经设置好打开菜单用的按键</string>

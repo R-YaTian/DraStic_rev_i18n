@@ -713,6 +713,11 @@
 
     move-result v12
 
+    if-nez v12, :is_tv_mode
+
+    sget-boolean v12, Lf0/h;->fastmenuTV:Z
+
+    :is_tv_mode
     invoke-virtual/range {v6 .. v12}, Lo0/b;->init(Landroid/content/Context;IIIIZ)V
 
     iget-object v2, v0, Lcom/dsemu/drastic/DraSticGlView$j;->P:Le0/b1;

@@ -144,6 +144,8 @@
 
 .field public static fb:Z
 
+.field public static fastmenuTV:Z
+
 .field public static f1:Z
 
 .field public static g:Ljava/lang/String;
@@ -358,6 +360,8 @@
     sput-boolean v0, Lf0/h;->f0:Z
 
     sput-boolean v0, Lf0/h;->fb:Z
+
+    sput-boolean v0, Lf0/h;->fastmenuTV:Z
 
     sput-boolean v0, Lf0/h;->g0:Z
 
@@ -953,6 +957,12 @@
     const-string v2, "_UseBottomInSingleLayout"
 
     sget-boolean v3, Lf0/h;->fb:Z
+
+    invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    const-string v2, "_UseTVModeFastMenu"
+
+    sget-boolean v3, Lf0/h;->fastmenuTV:Z
 
     invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
@@ -4783,6 +4793,14 @@
     move-result v0
 
     sput-boolean v0, Lf0/h;->fb:Z
+
+    const-string v0, "_UseTVModeFastMenu"
+
+    invoke-interface {v2, v0, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    sput-boolean v0, Lf0/h;->fastmenuTV:Z
 
     const-string v0, "_Threaded3D"
 

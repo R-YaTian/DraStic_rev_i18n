@@ -109,7 +109,7 @@
 
     const/16 v9, 0xf
 
-    const/16 v2, 0xf
+    const/16 v2, 0x10
 
     new-array v9, v2, [I
 
@@ -350,6 +350,7 @@
         0x7f09009a
         0x7f0900f6
         0x7f090104
+        0x7f090105
         0x7f09021f
         0x7f09021a
         0x7f090234
@@ -3949,6 +3950,13 @@
 
     goto/16 :goto_8
 
+    :sswitch_5
+    check-cast p1, Landroid/widget/CheckBox;
+
+    sget-boolean p2, Lf0/h;->fastmenuTV:Z
+
+    goto/16 :goto_c
+
     :sswitch_4
     check-cast p1, Landroid/widget/CheckBox;
 
@@ -4182,6 +4190,7 @@
         0x7f0900e0 -> :sswitch_3
         0x7f090103 -> :sswitch_2
         0x7f090104 -> :sswitch_4
+        0x7f090105 -> :sswitch_5
         0x7f0901f9 -> :sswitch_1
         0x7f09021d -> :sswitch_0
     .end sparse-switch
@@ -5907,6 +5916,17 @@
 
     goto/16 :goto_1c
 
+    :pswitch_1y
+    check-cast p1, Landroid/widget/CheckBox;
+
+    invoke-virtual {p1}, Landroid/widget/CompoundButton;->isChecked()Z
+
+    move-result p1
+
+    sput-boolean p1, Lf0/h;->fastmenuTV:Z
+
+    goto/16 :goto_1c
+
     :pswitch_1d
     check-cast p1, Landroid/widget/CheckBox;
 
@@ -6964,6 +6984,7 @@
         :pswitch_1d
         :pswitch_1c
         :pswitch_1x
+        :pswitch_1y
     .end packed-switch
 
     :pswitch_data_5

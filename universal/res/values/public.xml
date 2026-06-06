@@ -1427,6 +1427,7 @@
     <public type="id" name="cb_threaded_game" id="0x7f090102" />
     <public type="id" name="cb_touchthrough" id="0x7f090103" />
     <public type="id" name="cb_singlelayout_usebottom" id="0x7f090104" />
+    <public type="id" name="cb_fastmenu_usetv" id="0x7f090105" />
     <public type="id" name="center" id="0x7f090304" />
     <public type="id" name="center_horizontal" id="0x7f090305" />
     <public type="id" name="center_vertical" id="0x7f090306" />
@@ -2359,6 +2360,7 @@
     <public type="string" name="str_set_rtc_system_time" id="0x7f0f0155" />
     <public type="string" name="str_set_rumble_dev" id="0x7f0f0156" />
     <public type="string" name="str_set_rumble_dev_title" id="0x7f0f0157" />
+    <public type="string" name="str_set_fastmenu_usetvmode" id="0x7f0f0158" />
     <public type="string" name="str_set_settings" id="0x7f0f0159" />
     <public type="string" name="str_set_settings_game" id="0x7f0f015a" />
     <public type="string" name="str_set_showfps" id="0x7f0f015b" />

@@ -71,6 +71,12 @@
 
     iget-object p2, p2, Lcom/dsemu/drastic/DraSticGlView$g;->e:Lcom/dsemu/drastic/DraSticGlView;
 
+    invoke-static {p2}, Lcom/dsemu/drastic/DraSticGlView;->e0(Lcom/dsemu/drastic/DraSticGlView;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lf0/h;->C(Landroid/content/Context;)V
+
     const/4 v0, 0x1
 
     invoke-static {p2, v0}, Lcom/dsemu/drastic/DraSticGlView;->i0(Lcom/dsemu/drastic/DraSticGlView;Z)Z
