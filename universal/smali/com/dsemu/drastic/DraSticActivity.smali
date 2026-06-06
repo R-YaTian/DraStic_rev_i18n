@@ -6544,8 +6544,25 @@
 
     move-result-object v4
 
+    invoke-static {}, Lcom/dsemu/drastic/filesystem/d;->i()Lcom/dsemu/drastic/filesystem/b;
+
+    move-result-object v1
+
+    const-string v2, "shaders"
+
+    invoke-interface {v1, v2}, Lcom/dsemu/drastic/filesystem/b;->u(Ljava/lang/String;)Lcom/dsemu/drastic/filesystem/b;
+
+    move-result-object v1
+
+    invoke-interface {v1, p0}, Lcom/dsemu/drastic/filesystem/b;->c(Landroid/content/Context;)Z
+
+    move-result v3
+
+    if-nez v3, :no_dialog
+
     invoke-virtual {v4}, Landroid/app/Dialog;->show()V
 
+    :no_dialog
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/dsemu/drastic/DraSticActivity$k0;
