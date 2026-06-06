@@ -312,11 +312,11 @@
 
     if-gez v8, :cond_5
 
-    # cmpl-float v8, p4, v7
+    cmpl-float v8, p4, v7
 
-    # if-ltz v8, :cond_4
+    if-ltz v8, :cond_4
 
-    # goto :goto_4
+    goto :goto_4
 
     :cond_4
     const/4 v8, 0x0
@@ -334,11 +334,11 @@
 
     if-lez p2, :cond_7
 
-    # cmpg-float p2, p4, v9
+    cmpg-float p2, p4, v9
 
-    # if-gtz p2, :cond_6
+    if-gtz p2, :cond_6
 
-    # goto :goto_6
+    goto :goto_6
 
     :cond_6
     const/4 p2, 0x0
@@ -354,11 +354,11 @@
 
     if-lez p4, :cond_9
 
-    # cmpg-float p4, p3, v9
+    cmpg-float p4, p3, v9
 
-    # if-gtz p4, :cond_8
+    if-gtz p4, :cond_8
 
-    # goto :goto_8
+    goto :goto_8
 
     :cond_8
     const/4 p4, 0x0
@@ -374,11 +374,11 @@
 
     if-gez p1, :cond_b
 
-    # cmpl-float p1, p3, v7
+    cmpl-float p1, p3, v7
 
-    # if-ltz p1, :cond_a
+    if-ltz p1, :cond_a
 
-    # goto :goto_a
+    goto :goto_a
 
     :cond_a
     const/4 p1, 0x0
@@ -1372,7 +1372,7 @@
 .end method
 
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
-    .locals 7
+    .locals 10
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "NewApi"
@@ -1440,6 +1440,29 @@
 
     move-result v4
 
+    const/4 v7, 0x0
+
+    cmpl-float v8, v3, v7
+
+    if-nez v8, :cond_2
+
+    cmpl-float v8, v4, v7
+
+    if-nez v8, :cond_2
+
+    const/16 v7, 0xc
+
+    invoke-virtual {p1, v7}, Landroid/view/MotionEvent;->getAxisValue(I)F
+
+    move-result v3
+
+    const/16 v7, 0xd
+
+    invoke-virtual {p1, v7}, Landroid/view/MotionEvent;->getAxisValue(I)F
+
+    move-result v4
+
+    :cond_2
     sget-boolean v5, Lf0/h;->G0:Z
 
     if-eqz v5, :cond_1
@@ -1459,7 +1482,7 @@
 
     move-result v6
 
-    invoke-direct {p0, v0, v2, v5, v6}, Lcom/dsemu/drastic/DraSticEmuActivity;->q(FFFF)Z
+    invoke-direct {p0, v0, v2, v3, v4}, Lcom/dsemu/drastic/DraSticEmuActivity;->q(FFFF)Z
 
     move-result v0
 
@@ -1469,29 +1492,6 @@
 
     if-eqz v0, :cond_3
 
-    const/4 v0, 0x0
-
-    cmpl-float v1, v3, v0
-
-    if-nez v1, :cond_2
-
-    cmpl-float v0, v4, v0
-
-    if-nez v0, :cond_2
-
-    const/16 v0, 0xc
-
-    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getAxisValue(I)F
-
-    move-result v3
-
-    const/16 v0, 0xd
-
-    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getAxisValue(I)F
-
-    move-result v4
-
-    :cond_2
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
 
     invoke-virtual {v0, v3, v4}, Lcom/dsemu/drastic/DraSticGlView;->u0(FF)V
