@@ -312,11 +312,11 @@
 
     if-gez v8, :cond_5
 
-    cmpl-float v8, p4, v7
+    # cmpl-float v8, p4, v7
 
-    if-ltz v8, :cond_4
+    # if-ltz v8, :cond_4
 
-    goto :goto_4
+    # goto :goto_4
 
     :cond_4
     const/4 v8, 0x0
@@ -334,11 +334,11 @@
 
     if-lez p2, :cond_7
 
-    cmpg-float p2, p4, v9
+    # cmpg-float p2, p4, v9
 
-    if-gtz p2, :cond_6
+    # if-gtz p2, :cond_6
 
-    goto :goto_6
+    # goto :goto_6
 
     :cond_6
     const/4 p2, 0x0
@@ -354,11 +354,11 @@
 
     if-lez p4, :cond_9
 
-    cmpg-float p4, p3, v9
+    # cmpg-float p4, p3, v9
 
-    if-gtz p4, :cond_8
+    # if-gtz p4, :cond_8
 
-    goto :goto_8
+    # goto :goto_8
 
     :cond_8
     const/4 p4, 0x0
@@ -374,11 +374,11 @@
 
     if-gez p1, :cond_b
 
-    cmpl-float p1, p3, v7
+    # cmpl-float p1, p3, v7
 
-    if-ltz p1, :cond_a
+    # if-ltz p1, :cond_a
 
-    goto :goto_a
+    # goto :goto_a
 
     :cond_a
     const/4 p1, 0x0
