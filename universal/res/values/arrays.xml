@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="set_analogstick_items">
-        <item>Off</item>
+        <item>Dpad</item>
         <item>FPS Mode</item>
         <item>Stick Mode</item>
         <item>Pointer Mode</item>

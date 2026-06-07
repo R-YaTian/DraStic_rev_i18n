@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="set_analogstick_items">
-        <item>無効</item>
+        <item>Dpad</item>
         <item>FPSモード</item>
         <item>スティックモード</item>
         <item>ポインタモード</item>

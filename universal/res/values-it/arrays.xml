@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="set_analogstick_items">
-        <item>Disabilitato</item>
+        <item>Dpad</item>
         <item>Modalità FPS</item>
         <item>Modalità Stick</item>
         <item>Modalità Puntatore</item>

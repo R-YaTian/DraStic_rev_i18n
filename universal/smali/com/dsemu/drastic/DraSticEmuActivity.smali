@@ -1470,19 +1470,23 @@
     invoke-static {v0, v2, v3, v4}, Lcom/dsemu/drastic/DraSticJNI;->luaUpdateAxisValues(FFFF)V
 
     :cond_1
-    const/16 v5, 0xf
+    sget-boolean v5, Lf0/h;->Y:Z
 
-    invoke-virtual {p1, v5}, Landroid/view/MotionEvent;->getAxisValue(I)F
+    if-eqz v5, :cond_5
 
-    move-result v5
+    const/16 v7, 0x0
 
-    const/16 v6, 0x10
+    const/16 v8, 0x0
 
-    invoke-virtual {p1, v6}, Landroid/view/MotionEvent;->getAxisValue(I)F
+    goto :pass_0
 
-    move-result v6
+    :cond_5
+    move v7, v3
 
-    invoke-direct {p0, v0, v2, v3, v4}, Lcom/dsemu/drastic/DraSticEmuActivity;->q(FFFF)Z
+    move v8, v4
+
+    :pass_0
+    invoke-direct {p0, v0, v2, v7, v8}, Lcom/dsemu/drastic/DraSticEmuActivity;->q(FFFF)Z
 
     move-result v0
 
@@ -1541,15 +1545,28 @@
     invoke-virtual {v1, v9, v0}, Lcom/dsemu/drastic/DraSticGlView;->v0(FF)V
 
     :cond_4
-    sget-boolean p1, Lf0/h;->Y:Z
+    const/16 v5, 0xf
 
-    if-nez p1, :cond_5
+    invoke-virtual {p1, v5}, Landroid/view/MotionEvent;->getAxisValue(I)F
 
-    sget-boolean p1, Lf0/h;->Z:Z
+    move-result v5
 
-    if-eqz p1, :cond_7
+    const/16 v6, 0x10
 
-    :cond_5
+    invoke-virtual {p1, v6}, Landroid/view/MotionEvent;->getAxisValue(I)F
+
+    move-result v6
+
+    const/4 v7, 0x0
+
+    cmpl-float v8, v5, v7
+
+    if-nez v8, :cond_6
+
+    cmpl-float v8, v6, v7
+
+    if-nez v8, :cond_6
+
     const-wide/16 v0, 0x5
 
     :try_start_0
@@ -1565,7 +1582,6 @@
     :cond_6
     const/4 v2, 0x0
 
-    :cond_7
     :goto_0
     return v2
 .end method

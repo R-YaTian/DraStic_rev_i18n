@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="set_analogstick_items">
-        <item>关</item>
+        <item>Dpad</item>
         <item>FPS 模式</item>
         <item>摇杆模式</item>
         <item>触笔模式</item>
