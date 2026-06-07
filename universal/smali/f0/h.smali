@@ -236,6 +236,8 @@
 
 .field public static t:I
 
+.field public static stickRotateType:I
+
 .field public static t0:Z
 
 .field public static u:I
@@ -278,6 +280,8 @@
     sput-wide v0, Lf0/h;->k:J
 
     const/4 v0, 0x0
+
+    sput v0, Lf0/h;->stickRotateType:I
 
     sput v0, Lf0/h;->l:I
 
@@ -1221,6 +1225,12 @@
     const-string v2, "_AnalogStickMode"
 
     sget v4, Lf0/h;->t:I
+
+    invoke-interface {v0, v2, v4}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+
+    const-string v2, "_AnalogStickRotateType"
+
+    sget v4, Lf0/h;->stickRotateType:I
 
     invoke-interface {v0, v2, v4}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
@@ -5161,6 +5171,16 @@
     move-result v0
 
     sput v0, Lf0/h;->t:I
+
+    const-string v0, "_AnalogStickRotateType"
+
+    const/4 v8, 0x0
+
+    invoke-interface {v2, v0, v8}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result v0
+
+    sput v0, Lf0/h;->stickRotateType:I
 
     const-string v0, "_MenuButtonPos"
 

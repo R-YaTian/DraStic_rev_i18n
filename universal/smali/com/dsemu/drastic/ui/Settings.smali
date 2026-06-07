@@ -97,9 +97,11 @@
 
     aput-object v7, v0, v8
 
-    const/16 v7, 0xb
+    const/16 v7, 0xc
 
     new-array v9, v7, [I
+
+    const/16 v7, 0xb
 
     fill-array-data v9, :array_4
 
@@ -197,7 +199,11 @@
 
     aput-object v14, v0, v6
 
+    const/16 v11, 0xb
+
     new-array v6, v11, [I
+
+    const/16 v11, 0xa
 
     fill-array-data v6, :array_d
 
@@ -331,6 +337,7 @@
         0x7f0900e6
         0x7f0900d9
         0x7f090219
+        0x7f090106
         0x7f09022f
         0x7f0901f3
         0x7f090251
@@ -447,6 +454,7 @@
         0x7f0900e6
         0x7f0900d9
         0x7f090219
+        0x7f090106
         0x7f09022f
         0x7f0901f3
         0x7f090251
@@ -1771,7 +1779,7 @@
 
     :cond_4
     :goto_3
-    invoke-direct {p0, v7, v6}, Lcom/dsemu/drastic/ui/Settings;->b0(Landroid/view/View;I)V
+    invoke-direct {p0, v7, v6}, Lcom/dsemu/drastic/ui/Settings;->setViewValues(Landroid/view/View;I)V
 
     :cond_5
     :goto_4
@@ -2604,7 +2612,7 @@
     return-void
 .end method
 
-.method private b0(Landroid/view/View;I)V
+.method private setViewValues(Landroid/view/View;I)V
     .locals 12
 
     if-nez p1, :cond_0
@@ -3950,6 +3958,41 @@
 
     goto/16 :goto_8
 
+    :sswitch_6
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    const p2, 0x7f030020
+
+    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_17
+
+    sget p2, Lf0/h;->stickRotateType:I
+
+    if-ltz p2, :cond_17
+
+    array-length v0, p1
+
+    if-ge p2, v0, :cond_17
+
+    const p2, 0x7f0902cf
+
+    invoke-virtual {p0, p2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/widget/TextView;
+
+    sget v0, Lf0/h;->stickRotateType:I
+
+    aget-object p1, p1, v0
+
+    goto :goto_1
+
     :sswitch_5
     check-cast p1, Landroid/widget/CheckBox;
 
@@ -4191,6 +4234,7 @@
         0x7f090103 -> :sswitch_2
         0x7f090104 -> :sswitch_4
         0x7f090105 -> :sswitch_5
+        0x7f090106 -> :sswitch_6
         0x7f0901f9 -> :sswitch_1
         0x7f09021d -> :sswitch_0
     .end sparse-switch
@@ -5894,6 +5938,35 @@
 
     goto/16 :goto_7
 
+    :pswitch_1z
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    const v0, 0x7f030020
+
+    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object p1
+
+    new-instance v0, Landroid/app/AlertDialog$Builder;
+
+    invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    const v1, 0x7f0f00ba
+
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/dsemu/drastic/ui/Settings$stickrotate;
+
+    invoke-direct {v2, p0, p1}, Lcom/dsemu/drastic/ui/Settings$stickrotate;-><init>(Lcom/dsemu/drastic/ui/Settings;[Ljava/lang/String;)V
+
+    invoke-virtual {v1, p1, v2}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    goto/16 :goto_7
+
     :pswitch_1c
     check-cast p1, Landroid/widget/CheckBox;
 
@@ -6985,6 +7058,7 @@
         :pswitch_1c
         :pswitch_1x
         :pswitch_1y
+        :pswitch_1z
     .end packed-switch
 
     :pswitch_data_5

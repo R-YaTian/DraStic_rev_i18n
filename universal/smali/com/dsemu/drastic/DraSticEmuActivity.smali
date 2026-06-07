@@ -1486,6 +1486,51 @@
     move v8, v4
 
     :pass_0
+    sget v5, Lf0/h;->stickRotateType:I
+
+    const/16 v9, 0x1
+
+    if-eq v5, v9, :turn_left
+
+    const/16 v9, 0x2
+
+    if-eq v5, v9, :turn_right
+
+    const/16 v9, 0x3
+
+    if-eq v5, v9, :turn_180
+
+    goto :pass_1
+
+    :turn_left
+    move v9, v0
+    move v0, v2
+    move v2, v9
+    move v9, v7
+    move v7, v8
+    move v8, v9
+    neg-float v2, v2
+    neg-float v8, v8
+    goto :pass_1
+
+    :turn_right
+    move v9, v0
+    move v0, v2
+    move v2, v9
+    move v9, v7
+    move v7, v8
+    move v8, v9
+    neg-float v0, v0
+    neg-float v7, v7
+    goto :pass_1
+
+    :turn_180
+    neg-float v0, v0
+    neg-float v2, v2
+    neg-float v7, v7
+    neg-float v8, v8
+
+    :pass_1
     invoke-direct {p0, v0, v2, v7, v8}, Lcom/dsemu/drastic/DraSticEmuActivity;->q(FFFF)Z
 
     move-result v0

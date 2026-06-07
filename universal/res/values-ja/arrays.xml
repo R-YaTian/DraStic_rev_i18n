@@ -6,6 +6,12 @@
         <item>スティックモード</item>
         <item>ポインタモード</item>
     </string-array>
+    <string-array name="set_analogrotate_items">
+        <item>無効</item>
+        <item>左に回転</item>
+        <item>右に回転</item>
+        <item>180°回転</item>
+    </string-array>
     <string-array name="set_audio_latency_items">
         <item>低い</item>
         <item>一般</item>

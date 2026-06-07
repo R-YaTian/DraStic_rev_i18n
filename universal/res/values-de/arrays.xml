@@ -6,6 +6,12 @@
         <item>Stick-Modus</item>
         <item>Zeiger-Modus</item>
     </string-array>
+    <string-array name="set_analogrotate_items">
+        <item>Aus</item>
+        <item>Nach links drehen</item>
+        <item>Nach rechts drehen</item>
+        <item>180° drehen</item>
+    </string-array>
     <string-array name="set_audio_latency_items">
         <item>Niedrig</item>
         <item>Mittel</item>

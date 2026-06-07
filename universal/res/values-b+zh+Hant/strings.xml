@@ -149,6 +149,8 @@ DraStic正在努力生成一個恢復存檔。若成功的話, 您在下次打�
     <string name="str_rom_shortcut">創建快捷方式</string>
     <string name="str_set_analogtouch">控制器右搖桿模式</string>
     <string name="str_set_analogtouch_title">右搖桿模式選擇</string>
+    <string name="str_set_analogrotate">控制器搖桿旋轉模式</string>
+    <string name="str_set_analogrotate_title">選擇控制器搖桿旋轉模式</string>
     <string name="str_set_analogtriggers">啟用控制器扳機鍵</string>
     <string name="str_set_autofirespeed">連發速度</string>
     <string name="str_set_sysdir">資料儲存目錄</string>

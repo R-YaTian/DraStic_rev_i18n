@@ -6,6 +6,12 @@
         <item>摇杆模式</item>
         <item>触笔模式</item>
     </string-array>
+    <string-array name="set_analogrotate_items">
+        <item>关</item>
+        <item>左转</item>
+        <item>右转</item>
+        <item>旋转 180°</item>
+    </string-array>
     <string-array name="set_audio_latency_items">
         <item>低</item>
         <item>中</item>

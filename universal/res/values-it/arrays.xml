@@ -6,6 +6,12 @@
         <item>Modalità Stick</item>
         <item>Modalità Puntatore</item>
     </string-array>
+    <string-array name="set_analogrotate_items">
+        <item>Disabilitato</item>
+        <item>Ruota a sinistra</item>
+        <item>Ruota a destra</item>
+        <item>Ruota 180°</item>
+    </string-array>
     <string-array name="set_audio_latency_items">
         <item>Bassa</item>
         <item>Media</item>

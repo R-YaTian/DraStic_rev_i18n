@@ -146,6 +146,8 @@
     <string name="str_rom_shortcut">Crear acceso directo</string>
     <string name="str_set_analogtouch">Modo de la palanca derecha</string>
     <string name="str_set_analogtouch_title">Modo de la palanca derecha</string>
+    <string name="str_set_analogrotate">Modo de rotación del stick</string>
+    <string name="str_set_analogrotate_title">Seleccionar modo de rotación del stick</string>
     <string name="str_set_analogtriggers">Habilitar gatillos analógicos</string>
     <string name="str_set_autofirespeed">Velocidad de fuego rápido</string>
     <string name="str_set_autoresume">Reanudar el último archivo de guardado al empezar desde accesos directos</string>

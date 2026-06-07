@@ -6,6 +6,12 @@
         <item>Modo palanca</item>
         <item>Modo puntero</item>
     </string-array>
+    <string-array name="set_analogrotate_items">
+        <item>Desactivado</item>
+        <item>Girar a la izquierda</item>
+        <item>Girar a la derecha</item>
+        <item>Girar 180°</item>
+    </string-array>
     <string-array name="set_audio_latency_items">
         <item>Baja</item>
         <item>Mediana</item>

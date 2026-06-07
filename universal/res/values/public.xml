@@ -64,6 +64,7 @@
     <public type="array" name="set_sysdir_l" id="0x7f03001d" />
     <public type="array" name="set_sysdir_q" id="0x7f03001e" />
     <public type="array" name="set_mapping_odin" id="0x7f03001f" />
+    <public type="array" name="set_analogrotate_items" id="0x7f030020" />
     <public type="attr" name="SharedValue" id="0x7f040000" />
     <public type="attr" name="SharedValueId" id="0x7f040001" />
     <public type="attr" name="actionBarDivider" id="0x7f040002" />
@@ -1428,12 +1429,13 @@
     <public type="id" name="cb_touchthrough" id="0x7f090103" />
     <public type="id" name="cb_singlelayout_usebottom" id="0x7f090104" />
     <public type="id" name="cb_fastmenu_usetv" id="0x7f090105" />
+    <public type="id" name="set_select_analogrotate" id="0x7f090106" />
     <public type="id" name="center" id="0x7f090304" />
     <public type="id" name="center_horizontal" id="0x7f090305" />
     <public type="id" name="center_vertical" id="0x7f090306" />
-    <public type="id" name="chain" id="0x7f090107" />
-    <public type="id" name="chain2" id="0x7f090108" />
-    <public type="id" name="chains" id="0x7f090109" />
+    <public type="id" name="chain" id="0x7f090307" />
+    <public type="id" name="chain2" id="0x7f090308" />
+    <public type="id" name="chains" id="0x7f090309" />
     <public type="id" name="cheat_code" id="0x7f09010a" />
     <public type="id" name="cheat_edit_root" id="0x7f09010b" />
     <public type="id" name="cheat_edit_title" id="0x7f09010c" />
@@ -1881,6 +1883,7 @@
     <public type="id" name="wrap_content_constrained" id="0x7f0902cc" />
     <public type="id" name="x_left" id="0x7f0902cd" />
     <public type="id" name="x_right" id="0x7f0902ce" />
+    <public type="id" name="set_selection_analogrotate" id="0x7f0902cf" />
     <public type="integer" name="abc_config_activityDefaultDur" id="0x7f0a0000" />
     <public type="integer" name="abc_config_activityShortDur" id="0x7f0a0001" />
     <public type="integer" name="cancel_button_image_alpha" id="0x7f0a0002" />
@@ -2210,7 +2213,9 @@
     <public type="string" name="str_menu_no" id="0x7f0f00b1" />
     <public type="string" name="str_menu_pause" id="0x7f0f00b3" />
     <public type="string" name="str_menu_reset_confirm" id="0x7f0f00b7" />
+    <public type="string" name="str_set_analogrotate" id="0x7f0f00b8" />
     <public type="string" name="str_menu_rootmoved" id="0x7f0f00b9" />
+    <public type="string" name="str_set_analogrotate_title" id="0x7f0f00ba" />
     <public type="string" name="str_menu_saving_busy" id="0x7f0f00bb" />
     <public type="string" name="str_menu_shortcut" id="0x7f0f00bd" />
     <public type="string" name="str_menu_shortcut_err" id="0x7f0f00be" />

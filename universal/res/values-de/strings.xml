@@ -158,6 +158,8 @@ Wähle 'Nein' um ein neues Spiel zu starten."</string>
     <string name="str_rom_shortcut">Verknüpfung erstellen</string>
     <string name="str_set_analogtouch">Modus für Rechten Analog-Steuerknüppel</string>
     <string name="str_set_analogtouch_title">Rechter Analog-Steuerknüppel</string>
+    <string name="str_set_analogrotate">Stick-Drehmodus</string>
+    <string name="str_set_analogrotate_title">Stick-Drehmodus auswählen</string>
     <string name="str_set_analogtriggers">Analoge Schultertasten aktivieren</string>
     <string name="str_set_autofirespeed">Schnell-Feuer Geschwindigkeit</string>
     <string name="str_set_autoresume">Letzten Speicherstand fortsetzen, wenn Verknüpfung gestartet wird</string>

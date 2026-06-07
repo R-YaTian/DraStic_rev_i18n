@@ -150,6 +150,8 @@ $path$.
     <string name="str_rom_shortcut">ショートカットを作成</string>
     <string name="str_set_analogtouch">スティックを右にする</string>
     <string name="str_set_analogtouch_title">右スティックモード</string>
+    <string name="str_set_analogrotate">スティック回転モード</string>
+    <string name="str_set_analogrotate_title">スティック回転モードを選択</string>
     <string name="str_set_analogtriggers">模擬トリガーを有効化</string>
     <string name="str_set_autofirespeed">自動ファイア速度</string>
     <string name="str_set_autoresume">ショートカットから入る時前回のセーブデータを回復</string>

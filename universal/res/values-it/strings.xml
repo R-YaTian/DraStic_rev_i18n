@@ -158,9 +158,11 @@ I progressi attuali verranno persi."</string>
     <string name="str_rom_loadstate">Continua con un altro Salvataggio</string>
     <string name="str_rom_newgame">Avvia Gioco</string>
     <string name="str_rom_shortcut">Crea Collegamento</string>
-    <string name="str_set_analogtouch">Right Stick Mode</string>
-    <string name="str_set_analogtouch_title">Right Stick Mode</string>
-    <string name="str_set_analogtriggers">Enable Analog Triggers</string>
+    <string name="str_set_analogtouch">Modalità del stick destro</string>
+    <string name="str_set_analogtouch_title">Modalità del stick destro</string>
+    <string name="str_set_analogrotate">Modalità di rotazione dello stick</string>
+    <string name="str_set_analogrotate_title">Seleziona la modalità di rotazione dello stick</string>
+    <string name="str_set_analogtriggers">Abilita trigger analogici</string>
     <string name="str_set_autofirespeed">Velocità Fuoco-Rapido</string>
     <string name="str_set_autoresume">"Continua l'ultimo salvataggio quando si avvia da collegamento"</string>
     <string name="str_set_autorotate">Rotazione Layout Orizzontale</string>

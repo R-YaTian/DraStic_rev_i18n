@@ -217,6 +217,8 @@
     <item type="id" name="cb_threaded" />
     <item type="id" name="cb_threaded_game" />
     <item type="id" name="cb_touchthrough" />
+    <item type="id" name="cb_singlelayout_usebottom" />
+    <item type="id" name="cb_fastmenu_usetv" />
     <item type="id" name="cheat_code" />
     <item type="id" name="cheat_edit_root" />
     <item type="id" name="cheat_edit_title" />
@@ -397,6 +399,7 @@
     <item type="id" name="set_fs_value_hdr" />
     <item type="id" name="set_moga_seperator" />
     <item type="id" name="set_select_analogtouch" />
+    <item type="id" name="set_select_analogrotate" />
     <item type="id" name="set_select_autofirespeed" />
     <item type="id" name="set_select_autosave" />
     <item type="id" name="set_select_color" />
@@ -425,6 +428,7 @@
     <item type="id" name="set_select_soundlatency_game" />
     <item type="id" name="set_select_sysdir" />
     <item type="id" name="set_selection_analogtouch" />
+    <item type="id" name="set_selection_analogrotate" />
     <item type="id" name="set_selection_autofirespeed" />
     <item type="id" name="set_selection_autosave" />
     <item type="id" name="set_selection_color" />

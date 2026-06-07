@@ -28,6 +28,9 @@
             <TextView android:id="@id/set_select_analogtouch" android:text="@string/str_set_analogtouch" style="@style/drastic_option_item_choicehdr_text_tv" />
             <TextView android:id="@id/set_selection_analogtouch" style="@style/drastic_option_item_selection_text_tv" />
             <View style="@style/drastic_seperator" />
+            <TextView android:id="@id/set_select_analogrotate" android:text="@string/str_set_analogrotate" style="@style/drastic_option_item_choicehdr_text_tv" />
+            <TextView android:id="@id/set_selection_analogrotate" style="@style/drastic_option_item_selection_text_tv" />
+            <View style="@style/drastic_seperator" />
             <TextView android:id="@id/set_select_rumbledev" android:text="@string/str_set_rumble_dev" style="@style/drastic_option_item_choicehdr_text_tv" />
             <TextView android:id="@id/set_selection_rumbledev" style="@style/drastic_option_item_selection_text_tv" />
             <View style="@style/drastic_seperator" />

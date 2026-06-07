@@ -182,6 +182,8 @@ Current progress will be lost."</string>
     <string name="str_rom_shortcut">Create Shortcut</string>
     <string name="str_set_analogtouch">Right Stick Mode</string>
     <string name="str_set_analogtouch_title">Right Stick Mode</string>
+    <string name="str_set_analogrotate">Stick Rotate Mode</string>
+    <string name="str_set_analogrotate_title">Select Stick Rotate Mode</string>
     <string name="str_set_analogtriggers">Enable Analog Triggers</string>
     <string name="str_set_autofirespeed">Rapid-Fire Speed</string>
     <string name="str_set_sysdir">System Directory</string>
