@@ -1511,11 +1511,34 @@
 
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getAxisValue(I)F
 
-    move-result p1
+    move-result v9
 
+    const/4 v7, 0x0
+
+    cmpl-float v8, v0, v7
+
+    if-nez v8, :not_trigger_17_18
+
+    cmpl-float v8, v9, v7
+
+    if-nez v8, :not_trigger_17_18
+
+    const/16 v7, 0x7
+
+    invoke-virtual {p1, v7}, Landroid/view/MotionEvent;->getAxisValue(I)F
+
+    move-result v0
+
+    const/16 v7, 0x6
+
+    invoke-virtual {p1, v7}, Landroid/view/MotionEvent;->getAxisValue(I)F
+
+    move-result v9
+
+    :not_trigger_17_18
     iget-object v1, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
 
-    invoke-virtual {v1, p1, v0}, Lcom/dsemu/drastic/DraSticGlView;->v0(FF)V
+    invoke-virtual {v1, v9, v0}, Lcom/dsemu/drastic/DraSticGlView;->v0(FF)V
 
     :cond_4
     sget-boolean p1, Lf0/h;->Y:Z
@@ -1535,9 +1558,7 @@
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
     :catch_0
-    sget-boolean p1, Lf0/h;->Y:Z
-
-    or-int/2addr v2, p1
+    const/4 v2, 0x1
 
     goto :goto_0
 
