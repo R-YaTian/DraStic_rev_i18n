@@ -2590,6 +2590,7 @@
     return-void
 .end method
 
+# relayKeyEvent
 .method public w0(IZ)V
     .locals 3
 
@@ -2705,7 +2706,7 @@
     return-void
 .end method
 
-.method public x0(III)V
+.method public relayMotionEvent(III)V
     .locals 1
 
     iget-object p3, p0, Lcom/dsemu/drastic/DraSticGlView;->g:Ln0/i;

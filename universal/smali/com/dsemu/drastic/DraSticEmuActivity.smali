@@ -249,7 +249,7 @@
     return-void
 .end method
 
-.method private q(FFFF)Z
+.method private checkAnalogStickEvent(FFFF)Z
     .locals 10
 
     iget v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->p:I
@@ -1407,7 +1407,7 @@
 
     iget-object v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
 
-    invoke-virtual {v3, v0, v1, p1}, Lcom/dsemu/drastic/DraSticGlView;->x0(III)V
+    invoke-virtual {v3, v0, v1, p1}, Lcom/dsemu/drastic/DraSticGlView;->relayMotionEvent(III)V
 
     goto/16 :goto_0
 
@@ -1531,7 +1531,7 @@
     neg-float v8, v8
 
     :pass_1
-    invoke-direct {p0, v0, v2, v7, v8}, Lcom/dsemu/drastic/DraSticEmuActivity;->q(FFFF)Z
+    invoke-direct {p0, v0, v2, v7, v8}, Lcom/dsemu/drastic/DraSticEmuActivity;->checkAnalogStickEvent(FFFF)Z
 
     move-result v0
 
