@@ -2310,7 +2310,7 @@
 
     move-object/from16 v22, v1
 
-    invoke-static/range {v22 .. v27}, Landroid/opengl/Matrix;->rotateM([FIFFFF)V
+    # invoke-static/range {v22 .. v27}, Landroid/opengl/Matrix;->rotateM([FIFFFF)V
 
     iget v1, v0, Lcom/dsemu/drastic/DraSticGlView$j;->C:I
 

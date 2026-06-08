@@ -5885,8 +5885,11 @@
 
     invoke-direct {p0, v2, v1, v0}, Lcom/dsemu/drastic/DraSticActivity;->g0(Ljava/lang/String;Lcom/dsemu/drastic/filesystem/b;Z)V
 
+    if-eqz p1, :return
+
     invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V
 
+    :return
     return-void
 .end method
 
@@ -6540,10 +6543,22 @@
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
+    :try_start_0
     invoke-virtual {v4}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v4
 
+    :try_end_0
+    goto :after_try
+
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    const/4 v4, 0x0
+
+    goto :no_dialog
+
+    :after_try
     invoke-static {}, Lcom/dsemu/drastic/filesystem/d;->i()Lcom/dsemu/drastic/filesystem/b;
 
     move-result-object v1
