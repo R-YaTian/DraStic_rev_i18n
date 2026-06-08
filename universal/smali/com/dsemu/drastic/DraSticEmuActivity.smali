@@ -1420,6 +1420,28 @@
 
     if-nez v0, :cond_6
 
+    const/16 v5, 0xf
+
+    invoke-virtual {p1, v5}, Landroid/view/MotionEvent;->getAxisValue(I)F
+
+    move-result v5
+
+    const/16 v6, 0x10
+
+    invoke-virtual {p1, v6}, Landroid/view/MotionEvent;->getAxisValue(I)F
+
+    move-result v6
+
+    const/4 v7, 0x0
+
+    cmpl-float v8, v5, v7
+
+    if-nez v8, :cond_6
+
+    cmpl-float v8, v6, v7
+
+    if-nez v8, :cond_6
+
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getAxisValue(I)F
 
     move-result v0
@@ -1590,36 +1612,14 @@
     invoke-virtual {v1, v9, v0}, Lcom/dsemu/drastic/DraSticGlView;->v0(FF)V
 
     :cond_4
-    const/16 v5, 0xf
+    # const-wide/16 v0, 0x5
 
-    invoke-virtual {p1, v5}, Landroid/view/MotionEvent;->getAxisValue(I)F
+    # :try_start_0
+    # invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
+    # :try_end_0
+    # .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result v5
-
-    const/16 v6, 0x10
-
-    invoke-virtual {p1, v6}, Landroid/view/MotionEvent;->getAxisValue(I)F
-
-    move-result v6
-
-    const/4 v7, 0x0
-
-    cmpl-float v8, v5, v7
-
-    if-nez v8, :cond_6
-
-    cmpl-float v8, v6, v7
-
-    if-nez v8, :cond_6
-
-    const-wide/16 v0, 0x5
-
-    :try_start_0
-    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
+    # :catch_0
     const/4 v2, 0x1
 
     goto :goto_0
