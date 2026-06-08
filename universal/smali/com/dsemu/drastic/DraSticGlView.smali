@@ -591,6 +591,8 @@
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setFocusableInTouchMode(Z)V
 
+    invoke-virtual {p0}, Landroid/view/View;->requestFocus()Z
+
     const/4 v1, 0x0
 
     iput v1, p0, Lcom/dsemu/drastic/DraSticGlView;->x:I
