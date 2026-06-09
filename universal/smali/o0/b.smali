@@ -2229,7 +2229,7 @@
     return-void
 .end method
 
-.method public j(FF)V
+.method public setAnalogTriggerState(FF)V
     .locals 5
 
     iget v0, p0, Lo0/b;->G:I

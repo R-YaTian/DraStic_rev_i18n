@@ -2523,7 +2523,7 @@
     return-void
 .end method
 
-.method public v0(FF)V
+.method public relayAnalogTriggerEvent(FF)V
     .locals 1
 
     iget-boolean v0, p0, Lcom/dsemu/drastic/DraSticGlView;->G:Z
@@ -2532,14 +2532,14 @@
 
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticGlView;->j:Lo0/b;
 
-    invoke-virtual {v0, p1, p2}, Lo0/b;->j(FF)V
+    invoke-virtual {v0, p1, p2}, Lo0/b;->setAnalogTriggerState(FF)V
 
     goto :goto_0
 
     :cond_0
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticGlView;->g:Ln0/i;
 
-    invoke-virtual {v0, p1, p2}, Ln0/i;->A(FF)V
+    invoke-virtual {v0, p1, p2}, Ln0/i;->setAnalogTriggerState(FF)V
 
     :goto_0
     return-void

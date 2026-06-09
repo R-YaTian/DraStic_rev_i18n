@@ -1609,7 +1609,7 @@
     :not_trigger_17_18
     iget-object v1, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
 
-    invoke-virtual {v1, v9, v0}, Lcom/dsemu/drastic/DraSticGlView;->v0(FF)V
+    invoke-virtual {v1, v9, v0}, Lcom/dsemu/drastic/DraSticGlView;->relayAnalogTriggerEvent(FF)V
 
     :cond_4
     # const-wide/16 v0, 0x5

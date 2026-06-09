@@ -137,6 +137,93 @@
 
 
 # virtual methods
+.method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
+    .locals 4
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "NewApi"
+        }
+    .end annotation
+
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getSource()I
+
+    move-result v0
+
+    const v1, 0x100008
+
+    and-int/2addr v0, v1
+
+    if-nez v0, :return_false
+
+    const/4 v1, 0x0
+
+    const/16 v0, 0x12
+
+    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getAxisValue(I)F
+
+    move-result v0
+
+    cmpl-float v2, v0, v1
+
+    if-nez v2, :is_r2_0x69
+
+    const/16 v0, 0x7
+
+    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getAxisValue(I)F
+
+    move-result v0
+
+    cmpl-float v2, v0, v1
+
+    if-nez v2, :is_r2_0x69
+
+    const/16 v0, 0x11
+
+    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getAxisValue(I)F
+
+    move-result v0
+
+    cmpl-float v2, v0, v1
+
+    if-nez v2, :is_l2_0x68
+
+    const/16 v0, 0x6
+
+    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getAxisValue(I)F
+
+    move-result v0
+
+    cmpl-float v2, v0, v1
+
+    if-nez v2, :is_l2_0x68
+
+    goto :return_false
+
+    :is_l2_0x68
+    const v2, 0x68
+
+    invoke-direct {p0, v2}, Lcom/dsemu/drastic/ui/KeyMapper;->a(I)V
+
+    const v3, 0x1
+
+    goto :return
+
+    :is_r2_0x69
+    const v2, 0x69
+
+    invoke-direct {p0, v2}, Lcom/dsemu/drastic/ui/KeyMapper;->a(I)V
+
+    const v3, 0x1
+
+    goto :return
+
+    :return_false
+    const v3, 0x0
+
+    :return
+    return v3
+.end method
+
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
 
