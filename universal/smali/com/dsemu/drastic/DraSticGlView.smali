@@ -2523,7 +2523,36 @@
     return-void
 .end method
 
-.method public relayAnalogTriggerEvent(FF)V
+.method public mapAnalogTriggersToButtons(IZ)V
+    .locals 2
+
+    const/4 v1, 0x0
+
+    :goto_0
+    const/16 v0, 0x1d
+
+    if-ge v1, v0, :cond_2
+
+    sget-object v0, Lf0/h;->i1:[I
+
+    aget v0, v0, v1
+
+    if-ne p1, v0, :cond_1
+
+    invoke-virtual {p0, v1, p2}, Lcom/dsemu/drastic/DraSticGlView;->w0(IZ)V
+
+    goto :cond_2
+
+    :cond_1
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    return-void
+.end method
+
+.method public relayAnalogTriggerEvent(FFIZ)V
     .locals 1
 
     iget-boolean v0, p0, Lcom/dsemu/drastic/DraSticGlView;->G:Z
@@ -2537,9 +2566,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lcom/dsemu/drastic/DraSticGlView;->g:Ln0/i;
-
-    invoke-virtual {v0, p1, p2}, Ln0/i;->setAnalogTriggerState(FF)V
+    invoke-virtual {p0, p3, p4}, Lcom/dsemu/drastic/DraSticGlView;->mapAnalogTriggersToButtons(IZ)V
 
     :goto_0
     return-void

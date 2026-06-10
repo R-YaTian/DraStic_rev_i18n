@@ -63,7 +63,7 @@
 
 .field private o:I
 
-.field private p:I
+.field private mAnalogEventState:I
 
 .field private lastHatX:F
 
@@ -253,10 +253,98 @@
     return-void
 .end method
 
+.method private checkAnalogTriggerEvent(FF)V
+    .locals 7
+
+    iget v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+
+    and-int/lit8 v1, v0, 0x10
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    and-int/lit8 v4, v0, 0x20
+
+    if-eqz v4, :cond_1
+
+    const/4 v4, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v4, 0x0
+
+    :goto_1
+    const/high16 v2, 0x3f000000    # 0.5f
+
+    cmpl-float v5, p1, v2
+
+    if-gez v5, :cond_2
+
+    const/4 v5, 0x0
+
+    goto :goto_2
+
+    :cond_2
+    const/4 v5, 0x1
+
+    :goto_2
+    cmpl-float v6, p2, v2
+
+    if-gez v6, :cond_3
+
+    const/4 v6, 0x0
+
+    goto :goto_3
+
+    :cond_3
+    const/4 v6, 0x1
+
+    :goto_3
+    if-eq v1, v5, :cond_4
+
+    iget v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+
+    xor-int/lit8 v3, v3, 0x10
+
+    iput v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+
+    iget-object v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
+
+    const/16 v2, 0x68
+
+    invoke-virtual {v3, p1, p2, v2, v5}, Lcom/dsemu/drastic/DraSticGlView;->relayAnalogTriggerEvent(FFIZ)V
+
+    :cond_4
+    if-eq v4, v6, :cond_5
+
+    iget v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+
+    xor-int/lit8 v3, v3, 0x20
+
+    iput v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+
+    iget-object v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
+
+    const/16 v2, 0x69
+
+    invoke-virtual {v3, p1, p2, v2, v6}, Lcom/dsemu/drastic/DraSticGlView;->relayAnalogTriggerEvent(FFIZ)V
+
+    :cond_5
+    return-void
+.end method
+
 .method private checkAnalogStickEvent(FFFF)Z
     .locals 10
 
-    iget v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->p:I
+    iget v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
     and-int/lit8 v1, v0, 0x1
 
@@ -398,7 +486,7 @@
 
     xor-int/lit8 p3, v0, 0x1
 
-    iput p3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->p:I
+    iput p3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
     iget-object p3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
 
@@ -409,11 +497,11 @@
     :cond_c
     if-eq v4, p2, :cond_d
 
-    iget p3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->p:I
+    iget p3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
     xor-int/lit8 p3, p3, 0x2
 
-    iput p3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->p:I
+    iput p3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
     iget-object p3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
 
@@ -424,11 +512,11 @@
     :cond_d
     if-eq v5, p4, :cond_e
 
-    iget p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->p:I
+    iget p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
     xor-int/lit8 p2, p2, 0x4
 
-    iput p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->p:I
+    iput p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
     iget-object p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
 
@@ -439,11 +527,11 @@
     :cond_e
     if-eq v6, p1, :cond_f
 
-    iget p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->p:I
+    iget p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
     xor-int/lit8 p2, p2, 0x8
 
-    iput p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->p:I
+    iput p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
     iget-object p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
 
@@ -452,7 +540,7 @@
     invoke-virtual {p2, p3, p1}, Lcom/dsemu/drastic/DraSticGlView;->w0(IZ)V
 
     :cond_f
-    iget p1, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->p:I
+    iget p1, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
     if-eq v0, p1, :cond_10
 
@@ -964,7 +1052,7 @@
 
     iput-boolean v5, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->v:Z
 
-    iput v5, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->p:I
+    iput v5, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
     iput v5, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatX:F
 
@@ -1626,19 +1714,9 @@
     move-result v9
 
     :not_trigger_17_18
-    iget-object v1, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
-
-    invoke-virtual {v1, v9, v0}, Lcom/dsemu/drastic/DraSticGlView;->relayAnalogTriggerEvent(FF)V
+    invoke-direct {p0, v9, v0}, Lcom/dsemu/drastic/DraSticEmuActivity;->checkAnalogTriggerEvent(FF)V
 
     :cond_4
-    # const-wide/16 v0, 0x5
-
-    # :try_start_0
-    # invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
-    # :try_end_0
-    # .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-
-    # :catch_0
     const/4 v2, 0x1
 
     goto :goto_0
@@ -2068,7 +2146,7 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->p:I
+    iput v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
     iput v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatX:F
 
