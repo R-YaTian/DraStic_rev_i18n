@@ -65,6 +65,10 @@
 
 .field private p:I
 
+.field private lastHatX:F
+
+.field private lastHatY:F
+
 .field private q:J
 
 .field private r:Z
@@ -962,6 +966,10 @@
 
     iput v5, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->p:I
 
+    iput v5, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatX:F
+
+    iput v5, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatY:F
+
     const v4, 0x7f0c0034
 
     invoke-virtual {p0, v4}, Landroid/app/Activity;->setContentView(I)V
@@ -1432,15 +1440,26 @@
 
     move-result v6
 
-    const/4 v7, 0x0
+    iget v7, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatX:F
 
     cmpl-float v8, v5, v7
 
-    if-nez v8, :cond_6
+    if-nez v8, :cond_hat_changed
+
+    iget v7, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatY:F
 
     cmpl-float v8, v6, v7
 
-    if-nez v8, :cond_6
+    if-eqz v8, :cond_hat_unchanged
+
+    :cond_hat_changed
+    iput v5, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatX:F
+
+    iput v6, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatY:F
+
+    goto :cond_6
+
+    :cond_hat_unchanged
 
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getAxisValue(I)F
 
@@ -2050,6 +2069,10 @@
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->p:I
+
+    iput v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatX:F
+
+    iput v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatY:F
 
     const/4 v1, 0x1
 
