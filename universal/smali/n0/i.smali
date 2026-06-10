@@ -4098,38 +4098,38 @@
     iput-boolean v3, v12, Ln0/i$b;->e:Z
 
     :cond_d
-    sget-boolean v5, Lf0/h;->Z:Z
+    # sget-boolean v5, Lf0/h;->Z:Z
 
-    if-eqz v5, :cond_f
+    # if-eqz v5, :cond_f
 
-    sget v5, Lf0/h;->j1:I
+    # sget v5, Lf0/h;->_KeyMapId:I
 
-    if-gez v5, :cond_e
+    # if-gez v5, :cond_e
 
-    sget-boolean v5, Lf0/h;->u0:Z
+    # sget-boolean v5, Lf0/h;->_HasDefaultMapping:Z
 
-    if-eqz v5, :cond_f
+    # if-eqz v5, :cond_f
 
-    :cond_e
-    const/4 v5, 0x5
+    # :cond_e
+    # const/4 v5, 0x5
 
-    aget-object v11, v4, v5
+    # aget-object v11, v4, v5
 
-    aget-object v12, v6, v5
+    # aget-object v12, v6, v5
 
-    iput-boolean v3, v12, Ln0/i$b;->e:Z
+    # iput-boolean v3, v12, Ln0/i$b;->e:Z
 
-    iput-boolean v3, v11, Ln0/i$b;->e:Z
+    # iput-boolean v3, v11, Ln0/i$b;->e:Z
 
-    const/4 v5, 0x4
+    # const/4 v5, 0x4
 
-    aget-object v11, v4, v5
+    # aget-object v11, v4, v5
 
-    aget-object v12, v6, v5
+    # aget-object v12, v6, v5
 
-    iput-boolean v3, v12, Ln0/i$b;->e:Z
+    # iput-boolean v3, v12, Ln0/i$b;->e:Z
 
-    iput-boolean v3, v11, Ln0/i$b;->e:Z
+    # iput-boolean v3, v11, Ln0/i$b;->e:Z
 
     :cond_f
     if-eqz v10, :cond_10

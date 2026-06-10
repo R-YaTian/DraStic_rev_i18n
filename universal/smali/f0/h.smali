@@ -178,7 +178,7 @@
 
 .field public static j0:Z
 
-.field public static j1:I
+.field public static _KeyMapId:I
 
 .field public static k:J
 
@@ -242,7 +242,7 @@
 
 .field public static u:I
 
-.field public static u0:Z
+.field public static _HasDefaultMapping:Z
 
 .field public static v:I
 
@@ -395,7 +395,7 @@
 
     sput-boolean v0, Lf0/h;->t0:Z
 
-    sput-boolean v0, Lf0/h;->u0:Z
+    sput-boolean v0, Lf0/h;->_HasDefaultMapping:Z
 
     sput-boolean v2, Lf0/h;->v0:Z
 
@@ -541,7 +541,7 @@
 
     const/4 v1, -0x1
 
-    sput v1, Lf0/h;->j1:I
+    sput v1, Lf0/h;->_KeyMapId:I
 
     new-array v5, v3, [Ljava/lang/String;
 
@@ -1350,7 +1350,7 @@
 
     const-string v2, "_KeyMapId"
 
-    sget v4, Lf0/h;->j1:I
+    sget v4, Lf0/h;->_KeyMapId:I
 
     invoke-interface {v0, v2, v4}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
@@ -2559,7 +2559,7 @@
     :cond_1
     sget-object v0, Lf0/h;->m1:[[I
 
-    sget v1, Lf0/h;->j1:I
+    sget v1, Lf0/h;->_KeyMapId:I
 
     aget-object v2, v0, v1
 
@@ -2587,7 +2587,7 @@
 
     if-ge p0, v0, :cond_0
 
-    sput p0, Lf0/h;->j1:I
+    sput p0, Lf0/h;->_KeyMapId:I
 
     sget-object v0, Lf0/h;->m1:[[I
 
@@ -2600,7 +2600,7 @@
     :cond_0
     const/4 p0, -0x1
 
-    sput p0, Lf0/h;->j1:I
+    sput p0, Lf0/h;->_KeyMapId:I
 
     sget-object p0, Lf0/h;->n1:[I
 
@@ -2613,7 +2613,7 @@
 .method public static H(Ljava/lang/String;)V
     .locals 3
 
-    sget v0, Lf0/h;->j1:I
+    sget v0, Lf0/h;->_KeyMapId:I
 
     if-ltz v0, :cond_0
 
@@ -2988,7 +2988,7 @@
 
     sget-object v0, Lf0/h;->m1:[[I
 
-    sget v1, Lf0/h;->j1:I
+    sget v1, Lf0/h;->_KeyMapId:I
 
     aget-object v0, v0, v1
 
@@ -3003,7 +3003,7 @@
     :cond_2
     sget-object p0, Lf0/h;->k1:[Ljava/lang/String;
 
-    sget p2, Lf0/h;->j1:I
+    sget p2, Lf0/h;->_KeyMapId:I
 
     aput-object p1, p0, p2
 
@@ -3038,7 +3038,7 @@
     :cond_0
     sget-object v0, Lf0/h;->m1:[[I
 
-    sget v1, Lf0/h;->j1:I
+    sget v1, Lf0/h;->_KeyMapId:I
 
     aget-object v0, v0, v1
 
@@ -4173,7 +4173,7 @@
 
     :cond_1
     :try_start_0
-    sget p0, Lf0/h;->j1:I
+    sget p0, Lf0/h;->_KeyMapId:I
 
     if-ltz p0, :cond_3
 
@@ -4260,7 +4260,7 @@
     const/4 v0, 0x0
 
     :try_start_0
-    sget v1, Lf0/h;->j1:I
+    sget v1, Lf0/h;->_KeyMapId:I
 
     if-ltz v1, :cond_1
 
@@ -5361,14 +5361,14 @@
 
     move-result v0
 
-    sput v0, Lf0/h;->j1:I
+    sput v0, Lf0/h;->_KeyMapId:I
 
     if-ltz v0, :cond_7
 
     if-lt v0, v6, :cond_8
 
     :cond_7
-    sput v8, Lf0/h;->j1:I
+    sput v8, Lf0/h;->_KeyMapId:I
 
     :cond_8
     const/4 v0, 0x0
@@ -5449,7 +5449,7 @@
 
     sput-object v0, Lf0/h;->i1:[I
 
-    sget v0, Lf0/h;->j1:I
+    sget v0, Lf0/h;->_KeyMapId:I
 
     if-ltz v0, :cond_b
 
@@ -5471,7 +5471,7 @@
 
     sget-object v3, Lf0/h;->k1:[Ljava/lang/String;
 
-    sget v10, Lf0/h;->j1:I
+    sget v10, Lf0/h;->_KeyMapId:I
 
     aget-object v3, v3, v10
 
@@ -5757,7 +5757,7 @@
 
     sput-boolean v1, Lf0/h;->t0:Z
 
-    sput-boolean v1, Lf0/h;->u0:Z
+    sput-boolean v1, Lf0/h;->_HasDefaultMapping:Z
 
     sput v8, Lf0/h;->w:I
 
@@ -5797,7 +5797,7 @@
     goto :goto_d
 
     :cond_17
-    sput-boolean v4, Lf0/h;->u0:Z
+    sput-boolean v4, Lf0/h;->_HasDefaultMapping:Z
 
     invoke-static {}, Lf0/c;->d()I
 

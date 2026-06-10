@@ -85,7 +85,7 @@
 
     if-ne v2, v1, :cond_4
 
-    sget-boolean v1, Lf0/h;->u0:Z
+    sget-boolean v1, Lf0/h;->_HasDefaultMapping:Z
 
     if-eqz v1, :cond_3
 

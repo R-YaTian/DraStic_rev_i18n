@@ -6864,11 +6864,11 @@
     goto/16 :goto_1c
 
     :pswitch_5c
-    sget-boolean p1, Lf0/h;->u0:Z
+    sget-boolean p1, Lf0/h;->_HasDefaultMapping:Z
 
     if-eqz p1, :cond_12
 
-    sget p1, Lf0/h;->j1:I
+    sget p1, Lf0/h;->_KeyMapId:I
 
     if-ne p1, v6, :cond_12
 
@@ -7095,7 +7095,7 @@
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
-    .locals 9
+    .locals 10
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -7326,7 +7326,7 @@
 
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    sget p1, Lf0/h;->j1:I
+    sget p1, Lf0/h;->_KeyMapId:I
 
     const v1, 0x7f090246
 
@@ -7354,12 +7354,28 @@
 
     sget-object v1, Lf0/h;->k1:[Ljava/lang/String;
 
-    sget v7, Lf0/h;->j1:I
+    sget v7, Lf0/h;->_KeyMapId:I
 
     aget-object v1, v1, v7
 
+    if-eqz v1, :use_none
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v9
+
+    if-eqz v9, :use_none
+
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
+    goto :not_use_none
+
+    :use_none
+    sget-object v1, Lf0/h;->l1:Ljava/lang/String;
+
+    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    :not_use_none
     invoke-virtual {p0, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -7411,7 +7427,7 @@
     goto :goto_2
 
     :cond_3
-    sget-boolean p1, Lf0/h;->u0:Z
+    sget-boolean p1, Lf0/h;->_HasDefaultMapping:Z
 
     const v7, 0x55fffffe
 
