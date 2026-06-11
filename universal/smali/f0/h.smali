@@ -746,8 +746,8 @@
     return-void
 .end method
 
-.method public static B(Landroid/content/Context;)V
-    .locals 10
+.method public static saveSettings(Landroid/content/Context;)V
+    .locals 11
 
     if-eqz p0, :cond_8
 
@@ -1352,6 +1352,26 @@
 
     sget v4, Lf0/h;->_KeyMapId:I
 
+    const/4 v10, -0x1
+
+    if-eq v4, v10, :save_kmapid
+
+    sget-object v10, Lf0/h;->k1:[Ljava/lang/String;
+
+    aget-object v10, v10, v4
+
+    if-eqz v10, :empty_kmapname
+
+    invoke-virtual {v10}, Ljava/lang/String;->length()I
+
+    move-result v10
+
+    if-nez v10, :save_kmapid
+
+    :empty_kmapname
+    const/4 v4, -0x1
+
+    :save_kmapid
     invoke-interface {v0, v2, v4}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
     const/4 v2, 0x0
@@ -1546,7 +1566,7 @@
     return-void
 .end method
 
-.method public static C(Landroid/content/Context;)V
+.method public static saveGameSettings(Landroid/content/Context;)V
     .locals 3
 
     if-eqz p0, :cond_0
@@ -2540,7 +2560,7 @@
     return-void
 .end method
 
-.method public static F(IILjava/lang/String;)V
+.method public static setKeyCode(IILjava/lang/String;)V
     .locals 3
 
     if-ltz p0, :cond_2
@@ -2578,7 +2598,7 @@
     return-void
 .end method
 
-.method public static G(I)V
+.method public static setKeyMapping(I)V
     .locals 1
 
     if-ltz p0, :cond_0
@@ -2610,7 +2630,7 @@
     return-void
 .end method
 
-.method public static H(Ljava/lang/String;)V
+.method public static setKeyMappingDevice(Ljava/lang/String;)V
     .locals 3
 
     sget v0, Lf0/h;->_KeyMapId:I
@@ -2956,7 +2976,7 @@
     return p0
 .end method
 
-.method public static b([ILjava/lang/String;II)V
+.method public static addKeyMapping([ILjava/lang/String;II)V
     .locals 2
 
     if-eqz p0, :cond_3
@@ -3024,7 +3044,7 @@
     return-void
 .end method
 
-.method public static c(I)V
+.method public static clearKeyCode(I)V
     .locals 2
 
     if-ltz p0, :cond_1
@@ -4147,7 +4167,7 @@
     return-object v0
 .end method
 
-.method public static s(Landroid/content/Context;)Landroid/os/Vibrator;
+.method public static getVibratorDevice(Landroid/content/Context;)Landroid/os/Vibrator;
     .locals 6
 
     sget v0, Lf0/h;->p1:I
@@ -4254,7 +4274,7 @@
     return-object p0
 .end method
 
-.method public static t()Z
+.method public static isMappedDeviceConnected()Z
     .locals 6
 
     const/4 v0, 0x0
@@ -5357,18 +5377,22 @@
     :cond_6
     const-string v0, "_KeyMapId"
 
+    const/4 v8, -0x1
+
     invoke-interface {v2, v0, v8}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
     move-result v0
 
     sput v0, Lf0/h;->_KeyMapId:I
 
-    if-ltz v0, :cond_7
+    const/4 v8, 0x0
 
-    if-lt v0, v6, :cond_8
+    # if-ltz v0, :cond_7
 
-    :cond_7
-    sput v8, Lf0/h;->_KeyMapId:I
+    # if-lt v0, v6, :cond_8
+
+    # :cond_7
+    # sput v8, Lf0/h;->_KeyMapId:I
 
     :cond_8
     const/4 v0, 0x0
@@ -5747,7 +5771,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0f0150
+    const v2, 0x7f0f0166
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

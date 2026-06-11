@@ -67,7 +67,7 @@
 
     :cond_2
     :goto_0
-    invoke-static {v2}, Lf0/h;->G(I)V
+    invoke-static {v2}, Lf0/h;->setKeyMapping(I)V
 
     const p2, 0x7f0f0130
 

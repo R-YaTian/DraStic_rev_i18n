@@ -293,6 +293,7 @@ Si prega di mappare un bottone per tale funzione tramite 'Mappa C. Speciali'"</s
     <string name="str_set_smartedit">Auto-Snap and Resize in Layout-Editor</string>
     <string name="str_set_soundenabled">Suono abilitato</string>
     <string name="str_set_soundlatency">Latenza Audio</string>
+    <string name="str_set_nodefcontroller">Nessun controller predefinito o integrato</string>
     <string name="str_set_threaded">Multi-Threaded 3D Rendering</string>
     <string name="str_set_threaded_hint">"Migliora il rendimento nei giochi 3D, ma può causare glitch grafici (come lo scambio degli schermi) su qualche gioco.
 Se si verificano glitch di rendering, si prega di disabilitare quest'opzione."</string>

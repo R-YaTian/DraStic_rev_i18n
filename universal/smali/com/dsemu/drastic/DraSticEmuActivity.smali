@@ -2184,7 +2184,7 @@
 
     if-ne p1, v2, :cond_3
 
-    invoke-static {p0}, Lf0/h;->s(Landroid/content/Context;)Landroid/os/Vibrator;
+    invoke-static {p0}, Lf0/h;->getVibratorDevice(Landroid/content/Context;)Landroid/os/Vibrator;
 
     move-result-object p1
 

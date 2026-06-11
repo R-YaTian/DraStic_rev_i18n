@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lf0/h;->C(Landroid/content/Context;)V
+    invoke-static {v0}, Lf0/h;->saveGameSettings(Landroid/content/Context;)V
 
     const/4 v0, 0x1
 

@@ -292,6 +292,7 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_smartedit">布局编辑器自动校准</string>
     <string name="str_set_soundenabled">开启声音</string>
     <string name="str_set_soundlatency">声音延时</string>
+    <string name="str_set_nodefcontroller">无默认或内置控制器</string>
     <string name="str_set_threaded">多线程3D渲染</string>
     <string name="str_set_threaded_hint">"多线程3D渲染可以在大型3D游戏中大幅提升模拟效果, 但是在某些游戏中可能会导致图像故障。
 如果出现故障，请关闭此项。

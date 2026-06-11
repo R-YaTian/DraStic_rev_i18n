@@ -46,8 +46,6 @@
 
 .field private F:I
 
-.field private analogTriggerState:I
-
 .field private G:I
 
 .field private H:I
@@ -3885,7 +3883,7 @@
 
     if-nez v10, :cond_2
 
-    invoke-static {}, Lf0/h;->t()Z
+    invoke-static {}, Lf0/h;->isMappedDeviceConnected()Z
 
     move-result v10
 
@@ -8080,8 +8078,6 @@
     iput v0, p0, Ln0/i;->E:I
 
     iput v0, p0, Ln0/i;->F:I
-
-    iput v0, p0, Ln0/i;->analogTriggerState:I
 
     iput v0, p0, Ln0/i;->G:I
 

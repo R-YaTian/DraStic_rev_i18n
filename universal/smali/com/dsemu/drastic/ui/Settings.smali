@@ -4641,7 +4641,7 @@
 
     if-eqz p1, :cond_10
 
-    invoke-static {p1}, Lf0/h;->H(Ljava/lang/String;)V
+    invoke-static {p1}, Lf0/h;->setKeyMappingDevice(Ljava/lang/String;)V
 
     const p2, 0x7f090246
 
@@ -7358,24 +7358,8 @@
 
     aget-object v1, v1, v7
 
-    if-eqz v1, :use_none
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v9
-
-    if-eqz v9, :use_none
-
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    goto :not_use_none
-
-    :use_none
-    sget-object v1, Lf0/h;->l1:Ljava/lang/String;
-
-    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    :not_use_none
     invoke-virtual {p0, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -9250,7 +9234,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lf0/h;->C(Landroid/content/Context;)V
+    invoke-static {p1}, Lf0/h;->saveGameSettings(Landroid/content/Context;)V
 
     iput-boolean v0, p0, Lcom/dsemu/drastic/ui/Settings;->l:Z
 

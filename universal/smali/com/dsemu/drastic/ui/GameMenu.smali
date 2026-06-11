@@ -404,7 +404,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lf0/h;->B(Landroid/content/Context;)V
+    invoke-static {p1}, Lf0/h;->saveSettings(Landroid/content/Context;)V
 
     sget p1, Lf0/h;->x:I
 
@@ -865,7 +865,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lf0/h;->B(Landroid/content/Context;)V
+    invoke-static {p1}, Lf0/h;->saveSettings(Landroid/content/Context;)V
 
     const p1, 0x7f090166
 

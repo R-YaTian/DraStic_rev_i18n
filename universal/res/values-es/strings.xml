@@ -274,6 +274,7 @@
     <string name="str_set_smartedit">Romper automáticamente y redimensionar en el editor de disposición</string>
     <string name="str_set_soundenabled">Sonido activado</string>
     <string name="str_set_soundlatency">Latencia del audio</string>
+    <string name="str_set_nodefcontroller">Sin controlador predeterminado o incorporado</string>
     <string name="str_set_threaded">Renderizado 3D multihilado</string>
     <string name="str_set_threaded_hint">Mejora el rendimiento en juegos cargados de 3D, pero puede ocasionar fallas gráficas (como pantallas intercambiadas) para algunos juegos. Si experimentas cualquier falla de renderizado, por favor desactiva esta opción.</string>
     <string name="str_set_threaded_warn">Esta opción es experimental y puede causar problemas o incluso hacer dejar de funcionar la app. Por favor desactívala, antes de reportar ningún problema.</string>

@@ -326,6 +326,7 @@ Please map a button to the menu function in 'Map Special'"</string>
     <string name="str_set_smartedit">Auto-Snap and Resize in Layout-Editor</string>
     <string name="str_set_soundenabled">Sound enabled</string>
     <string name="str_set_soundlatency">Audio Latency</string>
+    <string name="str_set_nodefcontroller">No Default or Built-In Controller</string>
     <string name="str_set_threaded">Multi-Threaded 3D Rendering</string>
     <string name="str_set_threaded_hint">"Improves performance in 3D heavy games, but may cause graphical glitches (like swapped screens) for some games.
 If you experience any rendering glitches, please disable this option."</string>

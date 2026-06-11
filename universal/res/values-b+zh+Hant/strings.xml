@@ -292,6 +292,7 @@ DraStic正在努力生成一個恢復存檔。若成功的話, 您在下次打�
     <string name="str_set_smartedit">佈局編輯器自動校準</string>
     <string name="str_set_soundenabled">開啟聲音</string>
     <string name="str_set_soundlatency">聲音延遲</string>
+    <string name="str_set_nodefcontroller">無預設或內建控制器</string>
     <string name="str_set_threaded">多執行緒 3D 渲染</string>
     <string name="str_set_threaded_hint">"多執行緒 3D 渲染可在大型 3D 遊戲中大幅提升模擬效果, 但在某些遊戲中可能會導致圖像故障。
 若出現故障, 請關閉此項。

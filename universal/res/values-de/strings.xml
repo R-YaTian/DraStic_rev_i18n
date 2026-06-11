@@ -291,6 +291,7 @@ Bitte öffne 'Spezial-Zuordnung' und ordne der Menü-Funktion eine Taste zu, son
     <string name="str_set_smartedit">Automatisches Einrasten und Anpassen der Größe im Layout-Editor</string>
     <string name="str_set_soundenabled">Audio aktiv</string>
     <string name="str_set_soundlatency">Audio-Latenz</string>
+    <string name="str_set_nodefcontroller">Kein Standard- oder integrierter Controller gefunden</string>
     <string name="str_set_threaded">Multi-Thread 3D-Rendering</string>
     <string name="str_set_threaded_hint">Verbessert die Leistung in Spielen mit vielen 3D-Grafiken, kann aber grafische Fehler in manchen Spielen verursachen.</string>
     <string name="str_set_threaded_warn">Diese Option ist experimentell und kann grafische Fehler und Abstürze verursachen.</string>

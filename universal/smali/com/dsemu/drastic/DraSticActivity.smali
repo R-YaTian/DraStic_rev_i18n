@@ -3171,7 +3171,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lf0/h;->B(Landroid/content/Context;)V
+    invoke-static {v0}, Lf0/h;->saveSettings(Landroid/content/Context;)V
 
     :cond_2
     invoke-static {p0}, Lf0/d;->a(Landroid/content/Context;)Ljava/lang/String;
@@ -7396,7 +7396,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lf0/h;->B(Landroid/content/Context;)V
+    invoke-static {p1}, Lf0/h;->saveSettings(Landroid/content/Context;)V
 
     sget p1, Lf0/h;->x:I
 
@@ -7423,7 +7423,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lf0/h;->B(Landroid/content/Context;)V
+    invoke-static {p1}, Lf0/h;->saveSettings(Landroid/content/Context;)V
 
     goto :goto_5
 
@@ -7436,7 +7436,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lf0/h;->B(Landroid/content/Context;)V
+    invoke-static {p1}, Lf0/h;->saveSettings(Landroid/content/Context;)V
 
     :cond_f
     new-instance p1, Landroid/content/Intent;
@@ -7898,7 +7898,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lf0/h;->B(Landroid/content/Context;)V
+    invoke-static {v0}, Lf0/h;->saveSettings(Landroid/content/Context;)V
 
     invoke-static {}, Ljava/lang/System;->runFinalization()V
 
@@ -8205,7 +8205,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lf0/h;->B(Landroid/content/Context;)V
+    invoke-static {p1}, Lf0/h;->saveSettings(Landroid/content/Context;)V
 
     new-instance p1, Lcom/dsemu/drastic/DraSticActivity$i;
 

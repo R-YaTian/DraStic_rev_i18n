@@ -49,7 +49,7 @@
 
     move-result-object p2
 
-    invoke-static {p2}, Lf0/h;->B(Landroid/content/Context;)V
+    invoke-static {p2}, Lf0/h;->saveSettings(Landroid/content/Context;)V
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 

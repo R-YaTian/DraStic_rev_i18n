@@ -2379,6 +2379,7 @@
     <public type="string" name="str_set_smartedit" id="0x7f0f0163" />
     <public type="string" name="str_set_soundenabled" id="0x7f0f0164" />
     <public type="string" name="str_set_soundlatency" id="0x7f0f0165" />
+    <public type="string" name="str_set_nodefcontroller" id="0x7f0f0166" />
     <public type="string" name="str_set_threaded" id="0x7f0f0167" />
     <public type="string" name="str_set_threaded_hint" id="0x7f0f0168" />
     <public type="string" name="str_set_threaded_warn" id="0x7f0f016a" />

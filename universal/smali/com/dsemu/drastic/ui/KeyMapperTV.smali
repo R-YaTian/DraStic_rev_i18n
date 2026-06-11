@@ -592,7 +592,7 @@
 
     iget v2, v1, Lcom/dsemu/drastic/ui/KeyMapperTV$d;->d:I
 
-    invoke-static {v2}, Lf0/h;->c(I)V
+    invoke-static {v2}, Lf0/h;->clearKeyCode(I)V
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -712,7 +712,7 @@
 
     iget-object v3, p0, Lcom/dsemu/drastic/ui/KeyMapperTV;->m:Ljava/lang/String;
 
-    invoke-static {p2, p1, v3}, Lf0/h;->F(IILjava/lang/String;)V
+    invoke-static {p2, p1, v3}, Lf0/h;->setKeyCode(IILjava/lang/String;)V
 
     iget p2, p0, Lcom/dsemu/drastic/ui/KeyMapperTV;->h:I
 

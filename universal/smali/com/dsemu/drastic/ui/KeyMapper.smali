@@ -81,7 +81,7 @@
 
     iget-object v2, p0, Lcom/dsemu/drastic/ui/KeyMapper;->j:Ljava/lang/String;
 
-    invoke-static {v0, v2, v1, p1}, Lf0/h;->b([ILjava/lang/String;II)V
+    invoke-static {v0, v2, v1, p1}, Lf0/h;->addKeyMapping([ILjava/lang/String;II)V
 
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 

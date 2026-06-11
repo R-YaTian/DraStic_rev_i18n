@@ -241,7 +241,7 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 2
+    .locals 3
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -268,6 +268,12 @@
 
     move-result-object v0
 
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    if-eqz v2, :empty_name
+
     const-string v1, "DEVICENAME"
 
     invoke-virtual {p1, v1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
@@ -280,6 +286,7 @@
 
     invoke-virtual {p0, p1, v0}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
+    :empty_name
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     :goto_0

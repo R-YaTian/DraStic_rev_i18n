@@ -145,7 +145,7 @@
 
     if-nez p1, :cond_3
 
-    invoke-static {}, Lf0/h;->t()Z
+    invoke-static {}, Lf0/h;->isMappedDeviceConnected()Z
 
     move-result p1
 
