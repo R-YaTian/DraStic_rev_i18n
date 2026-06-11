@@ -1,3 +1,19 @@
+<b>Version 2.6.0.4a Rev 260612 (BY R-YaTian):
+- Dismiss presentation display when app pause. This fixes the extended screen continue displaying the game screen after application entered the settings menu or moved to the background
+- Using new loading and saving animations (Made by Handheld企鹅)
+- Continue improving the dark mode theme. Improved help page for dark mode theme
+- Improve single screen layout check. This fix touch input when force enabling the second screen on a single screen layout (LC_id3-4)
+- Clean up duplicate, incorrect, and unusable shader files
+- Fixed the apparent freeze issue when extracting shader files
+- Added zfast_lcd (dslite and dsi color) shaders (By @aziib)
+- settings: Extended max extended screen border value to 50% (By MiZai)
+- Extended max extended screen border value to 25% in TV mode
+- Add a new option to allow using TV Mode for the Fast-Access menu
+- Fix shaders settings not being properly saved to per-game settings when switching shaders in the Fast-Access menu
+- Update extended screen after changing shaders in the Fast-Access menu to ensure shader changes are applied to the extended screen
+- Add a new option to configure controller stick rotation
+- Settings: Improve KeyMapper configuration saving logic
+
 <b>Version 2.6.0.4a Rev 251204 (BY R-YaTian):
 - Fixed the loading issue with the LCD3x HD and LCD3x shaders (requires deleting LCD3x HD.dfx and LCD3x.dfx from the data directory to take effect)
 - Introduced full dark theme support for Android 10 and above
