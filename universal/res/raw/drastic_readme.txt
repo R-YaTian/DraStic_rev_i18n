@@ -155,12 +155,16 @@ If you enable this option, all buttons that are mapped to a physical button/key,
 In toggle mode, any mapped button will switch fast-forward on/off. If it is disabled, fast-forward will be active as long as you press the button.
 
 <b>Enable analog triggers
-Enable to use analog L+R triggers on external gamepads
+Enable to use analog L+R triggers on external gamepads. You need to map the analog triggers to DS buttons or special function keys first.
+If your controller does not have analog triggers, or if its L2/R2 buttons generate both button events and analog trigger events at the same time (which may cause mapped buttons to be triggered twice), it is recommended to disable this option.
 
 <b>Right Stick Mode
 Enable to use the right analog stick of your external controller (or possible a trackpad) for touch input in certain games.
 This is useful for FPS games mostly. Try one of the 2 modes (FPS mode, Stick mode) to see which fits the game better.
 If set to 'Pointer Mode', the stick will directly move a stylus pointer, which can be pressed with an assigned button.
+
+<b>Stick Rotate Mode
+Decide the rotation mode of the left and right analog sticks on the controller, supporting 'Turn Left', 'Turn Right', and 'Rotate 180°'.
 
 <b>Right-Stick Deadzone
 Set the deadzone for the right stick, when used in touch-input mode
@@ -210,6 +214,15 @@ Disable the normal functionality of your device's back button.
 This is recommended, so you won't accidentally press it while playing and be taken back to the game menu.
 
 <b>Disable menu button
+Disable the normal functionality of your device's menu button.
+
+<b>Display the DS bottom screen in single-screen layout
+In single-screen layouts, the DS bottom screen will be displayed by default instead of the top screen.
+If your dual-screen handheld gaming device has the bottom screen as the main screen, it is highly recommended to enable this option for a better screen-swap experience.
+
+<b>Using TV Mode for Fast-Access menu
+When enabled, the fast-access menu will use a TV mode style, allowing you to select screen layouts and change filter configurations.
+(Filter configurations will be saved separately for per games, instead of directly overriding global settings)
 
 <b>Default Layout
 Sets default layout to be used, when starting a new game, that doesn't have a custom layout.

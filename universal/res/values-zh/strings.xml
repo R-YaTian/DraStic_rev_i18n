@@ -170,7 +170,7 @@ DraStic正在努力生成一个恢复存档。若成功的话, 您在下次打�
     <string name="str_set_btn_system">系统</string>
     <string name="str_set_btn_video">视频</string>
     <string name="str_set_btnmod">动作键触摸有效区调节</string>
-    <string name="str_set_caching">启用解压功能</string>
+    <string name="str_set_caching">缓存压缩的游戏到临时文件夹</string>
     <string name="str_set_cheats">启用金手指</string>
     <string name="str_set_color">最喜欢的颜色</string>
     <string name="str_set_confirm">退出/重置时需要确认</string>
