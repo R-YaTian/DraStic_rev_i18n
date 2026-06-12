@@ -4,15 +4,25 @@
 - Continue improving the dark mode theme. Improved help page for dark mode theme
 - Improve single screen layout check. This fix touch input when force enabling the second screen on a single screen layout (LC_id3-4)
 - Clean up duplicate, incorrect, and unusable shader files
-- Fixed the apparent freeze issue when extracting shader files
-- Added zfast_lcd (dslite and dsi color) shaders (By @aziib)
-- settings: Extended max extended screen border value to 50% (By MiZai)
-- Extended max extended screen border value to 25% in TV mode
+- Fixed the apparent freeze issue when extracting shader files (A dialog will now be shown when extracting shader files)
+- Added zfast_lcd (dslite and dsi color) shaders (By @aziib) (requires deleting 'shaders' directory from the data directory to take effect)
+- settings: Extended max 'External Display Border' value to 50% (By MiZai)
+- Extended max 'External Display Border' value to 25% in TV mode
 - Add a new option to allow using TV Mode for the Fast-Access menu
 - Fix shaders settings not being properly saved to per-game settings when switching shaders in the Fast-Access menu
 - Update extended screen after changing shaders in the Fast-Access menu to ensure shader changes are applied to the extended screen
 - Add a new option to configure controller stick rotation
 - Settings: Improve KeyMapper configuration saving logic
+- Android 10+: Prompt users to select a data storage directory on first launch
+- Clear DS button states after closing the Fast-Access menu to fix a long-standing issue where buttons could become stuck
+- Fix a long-standing issue where using other virtual buttons while holding the virtual D-Pad could incorrectly clear the D-Pad button state
+- Refactor Analog Trigger Handling: Analog triggers now support button mapping instead of being hardwired to L/R, while continuing to function as L/R buttons in the Fast-Access menu
+- Refactor Analog Motion Event Handling:
+- D-Pad inputs can now be mapped to buttons instead of being permanently bound to directional controls
+- Fixed an issue that could cause analog stick events to be triggered multiple times
+- Added a new D-Pad mode for the right analog stick, allowing it to be used for directional input
+- Improved input latency for both analog sticks and the D-Pad
+- Further improvements to overall application stability and other minor adjustments have been made to enhance the user experience
 
 <b>Version 2.6.0.4a Rev 251204 (BY R-YaTian):
 - Fixed the loading issue with the LCD3x HD and LCD3x shaders (requires deleting LCD3x HD.dfx and LCD3x.dfx from the data directory to take effect)
