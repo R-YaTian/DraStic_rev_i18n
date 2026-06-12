@@ -6194,14 +6194,6 @@
     return-void
 .end method
 
-.method public static synthetic m(Lcom/dsemu/drastic/DraSticActivity;Landroid/content/DialogInterface;I)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2}, Lcom/dsemu/drastic/DraSticActivity;->o0(Landroid/content/DialogInterface;I)V
-
-    return-void
-.end method
-
 .method private m0()Z
     .locals 6
 
@@ -6398,18 +6390,6 @@
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/dsemu/drastic/DraSticActivity;->R0(Landroid/content/DialogInterface;I)V
-
-    return-void
-.end method
-
-.method private synthetic o0(Landroid/content/DialogInterface;I)V
-    .locals 0
-
-    sget-object p1, Lcom/dsemu/drastic/DraSticActivity$u;->m:Lcom/dsemu/drastic/DraSticActivity$u;
-
-    iput-object p1, p0, Lcom/dsemu/drastic/DraSticActivity;->B:Lcom/dsemu/drastic/DraSticActivity$u;
-
-    invoke-direct {p0}, Lcom/dsemu/drastic/DraSticActivity;->W()V
 
     return-void
 .end method
