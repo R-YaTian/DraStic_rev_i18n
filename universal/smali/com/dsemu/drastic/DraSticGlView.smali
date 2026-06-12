@@ -1700,6 +1700,12 @@
 
     if-eqz v3, :cond_3b
 
+    sget v12, Lf0/h;->t:I
+
+    const/4 v3, 0x3
+
+    if-eq v12, v3, :cond_3b
+
     iget-object v3, v0, Lcom/dsemu/drastic/DraSticGlView;->i:Lcom/dsemu/drastic/DraSticGlView$k;
 
     iget v12, v3, Lcom/dsemu/drastic/DraSticGlView$k;->a:F
@@ -2151,7 +2157,7 @@
 .end method
 
 .method public o()V
-    .locals 2
+    .locals 3
 
     iget-boolean v0, p0, Lcom/dsemu/drastic/DraSticGlView;->G:Z
 
@@ -2177,6 +2183,23 @@
 
     invoke-virtual {v0}, Lcom/dsemu/drastic/DraSticGlView$j;->e()V
 
+    const/4 v0, 0x0
+
+    :goto_0
+    const/16 v2, 0x10
+
+    if-ge v0, v2, :cond_2
+
+    iget-object v2, p0, Lcom/dsemu/drastic/DraSticGlView;->g:Ln0/i;
+
+    invoke-virtual {v2, v0, v1}, Ln0/i;->C(IZ)V
+
+    :cond_1
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_2
     invoke-static {v1}, Lcom/dsemu/drastic/DraSticJNI;->pauseSystem(I)V
 
     :cond_0
