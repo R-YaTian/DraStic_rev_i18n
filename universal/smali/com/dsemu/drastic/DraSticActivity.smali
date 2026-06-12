@@ -2016,44 +2016,16 @@
 
     if-eqz v1, :cond_e
 
-    invoke-direct/range {p0 .. p0}, Lcom/dsemu/drastic/DraSticActivity;->b1()V
+    const v1, 0x7f0f016e
+
+    invoke-direct {v0, v1}, Lcom/dsemu/drastic/DraSticActivity;->b1(I)V
 
     goto :goto_8
 
     :cond_e
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
     const v1, 0x7f0f01ad
 
-    invoke-virtual {v2, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    new-instance v1, Landroid/app/AlertDialog$Builder;
-
-    invoke-direct {v1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v15}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v2
-
-    new-instance v3, Le0/r;
-
-    invoke-direct {v3, v0}, Le0/r;-><init>(Lcom/dsemu/drastic/DraSticActivity;)V
-
-    invoke-virtual {v2, v13, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-direct {v0, v1}, Lcom/dsemu/drastic/DraSticActivity;->b1(I)V
 
     :goto_8
     return-void
@@ -2118,7 +2090,9 @@
 
     if-nez v1, :cond_11
 
-    invoke-direct/range {p0 .. p0}, Lcom/dsemu/drastic/DraSticActivity;->b1()V
+    const v1, 0x7f0f016e
+
+    invoke-direct {v0, v1}, Lcom/dsemu/drastic/DraSticActivity;->b1(I)V
 
     return-void
 
@@ -4001,7 +3975,7 @@
     return-object v0
 .end method
 
-.method private b1()V
+.method private b1(I)V
     .locals 5
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -4012,9 +3986,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0f016e
-
-    invoke-virtual {v4, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 

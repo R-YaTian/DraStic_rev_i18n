@@ -364,7 +364,7 @@ DraStic正在努力生成一個恢復存檔。若成功的話, 您在下次打�
     <string name="str_fpick_useit">使用該資料夾</string>
     <string name="str_adduser_title">請稍候...</string>
     <string name="str_adduser_tip">正在初始化使用者資料儲存目錄...</string>
-    <string name="str_androidq_tip">Android 10 以上系統, DraStic 將需要使用應用內置的 appdata 資料夾來保存資料；該資料夾可被系統自帶的檔案管理 APP 訪問(部分廠商定制系統的檔案管理 APP 可能存在限制無法訪問); 也可以在\"選項->常規\"中自訂資料儲存目錄</string>
+    <string name="str_androidq_tip">Android 10 以上系統, DraStic 將需要使用應用內置的 appdata 資料夾來保存資料；該資料夾可被系統自帶的檔案管理 APP 訪問(部分廠商定制系統的檔案管理 APP 可能存在限制無法訪問); 現在您可以選擇使用指定的資料儲存目錄，也可以稍後在\"選項->常規\"中自訂</string>
     <string name="str_sm_back">返回遊戲</string>
     <string name="str_sm_bioserror">該存檔不兼容, 這是存檔使用的 BIOS 檔案與當前使用的不同導致</string>
     <string name="str_sm_copy">複製</string>

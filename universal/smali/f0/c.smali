@@ -650,7 +650,7 @@
     goto :goto_1
 
     :cond_odin
-    sput-boolean v2, Lf0/h;->Z:Z
+    sput-boolean v1, Lf0/h;->Z:Z
 
     sput-boolean v2, Lf0/h;->d0:Z
 
