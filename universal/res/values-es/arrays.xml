@@ -5,6 +5,7 @@
         <item>Modo FPS</item>
         <item>Modo palanca</item>
         <item>Modo puntero</item>
+        <item>Desactivado</item>
     </string-array>
     <string-array name="set_analogrotate_items">
         <item>Desactivado</item>

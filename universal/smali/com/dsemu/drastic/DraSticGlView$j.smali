@@ -2592,6 +2592,12 @@
 
     if-eqz v1, :cond_1e
 
+    sget v12, Lf0/h;->t:I
+
+    const/4 v1, 0x3
+
+    if-eq v12, v1, :cond_1e
+
     iget-object v1, v0, Lcom/dsemu/drastic/DraSticGlView$j;->l:Lf0/n;
 
     invoke-virtual {v1, v5, v3}, Lf0/n;->d(II)V

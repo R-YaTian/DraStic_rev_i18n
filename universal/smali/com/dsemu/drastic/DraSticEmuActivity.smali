@@ -1670,6 +1670,12 @@
 
     if-eqz v0, :cond_3
 
+    sget v9, Lf0/h;->t:I
+
+    const/4 v0, 0x3
+
+    if-eq v9, v0, :cond_3
+
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
 
     invoke-virtual {v0, v3, v4}, Lcom/dsemu/drastic/DraSticGlView;->u0(FF)V

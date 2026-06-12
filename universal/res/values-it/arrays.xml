@@ -5,6 +5,7 @@
         <item>Modalità FPS</item>
         <item>Modalità Stick</item>
         <item>Modalità Puntatore</item>
+        <item>Disabilitato</item>
     </string-array>
     <string-array name="set_analogrotate_items">
         <item>Disabilitato</item>

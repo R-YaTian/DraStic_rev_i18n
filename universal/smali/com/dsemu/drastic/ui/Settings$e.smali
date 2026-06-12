@@ -39,7 +39,7 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 3
+    .locals 4
 
     const/4 p1, 0x0
 
@@ -59,7 +59,28 @@
 
     if-eq p2, v2, :cond_0
 
+    const/4 v3, 0x4
+
+    if-eq p2, v3, :cond_4
+
     goto :goto_1
+
+    :cond_4
+    sput v2, Lf0/h;->t:I
+
+    iget-object p1, p0, Lcom/dsemu/drastic/ui/Settings$e;->f:Lcom/dsemu/drastic/ui/Settings;
+
+    invoke-virtual {p1, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/widget/TextView;
+
+    iget-object v0, p0, Lcom/dsemu/drastic/ui/Settings$e;->e:[Ljava/lang/String;
+
+    aget-object p2, v0, p2
+
+    goto :goto_0
 
     :cond_0
     sput p1, Lf0/h;->t:I

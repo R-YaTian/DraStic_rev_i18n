@@ -5311,6 +5311,10 @@
 
     sget v0, Lf0/h;->t:I
 
+    const/4 v1, 0x3
+
+    if-eq v0, v1, :cond_d
+
     const/4 v1, 0x2
 
     const/4 v2, 0x6

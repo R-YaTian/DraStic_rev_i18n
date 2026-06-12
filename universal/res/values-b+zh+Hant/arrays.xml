@@ -5,6 +5,7 @@
         <item>FPS 模式</item>
         <item>搖桿模式</item>
         <item>觸筆模式</item>
+        <item>停用</item>
     </string-array>
     <string-array name="set_analogrotate_items">
         <item>關</item>
