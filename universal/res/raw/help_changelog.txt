@@ -1,3 +1,8 @@
+<b>Version 2.6.0.4a Rev 260615 (BY R-YaTian):
+- Fix an issue where using the right analog stick could incorrectly clear D-Pad button states when the right stick was not configured in D-Pad mode
+- Special thanks to `Mizai` for the constructive suggestions and testing assistance related to the 'Analog Motion Event Handling' improvements
+- Special thanks to `Handheld企鹅` for helping test game controller functionality and analog trigger features
+
 <b>Version 2.6.0.4a Rev 260612 (BY R-YaTian):
 - Dismiss presentation display when app pause. This fixes the extended screen continue displaying the game screen after application entered the settings menu or moved to the background
 - Using new loading and saving animations (Made by Handheld企鹅)

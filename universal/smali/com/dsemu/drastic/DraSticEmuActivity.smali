@@ -1603,9 +1603,9 @@
 
     if-eqz v5, :cond_5
 
-    const/16 v7, 0x0
+    move v7, v0
 
-    const/16 v8, 0x0
+    move v8, v2
 
     goto :pass_0
 
