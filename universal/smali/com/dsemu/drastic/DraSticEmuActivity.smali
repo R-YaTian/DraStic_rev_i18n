@@ -65,10 +65,6 @@
 
 .field private mAnalogEventState:I
 
-.field private lastHatX:F
-
-.field private lastHatY:F
-
 .field private q:J
 
 .field private r:Z
@@ -341,7 +337,173 @@
     return-void
 .end method
 
-.method private checkAnalogStickEvent(FFFF)Z
+.method private checkAnalogDpadEvent(FF)V
+    .locals 10
+
+    iget v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+
+    and-int/lit8 v1, v0, 0x40
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    and-int/lit16 v4, v0, 0x80
+
+    if-eqz v4, :cond_1
+
+    const/4 v4, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v4, 0x0
+
+    :goto_1
+    and-int/lit16 v5, v0, 0x100
+
+    if-eqz v5, :cond_2
+
+    const/4 v5, 0x1
+
+    goto :goto_2
+
+    :cond_2
+    const/4 v5, 0x0
+
+    :goto_2
+    and-int/lit16 v6, v0, 0x200
+
+    if-eqz v6, :cond_3
+
+    const/4 v6, 0x1
+
+    goto :goto_3
+
+    :cond_3
+    const/4 v6, 0x0
+
+    :goto_3
+    const/high16 v7, 0x3f000000    # 0.5f
+
+    cmpl-float v8, p2, v7
+
+    if-gez v8, :cond_5
+
+    const/4 v8, 0x0
+
+    goto :goto_5
+
+    :cond_5
+    const/4 v8, 0x1
+
+    :goto_5
+    const/high16 v9, -0x41000000    # -0.5f
+
+    cmpg-float p2, p2, v9
+
+    if-lez p2, :cond_7
+
+    const/4 p2, 0x0
+
+    goto :goto_7
+
+    :cond_7
+    const/4 p2, 0x1
+
+    :goto_7
+    cmpg-float v3, p1, v9
+
+    if-lez v3, :cond_9
+
+    const/4 v3, 0x0
+
+    goto :goto_9
+
+    :cond_9
+    const/4 v3, 0x1
+
+    :goto_9
+    cmpl-float p1, p1, v7
+
+    if-gez p1, :cond_b
+
+    const/4 p1, 0x0
+
+    goto :goto_b
+
+    :cond_b
+    const/4 p1, 0x1
+
+    :goto_b
+    if-eq v1, v8, :cond_c
+
+    xor-int/lit8 v2, v0, 0x40
+
+    iput v2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+
+    iget-object v2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
+
+    const/16 v1, 0x14
+
+    invoke-virtual {v2, v1, v8}, Lcom/dsemu/drastic/DraSticGlView;->mapAnalogTriggersToButtons(IZ)V
+
+    :cond_c
+    if-eq v4, p2, :cond_d
+
+    iget v2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+
+    xor-int/lit16 v2, v2, 0x80
+
+    iput v2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+
+    iget-object v2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
+
+    const/16 v1, 0x13
+
+    invoke-virtual {v2, v1, p2}, Lcom/dsemu/drastic/DraSticGlView;->mapAnalogTriggersToButtons(IZ)V
+
+    :cond_d
+    if-eq v5, v3, :cond_e
+
+    iget p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+
+    xor-int/lit16 p2, p2, 0x100
+
+    iput p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+
+    iget-object p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
+
+    const/16 v2, 0x15
+
+    invoke-virtual {p2, v2, v3}, Lcom/dsemu/drastic/DraSticGlView;->mapAnalogTriggersToButtons(IZ)V
+
+    :cond_e
+    if-eq v6, p1, :cond_f
+
+    iget p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+
+    xor-int/lit16 p2, p2, 0x200
+
+    iput p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+
+    iget-object p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
+
+    const/16 v2, 0x16
+
+    invoke-virtual {p2, v2, p1}, Lcom/dsemu/drastic/DraSticGlView;->mapAnalogTriggersToButtons(IZ)V
+
+    :cond_f
+    return-void
+.end method
+
+.method private checkAnalogStickEvent(FFFF)V
     .locals 10
 
     iget v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
@@ -540,14 +702,7 @@
     invoke-virtual {p2, p3, p1}, Lcom/dsemu/drastic/DraSticGlView;->w0(IZ)V
 
     :cond_f
-    iget p1, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
-
-    if-eq v0, p1, :cond_10
-
-    const/4 v2, 0x1
-
-    :cond_10
-    return v2
+    return-void
 .end method
 
 .method private r()V
@@ -1054,10 +1209,6 @@
 
     iput v5, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
-    iput v5, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatX:F
-
-    iput v5, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatY:F
-
     const v4, 0x7f0c0034
 
     invoke-virtual {p0, v4}, Landroid/app/Activity;->setContentView(I)V
@@ -1528,26 +1679,7 @@
 
     move-result v6
 
-    iget v7, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatX:F
-
-    cmpl-float v8, v5, v7
-
-    if-nez v8, :cond_hat_changed
-
-    iget v7, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatY:F
-
-    cmpl-float v8, v6, v7
-
-    if-eqz v8, :cond_hat_unchanged
-
-    :cond_hat_changed
-    iput v5, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatX:F
-
-    iput v6, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatY:F
-
-    goto :cond_6
-
-    :cond_hat_unchanged
+    invoke-direct {p0, v5, v6}, Lcom/dsemu/drastic/DraSticEmuActivity;->checkAnalogDpadEvent(FF)V
 
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getAxisValue(I)F
 
@@ -1662,9 +1794,9 @@
     :pass_1
     invoke-direct {p0, v0, v2, v7, v8}, Lcom/dsemu/drastic/DraSticEmuActivity;->checkAnalogStickEvent(FFFF)Z
 
-    move-result v0
+    # move-result v0
 
-    or-int v2, v1, v0
+    # or-int v2, v1, v0
 
     sget-boolean v0, Lf0/h;->Y:Z
 
@@ -2153,10 +2285,6 @@
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
-
-    iput v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatX:F
-
-    iput v0, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->lastHatY:F
 
     const/4 v1, 0x1
 
