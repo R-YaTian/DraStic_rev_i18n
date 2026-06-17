@@ -1792,11 +1792,7 @@
     neg-float v8, v8
 
     :pass_1
-    invoke-direct {p0, v0, v2, v7, v8}, Lcom/dsemu/drastic/DraSticEmuActivity;->checkAnalogStickEvent(FFFF)Z
-
-    # move-result v0
-
-    # or-int v2, v1, v0
+    invoke-direct {p0, v0, v2, v7, v8}, Lcom/dsemu/drastic/DraSticEmuActivity;->checkAnalogStickEvent(FFFF)V
 
     sget-boolean v0, Lf0/h;->Y:Z
 
