@@ -36,7 +36,7 @@
 .end method
 
 .method private a(I)V
-    .locals 3
+    .locals 6
 
     if-ltz p1, :cond_1
 
@@ -79,6 +79,29 @@
 
     iput v1, p0, Lcom/dsemu/drastic/ui/KeyMapper;->f:I
 
+    sget v3, Lf0/h;->_KeyMapId:I
+
+    if-ltz v3, :invalid
+
+    sget-object v4, Lf0/h;->k1:[Ljava/lang/String;
+
+    array-length v5, v4
+
+    if-ge v3, v5, :invalid
+
+    aget-object v5, v4, v3
+
+    if-eqz v5, :invalid
+
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    if-eqz v3, :invalid
+
+    iput-object v5, p0, Lcom/dsemu/drastic/ui/KeyMapper;->j:Ljava/lang/String;
+
+    :invalid
     iget-object v2, p0, Lcom/dsemu/drastic/ui/KeyMapper;->j:Ljava/lang/String;
 
     invoke-static {v0, v2, v1, p1}, Lf0/h;->addKeyMapping([ILjava/lang/String;II)V
