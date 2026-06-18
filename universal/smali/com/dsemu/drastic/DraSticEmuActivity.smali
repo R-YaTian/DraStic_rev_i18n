@@ -642,128 +642,128 @@
     :goto_b
     if-eq v1, v8, :cond_c
 
-    xor-int/lit8 p3, v0, 0x1
+    iget-object v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
 
-    iput p3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+    invoke-static {v3}, Lcom/dsemu/drastic/DraSticGlView;->E(Lcom/dsemu/drastic/DraSticGlView;)Ln0/i;
 
-    iget-object p3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
+    move-result-object v2
 
-    const/16 v1, 0xe
+    invoke-static {v2}, Ln0/i;->h(Ln0/i;)I
 
-    sget-object v2, Lf0/h;->i1:[I
+    move-result v2
 
-    aget v2, v2, v1
+    and-int/lit8 v2, v2, 0x2
 
-    const/16 v3, 0x14
+    if-eqz v2, :cond_c1
 
-    if-ne v3, v2, :cond_c1
-
-    iget v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
-
-    and-int/lit8 v3, v3, 0x40
-
-    if-eqz v3, :cond_c1
+    if-nez v1, :cond_c1
 
     goto :cond_c
 
     :cond_c1
-    invoke-virtual {p3, v1, v8}, Lcom/dsemu/drastic/DraSticGlView;->w0(IZ)V
+    xor-int/lit8 p3, v0, 0x1
+
+    iput p3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
+
+    const/16 v1, 0xe
+
+    invoke-virtual {v3, v1, v8}, Lcom/dsemu/drastic/DraSticGlView;->w0(IZ)V
 
     :cond_c
     if-eq v4, p2, :cond_d
 
+    iget-object v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
+
+    invoke-static {v3}, Lcom/dsemu/drastic/DraSticGlView;->E(Lcom/dsemu/drastic/DraSticGlView;)Ln0/i;
+
+    move-result-object v2
+
+    invoke-static {v2}, Ln0/i;->h(Ln0/i;)I
+
+    move-result v2
+
+    and-int/lit8 v2, v2, 0x1
+
+    if-eqz v2, :cond_d1
+
+    if-nez v4, :cond_d1
+
+    goto :cond_d
+
+    :cond_d1
     iget p3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
     xor-int/lit8 p3, p3, 0x2
 
     iput p3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
-    iget-object p3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
-
     const/16 v1, 0xc
 
-    sget-object v2, Lf0/h;->i1:[I
-
-    aget v2, v2, v1
-
-    const/16 v3, 0x13
-
-    if-ne v3, v2, :cond_d1
-
-    iget v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
-
-    and-int/lit16 v3, v3, 0x80
-
-    if-eqz v3, :cond_d1
-
-    goto :cond_d
-
-    :cond_d1
-    invoke-virtual {p3, v1, p2}, Lcom/dsemu/drastic/DraSticGlView;->w0(IZ)V
+    invoke-virtual {v3, v1, p2}, Lcom/dsemu/drastic/DraSticGlView;->w0(IZ)V
 
     :cond_d
     if-eq v5, p4, :cond_e
 
+    iget-object v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
+
+    invoke-static {v3}, Lcom/dsemu/drastic/DraSticGlView;->E(Lcom/dsemu/drastic/DraSticGlView;)Ln0/i;
+
+    move-result-object v2
+
+    invoke-static {v2}, Ln0/i;->h(Ln0/i;)I
+
+    move-result v2
+
+    and-int/lit8 v2, v2, 0x4
+
+    if-eqz v2, :cond_e1
+
+    if-nez v5, :cond_e1
+
+    goto :cond_e
+
+    :cond_e1
     iget p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
     xor-int/lit8 p2, p2, 0x4
 
     iput p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
-    iget-object p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
-
     const/16 p3, 0xf
 
-    sget-object v2, Lf0/h;->i1:[I
-
-    aget v2, v2, p3
-
-    const/16 v3, 0x15
-
-    if-ne v3, v2, :cond_e1
-
-    iget v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
-
-    and-int/lit16 v3, v3, 0x100
-
-    if-eqz v3, :cond_e1
-
-    goto :cond_e
-
-    :cond_e1
-    invoke-virtual {p2, p3, p4}, Lcom/dsemu/drastic/DraSticGlView;->w0(IZ)V
+    invoke-virtual {v3, p3, p4}, Lcom/dsemu/drastic/DraSticGlView;->w0(IZ)V
 
     :cond_e
     if-eq v6, p1, :cond_f
 
+    iget-object v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
+
+    invoke-static {v3}, Lcom/dsemu/drastic/DraSticGlView;->E(Lcom/dsemu/drastic/DraSticGlView;)Ln0/i;
+
+    move-result-object v2
+
+    invoke-static {v2}, Ln0/i;->h(Ln0/i;)I
+
+    move-result v2
+
+    and-int/lit8 v2, v2, 0x8
+
+    if-eqz v2, :cond_f1
+
+    if-nez v6, :cond_f1
+
+    goto :cond_f
+
+    :cond_f1
     iget p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
     xor-int/lit8 p2, p2, 0x8
 
     iput p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
 
-    iget-object p2, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->e:Lcom/dsemu/drastic/DraSticGlView;
-
     const/16 p3, 0xd
 
-    sget-object v2, Lf0/h;->i1:[I
-
-    aget v2, v2, p3
-
-    const/16 v3, 0x16
-
-    if-ne v3, v2, :cond_f1
-
-    iget v3, p0, Lcom/dsemu/drastic/DraSticEmuActivity;->mAnalogEventState:I
-
-    and-int/lit16 v3, v3, 0x200
-
-    if-eqz v3, :cond_f1
-
-    goto :cond_f
-
-    :cond_f1
-    invoke-virtual {p2, p3, p1}, Lcom/dsemu/drastic/DraSticGlView;->w0(IZ)V
+    invoke-virtual {v3, p3, p1}, Lcom/dsemu/drastic/DraSticGlView;->w0(IZ)V
 
     :cond_f
     return-void

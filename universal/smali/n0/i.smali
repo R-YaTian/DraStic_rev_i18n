@@ -1924,7 +1924,7 @@
     return p1
 .end method
 
-.method static synthetic h(Ln0/i;)I
+.method public static synthetic h(Ln0/i;)I
     .locals 0
 
     iget p0, p0, Ln0/i;->F:I
