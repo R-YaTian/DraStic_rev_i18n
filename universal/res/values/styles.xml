@@ -1361,6 +1361,7 @@
         <item name="android:layout_marginRight">16.0dip</item>
         <item name="android:button">@null</item>
         <item name="android:drawableRight">@drawable/btn_check_light</item>
+        <item name="android:forceDarkAllowed">false</item>
     </style>
     <style name="drastic_checkbox_editor">
         <item name="android:textSize">12.0sp</item>
@@ -1414,6 +1415,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">16.0dip</item>
         <item name="android:layout_marginRight">16.0dip</item>
+        <item name="android:forceDarkAllowed">false</item>
     </style>
     <style name="drastic_gamemenu_item_tv">
         <item name="android:textSize">16.0sp</item>
@@ -1648,6 +1650,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">4.0dip</item>
         <item name="android:layout_marginRight">4.0dip</item>
+        <item name="android:forceDarkAllowed">false</item>
     </style>
     <style name="drastic_statedetail_item_tv">
         <item name="android:textSize">16.0sp</item>
