@@ -4249,6 +4249,10 @@
     invoke-static {v2}, Lcom/dsemu/drastic/ui/q;->p(Ljava/lang/String;)V
 
     :cond_6
+    iget-object v2, p0, Lcom/dsemu/drastic/DraSticActivity;->A:Lcom/dsemu/drastic/filesystem/b;
+
+    if-nez v2, :cond_8
+
     const-string v2, "usrcheat.dat"
 
     invoke-interface {v0, v2}, Lcom/dsemu/drastic/filesystem/b;->u(Ljava/lang/String;)Lcom/dsemu/drastic/filesystem/b;
@@ -4368,8 +4372,13 @@
     invoke-static {v2}, Lcom/dsemu/drastic/ui/q;->p(Ljava/lang/String;)V
 
     :cond_c
+    iget-object v2, p0, Lcom/dsemu/drastic/DraSticActivity;->A:Lcom/dsemu/drastic/filesystem/b;
+
+    if-nez v2, :from_shortcut
+
     invoke-direct {p0}, Lcom/dsemu/drastic/DraSticActivity;->installShadersThread()V
 
+    :from_shortcut
     invoke-direct {p0}, Lcom/dsemu/drastic/DraSticActivity;->l0()V
 
     const-string v2, "virtual_controller/Simple"
@@ -6508,28 +6517,7 @@
     :catch_0
     const/4 v4, 0x0
 
-    goto :no_dialog
-
     :after_try
-    invoke-static {}, Lcom/dsemu/drastic/filesystem/d;->i()Lcom/dsemu/drastic/filesystem/b;
-
-    move-result-object v1
-
-    const-string v2, "shaders"
-
-    invoke-interface {v1, v2}, Lcom/dsemu/drastic/filesystem/b;->u(Ljava/lang/String;)Lcom/dsemu/drastic/filesystem/b;
-
-    move-result-object v1
-
-    invoke-interface {v1, p0}, Lcom/dsemu/drastic/filesystem/b;->c(Landroid/content/Context;)Z
-
-    move-result v3
-
-    if-nez v3, :no_dialog
-
-    invoke-virtual {v4}, Landroid/app/Dialog;->show()V
-
-    :no_dialog
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/dsemu/drastic/DraSticActivity$k0;
