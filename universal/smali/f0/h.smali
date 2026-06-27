@@ -746,6 +746,160 @@
     return-void
 .end method
 
+.method public static exportSharedPreferences(Landroid/content/Context;)V
+    .locals 9
+
+    if-eqz p0, :return
+
+    const-string v0, "_Dra$t1c_Pref$_"
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->getAll()Ljava/util/Map;
+
+    move-result-object v1
+
+    invoke-static {}, Lcom/dsemu/drastic/filesystem/d;->j()Lcom/dsemu/drastic/filesystem/b;
+
+    move-result-object v2
+
+    const-string v3, "config/settings.dat"
+
+    invoke-interface {v2, v3}, Lcom/dsemu/drastic/filesystem/b;->u(Ljava/lang/String;)Lcom/dsemu/drastic/filesystem/b;
+
+    move-result-object v2
+
+    invoke-interface {v2, p0}, Lcom/dsemu/drastic/filesystem/b;->c(Landroid/content/Context;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_not_exist
+
+    invoke-interface {v2, p0}, Lcom/dsemu/drastic/filesystem/b;->n(Landroid/content/Context;)Z
+
+    :cond_not_exist
+    invoke-interface {v2, p0}, Lcom/dsemu/drastic/filesystem/b;->r(Landroid/content/Context;)Z
+
+    invoke-interface {v2, p0}, Lcom/dsemu/drastic/filesystem/b;->f(Landroid/content/Context;)Ljava/io/OutputStream;
+
+    move-result-object v6
+
+    const-string v7, "UTF-8"
+
+    invoke-static {v7}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+
+    move-result-object v5
+
+    new-instance v7, Ljava/io/OutputStreamWriter;
+
+    invoke-direct {v7, v6, v5}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V
+
+    new-instance v8, Ljava/io/PrintWriter;
+
+    invoke-direct {v8, v7}, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
+
+    invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :loop
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :done
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/util/Map$Entry;
+
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/String;
+
+    const-string v5, "_Last"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v5
+
+    if-nez v5, :loop
+
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v5
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string v7, "["
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v7
+
+    const-string v3, "HashSet"
+
+    invoke-virtual {v3, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :loop
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string v7, "]="
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v8, v6}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    goto :loop
+
+    :done
+    invoke-virtual {v8}, Ljava/io/PrintWriter;->close()V
+
+    :return
+    return-void
+.end method
+
 .method public static saveSettings(Landroid/content/Context;)V
     .locals 11
 
@@ -1556,11 +1710,13 @@
 
     :cond_7
     :goto_4
-    const-string p0, "_RecentGamesSet"
+    const-string v10, "_RecentGamesSet"
 
-    invoke-interface {v0, p0, v2}, Landroid/content/SharedPreferences$Editor;->putStringSet(Ljava/lang/String;Ljava/util/Set;)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v0, v10, v2}, Landroid/content/SharedPreferences$Editor;->putStringSet(Ljava/lang/String;Ljava/util/Set;)Landroid/content/SharedPreferences$Editor;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
+    invoke-static {p0}, Lf0/h;->exportSharedPreferences(Landroid/content/Context;)V
 
     :cond_8
     return-void
@@ -4500,6 +4656,36 @@
     sput-object v0, Lf0/h;->h:Ljava/lang/String;
 
     if-eqz p0, :cond_1c
+
+    # const/4 v13, 0x0
+
+    # :try_start_props
+    # invoke-static {}, Lcom/dsemu/drastic/filesystem/d;->j()Lcom/dsemu/drastic/filesystem/b;
+    # move-result-object v5
+    # const-string v6, "config/settings.dat"
+    # invoke-interface {v5, v6}, Lcom/dsemu/drastic/filesystem/b;->u(Ljava/lang/String;)Lcom/dsemu/drastic/filesystem/b;
+    # move-result-object v5
+    # invoke-interface {v5, p0}, Lcom/dsemu/drastic/filesystem/b;->c(Landroid/content/Context;)Z
+    # move-result v6
+    # if-eqz v6, :cond_props_done
+
+    # invoke-interface {v5, p0}, Lcom/dsemu/drastic/filesystem/b;->h(Landroid/content/Context;)Ljava/io/InputStream;
+    # move-result-object v5
+    # new-instance v6, Ljava/util/Properties;
+    # invoke-direct {v6}, Ljava/util/Properties;-><init>()V
+    # const-string v7, "UTF-8"
+    # invoke-static {v7}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+    # move-result-object v7
+    # new-instance v8, Ljava/io/InputStreamReader;
+    # invoke-direct {v8, v5, v7}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
+    # invoke-virtual {v6, v8}, Ljava/util/Properties;->load(Ljava/io/Reader;)V
+    # invoke-virtual {v5}, Ljava/io/InputStream;->close()V
+    # move-object v13, v6
+
+    # :cond_props_done
+    # :try_end_props
+    # .catch Ljava/lang/Exception; {:try_start_props .. :try_end_props} :catch_props
+    # :catch_props
 
     const-string v0, "_Dra$t1c_Pref$_"
 
