@@ -1176,13 +1176,21 @@
 .end method
 
 .method private T0()V
-    .locals 4
+    .locals 5
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0}, Lf0/h;->w(Landroid/content/Context;)V
+    invoke-static {v0}, Lf0/h;->r(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v4
+
+    sput-object v4, Lf0/h;->h:Ljava/lang/String;
+
+    invoke-static {p0}, Lcom/dsemu/drastic/DraSticActivity;->O(Lcom/dsemu/drastic/DraSticActivity;)V
+
+    invoke-static {v0}, Lf0/h;->load(Landroid/content/Context;)V
 
     invoke-direct {p0}, Lcom/dsemu/drastic/DraSticActivity;->Z()Lcom/dsemu/drastic/filesystem/b;
 
@@ -4460,8 +4468,15 @@
 
     sget-object v0, Lf0/h;->h:Ljava/lang/String;
 
-    if-eqz v0, :cond_2
+    if-nez v0, :have_user_name
 
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Lcom/dsemu/drastic/filesystem/d;->s(Lcom/dsemu/drastic/filesystem/b;)V
+
+    goto :cond_2
+
+    :have_user_name
     invoke-static {}, Lcom/dsemu/drastic/filesystem/d;->i()Lcom/dsemu/drastic/filesystem/b;
 
     move-result-object v0

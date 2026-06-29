@@ -1190,7 +1190,7 @@
 
     move-result-object v4
 
-    invoke-static {v4}, Lf0/h;->w(Landroid/content/Context;)V
+    invoke-static {v4}, Lf0/h;->load(Landroid/content/Context;)V
 
     const-string v4, "EmuActivity:: Config reloaded."
 

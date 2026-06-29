@@ -87,21 +87,13 @@
 
     iget-object p1, p0, Lcom/dsemu/drastic/DraSticActivity$c;->f:Lcom/dsemu/drastic/DraSticActivity;
 
-    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    invoke-static {p1}, Lf0/h;->w(Landroid/content/Context;)V
-
-    iget-object p1, p0, Lcom/dsemu/drastic/DraSticActivity$c;->f:Lcom/dsemu/drastic/DraSticActivity;
-
     invoke-static {p1}, Lcom/dsemu/drastic/DraSticActivity;->O(Lcom/dsemu/drastic/DraSticActivity;)V
-
-    iget-object p1, p0, Lcom/dsemu/drastic/DraSticActivity$c;->f:Lcom/dsemu/drastic/DraSticActivity;
 
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p2
+
+    invoke-static {p2}, Lf0/h;->load(Landroid/content/Context;)V
 
     sget-object p3, Lf0/h;->e:Lcom/dsemu/drastic/filesystem/b;
 
@@ -190,21 +182,13 @@
 
     iget-object p1, p0, Lcom/dsemu/drastic/DraSticActivity$c;->f:Lcom/dsemu/drastic/DraSticActivity;
 
-    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    invoke-static {p1}, Lf0/h;->w(Landroid/content/Context;)V
-
-    iget-object p1, p0, Lcom/dsemu/drastic/DraSticActivity$c;->f:Lcom/dsemu/drastic/DraSticActivity;
-
     invoke-static {p1}, Lcom/dsemu/drastic/DraSticActivity;->O(Lcom/dsemu/drastic/DraSticActivity;)V
-
-    iget-object p1, p0, Lcom/dsemu/drastic/DraSticActivity$c;->f:Lcom/dsemu/drastic/DraSticActivity;
 
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p2
+
+    invoke-static {p2}, Lf0/h;->load(Landroid/content/Context;)V
 
     sget-object p6, Lf0/h;->e:Lcom/dsemu/drastic/filesystem/b;
 
@@ -426,21 +410,13 @@
 
     iget-object p1, p0, Lcom/dsemu/drastic/DraSticActivity$c;->f:Lcom/dsemu/drastic/DraSticActivity;
 
-    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    invoke-static {p1}, Lf0/h;->w(Landroid/content/Context;)V
-
-    iget-object p1, p0, Lcom/dsemu/drastic/DraSticActivity$c;->f:Lcom/dsemu/drastic/DraSticActivity;
-
     invoke-static {p1}, Lcom/dsemu/drastic/DraSticActivity;->O(Lcom/dsemu/drastic/DraSticActivity;)V
-
-    iget-object p1, p0, Lcom/dsemu/drastic/DraSticActivity$c;->f:Lcom/dsemu/drastic/DraSticActivity;
 
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p2
+
+    invoke-static {p2}, Lf0/h;->load(Landroid/content/Context;)V
 
     sget-object p6, Lf0/h;->e:Lcom/dsemu/drastic/filesystem/b;
 

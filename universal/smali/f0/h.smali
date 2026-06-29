@@ -746,16 +746,16 @@
     return-void
 .end method
 
-.method public static exportSharedPreferences(Landroid/content/Context;)V
+.method public static exportSharedPreferences(Landroid/content/Context;Ljava/lang/String;)V
     .locals 9
 
     if-eqz p0, :return
 
-    const-string v0, "_Dra$t1c_Pref$_"
+    if-eqz p1, :return
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, p1, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -837,6 +837,14 @@
 
     if-nez v5, :loop
 
+    const-string v5, "_First_"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v5
+
+    if-nez v5, :loop
+
     invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v5
@@ -901,7 +909,7 @@
 .end method
 
 .method public static saveSettings(Landroid/content/Context;)V
-    .locals 11
+    .locals 12
 
     if-eqz p0, :cond_8
 
@@ -910,6 +918,8 @@
     if-eqz v0, :cond_8
 
     const-string v0, "_Dra$t1c_Pref$_"
+
+    move v11, v0
 
     const/4 v1, 0x0
 
@@ -1002,6 +1012,8 @@
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
+
+    move v11, v0
 
     invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
@@ -1716,7 +1728,7 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    invoke-static {p0}, Lf0/h;->exportSharedPreferences(Landroid/content/Context;)V
+    invoke-static {p0, v11}, Lf0/h;->exportSharedPreferences(Landroid/content/Context;Ljava/lang/String;)V
 
     :cond_8
     return-void
@@ -4641,7 +4653,178 @@
     return p0
 .end method
 
-.method public static w(Landroid/content/Context;)V
+.method public static loadSharedPreferencesFromFile(Landroid/content/Context;Landroid/content/SharedPreferences;)V
+    .locals 12
+
+    invoke-static {}, Lcom/dsemu/drastic/filesystem/d;->j()Lcom/dsemu/drastic/filesystem/b;
+
+    move-result-object v0
+
+    const-string v1, "config/settings.dat"
+
+    invoke-interface {v0, v1}, Lcom/dsemu/drastic/filesystem/b;->u(Ljava/lang/String;)Lcom/dsemu/drastic/filesystem/b;
+
+    move-result-object v1
+
+    invoke-interface {v1, p0}, Lcom/dsemu/drastic/filesystem/b;->c(Landroid/content/Context;)Z
+
+    move-result v2
+
+    if-eqz v2, :return
+
+    invoke-interface {v1, p0}, Lcom/dsemu/drastic/filesystem/b;->h(Landroid/content/Context;)Ljava/io/InputStream;
+
+    move-result-object v1
+
+    const-string v2, "UTF-8"
+
+    invoke-static {v2}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+
+    move-result-object v2
+
+    new-instance v3, Ljava/io/InputStreamReader;
+
+    invoke-direct {v3, v1, v2}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
+
+    # v4 = new BufferedReader(v3)
+    new-instance v4, Ljava/io/BufferedReader;
+
+    invoke-direct {v4, v3}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+
+    # v5 = prefs.edit()
+    invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v5
+
+    :read_line
+    # v6 = br.readLine()
+    invoke-virtual {v4}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+
+    move-result-object v6
+
+    if-eqz v6, :read_done
+
+    # v7 = line.indexOf('[')
+    const/16 v7, 0x5b
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->indexOf(I)I
+
+    move-result v7
+
+    # v8 = line.indexOf(']')
+    const/16 v8, 0x5d
+
+    invoke-virtual {v6, v8}, Ljava/lang/String;->indexOf(I)I
+
+    move-result v8
+
+    # v9 = line.indexOf('=')
+    const/16 v9, 0x3d
+
+    invoke-virtual {v6, v9}, Ljava/lang/String;->indexOf(I)I
+
+    move-result v9
+
+    if-ltz v7, :read_line
+
+    if-ltz v8, :read_line
+
+    if-ltz v9, :read_line
+
+    # v10 = key = line.substring(0, left)
+    const/4 v10, 0x0
+
+    invoke-virtual {v6, v10, v7}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v10
+
+    # v11 = type = line.substring(left + 1, right)
+    add-int/lit8 v11, v7, 0x1
+
+    invoke-virtual {v6, v11, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v11
+
+    # v8 = value = line.substring(equal + 1)
+    add-int/lit8 v7, v9, 0x1
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    const-string v7, "String"
+
+    invoke-virtual {v7, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :check_integer
+
+    invoke-interface {v5, v10, v8}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    goto :read_line
+
+    :check_integer
+    const-string v7, "Integer"
+
+    invoke-virtual {v7, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :check_boolean
+
+    invoke-static {v8}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v7
+
+    invoke-interface {v5, v10, v7}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+
+    goto :read_line
+
+    :check_boolean
+    const-string v7, "Boolean"
+
+    invoke-virtual {v7, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :check_float
+
+    invoke-static {v8}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+
+    move-result v7
+
+    invoke-interface {v5, v10, v7}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    goto :read_line
+
+    :check_float
+    const-string v7, "Float"
+
+    invoke-virtual {v7, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :read_line
+
+    invoke-static {v8}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+
+    move-result v7
+
+    invoke-interface {v5, v10, v7}, Landroid/content/SharedPreferences$Editor;->putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;
+
+    goto :read_line
+
+    :read_done
+    invoke-interface {v5}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
+
+    :return
+    return-void
+.end method
+
+.method public static load(Landroid/content/Context;)V
     .locals 14
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -4656,36 +4839,6 @@
     sput-object v0, Lf0/h;->h:Ljava/lang/String;
 
     if-eqz p0, :cond_1c
-
-    # const/4 v13, 0x0
-
-    # :try_start_props
-    # invoke-static {}, Lcom/dsemu/drastic/filesystem/d;->j()Lcom/dsemu/drastic/filesystem/b;
-    # move-result-object v5
-    # const-string v6, "config/settings.dat"
-    # invoke-interface {v5, v6}, Lcom/dsemu/drastic/filesystem/b;->u(Ljava/lang/String;)Lcom/dsemu/drastic/filesystem/b;
-    # move-result-object v5
-    # invoke-interface {v5, p0}, Lcom/dsemu/drastic/filesystem/b;->c(Landroid/content/Context;)Z
-    # move-result v6
-    # if-eqz v6, :cond_props_done
-
-    # invoke-interface {v5, p0}, Lcom/dsemu/drastic/filesystem/b;->h(Landroid/content/Context;)Ljava/io/InputStream;
-    # move-result-object v5
-    # new-instance v6, Ljava/util/Properties;
-    # invoke-direct {v6}, Ljava/util/Properties;-><init>()V
-    # const-string v7, "UTF-8"
-    # invoke-static {v7}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
-    # move-result-object v7
-    # new-instance v8, Ljava/io/InputStreamReader;
-    # invoke-direct {v8, v5, v7}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
-    # invoke-virtual {v6, v8}, Ljava/util/Properties;->load(Ljava/io/Reader;)V
-    # invoke-virtual {v5}, Ljava/io/InputStream;->close()V
-    # move-object v13, v6
-
-    # :cond_props_done
-    # :try_end_props
-    # .catch Ljava/lang/Exception; {:try_start_props .. :try_end_props} :catch_props
-    # :catch_props
 
     const-string v0, "_Dra$t1c_Pref$_"
 
@@ -4825,6 +4978,8 @@
     sput-object v0, Lf0/h;->a:Ljava/lang/String;
 
     :goto_0
+    invoke-static {p0, v2}, Lf0/h;->loadSharedPreferencesFromFile(Landroid/content/Context;Landroid/content/SharedPreferences;)V
+
     const-string v0, "_BasePathGeneric"
 
     const/4 v3, 0x0
