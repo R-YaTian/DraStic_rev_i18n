@@ -39,7 +39,7 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
+    .locals 3
 
     iget-object v0, p0, Lcom/dsemu/drastic/DraSticGlView$g$a;->e:[Ljava/lang/String;
 
@@ -67,6 +67,13 @@
 
     sput-object p2, Lf0/h;->P0:Ljava/lang/String;
 
+    sget-boolean v2, Lf0/h;->fastmenuShadersCfgCopyToGlobal:Z
+
+    if-eqz v2, :not_copy
+
+    sput-object p2, Lf0/h;->i:Ljava/lang/String;
+
+    :not_copy
     iget-object p2, p0, Lcom/dsemu/drastic/DraSticGlView$g$a;->f:Lcom/dsemu/drastic/DraSticGlView$g;
 
     iget-object p2, p2, Lcom/dsemu/drastic/DraSticGlView$g;->e:Lcom/dsemu/drastic/DraSticGlView;
@@ -75,8 +82,16 @@
 
     move-result-object v0
 
+    if-eqz v2, :not_save_global
+
+    invoke-static {v0}, Lf0/h;->saveSettings(Landroid/content/Context;)V
+
+    goto :save_done
+
+    :not_save_global
     invoke-static {v0}, Lf0/h;->saveGameSettings(Landroid/content/Context;)V
 
+    :save_done
     const/4 v0, 0x1
 
     invoke-static {p2, v0}, Lcom/dsemu/drastic/DraSticGlView;->i0(Lcom/dsemu/drastic/DraSticGlView;Z)Z
