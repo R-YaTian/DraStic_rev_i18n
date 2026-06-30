@@ -1,3 +1,9 @@
+<b>版本 2.6.0.4a Rev 260701 (BY R-YaTian):
+- 改善應用啟動速度
+- 修復 padbuttons 資源, 修復 radial_menu_tv 資源在英文和義大利語中的顯示問題 (By Handheld企鹅)
+- 添加 SharedPreferences 自動導出/導入功能, 使用 config/settings.dat 提供統一的外部配置檔案以管理全域應用設定
+- 添加 fastmenuShadersCfgCopyToGlobal 配置, 允許高級使用者決定是否將快捷選單中的濾鏡設定變更儲存到全域配置
+
 <b>版本 2.6.0.4a Rev 260619 (BY R-YaTian):
 - 修復在右搖桿未配置為 Dpad 模式時, 使用右搖桿可能錯誤清除 Dpad 按鍵狀態的問題
 - 改善同時使用 Dpad 和搖桿時的操作體驗

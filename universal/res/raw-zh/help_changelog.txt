@@ -1,3 +1,9 @@
+<b>版本 2.6.0.4a Rev 260701 (BY R-YaTian):
+- 优化应用启动速度
+- 修复padbuttons资源, 修复radial_menu_tv资源在英文和意大利语中的显示问题 (By Handheld企鹅)
+- 添加SharedPreferences自动导出/导入功能, 使用config/settings.dat提供统一的外部配置文件以管理全局应用设置
+- 添加fastmenuShadersCfgCopyToGlobal配置, 允许高级用户决定是否将快捷菜单中的滤镜设置变更保存到全局配置
+
 <b>版本 2.6.0.4a Rev 260619 (BY R-YaTian):
 - 修复在右摇杆未配置为D-Pad模式时使用右摇杆可能错误清除D-Pad按键状态的问题
 - 改善同时使用Dpad和摇杆时的操作体验

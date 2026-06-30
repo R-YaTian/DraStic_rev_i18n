@@ -1,6 +1,8 @@
 <b>Version 2.6.0.4a Rev 260701 (BY R-YaTian):
 - Optimize application startup speed
 - Fix `padbuttons` resources, fix `radial_menu_tv` resources for en and it languages (By Handheld企鹅)
+- Added automatic SharedPreferences export/import with `config/settings.dat`, providing a unified external config file for global app settings
+- Added `fastmenuShadersCfgCopyToGlobal` configuration, allowing advanced users to decide whether shader setting changes in Fast-Access Menu should be saved to global config
 
 <b>Version 2.6.0.4a Rev 260619 (BY R-YaTian):
 - Fix an issue where using the right analog stick could incorrectly clear D-Pad button states when the right stick was not configured in D-Pad mode
