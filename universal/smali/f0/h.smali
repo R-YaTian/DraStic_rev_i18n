@@ -784,6 +784,10 @@
     :cond_not_exist
     invoke-interface {v2, p0}, Lcom/dsemu/drastic/filesystem/b;->r(Landroid/content/Context;)Z
 
+    move-result v3
+
+    if-eqz v3, :return
+
     invoke-interface {v2, p0}, Lcom/dsemu/drastic/filesystem/b;->f(Landroid/content/Context;)Ljava/io/OutputStream;
 
     move-result-object v6
@@ -844,6 +848,46 @@
     move-result v5
 
     if-nez v5, :loop
+
+    const-string v5, "_ScreenLayout_"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v5
+
+    if-nez v5, :loop
+
+    const-string v5, "_ScreenSwap_"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v5
+
+    if-nez v5, :loop
+
+    const-string v5, "_TouchMode_"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v5
+
+    if-nez v5, :loop
+
+    const-string v5, "_BasePathGeneric"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-nez v5, :loop
+
+    const-string v5, "_"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :loop
 
     invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -919,7 +963,7 @@
 
     const-string v0, "_Dra$t1c_Pref$_"
 
-    move v11, v0
+    const-string v11, "_Dra$t1c_Pref$_"
 
     const/4 v1, 0x0
 
@@ -1013,7 +1057,7 @@
 
     move-result-object v0
 
-    move v11, v0
+    move-object v11, v0
 
     invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
@@ -4771,13 +4815,30 @@
 
     move-result v7
 
-    if-eqz v7, :check_boolean
+    if-eqz v7, :check_long
 
     invoke-static {v8}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v7
 
     invoke-interface {v5, v10, v7}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+
+    goto :read_line
+
+    :check_long
+    const-string v7, "Long"
+
+    invoke-virtual {v7, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :check_boolean
+
+    invoke-static {v8}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+
+    move-result-wide v7
+
+    invoke-interface {v5, v10, v7, v8}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
 
     goto :read_line
 

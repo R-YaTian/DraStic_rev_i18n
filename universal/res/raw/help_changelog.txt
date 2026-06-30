@@ -1,3 +1,7 @@
+<b>Version 2.6.0.4a Rev 260701 (BY R-YaTian):
+- Optimize application startup speed
+- Fix `padbuttons` resources, fix `radial_menu_tv` resources for en and it languages (By Handheld企鹅)
+
 <b>Version 2.6.0.4a Rev 260619 (BY R-YaTian):
 - Fix an issue where using the right analog stick could incorrectly clear D-Pad button states when the right stick was not configured in D-Pad mode
 - Improve the experience when using the analog D-pad and analog stick simultaneously
