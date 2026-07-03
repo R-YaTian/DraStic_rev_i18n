@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="set_analogstick_items">
+        <item>D-Pad</item>
+        <item>Modo FPS</item>
+        <item>Modo analógico</item>
+        <item>Modo ponteiro</item>
+        <item>Desativado</item>
+    </string-array>
+    <string-array name="set_analogrotate_items">
+        <item>Desligado</item>
+        <item>Girar à esquerda</item>
+        <item>Girar à direita</item>
+        <item>Girar 180°</item>
+    </string-array>
+    <string-array name="set_audio_latency_items">
+        <item>Baixa</item>
+        <item>Média</item>
+        <item>Alta</item>
+        <item>Muito alta</item>
+    </string-array>
+    <string-array name="set_autofire_frequency">
+        <item>Velocidade 1 (mais rápida)</item>
+        <item>Velocidade 2</item>
+        <item>Velocidade 3</item>
+        <item>Velocidade 4</item>
+        <item>Velocidade 5 (mais lenta)</item>
+    </string-array>
+    <string-array name="set_autosave_type">
+        <item>Desativado</item>
+        <item>Ao pausar/suspender</item>
+        <item>A cada 5 minutos</item>
+        <item>A cada 15 minutos</item>
+        <item>A cada 30 minutos</item>
+    </string-array>
+    <string-array name="set_cheat_menu_tv">
+        <item>Adicionar novo cheat</item>
+        <item>Desativar todos os cheats</item>
+        <item>Editar cheat selecionado</item>
+    </string-array>
+    <string-array name="set_editor_endmenu_tv">
+        <item>Salvar como layout global</item>
+        <item>Salvar como layout do jogo</item>
+        <item>Continuar editando</item>
+        <item>Sair sem salvar</item>
+    </string-array>
+    <string-array name="set_editor_startmenu_tv">
+        <item>Usar layout padrão</item>
+        <item>Carregar layout global</item>
+        <item>Carregar layout do jogo</item>
+    </string-array>
+    <string-array name="set_extdisplay_screen">
+        <item>Tela superior</item>
+        <item>Tela inferior</item>
+    </string-array>
+    <string-array name="set_extdisplay_type">
+        <item>Clonar dispositivo</item>
+        <item>Proporção correta</item>
+        <item>Tela cheia</item>
+    </string-array>
+    <string-array name="set_extra_funcs">
+        <item>Desativado</item>
+        <item>Avançar rápido</item>
+        <item>Quick-Save</item>
+        <item>Quick-Load</item>
+        <item>Trocar telas superior/inferior</item>
+        <item>Trocar layouts 1 e 2</item>
+        <item>Mostrar/ocultar botões virtuais</item>
+        <item>Simular ruído do microfone</item>
+        <item>Alternar layouts paisagem</item>
+        <item>Alternar tiro rápido</item>
+    </string-array>
+    <string-array name="set_ffwd_speed_items">
+        <item>50%</item>
+        <item>150%</item>
+        <item>200%</item>
+        <item>300%</item>
+        <item>400%</item>
+        <item>Ilimitado</item>
+    </string-array>
+    <string-array name="set_filer_items">
+        <item>Nenhum</item>
+        <item>Linear</item>
+        <item>Scale2X</item>
+        <item>HQ2X</item>
+        <item>Quilez</item>
+    </string-array>
+    <string-array name="set_filer_items_1cpu">
+        <item>Nenhum</item>
+        <item>Linear</item>
+        <item>Quilez</item>
+    </string-array>
+    <string-array name="set_fs_items">
+        <item>Nenhum</item>
+        <item>Manual</item>
+        <item>Automático</item>
+    </string-array>
+    <string-array name="set_fw_languages">
+        <item>日本語</item>
+        <item>English</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Italiano</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="set_gm_layouts">
+        <item>Paisagem 1:1</item>
+        <item>Paisagem x:1</item>
+        <item>Retrato 1:1</item>
+        <item>Paisagem com proporção</item>
+        <item>Paisagem tela cheia</item>
+    </string-array>
+    <string-array name="set_gm_layouts_tv">
+        <item>Paisagem 1:1</item>
+        <item>Paisagem x:1</item>
+        <item>Retrato 1:1</item>
+        <item>Paisagem com proporção</item>
+        <item>Paisagem tela cheia</item>
+        <item>Retrato girado à esquerda</item>
+        <item>Retrato girado à direita</item>
+    </string-array>
+    <string-array name="set_menu_button_position">
+        <item>Baixo</item>
+        <item>Cima</item>
+        <item>Esquerda</item>
+        <item>Direita</item>
+        <item>Oculto</item>
+    </string-array>
+    <string-array name="set_mic_level_items">
+        <item>Baixo</item>
+        <item>Médio</item>
+        <item>Alto</item>
+        <item>Muito alto</item>
+    </string-array>
+    <string-array name="set_rotation_type">
+        <item>Automático</item>
+        <item>Paisagem</item>
+        <item>Paisagem invertida</item>
+    </string-array>
+    <string-array name="set_rumble_dev">
+        <item>Nenhum</item>
+        <item>Controle</item>
+        <item>Interno</item>
+    </string-array>
+    <string-array name="set_rumble_dev_tv">
+        <item>Nenhum</item>
+        <item>Controle</item>
+    </string-array>
+    <string-array name="set_slot2_cart_type">
+        <item>Nenhum</item>
+        <item>Cartucho GBA</item>
+        <item>Cartucho SRAM</item>
+        <item>Pack de vibração</item>
+        <item>Pack de movimento (Oficial)</item>
+        <item>Pack de movimento (Homebrew)</item>
+    </string-array>
+    <string-array name="set_sysdir_l">
+        <item>Pasta externa padrão</item>
+        <item>Pasta de armazenamento delimitado</item>
+    </string-array>
+    <string-array name="set_sysdir_q">
+        <item>Pasta interna padrão</item>
+        <item>Pasta de armazenamento delimitado</item>
+    </string-array>
+</resources>
