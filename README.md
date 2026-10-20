@@ -12,7 +12,7 @@ This is an APK reverse-engineering project using [apktool](https://apktool.org/)
 
 - Full i18n support for DraStic-specific UI strings (settings, game menu, errors, etc.)
 - Auto-selects Chinese or English cheat database (`usrcheat_zh.dat` / `usrcheat.dat`) based on device locale
-- Improved dark theme for game menu and state detail pages
+- Implemented dark theme UI
 - Better analog D-Pad and right stick handling
 - Configuration export/import support
 - Various bug fixes and UX improvements over the original release
