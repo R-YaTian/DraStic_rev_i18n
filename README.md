@@ -4,7 +4,7 @@
 
 ## About
 
-The goal of this project is to make more static text in **DraStic** (NDS emulator for Android) translatable. In addition, it adds logic to **automatically extract either the Chinese or English cheat database** based on the device's system language.
+The goal of this project is to make more static text in **DraStic** (an NDS emulator for Android) translatable, while also introducing several quality-of-life (QoL) improvements to enhance the user experience.
 
 This is an APK reverse-engineering project using [apktool](https://apktool.org/). The source files are the decompiled contents of `DraStic_r2.6.0.4a_build109_universal.apk`.
 
@@ -13,7 +13,9 @@ This is an APK reverse-engineering project using [apktool](https://apktool.org/)
 - Full i18n support for DraStic-specific UI strings (settings, game menu, errors, etc.)
 - Auto-selects Chinese or English cheat database (`usrcheat_zh.dat` / `usrcheat.dat`) based on device locale
 - Implemented dark theme UI
-- Better analog D-Pad and right stick handling
+- Better analog D-Pad and right stick handling, better `Analog Trigger` support
+- Better dual-screen handheld gaming device support, such as AYN Thor
+- Can use TV Mode for the Fast-Access Menu
 - Configuration export/import support
 - Various bug fixes and UX improvements over the original release
 
@@ -74,5 +76,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to add or improve tran
 
 ## License
 
-This project contains modifications to the DraStic APK for research, accessibility, and language support purposes.
+This project contains modifications to the **DraStic APK** for research, accessibility, and language support purposes.
 DraStic is © Exophase. This project is not affiliated with or endorsed by the original developer.

@@ -82,28 +82,6 @@ Then install on a device or emulator set to your target language and check that 
 - Commit your changes with a descriptive message like `Add Korean translation for DraStic-specific strings`
 - Open a pull request against `main`
 
-## Reporting Translation Issues
-
-If you find a string that is:
-- Missing a translation (falls back to English)
-- Incorrectly translated
-- Truncated or not fitting the UI
-
-Please open a GitHub issue with:
-- The language affected
-- The string key (e.g. `str_set_threaded`)
-- The current text and your suggested improvement
-
-## Adding New Strings
-
-If you find hardcoded text in the smali code that should be moved to `strings.xml`:
-
-1. Identify the smali file containing the hardcoded string
-2. Add the string to `universal/res/values/strings.xml` with a descriptive key
-3. Modify the smali to load the string from resources using `getString(R.string.your_key)`
-4. Add translations for the new key in the relevant locale files
-5. Document the change in your pull request
-
 ## Code Style for Smali Changes
 
 - Keep changes minimal and focused
